@@ -20,9 +20,9 @@
                     <th>ACTION</th>
                 </thead>
                 <tbody>
-         <tr>
-            <td></td>
-         </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -31,7 +31,7 @@
 </x-admin.layouts>
 
 <script>
-     $(document).ready(function() {
+    $(document).ready(function() {
         var commonOptions = {
             ordering: false,
             "order": [],

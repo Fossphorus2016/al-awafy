@@ -33202,7 +33202,7 @@ a:hover {
 .btn.btn-primary {
     color: #fff;
     border-color: #0c223b;
-    background-color: var(--green-color);
+    background-color: #0B3D89;
 }
 .btn.btn-primary i {
     color: #fff;
@@ -49656,7 +49656,7 @@ body {
     display: flex;
     flex-direction: column;
     /* background-color: #0c223b; */
-    background-color: var(--dark-green-color);
+    background-color: #0B3D89;
     padding: 0;
 }
 .aside .aside-toolbar .aside-user {
