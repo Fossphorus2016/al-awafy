@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\NewsLetter;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
@@ -23,6 +24,19 @@ class FormController extends Controller
             'phone' => $request->phone,
             'subject' => $request->subject,
             'message' => $request->message,
+        ]);
+
+        return back();
+   }
+
+
+   public function news_letter_create(Request $request){
+        $request->validate([
+            'subscriber_mail' => 'required',
+        ]);
+
+        NewsLetter::create([
+            'subscriber_mail' => $request->subscriber_mail,
         ]);
 
         return back();

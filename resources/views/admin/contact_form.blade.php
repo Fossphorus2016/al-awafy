@@ -16,7 +16,7 @@
                 <input type="text" id="tableSearch" class="form-control" style="width: 200px;">
             </div>
             <table
-                class="table table-row-bordered table-row-gray-600 table-striped table-hover gy-5 rounded dataTable "
+                class="table table-row-bordered table-row-gray-600 table-striped table-hover gy-5 rounded dataTable"
                 id="table">
                 <thead>
                     <th>ID</th>

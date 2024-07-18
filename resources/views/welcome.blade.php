@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row">
+    <div class="row mb-5">
         <div class="col-md-12">
             <form id="contact_form" action="{{route('contact.create')}}" method="POST">
                 @csrf
@@ -50,6 +50,23 @@
             </form>
         </div>
     </div>
+      <div class="row">
+        <div class="col-md-12">
+            <form action="{{route('news.letter.create')}}" method="POST" id="news_letter_form">
+                @csrf
+                <div class="mb-3">
+                    <label class="form-label">News Letter</label>
+                    <input type="email" name="subscriber_mail" id="subscriber_mail" class="form-control">
+                    <label for="" id="error_subscriber_mail" class="text-danger fw-bold " style="display: none">
+                        News Letter is required
+                    </label>
+                </div>
+
+                <button type="button" onclick="news_validate()" class="btn btn-outline-danger">Submit</button>
+            </form>
+        </div>
+      </div>
+
 </div>
 
 <script src="{{ asset('admin_assets/js/jquery-3.7.1.min.js') }}"></script>
@@ -133,5 +150,18 @@
         }
 
         $('#contact_form').submit();
+    }
+
+    function news_validate(){
+        if($("#subscriber_mail").val() == ""){
+            $("#subscriber_mail").addClass("is-invalid");
+            $("#error_subscriber_mail").show();
+            return;
+        }else{
+            $("#subscriber_mail").removeClass("is-invalid");
+            $("#error_subscriber_mail").hide();
+        }
+
+        $('#news_letter_form').submit();
     }
 </script>

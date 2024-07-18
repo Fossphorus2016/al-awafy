@@ -13,16 +13,39 @@
 
                 <input type="text" id="tableSearch" class="form-control" style="width: 200px;">
             </div>
-            <table class="table" id="table">
+            <table class="table table-row-bordered table-row-gray-600 table-striped table-hover gy-5 rounded dataTable"
+                id="table">
                 <thead>
                     <th>ID</th>
                     <th>EMAIL</th>
                     <th>ACTION</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                    </tr>
+                    @if (count($letters) > 0)
+
+                        @foreach ($letters as $letter)
+                            <tr>
+                                <td>
+                                    {{ $letter->id }}
+                                </td>
+                                <td>
+                                    {{ $letter->subscriber_mail }}
+                                </td>
+                                <td>
+                                    <form method="POST" action="{{ route('news.letter.delete', $letter->id) }}"
+                                        id="deleteForm_{{ $letter->id }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="button" id="deleteButton_{{ $letter->id }}"
+                                            onclick="letterDelete({{ $letter->id }})" class="btn btn-danger">
+                                            <i class="bi bi-trash fs-2"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        @endforeach
+                    @else
+                    @endif
                 </tbody>
             </table>
         </div>
@@ -31,6 +54,27 @@
 </x-admin.layouts>
 
 <script>
+    function letterDelete(letterId) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you really want to delete this item?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+                const form = document.getElementById('deleteForm_' + letterId);
+                if (form) {
+                    form.submit();
+                } else {
+                    console.error('Form element not found');
+                }
+            }
+        });
+    }
     $(document).ready(function() {
         var commonOptions = {
             ordering: false,

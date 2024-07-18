@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\NewsLetter;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -22,6 +23,14 @@ class AdminController extends Controller
 
     public function get_news_letter()
     {
-        return view('admin.news_letter');
+        $letters = NewsLetter::latest()->get();
+        return view('admin.news_letter', ['letters' => $letters]);
+    }
+
+    public function news_letter_delete($id)
+    {
+        $letter = NewsLetter::find($id);
+        $letter->delete();
+        return back()->with('back-success', 'Newsletter deleted successfully');
     }
 }
