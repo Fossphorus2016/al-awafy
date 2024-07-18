@@ -19,6 +19,7 @@
     <link href="{{ asset('admin_assets/css/admin.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin_assets/ckeditor/jodit.min.css') }}" rel="stylesheet" rel="nofollow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <!--end::Global Stylesheets Bundle-->
 
 
