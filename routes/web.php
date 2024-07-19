@@ -8,35 +8,69 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return redirect()->route('en.home');
+    if (Auth::check()) {
+        return redirect()->route('contact');
+    } else {
+        return redirect()->route('en.home');
+    }
 });
 
 
 
 Route::prefix('En')->group(function () {
-    Route::get('/about', function () {return view('en.about_us');})->name('en.about');
-    Route::get('/home', function () {return view('en.home');})->name('en.home');
-    Route::get('/contact-us', function () {return view('en.contact_us');})->name('en.contact');
-    Route::get('/our-products', function () {return view('en.our_products');})->name('en.our.products');
-    Route::get('/blogs', function () {return view('en.blogs');})->name('en.blogs');
+    Route::get('/about', function () {
+        return view('en.about_us');
+    })->name('en.about');
+    Route::get('/home', function () {
+        return view('en.home');
+    })->name('en.home');
+    Route::get('/contact-us', function () {
+        return view('en.contact_us');
+    })->name('en.contact');
+    Route::get('/our-products', function () {
+        return view('en.our_products');
+    })->name('en.our.products');
+    Route::get('/blogs', function () {
+        return view('en.blogs');
+    })->name('en.blogs');
 });
 
 
 Route::prefix('Ar')->group(function () {
-    Route::get('/about', function () {return view('ar.about_us');})->name('ar.about');
-    Route::get('/home', function () {return view('ar.home');})->name('ar.home');
-    Route::get('/contact-us', function () {return view('ar.contact_us');})->name('ar.contact');
-    Route::get('/our-products', function () {return view('ar.our_products');})->name('ar.our.products');
-    Route::get('/blogs', function () {return view('ar.blogs');})->name('ar.blogs');
+    Route::get('/about', function () {
+        return view('ar.about_us');
+    })->name('ar.about');
+    Route::get('/home', function () {
+        return view('ar.home');
+    })->name('ar.home');
+    Route::get('/contact-us', function () {
+        return view('ar.contact_us');
+    })->name('ar.contact');
+    Route::get('/our-products', function () {
+        return view('ar.our_products');
+    })->name('ar.our.products');
+    Route::get('/blogs', function () {
+        return view('ar.blogs');
+    })->name('ar.blogs');
 });
 
 
 Route::prefix('Fr')->group(function () {
-    Route::get('/about', function () {return view('fr.about_us');})->name('fr.about');
-    Route::get('/home', function () {return view('fr.home');})->name('fr.home');
-    Route::get('/contact-us', function () {return view('fr.contact_us');})->name('fr.contact');
-    Route::get('/our-products', function () {return view('fr.our_products');})->name('fr.our.products');
-    Route::get('/blogs', function () {return view('fr.blogs');})->name('fr.blogs');
+    Route::get('/about', function () {
+        return view('fr.about_us');
+    })->name('fr.about');
+    Route::get('/home', function () {
+        return view('fr.home');
+    })->name('fr.home');
+    Route::get('/contact-us', function () {
+        return view('fr.contact_us');
+    })->name('fr.contact');
+    Route::get('/our-products', function () {
+        return view('fr.our_products');
+    })->name('fr.our.products');
+    Route::get('/blogs', function () {
+        return view('fr.blogs');
+    })->name('fr.blogs');
 });
 
 
