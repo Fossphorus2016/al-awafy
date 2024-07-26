@@ -1,0 +1,46 @@
+.cls1{
+    height: 1000px;
+}
+.scrollDownSection{
+    height: 600px;
+    background-color: red;
+}
+.slick-arrow{
+    display: none !important;
+}
+.slick-dots .slick-active button:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    background-color: var(--baseColor1);
+    border-radius: 50%;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.slick-dots li button:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    background-color: rgb(255, 185, 185);
+    border-radius: 50%;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slick-dots {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* left: 100%; */
+    bottom: -500%;
+}

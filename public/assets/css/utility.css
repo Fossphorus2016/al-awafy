@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "kufamRegular";
+    src: url("../fonts/kufam/Kufam-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "kufamMedium";
+    src: url("../fonts/kufam/Kufam-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "kufamBold";
+    src: url("../fonts/kufam/Kufam-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CarolinaMountainsPersonal";
+    src: url("../fonts/carolina/CarolinaMountainsPersonalUse.ttf") format("truetype");
+}
+
+
+
+:root {
+    --easeInTransition: all .3s ease-in;
+    --baseColor1: #50A702;
+    --baseColor2: #085082;
+    --baseColor3: #008FD3;
+    --baseColor4: #000;
+    --baseColor5: #fff;
+    font-size: 16px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    font-family: 'kufamRegular';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* scroll bar  */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--baseColor2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+.mainBtn1 {
+    background-color: var(--baseColor1);
+    color: var(--baseColor5);
+    font-family: 'kufamBold';
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px 7px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--easeInTransition);
+    box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+}
+
+.mainBtn1:hover {
+    background-color: #377500;
+}
+.mainBtn2 {
+    background-color: var(--baseColor3);
+    color: var(--baseColor5);
+    font-family: 'kufamBold';
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px 7px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--easeInTransition);
+    box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+}
+
+.mainBtn2:hover {
+    background-color: #085082;
+}
+
+.customContainer {
+    width: auto;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+    margin-right: auto;
+    margin-left: auto;
+    transition: var(--easeInTransition);
+}
+
+.fs1 {
+    font-size: 20px;
+    font-family: 'kufamRegular';
+}
+
+.fs2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-family: 'kufamMedium';
+    color: var(--baseColor3);
+    text-transform: uppercase;
+}
+
+.fs3 {
+    font-size: clamp(2rem, 4.5vw, 4.3rem);
+    font-family: 'kufamBold';
+    text-transform: uppercase;
+    color: var(--baseColor3);
+}
+
+
+
+@media (min-width: 320px) {
+
+    .customContainer {
+        width: auto;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .customContainer {
+        max-width: 540px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .customContainer {
+        max-width: 720px;
+    }
+}
+
+
+@media (min-width: 991px) {
+
+    .customContainer {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .customContainer {
+        max-width: 1170px;
+    }
+}
