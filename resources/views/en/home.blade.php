@@ -15,15 +15,15 @@
             <div class="cls">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, perferendis!
             </div>
         </div>
+        {{-- 
         <div class="">
             <div class="cls1"></div>
             <div class="cls1"></div>
             <div class="cls1"></div>
             <div class="cls1"></div>
-        </div>
-        {{-- <div class="scrollDownSection">
-
-        </div> --}}
+        </div> 
+        --}}
+        {{-- <div class="scrollDownSection"></div> --}}
     </div>
 </main>
 </x-layout> 
