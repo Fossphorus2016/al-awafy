@@ -30,21 +30,7 @@
     <meta name="description" property="og:description" content="">
     <!-- Og info end -->
 
-    <!-- bootstrap -->
 
-
-    <!-- flat picker  -->
-
-
-    <!-- remix Icon  -->
-
-    <!-- aos  -->
-
-
-    <!-- slick css  -->
-
-
-    <!-- fancybox css  -->
 
 
     <link rel="apple-touch-icon" sizes="120x120" href="">
@@ -56,6 +42,7 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/slick-theme.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/slick.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/fancybox.css') }}">
 
     <!-- custom styles  -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -68,90 +55,65 @@
     <meta name="base-url" content="">
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
-    <header>
+    <header class="headerVisible position-absolute w-100">
         <div class="customContainer">
 
-
-            <nav class="navbar bg-light fixed-top d-lg-none d-block">
+            <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"> <img src="{{ asset('assets/images/logo/logo.png') }}"
-                            alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <a class="navbar-brand" href="#"> <img
-                                    src="{{ asset('assets/images/logo/logo.png') }}" alt=""></a>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body menuRight">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item fs1">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item fs1">
-                                    <a class="nav-link" href="#">About Us</a>
-                                </li>
-                                <li class="nav-item fs1">
-                                    <a class="nav-link" href="#">Our Products</a>
-                                </li>
-                                <li class="nav-item fs1">
-                                    <a class="nav-link" href="#">Blogs</a>
-                                </li>
-                                <li class="nav-item fs1">
-                                    <button class="mainBtn1">Contact Us</button>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <nav class="navbar navbar-expand-lg  d-lg-block d-none">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"> <img src="{{ asset('assets/images/logo/logo.png') }}"
-                            alt=""></a>
+                    <a class="navbar-brand" href="#"> <img class="headerLogo"
+                            src="{{ asset('assets/images/logo/logo.png') }}" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse menuRight" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 ">
-                            <li class="nav-item fs1">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav justify-content-end ">
+                            <li class="nav-item ">
+                                <a class="nav-link fs1" href="#">Home</a>
                             </li>
-                            <li class="nav-item fs1">
-                                <a class="nav-link" href="#">About Us</a>
+                            <li class="nav-item ">
+                                <a class="nav-link fs1" href="#">About Us</a>
                             </li>
-                            <li class="nav-item fs1">
-                                <a class="nav-link" href="#">Our Products</a>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle fs1" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Brands
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Brand 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Brand 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Brand 3</a></li>
+
+                                </ul>
                             </li>
-                            <li class="nav-item fs1">
-                                <a class="nav-link" href="#">Blogs</a>
+                            <li class="nav-item ">
+                                <a class="nav-link fs1" href="#">Blogs</a>
                             </li>
-                            <li class="nav-item fs1">
+                            <li class="nav-item ">
                                 <button class="mainBtn1">Contact Us</button>
                             </li>
-
                         </ul>
 
                     </div>
                 </div>
             </nav>
+
+
+
         </div>
     </header>
     {{ $slot }}
-    <footer class="text-center text-lg-start bg-dark text-white">
+    <footer class="text-center text-lg-start text-white footer">
 
 
         <!-- Section: Links  -->
@@ -162,31 +124,40 @@
                     <!-- Grid column -->
                     <div class="col-lg-3 ">
                         <!-- Content -->
-                        <img src="{{ asset('assets/images/logo/f-logo.png') }}" alt="">
+                        <img class="mb-4" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aliquam ipsum asperiores
-                            quo ut numquam reprehenderit laboriosam unde.</p>
+                            quo ut numq.</p>
+
+                        <div class="heroSliderFooter">
+                            <a class="icons"
+                                href="https://www.facebook.com/p/Alawafy-%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%81%D9%8A-100095340142490/">
+                                <i class="fa-brands fa-facebook-f"></i> </a>
+                            <a class="icons" href="https://www.instagram.com/alawafyfoods/"> <i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a class="icons" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-lg-3 ">
+                    <div class="col-lg-3 ps-5">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold ">
-                            Our Menu
+                        <h6 class="mt-5 text-uppercase fw-bold mb-4 fs-4">
+                            Quick Links
                         </h6>
-                        <p class="mt-3">
+                        <p class="mt-1">
                             <a href="#!" class="text-reset ">Home</a>
                         </p>
-                        <p class="mt-3">
+                        <p class="mt-1">
                             <a href="#!" class="text-reset ">About Us</a>
                         </p>
-                        <p class="mt-3">
-                            <a href="#!" class="text-reset ">Product</a>
+                        <p class="mt-1">
+                            <a href="#!" class="text-reset ">Our Brands</a>
                         </p>
-                        <p class="mt-3">
-                            <a href="#!" class="text-reset ">Blog</a>
+                        <p class="mt-1">
+                            <a href="#!" class="text-reset ">Blogs</a>
                         </p>
-                        <p class="mt-3">
+                        <p class="mt-1">
                             <a href="#!" class="text-reset ">Contact Us</a>
                         </p>
 
@@ -196,37 +167,40 @@
                     <!-- Grid column -->
                     <div class="col-lg-3 ">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold ">
-                            Resources
+                        <h6 class="text-uppercase fw-bold mt-5 mb-4 fs-4">
+                            Company
                         </h6>
-                        <p class="mt-3">
-                            <a href="#!" class="text-reset ">News </a>
+                        <p class="mt-1">
+                            <a href="#!" class="text-reset ">Al-Awafy </a>
                         </p>
-                        <p class="mt-3">
-                            <a href="#!" class="text-reset ">About Us</a>
+                        <p class="mt-1">
+                            <a href="#!" class="text-reset ">Crisco</a>
                         </p>
-                        <p class="mt-3">
-                            <a href="#!" class="text-reset ">Menu</a>
+                        <p class="mt-1">
+                            <a href="#!" class="text-reset ">Alyoum</a>
                         </p>
-                        <p class="mt-3">
-                            <a href="#!" class="text-reset ">Career</a>
-                        </p>
+
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
                     <div class="col-lg-3 ">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold ">
-                            Newsletter
+                        <h6 class="mt-5 text-uppercase fw-bold fs-4">
+                            Subscribe Now
                         </h6>
-                        <p class="my-2">Lorem ipsum dolor sit amet, consecte </p>
-                        <form class="newsletter_form">
+                        <p class="my-2">Lorem ipsum dolor sit amet, consecte
+                            <br>
+                            adipiscing elit. Sed porttitor.
+                        </p>
+                        <form class="newsletter_form mt-4">
 
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Enter Your Email Address" aria-label="Enter Your Email Address" aria-describedby="button-addon2">
-                                <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa-solid fa-paper-plane"></i></button>
-                              </div>
+
+                            <input type="text" class="" placeholder="Enter Your Email Address"
+                                aria-label="Enter Your Email Address" aria-describedby="button-addon2">
+                            <button class="" type="button" id="button-addon2"><i
+                                    class="fa-solid fa-paper-plane"></i></button>
+
                         </form>
                     </div>
                     <!-- Grid column -->
@@ -237,14 +211,18 @@
         <!-- Section: Links  -->
 
         <!-- Copyright -->
-        <div class= "footerbottom" >
+        <div class= "footerbottom">
             <div class=" customContainer">
-                <div class="row py-3 justify-content-center align-items-center"  style="border-top: 2px solid black">
+                <div class="row py-3 justify-content-center align-items-center">
 
-                    <div class="col-10 text-center" >
+                    <div class="col-6 ">
                         <p>Copyright © 2024 - All Right Reserved | Developed By Fossphorus</p>
                     </div>
-                   
+                    <div class="col-6 text-end">
+                        <a href="" class="text-white">Privacy Policy</a> | <a class="text-white"
+                            href="">Terms & Conditions</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -253,7 +231,10 @@
 
     <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/slick.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('assets/js/fancybox.umd.js') }}"></script>
 </body>
 
 </html>
