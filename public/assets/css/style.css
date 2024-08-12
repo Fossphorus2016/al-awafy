@@ -2,6 +2,10 @@
     display: none !important;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .heroSliderOuter {
     position: relative;
 }
@@ -404,6 +408,7 @@
     bottom: 0;
     width: 100%;
     height: auto;
+    left: 0;
 }
 
 .anchorHover:hover {
