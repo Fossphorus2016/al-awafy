@@ -79,10 +79,10 @@
 
                         <ul class="navbar-nav justify-content-end ">
                             <li class="nav-item ">
-                                <a class="nav-link fs1" href="#">Home</a>
+                                <a class="nav-link fs1 underLineAffect" href="#">Home</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs1" href="#">About Us</a>
+                                <a class="nav-link fs1 underLineAffect " href="#">About Us</a>
                             </li>
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle fs1" href="#" role="button"
@@ -97,10 +97,10 @@
                                 </ul>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs1" href="#">Blogs</a>
+                                <a class="nav-link fs1 underLineAffect" href="#">Blogs</a>
                             </li>
                             <li class="nav-item ">
-                                <button class="mainBtn1">Contact Us</button>
+                                <button class="mainBtn1 ">Contact Us</button>
                             </li>
                         </ul>
 
@@ -129,12 +129,12 @@
                             quo ut numq.</p>
 
                         <div class="heroSliderFooter">
-                            <a class="icons"
+                            <a class="icons" target="_blank"
                                 href="https://www.facebook.com/p/Alawafy-%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%81%D9%8A-100095340142490/">
                                 <i class="fa-brands fa-facebook-f"></i> </a>
-                            <a class="icons" href="https://www.instagram.com/alawafyfoods/"> <i
+                            <a class="icons" target="_blank" href="https://www.instagram.com/alawafyfoods/"> <i
                                     class="fa-brands fa-instagram"></i></a>
-                            <a class="icons" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a class="icons" target="_blank" href=""><i class="fa-brands fa-x-twitter"></i></a>
                         </div>
                     </div>
                     <!-- Grid column -->
@@ -146,19 +146,19 @@
                             Quick Links
                         </h6>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset ">Home</a>
+                            <a href="#!" class="text-reset anchorHover">Home</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset ">About Us</a>
+                            <a href="#!" class="text-reset anchorHover">About Us</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset ">Our Brands</a>
+                            <a href="#!" class="text-reset anchorHover">Our Brands</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset ">Blogs</a>
+                            <a href="#!" class="text-reset anchorHover">Blogs</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset ">Contact Us</a>
+                            <a href="#!" class="text-reset anchorHover">Contact Us</a>
                         </p>
 
                     </div>
@@ -171,13 +171,13 @@
                             Company
                         </h6>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset ">Al-Awafy </a>
+                            <a href="#!" class="text-reset anchorHover">Al-Awafy </a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset ">Crisco</a>
+                            <a href="#!" class="text-reset anchorHover">Crisco</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset ">Alyoum</a>
+                            <a href="#!" class="text-reset anchorHover">Alyoum</a>
                         </p>
 
                     </div>
@@ -219,7 +219,7 @@
                         <p>Copyright © 2024 - All Right Reserved | Developed By Fossphorus</p>
                     </div>
                     <div class="col-6 text-end">
-                        <a href="" class="text-white">Privacy Policy</a> | <a class="text-white"
+                        <a href="" class="text-white anchorHover">Privacy Policy</a> | <a class="text-white anchorHover"
                             href="">Terms & Conditions</a>
                     </div>
 

@@ -92,6 +92,7 @@ a {
 .mainBtn1:hover {
     background-color: #377500;
 }
+
 .mainBtn2 {
     background-color: var(--baseColor3);
     color: var(--baseColor5);
@@ -123,7 +124,8 @@ a {
     transition: var(--easeInTransition);
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: var(--baseColor5);
 }
 
@@ -134,40 +136,47 @@ a {
 }
 
 .fs2 {
-    font-size:clamp(1.9rem, 6.5vw, 6rem);
+    font-size: clamp(1.9rem, 6.5vw, 6rem);
     font-family: 'impact';
     color: var(--baseColor5);
 }
+
 .fs3 {
     font-size: clamp(3rem, 6.5vw, 6rem);
     font-family: 'euphoriaScript';
     color: var(--baseColor5);
 }
+
 .fs4 {
     font-size: clamp(1rem, 1vw, 1rem);
     font-family: 'arial';
     color: var(--baseColor5);
 }
+
 .fs5 {
     font-size: clamp(3rem, 5vw, 5rem);
     font-family: 'impact';
     color: var(--baseColor2);
 }
+
 .fs6 {
     font-size: clamp(3rem, 6.5vw, 5rem);
     font-family: 'euphoriaScript';
     color: var(--baseColor1);
 }
+
 .fs7 {
     font-size: clamp(3rem, 5vw, 5rem);
     font-family: 'impact';
     color: var(--baseColor5);
 }
+
 .fs8 {
     font-size: clamp(3rem, 6.5vw, 5rem);
     font-family: 'euphoriaScript';
     color: var(--baseColor5);
 }
+
 .fs9 {
     font-size: clamp(2rem, 2vw, 2rem);
     font-family: 'arial';
@@ -175,6 +184,7 @@ a {
     font-weight: 600;
     line-height: 1;
 }
+
 .fs10 {
     font-size: clamp(2rem, 2vw, 2rem);
     font-family: 'arial';
@@ -182,7 +192,7 @@ a {
     font-weight: 600;
 }
 
-.paraFont p{
+.paraFont p {
     font-size: clamp(1rem, 1vw, 1rem);
     font-family: 'arial';
     color: #999999;
@@ -190,12 +200,14 @@ a {
     width: 90%;
     padding-bottom: 30px;
 }
-.waterDropsBefore{
+
+.waterDropsBefore {
     position: relative;
     width: fit-content;
     margin: 0 60px 0 60px;
 }
-.waterDropsBefore::before{
+
+.waterDropsBefore::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -206,12 +218,14 @@ a {
     width: 50px;
     height: 50px;
 }
-.waterDropsAfter{
+
+.waterDropsAfter {
     position: relative;
     width: fit-content;
     margin: 0 60px 0 60px;
 }
-.waterDropsAfter::after{
+
+.waterDropsAfter::after {
     content: '';
     position: absolute;
     bottom: -12px;
@@ -224,6 +238,28 @@ a {
 }
 
 
+.underLineAffect {
+    display: inline-block;
+    position: relative;
+    color: white !important; /* Text color */
+    text-decoration: none; /* Remove default underline */
+}
+
+.underLineAffect::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px; /* Adjust based on your desired distance from the text */
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: var(--baseColor1); /* Underline color */
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth animation */
+}
+
+.underLineAffect:hover::after {
+    width: 100%;
+    left: 0;
+}
 
 @media (min-width: 320px) {
 

@@ -2,16 +2,18 @@
     display: none !important;
 }
 
-.heroSliderOuter{
+.heroSliderOuter {
     position: relative;
 }
+
 .heroSliderIcon {
     position: absolute;
     z-index: 6;
     top: 40%;
     transform: translateY(-50%);
 }
-.heroSliderIcon  .icons{
+
+.heroSliderIcon .icons {
     color: white;
     margin-top: 10px;
     font-size: 30px;
@@ -22,7 +24,8 @@
     justify-content: center;
     align-items: center;
 }
-.heroSliderIcon .icons:hover{
+
+.heroSliderIcon .icons:hover {
     background-color: var(--baseColor1);
 }
 
@@ -30,6 +33,7 @@
     display: flex;
     gap: 15px;
 }
+
 .heroSliderFooter a {
     display: inline-block;
     background-color: transparent;
@@ -42,17 +46,20 @@
     font-size: 1.3rem;
     position: relative;
 }
+
 .heroSliderFooter a i {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .heroSliderFooter a:hover {
     background-color: white;
     color: var(--baseColor2);
 }
-.heroSliderFooter  .icons{
+
+.heroSliderFooter .icons {
     color: white;
     margin-top: 10px;
     font-size: 30px;
@@ -63,8 +70,10 @@
     justify-content: center;
     align-items: center;
 }
-.heroSliderFooter .icons:hover{
+
+.heroSliderFooter .icons:hover {
     background-color: var(--baseColor1);
+    color: white !important;
 }
 
 .heroSlider .slick-dots .slick-active button:before {
@@ -190,12 +199,18 @@
     background-size: cover;
 }
 
-
+.singleValue {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 .singleValue img {
     filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, .4));
     margin-bottom: 20px;
     width: 180px;
+    border-radius: 50%;
     transition: background-color 0.5s ease, border-radius 0.5s ease;
     /* Adding transition */
 
@@ -302,6 +317,10 @@
     color: white;
 }
 
+.headerVisible .dropdown-menu li a {
+    color: black;
+}
+
 .aboutInnerImg {
     position: relative;
     max-width: 560px;
@@ -313,7 +332,7 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    animation-name: floating;
+
 }
 
 .aboutItem1 {
@@ -321,6 +340,7 @@
     right: 10%;
     transform: translateY(-50%);
     animation-delay: 0s;
+    animation-name: floating;
 
 }
 
@@ -330,6 +350,7 @@
     width: 220px;
     transform: translateY(-50%);
     animation-delay: 1s;
+    animation-name: floating1;
 }
 
 .aboutItem3 {
@@ -337,16 +358,18 @@
     left: 30%;
     transform: translateY(-50%);
     animation-delay: 0.5s;
-
+    animation-name: floating;
 }
+
 
 .aboutItem4 {
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
     animation-delay: 0.3s;
-
+    animation-name: floating;
 }
+
 
 @keyframes floating {
     from {
@@ -362,10 +385,51 @@
     }
 }
 
+@keyframes floating1 {
+    from {
+        transform: translateY(-50%);
+    }
+
+    65% {
+        transform: translateY(-45%);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+.nutsImg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.anchorHover:hover {
+    color: #c5c5c4 !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: var(--baseColor1);
+    background-color: var(--baseColor1);
+    color: white;
+}
+
 @media (max-width: 992px) {
-    .heroSliderIcon{
+    .nutsImg {
+        bottom: -40px;
+    }
+
+    .heroSliderFooter {
+        justify-content: center;
+    }
+
+    .heroSliderIcon {
         display: none;
     }
+
     .headerLogo {
         width: 130px;
     }
@@ -384,15 +448,19 @@
     .headerVisible {
         background-color: white;
     }
-    .headerVisible ul li a{
+
+    .headerVisible ul li a {
         color: black;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         margin-top: 20px;
         gap: 20px;
     }
-    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-        color: black ;
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: black;
     }
 }
 

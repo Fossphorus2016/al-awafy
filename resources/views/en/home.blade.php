@@ -6,9 +6,9 @@
 
 
                     <div class="heroSliderIcon">
-                        <a class="icons" href="https://www.facebook.com/p/Alawafy-%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%81%D9%8A-100095340142490/"> <i class="fa-brands fa-facebook-f"></i> </a>
-                        <a class="icons" href="https://www.instagram.com/alawafyfoods/"> <i class="fa-brands fa-instagram"></i></a>
-                        <a class="icons" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a class="icons" target="_blank" href="https://www.facebook.com/p/Alawafy-%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%81%D9%8A-100095340142490/"> <i class="fa-brands fa-facebook-f"></i> </a>
+                        <a class="icons" target="_blank" href="https://www.instagram.com/alawafyfoods/"> <i class="fa-brands fa-instagram"></i></a>
+                        <a class="icons" target="_blank" href=""><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
 
                     <div class="heroSlider">
@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
-                            <h2><span class="fs5">Lorem</span> <span class="fs6">ipsum</span> </h2>
+                            <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sit laboriosam
                                 reprehenderit numquam fugiat itaque amet eius laudantium repellat necessitatibus,
@@ -90,6 +90,8 @@
                                 src="{{ asset('assets/images/items/item3.png') }}" alt="">
                             <img class="abouteItem aboutItem4" class="w-100"
                                 src="{{ asset('assets/images/items/item4.png') }}" alt="">
+                            <img class="nutsImg" class="w-100"
+                                src="{{ asset('assets/images/items/nuts.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -100,24 +102,24 @@
             <div class="customContainer">
                 <div class="valueSectionInner">
 
-                    <h2><span class="fs7">Lorem</span> <span class="fs8">ipsum</span> </h2>
+                    <h2><span class="fs7">Our</span> <span class="fs8">Values</span> </h2>
                     <div class="row gy-5">
                         <div class="col-lg-4 col-12">
                             <div class="singleValue">
                                 <img src="{{ asset('assets/images/shape/premiumQuality.png') }}" alt="">
-                                <p class="fs9">Lorem ipsum</p>
+                                <p class="fs9">Premium <br> Quality</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-12">
                             <div class="singleValue">
                                 <img src="{{ asset('assets/images/shape/roasted.png') }}" alt="">
-                                <p class="fs9">Lorem ipsum</p>
+                                <p class="fs9">Traditionally <br> Roasted</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-12">
                             <div class="singleValue">
                                 <img src="{{ asset('assets/images/shape/natural.png') }}" alt="">
-                                <p class="fs9">Lorem ipsum</p>
+                                <p class="fs9">All <br> Natural</p>
                             </div>
                         </div>
                     </div>
@@ -129,7 +131,7 @@
         <section class="ourBrands py-5">
             <div class="customContainer">
                 <div>
-                    <h2 class="text-center pb-4"><span class="fs5">Lorem</span> <span class="fs6">ipsum</span>
+                    <h2 class="text-center pb-4"><span class="fs5">Our</span> <span class="fs6">Brands</span>
                     </h2>
 
                     <div class="row showRow1 gy-4">
@@ -301,7 +303,7 @@
                     <h2 class="waterDropsBefore"> <span class="fs7"> Lorem ipsum </span></h2>
                     <h2 class=""> <span class="fs7"> Lorem ipsum</span> <span
                             class="fs8 waterDropsAfter ms-0">dolor sit</span> </h2>
-                    <div class="pt-3"><button class="mainBtn1">LEARN MORE</button> <button class="mainBtn2">CONTACT
+                    <div class="pt-3 "><button class="mainBtn1 me-3 position-relative z-1">LEARN MORE</button> <button class="mainBtn2 position-relative z-1">CONTACT
                             US</button> </div>
                 </div>
             </div>
@@ -311,7 +313,7 @@
             <div class="customContainer  py-5">
                 <div>
 
-                    <h2 class="text-center pb-4"><span class="fs5">Lorem</span> <span class="fs6">ipsum</span>
+                    <h2 class="text-center pb-4"><span class="fs5">Watch</span> <span class="fs6">Video</span>
                     </h2>
 
                     <a href="https://www.youtube.com/embed/5K21Kg8vCk0?si=pc77lX6Uvr8uzwRk" data-fancybox="gallery"
@@ -330,7 +332,7 @@
             <div class="customContainer  py-5">
                 <div>
 
-                    <h2 class="text-center pb-4"><span class="fs5">Lorem</span> <span class="fs6">ipsum</span>
+                    <h2 class="text-center pb-4"><span class="fs5">Let's Connect</span> <span class="fs6">With Us</span>
                     </h2>
 
                     <div class="row connectSectionInner justify-content-center">
