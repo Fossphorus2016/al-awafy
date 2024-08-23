@@ -127,15 +127,16 @@
                         <img class="mb-4" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aliquam ipsum asperiores
                             quo ut numq.</p>
-
                         <div class="heroSliderFooter">
-                            <a class="icons" target="_blank"
-                                href="https://www.facebook.com/p/Alawafy-%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%81%D9%8A-100095340142490/">
+                            <a class="icons fbLink" target="_blank"
+                                href="">
                                 <i class="fa-brands fa-facebook-f"></i> </a>
-                            <a class="icons" target="_blank" href="https://www.instagram.com/alawafyfoods/"> <i
+                            <a class="icons instaLink" target="_blank"
+                                href=""> <i
                                     class="fa-brands fa-instagram"></i></a>
-                            <a class="icons" target="_blank" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a class="icons whatsappLink" target="_blank" href=""><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
+
                     </div>
                     <!-- Grid column -->
 
@@ -219,8 +220,8 @@
                         <p>Copyright © 2024 - All Right Reserved | Developed By Fossphorus</p>
                     </div>
                     <div class="col-6 text-end">
-                        <a href="" class="text-white anchorHover">Privacy Policy</a> | <a class="text-white anchorHover"
-                            href="">Terms & Conditions</a>
+                        <a href="" class="text-white anchorHover">Privacy Policy</a> | <a
+                            class="text-white anchorHover" href="">Terms & Conditions</a>
                     </div>
 
                 </div>

@@ -6,9 +6,9 @@
 
 
                     <div class="heroSliderIcon">
-                        <a class="icons" target="_blank" href="https://www.facebook.com/p/Alawafy-%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%81%D9%8A-100095340142490/"> <i class="fa-brands fa-facebook-f"></i> </a>
-                        <a class="icons" target="_blank" href="https://www.instagram.com/alawafyfoods/"> <i class="fa-brands fa-instagram"></i></a>
-                        <a class="icons" target="_blank" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a class="icons fbLink" target="_blank" href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+                        <a class="icons instaLink" target="_blank" href=""> <i class="fa-brands fa-instagram"></i></a>
+                        <a class="icons whatsappLink" target="_blank" href=""><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
 
                     <div class="heroSlider">
@@ -128,6 +128,26 @@
             </div>
         </section>
 
+        <section class="watchVideoSection">
+            <div class="customContainer  py-5">
+                <div>
+
+                    <h2 class="text-center pb-4"><span class="fs5">Watch</span> <span class="fs6">Video</span>
+                    </h2>
+
+                    <a href="https://www.youtube.com/embed/5K21Kg8vCk0?si=pc77lX6Uvr8uzwRk" data-fancybox="gallery"
+                        data-caption="Caption #1" data-type="iframe">
+                        <div>
+
+                        </div>
+                        <img class="w-100" src="{{ asset('assets/images/banner/videoBanner1.png') }}"
+                            alt="Thumbnail">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
         <section class="ourBrands py-5">
             <div class="customContainer">
                 <div>
@@ -169,8 +189,7 @@
                                 <div class="card-body paraFont py-4">
                                     <img class="w-100" src="{{ asset('assets/images/items/brandItem3.png') }}"
                                         alt="">
-                                    <img class="py-3" src="{{ asset('assets/images/logo/logo3.png') }}"
-                                        alt="">
+                                    <img style="width: 145px;object-fit: contain;" class="pb-2" src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
                                     <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
@@ -210,9 +229,9 @@
                         <div class="col-lg-4 brandCardOuter col-12">
 
                             <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo3.png') }}"
-                                        alt="">
+                                <div class="card-body paraFont py-4 pt-2">
+                                    <img style="width: 145px;object-fit: contain;" class="pb-2" src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
+
                                     <img class="pb-3 w-100" class="py-3"
                                         src="{{ asset('assets/images/items/brandItem3.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
@@ -309,25 +328,7 @@
             </div>
         </section>
 
-        <section class="watchVideoSection">
-            <div class="customContainer  py-5">
-                <div>
 
-                    <h2 class="text-center pb-4"><span class="fs5">Watch</span> <span class="fs6">Video</span>
-                    </h2>
-
-                    <a href="https://www.youtube.com/embed/5K21Kg8vCk0?si=pc77lX6Uvr8uzwRk" data-fancybox="gallery"
-                        data-caption="Caption #1" data-type="iframe">
-                        <div>
-
-                        </div>
-                        <img class="w-100" src="{{ asset('assets/images/banner/videoBanner1.png') }}"
-                            alt="Thumbnail">
-                    </a>
-
-                </div>
-            </div>
-        </section>
         <section class="connectSection">
             <div class="customContainer  py-5">
                 <div>
@@ -338,25 +339,25 @@
                     <div class="row connectSectionInner justify-content-center">
                         <div class="col-lg-3 col-12">
                             <div class="singleValue">
-                                <a href="">
-                                    <img src="{{ asset('assets/images/shape/facebook.png') }}" alt="">
+                                <a class="fbLink" href="">
+                                    <img src="{{ asset('assets/images/shape/facebook1.png') }}" alt="">
                                 </a>
 
                             </div>
                         </div>
                         <div class="col-lg-3 col-12">
                             <div class="singleValue">
-                                <a href="">
+                                <a class="instaLink" href="">
 
-                                    <img src="{{ asset('assets/images/shape/insta.png') }}" alt="">
+                                    <img src="{{ asset('assets/images/shape/insta1.png') }}" alt="">
                                 </a>
 
                             </div>
                         </div>
                         <div class="col-lg-3 col-12">
                             <div class="singleValue">
-                                <a href="">
-                                    <img src="{{ asset('assets/images/shape/x.png') }}" alt="">
+                                <a class="whatsappLink" href="">
+                                    <img src="{{ asset('assets/images/shape/whatsapp1.png') }}" alt="">
                                 </a>
 
                             </div>
