@@ -2,7 +2,7 @@
     display: none !important;
 }
 
-html{
+html {
     overflow-x: hidden;
 }
 
@@ -81,7 +81,7 @@ html{
 }
 
 .heroSlider .slick-dots .slick-active button:before {
-    content: '';
+    content: "";
     width: 15px;
     height: 15px;
     margin: 0 5px;
@@ -96,7 +96,7 @@ html{
 }
 
 .heroSlider .slick-dots li button:before {
-    content: '';
+    content: "";
     width: 20px;
     height: 20px;
     margin: 0 5px;
@@ -112,7 +112,7 @@ html{
 }
 
 .heroSlider .slick-dots .slick-active button::after {
-    content: '';
+    content: "";
     width: 30px;
     height: 30px;
     margin: 0 5px;
@@ -162,7 +162,7 @@ html{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('../images/banner/homeBanner.png');
+    background-image: url("../images/banner/homeBanner.png");
     padding-top: 120px;
     border-radius: 0 0 80px 80px;
     border-bottom: 15px solid var(--baseColor1);
@@ -173,7 +173,6 @@ html{
     max-width: 950px;
 }
 
-
 .aboutInner {
     display: flex;
     flex-direction: column;
@@ -181,23 +180,25 @@ html{
 }
 
 .valueSection {
-
     text-align: center;
 }
 
 .curvedLayer {
     position: relative;
-    background: linear-gradient(360deg, rgba(1, 27, 67, 1) 0%, rgba(0, 147, 215, 1) 100%);
-
+    background: linear-gradient(
+        360deg,
+        rgba(1, 27, 67, 1) 0%,
+        rgba(0, 147, 215, 1) 100%
+    );
 }
 
 .curvedLayer::before {
     width: 100%;
     height: 100%;
-    content: '';
+    content: "";
     left: 0;
     position: absolute;
-    background-image: url('../images/banner/homeBanner1.png');
+    background-image: url("../images/banner/homeBanner1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -211,20 +212,28 @@ html{
 }
 
 .singleValue img {
-    filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, .4));
+    filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.4));
     margin-bottom: 20px;
     width: 180px;
     border-radius: 50%;
     transition: background-color 0.5s ease, border-radius 0.5s ease;
     /* Adding transition */
-
 }
 
 .singleValue img:hover {
     background-color: var(--baseColor1);
     border-radius: 50%;
 }
-
+.singleValue .fbLink img:hover {
+    background-color: #0866ff; 
+}
+.singleValue .whatsappLink img:hover {
+    background-color: #00de0f; 
+}
+.singleValue .instaLink img:hover {
+    background-color: none;
+    background: linear-gradient(0deg, #f9ce34, #ee2a7b, #6228d7);
+}
 .valueSectionInner {
     padding: 80px 0;
 }
@@ -245,7 +254,6 @@ html{
     text-align: center;
 }
 
-
 .tasteNuts {
     border-radius: 0 0 80px 80px;
     border-bottom: 15px solid var(--baseColor1);
@@ -261,16 +269,14 @@ html{
 }
 
 .connectSectionInner {
-
-    background-image: url('../images/shape/abstractArt.png');
+    background-image: url("../images/shape/abstractArt.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-
 .footer {
-    background-image: url('../images/banner/footerBanner.png');
+    background-image: url("../images/banner/footerBanner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -307,8 +313,9 @@ html{
 }
 
 .patternImg {
-    opacity: .3;
+    opacity: 1;
     width: 100%;
+    border-radius: 10px;
 }
 
 .headerVisible {
@@ -324,19 +331,23 @@ html{
 .headerVisible .dropdown-menu li a {
     color: black;
 }
-
+/*
 .aboutInnerImg {
     position: relative;
     max-width: 560px;
 }
-
+*/
+.aboutInnerImg {
+    position: relative;
+    max-width: 460px;
+    
+}
 .abouteItem {
     position: absolute;
     object-fit: contain;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
 }
 
 .aboutItem1 {
@@ -345,7 +356,6 @@ html{
     transform: translateY(-50%);
     animation-delay: 0s;
     animation-name: floating;
-
 }
 
 .aboutItem2 {
@@ -365,7 +375,6 @@ html{
     animation-name: floating;
 }
 
-
 .aboutItem4 {
     top: 50%;
     left: 10%;
@@ -373,7 +382,6 @@ html{
     animation-delay: 0.3s;
     animation-name: floating;
 }
-
 
 @keyframes floating {
     from {
@@ -482,7 +490,6 @@ html{
 }
 
 @media (max-width: 768px) {
-
     .heroSlider .slick-dots {
         flex-direction: row;
         width: max-content;
@@ -518,5 +525,4 @@ html{
     .aboutItem4 {
         top: 65%;
     }
-
 }

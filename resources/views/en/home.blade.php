@@ -59,7 +59,7 @@
         </section>
 
 
-        <section class="aboutSection py-5">
+        <section class="aboutSection py-5 my-5">
             <div class="customContainer">
                 <div class="row">
                     <div class="col-lg-6 col-12 d-flex align-item">
@@ -78,11 +78,10 @@
                             <button class="mainBtn1">Learn More</button>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 d-flex justify-content-center">
                         <div class="aboutInnerImg">
-                            <img class="patternImg" class="w-100" src="{{ asset('assets/images/shape/pattern1.png') }}"
-                                alt="">
-                            <img class="abouteItem aboutItem1" class="w-100"
+                            <img class="patternImg" class="w-100" src="{{ asset('assets/images/shape/pattern1.png') }}" alt="">
+                            {{-- <img class="abouteItem aboutItem1" class="w-100"
                                 src="{{ asset('assets/images/items/item1.png') }}" alt="">
                             <img class="abouteItem aboutItem2" class="w-100"
                                 src="{{ asset('assets/images/items/item2.png') }}" alt="">
@@ -91,7 +90,7 @@
                             <img class="abouteItem aboutItem4" class="w-100"
                                 src="{{ asset('assets/images/items/item4.png') }}" alt="">
                             <img class="nutsImg" class="w-100"
-                                src="{{ asset('assets/images/items/nuts.png') }}" alt="">
+                                src="{{ asset('assets/images/items/nuts.png') }}" alt=""> --}}
                         </div>
                     </div>
                 </div>
