@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/slick-theme.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/slick.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fancybox.css') }}">
-
+<link rel="shortcut icon" href="{{asset('/assets/images/logo/logo.png')}}" type="image/x-icon">
     <!-- custom styles  -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/utility.css') }}">
