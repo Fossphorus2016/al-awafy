@@ -349,7 +349,12 @@ html {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-
+.footerbottom a{
+    color: #fff;
+}
+.footerbottom a:hover{
+    color: var(--baseColor1);
+}
 .aboutItem1 {
     top: 40%;
     right: 10%;

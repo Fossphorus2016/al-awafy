@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/slick-theme.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/slick.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fancybox.css') }}">
-<link rel="shortcut icon" href="{{asset('/assets/images/logo/logo.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('/assets/images/logo/logo.png') }}" type="image/x-icon">
     <!-- custom styles  -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/utility.css') }}">
@@ -128,13 +128,12 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aliquam ipsum asperiores
                             quo ut numq.</p>
                         <div class="heroSliderFooter">
-                            <a class="icons fbLink" target="_blank"
-                                href="">
+                            <a class="icons fbLink" target="_blank" href="">
                                 <i class="fa-brands fa-facebook-f"></i> </a>
-                            <a class="icons instaLink" target="_blank"
-                                href=""> <i
+                            <a class="icons instaLink" target="_blank" href=""> <i
                                     class="fa-brands fa-instagram"></i></a>
-                            <a class="icons whatsappLink" target="_blank" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            <a class="icons whatsappLink" target="_blank" href=""><i
+                                    class="fa-brands fa-whatsapp"></i></a>
                         </div>
 
                     </div>
@@ -217,7 +216,11 @@
                 <div class="row py-3 justify-content-center align-items-center">
 
                     <div class="col-6 ">
-                        <p>Copyright © 2024 - All Right Reserved | Developed By Fossphorus</p>
+                        <p>Copyright © 2024 - All Right Reserved | Developed By
+                            <a href="https://www.fossphorus.com" class="ms-2"><img
+                                    src="https://www.fossphorus.com/signature/fp/fp-logo.png" alt="fossphorus-logo"
+                                    width="25px"> Fossphorus</a>
+                        </p>
                     </div>
                     <div class="col-6 text-end">
                         <a href="" class="text-white anchorHover">Privacy Policy</a> | <a
