@@ -137,13 +137,16 @@
                     <h2 class="text-center pb-4"><span class="fs5">Watch</span> <span class="fs6">Video</span>
                     </h2>
 
-                    <a href="https://www.youtube.com/embed/5K21Kg8vCk0?si=pc77lX6Uvr8uzwRk" data-fancybox="gallery"
-                        data-caption="Caption #1" data-type="iframe">
-                        <div>
-
-                        </div>
+                    <a href="{{ asset('assets/video/video1.mp4') }}" data-fancybox="gallery" data-caption=""
+                        data-type="iframe" data-options=''>
                         <img class="w-100" src="{{ asset('assets/images/banner/videoBanner1.png') }}" alt="Thumbnail">
                     </a>
+
+
+                    {{-- <video controls style="width: 100%;">
+                            <source src="{{ asset('assets/video/video1.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video> --}}
 
                 </div>
             </div>
@@ -342,7 +345,7 @@
                 <div class="activitieSlider">
                     <div class="col activityOuter">
                         <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity1.jpg') }}"
-                        alt="">
+                            alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
@@ -357,7 +360,7 @@
 
                     <div class="col activityOuter">
                         <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity2.jpg') }}"
-                        alt="">
+                            alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
@@ -371,7 +374,7 @@
                     </div>
                     <div class="col activityOuter">
                         <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity3.jpg') }}"
-                        alt="">
+                            alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
@@ -384,8 +387,9 @@
                         </div>
                     </div>
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity4.jpg') }}"
-                        alt="">
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity3.jpg') }}"
+                            alt="">
+
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
