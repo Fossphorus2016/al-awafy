@@ -7,6 +7,35 @@ $('.heroSlider').slick({
     pauseOnHover: true,
     pauseOnDotsHover: true
 });
+$('.activitieSlider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    // autoplay: true,
+    // autoplaySpeed: 4000,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+      ]
+});
 // $(document).ready(function() {
 //     $('#navbarSupportedContent').on('shown.bs.collapse hidden.bs.collapse', function () {
 //         if ($(this).hasClass('show')) {

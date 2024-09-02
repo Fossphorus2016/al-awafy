@@ -7,8 +7,10 @@
 
                     <div class="heroSliderIcon">
                         <a class="icons fbLink" target="_blank" href=""> <i class="fa-brands fa-facebook-f"></i> </a>
-                        <a class="icons instaLink" target="_blank" href=""> <i class="fa-brands fa-instagram"></i></a>
-                        <a class="icons whatsappLink" target="_blank" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a class="icons instaLink" target="_blank" href=""> <i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="icons whatsappLink" target="_blank" href=""><i
+                                class="fa-brands fa-whatsapp"></i></a>
                     </div>
 
                     <div class="heroSlider">
@@ -80,7 +82,8 @@
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center">
                         <div class="aboutInnerImg">
-                            <img class="patternImg" class="w-100" src="{{ asset('assets/images/shape/pattern1.png') }}" alt="">
+                            <img class="patternImg" class="w-100" src="{{ asset('assets/images/shape/pattern1.png') }}"
+                                alt="">
                             {{-- <img class="abouteItem aboutItem1" class="w-100"
                                 src="{{ asset('assets/images/items/item1.png') }}" alt="">
                             <img class="abouteItem aboutItem2" class="w-100"
@@ -139,8 +142,7 @@
                         <div>
 
                         </div>
-                        <img class="w-100" src="{{ asset('assets/images/banner/videoBanner1.png') }}"
-                            alt="Thumbnail">
+                        <img class="w-100" src="{{ asset('assets/images/banner/videoBanner1.png') }}" alt="Thumbnail">
                     </a>
 
                 </div>
@@ -188,7 +190,8 @@
                                 <div class="card-body paraFont py-4">
                                     <img class="w-100" src="{{ asset('assets/images/items/brandItem3.png') }}"
                                         alt="">
-                                    <img style="width: 145px;object-fit: contain;" class="pb-2" src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
+                                    <img style="width: 145px;object-fit: contain;" class="pb-2"
+                                        src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
                                     <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
@@ -229,7 +232,8 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4 pt-2">
-                                    <img style="width: 145px;object-fit: contain;" class="pb-2" src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
+                                    <img style="width: 145px;object-fit: contain;" class="pb-2"
+                                        src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
 
                                     <img class="pb-3 w-100" class="py-3"
                                         src="{{ asset('assets/images/items/brandItem3.png') }}" alt="">
@@ -315,24 +319,157 @@
             </div>
         </section>
 
+
+
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
                     <h2 class="waterDropsBefore"> <span class="fs7"> Lorem ipsum </span></h2>
                     <h2 class=""> <span class="fs7"> Lorem ipsum</span> <span
                             class="fs8 waterDropsAfter ms-0">dolor sit</span> </h2>
-                    <div class="pt-3 "><button class="mainBtn1 me-3 position-relative z-1">LEARN MORE</button> <button class="mainBtn2 position-relative z-1">CONTACT
-                            US</button> </div>
+                    <div class="pt-3 "><button class="mainBtn1 me-3 position-relative z-1">LEARN MORE</button>
+                        <button class="mainBtn2 position-relative z-1">CONTACT
+                            US</button>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
+            <div class="customContainer">
+                <h2 class="text-center pb-4"><span class="fs5">Our</span> <span class="fs6">Activities</span>
+                </h2>
+                <div class="activitieSlider">
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity1.jpg') }}"
+                        alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity2.jpg') }}"
+                        alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity3.jpg') }}"
+                        alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity4.jpg') }}"
+                        alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+                    {{-- <div class="col">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+                            <h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div> --}}
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="mainBtn1">View More</button>
+                </div>
+            </div>
+        </section>
 
         <section class="connectSection">
             <div class="customContainer  py-5">
                 <div>
 
-                    <h2 class="text-center pb-4"><span class="fs5">Let's Connect</span> <span class="fs6">With Us</span>
+                    <h2 class="text-center pb-4"><span class="fs5">Let's Connect</span> <span class="fs6">With
+                            Us</span>
                     </h2>
 
                     <div class="row connectSectionInner justify-content-center">

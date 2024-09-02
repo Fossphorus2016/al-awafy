@@ -97,7 +97,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect" href="#">Blogs</a>
+                                <a class="nav-link fs1 underLineAffect" href="#">Activities</a>
                             </li>
                             <li class="nav-item ">
                                 <button class="mainBtn1 ">Contact Us</button>
