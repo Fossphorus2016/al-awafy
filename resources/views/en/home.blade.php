@@ -52,7 +52,7 @@
                                 <br>
                                 fuga beatae esse dignissimos quam consequatur tenetur perspiciatis
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
+                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -191,7 +191,7 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem3.png') }}"
+                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem4.png') }}"
                                         alt="">
                                     <img style="width: 145px;object-fit: contain;" class="pb-2"
                                         src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
@@ -239,7 +239,7 @@
                                         src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
 
                                     <img class="pb-3 w-100" class="py-3"
-                                        src="{{ asset('assets/images/items/brandItem3.png') }}" alt="">
+                                        src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
                                     <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
@@ -278,7 +278,7 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem3.png') }}"
+                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem4.png') }}"
                                         alt="">
                                     <label class="fs10 py-2">Alyoum</label>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
