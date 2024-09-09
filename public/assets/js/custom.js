@@ -73,3 +73,6 @@ function updateSocialMediaLinks() {
 
 // Call the function on page load
 document.addEventListener('DOMContentLoaded', updateSocialMediaLinks);
+
+
+

@@ -114,6 +114,29 @@ a {
 .mainBtn2:hover {
     background-color: #085082;
 }
+.mainBtn3 {
+    background: linear-gradient(360deg,
+    rgba(1, 27, 67, 1) 0%,
+    rgba(0, 147, 215, 1) 100%);
+    color: var(--baseColor5);
+    font-family: 'arial';
+    border: none;
+    border-radius: 50px;
+    padding: 9px 30px 7px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--easeInTransition);
+    width: fit-content;
+    box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 31px -19px rgba(0, 0, 0, 0.75);
+}
+
+.mainBtn2:hover {
+    background-color: #085082;
+}
 
 .customContainer {
     width: auto;

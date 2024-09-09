@@ -21,6 +21,9 @@ Route::prefix('En')->group(function () {
     Route::get('/about', function () {
         return view('en.about_us');
     })->name('en.about');
+    Route::get('/brands', function () {
+        return view('en.our_brand');
+    })->name('en.brands');
     Route::get('/home', function () {
         return view('en.home');
     })->name('en.home');

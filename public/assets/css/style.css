@@ -185,11 +185,9 @@ html {
 
 .curvedLayer {
     position: relative;
-    background: linear-gradient(
-        360deg,
-        rgba(1, 27, 67, 1) 0%,
-        rgba(0, 147, 215, 1) 100%
-    );
+    background: linear-gradient(360deg,
+            rgba(1, 27, 67, 1) 0%,
+            rgba(0, 147, 215, 1) 100%);
 }
 
 .curvedLayer::before {
@@ -224,16 +222,20 @@ html {
     background-color: var(--baseColor1);
     border-radius: 50%;
 }
+
 .singleValue .fbLink img:hover {
     background-color: #0866ff;
 }
+
 .singleValue .whatsappLink img:hover {
     background-color: #00de0f;
 }
+
 .singleValue .instaLink img:hover {
     background-color: none;
     background: linear-gradient(0deg, #f9ce34, #ee2a7b, #6228d7);
 }
+
 .valueSectionInner {
     padding: 80px 0;
 }
@@ -323,7 +325,8 @@ html {
     position: relative;
     z-index: 5;
 }
-.fancybox__content{
+
+.fancybox__content {
     height: 100% !important;
     width: 700px !important;
     padding: 0 !important;
@@ -336,6 +339,7 @@ html {
 .headerVisible .dropdown-menu li a {
     color: black;
 }
+
 /*
 .aboutInnerImg {
     position: relative;
@@ -346,9 +350,11 @@ html {
     position: relative;
     max-width: 460px;
     display: flex;
+    width: 100%;
     align-items: center;
 
 }
+
 .abouteItem {
     position: absolute;
     object-fit: contain;
@@ -356,12 +362,15 @@ html {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-.footerbottom a{
+
+.footerbottom a {
     color: #fff;
 }
-.footerbottom a:hover{
+
+.footerbottom a:hover {
     color: var(--baseColor1);
 }
+
 .aboutItem1 {
     top: 40%;
     right: 10%;
@@ -371,7 +380,7 @@ html {
 }
 
 .aboutItem2 {
-    bottom: -10%;
+    bottom: -15%;
     right: 30%;
     width: 220px;
     transform: translateY(-50%);
@@ -380,7 +389,7 @@ html {
 }
 
 .aboutItem3 {
-    top: 20%;
+    top: 10%;
     left: 30%;
     transform: translateY(-50%);
     animation-delay: 0.5s;
@@ -389,7 +398,7 @@ html {
 
 .aboutItem4 {
     top: 50%;
-    left: 10%;
+    left: 0;
     transform: translateY(-50%);
     animation-delay: 0.3s;
     animation-name: floating;
@@ -442,7 +451,93 @@ html {
     color: white;
 }
 
+.secondValues {
+    border-radius: 0 0 80px 80px;
+    border-bottom: 15px solid var(--baseColor1);
+}
+
+.ourVision {
+    position: relative;
+
+}
+
+.ourVision::after {
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/items/aboutImg2.png);
+    top: -12px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    background-size: 60% 105%;
+}
+
+.ourVisionInner {
+    position: relative;
+}
+
+.ourVisionInner::before {
+    content: '';
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/shape/curvedLine.png);
+    top: 141px;
+    left: -100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 75% 45%;
+
+
+    /* content: '';
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/shape/curvedLine.png);
+    top: 141px;
+    left: 110px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 65% 45%; */
+}
+
+.missionBtn1 {
+    background: linear-gradient(360deg, rgba(1, 27, 67, 1) 0%, rgba(0, 147, 215, 1) 100%);
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    z-index: 4;
+    box-shadow: 10px 10px 0px 1px var(--baseColor1);
+    -webkit-box-shadow: 10px 10px 0px 1px var(--baseColor1);
+    -moz-box-shadow: 10px 10px 0px 1px var(--baseColor1);
+}
+
+.ourVisionCont {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+
+}
+
+.aboutBanner {
+    background-image: url(../images/banner/aboutBanner.png);
+}
+.brandBanner {
+    background-image: url(../images/banner/brandBanner.png);
+}
+
 @media (max-width: 992px) {
+    .aboutThirdPara{
+        margin-top: 60px !important;
+    }
+    .aboutBanner2 {
+        margin-top: 40px;
+    }
     .nutsImg {
         bottom: -40px;
     }
@@ -495,9 +590,9 @@ html {
     display: inline-block;
     padding: 0;
     margin: 0 auto;
-  }
+}
 
-  .sec-icon::before {
+.sec-icon::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -506,9 +601,9 @@ html {
     top: 60%;
     background: #333333;
     width: 50px;
-  }
+}
 
-  .sec-icon::after {
+.sec-icon::after {
     content: "";
     position: absolute;
     height: 1px;
@@ -517,14 +612,14 @@ html {
     top: 60%;
     background: #333;
     width: 50px;
-  }
+}
 
-  .advertisers-service-sec .col {
+.advertisers-service-sec .col {
     padding: 0 1em 1em 1em;
     text-align: center;
-  }
+}
 
-  .advertisers-service-sec .service-card {
+.advertisers-service-sec .service-card {
     /* width: 100%; */
     height: 100%;
     padding: 1em 1.5em;
@@ -544,46 +639,47 @@ html {
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .activityImg{
+}
+
+.activityImg {
     object-fit: cover;
     border-radius: 10px;
     border: 1px solid rgb(202, 202, 202);
     /* padding: 10px; */
     height: 270px;
-  }
+}
 
-  .advertisers-service-sec .service-card::after {
+.advertisers-service-sec .service-card::after {
     content: "";
     width: 100%;
     height: 100%;
     /* background: linear-gradient(#008fd3b0, #50a702e0); */
-    background-color:var(--baseColor1) ;
+    background-color: var(--baseColor1);
     position: absolute;
     left: 0%;
     top: -98%;
     z-index: -2;
     transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
-  }
+}
 
-  .advertisers-service-sec h3 {
+.advertisers-service-sec h3 {
     font-size: 20px;
     text-transform: capitalize;
     font-weight: 600;
     color: #1f194c;
     margin: 1em 0;
     z-index: 3;
-  }
+}
 
-  .advertisers-service-sec p {
+.advertisers-service-sec p {
     color: #575a7b;
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     z-index: 3;
-  }
+}
 
-  .advertisers-service-sec .icon-wrapper {
+.advertisers-service-sec .icon-wrapper {
     background-color: #2c7bfe;
     position: relative;
     margin: auto;
@@ -596,45 +692,47 @@ html {
     place-items: center;
     transition: 0.5s;
     z-index: 3;
-  }
+}
 
-  .advertisers-service-sec .service-card:hover:after {
+.advertisers-service-sec .service-card:hover:after {
     top: 0%;
-  }
+}
 
-  .service-card .icon-wrapper {
+.service-card .icon-wrapper {
     background-color: #ffffff;
     color: var(--baseColor1);
-  }
+}
 
-  .advertisers-service-sec .service-card:hover .icon-wrapper {
+.advertisers-service-sec .service-card:hover .icon-wrapper {
     color: var(--baseColor3);
-  }
+}
 
-  .advertisers-service-sec .service-card:hover h3 {
+.advertisers-service-sec .service-card:hover h3 {
     color: #ffffff;
-  }
+}
 
-  .advertisers-service-sec .service-card:hover p {
+.advertisers-service-sec .service-card:hover p {
     color: #f0f0f0;
-  }
-  .activityOuter{
+}
+
+.activityOuter {
     position: relative;
     /* display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; */
     height: 500px;
-  }
+}
 
 
-  .activitieSlider .slide-arrow{
+.activitieSlider .slide-arrow {
     position: absolute;
     background-color: white;
     top: 50%;
     margin-top: -15px;
-  }
-  .activitieSlider .prev-arrow{
+}
+
+.activitieSlider .prev-arrow {
     left: -40px;
     width: 0;
     height: 0;
@@ -642,8 +740,9 @@ html {
     border-right: 15px solid #113463;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-  }
-  .activitieSlider .next-arrow{
+}
+
+.activitieSlider .next-arrow {
     right: -40px;
     width: 0;
     height: 0;
@@ -651,7 +750,86 @@ html {
     border-left: 15px solid #113463;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-  }
+}
+
+.secondBanner {
+    padding-bottom: 120px;
+    padding-top: 170px;
+}
+
+.secondBanner .heroSliderIcon {
+    top: 55%;
+}
+
+.aboutBanner2 img {
+    width: 80%;
+}
+
+.brandBlue {
+    background: linear-gradient(360deg,
+            rgba(1, 27, 67, 1) 0%,
+            rgba(0, 147, 215, 1) 100%);
+}
+
+.brandGreen {
+    background: linear-gradient(360deg,
+            #397305 0%,
+            #50a702 100%);
+}
+
+.brandBrown {
+    background: linear-gradient(360deg,
+            #6f2d04 0%,
+            #af8048 100%);
+}
+
+.brandOrange {
+    background: linear-gradient(360deg,
+            #f1441c 0%,
+            #f38926 100%);
+}
+
+.brandGold {
+    background: linear-gradient(360deg,
+            #714700 0%,
+            #dac102 100%);
+}
+
+.brandRed {
+    background: linear-gradient(360deg,
+            #730603 0%,
+            #dc3c01 100%);
+}
+
+.brandInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.brandInnerTwo img {
+    max-width: 435px;
+    width: 100%;
+}
+.brandSection{
+    position: relative;
+
+}
+.brandSection::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../images/items/brainNut.png);
+    background-size: contain;
+    width: 300px;
+    height: 200px;
+    z-index: 2;
+    background-repeat: no-repeat;
+    right: 10%;
+    top: -169px;
+}
+
 
 @media (max-width: 1200px) {
     .aboutItem2 {
@@ -660,8 +838,36 @@ html {
 }
 
 @media (max-width: 992px) {
+    .brandOuter:nth-of-type(even) .row {
+        flex-direction: column-reverse;
+
+    }
+    .underLineAffect{
+        color: black !important;
+    }
+
+    .brandOuter .row {
+        row-gap: 40px;
+
+    }
+
+    .brandInner {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .aboutItem2 {
         bottom: -15%;
+    }
+
+    .ourVision::after {
+        display: none;
+    }
+
+    .ourVisionInner::before {
+        display: none;
     }
 }
 
@@ -678,6 +884,19 @@ html {
     .heroSection,
     .tasteNuts {
         border-radius: 0 0 40px 40px;
+    }
+
+
+    .ourVisionPeanuts img {
+        width: 100%;
+        height: auto;
+    }
+    .brandSection::before{
+        display: none;
+    }
+    .aboutBanner2 img{
+        margin-top: 50px;
+        width: 100%;
     }
 }
 

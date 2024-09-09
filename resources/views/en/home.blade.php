@@ -1,6 +1,6 @@
 <x-layout>
     <main>
-        <section class="heroSection">
+        <section class="heroSection ">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
@@ -61,7 +61,7 @@
         </section>
 
 
-        <section class="aboutSection py-5 my-5">
+        <section class="aboutSection py-5 mt-5">
             <div class="customContainer">
                 <div class="row">
                     <div class="col-lg-6 col-12 d-flex align-item">
@@ -100,7 +100,7 @@
             </div>
         </section>
 
-        <section class="valueSection curvedLayer">
+        {{-- <section class="valueSection curvedLayer">
             <div class="customContainer">
                 <div class="valueSectionInner">
 
@@ -128,9 +128,10 @@
 
                 </div>
             </div>
-        </section>
+        </section> --}}
+        <x-ourValues />
 
-     
+
         <section class="ourBrands py-5">
             <div class="customContainer">
                 <div>
@@ -144,8 +145,7 @@
                                 <div class="card-body paraFont py-4">
                                     <img class="w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
-                                    <img class="py-3" src="{{ asset('assets/images/logo/logo.png') }}"
-                                        alt="">
+                                    <img class="py-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
                                     <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
@@ -301,27 +301,7 @@
             </div>
         </section>
 
-   <section class="watchVideoSection">
-            <div class="customContainer  py-5">
-                <div>
-
-                    <h2 class="text-center pb-4"><span class="fs5">Watch</span> <span class="fs6">Video</span>
-                    </h2>
-
-                    <a href="{{ asset('assets/video/video1.mp4') }}" data-fancybox="gallery" data-caption=""
-                        data-type="iframe" data-options=''>
-                        <img class="w-100" src="{{ asset('assets/images/banner/videoBanner1.png') }}" alt="Thumbnail">
-                    </a>
-
-
-                    {{-- <video controls style="width: 100%;">
-                            <source src="{{ asset('assets/video/video1.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> --}}
-
-                </div>
-            </div>
-        </section>
+        <x-watchVideo />
 
 
         <section class="tasteNuts curvedLayer">
@@ -468,46 +448,7 @@
             </div>
         </section>
 
-        <section class="connectSection">
-            <div class="customContainer  py-5">
-                <div>
-
-                    <h2 class="text-center pb-4"><span class="fs5">Let's Connect</span> <span class="fs6">With
-                            Us</span>
-                    </h2>
-
-                    <div class="row connectSectionInner justify-content-center">
-                        <div class="col-lg-3 col-12">
-                            <div class="singleValue">
-                                <a class="fbLink" href="">
-                                    <img src="{{ asset('assets/images/shape/facebook1.png') }}" alt="">
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-12">
-                            <div class="singleValue">
-                                <a class="instaLink" href="">
-
-                                    <img src="{{ asset('assets/images/shape/insta1.png') }}" alt="">
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-12">
-                            <div class="singleValue">
-                                <a class="whatsappLink" href="">
-                                    <img src="{{ asset('assets/images/shape/whatsapp1.png') }}" alt="">
-                                </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
+        <x-letsConnect/>
 
 
         <div class="customContainer">
