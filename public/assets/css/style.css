@@ -293,6 +293,10 @@ html {
     background-color: white;
     border-radius: 50px;
     display: flex;
+    border: 3px solid white;
+}
+.redBorder{
+    border: 3px solid red;
 }
 
 .newsletter_form input {
@@ -324,6 +328,7 @@ html {
     background-color: transparent;
     position: relative;
     z-index: 5;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 .fancybox__content {
@@ -386,6 +391,8 @@ html {
     transform: translateY(-50%);
     animation-delay: 1s;
     animation-name: floating1;
+    rotate: 5deg;
+    width: 180px;
 }
 
 .aboutItem3 {
@@ -399,9 +406,12 @@ html {
 .aboutItem4 {
     top: 50%;
     left: 0;
+    rotate: 10deg;
     transform: translateY(-50%);
     animation-delay: 0.3s;
     animation-name: floating;
+    width: 150px;
+    object-fit: contain;
 }
 
 @keyframes floating {
@@ -527,17 +537,44 @@ html {
 .aboutBanner {
     background-image: url(../images/banner/aboutBanner.png);
 }
+
 .brandBanner {
     background-image: url(../images/banner/brandBanner.png);
 }
 
+.contactBanner {
+    background-image: url(../images/banner/contactBanner.png);
+}
+
+.activityBanner {
+    background-image: url(../images/banner/activityBanner.png);
+}
+
+.footerQuickLinks {
+    padding-left: 3rem;
+}
+
+.privacyPages {
+    text-align: end !important;
+}
+
 @media (max-width: 992px) {
-    .aboutThirdPara{
+    .privacyPages {
+        text-align: center !important;
+    }
+
+    .footerQuickLinks {
+        padding-left: 0;
+    }
+
+    .aboutThirdPara {
         margin-top: 60px !important;
     }
+
     .aboutBanner2 {
         margin-top: 40px;
     }
+
     .nutsImg {
         bottom: -40px;
     }
@@ -751,6 +788,48 @@ html {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
+.noNuts::before{
+    display: none !important;
+}
+.activitiesSlider .slide-arrow {
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    margin-top: -15px;
+}
+.activitiesSlider .slick-list{
+    width:  90%;
+    margin: 0 auto;
+}
+
+.galleryblock .next-arrow {
+    right: -12px !important;
+}
+
+.galleryblock .prev-arrow {
+    left: -12px !important;
+    z-index: 4;
+}
+
+.activitiesSlider .prev-arrow {
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid #113463;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.activitiesSlider .next-arrow {
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid #113463;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
 
 .secondBanner {
     padding-bottom: 120px;
@@ -812,11 +891,17 @@ html {
     max-width: 435px;
     width: 100%;
 }
-.brandSection{
+
+.brandSection {
     position: relative;
 
 }
-.brandSection::before{
+
+.hoverText:hover{
+    color: rgb(202, 202, 202);
+}
+
+.brandSection::before {
     content: '';
     display: block;
     position: absolute;
@@ -829,7 +914,112 @@ html {
     right: 10%;
     top: -169px;
 }
+.brandSection1::before {
 
+    background-image: url(../images/items/brainNut1.png);
+
+}
+
+/* .contactUsInner{
+
+} */
+.absoluteAttached {
+    width: 20px;
+    position: relative;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--baseColor1);
+}
+
+.absoluteAttached::before {
+    content: '';
+    position: absolute;
+    bottom: -44px;
+    width: 4px;
+    background-color: var(--baseColor1);
+    height: 123px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.mapIframe {
+    height: 430px;
+    width: 100%;
+}
+
+.contactUsInner .card-body {
+    padding: 50px 120px 40px 120px;
+}
+
+.contactUsInner .card {
+    margin: 3rem;
+}
+
+.contactSection .col-lg-4>.d-flex {
+    /* justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px; */
+
+}
+
+/*
+
+.galleryblock {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 300px;
+  }
+
+  .galleryblock .item {
+    flex-grow: 1;
+    height: 300px;
+    width: 50px;
+    position: relative;
+    transition: all 300ms ease-in-out;
+    border-radius: 50px;
+
+}
+    .galleryblock .item:hover {
+      flex-grow: 3;
+
+    }
+    */
+
+.galleryblock .item img {
+    width: 100%;
+    padding: 10px;
+    height: 300px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+/* .galleryblock .item img:hover{
+      transform: scale(2);
+    } */
+
+
+.slick-dots li button:before {
+    font-family: slick;
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-color: var(--baseColor1);
+    text-align: center;
+    opacity: .25;
+    border-radius: 50%;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 @media (max-width: 1200px) {
     .aboutItem2 {
@@ -838,11 +1028,17 @@ html {
 }
 
 @media (max-width: 992px) {
+    .navbar-nav {
+
+        margin-bottom: 20px;
+    }
+
     .brandOuter:nth-of-type(even) .row {
         flex-direction: column-reverse;
 
     }
-    .underLineAffect{
+
+    .underLineAffect {
         color: black !important;
     }
 
@@ -869,9 +1065,29 @@ html {
     .ourVisionInner::before {
         display: none;
     }
+
+    .contactUsInner .card-body {
+        padding: 50px 40px 40px 40px;
+    }
+
+    .contactSection .col-lg-4>.d-flex {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+
+    }
 }
 
 @media (max-width: 768px) {
+    .slick-dotted.slick-slider {
+        margin-bottom: 60px;
+    }
+
+    .activitieSlider .slick-arrow {
+        display: none !important;
+    }
+
     .heroSlider .slick-dots {
         flex-direction: row;
         width: max-content;
@@ -891,10 +1107,12 @@ html {
         width: 100%;
         height: auto;
     }
-    .brandSection::before{
+
+    .brandSection::before {
         display: none;
     }
-    .aboutBanner2 img{
+
+    .aboutBanner2 img {
         margin-top: 50px;
         width: 100%;
     }
@@ -919,5 +1137,13 @@ html {
 
     .aboutItem4 {
         top: 65%;
+    }
+
+    .contactUsInner .card-body {
+        padding: 50px 20px 40px 20px;
+    }
+
+    .contactUsInner .card {
+        margin: 3rem 1rem;
     }
 }

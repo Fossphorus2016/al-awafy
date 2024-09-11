@@ -23,7 +23,7 @@
                     <th>NAME</th>
                     <th>EMAIL</th>
                     <th>PHONE</th>
-                    <th>SUBJECT</th>
+                    {{-- <th>SUBJECT</th> --}}
                     <th>MESSAGE</th>
                     <th>ACTION</th>
                 </thead>
@@ -44,9 +44,9 @@
                                 <td>
                                     {{ $contact->phone }}
                                 </td>
-                                <td>
+                                {{-- <td>
                                     {{ $contact->subject }}
-                                </td>
+                                </td> --}}
                                 </td>
                                 <td>
                                     {{ $contact->message }}

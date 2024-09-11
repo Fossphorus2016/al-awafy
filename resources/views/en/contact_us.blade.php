@@ -1,4 +1,4 @@
-<!doctype html>
+{{-- <!doctype html>
 <html lang="en">
 
 <head>
@@ -198,4 +198,231 @@
     </script>
 </body>
 
-</html>
+</html> --}}
+
+
+
+
+
+
+<x-layout>
+    <main>
+        <section class="heroSection secondBanner contactBanner position-relative z-1">
+            <div class="customContainer">
+                <div class="heroSliderOuter">
+
+
+                    <div class="heroSliderIcon">
+                        <a class="icons fbLink" target="_blank" href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+                        <a class="icons instaLink" target="_blank" href=""> <i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="icons whatsappLink" target="_blank" href=""><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                    <div class="heroInner">
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Contact </span>
+                            <span class="fs3">Us</span>
+                        </h1>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section>
+            <div class="customContainer">
+                <div class="contactUsInner d-flex justify-content-center">
+
+                    <div class="card " style="max-width: 914px">
+
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between pb-4">
+
+                                <div class="absoluteAttached"></div>
+                                <div class="absoluteAttached"></div>
+                            </div>
+                            <div class="paraFont">
+
+                                <h2 class="d-flex justify-content-center text-center flex-wrap"><span
+                                        class="fs5 ">FILL
+                                        THE</span>
+                                    <span class="fs6">Form Below</span>
+                                </h2>
+                                <p class="text-center">Al-Awafi brings you the richness and benefits of nature, to take
+                                    care of your food and
+                                    decorate your tables with the best, most ideal and most delicious in order to
+                                    achieve a
+                                    healthy, sound and varied diet that ensures that the body gets all the natural
+                                    elements.
+                                </p>
+                            </div>
+
+                            <form id="contact_form" action="{{ route('contact.create') }}" method="POST"
+                                onsubmit="return contact_validate(event)">
+                                @csrf
+                                <div class="row gy-4">
+                                    <div class="col-lg-6 col-12 position-relative">
+                                        <input type="text" class="form-control inputCustom"
+                                            placeholder="Your Full Name" name="name" id="name">
+                                        <small id="error_name" class="text-danger text-small position-absolute"
+                                            style="display: none; bottom: -20px;">
+                                            Name is required
+                                        </small>
+                                    </div>
+                                    <div class="col-lg-6 col-12 position-relative">
+                                        <input type="number" name="phone" id="phone"
+                                            class="form-control inputCustom phoneVal" placeholder="Your Contact Number">
+                                        <small id="error_phone" class="text-danger position-absolute"
+                                            style="display: none; bottom: -20px;">Phone is required</small>
+                                    </div>
+                                    <div class="col-12 position-relative">
+                                        <input type="text" name="email" id="email"
+                                            class="form-control inputCustom" placeholder="Your Email Address">
+                                        <small id="invalid_email" class="text-danger position-absolute"
+                                            style="display: none; bottom: -20px;">Invalid email</small>
+                                        <small id="error_email" class="text-danger position-absolute"
+                                            style="display: none; bottom: -20px;">Email is required</small>
+                                    </div>
+                                    <div class="col-12 position-relative">
+                                        <textarea name="message" id="message" rows="4" style="height: 100px" class="form-control inputCustom"
+                                            placeholder="Your Message Here"></textarea>
+                                        <small id="error_message" class="text-danger position-absolute"
+                                            style="display: none; bottom: -20px;">Message is required</small>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button class="mainBtn1 w-100" type="submit">SUBMIT NOW!</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contactSection mb-5">
+            <div class="customContainer">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+
+                        <div class="d-flex">
+                            <img class="pe-3" src="{{ asset('assets/images/shape/contact2.png') }}" alt="">
+                            <div class="d-flex flex-column justify-content-center ">
+                                <p class="fs11">+218 21 724 3131</p>
+                                <p class="fs11">+218 21 724 3232</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                        <div class="d-flex">
+                            <img class="pe-3" src="{{ asset('assets/images/shape/contact3.png') }}" alt="">
+                            <div class="d-flex flex-column justify-content-center ">
+                                <p class="fs11">info@alawafy.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                        <div class="d-flex">
+                            <img class="pe-3" src="{{ asset('assets/images/shape/contact1.png') }}" alt="">
+                            <div class="d-flex flex-column justify-content-center ">
+                                <p class="fs11">ALRIMAH food
+                                    distribution co.
+                                    Alkremia street
+                                    Aldol road 700m</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mapSection">
+
+
+
+            <iframe class=" mapIframe secondValues"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125582.80284070502!2d13.017693569745838!3d32.8329195057037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ea798d4100e9%3A0xeadbe42e0e3f7c8!2sTripoli%20District%2C%20Libya!5e0!3m2!1sen!2s!4v1725955087744!5m2!1sen!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+        </section>
+
+
+        <x-letsConnect />
+
+
+
+
+    </main>
+
+    <script>
+        function contact_validate(event) {
+            var isValid = true;
+
+            // Name validation
+            if ($("#name").val().trim() == "") {
+                $("#name").addClass("is-invalid");
+                $("#error_name").show();
+                isValid = false;
+            } else {
+                $("#name").removeClass("is-invalid");
+                $("#error_name").hide();
+            }
+
+            // Email validation
+            var email = $("#email").val();
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if ($("#email").val().trim() == "") {
+                $("#email").addClass("is-invalid");
+                $("#error_email").show();
+                isValid = false;
+            } else {
+                $("#error_email").hide();
+                if (!emailRegex.test(email)) {
+                    $("#email").addClass("is-invalid");
+                    $("#invalid_email").show();
+                    isValid = false;
+                } else {
+                    $("#email").removeClass("is-invalid");
+                    $("#invalid_email").hide();
+                }
+            }
+
+            // Phone validation
+            if ($("#phone").val().trim() == "") {
+                $("#phone").addClass("is-invalid");
+                $("#error_phone").show();
+                isValid = false;
+            } else {
+                $("#phone").removeClass("is-invalid");
+                $("#error_phone").hide();
+            }
+
+            // Message validation
+            if ($("#message").val().trim() == "") {
+                $("#message").addClass("is-invalid");
+                $("#error_message").show();
+                isValid = false;
+            } else {
+                $("#message").removeClass("is-invalid");
+                $("#error_message").hide();
+            }
+
+            // If form is not valid, prevent submission
+            if (!isValid) {
+                event.preventDefault();
+            }
+
+            // Return isValid to control the form submission
+            return isValid;
+        }
+    </script>
+</x-layout>

@@ -79,28 +79,31 @@
 
                         <ul class="navbar-nav justify-content-end ">
                             <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect" href="#">Home</a>
+                                <a class="nav-link fs1 underLineAffect" href="home">Home</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect " href="#">About Us</a>
+                                <a class="nav-link fs1 underLineAffect " href="about">About Us</a>
                             </li>
+                            {{-- <li class="nav-item ">
+                                <a class="nav-link fs1 underLineAffect" href="brands">Brands</a>
+                            </li> --}}
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle fs1" href="#" role="button"
+                                <a class="nav-link dropdown-toggle fs1 hoverText" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Our Brands
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Brand 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand 3</a></li>
+                                    <li><a class="dropdown-item" href="brand-alawafy">Al-awafy</a></li>
+                                    <li><a class="dropdown-item" href="brand-crico">Crico</a></li>
+                                    <li><a class="dropdown-item" href="brand-alyoum">Alyoum</a></li>
 
                                 </ul>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect" href="#">Activities</a>
+                                <a class="nav-link fs1 underLineAffect" href="activities">Activities</a>
                             </li>
                             <li class="nav-item ">
-                                <button class="mainBtn1 ">Contact Us</button>
+                                <a class="mainBtn1" href="contact-us" style="display: block;">Contact Us</a >
                             </li>
                         </ul>
 
@@ -140,25 +143,25 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-lg-3 ps-5">
+                    <div class="col-lg-3 footerQuickLinks">
                         <!-- Links -->
                         <h6 class="mt-5 text-uppercase fw-bold mb-4 fs-4">
                             Quick Links
                         </h6>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset anchorHover">Home</a>
+                            <a href="home" class="text-reset anchorHover">Home</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset anchorHover">About Us</a>
+                            <a href="about" class="text-reset anchorHover">About Us</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset anchorHover">Our Brands</a>
+                            <a href="brand-alawafy" class="text-reset anchorHover">Our Brands</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset anchorHover">Blogs</a>
+                            <a href="activities" class="text-reset anchorHover">Activities</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset anchorHover">Contact Us</a>
+                            <a href="contact-us" class="text-reset anchorHover">Contact Us</a>
                         </p>
 
                     </div>
@@ -171,13 +174,13 @@
                             Company
                         </h6>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset anchorHover">Al-Awafy </a>
+                            <a href="brand-alawafy" class="text-reset anchorHover">Al-Awafy </a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset anchorHover">Crisco</a>
+                            <a href="brand-crico" class="text-reset anchorHover">Crisco</a>
                         </p>
                         <p class="mt-1">
-                            <a href="#!" class="text-reset anchorHover">Alyoum</a>
+                            <a href="brand-alyoum" class="text-reset anchorHover">Alyoum</a>
                         </p>
 
                     </div>
@@ -193,12 +196,12 @@
                             <br>
                             adipiscing elit. Sed porttitor.
                         </p>
-                        <form class="newsletter_form mt-4">
+                        <form class="newsletter_form mt-4" action="{{ route('news.letter.create') }}" method="POST" id="news_letter_form">
+                            @csrf
 
-
-                            <input type="text" class="" placeholder="Enter Your Email Address"
+                            <input type="email" name="subscriber_mail" id="subscriber_mail" placeholder="Enter Your Email Address"
                                 aria-label="Enter Your Email Address" aria-describedby="button-addon2">
-                            <button class="" type="button" id="button-addon2"><i
+                            <button  onclick="news_validate()" type="button" id="button-addon2"><i
                                     class="fa-solid fa-paper-plane"></i></button>
 
                         </form>
@@ -215,14 +218,14 @@
             <div class=" customContainer">
                 <div class="row py-3 justify-content-center align-items-center">
 
-                    <div class="col-6 ">
+                    <div class="col-lg-6 col-12 ">
                         <p>Copyright © 2024 - All Right Reserved | Developed By
                             <a href="https://www.fossphorus.com" class="ms-2"><img
                                     src="https://www.fossphorus.com/signature/fp/fp-logo.png" alt="fossphorus-logo"
                                     width="25px"> Fossphorus</a>
                         </p>
                     </div>
-                    <div class="col-6 text-end">
+                    <div class="col-lg-6 col-12 privacyPages">
                         <a href="" class="text-white anchorHover">Privacy Policy</a> | <a
                             class="text-white anchorHover" href="">Terms & Conditions</a>
                     </div>

@@ -63,7 +63,7 @@
 
         <section class="aboutSection py-5 mt-5">
             <div class="customContainer">
-                <div class="row">
+                <div class="row gy-4">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
                             <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
@@ -77,7 +77,7 @@
                                 obcaecati iure harum itaque officia ratione. Recusandae sunt quaerat reprehenderit eaque
                                 placeat numquam reiciendis, unde, aut necessitatibus enim sint debitis totam deleniti
                                 praesentium minus iste mollitia, veniam rem delectus? Facilis nesciunt labore error!</p>
-                            <button class="mainBtn1">Learn More</button>
+                            <a class="mainBtn1" href="about">Learn More</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center">
@@ -148,7 +148,7 @@
                                     <img class="py-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a class="mainBtn1" href="brand-alawafy">VIEW BRAND PRODUCTS</a>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +162,7 @@
                                         alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a class="mainBtn1" href="brand-crico">VIEW BRAND PRODUCTS</a>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                                         src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a class="mainBtn1" href="brand-alyoum">VIEW BRAND PRODUCTS</a>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +192,7 @@
                                         alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -206,7 +206,7 @@
                                         src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                                         src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                                     <label class="fs10 py-2">Alawafy</label>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -249,7 +249,7 @@
                                     <label class="fs10 py-2">Crico</label>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                                     <label class="fs10 py-2">Alyoum</label>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <button class="mainBtn1">VIEW BRAND PRODUCTS</button>
+                                    <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -310,9 +310,9 @@
                     <h2 class="waterDropsBefore"> <span class="fs7"> Lorem ipsum </span></h2>
                     <h2 class=""> <span class="fs7"> Lorem ipsum</span> <span
                             class="fs8 waterDropsAfter ms-0">dolor sit</span> </h2>
-                    <div class="pt-3 "><button class="mainBtn1 me-3 position-relative z-1">LEARN MORE</button>
-                        <button class="mainBtn2 position-relative z-1">CONTACT
-                            US</button>
+                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN MORE</a>
+                        <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACT
+                            US</a>
                     </div>
                 </div>
             </div>
@@ -324,13 +324,13 @@
                 </h2>
                 <div class="activitieSlider">
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity1.jpg') }}"
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionEst/image16.jpg') }}"
                             alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
                             </div>
-                            <h3>Lorem ipsum</h3>
+                            <h3>d’exécution Est</h3>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Quisquam consequatur necessitatibus eaque.
@@ -339,13 +339,13 @@
                     </div>
 
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity2.jpg') }}"
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}"
                             alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
                             </div>
-                            <h3>Lorem ipsum</h3>
+                            <h3>d’exécution Center</h3>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Quisquam consequatur necessitatibus eaque.
@@ -353,34 +353,50 @@
                         </div>
                     </div>
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity3.jpg') }}"
-                            alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activitiy/activity3.jpg') }}"
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/loperationBts/img7.jpg') }}"
                             alt="">
 
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
                             </div>
-                            <h3>Lorem ipsum</h3>
+                            <h3>de l’opération BTS</h3>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Quisquam consequatur necessitatibus eaque.
                             </p>
                         </div>
                     </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionQuest/image26.jpg') }}"
+                            alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>d’exécution Quest</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/remisDes/image38.jpg') }}"
+                            alt="">
+
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Remise Des Cadeaux</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Quisquam consequatur necessitatibus eaque.
+                            </p>
+                        </div>
+                    </div>
+
                     {{-- <div class="col">
                         <div class="service-card">
                             <div class="icon-wrapper">
@@ -443,7 +459,7 @@
                     </div> --}}
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="mainBtn1">View More</button>
+                    <a class="mainBtn1" href="activities">View More</a>
                 </div>
             </div>
         </section>

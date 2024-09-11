@@ -9,11 +9,12 @@ use Illuminate\Http\Request;
 class FormController extends Controller
 {
    public function contact_create(Request $request){
+
         $request->validate([
             'name' =>'required',
             'email' =>'required',
             'phone' =>'required',
-            'subject' =>'required',
+            // 'subject' =>'required',
             'message' =>'required',
 
         ]);
@@ -22,7 +23,7 @@ class FormController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->phone,
-            'subject' => $request->subject,
+            // 'subject' => $request->subject,
             'message' => $request->message,
         ]);
 

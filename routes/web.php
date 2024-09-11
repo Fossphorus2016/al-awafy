@@ -21,9 +21,15 @@ Route::prefix('En')->group(function () {
     Route::get('/about', function () {
         return view('en.about_us');
     })->name('en.about');
-    Route::get('/brands', function () {
+    Route::get('/brand-alawafy', function () {
         return view('en.our_brand');
     })->name('en.brands');
+    Route::get('/brand-crico', function () {
+        return view('en.our_brand_crico');
+    })->name('en.brands_crico');
+    Route::get('/brand-alyoum', function () {
+        return view('en.our_brand_alyoum');
+    })->name('en.brands_alyoum');
     Route::get('/home', function () {
         return view('en.home');
     })->name('en.home');
@@ -33,9 +39,9 @@ Route::prefix('En')->group(function () {
     Route::get('/our-products', function () {
         return view('en.our_products');
     })->name('en.our.products');
-    Route::get('/blogs', function () {
-        return view('en.blogs');
-    })->name('en.blogs');
+    Route::get('/activities', function () {
+        return view('en.activities');
+    })->name('en.activities');
 });
 
 
