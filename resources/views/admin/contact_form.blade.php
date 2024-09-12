@@ -1,5 +1,4 @@
 <x-admin.layouts>
-    <x-notification.notifications />
 
     @section('title', 'Contact Form')
 

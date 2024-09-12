@@ -498,9 +498,7 @@
 </x-layout>
 
 <script>
-    Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-    });
+
 
     $('.showRow1').show();
     $('.showRow2').hide();

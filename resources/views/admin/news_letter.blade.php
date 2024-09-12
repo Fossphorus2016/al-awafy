@@ -1,5 +1,5 @@
 <x-admin.layouts>
-    <x-notification.notifications />
+
     @section('title', 'News Letter')
 
     <div class="container  p-5">

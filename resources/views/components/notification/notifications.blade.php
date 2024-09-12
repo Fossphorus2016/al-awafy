@@ -6,9 +6,8 @@
 
 
 @if (session()->has('message'))
-    <div id="notification" class="d-flex align-items-center rounded text-center mb-9"
-        style="top: 160px; right: 0px; left: 0; margin: auto; width: 350px; z-index: 9999; min-width: 600px; position: absolute">
-        <div class="alert rounded-4 shadow-lg d-flex align-items-center py-4 w-100 heroText1" style="background: #000"
+    <div id="notification" class="d-flex align-items-center rounded text-center mb-9 notificationCss">
+        <div class="alert rounded-4 shadow-lg d-flex align-items-center py-0 w-100 heroText1" style="background: #000"
             role="alert">
             <i class="ri-check-double-line fs-1" style="color:#fff !important"></i>
             <div class="ps-4" style="color:#fff !important">
@@ -20,28 +19,21 @@
     <script>
         $(document).ready(function() {
             setTimeout(function() {
-                $('#notification').fadeOut();
+                $('#notification').attr("style", "display: none !important");
             }, 3000); // 3000 milliseconds = 3 seconds
         });
     </script>
+     {{ session()->forget('message') }}
 @endif
 
 
 @if (session()->has('back-success'))
-    <div id="notification" x-init="test()" class="d-flex align-items-center   rounded   text-center mb-9 "
-        style="
-         top: 90px;
-        right: 0px;
-        left: 80px;
-        margin: auto;
-        width: 350px;
-        z-index: 9999;
-        min-width: 500px;
-        position: absolute;">
-        <div class="alert rounded-4 shadow-lg   d-flex gap-5 align-items-center py-4 gap-5 w-100 heroText1"
-            style="background: #000" role="alert">
-            <i class="ri-check-double-line fs-1" style="color:#fff !important "></i>
-            <div class="ps-4 " style="color:#fff !important ">
+    <div id="notification" x-init="test()" class="d-flex align-items-center justify-content-center   rounded   text-center mb-9  notificationCss">
+        <div class="alert rounded-4 shadow-lg   d-flex align-items-center py-0 heroText1"
+            style="    background: white;
+            border: 6px solid #50A702;" role="alert">
+            <i class="ri-check-double-line fs-1" style="color:#50A702 !important "></i>
+            <div class="ps-4 " style="color:#50A702 !important ">
                 {{ session('back-success') }}
             </div>
         </div>
@@ -52,6 +44,8 @@
 
                 $('#notification').attr("style", "display: none !important");
                 // alert();
+
+                // $('#notification').fadeOut();
             }, 3000);
         }
     </script>

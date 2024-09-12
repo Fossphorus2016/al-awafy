@@ -27,7 +27,7 @@ class FormController extends Controller
             'message' => $request->message,
         ]);
 
-        return back();
+        return back()->with('back-success','Contact form submitted');
    }
 
 

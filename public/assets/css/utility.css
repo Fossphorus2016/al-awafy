@@ -67,19 +67,30 @@ a {
     background: #555;
 }
 
-/* input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
-} */
+    -moz-appearance: textfield;
+}
 
 
 
+.notificationCss {
 
+    top: 90px;
+    right: 0px;
+    left: 50%;
+    margin: auto;
+    width: 100%;
+    z-index: 9999;
+    min-width: 320px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
 
 .mainBtn1 {
     background-color: var(--baseColor1);
@@ -124,10 +135,11 @@ input[type=number] {
 .mainBtn2:hover {
     background-color: #085082;
 }
+
 .mainBtn3 {
     background: linear-gradient(360deg,
-    rgba(1, 27, 67, 1) 0%,
-    rgba(0, 147, 215, 1) 100%);
+            rgba(1, 27, 67, 1) 0%,
+            rgba(0, 147, 215, 1) 100%);
     color: var(--baseColor5);
     font-family: 'arial';
     border: none;
@@ -224,6 +236,7 @@ input[type=number] {
     color: var(--baseColor2);
     font-weight: 600;
 }
+
 .fs11 {
     font-size: clamp(1rem, 2vw, 1.2rem);
     font-family: 'arial';
@@ -280,19 +293,25 @@ input[type=number] {
 .underLineAffect {
     display: inline-block;
     position: relative;
-    color: white !important; /* Text color */
-    text-decoration: none; /* Remove default underline */
+    color: white !important;
+    /* Text color */
+    text-decoration: none;
+    /* Remove default underline */
 }
 
 .underLineAffect::after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -2px; /* Adjust based on your desired distance from the text */
+    bottom: -2px;
+    /* Adjust based on your desired distance from the text */
     width: 0;
-    height: 2px; /* Adjust the thickness of the underline */
-    background-color: var(--baseColor1); /* Underline color */
-    transition: width 0.3s ease, left 0.3s ease; /* Smooth animation */
+    height: 2px;
+    /* Adjust the thickness of the underline */
+    background-color: var(--baseColor1);
+    /* Underline color */
+    transition: width 0.3s ease, left 0.3s ease;
+    /* Smooth animation */
 }
 
 .underLineAffect:hover::after {
@@ -300,7 +319,7 @@ input[type=number] {
     left: 0;
 }
 
-.inputCustom{
+.inputCustom {
     border: 1px solid var(--baseColor1);
     outline: var(--baseColor1);
     height: 50px;
@@ -312,6 +331,7 @@ input[type=number] {
     outline: 0;
     box-shadow: 0 0 0 .25rem #4fa7022c;
 }
+
 .inputCustom::placeholder {
 
     color: var(--baseColor1);
@@ -353,3 +373,17 @@ input[type=number] {
         max-width: 1170px;
     }
 }
+
+/* @media (max-width: 768px) {
+    .notificationCss {
+        top: 90px;
+        right: 0px;
+        left: 50%;
+        margin: auto;
+        max-width: 350px;
+        z-index: 9999;
+        width: 100%;
+        position: fixed;
+        transform: translate(-50%, -50%);
+    }
+} */

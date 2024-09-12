@@ -63,6 +63,8 @@
 
 <body>
 
+
+    <x-notification.notifications />
     <header class="headerVisible position-absolute w-100">
         <div class="customContainer">
 
@@ -115,6 +117,7 @@
 
         </div>
     </header>
+
     {{ $slot }}
     <footer class="text-center text-lg-start text-white footer">
 
@@ -242,6 +245,11 @@
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
     <script src="{{ asset('assets/js/fancybox.umd.js') }}"></script>
+    <script>
+         Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+    </script>
 </body>
 
 </html>

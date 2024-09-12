@@ -102,32 +102,19 @@ function updateSocialMediaLinks() {
 document.addEventListener('DOMContentLoaded', updateSocialMediaLinks);
 
 
-
-
-
-
-var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-
-
 function news_validate() {
-    if ($("#subscriber_mail").val().trim() == "") {
+    var subsEmail = $("#subscriber_mail").val().trim();
+    if (subsEmail == "") {
         $(".newsletter_form ").addClass('redBorder');
         return;
+    }else{
+        if(!emailRegex.test(email)){
+            $(".newsletter_form ").addClass('redBorder');
+            return
+        }else{
+            $(".newsletter_form ").removeClass('redBorder');
+            $('#news_letter_form').submit();
+        }
     }
-    $(".newsletter_form ").removeClass('redBorder');
-    $('#news_letter_form').submit();
-}
 
-// $(".phoneVal").keydown(function (event) {
-//     const keyPressed = event.key;
-//     console.log(keyPressed, 'keyy')
-//     if (
-//         keyPressed === "+" ||
-//         keyPressed === "-" ||
-//         keyPressed === "e" ||
-//         keyPressed === "."
-//     ) {
-//         event.preventDefault();
-//     }
-// });
+}

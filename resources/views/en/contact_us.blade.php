@@ -277,6 +277,8 @@
                                             class="form-control inputCustom phoneVal" placeholder="Your Contact Number">
                                         <small id="error_phone" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Phone is required</small>
+                                        <small id="invalid_phone_length" class="text-danger position-absolute"
+                                            style="display: none; bottom: -20px;">Invalid Number</small>
                                     </div>
                                     <div class="col-12 position-relative">
                                         <input type="text" name="email" id="email"
@@ -383,6 +385,7 @@
             if ($("#email").val().trim() == "") {
                 $("#email").addClass("is-invalid");
                 $("#error_email").show();
+                $("#invalid_email").hide();
                 isValid = false;
             } else {
                 $("#error_email").hide();
@@ -397,13 +400,31 @@
             }
 
             // Phone validation
-            if ($("#phone").val().trim() == "") {
+            // if ($("#phone").val().trim() == "") {
+            //     $("#phone").addClass("is-invalid");
+            //     $("#error_phone").show();
+            //     isValid = false;
+            // } else {
+            //     $("#phone").removeClass("is-invalid");
+            //     $("#error_phone").hide();
+            // }
+            var phone = $("#phone").val().trim();
+            if (phone == "") {
                 $("#phone").addClass("is-invalid");
                 $("#error_phone").show();
+                $("#invalid_phone_length").hide();
                 isValid = false;
             } else {
-                $("#phone").removeClass("is-invalid");
                 $("#error_phone").hide();
+                if (phone.length < 8) {
+                    $("#phone").addClass("is-invalid");
+                    $("#invalid_phone_length").show();
+                    isValid = false;
+                } else {
+                    $("#phone").removeClass("is-invalid");
+                    $("#error_phone").hide();
+                    $("#invalid_phone_length").hide();
+                }
             }
 
             // Message validation
