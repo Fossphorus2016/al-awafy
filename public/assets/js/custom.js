@@ -101,14 +101,16 @@ function updateSocialMediaLinks() {
 // Call the function on page load
 document.addEventListener('DOMContentLoaded', updateSocialMediaLinks);
 
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function news_validate() {
+
     var subsEmail = $("#subscriber_mail").val().trim();
     if (subsEmail == "") {
         $(".newsletter_form ").addClass('redBorder');
         return;
     }else{
-        if(!emailRegex.test(email)){
+        if(!emailRegex.test(subsEmail)){
             $(".newsletter_form ").addClass('redBorder');
             return
         }else{

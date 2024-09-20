@@ -70,7 +70,7 @@
 
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"> <img class="headerLogo"
+                    <a class="navbar-brand" href="home"> <img class="headerLogo"
                             src="{{ asset('assets/images/logo/logo.png') }}" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -95,8 +95,8 @@
                                     Our Brands
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="brand-alawafy">Al-awafy</a></li>
-                                    <li><a class="dropdown-item" href="brand-crico">Crico</a></li>
+                                    <li><a class="dropdown-item" href="brand-alawafy">Alawafy</a></li>
+                                    <li><a class="dropdown-item" href="brand-crico">Criko</a></li>
                                     <li><a class="dropdown-item" href="brand-alyoum">Alyoum</a></li>
 
                                 </ul>
@@ -174,13 +174,13 @@
                     <div class="col-lg-3 ">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mt-5 mb-4 fs-4">
-                            Company
+                            Brands
                         </h6>
                         <p class="mt-1">
-                            <a href="brand-alawafy" class="text-reset anchorHover">Al-Awafy </a>
+                            <a href="brand-alawafy" class="text-reset anchorHover">AlAwafy </a>
                         </p>
                         <p class="mt-1">
-                            <a href="brand-crico" class="text-reset anchorHover">Crisco</a>
+                            <a href="brand-crico" class="text-reset anchorHover">Criko</a>
                         </p>
                         <p class="mt-1">
                             <a href="brand-alyoum" class="text-reset anchorHover">Alyoum</a>

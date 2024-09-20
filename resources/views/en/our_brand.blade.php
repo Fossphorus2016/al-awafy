@@ -100,7 +100,7 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Amandes</span> </h2>
+                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Amandes en coque</span> </h2>
                                 <p class="text-white">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum

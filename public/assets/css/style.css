@@ -414,6 +414,10 @@ html {
     object-fit: contain;
 }
 
+.responsiveCenter{
+    text-align: left;
+}
+
 @keyframes floating {
     from {
         transform: translateY(-50%);
@@ -841,7 +845,7 @@ html {
 }
 
 .aboutBanner2 img {
-    width: 80%;
+    width: 87%;
 }
 
 .brandBlue {
@@ -1028,6 +1032,9 @@ html {
 }
 
 @media (max-width: 992px) {
+    .responsiveCenter{
+        text-align: center;
+    }
     .navbar-nav {
 
         margin-bottom: 20px;

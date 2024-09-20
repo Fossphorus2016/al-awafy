@@ -246,7 +246,7 @@
                                 <div class="card-body paraFont py-4">
                                     <img class="w-100" src="{{ asset('assets/images/items/brandItem2.png') }}"
                                         alt="">
-                                    <label class="fs10 py-2">Crico</label>
+                                    <label class="fs10 py-2">Criko</label>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
                                     <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">

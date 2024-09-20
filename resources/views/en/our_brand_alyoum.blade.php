@@ -58,7 +58,7 @@
         </section>
 
         <section class="brandSection brandSection1">
-            <div class="brandOuter brandGreen py-5">
+            <div class="brandOuter brandBlue py-5">
 
                 <div class="customContainer">
                     <div class="row ">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="brandOuter brandBlue py-5">
+            <div class="brandOuter brandGreen py-5">
 
                 <div class="customContainer">
                     <div class="row ">

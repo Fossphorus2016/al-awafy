@@ -333,7 +333,7 @@
                         <div class="d-flex">
                             <img class="pe-3" src="{{ asset('assets/images/shape/contact1.png') }}" alt="">
                             <div class="d-flex flex-column justify-content-center ">
-                                <p class="fs11">ALRIMAH food
+                                <p class="fs11 responsiveCenter">ALRIMAH food
                                     distribution co.
                                     Alkremia street
                                     Aldol road 700m</p>
@@ -348,10 +348,8 @@
         <section class="mapSection">
 
 
+            <iframe class=" mapIframe secondValues" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3220.6003876465056!2d5.413036175809924!3d36.17627777243146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDEwJzM0LjYiTiA1wrAyNCc1Ni4yIkU!5e0!3m2!1sen!2s!4v1726751132615!5m2!1sen!2s"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <iframe class=" mapIframe secondValues"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125582.80284070502!2d13.017693569745838!3d32.8329195057037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ea798d4100e9%3A0xeadbe42e0e3f7c8!2sTripoli%20District%2C%20Libya!5e0!3m2!1sen!2s!4v1725955087744!5m2!1sen!2s"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
 

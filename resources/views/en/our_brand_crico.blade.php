@@ -30,12 +30,12 @@
                 <div class="row">
                     <div class=" col-12 d-flex align-item">
                         <div class="aboutInner paraFont text-center">
-                            <h2><span class="fs5">Discover</span> <span class="fs6">Crico</span> </h2>
+                            <h2><span class="fs5">Discover</span> <span class="fs6">Criko</span> </h2>
                             <p class="mb-5 w-100">
-                                Crico brings you the richness and benefits of nature, to take care of your food and
+                                Criko brings you the richness and benefits of nature, to take care of your food and
                                 decorate your tables with the best, most ideal and most delicious in order to achieve a
                                 healthy, sound and varied diet that ensures that the body gets all the natural elements.
-                                Under our brand “Crico” which is nearly twenty-five years old of history, giving and
+                                Under our brand “Criko” which is nearly twenty-five years old of history, giving and
                                 success, we are keen on a healthy life, so you will find with us all kinds of canned
                                 foods, nuts, tuna and others that have been manufactured and packaged according to food
                                 safety standards and high quality.
@@ -64,7 +64,7 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">Chilli</span> </h2>
+                                <h2><span class="fs7">Criko</span> <span class="fs8">Chilli</span> </h2>
                                 <p class="text-white">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="brandOuter brandBlue py-5">
+            <div class="brandOuter brandGreen py-5">
 
                 <div class="customContainer">
                     <div class="row ">
@@ -100,7 +100,7 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">Salt</span> </h2>
+                                <h2><span class="fs7">Criko</span> <span class="fs8">Salt</span> </h2>
                                 <p class="text-white">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum
@@ -122,7 +122,7 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">BBQ</span> </h2>
+                                <h2><span class="fs7">Criko</span> <span class="fs8">BBQ</span> </h2>
                                 <p class="text-white">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum
@@ -158,7 +158,7 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">Pizza</span> </h2>
+                                <h2><span class="fs7">Criko</span> <span class="fs8">Pizza</span> </h2>
                                 <p class="text-white">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum
@@ -180,7 +180,7 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">Fromage</span> </h2>
+                                <h2><span class="fs7">Criko</span> <span class="fs8">Fromage</span> </h2>
                                 <p class="text-white">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum
