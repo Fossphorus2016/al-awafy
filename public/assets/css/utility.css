@@ -288,7 +288,24 @@ input[type=number] {
     width: 40px;
     height: 35px;
 }
+.waterDropsAfter2 {
+    position: relative;
+    width: fit-content;
+    margin: 0 60px 0 60px;
+}
 
+
+.waterDropsAfter2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: -275%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-image: url('../images/shape/drop2.png');
+    width: 40px;
+    height: 35px;
+}
 
 .underLineAffect {
     display: inline-block;

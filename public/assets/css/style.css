@@ -295,7 +295,8 @@ html {
     display: flex;
     border: 3px solid white;
 }
-.redBorder{
+
+.redBorder {
     border: 3px solid red;
 }
 
@@ -414,7 +415,7 @@ html {
     object-fit: contain;
 }
 
-.responsiveCenter{
+.responsiveCenter {
     text-align: left;
 }
 
@@ -792,17 +793,20 @@ html {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
-.noNuts::before{
+
+.noNuts::before {
     display: none !important;
 }
+
 .activitiesSlider .slide-arrow {
     position: absolute;
     background-color: transparent;
     top: 50%;
     margin-top: -15px;
 }
-.activitiesSlider .slick-list{
-    width:  90%;
+
+.activitiesSlider .slick-list {
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -848,6 +852,7 @@ html {
     width: 87%;
 }
 
+
 .brandBlue {
     background: linear-gradient(360deg,
             rgba(1, 27, 67, 1) 0%,
@@ -883,6 +888,11 @@ html {
             #730603 0%,
             #dc3c01 100%);
 }
+.brandPurple {
+    background: linear-gradient(360deg,
+            #400011 0%,
+            #db184e 100%);
+}
 
 .brandInner {
     display: flex;
@@ -901,7 +911,7 @@ html {
 
 }
 
-.hoverText:hover{
+.hoverText:hover {
     color: rgb(202, 202, 202);
 }
 
@@ -918,6 +928,7 @@ html {
     right: 10%;
     top: -169px;
 }
+
 .brandSection1::before {
 
     background-image: url(../images/items/brainNut1.png);
@@ -1005,6 +1016,16 @@ html {
       transform: scale(2);
     } */
 
+.rightPlaceholder::placeholder {
+    text-align: right;
+}
+
+.ourVisionInner2{
+    position: relative;
+}
+.ourVisionInner2::before {
+    background-size: 85% 43% !important;
+}
 
 .slick-dots li button:before {
     font-family: slick;
@@ -1032,9 +1053,10 @@ html {
 }
 
 @media (max-width: 992px) {
-    .responsiveCenter{
+    .responsiveCenter {
         text-align: center;
     }
+
     .navbar-nav {
 
         margin-bottom: 20px;

@@ -49,6 +49,15 @@ Route::prefix('Ar')->group(function () {
     Route::get('/about', function () {
         return view('ar.about_us');
     })->name('ar.about');
+    Route::get('/brand-alawafy', function () {
+        return view('ar.our_brand');
+    })->name('ar.brands');
+    Route::get('/brand-crico', function () {
+        return view('ar.our_brand_crico');
+    })->name('ar.brands_crico');
+    Route::get('/brand-alyoum', function () {
+        return view('ar.our_brand_alyoum');
+    })->name('ar.brands_alyoum');
     Route::get('/home', function () {
         return view('ar.home');
     })->name('ar.home');
@@ -58,9 +67,9 @@ Route::prefix('Ar')->group(function () {
     Route::get('/our-products', function () {
         return view('ar.our_products');
     })->name('ar.our.products');
-    Route::get('/blogs', function () {
-        return view('ar.blogs');
-    })->name('ar.blogs');
+    Route::get('/activities', function () {
+        return view('ar.activities');
+    })->name('ar.activities');
 });
 
 

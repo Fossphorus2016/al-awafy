@@ -203,6 +203,35 @@
                     </div>
                 </div>
             </div>
+            <div class="brandOuter brandPurple py-5">
+
+                <div class="customContainer">
+                    <div class="row ">
+                        <div class="col-lg-6 col-12">
+                            <div class="brandInner brandInnerTwo">
+                                <img class="" src="{{ asset('assets/images/items/brandItem23.png') }}"
+                                    alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-12 ">
+                            <div class="brandInner paraFont ">
+                                <h2><span class="fs7">Criko</span> <span class="fs8">Cacahuetes</span> </h2>
+                                <p class="text-white">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and book.
+                                </p>
+                                <button class="mainBtn3">
+                                    Contact us
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {{-- <div class="brandOuter brandRed py-5">
 
                 <div class="customContainer">
