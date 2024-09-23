@@ -12,7 +12,7 @@
         <div class="customContainer">
 
             <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid flex-row-reverse" >
+                <div class="container-fluid flexReverse2" >
                     <a class="navbar-brand" href="home"> <img class="headerLogo"
                             src="{{ asset('assets/images/logo/logo.png') }}" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -22,7 +22,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
 
-                        <ul class="navbar-nav justify-content-start flex-row-reverse ">
+                        <ul class="navbar-nav flexReverse ">
                             <li class="nav-item ">
                                 <a class="nav-link fs1 underLineAffect" href="home">بيت</a>
                             </li>
@@ -47,7 +47,7 @@
                             <li class="nav-item ">
                                 <a class="nav-link fs1 underLineAffect" href="activities">أنشطة</a>
                             </li>
-                            <li class="nav-item ">
+                            <li class="nav-item d-flex justify-content-end">
                                 <a class="mainBtn1" href="contact-us" style="display: block;">اتصل بنا</a>
                             </li>
                         </ul>

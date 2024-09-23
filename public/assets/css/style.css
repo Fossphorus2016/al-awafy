@@ -377,6 +377,11 @@ html {
     color: var(--baseColor1);
 }
 
+.flexReverse{
+    flex-direction: row-reverse !important;
+    justify-content: flex-start;
+}
+
 .aboutItem1 {
     top: 40%;
     right: 10%;
@@ -386,7 +391,7 @@ html {
 }
 
 .aboutItem2 {
-    bottom: -15%;
+    bottom: -8%;
     right: 30%;
     width: 220px;
     transform: translateY(-50%);
@@ -539,6 +544,10 @@ html {
 
 }
 
+.flexReverse2{
+    flex-direction: row-reverse !important;
+}
+
 .aboutBanner {
     background-image: url(../images/banner/aboutBanner.png);
 }
@@ -564,6 +573,14 @@ html {
 }
 
 @media (max-width: 992px) {
+    .flexReverse2{
+        flex-direction: row !important;
+    }
+    .flexReverse{
+        flex-direction: column !important;
+        justify-content: flex-start;
+        text-align: end;
+    }
     .privacyPages {
         text-align: center !important;
     }
