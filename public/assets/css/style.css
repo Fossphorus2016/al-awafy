@@ -186,7 +186,7 @@ html {
 .curvedLayer {
     position: relative;
     background: linear-gradient(360deg,
-            rgba(1, 27, 67, 1) 0%,
+            rgba(1, 27, 67, 1) 0%,940
             rgba(0, 147, 215, 1) 100%);
 }
 
@@ -871,7 +871,7 @@ html {
 }
 
 .aboutBanner2 img {
-    width: 87%;
+    width: 100%;
 }
 
 
@@ -938,7 +938,7 @@ html {
 }
 
 .brandSection::before {
-    content: '';
+    /* content: '';
     display: block;
     position: absolute;
     background-image: url(../images/items/brainNut.png);
@@ -948,7 +948,7 @@ html {
     z-index: 2;
     background-repeat: no-repeat;
     right: 10%;
-    top: -169px;
+    top: -169px; */
 }
 
 .brandSection1::before {
