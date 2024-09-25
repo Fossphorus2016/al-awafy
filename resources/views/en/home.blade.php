@@ -138,7 +138,7 @@
                     <h2 class="text-center pb-4"><span class="fs5">Our</span> <span class="fs6">Brands</span>
                     </h2>
 
-                    <div class="row showRow1 gy-4">
+                    {{-- <div class="row showRow1 gy-4">
                         <div class="col-lg-4 brandCardOuter col-12">
 
                             <div class="brandCard card">
@@ -180,7 +180,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="row showRow2 gy-4">
                         <div class="col-lg-4 brandCardOuter col-12">
 
@@ -226,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row showRow3 gy-4">
+                    {{-- <div class="row showRow3 gy-4">
                         <div class="col-lg-4 brandCardOuter col-12">
 
                             <div class="brandCard card">
@@ -246,7 +246,7 @@
                                 <div class="card-body paraFont py-4">
                                     <img class="w-100" src="{{ asset('assets/images/items/brandItem2.png') }}"
                                         alt="">
-                                    <label class="fs10 py-2">Criko</label>
+                                    <label class="fs10 py-2">Crico</label>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
                                     <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
@@ -266,8 +266,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-center pt-4" style="gap: 10px">
+                    </div> --}}
+                    {{-- <div class="d-flex justify-content-center pt-4" style="gap: 10px">
 
                         <button
                             style="  height: 25px;
@@ -296,7 +296,7 @@
                             border-radius: 50%;
                             display: inline-block;"
                             class="showBtn3"> 3</button>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
@@ -497,28 +497,3 @@
     </main>
 </x-layout>
 
-<script>
-
-
-    $('.showRow1').show();
-    $('.showRow2').hide();
-    $('.showRow3').hide();
-
-    document.querySelector('.showBtn1').addEventListener('click', function() {
-        $('.showRow1').show();
-        $('.showRow2').hide();
-        $('.showRow3').hide();
-    });
-
-    document.querySelector('.showBtn2').addEventListener('click', function() {
-        $('.showRow1').hide();
-        $('.showRow2').show();
-        $('.showRow3').hide();
-    });
-
-    document.querySelector('.showBtn3').addEventListener('click', function() {
-        $('.showRow1').hide();
-        $('.showRow2').hide();
-        $('.showRow3').show();
-    });
-</script>

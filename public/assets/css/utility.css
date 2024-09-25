@@ -137,9 +137,7 @@ input[type=number] {
 }
 
 .mainBtn3 {
-    background: linear-gradient(360deg,
-            rgba(1, 27, 67, 1) 0%,
-            rgba(0, 147, 215, 1) 100%);
+    background: linear-gradient(360deg, rgb(0 93 237) 0%, rgba(0, 147, 215, 1) 100%);
     color: var(--baseColor5);
     font-family: 'arial';
     border: none;
@@ -288,6 +286,7 @@ input[type=number] {
     width: 40px;
     height: 35px;
 }
+
 .waterDropsAfter2 {
     position: relative;
     width: fit-content;

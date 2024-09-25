@@ -100,55 +100,7 @@
                             class="fs6">التجارية</span>
                     </h2>
 
-                    <div class="row showRow1 gy-4">
-                        <div class="col-lg-4 brandCardOuter col-12">
 
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
-                                        alt="">
-                                    <img class="py-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
-                                    <p>
-                                        لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة
-
-                                    </p>
-                                    <a class="mainBtn1" href="brand-alawafy">عرض منتجات العلامة التجارية</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem2.png') }}"
-                                        alt="">
-                                    <img class="py-3" src="{{ asset('assets/images/logo/logo2.png') }}"
-                                        alt="">
-                                    <p> لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة</p>
-                                    <a class="mainBtn1" href="brand-crico">عرض منتجات العلامة التجارية</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem4.png') }}"
-                                        alt="">
-                                    <img style="width: 145px;object-fit: contain;" class="pb-2"
-                                        src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
-                                    <p> لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة</p>
-                                    <a class="mainBtn1" href="brand-alyoum">عرض منتجات العلامة التجارية</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row showRow2 gy-4">
                         <div class="col-lg-4 brandCardOuter col-12">
 
@@ -200,83 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row showRow3 gy-4">
-                        <div class="col-lg-4 brandCardOuter col-12">
 
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
-                                        alt="">
-                                    <label class="fs10 py-2">Alawafy</label>
-                                    <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة</p>
-                                    <a href="brand-alawafy" class="mainBtn1">عرض منتجات العلامة التجارية</a
-                                        href="brand-alawafy">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem2.png') }}"
-                                        alt="">
-                                    <label class="fs10 py-2">Criko</label>
-                                    <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة</p>
-                                    <a href="brand-crico" class="mainBtn1">عرض منتجات العلامة التجارية</a
-                                        href="brand-alawafy">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem4.png') }}"
-                                        alt="">
-                                    <label class="fs10 py-2">Alyoum</label>
-                                    <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة</p>
-                                    <a href="brand-alyoum" class="mainBtn1">عرض منتجات العلامة التجارية</a
-                                        href="brand-alawafy">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center pt-4" style="gap: 10px">
-
-                        <button
-                            style="  height: 25px;
-                            width: 25px;
-                            background-color: #50A702;
-                            border:none;
-                            color:white;
-                            border-radius: 50%;
-                            display: inline-block;"
-                            class="showBtn1"> 1</button>
-                        <button
-                            style="  height: 25px;
-                            width: 25px;
-                            color:white;
-                            border:none;
-                            background-color: #50A702;
-                            border-radius: 50%;
-                            display: inline-block;"
-                            class="showBtn2"> 2</button>
-                        <button
-                            style="  height: 25px;
-                            width: 25px;
-                            border:none;
-                            color:white;
-                            background-color: #50A702;
-                            border-radius: 50%;
-                            display: inline-block;"
-                            class="showBtn3"> 3</button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -391,27 +267,3 @@
 
     </main>
 </x-arabicLayout>
-
-<script>
-    $('.showRow1').show();
-    $('.showRow2').hide();
-    $('.showRow3').hide();
-
-    document.querySelector('.showBtn1').addEventListener('click', function() {
-        $('.showRow1').show();
-        $('.showRow2').hide();
-        $('.showRow3').hide();
-    });
-
-    document.querySelector('.showBtn2').addEventListener('click', function() {
-        $('.showRow1').hide();
-        $('.showRow2').show();
-        $('.showRow3').hide();
-    });
-
-    document.querySelector('.showBtn3').addEventListener('click', function() {
-        $('.showRow1').hide();
-        $('.showRow2').hide();
-        $('.showRow3').show();
-    });
-</script>

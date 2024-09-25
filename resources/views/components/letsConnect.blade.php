@@ -7,27 +7,27 @@
 
             <div class="row connectSectionInner justify-content-center">
                 <div class="col-lg-3 col-12 d-flex justify-content-center">
-                    <div class="">
-                        <a class="" href="brand-alawafy">
-                            <img src="{{ asset('assets/images/logo/logo.png') }}" alt="">
+                    <div class="align-self-center">
+                        <a class="brandConnectImg" href="brand-alawafy">
+                            <img class="w-100"  src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                         </a>
 
                     </div>
                 </div>
                 <div class="col-lg-3 col-12 d-flex justify-content-center">
-                    <div class="">
-                        <a class="" href="brand-crico">
+                    <div class="align-self-center">
+                        <a class="brandConnectImg" href="brand-crico">
 
-                            {{-- <img src="{{ asset('assets/images/shape/insta1.png') }}" alt=""> --}}
-                            <img src="{{ asset('assets/images/logo/logo2.png') }}" alt="">
+                            {{-- <img  src="{{ asset('assets/images/shape/insta1.png') }}" alt=""> --}}
+                            <img class="w-100"  src="{{ asset('assets/images/logo/logo2.png') }}" alt="">
                         </a>
 
                     </div>
                 </div>
                 <div class="col-lg-3 col-12 d-flex justify-content-center">
-                    <div class="">
-                        <a class="" href="brand-alyoum">
-                            <img src="{{ asset('assets/images/logo/logo3.png') }}" alt="">
+                    <div class="align-self-center">
+                        <a class="brandConnectImg" href="brand-alyoum">
+                            <img class="w-100"  src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
                         </a>
 
                     </div>

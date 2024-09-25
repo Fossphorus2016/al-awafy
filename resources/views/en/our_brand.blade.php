@@ -71,9 +71,9 @@
                                     has been the industry's standard dummy text ever since the 1500s, when an unknown
                                     printer took a galley of type and book.
                                 </p>
-                                <button class="mainBtn1">
+                                <a href="contact-us" class="mainBtn1">
                                     Contact us
-                                </button>
+                                </a>
 
                             </div>
                         </div>
@@ -107,9 +107,9 @@
                                     has been the industry's standard dummy text ever since the 1500s, when an unknown
                                     printer took a galley of type and book.
                                 </p>
-                                <button class="mainBtn3">
+                                <a href="contact-us" class="mainBtn3">
                                     Contact us
-                                </button>
+                                </a>
 
                             </div>
                         </div>
@@ -129,9 +129,9 @@
                                     has been the industry's standard dummy text ever since the 1500s, when an unknown
                                     printer took a galley of type and book.
                                 </p>
-                                <button class="mainBtn1">
+                                <a href="contact-us" class="mainBtn1">
                                     Contact us
-                                </button>
+                                </a>
 
                             </div>
                         </div>
@@ -165,9 +165,9 @@
                                     has been the industry's standard dummy text ever since the 1500s, when an unknown
                                     printer took a galley of type and book.
                                 </p>
-                                <button class="mainBtn3">
+                                <a href="contact-us" class="mainBtn3">
                                     Contact us
-                                </button>
+                                </a>
 
                             </div>
                         </div>
@@ -187,9 +187,9 @@
                                     has been the industry's standard dummy text ever since the 1500s, when an unknown
                                     printer took a galley of type and book.
                                 </p>
-                                <button class="mainBtn1">
+                                <a href="contact-us" class="mainBtn1">
                                     Contact us
-                                </button>
+                                </a>
 
                             </div>
                         </div>
@@ -223,9 +223,9 @@
                                     has been the industry's standard dummy text ever since the 1500s, when an unknown
                                     printer took a galley of type and book.
                                 </p>
-                                <button class="mainBtn3">
+                                <a href="contact-us" class="mainBtn3">
                                     Contact us
-                                </button>
+                                </a>
 
                             </div>
                         </div>
@@ -245,9 +245,9 @@
                                     has been the industry's standard dummy text ever since the 1500s, when an unknown
                                     printer took a galley of type and book.
                                 </p>
-                                <button class="mainBtn1">
+                                <a href="contact-us" class="mainBtn1">
                                     Contact us
-                                </button>
+                                </a>
 
                             </div>
                         </div>

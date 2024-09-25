@@ -39,7 +39,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="brand-alawafy">Alawafy</a></li>
-                                    <li><a class="dropdown-item" href="brand-crico">Criko</a></li>
+                                    <li><a class="dropdown-item" href="brand-crico">Crico</a></li>
                                     <li><a class="dropdown-item" href="brand-alyoum">Alyoum</a></li>
 
                                 </ul>
@@ -125,7 +125,7 @@
                             <a href="brand-alawafy" class="text-reset anchorHover">AlAwafy </a>
                         </p>
                         <p class="mt-1">
-                            <a href="brand-crico" class="text-reset anchorHover">Criko</a>
+                            <a href="brand-crico" class="text-reset anchorHover">Crico</a>
                         </p>
                         <p class="mt-1">
                             <a href="brand-alyoum" class="text-reset anchorHover">Alyoum</a>

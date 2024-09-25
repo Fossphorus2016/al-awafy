@@ -571,6 +571,11 @@ html {
 .privacyPages {
     text-align: end !important;
 }
+.brandConnectImg{
+    width: 150px;
+    display: block;
+    object-fit: contain;
+}
 
 @media (max-width: 992px) {
     .flexReverse2{
