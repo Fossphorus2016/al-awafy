@@ -314,8 +314,7 @@
                         <div class="d-flex">
                             <img class="pe-3" src="{{ asset('assets/images/shape/contact2.png') }}" alt="">
                             <div class="d-flex flex-column justify-content-center ">
-                                <p class="fs11">+218 21 724 3131</p>
-                                <p class="fs11">+218 21 724 3232</p>
+                                <p class="fs11">+213-557-666-888</p>
                             </div>
                         </div>
                     </div>
@@ -333,10 +332,7 @@
                         <div class="d-flex">
                             <img class="pe-3" src="{{ asset('assets/images/shape/contact1.png') }}" alt="">
                             <div class="d-flex flex-column justify-content-center ">
-                                <p class="fs11 responsiveCenter">ALRIMAH food
-                                    distribution co.
-                                    Alkremia street
-                                    Aldol road 700m</p>
+                                <p class="fs11 responsiveCenter">ZEA 1 ère Tranche N°06 -Sétif- Algeria</p>
 
                             </div>
                         </div>
