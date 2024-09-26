@@ -32,13 +32,12 @@
                         <div class="aboutInner paraFont text-center">
                             <h2><span class="fs5">Discover</span> <span class="fs6">Alyoum</span> </h2>
                             <p class="mb-5 w-100">
-                                Alyoum brings you the richness and benefits of nature, to take care of your food and
-                                decorate your tables with the best, most ideal and most delicious in order to achieve a
-                                healthy, sound and varied diet that ensures that the body gets all the natural elements.
-                                Under our brand “Alyoum” which is nearly twenty-five years old of history, giving and
-                                success, we are keen on a healthy life, so you will find with us all kinds of canned
-                                foods, nuts, tuna and others that have been manufactured and packaged according to food
-                                safety standards and high quality.
+                                Alyoum Describtion : offers the same high-quality nuts from our Alawafy brand in larger
+                                quantities.
+                                Perfect for businesses, restaurants, and large-scale needs, Alyoum provides a range of
+                                nuts in bulk
+                                packaging (1kg and above), ensuring excellent value without sacrificing quality.
+
                             </p>
 
                         </div>
@@ -64,12 +63,17 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alyoum</span> <span class="fs8">Pistachio</span> </h2>
+                                <h2><span class="fs7">Alyoum</span> <span class="fs8">Pistachios</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    <strong>Alyoum Pistachios</strong> bring you a high quality Pistachios available in
+                                    bulk. Ideal for
+                                    restaurants,
+                                    cafes, or any business requiring larger quantities, these pistachios deliver rich,
+                                    authentic
+                                    f
+                                    lavor and crunch in every bite. Available in 1kg and above, Alyoum Pistachios are
+                                    perfect for
+                                    creating unforgettable dishes or as a premium snack option.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
@@ -100,12 +104,17 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alyoum</span> <span class="fs8">Almonds</span> </h2>
+                                <h2><span class="fs7">Alyoum</span> <span class="fs8">Peanuts</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    For those seeking premium peanuts in large quantities, <strong>Alyoum Peanuts</strong> offer the
+                                    perfect
+                                    solution. These delicious, crunchy peanuts are perfect for wholesale buyers,
+                                    restaurants, and
+                                    caterers who want to ensure high quality in their offerings without compromising on
+                                    value.
+                                    Available in bulk packaging, Alyoum Peanuts guarantee consistency and freshness with
+                                    every
+                                    order.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contact us
@@ -122,12 +131,17 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alyoum</span> <span class="fs8">Noix De Cajou</span> </h2>
+                                <h2><span class="fs7">Alyoum</span> <span class="fs8">Cashews</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    <strong>Alyoum Cashews</strong> provide top-tier cashew nuts in bulk, designed for
+                                    large-scale use
+                                    without
+                                    sacrificing premium quality. Known for their buttery taste and smooth texture, these
+                                    cashews are perfect for businesses needing high-quality ingredients in larger
+                                    quantities.
+                                    Alyoum Cajoux offers exceptional value while maintaining the superior taste your
+                                    customers
+                                    expect.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
@@ -160,10 +174,16 @@
                             <div class="brandInner paraFont ">
                                 <h2><span class="fs7">Alyoum</span> <span class="fs8">Mix Premium</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    <strong>Alyoum Mix Premium</strong> combines the best of our nuts — pistachios,
+                                    almonds, peanuts, and
+                                    cashews — in a perfect blend, all available in bulk packaging. This premium mix is
+                                    ideal for
+                                    restaurants, hotels, and events where top-quality snacks are essential. Alyoum Mix
+                                    Premium
+                                    ensures a diverse, nutritious, and flavorful selection, offering the ultimate in
+                                    taste and
+                                    convenience for large-scale needs.
+
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contact us
@@ -180,12 +200,16 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alyoum</span> <span class="fs8">Amandes</span> </h2>
+                                <h2><span class="fs7">Alyoum</span> <span class="fs8">Almonds</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    <strong>Alyoum Almonds</strong> provide the finest, carefully selected almonds in
+                                    bulk packaging.
+                                    These high-quality almonds are ideal for commercial use, whether it’s for baking,
+                                    cooking,
+                                    or serving as a healthy snack in large volumes. Sourced with care, Alyoum Almonds
+                                    maintain their freshness and exceptional taste, perfect for businesses that value
+                                    quality and
+                                    efficiency.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us

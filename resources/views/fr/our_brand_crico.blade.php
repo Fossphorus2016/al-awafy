@@ -30,15 +30,21 @@
                 <div class="row">
                     <div class=" col-12 d-flex align-item">
                         <div class="aboutInner paraFont text-center">
-                            <h2><span class="fs5">Discover</span> <span class="fs6">Crico</span> </h2>
+                            <h2><span class="fs5">Découvrez</span> <span class="fs6">Crico</span> </h2>
                             <p class="mb-5 w-100">
-                                Crico brings you the richness and benefits of nature, to take care of your food and
-                                decorate your tables with the best, most ideal and most delicious in order to achieve a
-                                healthy, sound and varied diet that ensures that the body gets all the natural elements.
-                                Under our brand “Crico” which is nearly twenty-five years old of history, giving and
-                                success, we are keen on a healthy life, so you will find with us all kinds of canned
-                                foods, nuts, tuna and others that have been manufactured and packaged according to food
-                                safety standards and high quality.
+                                Crico propose une délicieuse gamme de cacahuètes enrobées aromatisées qui allient
+                                qualité et goût
+                                irrésistible. Chaque bouchée de Crico offre une expérience croquante avec des saveurs
+                                audacieuses.
+                                Que vous ayez envie de la chaleur du Spicy, du goût fumé du BBQ, de la saveur savoureuse
+                                de la
+                                Pizza, ou des saveurs classiques du Sel et du Fromage, que vous passiez une journée
+                                décontractée
+                                avec des amis ou que vous cherchiez une collation rapide à emporter, la variété de Crico
+                                satisfera vos
+                                envies tout en vous proposant un produit parfaitement équilibré en qualité et en prix à
+                                un tarif
+                                abordable. Grignotez intelligemment, grignotez avec saveur avec Crico !
                             </p>
 
                         </div>
@@ -64,12 +70,16 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">Chilli</span> </h2>
+                                <h2><span class="fs7">Crico</span> <span class="fs8">ÉPICÉE</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Préparez-vous pour un coup audacieux ! Les cacahuètes enrobées <strong>ÉPICÉE
+                                        Crico</strong> offrent
+                                    une saveur
+                                    intense avec la juste dose de piquant. Ces cacahuètes croustillantes sont idéales
+                                    pour ceux qui
+                                    aiment leurs collations avec une touche de piquant, parfaites pour ajouter de
+                                    l'excitation à votre
+                                    moment de grignotage.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
@@ -100,12 +110,15 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">Salt</span> </h2>
+                                <h2><span class="fs7">Crico</span> <span class="fs8">SEL</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Parfois, la simplicité est la meilleure. Les cacahuètes enrobées de <strong>Sel
+                                        Crico</strong>
+                                    offrent une délicieuse
+                                    salinité classique avec juste ce qu'il faut de croquant. Cette saveur intemporelle
+                                    est parfaite pour
+                                    ceux qui apprécient une collation simple et sans chichis qui satisfait à chaque
+                                    fois.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contact us
@@ -124,10 +137,14 @@
                             <div class="brandInner paraFont ">
                                 <h2><span class="fs7">Crico</span> <span class="fs8">BBQ</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Savourez le goût sucré et acidulé du barbecue sous forme de cacahuètes
+                                    croustillantes. Les
+                                    cacahuètes enrobées de <strong>BBQ Crico</strong> apportent les saveurs
+                                    familières de la sauce
+                                    barbecue
+                                    fumée, ce qui en fait un excellent choix pour les pique-niques, les fêtes ou
+                                    simplement pour les
+                                    déguster à la maison.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
@@ -160,10 +177,14 @@
                             <div class="brandInner paraFont ">
                                 <h2><span class="fs7">Crico</span> <span class="fs8">Pizza</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Goûtez aux saveurs de l'Italie ! Les cacahuètes enrobées <strong>Crico
+                                        Pizza</strong> offrent le goût
+                                    classique de la
+                                    pizza dans une bouchée croquante, avec des saveurs de tomate, d'herbes et de
+                                    fromage. Ces
+                                    cacahuètes sont une option unique et savoureuse qui transforme l'heure du goûter en
+                                    une mini fête
+                                    de la pizza.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contact us
@@ -180,12 +201,16 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">Fromage</span> </h2>
+                                <h2><span class="fs7">Crico</span> <span class="fs8">Frommage</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Une délicieuse savoureuse pour les amateurs de fromage ! Les cacahuètes enrobées de
+                                    <strong>fromage
+                                        Crico</strong> allient le goût riche et crémeux du fromage à la croquant
+                                    satisfaisant de
+                                    cacahuètes de
+                                    première qualité. Cette saveur offre le parfait équilibre entre la gourmandise et le
+                                    croquant pour une
+                                    expérience de grignotage vraiment agréable.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
@@ -216,12 +241,13 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Crico</span> <span class="fs8">Fumee</span> </h2>
+                                <h2><span class="fs7">Crico</span> <span class="fs8">Fumé</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Pour les amateurs de saveurs fumées, les cacahuètes enrobées de <strong>Fumé Crico</strong> sont la
+                                    friandise
+                                    parfaite. Avec un goût riche et fumé qui persiste, ces cacahuètes offrent une
+                                    expérience de
+                                    grignotage audacieuse et inoubliable, apportant de la profondeur à chaque bouchée.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contact us

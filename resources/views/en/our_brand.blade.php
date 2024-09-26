@@ -32,13 +32,17 @@
                         <div class="aboutInner paraFont text-center">
                             <h2><span class="fs5">Discover</span> <span class="fs6">Alawafy</span> </h2>
                             <p class="mb-5 w-100">
-                                Al-Awafi brings you the richness and benefits of nature, to take care of your food and
-                                decorate your tables with the best, most ideal and most delicious in order to achieve a
-                                healthy, sound and varied diet that ensures that the body gets all the natural elements.
-                                Under our brand “Al-Awafi” which is nearly twenty-five years old of history, giving and
-                                success, we are keen on a healthy life, so you will find with us all kinds of canned
-                                foods, nuts, tuna and others that have been manufactured and packaged according to food
-                                safety standards and high quality.
+                                Our flagship brand, Alawafy, brings you the richness and benefits of nature, to take
+                                care of your food
+                                and decorate your tables with the best, most ideal and most delicious in order to
+                                achieve a healthy,
+                                sound and varied diet that ensures that the body gets all the natural elements.
+                                symbolizes quality
+                                and sophistication. We offer a wide variety of premium nuts, including pistachios,
+                                Almonds, Walnuts,
+                                Peanuts, Cashews, Inshell Almonds and mixed nuts in elegant packaging. Alawafy is
+                                committed to
+                                delivering superior taste and freshness, perfect for those seeking excellence.
                             </p>
 
                         </div>
@@ -64,12 +68,16 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Pistaches</span> </h2>
+                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Pistachios</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Indulge in the premium taste of <strong>Alawafy Pistachios</strong>, sourced from
+                                    the finest orchards
+                                    and carefully
+                                    roasted to perfection. These pistachios are packed with flavor, offering a
+                                    delightful crunch in every
+                                    bite. Ideal for healthy snacking or as an addition to your favorite recipes, Alawafy
+                                    Pistachios deliver
+                                    top-quality taste, rich in protein and essential nutrients.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
@@ -100,12 +108,16 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Amandes en coque</span> </h2>
+                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Inshell Almonds</span>
+                                </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    For a traditional and satisfying snack experience, try <strong>Alawafy Inshell
+                                        Almonds</strong>. These almonds come
+                                    naturally encased in their shell, preserving their fresh, nutty taste and crisp
+                                    texture. Cracking them
+                                    open is part of the fun, making them perfect for entertaining or slow snacking with
+                                    family and
+                                    friends.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contact us
@@ -122,12 +134,15 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Noix</span> </h2>
+                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Nuts</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    <strong>Alawafy Nuts</strong> bring you the best of nature’s bounty, offering a
+                                    diverse selection of premium nuts.
+                                    Carefully sourced and roasted to perfection, these nuts provide a rich array of
+                                    flavors and textures.
+                                    Ideal for snacking or adding to your favorite recipes, Alawafy Nuts guarantee
+                                    quality and freshness in
+                                    every bite.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
@@ -158,12 +173,16 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Cacahuete</span> </h2>
+                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Peanuts</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Enjoy the rich, earthy flavor of <strong>Alawafy Peanuts</strong>, carefully
+                                    selected for their
+                                    superior quality. These
+                                    peanuts are roasted to perfection, providing a satisfying crunch with each bite.
+                                    Whether as a
+                                    standalone snack or incorporated into your favorite dishes, Alawafy Peanuts offer a
+                                    nutritious and
+                                    delicious option for all nut lovers.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contact us
@@ -182,10 +201,13 @@
                             <div class="brandInner paraFont ">
                                 <h2><span class="fs7">Alawafy</span> <span class="fs8">Cocktail</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    The <strong>Alawafy Cocktail</strong> is a rich and diverse mix of premium nuts,
+                                    including pistachios, almonds,
+                                    peanuts, and cashews. This perfectly balanced combination offers a variety of
+                                    flavors and textures in
+                                    one delightful package. Whether for entertaining or enjoying on your own, the
+                                    Alawafy Cocktail is
+                                    the perfect snack blend, rich in nutrients and taste.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
@@ -216,12 +238,15 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Amandes</span> </h2>
+                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Almonds</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    <strong>Alawafy Almonds</strong> are a premium selection of whole almonds, known for
+                                    their smooth
+                                    texture and natural sweetness. Roasted with care, they provide a nutritious and
+                                    delicious snack, rich in vitamins,
+                                    minerals, and healthy fats. Enjoy them on their own or add them to your culinary
+                                    creations for an
+                                    extra boost of flavor and nutrition.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contact us
@@ -238,12 +263,15 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Cajoux</span> </h2>
+                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Cashews</span> </h2>
                                 <p class="text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and book.
+                                    Savor the creamy, buttery taste of <strong>Alawafy Cashews</strong>, a premium treat that melts in
+                                    your mouth.
+                                    Known for their smooth texture and rich flavor, these cashews are perfect for
+                                    snacking, cooking, or
+                                    adding to salads and desserts. Packed with nutrients, they offer a delicious and
+                                    healthy option for
+                                    any time of day.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contact us
