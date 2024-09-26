@@ -217,7 +217,7 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem11.png') }}"
+                                <img class="" style="transform: scale(1.2)" src="{{ asset('assets/images/items/brandItem11.png') }}"
                                     alt="">
                             </div>
 

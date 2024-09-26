@@ -154,7 +154,7 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem21.png') }}"
+                                <img class="" style="transform: scale(1.2)" src="{{ asset('assets/images/items/brandItem21.png') }}"
                                     alt="">
                             </div>
 
