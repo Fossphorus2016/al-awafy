@@ -120,3 +120,31 @@ function news_validate() {
     }
 
 }
+
+document.querySelectorAll('.languages').forEach(item => {
+    item.addEventListener('click', function (e) {
+
+        let currentUrl = window.location.href;
+
+        let selectedLang = e.target.textContent.trim().toLowerCase();
+
+        console.log(selectedLang, 'sellll')
+
+        let langCode = '';
+        if (selectedLang === 'english' || selectedLang === 'إنجليزي' || selectedLang === 'anglaise') {
+            langCode = 'En';
+        } else if (selectedLang === 'french' || selectedLang === 'فرنسي' || selectedLang === 'français') {
+            langCode = 'Fr';
+        } else if (selectedLang === 'arabic' || selectedLang === 'عربي' || selectedLang === 'arabe') {
+            langCode = 'Ar';
+        }
+        const langRegex = /\/(En|Ar|Fr)\//;
+        if (langRegex.test(currentUrl)) {
+            currentUrl = currentUrl.replace(langRegex, `/${langCode}/`);
+        } else {
+            currentUrl = `${window.location.origin}/${langCode}${window.location.pathname}${window.location.search}`;
+        }
+
+        window.location.href = currentUrl;
+    });
+});

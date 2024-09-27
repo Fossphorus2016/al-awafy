@@ -4729,7 +4729,7 @@ section.cricket-video-slider {
         top: 147px;
     }
 
-    /* 
+    /*
     .sideCategories .accordion a:hover li::after {
         width: 11px;
         height: 11px;
@@ -6829,11 +6829,11 @@ clip-path: polygon(0 0,
         width: 191px;
     }
     .galleryWrapper1 .sideLines::before {
-    
+
         width: 129px;
         top: -13px;
         left: 30px;
-    
+
     }
     .galleryWrapper2 .sideLines {
         top: 70px;
@@ -8200,7 +8200,7 @@ clip-path: polygon(0 0,
     }
 
     .reviews_slider .slick-slide.slick-active .review_bg {
-        transform: scale(1.2) !important;
+         !important;
     }
 
     .nav-button {

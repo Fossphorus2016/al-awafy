@@ -1,4 +1,4 @@
-<x-layout>
+<x-frenchLayout>
     <main>
         <section class="heroSection secondBanner brandBanner">
             <div class="customContainer">
@@ -264,4 +264,4 @@
         <x-letsConnect />
 
     </main>
-</x-layout>
+</x-frenchLayout>

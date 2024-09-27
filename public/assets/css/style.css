@@ -148,7 +148,10 @@ html {
 }
 
 .navbar-nav {
-    gap: 50px;
+    gap: 30px;
+}
+.languages{
+    cursor: pointer !important;
 }
 
 .heroInner {
@@ -186,8 +189,7 @@ html {
 .curvedLayer {
     position: relative;
     background: linear-gradient(360deg,
-            rgba(1, 27, 67, 1) 0%,940
-            rgba(0, 147, 215, 1) 100%);
+            rgba(1, 27, 67, 1) 0%, rgba(0, 147, 215, 1) 100%);
 }
 
 .curvedLayer::before {
@@ -377,7 +379,7 @@ html {
     color: var(--baseColor1);
 }
 
-.flexReverse{
+.flexReverse {
     flex-direction: row-reverse !important;
     justify-content: flex-start;
 }
@@ -544,7 +546,7 @@ html {
 
 }
 
-.flexReverse2{
+.flexReverse2 {
     flex-direction: row-reverse !important;
 }
 
@@ -571,21 +573,28 @@ html {
 .privacyPages {
     text-align: end !important;
 }
-.brandConnectImg{
+
+.brandConnectImg {
     width: 150px;
     display: block;
     object-fit: contain;
 }
 
+.languageSwitcher::after {
+    display: none !important;
+}
+
 @media (max-width: 992px) {
-    .flexReverse2{
+    .flexReverse2 {
         flex-direction: row !important;
     }
-    .flexReverse{
+
+    .flexReverse {
         flex-direction: column !important;
         justify-content: flex-start;
         text-align: end;
     }
+
     .privacyPages {
         text-align: center !important;
     }
@@ -910,6 +919,7 @@ html {
             #730603 0%,
             #dc3c01 100%);
 }
+
 .brandPurple {
     background: linear-gradient(360deg,
             #400011 0%,
@@ -1042,9 +1052,10 @@ html {
     text-align: right;
 }
 
-.ourVisionInner2{
+.ourVisionInner2 {
     position: relative;
 }
+
 .ourVisionInner2::before {
     background-size: 85% 43% !important;
 }

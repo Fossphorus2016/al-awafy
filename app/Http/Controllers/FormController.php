@@ -40,6 +40,6 @@ class FormController extends Controller
             'subscriber_mail' => $request->subscriber_mail,
         ]);
 
-        return back();
+        return back()->with('back-success','News Letter submitted');
    }
 }

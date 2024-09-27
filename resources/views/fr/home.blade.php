@@ -1,4 +1,4 @@
-<x-layout>
+<x-frenchLayout>
     <main>
         <section class="heroSection ">
             <div class="customContainer">
@@ -495,5 +495,5 @@
             {{-- <div class="scrollDownSection"></div> --}}
         </div>
     </main>
-</x-layout>
+</x-frenchLayout>
 

@@ -8269,7 +8269,7 @@ clip-path: polygon(0 0,
     }
 
     .reviews_slider .slick-slide.slick-active .review_bg {
-        transform: scale(1.2) !important;
+         !important;
     }
 
     .nav-button {
