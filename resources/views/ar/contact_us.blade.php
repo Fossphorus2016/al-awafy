@@ -64,7 +64,8 @@
                                     </div>
                                     <div class="col-lg-6 col-12 position-relative">
                                         <input type="number" name="phone" id="phone"
-                                            class="form-control inputCustom phoneVal rightPlaceholder" placeholder="رقم الاتصال الخاص بك">
+                                            class="form-control inputCustom phoneVal rightPlaceholder"
+                                            placeholder="رقم الاتصال الخاص بك">
                                         <small id="error_phone" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Phone is required</small>
                                         <small id="invalid_phone_length" class="text-danger position-absolute"
@@ -72,21 +73,24 @@
                                     </div>
                                     <div class="col-12 position-relative">
                                         <input type="text" name="email" id="email"
-                                            class="form-control inputCustom rightPlaceholder" placeholder="عنوان بريدك  الإلكتروني">
+                                            class="form-control inputCustom rightPlaceholder"
+                                            placeholder="عنوان بريدك  الإلكتروني">
                                         <small id="invalid_email" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Invalid email</small>
                                         <small id="error_email" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Email is required</small>
                                     </div>
                                     <div class="col-12 position-relative">
-                                        <textarea name="message" id="message" rows="4" style="height: 100px" class="form-control inputCustom rightPlaceholder"
-                                            placeholder="رسالتك هنا"></textarea>
+                                        <textarea name="message" id="message" rows="4" style="height: 100px"
+                                            class="form-control inputCustom rightPlaceholder" placeholder="رسالتك هنا"></textarea>
                                         <small id="error_message" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Message is required</small>
                                     </div>
                                     <div class="col-12 d-flex justify-content-center">
                                         <button class="mainBtn1 w-100" type="submit">يقدم الآن</button>
                                     </div>
+
+                                    <x-captcha />
                                 </div>
                             </form>
                         </div>
@@ -152,6 +156,18 @@
     </main>
 
     <script>
+        let captchaToken = '';
+
+        function javascriptCallback(token) {
+            if (token) {
+                captchaToken = token;
+                console.log("Turnstile response token:", token);
+            } else {
+                console.log("Error: Turnstile token not generated.");
+                captchaToken = '';
+            }
+        }
+
         function contact_validate(event) {
             var isValid = true;
 
@@ -224,10 +240,13 @@
             }
 
             // If form is not valid, prevent submission
-            if (!isValid) {
-                event.preventDefault();
-            }
+            if (captchaToken) {
+                // Set the hidden captcha token field
+                $('#captcha_token').val(captchaToken);
 
+            } else {
+                $('#error_message').html("Please check the captcha").show();
+            }
             // Return isValid to control the form submission
             return isValid;
         }

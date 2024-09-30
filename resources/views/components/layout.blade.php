@@ -168,6 +168,7 @@
                             <input type="email" name="subscriber_mail" id="subscriber_mail"
                                 placeholder="Enter Your Email Address" aria-label="Enter Your Email Address"
                                 aria-describedby="button-addon2">
+                                
                             <button onclick="news_validate()" type="button" id="button-addon2"><i
                                     class="fa-solid fa-paper-plane"></i></button>
 
