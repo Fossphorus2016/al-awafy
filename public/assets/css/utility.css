@@ -241,6 +241,16 @@ input[type=number] {
     color: var(--baseColor2);
     font-weight: 600;
 }
+.fs12 {
+    font-size: clamp(2rem, 6.5vw, 3rem);
+    font-family: 'euphoriaScript';
+    color: var(--baseColor1);
+}
+.fs13 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-family: 'impact';
+    color: var(--baseColor2);
+}
 
 .paraFont p {
     font-size: clamp(1rem, 1vw, 1rem);
@@ -352,6 +362,8 @@ input[type=number] {
 
     color: var(--baseColor1);
 }
+
+
 
 @media (min-width: 320px) {
 

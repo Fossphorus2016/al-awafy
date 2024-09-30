@@ -46,7 +46,7 @@
                                         THE</span>
                                     <span class="fs6">Form Below</span>
                                 </h2>
-                                <p class="text-center">Al-Awafi brings you the richness and benefits of nature, to take
+                                <p class="text-center w-100">Al-Awafi brings you the richness and benefits of nature, to take
                                     care of your food and
                                     decorate your tables with the best, most ideal and most delicious in order to
                                     achieve a

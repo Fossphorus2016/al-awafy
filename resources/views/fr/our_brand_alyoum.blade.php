@@ -99,7 +99,7 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem19.png') }}"
+                                <img class="" src="{{ asset('assets/images/items/brandItem24.png') }}"
                                     alt="">
                             </div>
 

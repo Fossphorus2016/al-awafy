@@ -71,28 +71,38 @@
                         </p>
                     </div>
 
-                    <div class="col-12 paraFont mt-4">
-                        <h2>Nos atouts :</h2>
-                        <ul>
+                    <div class="col-12  mt-4 paraFont inlineContent listStyles">
+                        <h2 class="fs12">Nos atouts :</h2>
+                        <ul class="my-4">
                             <li>
-                                <strong>Une qualité irréprochable :</strong> des produits contrôlés et approuvés selon
-                                les standards les
-                                plus stricts.
+                                <strong>Une qualité irréprochable :</strong>
+                                <p class="">
+                                    des produits contrôlés et approuvés selon
+                                    les standards les
+                                    plus stricts.
+                                </p>
                             </li>
                             <li>
-                                <strong>Des technologies avancées :</strong> nos installations modernes nous permettent
-                                de répondre
-                                efficacement aux besoins du marché.
+                                <strong>Des technliogies avancées :</strong>
+                                <p>
+                                    nos installations modernes nous permettent
+                                    de répondre
+                                    efficacement aux besoins du marché.
+                                </p>
                             </li>
                             <li>
-                                <strong>Un engagement envers l’innovation :</strong> nous cherchons constamment à
-                                améliorer nos recettes
-                                et nos procédés pour rester à la pointe de l'industrie.
+                                <strong>Un engagement envers l’innovation :</strong>
+                                <p>
+                                    nous cherchons constamment à
+                                    améliorer nos recettes
+                                    et nos procédés pour rester à la pointe de l'industrie.
+                                </p>
                             </li>
                         </ul>
-                        <p class="mt-4">
+                        <p>
                             Rejoignez-nous dans notre quête pour offrir le meilleur des noix et cacahuètes enrobées, et
-                            laissez-vous séduire par la <strong>qualité supérieure</strong> et le <strong>savoir-faire</strong> d'AL
+                            laissez-vous séduire par la <strong>qualité supérieure</strong> et le
+                            <strong>savoir-faire</strong> d'AL
                             AWAFY.
                         </p>
                     </div>
@@ -105,38 +115,55 @@
         <section class="ourVision">
             <div class="customContainer">
                 <div class="ourVisionInner py-5">
-                    <div class="paraFont">
+                    <div class="paraFont ">
 
                         <div class="missionBtn1 my-5">
                             <h2><span class="fs7">Notre </span> <span class="fs8">Mission</span> </h2>
                         </div>
-                        <p>
-                            Chez <strong>AL AWAFY</strong>, notre mission est de célébrer la nature en offrant des
-                            fruits secs de la plus
-                            haute qualité, cultivés avec soin et respect. Nous nous engageons à :
-                        </p>
-                        <ol>
-                            <li>
-                                <strong>Promouvoir la santé :</strong> Nos fruits secs sont une source naturelle de
-                                nutriments,
-                                parfaits pour un mode de vie sain. Nous croyons en l'importance d'une alimentation
-                                équilibrée et savoureuse.
-                            </li>
-                            <li>
-                                <strong>Innovation et qualité :</strong> Nous travaillons sans relâche pour améliorer
-                                nos produits et
-                                proposer des saveurs uniques. Notre objectif est de vous offrir des fruits secs qui
-                                éveillent vos sens et enrichissent vos recettes.
-                            </li>
-                            <li>
-                                <strong> Éducation et sensibilisation :</strong> Nous voulons partager notre passion
-                                pour les fruits
-                                secs et éduquer nos clients sur leurs bienfaits. Informer, inspirer et encourager des
-                                choix sains font partie intégrante de notre engagement.
-                            </li>
-                        </ol>
-                        <p class="fw-bold">Ensemble, cultivons une passion pour la nature et une alimentation saine !
-                        </p>
+                        <div class="inlineContent listStyles">
+
+                            <p>
+                                Chez <strong>AL AWAFY</strong>, notre mission est de célébrer la nature en offrant des
+                                fruits secs de la plus
+                                haute qualité, cultivés avec soin et respect. Nous nous engageons à :
+                            </p>
+                            <ol class="my-4">
+                                <li>
+                                    <strong>Promouvoir la santé :</strong> <p>
+                                        Nos fruits secs sont une source naturelle de
+                                        nutriments,
+                                        parfaits pour un mode de vie sain. Nous croyons en l'importance d'une alimentation
+                                        équilibrée et savoureuse.
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong>Innovation et qualité :</strong>
+                                    <p>
+
+                                        Nous travaillons sans relâche pour
+                                        améliorer
+                                        nos produits et
+                                        proposer des saveurs uniques. Notre objectif est de vous offrir des fruits secs qui
+                                        éveillent vos sens et enrichissent vos recettes.
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong> Éducation et sensibilisation :</strong>
+                                    <p>
+
+                                        Nous voulons partager notre passion
+                                        pour les fruits
+                                        secs et éduquer nos clients sur leurs bienfaits. Informer, inspirer et encourager
+                                        des
+                                        choix sains font partie intégrante de notre engagement.
+                                    </p>
+                                </li>
+                            </ol>
+                            <p>Ensemble, cultivons une passion pour la nature et une alimentation saine
+                                !
+                            </p>
+                        </div>
+
 
                     </div>
                     <div class="ourVisionCont paraFont">
@@ -145,43 +172,61 @@
                             <h2><span class="fs7">Notre </span> <span class="fs8">Vision</span> </h2>
                         </div>
 
-                        <p>
+                        <p class="w-100">
                             Chez <strong>ALAWAFY</strong>, notre vision est de devenir un leader reconnu dans le domaine
                             des fruits secs,
                             en redéfinissant la façon dont les consommateurs perçoivent et consomment ces produits
                             naturels. Nous aspirons à :
                         </p>
-                        <ol>
+                        <ol class="inlineContent listStyles">
                             <li>
-                                <strong>Innover dans l’offre :</strong> Être à l’avant-garde des tendances alimentaires
-                                en proposant
-                                des produits innovants, savoureux et bénéfiques pour la santé.
+                                <strong>Innover dans l’offre :</strong>
+                                <p>
+
+                                    Être à l’avant-garde des tendances alimentaires
+                                    en proposant
+                                    des produits innovants, savoureux et bénéfiques pour la santé.
+                                </p>
                             </li>
                             <li>
-                                <strong>Promouvoir un mode de vie durable :</strong> Inspirer une communauté engagée
-                                autour de la
-                                consommation responsable et durable, en favorisant les pratiques agricoles respectueuses
-                                de l’environnement.
+                                <strong>Promouvoir un mode de vie durable :</strong>
+                                <p>
+
+                                    Inspirer une communauté engagée
+                                    autour de la
+                                    consommation responsable et durable, en favorisant les pratiques agricoles respectueuses
+                                    de l’environnement.
+                                </p>
                             </li>
                             <li>
-                                <strong> Renforcer les liens avec nos partenaires :</strong> Travailler en étroite
-                                collaboration avec
-                                nos producteurs locaux pour garantir une chaîne d'approvisionnement équitable et
-                                transparente, soutenant ainsi les économies locales.
+                                <strong> Renforcer les liens avec nos partenaires :</strong>
+                                <p>
+
+                                    Travailler en étroite
+                                    collaboration avec
+                                    nos producteurs locaux pour garantir une chaîne d'approvisionnement équitable et
+                                    transparente, soutenant ainsi les économies locales.
+                                </p>
                             </li>
                             <li>
-                                <strong> Éduquer et inspirer :</strong> Devenir une référence en matière de
-                                sensibilisation aux
-                                bienfaits des fruits secs, en partageant des connaissances et des recettes qui
-                                encouragent des choix alimentaires sains.
+                                <strong> Éduquer et inspirer :</strong><p>
+                                    Devenir une référence en matière de
+                                    sensibilisation aux
+                                    bienfaits des fruits secs, en partageant des connaissances et des recettes qui
+                                    encouragent des choix alimentaires sains.
+                                </p>
                             </li>
                             <li>
-                                <strong>Construire un avenir meilleur :</strong> Contribuer à un monde où la santé, la
-                                durabilité et
-                                la qualité de vie sont au cœur des préoccupations alimentaires.
+                                <strong>Construire un avenir meilleur :</strong>
+                                <p>
+
+                                    Contribuer à un monde où la santé, la
+                                    durabilité et
+                                    la qualité de vie sont au cœur des préoccupations alimentaires.
+                                </p>
                             </li>
                         </ol>
-                        <p>Ensemble, faisons de chaque bouchée de nos fruits secs une étape vers un avenir plus sain et
+                        <p class="w-100">Ensemble, faisons de chaque bouchée de nos fruits secs une étape vers un avenir plus sain et
                             durable.</p>
                     </div>
 

@@ -67,7 +67,7 @@
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
                             <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
-                            <h3>Des Moments de Plaisir en Famille avec ALAWAFY</h3>
+                            <h3 class="fs13 mb-3">Des Moments de Plaisir en Famille avec ALAWAFY</h3>
                             <p>
                                 Avec notre marque de nuts ALAWAFY, chaque bouchée de nos fruits secs devient une
                                 invitation à partager des moments de plaisir et de joie en famille. Nous croyons que la
