@@ -67,16 +67,17 @@
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
                             <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
+                            <h3>Des Moments de Plaisir en Famille avec ALAWAFY</h3>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sit laboriosam
-                                reprehenderit numquam fugiat itaque amet eius laudantium repellat necessitatibus,
-                                similique aspernatur dicta recusandae nulla, soluta sapiente error voluptatibus ex,
-                                debitis odio? Laboriosam quas ratione ut deserunt nostrum, quasi amet.
+                                Avec notre marque de nuts ALAWAFY, chaque bouchée de nos fruits secs devient une
+                                invitation à partager des moments de plaisir et de joie en famille. Nous croyons que la
+                                convivialité autour de la table est essentielle, et nos produits, soigneusement
+                                sélectionnés, sont parfaits pour accompagner vos rassemblements. Que ce soit pour un
+                                apéritif, un goûter ou un moment de détente, ALAWAFY apporte une touche de douceur et de
+                                santé, transformant chaque instant en un souvenir mémorable. Savourez ensemble la
+                                qualité et le goût authentique de nos noix et fruits secs !
                             </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam delectus natus dolores
-                                obcaecati iure harum itaque officia ratione. Recusandae sunt quaerat reprehenderit eaque
-                                placeat numquam reiciendis, unde, aut necessitatibus enim sint debitis totam deleniti
-                                praesentium minus iste mollitia, veniam rem delectus? Facilis nesciunt labore error!</p>
+
                             <a class="mainBtn1" href="about">Learn More</a>
                         </div>
                     </div>
@@ -186,13 +187,13 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
-                                        alt="">
+                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                                     <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
+                                    <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a
+                                        href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -221,7 +222,8 @@
                                         src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
+                                    <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a
+                                        href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -310,7 +312,8 @@
                     <h2 class="waterDropsBefore"> <span class="fs7"> Lorem ipsum </span></h2>
                     <h2 class=""> <span class="fs7"> Lorem ipsum</span> <span
                             class="fs8 waterDropsAfter ms-0">dolor sit</span> </h2>
-                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN MORE</a>
+                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
+                            MORE</a>
                         <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACT
                             US</a>
                     </div>
@@ -324,8 +327,8 @@
                 </h2>
                 <div class="activitieSlider">
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionEst/image16.jpg') }}"
-                            alt="">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/excecutionEst/image16.jpg') }}" alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
@@ -339,8 +342,8 @@
                     </div>
 
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}"
-                            alt="">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}" alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
@@ -353,8 +356,8 @@
                         </div>
                     </div>
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/loperationBts/img7.jpg') }}"
-                            alt="">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/loperationBts/img7.jpg') }}" alt="">
 
                         <div class="service-card">
                             <div class="icon-wrapper">
@@ -368,8 +371,8 @@
                         </div>
                     </div>
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionQuest/image26.jpg') }}"
-                            alt="">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/excecutionQuest/image26.jpg') }}" alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
@@ -382,8 +385,8 @@
                         </div>
                     </div>
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/remisDes/image38.jpg') }}"
-                            alt="">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/remisDes/image38.jpg') }}" alt="">
 
                         <div class="service-card">
                             <div class="icon-wrapper">
@@ -464,7 +467,7 @@
             </div>
         </section>
 
-        <x-letsConnect/>
+        <x-letsConnect />
 
 
         <div class="customContainer">
@@ -496,4 +499,3 @@
         </div>
     </main>
 </x-frenchLayout>
-
