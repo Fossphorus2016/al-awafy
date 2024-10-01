@@ -357,6 +357,20 @@
                     </div>
                     <div class="col activityOuter">
                         <img class="w-100 activityImg"
+                            src="{{asset('assets/images/activities/special_african_cup/img0.png')}}" alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Concours réseaux sociaux special coupe d’Afrique</h3>
+                            <p>
+                                A l’occasion de la coupe d’Afrique 2023 Alawafy a lancer un concours sur les réseaux
+                                sociaux, des téléviseurs et des smart phones comme gains
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
                             src="{{ asset('assets/images/activities/al_jadid/image22.jpg') }}" alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
@@ -369,20 +383,6 @@
                                 faire connaître et de promouvoir le produit artisanal national. Elle réunit environ 60
                                 entreprises algériennes et étrangères représentant la Tunisie, le Sénégal, la Chine, la
                                 Turquie et la France venus exposer leurs divers produits.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{asset('assets/images/activities/special_african_cup/img0.png')}}" alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Concours réseaux sociaux special coupe d’Afrique</h3>
-                            <p>
-                                A l’occasion de la coupe d’Afrique 2023 Alawafy a lancer un concours sur les réseaux
-                                sociaux, des téléviseurs et des smart phones comme gains
                             </p>
                         </div>
                     </div>
