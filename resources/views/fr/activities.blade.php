@@ -28,25 +28,26 @@
             <div class="customContainer">
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">d’exécution</span> <span class="fs6">Est</span>
+                    <h2 class="text-center"><span class="fs5">Activation photos </span> <span
+                            class="fs6">rentrée</span>
                     </h2>
 
 
                     <div class="galleryblock activitiesSlider">
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image15.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img1.jpeg') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image13.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img2.jpeg') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image14.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img3.jpg') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image16.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img4.jpg') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image18.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img5.jpeg') }}
                                 alt=""></div>
 
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image19.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img6.jpeg') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image20.jpg') }}
+                        {{-- <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image20.jpg') }}
                                 alt=""></div>
                         <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image21.jpg') }}
                                 alt=""></div>
@@ -55,41 +56,39 @@
                         <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image23.jpg') }}
                                 alt=""></div>
                         <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image24.jpg') }}
-                                alt=""></div>
+                                alt=""></div> --}}
 
                     </div>
 
                 </div>
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">d’exécution</span> <span class="fs6">Center</span>
+                    <h2 class="text-center"><span class="fs5">Aide à l'activation Al </span> <span class="fs6">
+                            Adha</span>
                     </h2>
 
 
                     <div class="galleryblock activitiesSlider">
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionCenter/image6.jpg') }} alt="">
+                        <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img0.jpeg') }}
+                                alt="">
                         </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionCenter/image7.jpg') }} alt="">
+                        <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img1.jpeg') }}
+                                alt="">
                         </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionCenter/image8.jpg') }} alt="">
+                        <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img2.jpg') }}
+                                alt="">
                         </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionCenter/image9.jpg') }} alt="">
+                        <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img3.jpg') }}
+                                alt="">
                         </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionCenter/image10.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img4.jpg') }}
                                 alt=""></div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionCenter/image11.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img5.jpg') }}
                                 alt=""></div>
 
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionCenter/image12.jpg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img6.jpg') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}
+                        {{-- <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}
                                 alt=""></div>
                         <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img4.jpg') }}
                                 alt=""></div>
@@ -98,12 +97,12 @@
                         <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img8.jpg') }}
                                 alt=""></div>
                         <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img10.jpg') }}
-                                alt=""></div>
+                                alt=""></div> --}}
                     </div>
 
 
                 </div>
-                <div>
+                {{-- <div>
 
                     <h2 class="text-center"><span class="fs5">d’exécution</span> <span class="fs6">Quest</span>
                     </h2>
@@ -147,11 +146,10 @@
                     </div>
 
 
-                </div>
+                </div> --}}
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">Remise Des</span> <span
-                            class="fs6">Cadeaux</span>
+                    <h2 class="text-center"><span class="fs5">Remise Des</span> <span class="fs6">Cadeaux</span>
                     </h2>
 
 
@@ -184,19 +182,19 @@
                 </div>
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">de l’opération  </span> <span
-                            class="fs6">BTS</span>
+                    <h2 class="text-center"><span class="fs5">Souk el Fellah </span> <span
+                            class="fs6">AL-jadid</span>
                     </h2>
 
 
                     <div class="galleryblock activitiesSlider">
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image7.jpeg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image22.jpg') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image8.jpeg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image20.png') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image9.jpeg') }}
+                        <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image21.png') }}
                                 alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image10.jpeg') }}
+                        {{-- <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image10.jpeg') }}
                                 alt=""></div>
                         <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image17.jpg') }}
                                 alt=""></div>
@@ -214,11 +212,63 @@
                         <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img9.jpg') }}
                                 alt=""></div>
                         <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img11.jpeg') }}
-                                alt=""></div>
+                                alt=""></div> --}}
 
                     </div>
 
 
+                </div>
+
+                <div>
+                    <h2 class="text-center"><span class="fs5">Concours réseaux sociaux </span> <span
+                            class="fs6">special coupe d’Afrique</span>
+                    </h2>
+
+                    <div class="galleryblock activitiesSlider">
+                        <div class="item"><img
+                                src={{ asset('assets/images/activities/special_african_cup/img1.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img
+                                src={{ asset('assets/images/activities/special_african_cup/img2.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img
+                                src={{ asset('assets/images/activities/special_african_cup/img3.jpeg') }}
+                                alt=""></div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-center"><span class="fs5">PRESENTOIRS ET </span> <span
+                            class="fs6">MERCHANDISING</span>
+                    </h2>
+
+                    <div class="galleryblock activitiesSlider">
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img1.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img2.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img3.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img4.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img5.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img6.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img7.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img8.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img9.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img10.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img11.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img12.jpeg') }}
+                                alt=""></div>
+                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img13.jpeg') }}
+                                alt=""></div>
+                    </div>
                 </div>
             </div>
 

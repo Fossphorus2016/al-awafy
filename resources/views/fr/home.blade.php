@@ -328,20 +328,66 @@
                 <div class="activitieSlider">
                     <div class="col activityOuter">
                         <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/excecutionEst/image16.jpg') }}" alt="">
+                            src="{{ asset('assets/images/activities/school/school_img1.jpeg') }}" alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
                             </div>
-                            <h3>d’exécution Est</h3>
+                            <h3>Activation pour la rentrée</h3>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
+                                Une activation a l’occasion de la rentrée scolaire (dégustation + tombola ) achetez et
+                                tentez de gagner des bons d’achats techno
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/aid_azah/eid_img1.jpeg') }}" alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Aide à l'activation Al Adha</h3>
+                            <p>
+                                Une activation a l’occasion de l’Aid Al Adha (dégustation + tombola ) des aiguises
+                                coteaux
+                                des cartes de recharges et des coteaux de 9pcs comme cadeaux
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/al_jadid/image22.jpg') }}" alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Souk el Fellah AL-jadid</h3>
+                            <p>Présence de la marque ALAWAFY au SOUK EL FELLAH Organisée par l’institut Souk el-Fellah
+                                Al-Jadid, en coordination avec l’Office des parcs des sports et des loisirs d’Alger
+                                (Opla) et la Chambre d’artisanat et des métiers, cette manifestation a pour objectif de
+                                faire connaître et de promouvoir le produit artisanal national. Elle réunit environ 60
+                                entreprises algériennes et étrangères représentant la Tunisie, le Sénégal, la Chine, la
+                                Turquie et la France venus exposer leurs divers produits.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{asset('assets/images/activities/special_african_cup/img0.png')}}" alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Concours réseaux sociaux special coupe d’Afrique</h3>
+                            <p>
+                                A l’occasion de la coupe d’Afrique 2023 Alawafy a lancer un concours sur les réseaux
+                                sociaux, des téléviseurs et des smart phones comme gains
                             </p>
                         </div>
                     </div>
 
-                    <div class="col activityOuter">
+                    {{-- <div class="col activityOuter">
                         <img class="w-100 activityImg"
                             src="{{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}" alt="">
                         <div class="service-card">
@@ -398,7 +444,7 @@
                                 Quisquam consequatur necessitatibus eaque.
                             </p>
                         </div>
-                    </div>
+                    </div> --}}
 
                     {{-- <div class="col">
                         <div class="service-card">
