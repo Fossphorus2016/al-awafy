@@ -31,15 +31,21 @@
                         <div class="aboutInner paraFont">
                             <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
                             <p>
-                                Founded in 2023, ALAWAFY is an Algerian limited liability company (SARL) specializing in the
-                                production of dates and nuts. Based in Sétif, Algeria, we are a dynamic company dedicated to
+                                Founded in 2023, ALAWAFY is an Algerian limited liability company (SARL) specializing in
+                                the
+                                production of dates and nuts. Based in Sétif, Algeria, we are a dynamic company
+                                dedicated to
                                 delivering exceptional products that are both delicious and healthy.
                             </p>
                             <p>
-                                Driven by our commitment to quality, we take pride in offering products that stand out. Using
-                                modern machinery that complies with international standards, we optimize every step of our
-                                production process, ensuring high-quality standards and continuous innovation. Our products are
-                                carefully crafted to satisfy even the most discerning tastes, combining flavor and texture in every bite.
+                                Driven by our commitment to quality, we take pride in offering products that stand out.
+                                Using
+                                modern machinery that complies with international standards, we optimize every step of
+                                our
+                                production process, ensuring high-quality standards and continuous innovation. Our
+                                products are
+                                carefully crafted to satisfy even the most discerning tastes, combining flavor and
+                                texture in every bite.
 
                             </p>
 
@@ -64,8 +70,10 @@
                     </div>
                     <div class="col-12 paraFont mt-4 aboutThirdPara">
                         <p>
-                            At ALAWAFY, we firmly believe that quality starts at the source. That's why we select the finest nuts
-                            and peanuts to provide you with refined and flavorful coatings, perfect for sharing or enjoying on
+                            At ALAWAFY, we firmly believe that quality starts at the source. That's why we select the
+                            finest nuts
+                            and peanuts to provide you with refined and flavorful coatings, perfect for sharing or
+                            enjoying on
                             your own.
 
                         </p>
@@ -96,7 +104,8 @@
                             </li>
                         </ul>
                         <p>
-                            Join us in our mission to deliver the finest coated nuts and peanuts, and indulge in ALAWAFY’s
+                            Join us in our mission to deliver the finest coated nuts and peanuts, and indulge in
+                            ALAWAFY’s
                             superior quality and craftsmanship.
                         </p>
                     </div>
@@ -117,7 +126,8 @@
                         <div class="inlineContent listStyles">
 
                             <p>
-                                At ALAWAFY, our mission is to celebrate nature by offering the highest quality dried fruits, grown with
+                                At ALAWAFY, our mission is to celebrate nature by offering the highest quality dried
+                                fruits, grown with
                                 care and respect. We are committed to:
                             </p>
                             <ol class="my-4">
@@ -133,7 +143,8 @@
                                     <p>
 
                                         We work tirelessly to improve our products and offer unique flavors.
-                                        Our goal is to provide dried fruits that awaken your senses and enhance your recipes.
+                                        Our goal is to provide dried fruits that awaken your senses and enhance your
+                                        recipes.
                                     </p>
                                 </li>
                                 <li>
@@ -141,7 +152,8 @@
                                     <p>
 
                                         We want to share our passion for dried fruits and educate our
-                                        customers about their benefits. Informing, inspiring, and encouraging healthy choices are integral to
+                                        customers about their benefits. Informing, inspiring, and encouraging healthy
+                                        choices are integral to
                                         our mission.
                                     </p>
                                 </li>
@@ -160,7 +172,8 @@
                         </div>
 
                         <p class="w-100">
-                            At ALAWAFY, our vision is to become a recognized leader in the dried fruit industry, reshaping how
+                            At ALAWAFY, our vision is to become a recognized leader in the dried fruit industry,
+                            reshaping how
                             consumers perceive and enjoy these natural products. We aim to:
 
                         </p>
@@ -186,7 +199,7 @@
                                 <p>
 
                                     Work closely with our local producers to ensure a fair and
-transparent supply chain, thus supporting local economies.
+                                    transparent supply chain, thus supporting local economies.
 
                                 </p>
                             </li>
@@ -207,7 +220,8 @@ transparent supply chain, thus supporting local economies.
                             </li>
                         </ol>
                         <p class="w-100">
-                            Together, let's make each bite of our dried fruits a step towards a healthier and more sustainable
+                            Together, let's make each bite of our dried fruits a step towards a healthier and more
+                            sustainable
                             future.</p>
                     </div>
 
