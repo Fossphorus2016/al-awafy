@@ -31,22 +31,26 @@
                         <div class="aboutInner paraFont">
                             <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sit laboriosam
-                                reprehenderit numquam fugiat itaque amet eius laudantium repellat necessitatibus,
-                                similique aspernatur dicta recusandae nulla, soluta sapiente error voluptatibus ex,
-                                debitis odio? Laboriosam quas ratione ut deserunt nostrum, quasi amet.
+                                Founded in 2023, ALAWFY is an Algerian limited liability company (SARL)
+                                specialized in the production of dates and nuts, a dynamic company located in
+                                Sétif in Algeria, With our commitment to quality, we make a point
+                                of honor in offering exceptional products, as delicious as they are healthy.
                             </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam delectus natus dolores
-                                obcaecati iure harum itaque officia ratione. Recusandae sunt quaerat reprehenderit eaque
-                                placeat numquam reiciendis, unde, aut necessitatibus enim sint debitis totam deleniti
-                                praesentium minus iste mollitia, veniam rem delectus? Facilis nesciunt labore error!</p>
+                            <p>
+                                Thanks to the use of modern machines spreading to the vigor and standards
+                                international, we optimize each step of our production process,
+                                ensuring high quality standards and continuous innovation. Our products are
+                                carefully crafted to satisfy the most demanding tastes, combining flavor
+                                and texture in every bite.
+                            </p>
+
 
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center">
                         <div class="aboutInnerImg">
-                            <img class="patternImg" class="w-100" src="{{ asset('assets/images/shape/pattern12.png') }}"
-                                alt="">
+                            <img class="patternImg" class="w-100"
+                                src="{{ asset('assets/images/shape/pattern12.png') }}" alt="">
                             <img class="abouteItem aboutItem1" class="w-100"
                                 src="{{ asset('assets/images/items/item1.png') }}" alt="">
                             <img class="abouteItem aboutItem2" class="w-100"
@@ -60,12 +64,47 @@
                         </div>
                     </div>
                     <div class="col-12 paraFont mt-4 aboutThirdPara">
-                        <p>Our motto in Al Awafy is “the food that bestows your beautiful moments.” Therefore, Al Awafy
-                            strives to satisfy all tastes by presenting what suits your day, while observing the rules
-                            of proper and proper nutrition to be a companion of distinctive details and all happy times.
-                            We also strive at Al Awafy to constantly develop and diversify our products to be a
-                            diversified source of essential nutrients necessary to maintain health and wellness. In
-                            short, our aim at Al Awafy is to deliver the best healthy</p>
+                        <p>
+                            At ALAWAFY, we firmly believe that quality starts at the source. This is why
+                            we select the best nuts and peanuts to offer you coatings
+                            refined and tasty, perfect for moments of sharing or personal pleasure.
+                        </p>
+                    </div>
+
+                    <div class="col-12  mt-4 paraFont inlineContent listStyles">
+                        <h2 class="fs12">Our strengths:</h2>
+                        <ul class="my-4">
+                            <li>
+                                <strong>Impeccable quality:</strong>
+                                <p class="">
+                                    products controlled and approved according to
+                                    the standards
+                                    more strict.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Advanced technologies:</strong>
+                                <p>
+                                    our modern facilities allow us
+                                    to respond
+                                    effectively meet the needs of the market.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>A commitment to innovation:</strong>
+                                <p>
+                                    we are constantly looking to
+                                    improve our recipes
+                                    and our processes to stay at the forefront of the industry.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            Join us in our quest to deliver the best in coated nuts and peanuts, and
+                            let yourself be seduced by the <strong>superior quality</strong> and the
+                            AL <strong>know-how</strong>
+                            AWAFY.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -76,52 +115,135 @@
         <section class="ourVision">
             <div class="customContainer">
                 <div class="ourVisionInner py-5">
-                    <div class="paraFont">
+                    <div class="paraFont ">
 
                         <div class="missionBtn1 my-5">
                             <h2><span class="fs7">Our</span> <span class="fs8">Mission</span> </h2>
                         </div>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing software like Aldus PageMaker including
-                            versions of Lorem Ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                            distinctio beatae nobis cupiditate temporibus mollitia, quia, sed neque veniam reiciendis
-                            animi autem cumque exercitationem natus.
-                        </p>
+                        <div class="inlineContent listStyles">
+
+                            <p>
+                                At <strong>AL AWAFY</strong>, our mission is to celebrate nature by offering
+                                dried fruits of the most
+                                high quality, grown with care and respect. We commit to:
+                            </p>
+                            <ol class="my-4">
+                                <li>
+                                    <strong>Promote health:</strong>
+                                    <p>
+                                        Our dried fruits are a natural source of
+                                        nutrients,
+                                        perfect for a healthy lifestyle. We believe in the importance of
+                                        food
+                                        balanced and tasty.
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong>Innovation and quality:</strong>
+                                    <p>
+
+                                        We work tirelessly to
+                                        improve
+                                        our products and
+                                        offer unique flavors. Our goal is to offer you dried fruits
+                                        Who
+                                        awaken your senses and enrich your recipes.
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong>Education and awareness:</strong>
+                                    <p>
+
+                                        We want to share our passion
+                                        for fruit
+                                        dry and educate our customers on their benefits. Inform, inspire and
+                                        encourage
+                                        of the
+                                        Healthy choices are an integral part of our commitment.
+                                    </p>
+                                </li>
+                            </ol>
+                            <p>
+                                Together, let's cultivate a passion for nature and healthy eating!
+                            </p>
+                        </div>
+
 
                     </div>
                     <div class="ourVisionCont paraFont">
 
                         <div class="missionBtn1 my-5" style="padding-right: 100px;">
-                            <h2><span class="fs7">Our</span> <span class="fs8">Vision</span> </h2>
+                            <h2><span class="fs7">Our </span> <span class="fs8">Vision</span> </h2>
                         </div>
 
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions
-                            of
-                            Lorem Ipsum.
+                        <p class="w-100">
+                            At <strong>ALAWAFY</strong>, our vision is to become a recognized leader in the field
+                            dried fruits,
+                            by redefining the way consumers perceive and consume these products
+                            natural. We aspire to:
                         </p>
+                        <ol class="inlineContent listStyles">
+                            <li>
+                                <strong>Innovate in the offer:</strong>
+                                <p>
+
+                                    Being at the forefront of food trends
+                                    by proposing
+                                    innovative, tasty and health-promoting products.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Promote a sustainable lifestyle:</strong>
+                                <p>
+
+                                    Inspire an engaged community
+                                    around the
+                                    responsible and sustainable consumption, by promoting agricultural practices
+                                    respectful
+                                    of the environment.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Strengthen links with our partners:</strong>
+                                <p>
+
+                                    Work closely
+                                    collaboration with
+                                    our local producers to guarantee a fair supply chain and
+                                    transparent, thus supporting local economies.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Educate and inspire:</strong>
+                                <p>
+                                    Become a reference in terms of
+                                    awareness of
+                                    benefits of dried fruits, by sharing knowledge and recipes that
+                                    encourage healthy food choices.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Building a better future:</strong>
+                                <p>
+
+                                    Contribute to a world where health,
+                                    sustainability and
+                                    quality of life are at the heart of food concerns.
+                                </p>
+                            </li>
+                        </ol>
+                        <p class="w-100">
+                            Together, let's make each bite of our dried fruits a step towards
+                            healthier future and
+                            sustainable.</p>
                     </div>
 
                     <div class="d-flex justify-content-center ourVisionPeanuts">
 
                         <img class="img-fluid w-100"
-                        style="object-fit: contain;     object-fit: contain;
+                            style="object-fit: contain;     object-fit: contain;
                         max-width: 600px !important;"
-                        src="{{ asset('assets/images/items/peanuts.png') }}" alt="">
+                            src="{{ asset('assets/images/items/peanuts.png') }}" alt="">
                     </div>
 
                 </div>
@@ -129,7 +251,7 @@
 
         <x-watchVideo />
 
-        <x-letsConnect/>
+        <x-letsConnect />
 
     </main>
 </x-layout>

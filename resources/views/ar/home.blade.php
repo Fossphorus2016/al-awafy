@@ -64,18 +64,16 @@
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont text-end" style="align-items: end;">
                             <h2><span class="fs5">عن</span> <span class="fs6">العوافي</span> </h2>
-                            <p>
-                                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
-                                بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره
-                                أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن
-                                نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا
+                            <h3 class="fs13 mb-3">لحظات من المرح العائلي مع العوافي</h3>
+                            <p>مع علامتنا التجارية من مكسرات الأوافي، كل قضمة من فواكهنا المجففة تصبح لذيذة
+                                دعوة لمشاركة لحظات المتعة والفرح مع العائلة. ونحن نعتقد أن
+                                الألفة حول الطاولة أمر ضروري، ومنتجاتنا بعناية
+                                مختارة، مثالية لمرافقة تجمعاتك. سواء ل
+                                فاتح للشهية، أو وجبة خفيفة أو لحظة من الاسترخاء، العوافي يجلب لمسة من الحلاوة و
+                                الصحة، وتحويل كل لحظة إلى ذكرى لا تنسى. استمتع
+                                الجودة والطعم الأصيل للمكسرات والفواكه المجففة لدينا!
                             </p>
-                            <p>
-                                و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟
-                                ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو
-                                آخر أراد أن يتجنب الألم الذي ربما تنجم عنه بعض المتعة ؟
-                                علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم.
-                            </p>
+
                             <a class="mainBtn1" href="about">يتعلم أكثر</a>
                         </div>
                     </div>
@@ -106,8 +104,7 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
-                                        alt="">
+                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                                     <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
                                     <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
@@ -175,7 +172,7 @@
             </div>
         </section>
 
-        <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
+        {{-- <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
             <div class="customContainer">
                 <h2 class="text-center pb-4"><span class="fs5">أنشطتنا
                     </span> <span class="fs6"></span>
@@ -259,6 +256,81 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <a class="mainBtn1" href="activities">عرض المزيد</a>
+                </div>
+            </div>
+        </section> --}}
+        <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
+            <div class="customContainer">
+                <h2 class="text-center pb-4"><span class="fs5">أنشطتنا</span> <span class="fs6"></span>
+                </h2>
+                <div class="activitieSlider">
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/school/school_img1.jpeg') }}" alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>تفعيل العودة للمدارس</h3>
+                            <p>
+                                تفعيل لبداية العام الدراسي (تذوق + سحب) شراء و
+                                حاول الفوز بقسائم التكنولوجيا
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/aid_azah/eid_img1.jpeg') }}" alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>مساعدة تفعيل الأضحى</h3>
+                            <p>
+                                فعالية بمناسبة عيد الأضحى (تذوق + سحب) على المبراة
+                                سفوح التلال
+                                كروت شحن و 9 قطع تلات هدايا
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/special_african_cup/img0.png') }}"
+                            alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>مسابقة خاصة لكأس أفريقيا على مواقع التواصل الاجتماعي</h3>
+                            <p>
+                                وبمناسبة كأس أفريقيا 2023، أطلق العوافي مسابقة على الشبكات
+                                الشبكات الاجتماعية وأجهزة التلفزيون والهواتف الذكية كمكاسب
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/al_jadid/image22.jpg') }}" alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>سوق الفلاح الجديد</h3>
+                            <p>
+                                تواجد علامة الوافي في سوق الفلاح ينظمه معهد سوق الفلاح
+                                الجديد بالتنسيق مع مكتب الرياضة و الترفيه بالجزائر العاصمة
+                                (أوبلا) وغرفة الحرف والحرف يهدف هذا الحدث إلى
+                                للتعريف بالمنتج الحرفي الوطني والترويج له. فهو يجمع حوالي 60
+                                شركات جزائرية وأجنبية تمثل تونس، السنغال، الصين،
+                                جاءت تركيا وفرنسا لعرض منتجاتهما المختلفة.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a class="mainBtn1" href="activities">View More</a>
                 </div>
             </div>
         </section>
