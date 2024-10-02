@@ -93,8 +93,9 @@
                     <div class="col-lg-3 ">
                         <!-- Content -->
                         <img class="mb-4" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aliquam ipsum asperiores
-                            quo ut numq.</p>
+                        <p>Suivez-nous sur les réseaux sociaux pour découvrir
+                            nos dernières actualités, promotions spéciales et moments en coulisses. Restez connecté et rejoignez
+                            la famille. </p>
                         <div class="heroSliderFooter">
                             <a class="icons fbLink" target="_blank" href="">
                                 <i class="fa-brands fa-facebook-f"></i> </a>
@@ -111,22 +112,23 @@
                     <div class="col-lg-3 footerQuickLinks">
                         <!-- Links -->
                         <h6 class="mt-5 text-uppercase fw-bold mb-4 fs-4">
-                            Quick Links
+                            RACCOURCIS
                         </h6>
                         <p class="mt-1">
-                            <a href="home" class="text-reset anchorHover">Home</a>
+                            <a href="home" class="text-reset anchorHover">ACCUEIL</a>
                         </p>
                         <p class="mt-1">
-                            <a href="about" class="text-reset anchorHover">About Us</a>
+                            <a href="about" class="text-reset anchorHover">A PROPOS DE NOUS</a>
                         </p>
                         <p class="mt-1">
-                            <a href="brand-alawafy" class="text-reset anchorHover">Our Brands</a>
+                            <a href="brand-alawafy" class="text-reset anchorHover"> NOS MARQUES
+                            </a>
                         </p>
                         <p class="mt-1">
-                            <a href="activities" class="text-reset anchorHover">Activities</a>
+                            <a href="activities" class="text-reset anchorHover">NOS ACTIVITÉS</a>
                         </p>
                         <p class="mt-1">
-                            <a href="contact-us" class="text-reset anchorHover">Contact Us</a>
+                            <a href="contact-us" class="text-reset anchorHover">CONTACT</a>
                         </p>
 
                     </div>
@@ -136,7 +138,7 @@
                     <div class="col-lg-3 ">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mt-5 mb-4 fs-4">
-                            Brands
+                            MARQUES
                         </h6>
                         <p class="mt-1">
                             <a href="brand-alawafy" class="text-reset anchorHover">AlAwafy </a>
@@ -155,11 +157,10 @@
                     <div class="col-lg-3 ">
                         <!-- Links -->
                         <h6 class="mt-5 text-uppercase fw-bold fs-4">
-                            Subscribe Now
+                            ABONNEZ VOUS MAINTENANT
                         </h6>
-                        <p class="my-2">Lorem ipsum dolor sit amet, consecte
-                            <br>
-                            adipiscing elit. Sed porttitor.
+                        <p class="my-2">Rejoignez notre communauté et profitez de noix et de collations de qualité premium livrées
+                            directement dans votre boîte mail !
                         </p>
                         <form class="newsletter_form mt-4" action="{{ route('news.letter.create') }}" method="POST"
                             id="news_letter_form">
@@ -193,8 +194,8 @@
                         </p>
                     </div>
                     <div class="col-lg-6 col-12 privacyPages">
-                        <a href="" class="text-white anchorHover">Privacy Policy</a> | <a
-                            class="text-white anchorHover" href="">Terms & Conditions</a>
+                        <a href="" class="text-white anchorHover">Politique de Confidentialité</a> | <a
+                            class="text-white anchorHover" href=""> Conditions Générales d'Utilisation</a>
                     </div>
 
                 </div>

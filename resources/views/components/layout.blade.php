@@ -93,8 +93,8 @@
                     <div class="col-lg-3 ">
                         <!-- Content -->
                         <img class="mb-4" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aliquam ipsum asperiores
-                            quo ut numq.</p>
+                        <p>Follow us on social media to discover our latest updates, special promotions, and behind-the-scenes
+                            moments. Stay connected and join the Family.</p>
                         <div class="heroSliderFooter">
                             <a class="icons fbLink" target="_blank" href="">
                                 <i class="fa-brands fa-facebook-f"></i> </a>
@@ -157,9 +157,8 @@
                         <h6 class="mt-5 text-uppercase fw-bold fs-4">
                             Subscribe Now
                         </h6>
-                        <p class="my-2">Lorem ipsum dolor sit amet, consecte
-                            <br>
-                            adipiscing elit. Sed porttitor.
+                        <p class="my-2">Join our community and enjoy premium-quality nuts and snacks delivered right to your inbox!
+
                         </p>
                         <form class="newsletter_form mt-4" action="{{ route('news.letter.create') }}" method="POST"
                             id="news_letter_form">
@@ -168,7 +167,7 @@
                             <input type="email" name="subscriber_mail" id="subscriber_mail"
                                 placeholder="Enter Your Email Address" aria-label="Enter Your Email Address"
                                 aria-describedby="button-addon2">
-                                
+
                             <button onclick="news_validate()" type="button" id="button-addon2"><i
                                     class="fa-solid fa-paper-plane"></i></button>
 

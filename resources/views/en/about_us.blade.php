@@ -31,17 +31,16 @@
                         <div class="aboutInner paraFont">
                             <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
                             <p>
-                                Founded in 2023, ALAWFY is an Algerian limited liability company (SARL)
-                                specialized in the production of dates and nuts, a dynamic company located in
-                                Sétif in Algeria, With our commitment to quality, we make a point
-                                of honor in offering exceptional products, as delicious as they are healthy.
+                                Founded in 2023, ALAWAFY is an Algerian limited liability company (SARL) specializing in the
+                                production of dates and nuts. Based in Sétif, Algeria, we are a dynamic company dedicated to
+                                delivering exceptional products that are both delicious and healthy.
                             </p>
                             <p>
-                                Thanks to the use of modern machines spreading to the vigor and standards
-                                international, we optimize each step of our production process,
-                                ensuring high quality standards and continuous innovation. Our products are
-                                carefully crafted to satisfy the most demanding tastes, combining flavor
-                                and texture in every bite.
+                                Driven by our commitment to quality, we take pride in offering products that stand out. Using
+                                modern machinery that complies with international standards, we optimize every step of our
+                                production process, ensuring high-quality standards and continuous innovation. Our products are
+                                carefully crafted to satisfy even the most discerning tastes, combining flavor and texture in every bite.
+
                             </p>
 
 
@@ -65,9 +64,10 @@
                     </div>
                     <div class="col-12 paraFont mt-4 aboutThirdPara">
                         <p>
-                            At ALAWAFY, we firmly believe that quality starts at the source. This is why
-                            we select the best nuts and peanuts to offer you coatings
-                            refined and tasty, perfect for moments of sharing or personal pleasure.
+                            At ALAWAFY, we firmly believe that quality starts at the source. That's why we select the finest nuts
+                            and peanuts to provide you with refined and flavorful coatings, perfect for sharing or enjoying on
+                            your own.
+
                         </p>
                     </div>
 
@@ -75,35 +75,29 @@
                         <h2 class="fs12">Our strengths:</h2>
                         <ul class="my-4">
                             <li>
-                                <strong>Impeccable quality:</strong>
+                                <strong>Uncompromising quality:</strong>
                                 <p class="">
-                                    products controlled and approved according to
-                                    the standards
-                                    more strict.
+                                    Products controlled and approved according to the strictest
+                                    standards.
                                 </p>
                             </li>
                             <li>
                                 <strong>Advanced technologies:</strong>
                                 <p>
-                                    our modern facilities allow us
-                                    to respond
-                                    effectively meet the needs of the market.
+                                    Our modern facilities allow us to efficiently meet market demands.
                                 </p>
                             </li>
                             <li>
-                                <strong>A commitment to innovation:</strong>
+                                <strong>*Commitment to innovation:</strong>
                                 <p>
-                                    we are constantly looking to
-                                    improve our recipes
-                                    and our processes to stay at the forefront of the industry.
+                                    We continuously seek to improve our recipes and processes to stay
+                                    at the forefront of the industry.
                                 </p>
                             </li>
                         </ul>
                         <p>
-                            Join us in our quest to deliver the best in coated nuts and peanuts, and
-                            let yourself be seduced by the <strong>superior quality</strong> and the
-                            AL <strong>know-how</strong>
-                            AWAFY.
+                            Join us in our mission to deliver the finest coated nuts and peanuts, and indulge in ALAWAFY’s
+                            superior quality and craftsmanship.
                         </p>
                     </div>
                 </div>
@@ -123,48 +117,37 @@
                         <div class="inlineContent listStyles">
 
                             <p>
-                                At <strong>AL AWAFY</strong>, our mission is to celebrate nature by offering
-                                dried fruits of the most
-                                high quality, grown with care and respect. We commit to:
+                                At ALAWAFY, our mission is to celebrate nature by offering the highest quality dried fruits, grown with
+                                care and respect. We are committed to:
                             </p>
                             <ol class="my-4">
                                 <li>
                                     <strong>Promote health:</strong>
                                     <p>
-                                        Our dried fruits are a natural source of
-                                        nutrients,
-                                        perfect for a healthy lifestyle. We believe in the importance of
-                                        food
-                                        balanced and tasty.
+                                        Our dried fruits are a natural source of nutrients, perfect for a healthy
+                                        lifestyle. We believe in the importance of balanced, tasty eating.
                                     </p>
                                 </li>
                                 <li>
                                     <strong>Innovation and quality:</strong>
                                     <p>
 
-                                        We work tirelessly to
-                                        improve
-                                        our products and
-                                        offer unique flavors. Our goal is to offer you dried fruits
-                                        Who
-                                        awaken your senses and enrich your recipes.
+                                        We work tirelessly to improve our products and offer unique flavors.
+                                        Our goal is to provide dried fruits that awaken your senses and enhance your recipes.
                                     </p>
                                 </li>
                                 <li>
                                     <strong>Education and awareness:</strong>
                                     <p>
 
-                                        We want to share our passion
-                                        for fruit
-                                        dry and educate our customers on their benefits. Inform, inspire and
-                                        encourage
-                                        of the
-                                        Healthy choices are an integral part of our commitment.
+                                        We want to share our passion for dried fruits and educate our
+                                        customers about their benefits. Informing, inspiring, and encouraging healthy choices are integral to
+                                        our mission.
                                     </p>
                                 </li>
                             </ol>
                             <p>
-                                Together, let's cultivate a passion for nature and healthy eating!
+                                Together, let’s cultivate a passion for nature and healthy eating!
                             </p>
                         </div>
 
@@ -177,65 +160,55 @@
                         </div>
 
                         <p class="w-100">
-                            At <strong>ALAWAFY</strong>, our vision is to become a recognized leader in the field
-                            dried fruits,
-                            by redefining the way consumers perceive and consume these products
-                            natural. We aspire to:
+                            At ALAWAFY, our vision is to become a recognized leader in the dried fruit industry, reshaping how
+                            consumers perceive and enjoy these natural products. We aim to:
+
                         </p>
                         <ol class="inlineContent listStyles">
                             <li>
-                                <strong>Innovate in the offer:</strong>
+                                <strong>Innovate in our offerings</strong>
                                 <p>
 
-                                    Being at the forefront of food trends
-                                    by proposing
-                                    innovative, tasty and health-promoting products.
+                                    Be at the forefront of food trends by offering innovative, delicious,
+                                    and healthy products.
+
                                 </p>
                             </li>
                             <li>
-                                <strong>Promote a sustainable lifestyle:</strong>
+                                <strong>Promote a sustainable lifestyle</strong>
                                 <p>
-
-                                    Inspire an engaged community
-                                    around the
-                                    responsible and sustainable consumption, by promoting agricultural practices
-                                    respectful
-                                    of the environment.
+                                    Inspire a community committed to responsible and
+                                    sustainable consumption, supporting environmentally friendly agricultural practices.
                                 </p>
                             </li>
                             <li>
-                                <strong>Strengthen links with our partners:</strong>
+                                <strong>Strengthen partnerships</strong>
                                 <p>
 
-                                    Work closely
-                                    collaboration with
-                                    our local producers to guarantee a fair supply chain and
-                                    transparent, thus supporting local economies.
+                                    Work closely with our local producers to ensure a fair and
+transparent supply chain, thus supporting local economies.
+
                                 </p>
                             </li>
                             <li>
                                 <strong>Educate and inspire:</strong>
                                 <p>
-                                    Become a reference in terms of
-                                    awareness of
-                                    benefits of dried fruits, by sharing knowledge and recipes that
-                                    encourage healthy food choices.
+                                    Become a reference in raising awareness of the benefits of dried fruits by
+                                    sharing knowledge and recipes that encourage healthy choices.
+
                                 </p>
                             </li>
                             <li>
-                                <strong>Building a better future:</strong>
+                                <strong>Build a better future</strong>
                                 <p>
-
-                                    Contribute to a world where health,
-                                    sustainability and
-                                    quality of life are at the heart of food concerns.
+                                    Contribute to a world where health, sustainability, and quality of life are
+                                    central to food concerns
                                 </p>
                             </li>
                         </ol>
                         <p class="w-100">
-                            Together, let's make each bite of our dried fruits a step towards
-                            healthier future and
-                            sustainable.</p>
+                            Together, let's make each bite of our dried fruits a step towards a healthier and more sustainable
+                            future.</p>
                     </div>
 
                     <div class="d-flex justify-content-center ourVisionPeanuts">

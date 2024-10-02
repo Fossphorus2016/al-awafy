@@ -15,7 +15,7 @@
 
                     <div class="heroInner">
                         <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Contact </span>
-                            <span class="fs3">Us</span>
+                            {{-- <span class="fs3">Us</span> --}}
                         </h1>
 
                     </div>
@@ -40,16 +40,12 @@
                             <div class="paraFont">
 
                                 <h2 class="d-flex justify-content-center text-center flex-wrap"><span
-                                        class="fs5 ">FILL
-                                        THE</span>
-                                    <span class="fs6">Form Below</span>
+                                        class="fs5 ">Remplissez le </span>
+                                    <span class="fs6">formulaire</span>
                                 </h2>
-                                <p class="text-center w-100">Al-Awafi brings you the richness and benefits of nature, to take
-                                    care of your food and
-                                    decorate your tables with the best, most ideal and most delicious in order to
-                                    achieve a
-                                    healthy, sound and varied diet that ensures that the body gets all the natural
-                                    elements.
+                                <p class="text-center w-100">Que vous ayez une question, un retour
+                                    d'expérience ou besoin de plus d'informations sur nos produits, nous sommes là pour vous aider !
+                                    notre équipe vous répondra dans les plus brefs délais.
                                 </p>
                             </div>
 
@@ -59,7 +55,7 @@
                                 <div class="row gy-4">
                                     <div class="col-lg-6 col-12 position-relative">
                                         <input type="text" class="form-control inputCustom"
-                                            placeholder="Your Full Name" name="name" id="name">
+                                            placeholder="Nom Complet" name="name" id="name">
                                         <small id="error_name" class="text-danger text-small position-absolute"
                                             style="display: none; bottom: -20px;">
                                             Name is required
@@ -67,7 +63,7 @@
                                     </div>
                                     <div class="col-lg-6 col-12 position-relative">
                                         <input type="number" name="phone" id="phone"
-                                            class="form-control inputCustom phoneVal" placeholder="Your Contact Number">
+                                            class="form-control inputCustom phoneVal" placeholder=" Numero de Contact">
                                         <small id="error_phone" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Phone is required</small>
                                         <small id="invalid_phone_length" class="text-danger position-absolute"
@@ -75,7 +71,7 @@
                                     </div>
                                     <div class="col-12 position-relative">
                                         <input type="text" name="email" id="email"
-                                            class="form-control inputCustom" placeholder="Your Email Address">
+                                            class="form-control inputCustom" placeholder="Adresse email">
                                         <small id="invalid_email" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Invalid email</small>
                                         <small id="error_email" class="text-danger position-absolute"
@@ -83,12 +79,14 @@
                                     </div>
                                     <div class="col-12 position-relative">
                                         <textarea name="message" id="message" rows="4" style="height: 100px" class="form-control inputCustom"
-                                            placeholder="Your Message Here"></textarea>
+                                            placeholder="Décrivez votre demande, nous vous répondrons
+                                            rapidement.
+                                            "></textarea>
                                         <small id="error_message" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Message is required</small>
                                     </div>
                                     <div class="col-12 d-flex justify-content-center">
-                                        <button class="mainBtn1 w-100" type="submit">SUBMIT NOW!</button>
+                                        <button class="mainBtn1 w-100" type="submit">Envoyer Maintenant</button>
                                     </div>
 
                                     <x-captcha />

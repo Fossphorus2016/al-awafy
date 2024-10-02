@@ -42,6 +42,12 @@ Route::prefix('En')->group(function () {
     Route::get('/activities', function () {
         return view('en.activities');
     })->name('en.activities');
+    Route::get('/terms_condition', function () {
+        return view('en.terms_condition');
+    })->name('en.terms_condition');
+    Route::get('/privacy_policy', function () {
+        return view('en.privacy_policy');
+    })->name('en.privacy_policy');
 });
 
 

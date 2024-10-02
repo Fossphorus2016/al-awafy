@@ -67,15 +67,19 @@
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
                             <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
-                            <h3 class="fs13 mb-3">Moments of Family Fun with ALAWAFY</h3>
+                            <h3 class="fs13 mb-3">Family Moments of Joy with ALAWAFY</h3>
                             <p>
-                                With our brand of ALAWAFY nuts, each bite of our dried fruits becomes a
-                                invitation to share moments of pleasure and joy with the family. We believe that the
-                                conviviality around the table is essential, and our products, carefully
-                                selected, are perfect to accompany your gatherings. Whether for a
-                                aperitif, a snack or a moment of relaxation, ALAWAFY brings a touch of sweetness and
-                                health, transforming every moment into a memorable memory. Enjoy the
-                                quality and authentic taste of our nuts and dried fruits!
+                                With our nuts brand ALAWAFY, every bite of our dried fruits becomes an invitation to
+                                share moments
+                                of joy and happiness with your family. We believe that togetherness around the table is
+                                essential, and
+                                our carefully selected products are perfect for your gatherings. Whether it's for an
+                                aperitif, a snack, or
+                                a relaxing moment, ALAWAFY brings a touch of sweetness and health, turning each moment
+                                into a
+                                memorable experience. Savor the authentic taste and quality of our nuts and dried fruits
+                                together!
+
                             </p>
 
                             <a class="mainBtn1" href="about">Learn More</a>

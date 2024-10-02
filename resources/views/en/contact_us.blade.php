@@ -251,12 +251,8 @@
                                         THE</span>
                                     <span class="fs6">Form Below</span>
                                 </h2>
-                                <p class="text-center w-100">Al-Awafi brings you the richness and benefits of nature, to take
-                                    care of your food and
-                                    decorate your tables with the best, most ideal and most delicious in order to
-                                    achieve a
-                                    healthy, sound and varied diet that ensures that the body gets all the natural
-                                    elements.
+                                <p class="text-center w-100">Whether you have a question, feedback, or need more information about our products, we're here to
+                                    assist you! our team will get back to you as soon as possible.
                                 </p>
                             </div>
 
@@ -290,7 +286,7 @@
                                     </div>
                                     <div class="col-12 position-relative">
                                         <textarea name="message" id="message" rows="4" style="height: 100px" class="form-control inputCustom"
-                                            placeholder="Your Message Here"></textarea>
+                                            placeholder="Describe your request, and we will respond quickly"></textarea>
                                         <small id="error_message" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Message is required</small>
                                     </div>
