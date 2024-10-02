@@ -67,16 +67,17 @@
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
                             <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
+                            <h3 class="fs13 mb-3">Moments of Family Fun with ALAWAFY</h3>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sit laboriosam
-                                reprehenderit numquam fugiat itaque amet eius laudantium repellat necessitatibus,
-                                similique aspernatur dicta recusandae nulla, soluta sapiente error voluptatibus ex,
-                                debitis odio? Laboriosam quas ratione ut deserunt nostrum, quasi amet.
+                                With our brand of ALAWAFY nuts, each bite of our dried fruits becomes a
+                                invitation to share moments of pleasure and joy with the family. We believe that the
+                                conviviality around the table is essential, and our products, carefully
+                                selected, are perfect to accompany your gatherings. Whether for a
+                                aperitif, a snack or a moment of relaxation, ALAWAFY brings a touch of sweetness and
+                                health, transforming every moment into a memorable memory. Enjoy the
+                                quality and authentic taste of our nuts and dried fruits!
                             </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam delectus natus dolores
-                                obcaecati iure harum itaque officia ratione. Recusandae sunt quaerat reprehenderit eaque
-                                placeat numquam reiciendis, unde, aut necessitatibus enim sint debitis totam deleniti
-                                praesentium minus iste mollitia, veniam rem delectus? Facilis nesciunt labore error!</p>
+
                             <a class="mainBtn1" href="about">Learn More</a>
                         </div>
                     </div>
@@ -186,13 +187,13 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
-                                        alt="">
+                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                                     <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
+                                    <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a
+                                        href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -221,7 +222,8 @@
                                         src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
                                         magnam, quae odio consequatur Natus sunt.</p>
-                                    <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
+                                    <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a
+                                        href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -310,7 +312,8 @@
                     <h2 class="waterDropsBefore"> <span class="fs7"> Lorem ipsum </span></h2>
                     <h2 class=""> <span class="fs7"> Lorem ipsum</span> <span
                             class="fs8 waterDropsAfter ms-0">dolor sit</span> </h2>
-                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN MORE</a>
+                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
+                            MORE</a>
                         <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACT
                             US</a>
                     </div>
@@ -324,66 +327,70 @@
                 </h2>
                 <div class="activitieSlider">
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionEst/image16.jpg') }}"
-                            alt="">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/school/school_img1.jpeg') }}" alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
                             </div>
-                            <h3>d’exécution Est</h3>
+                            <h3>Activation for back to school</h3>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
+                                An activation for the start of the school year (tasting + raffle) buy and
+                                try to win tech vouchers
                             </p>
                         </div>
                     </div>
 
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}"
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/aid_azah/eid_img1.jpeg') }}" alt="">
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                            </div>
+                            <h3>Al Adha activation assistance</h3>
+                            <p>
+                                An activation on the occasion of Aid Al Adha (tasting + raffle) of sharpeners
+                                hillsides
+                                recharge cards and 9pcs hills as gifts
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/special_african_cup/img0.png') }}"
                             alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
                             </div>
-                            <h3>d’exécution Center</h3>
+                            <h3>Special African Cup social media competition</h3>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
+                                On the occasion of the 2023 African Cup, Alawafy launched a competition on the networks
+                                social networks, televisions and smart phones as gains
                             </p>
                         </div>
                     </div>
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/loperationBts/img7.jpg') }}"
-                            alt="">
-
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/al_jadid/image22.jpg') }}" alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
                             </div>
-                            <h3>de l’opération BTS</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
+                            <h3>Souk el Fellah AL-jadid</h3>
+                            <p>Presence of the ALAWAFY brand at SOUK EL FELLAH Organized by the Souk el-Fellah institute
+                                Al-Jadid, in coordination with the Office of Sports and Leisure Parks of Algiers
+                                (Opla) and the Chamber of Crafts and Trades, this event aims to
+                                to make known and promote the national artisanal product. It brings together around 60
+                                Algerian and foreign companies representing Tunisia, Senegal, China,
+                                Türkiye and France came to exhibit their various products.
                             </p>
                         </div>
                     </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/excecutionQuest/image26.jpg') }}"
-                            alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>d’exécution Quest</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg" src="{{ asset('assets/images/activities/remisDes/image38.jpg') }}"
-                            alt="">
+                    {{-- <div class="col activityOuter">
+                        <img class="w-100 activityImg"
+                            src="{{ asset('assets/images/activities/remisDes/image38.jpg') }}" alt="">
 
                         <div class="service-card">
                             <div class="icon-wrapper">
@@ -395,7 +402,7 @@
                                 Quisquam consequatur necessitatibus eaque.
                             </p>
                         </div>
-                    </div>
+                    </div> --}}
 
                     {{-- <div class="col">
                         <div class="service-card">
@@ -464,7 +471,7 @@
             </div>
         </section>
 
-        <x-letsConnect/>
+        <x-letsConnect />
 
 
         <div class="customContainer">
@@ -496,4 +503,3 @@
         </div>
     </main>
 </x-layout>
-
