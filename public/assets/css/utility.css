@@ -251,6 +251,11 @@ input[type=number] {
     font-family: 'impact';
     color: var(--baseColor2);
 }
+.fs14 {
+    font-size: 16px;
+    font-family: 'arial';
+    color: var(--baseColor5);
+}
 
 .paraFont p {
     font-size: clamp(1rem, 1vw, 1rem);
@@ -303,7 +308,13 @@ input[type=number] {
     margin: 0 60px 0 60px;
 }
 
+.waterDropsAfter3::after {
+    right: 235px;
+}
+.waterDropsBefore3::before {
 
+    left: 33px;
+}
 .waterDropsAfter2::after {
     content: '';
     position: absolute;
