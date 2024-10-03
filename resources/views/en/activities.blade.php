@@ -28,10 +28,11 @@
             <div class="customContainer">
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">Back to school photo  </span> <span
+                    <h2 class="text-center"><span class="fs5">Back to school photo </span> <span
                             class="fs6">activation</span>
                     </h2>
-
+                    <p>An activation for the start of the school year (tasting + raffle) buy and
+                        try to win tech vouchers</p>
 
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/school/school_img1.jpeg') }}
@@ -63,10 +64,13 @@
                 </div>
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">Al Adha activation assistance </span> <span class="fs6">
-                        assistance</span>
+                    <h2 class="text-center"><span class="fs5">Al Adha activation assistance </span> <span
+                            class="fs6">
+                            assistance</span>
                     </h2>
-
+                           <p>An activation on the occasion of Aid Al Adha (tasting + raffle) of sharpeners
+                            hillsides
+                            recharge cards and 9pcs hills as gifts</p>
 
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img0.jpeg') }}
@@ -141,7 +145,13 @@
                                 class="fs6">AL-jadid</span>
                         </h2>
 
-
+                        <p>Presence of the ALAWAFY brand at SOUK EL FELLAH Organized by the Souk el-Fellah institute
+                            Al-Jadid, in coordination with the Office of Sports and Leisure Parks of Algiers
+                            (Opla) and the Chamber of Crafts and Trades, this event aims to
+                            to make known and promote the national artisanal product. It brings together around 60
+                            Algerian and foreign companies representing Tunisia, Senegal, China,
+                            Türkiye and France came to exhibit their various products.
+                        </p>
                         <div class="galleryblock activitiesSlider">
                             <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image22.jpg') }}
                                     alt=""></div>
@@ -178,7 +188,10 @@
                         <h2 class="text-center"><span class="fs5">
                                 Special African Cup </span> <span class="fs6">social media competition</span>
                         </h2>
-
+                        <p>
+                            On the occasion of the 2023 African Cup, Alawafy launched a competition on the networks
+                            social networks, televisions and smart phones as gains
+                        </p>
                         <div class="galleryblock activitiesSlider">
                             <div class="item"><img
                                     src={{ asset('assets/images/activities/special_african_cup/img1.jpeg') }}
