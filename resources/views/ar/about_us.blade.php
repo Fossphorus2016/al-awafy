@@ -39,6 +39,10 @@
                                 ﻣﻌﺎﯾﯾر اﻟﺟودة.
 
                             </p>
+                            <p class="align-self-end">ﻧﺣن ﻓﻲ اﻟﻌواﻓﻲ ﻧﺧﺗﺎر ﺑﻌﻧﺎﯾﺔ أﻓﺿل اﻟﻣﻛﺳرات واﻟﻔول اﻟﺳوداﻧﻲ ﻣن ﻣﺻﺎدر ﻣوﺛوﻗﺔ ﻟﻧﻘدم ﻟﻛم ﻣﻧﺗﺟﺎت
+                                ﻣﺛﺎﻟﯾﺔ ﻟﻼﺳﺗﻣﺗﺎع ﻓﻲ ﻛل
+                                ﻟﺣظﺔ.
+                            </p>
 
 
                         </div>
@@ -59,34 +63,34 @@
                                 alt="">
                         </div>
                     </div>
-                    <div
+                    {{-- <div
                         class="col-12 paraFont mt-4 aboutThirdPara aboutThirdPara col-12 d-flex justify-content-end mt-4 paraFont">
                         <p>ﻧﺣن ﻓﻲ اﻟﻌواﻓﻲ ﻧﺧﺗﺎر ﺑﻌﻧﺎﯾﺔ أﻓﺿل اﻟﻣﻛﺳرات واﻟﻔول اﻟﺳوداﻧﻲ ﻣن ﻣﺻﺎدر ﻣوﺛوﻗﺔ ﻟﻧﻘدم ﻟﻛم ﻣﻧﺗﺟﺎت
                             ﻣﺛﺎﻟﯾﺔ ﻟﻼﺳﺗﻣﺗﺎع ﻓﻲ ﻛل
                             ﻟﺣظﺔ.
                         </p>
-                    </div>
+                    </div> --}}
 
-                    <div class="col-12  mt-4 paraFont inlineContent listStyles">
+                    <div class="col-12  mt-4 paraFont inlineContent arabicStyle listStyles">
                         <h2 class="fs12">:ﻣﻣﯾزاﺗﻧﺎ</h2>
                         <ul class="my-4">
                             <li>
-                                <strong>:ﺟودة ﻻ ﺗﺿﺎھﻰ</strong>
                                 <p class="">
                                     ﺟﻣﯾﻊ ﻣﻧﺗﺟﺎﺗﻧﺎ ﺗﺧﺿﻊ ﻷدق ﻣﻌﺎﯾﯾر اﻟﺟودة اﻟﻌﺎﻟﻣﯾﺔ.
                                 </p>
+                                <strong>:ﺟودة ﻻ ﺗﺿﺎھﻰ</strong>
                             </li>
                             <li>
-                                <strong>:ﺗﻘﻧﯾﺎت ﺣدﯾﺛﺔ</strong>
                                 <p>
                                     ﻣﻧﺷﺂت اﻹﻧﺗﺎج ﻟدﯾﻧﺎ ﺗﺿﻣن ﻛﻔﺎءة واﺳﺗﺟﺎﺑﺔ ﺳرﯾﻌﺔ ﻻﺣﺗﯾﺎﺟﺎت اﻟﺳوق
                                 </p>
+                                <strong>:ﺗﻘﻧﯾﺎت ﺣدﯾﺛﺔ</strong>
                             </li>
                             <li>
-                                <strong>:اﻟﺗزام ﺑﺎﻻﺑﺗﻛﺎر</strong>
                                 <p>
                                     ﻧﺳﻌﻰ داﺋ ًﻣﺎ ﻟﺗطوﯾر وﺻﻔﺎت ﺟدﯾدة وﺗﺣﺳﯾن ﻋﻣﻠﯾﺎت اﻹﻧﺗﺎج ﻟﻧظل روا ًدا ﻓﻲ ھذا اﻟﻣﺟﺎل.
                                 </p>
+                                <strong>:اﻟﺗزام ﺑﺎﻻﺑﺗﻛﺎر</strong>
                             </li>
                         </ul>
                         <p>
@@ -101,13 +105,13 @@
 
         <section class="ourVision">
             <div class="customContainer">
-                <div class="ourVisionInner py-5">
+                <div class="ourVisionInner  arabicOurVis py-5">
                     <div class="paraFont ">
 
                         <div class="missionBtn1 my-5">
                             <h2><span class="fs7"> </span> <span class="fs8">ﻣﮭﻣﺗﻧﺎ</span> </h2>
                         </div>
-                        <div class="inlineContent listStyles">
+                        <div class="inlineContent ">
 
                             <p>
                                 ﻓﻲ اﻟﻌواﻓﻲ، ﻧﻠﺗزم ﺑﺗﻘدﯾم ﻣﻧﺗﺟﺎت طﺑﯾﻌﯾﺔ وﺻﺣﯾﺔ ﺗﻌزز ﻧﻣط ﺣﯾﺎة ﻣﺗوازن. ﻣﻛﺳراﺗﻧﺎ وﻓواﻛﮭﻧﺎ
@@ -117,6 +121,7 @@
                                 اﻟﺻﺣﻲ ﻣﻊ ﻋﻣﻼﺋﻧ
 
                             </p>
+
 
                         </div>
 
@@ -128,36 +133,44 @@
                             <h2><span class="fs7"> </span> <span class="fs8">رؤﯾﺗﻧﺎ</span> </h2>
                         </div>
 
-                        <p class="w-100">
+                        <p class="w-100 text-end" >
                             رؤﯾﺗﻧﺎ ھﻲ أن ﻧﻛون اﻟﻘﺎدة ﻓﻲ ﺗﻘدﯾم أﻓﺿل اﻟﻣﻛﺳرات واﻟﻔواﻛﮫ اﻟﻣﺟﻔﻔﺔ اﻟطﺑﯾﻌﯾﺔ. ﻧﺣن ﻧﺳﻌﻰ إﻟﻰ:
 
                         </p>
-                        <ol class="inlineContent listStyles">
-                            <li>
-                                <strong>اﻻﺑﺗﻛﺎر اﻟﻣﺳﺗﻣر</strong>
+                        <ol class="inlineContent arabicStyle listStyles">
+                            <li style="
+                            text-align: end;
+                        ">
                                 <p>
                                     ﺗﻘدﯾم ﻣﻧﺗﺟﺎت ﺟدﯾدة وﺻﺣﯾﺔ ﺗﺗﻣﺎﺷﻰ ﻣﻊ اﻻﺗﺟﺎھﺎت اﻟﻐذاﺋﯾﺔ اﻟﻌﺎﻟﻣﯾﺔ
 
                                 </p>
+                                <strong>اﻻﺑﺗﻛﺎر اﻟﻣﺳﺗﻣر</strong>
                             </li>
-                            <li>
-                                <strong>ﺗﻌزﯾز اﻻﺳﺗداﻣﺔ</strong>
+                            <li style="
+                            text-align: end;
+                        ">
                                 <p>
                                     دﻋم اﻟﻣﻣﺎرﺳﺎت اﻟزراﻋﯾﺔ اﻟﺻدﯾﻘﺔ ﻟﻠﺑﯾﺋﺔ وﺗﺷﺟﯾﻊ اﺳﺗﮭﻼ ًﻛﺎ ﻣﺳؤو ًﻻ
                                 </p>
+                                <strong>ﺗﻌزﯾز اﻻﺳﺗداﻣﺔ</strong>
                             </li>
-                            <li>
-                                <strong>ﺑﻧﺎء ﺷراﻛﺎت ﻗوﯾﺔ</strong>
+                            <li style="
+                            text-align: end;
+                        ">
                                 <p>
                                     اﻟﻌﻣل ﻣﻊ اﻟﻣﻧﺗﺟﯾن اﻟﻣﺣﻠﯾﯾن ﻟﺿﻣﺎن أﻋﻠﻰ ﻣﺳﺗوﯾﺎت اﻟﺷﻔﺎﻓﯾﺔ واﻟﺟودة
 
                                 </p>
+                                <strong>ﺑﻧﺎء ﺷراﻛﺎت ﻗوﯾﺔ</strong>
                             </li>
-                            <li>
-                                <strong>اﻟﺗﺛﻘﯾف واﻹﻟﮭﺎم</strong>
+                            <li style="
+                            text-align: end;
+                        ">
                                 <p>
                                     ﺗﻌزﯾز اﻟوﻋﻲ ﺑﻔواﺋد اﻟﻣﻛﺳرات وﺗﻘدﯾم ﻧﺻﺎﺋﺢ ووﺻﻔﺎت ﻟﺗﺷﺟﯾﻊ اﻟﺧﯾﺎرات اﻟﻐذاﺋﯾﺔ اﻟﺻﺣﯾﺔ
                                 </p>
+                                <strong>اﻟﺗﺛﻘﯾف واﻹﻟﮭﺎم</strong>
                             </li>
 
                         </ol>

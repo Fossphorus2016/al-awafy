@@ -63,8 +63,8 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2><span class="fs7">كريكو</span> <span class="fs8"> سبایسي</span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8"> سبایسي</span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     استعد لنكھة جریئة! فول سوداني كریكو سبایسي المغلف یقدم نكھة قویة مع الكمیة المثالیة
                                     من الحرارة. ھذه الفول السوداني المقرمشة مثالیة لمحبي الوجبات الخفیفة ذات النكھة
                                     الحارة، وتضیف الإثارة إلى وقت تناول الوجبات الخفیفة.
@@ -98,8 +98,8 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2><span class="fs7">كريكو</span> <span class="fs8"> بالملح</span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8"> بالملح</span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     ا ً أحیان تكون البساطة ھي الأفضل. فول سوداني كریكو بالملح یقدم الطعم الكلاسیكي للملح
                                     مع الكمیة المثالیة من القرمشة. ھذه النكھة الخالدة مثالیة لمن یستمتعون بوجبة خفیفة
                                     بسیطة ومرضیة كل مرة
@@ -160,8 +160,8 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2><span class="fs7">كريكو</span> <span class="fs8">بیتزا</span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8">بیتزا</span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     تذوق نكھات إیطالیا! فول سوداني كریكو المغلف بنكھة البیتزا یقدم الطعم الكلاسیكي
                                     للبیتزا في قضمة مقرمشة، مع نكھات الطماطم والأعشاب والجبنة. ھذه الوجبة الخفیفة توفر ا
                                     ً خیار ا ً لذیذ ا ً وفرید یحول وقت تناول الوجبات الخفیفة إلى حفلة بیتزا صغیرة.
@@ -181,8 +181,8 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2><span class="fs7">كريكو</span> <span class="fs8">بالجبنة</span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8">بالجبنة</span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     متعة لعشاق الجبنة! فول سوداني كریكو المغلف بالجبنة یجمع بین طعم الجبنة الغني
                                     والكریمي مع قرمشة الفول السوداني الفاخر. ھذه النكھة توفر ا ً توازن ا ً مثالی بین
                                     المتعة والقرمشة لتجربة تناول وجبة خفیفة ممتعة ا. ً حق
@@ -216,8 +216,8 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2><span class="fs7">كريكو</span> <span class="fs8">مدخن</span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8">مدخن</span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     لمحبي النكھات المدخنة، فول سوداني كریكو المدخن ھو الخیار المثالي. بنكھة مدخنة غنیة
                                     تدوم، یوفر ھذا الفول السوداني تجربة تناول لا نسى، ُ ت ویضیف ا ً عمق إلى كل قضمة.
                                 </p>

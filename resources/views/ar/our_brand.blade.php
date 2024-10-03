@@ -64,8 +64,8 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2><span class="fs7"> اﻟﻌواﻓﻲ </span> <span class="fs8">ﻓﺳﺗق </span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7"> اﻟﻌواﻓﻲ </span> <span class="fs8">ﻓﺳﺗق </span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     اﺳﺗﻣﺗﻊ ﺑﺎﻟﻣذاق اﻟﻔﺎﺧر ﻟﻔﺳﺗق اﻟﻌواﻓﻲ، اﻟذي ﯾﺗم اﻧﺗﻘﺎؤه ﻣن أﻓﺿل اﻟﺑﺳﺎﺗﯾن وﺗﺣﻣﯾﺻﮫ
                                     ﺑﻌﻧﺎﯾﺔ ﻟﻠوﺻول إﻟﻰ اﻟﻛﻣﺎل. ﯾﺗﻣﯾز ھذا اﻟﻔﺳﺗق ﺑﻧﻛﮭﺔ ﻏﻧﯾﺔ وﻗوام ﻣﻘرﻣش ﻓﻲ ﻛل ﻗﺿﻣﺔ. ﻣﺛﺎﻟﻲ
                                     ﻛوﺟﺑﺔ ﺧﻔﯾﻔﺔ ﺻﺣﯾﺔ أو ﻛﺈﺿﺎﻓﺔ إﻟﻰ وﺻﻔﺎﺗك
@@ -102,9 +102,9 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
-                                <h2><span class="fs7">العوافي</span> <span class="fs8">باللوز بالقشر</span>
+                                <h2 class="text-end"><span class="fs7">العوافي</span> <span class="fs8">باللوز بالقشر</span>
                                 </h2>
-                                <p class="text-white">
+                                <p class="text-white text-end" style="width: 100%">
                                     ﻟﻠﺣﺻول ﻋﻠﻰ ﺗﺟرﺑﺔ ﺗﻘﻠﯾدﯾﺔ و ُﻣرﺿﯾﺔ، ﺟرب ﻟوز اﻟﻌواﻓﻲ ﺑﺎﻟﻘﺷرة. ﯾﺄﺗﻲ ھذا اﻟﻠوز ﻣﺣﻣ ًﯾﺎ
                                     ﺑطﺑﯾﻌﺗﮫ
                                     داﺧل ﻗﺷرﺗﮫ، ﻣﻣﺎ ﯾﺣﺎﻓظ ﻋﻠﻰ ﻧﻛﮭﺗﮫ اﻟطﺎزﺟﺔ واﻟﻣﻘرﻣﺷﺔ. ﻓﺗﺢ اﻟﻘﺷرة ھو ﺟزء ﻣن اﻟﻣﺗﻌﺔ، ﻣﻣﺎ
@@ -127,8 +127,8 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
-                                <h2><span class="fs7">العوافي</span> <span class="fs8">مكسرات</span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">العوافي</span> <span class="fs8">مكسرات</span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     تقدم مكسرات العوافي أفضل ما في الطبیعة، حیث توفر مجموعة متنوعة من المكسرات الفاخرة.
                                     ختار ُ ت بععنایة حمص ُ وت بإتقان، لتقدم مجموعة غنیة من النكھات والقوام. مثالیة كوجبة
                                     خفیفة أو كإضافة إلى وصفاتك المفضلة، تضمن مكسرات العوافي الجودة والنضارة في كل قضمة.
@@ -162,8 +162,8 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
-                                <h2><span class="fs7">العوافي</span> <span class="fs8">ﻓول ﺳوداﻧﻲ </span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">العوافي</span> <span class="fs8">ﻓول ﺳوداﻧﻲ </span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     استمتع بالنكھة الغنیة للأرض من فول سوداني العوافي، الذي یتم اختیاره بعنایة لجودتھ
                                     العالیة. حمص ُ ی لیمنحك قرمشة رضیة ُ م في كل قضمة. سواء كان كوجبة خفیفة بمفردھا أو
                                     كمكون في أطباقك المفضلة، یوفر فول سوداني العوافي ا ً خیار ا ً مغذی ا ً ولذیذ لمحبي
@@ -184,8 +184,8 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
-                                <h2><span class="fs7">العوافي</span> <span class="fs8">كوكتيل</span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">العوافي</span> <span class="fs8">كوكتيل</span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     یقدم كوكتیل العوافي ا ً مزیج ا ً غنی ا ً ومتعدد من المكسرات الفاخرة، بما في ذلك
                                     الفستق، اللوز، الفول السوداني، والكاجو. ھذه التركیبة المتوازنة ا ً تمام تقدم مجموعة
                                     متنوعة من النكھات والقوام في عبوة واحدة لذیذة. سواء كنت تستضیف ا ً ضیوف أو تستمتع
@@ -221,8 +221,8 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
-                                <h2><span class="fs7">العوافي</span> <span class="fs8">لوز </span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">العوافي</span> <span class="fs8">لوز </span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     لوز العوافي ھو اختیار ممیز من اللوز الكامل، المعروف بنعومتھ الطبیعیة وحلاوتھ
                                     الطفیفة. حمص ُ ی بعنایة لیقدم وجبة خفیفة مغذیة ولذیذة، غنیة بالفیتامینات والمعادن
                                     والدھون الصحیة. یمكنك تناولھ بمفرده أو إضافتھ إلى إبداعاتك المطبخیة لمزید من النكھة
@@ -243,8 +243,8 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
-                                <h2><span class="fs7">العوافي</span> <span class="fs8">كاجو</span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">العوافي</span> <span class="fs8">كاجو</span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     استمتع بمذاق كاجو العوافي الكریمي والزبداني، وھو متعة فاخرة تذوب في الفم. عرف ُ ی
                                     بقوامھ الناعم ونكھتھ الغنیة، ویعد ا ً مثالی كوجبة خفیفة أو مكون في الطبخ أو إضافة
                                     إلى السلطات والحلویات. غني بالعناصر الغذائیة، یقدم الكاجو ا ً خیار ا ً لذیذ ا ً وصحی

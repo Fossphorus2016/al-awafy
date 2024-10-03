@@ -100,8 +100,8 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">اليوم</span> <span class="fs8"> فول سوداني </span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">اليوم</span> <span class="fs8"> فول سوداني </span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     لمن یبحثون عن فول سوداني فاخر بكمیات كبیرة، یقدم فول سوداني الیوم الحل المثالي. ھذا
                                     الفول السوداني اللذیذ والمقرمش مثالي للمشترین بالجملة، المطاعم، ومزودي الطعام الذین
                                     یرغبون في ضمان جودة عالیة في عروضھم دون التضحیة بالقیمة. متوفر في عبوات كبیرة، یضمن
@@ -123,8 +123,8 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">اليوم</span> <span class="fs8">كاجو </span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">اليوم</span> <span class="fs8">كاجو </span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     كاجو الیوم یقدم لك مكسرات الكاجو الفاخرة بكمیات كبیرة، مصممة للاستخدام الواسع دون
                                     التضحیة بالجودة الممتازة. معروف بمذاقھ الزبدي وملمسھ الناعم، ھذا الكاجو مثالي
                                     للأعمال التي تحتاج إلى مكونات عالیة الجودة بكمیات كبیرة. كاجو الیوم یقدم قیمة
@@ -160,8 +160,8 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">مزیج</span> <span class="fs8"> الیوم الممیز </span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">مزیج</span> <span class="fs8"> الیوم الممیز </span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     مزیج الیوم الممیز یجمع أفضل ما لدینا من المكسرات – الفستق، اللوز، الفول السوداني،
                                     والكاجو – في مزیج مثالي، متوفر بكمیات كبیرة. ھذا المزیج الفاخر مثالي للمطاعم،
                                     الفنادق، والفعالیات التي تحتاج إلى وجبات خفیفة عالیة الجودة. مزیج الیوم الممیز یضمن
@@ -185,8 +185,8 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">اليوم</span> <span class="fs8">لوز </span> </h2>
-                                <p class="text-white">
+                                <h2 class="text-end"><span class="fs7">اليوم</span> <span class="fs8">لوز </span> </h2>
+                                <p class="text-white text-end" style="width: 100%">
                                     لوز الیوم یقدم أفضل أنواع اللوز المنتقاة بعنایة في عبوات كبیرة. ھذا اللوز عالي
                                     الجودة مثالي للاستخدام التجاري، سواء في الخبز أو الطبخ أو تقدیمھ كوجبة خفیفة صحیة
                                     بكمیات كبیرة. یتم اختیار لوز الیوم بعنایة للحفاظ على نضارتھ وطعمھ الاستثنائي، مثالي

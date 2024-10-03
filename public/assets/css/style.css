@@ -1067,6 +1067,11 @@ html {
     background-size: 85% 43% !important;
 }
 
+.arabicOurVis.ourVisionInner::before {
+
+    background-size: 85% 35%;
+}
+
 .slick-dots li button:before {
     font-family: slick;
     font-size: 6px;
@@ -1111,7 +1116,16 @@ html {
     font-size: 28px;
     font-weight: bold;
   }
+  .arabicStyle.listStyles li:before {
 
+    left: 100%;
+
+}
+
+.arabicStyle.listStyles li {
+
+    padding-right: 30px;
+}
 
 @media (max-width: 1200px) {
     .aboutItem2 {
