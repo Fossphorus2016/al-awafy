@@ -229,10 +229,11 @@
             <div class="customContainer">
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">تفعيل صور </span> <span
-                            class="fs6">العودة إلى المدرسة</span>
+                    <h2 class="text-center"><span class="fs5"> ﻓﻌﺎﻟﯾﺔ اﻟﻌودة إﻟﻰ اﻟﻣدرﺳﺔ </span> <span
+                            class="fs6"> ﺳﺑﺗﻣﺑر -2023 </span>
                     </h2>
-
+                    <p>بمناسبة العودة إلى المدرسة لعام 2023، نظمت العوافي فعالية خاصة تضمنت تذوق المنتجات وسحب
+                        جوائز (تومبولا). أتيحت الفرصة للمشاركين للفوز بقسائم شراء لمنتجات تقنية.</p>
 
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/school/school_img1.jpeg') }}
@@ -255,10 +256,13 @@
                 </div>
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">مساعدة تفعيل  </span> <span class="fs6">
-                        الأضحى</span>
+                    <h2 class="text-center"><span class="fs5">    ﻋﯾد اﻷﺿﺣﻰ   </span> <span class="fs6">
+                        ﯾوﻧﯾو -2024    </span>
                     </h2>
-
+                    <p>
+                        بمناسبة عيد الأضحى 2024، نظمت العوافي فعالية تضمنت تذوق المنتجات وسحب جوائز (تومبولا)
+                        للفوز بسكاكين حادة، بطاقات تعبئة، وأطقم سكاكين مكونة من 9 قطع كجوائز.
+                    </p>
 
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img0.jpeg') }}
@@ -288,7 +292,7 @@
 
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">تقديم  </span> <span class="fs6">الهدايا</span>
+                    <h2 class="text-center"><span class="fs5">ﺗﺳﻠﯾم  </span> <span class="fs6">الهدايا</span>
                     </h2>
 
 
@@ -321,8 +325,7 @@
                 </div>
                 <div>
 
-                    <h2 class="text-center"><span class="fs5">سوق الفلاح </span> <span
-                            class="fs6">الجديد</span>
+                    <h2 class="text-center"><span class="fs5">سوق الفلاح </span> <span class="fs6">الجديد</span>
                     </h2>
 
 
@@ -344,7 +347,10 @@
                     <h2 class="text-center"><span class="fs5">مسابقة خاصة لكأس أفريقيا على </span> <span
                             class="fs6">مواقع التواصل الاجتماعي</span>
                     </h2>
-
+                    <p>
+                        بمناسبة كأس إفريقيا 2023، أطلقت العوافي مسابقة عبر وسائل التواصل الاجتماعي، حيث تم تقديم
+                        أجهزة تلفاز وهواتف ذكية كجوائز.
+                    </p>
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img
                                 src={{ asset('assets/images/activities/special_african_cup/img1.jpeg') }}
@@ -358,8 +364,7 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="text-center"><span class="fs5">يعرض و</span> <span
-                            class="fs6">الترويج</span>
+                    <h2 class="text-center"><span class="fs5">  واﻟﻣرﺷﻧداﯾز   </span> <span class="fs6">اﻟﻌروض اﻟﺗﺟﺎرﯾﺔ </span>
                     </h2>
 
                     <div class="galleryblock activitiesSlider">
