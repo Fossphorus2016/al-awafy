@@ -76,6 +76,12 @@ Route::prefix('Ar')->group(function () {
     Route::get('/activities', function () {
         return view('ar.activities');
     })->name('ar.activities');
+    Route::get('/terms_condition', function () {
+        return view('ar.terms_condition');
+    })->name('ar.terms_condition');
+    Route::get('/privacy_policy', function () {
+        return view('ar.privacy_policy');
+    })->name('ar.privacy_policy');
 });
 
 
@@ -104,6 +110,12 @@ Route::prefix('Fr')->group(function () {
     Route::get('/activities', function () {
         return view('fr.activities');
     })->name('fr.activities');
+    Route::get('/terms_condition', function () {
+        return view('fr.terms_condition');
+    })->name('fr.terms_condition');
+    Route::get('/privacy_policy', function () {
+        return view('fr.privacy_policy');
+    })->name('fr.privacy_policy');
 });
 
 

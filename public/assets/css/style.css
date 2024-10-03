@@ -1107,7 +1107,10 @@ html {
     top: 5px;
   }
 
-
+  ol li::marker {
+    font-size: 28px;
+    font-weight: bold;
+  }
 
 
 @media (max-width: 1200px) {

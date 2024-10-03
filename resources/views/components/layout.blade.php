@@ -193,8 +193,8 @@
                         </p>
                     </div>
                     <div class="col-lg-6 col-12 privacyPages">
-                        <a href="" class="text-white anchorHover">Privacy Policy</a> | <a
-                            class="text-white anchorHover" href="">Terms & Conditions</a>
+                        <a href="privacy_policy" class="text-white anchorHover">Privacy Policy</a> | <a
+                            class="text-white anchorHover" href="terms_condition">Terms & Conditions</a>
                     </div>
 
                 </div>

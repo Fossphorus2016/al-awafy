@@ -1,4 +1,4 @@
-<x-layout>
+<x-arabicLayout>
     <main>
         <section class="heroSection secondBanner contactBanner position-relative z-1">
             <div class="customContainer">
@@ -223,4 +223,4 @@
 
     </main>
 
-</x-layout>
+</x-arabicLayout>

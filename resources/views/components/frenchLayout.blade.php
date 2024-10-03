@@ -24,18 +24,19 @@
 
                         <ul class="navbar-nav justify-content-end ">
                             <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect" href="home">Home</a>
+                                <a class="nav-link fs14 underLineAffect" href="home">ACCUEIL</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect " href="about">About Us</a>
+                                <a class="nav-link fs14 underLineAffect " href="about">A PROPOS DE NOUS
+                                </a>
                             </li>
                             {{-- <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect" href="brands">Brands</a>
+                                <a class="nav-link fs14 underLineAffect" href="brands">Brands</a>
                             </li> --}}
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle fs1 hoverText" href="#" role="button"
+                                <a class="nav-link dropdown-toggle fs14 hoverText" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Our Brands
+                                    NOS MARQUES
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="brand-alawafy">Alawafy</a></li>
@@ -45,7 +46,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect" href="activities">Activities</a>
+                                <a class="nav-link fs14 underLineAffect" href="activities">NOS ACTIVITÉS</a>
                             </li>
                             <li class="nav-item ">
                                 <div class="dropdown">
@@ -65,7 +66,7 @@
                                 </div>
                             </li>
                             <li class="nav-item ">
-                                <a class="mainBtn1" href="contact-us" style="display: block;">Contact Us</a>
+                                <a class="mainBtn1" href="contact-us" style="display: block;">CONTACT</a>
                             </li>
                         </ul>
 
@@ -194,8 +195,8 @@
                         </p>
                     </div>
                     <div class="col-lg-6 col-12 privacyPages">
-                        <a href="" class="text-white anchorHover">Politique de Confidentialité</a> | <a
-                            class="text-white anchorHover" href=""> Conditions Générales d'Utilisation</a>
+                        <a href="privacy_policy" class="text-white anchorHover">Politique de Confidentialité</a> | <a
+                            class="text-white anchorHover" href="terms_condition"> Conditions Générales d'Utilisation</a>
                     </div>
 
                 </div>
