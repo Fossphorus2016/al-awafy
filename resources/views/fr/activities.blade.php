@@ -31,7 +31,10 @@
                     <h2 class="text-center"><span class="fs5">Activation photos </span> <span
                             class="fs6">rentrée</span>
                     </h2>
-
+                    <p>
+                        Une activation a l’occasion de la rentrée scolaire (dégustation + tombola ) achetez et
+                        tentez de gagner des bons d’achats techno
+                    </p>
 
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/school/school_img1.jpeg') }}
@@ -67,7 +70,11 @@
                             Adha</span>
                     </h2>
 
-
+                    <p>
+                        Une activation a l’occasion de l’Aid Al Adha (dégustation + tombola ) des aiguises
+                        coteaux
+                        des cartes de recharges et des coteaux de 9pcs comme cadeaux
+                    </p>
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img0.jpeg') }}
                                 alt="">
@@ -185,7 +192,13 @@
                     <h2 class="text-center"><span class="fs5">Souk el Fellah </span> <span
                             class="fs6">AL-jadid</span>
                     </h2>
-
+                    <p>Présence de la marque ALAWAFY au SOUK EL FELLAH Organisée par l’institut Souk el-Fellah
+                        Al-Jadid, en coordination avec l’Office des parcs des sports et des loisirs d’Alger
+                        (Opla) et la Chambre d’artisanat et des métiers, cette manifestation a pour objectif de
+                        faire connaître et de promouvoir le produit artisanal national. Elle réunit environ 60
+                        entreprises algériennes et étrangères représentant la Tunisie, le Sénégal, la Chine, la
+                        Turquie et la France venus exposer leurs divers produits.
+                    </p>
 
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image22.jpg') }}
@@ -223,7 +236,10 @@
                     <h2 class="text-center"><span class="fs5">Concours réseaux sociaux </span> <span
                             class="fs6">special coupe d’Afrique</span>
                     </h2>
-
+                    <p>
+                        A l’occasion de la coupe d’Afrique 2023 Alawafy a lancer un concours sur les réseaux
+                        sociaux, des téléviseurs et des smart phones comme gains
+                    </p>
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img
                                 src={{ asset('assets/images/activities/special_african_cup/img1.jpeg') }}
