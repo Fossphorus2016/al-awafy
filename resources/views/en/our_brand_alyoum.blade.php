@@ -175,7 +175,7 @@
                                 <h2><span class="fs7">Alyoum</span> <span class="fs8">Mix Premium</span> </h2>
                                 <p class="text-white">
                                     <strong>Alyoum Mix Premium</strong> combines the best of our nuts — pistachios,
-                                    almonds, peanuts, and
+                                    almonds,shelled walnuts, peanuts, and
                                     cashews — in a perfect blend, all available in bulk packaging. This premium mix is
                                     ideal for
                                     restaurants, hotels, and events where top-quality snacks are essential. Alyoum Mix

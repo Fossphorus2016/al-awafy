@@ -178,7 +178,7 @@
                                 <h2><span class="fs7">Alyoum</span> <span class="fs8">Mix Premium</span> </h2>
                                 <p class="text-white">
                                     <strong>Alyoum Mix Premium</strong> combine le meilleur de nos noix — pistaches,
-                                    amandes, cacahuètes
+                                    amandes, noix décortiquées, cacahuètes
                                     et noix de
                                     cajou — dans un mélange parfait, le tout disponible en emballage en vrac. Ce mélange
                                     premium est
