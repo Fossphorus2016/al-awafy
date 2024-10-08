@@ -16,38 +16,39 @@
                     <div class="heroSlider">
 
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مام الأمور </span>
-                                <span class="fs3">ويخ</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">مرحبا بكم ف العوافي
+                                </span>
+                                <span class="fs3"> قلب المكرسات الفاخرة</span>
                             </h1>
                             <p class="fs4">
-                                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
-
+                                سواء كنتم تبحثون عن وجبة خفيفة صحيةأو طعام لذيذ ملء بالنكهاتأو خيارات بالجملة لعملكم فإن
+                                العوافي توفر شيئا
                                 <br>
-                                بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة
+                                يناسب الجميع
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مام الأمور </span>
-                                <span class="fs3">ويخ</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">مرحبا بكم ف كريكو </span>
+                                <span class="fs3"> قلب المكرسات الفاخرة</span>
                             </h1>
                             <p class="fs4">
-                                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
-
+                                سواء كنتم تبحثون عن وجبة خفيفة صحيةأو طعام لذيذ ملء بالنكهاتأو خيارات بالجملة لعملكم فإن
+                                كريكو توفر شيئا
                                 <br>
-                                بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة
+                                يناسب الجميع
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مام الأمور </span>
-                                <span class="fs3">ويخ</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">مرحبا بكم ف اليوم </span>
+                                <span class="fs3"> قلب المكرسات الفاخرة</span>
                             </h1>
                             <p class="fs4">
-                                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
-
+                                سواء كنتم تبحثون عن وجبة خفيفة صحيةأو طعام لذيذ ملء بالنكهاتأو خيارات بالجملة لعملكم فإن
+                                اليوم توفر شيئا
                                 <br>
-                                بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة
+                                يناسب الجميع
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}" alt="">
                         </div>
@@ -111,9 +112,10 @@
                                     <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                                     <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
-                                    <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة</p>
+                                    <p>
+                                        مكسرات عالية الجودة، مختارة بعناية ومحمصة بإتقان. من الكاجوال الوزن العوافي تقدم
+                                        وجبة خفيفة صحية ولذيذة لكل مناسبة
+                                    </p>
                                     <a href="brand-alawafy" class="mainBtn1">عرض منتجات العلامة التجارية</a
                                         href="brand-alawafy">
                                 </div>
@@ -127,9 +129,10 @@
                                         alt="">
                                     <img class="pb-3 w-100" class="py-3"
                                         src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
-                                    <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة</p>
+                                    <p>
+                                        لمسة مرحة على الفول السوداني بنكهات جريئة مثل الحار، الجبن، والشواء. كريكو تقدم
+                                        وجبات خفيفة مقرمشة مليئة بالنكهات بقيمة لا مثيل لها
+                                    </p>
                                     <a href="brand-crico" class="mainBtn1">عرض منتجات العلامة التجارية</a
                                         href="brand-alawafy">
                                 </div>
@@ -144,9 +147,10 @@
 
                                     <img class="pb-3 w-100" class="py-3"
                                         src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
-                                    <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
-                                        نشأت
-                                        بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة</p>
+                                    <p>
+                                        مخصصة للسوق بالجملة، توفر اليوم مكسرات عالية الجودة بكميات كبيرة، مما يضمن
+                                        نضارتهاوتكهتها لتبيةاحتياجات الشركات والمشاريع الكبيرة.
+                                    </p>
                                     <a href="brand-alyoum" class="mainBtn1">عرض منتجات العلامة التجارية</a
                                         href="brand-alawafy">
                                 </div>
@@ -164,9 +168,9 @@
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
-                    <h2 class="waterDropsBefore"> <span class="fs7"> مام الأمور </span></h2>
-                    <h2 class=""> <span class="fs7"> مام الأمور </span> <span
-                            class="fs8  waterDropsAfter2 ms-0">يتعلم</span> </h2>
+                    <h2 class="waterDropsBefore"> <span class="fs7"> استمتع بأجود أنواع المكسرات </span></h2>
+                    <h2 class=""> <span class="fs7"> مليئة بالنكهة </span> <span
+                            class="fs8  waterDropsAfter2 ms-0">والقيمة الغذائية العالية </span> </h2>
                     <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">يتعلم
                             أكثر</a>
                         <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">بنا

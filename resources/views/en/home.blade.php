@@ -16,41 +16,42 @@
                     <div class="heroSlider">
 
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Lorem ipsum </span>
-                                <span class="fs3">lorem</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Alawafy
+                                </span> <br>
+                                <span class="fs3">The Heart of Premium Nuts</span>
                             </h1>
                             <p class="fs4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum possimus
-                                excepturi
-                                sed libero hic earum,
+                                Whether you're seeking a healthy snack, a flavorful treat, or bulk options for your
+                                business, Alawafy
+
                                 <br>
-                                fuga beatae esse dignissimos quam consequatur tenetur perspiciatis
+                                has something for everyone.
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Lorem ipsum </span>
-                                <span class="fs3">lorem</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Circo </span>
+                                <span class="fs3">The Heart of Premium Nuts</span>
                             </h1>
                             <p class="fs4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum possimus
-                                excepturi
-                                sed libero hic earum,
+                                Whether you're seeking a healthy snack, a flavorful treat, or bulk options for your
+                                business, Circo
+
                                 <br>
-                                fuga beatae esse dignissimos quam consequatur tenetur perspiciatis
+                                has something for everyone.
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Lorem ipsum </span>
-                                <span class="fs3">lorem</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Alyoum </span>
+                                <span class="fs3">The Heart of Premium Nuts</span>
                             </h1>
                             <p class="fs4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum possimus
-                                excepturi
-                                sed libero hic earum,
+                                Whether you're seeking a healthy snack, a flavorful treat, or bulk options for your
+                                business, Alyoum
+
                                 <br>
-                                fuga beatae esse dignissimos quam consequatur tenetur perspiciatis
+                                has something for everyone.
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}" alt="">
                         </div>
@@ -194,8 +195,8 @@
                                     <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                                     <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
+                                    <p>Premium quality nuts, carefully selected and roasted to perfection. From cashews to almonds,
+                                        Alawafy offers a healthy and delicious snack for every occasion.</p>
                                     <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a
                                         href="brand-alawafy">
                                 </div>
@@ -209,8 +210,9 @@
                                         alt="">
                                     <img class="pb-3 w-100" class="py-3"
                                         src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
+                                    <p>A playful twist on peanuts with bold flavors like spicy, cheese, and barbecue.
+                                        Crico delivers crunchy, flavor-packed snacks at an unbeatable value.
+                                    </p>
                                     <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
@@ -224,8 +226,9 @@
 
                                     <img class="pb-3 w-100" class="py-3"
                                         src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
+                                    <p>Dedicated to the wholesale market, Alyoum offers high-quality nuts in bulk,
+                                        ensuring freshness and
+                                        taste for businesses and large-scale needs.</p>
                                     <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a
                                         href="brand-alawafy">
                                 </div>
@@ -313,9 +316,9 @@
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
-                    <h2 class="waterDropsBefore"> <span class="fs7"> Lorem ipsum </span></h2>
-                    <h2 class=""> <span class="fs7"> Lorem ipsum</span> <span
-                            class="fs8 waterDropsAfter ms-0">dolor sit</span> </h2>
+                    <h2 class="waterDropsBefore"> <span class="fs7"> Enjoy the Finest Nuts,</span></h2>
+                    <h2 class=""> <span class="fs7">  Packed with Flavor </span> <span
+                            class="fs8 waterDropsAfter ms-0">Flavor and Nutrition</span> </h2>
                     <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
                             MORE</a>
                         <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACT

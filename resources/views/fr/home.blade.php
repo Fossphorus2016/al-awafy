@@ -16,41 +16,43 @@
                     <div class="heroSlider">
 
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Lorem ipsum </span>
-                                <span class="fs3">lorem</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue chez Alawafy
+                                </span>
+                                <span class="fs3">Le Cœur des Fruits Secs de Qualité </span>
                             </h1>
                             <p class="fs4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum possimus
-                                excepturi
-                                sed libero hic earum,
+                                Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
+                                gros pour
                                 <br>
-                                fuga beatae esse dignissimos quam consequatur tenetur perspiciatis
+                                votre entreprise, Alawafy a quelque chose pour chacun.
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Lorem ipsum </span>
-                                <span class="fs3">lorem</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue chez Circo
+                                </span>
+                                <span class="fs3">Le Cœur des Fruits Secs de Qualité </span>
                             </h1>
                             <p class="fs4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum possimus
-                                excepturi
-                                sed libero hic earum,
+                                Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
+                                gros pour
+
                                 <br>
-                                fuga beatae esse dignissimos quam consequatur tenetur perspiciatis
+                                votre entreprise, Circo a quelque chose pour chacun.
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Lorem ipsum </span>
-                                <span class="fs3">lorem</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue chez Alyoum
+                                </span>
+                                <span class="fs3">Le Cœur des Fruits Secs de Qualité </span>
                             </h1>
                             <p class="fs4">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum possimus
-                                excepturi
-                                sed libero hic earum,
+                                Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
+                                gros pour
+
                                 <br>
-                                fuga beatae esse dignissimos quam consequatur tenetur perspiciatis
+                                votre entreprise, Alyoum a quelque chose pour chacun.
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}" alt="">
                         </div>
@@ -190,8 +192,8 @@
                                     <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                                     <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
+                                    <p>Des noix de qualité premium, soigneusement sélectionnées et grillées à la perfection. Des noix de
+                                        cajou aux amandes, Alawafy propose une collation saine et délicieuse pour chaque occasion.</p>
                                     <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a
                                         href="brand-alawafy">
                                 </div>
@@ -205,8 +207,8 @@
                                         alt="">
                                     <img class="pb-3 w-100" class="py-3"
                                         src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
+                                    <p>Un twist amusant sur les cacahuètes avec des saveurs audacieuses comme épicé, fromage et
+                                        barbecue. Crico offre des snacks croquants et pleins de saveurs à un rapport qualité-prix imbattable.</p>
                                     <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
@@ -220,8 +222,8 @@
 
                                     <img class="pb-3 w-100" class="py-3"
                                         src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
+                                    <p>Dédiée au marché de gros, Alyoum propose des noix de haute qualité en vrac, garantissant fraîcheur
+                                        et saveur pour les entreprises et les besoins à grande échelle.</p>
                                     <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a
                                         href="brand-alawafy">
                                 </div>
@@ -309,9 +311,9 @@
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
-                    <h2 class="waterDropsBefore"> <span class="fs7"> Lorem ipsum </span></h2>
-                    <h2 class=""> <span class="fs7"> Lorem ipsum</span> <span
-                            class="fs8 waterDropsAfter ms-0">dolor sit</span> </h2>
+                    <h2 class="waterDropsBefore"> <span class="fs7"> Profitez des meilleures , </span></h2>
+                    <h2 class=""> <span class="fs7"> noix</span> <span
+                            class="fs8 waterDropsAfter ms-0">riches en saveurs et en nutriments</span> </h2>
                     <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
                             MORE</a>
                         <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACT
@@ -357,7 +359,8 @@
                     </div>
                     <div class="col activityOuter">
                         <img class="w-100 activityImg"
-                            src="{{asset('assets/images/activities/special_african_cup/img0.png')}}" alt="">
+                            src="{{ asset('assets/images/activities/special_african_cup/img0.png') }}"
+                            alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
