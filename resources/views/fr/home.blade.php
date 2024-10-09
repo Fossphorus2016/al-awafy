@@ -311,7 +311,7 @@
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
-                    <h2 class="waterDropsBefore"> <span class="fs7"> Profitez des meilleures , </span></h2>
+                    <h2 class="waterDropsBefore"> <span class="fs7"> Profitez des meilleures</span></h2>
                     <h2 class=""> <span class="fs7"> noix</span> <span
                             class="fs8 waterDropsAfter ms-0">riches en saveurs et en nutriments</span> </h2>
                     <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
