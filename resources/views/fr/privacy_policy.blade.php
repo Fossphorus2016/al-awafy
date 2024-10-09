@@ -171,7 +171,7 @@
                                 confidentialité ou vos
                                 données personnelles, veuillez nous contacter à l’adresse suivante :
                                 <ul class="listStyles inlineContent">
-                                    <li> <strong>E-mail ::</strong>
+                                    <li> <strong>E-mail:</strong>
                                         <p>info@Alawafy.com</p>
                                     </li>
                                     <li>
