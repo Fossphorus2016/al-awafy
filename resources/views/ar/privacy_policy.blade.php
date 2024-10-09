@@ -1,5 +1,3 @@
-
-
 <x-arabicLayout>
     <main>
         <section class="heroSection secondBanner contactBanner position-relative z-1">
@@ -32,148 +30,157 @@
 
                 <div class="w-75 mt-5">
 
-                <div class="">
+                    <div class="">
 
+                        <p>
+                            في العوافي، نحن ملتزمون بحماية خصوصيتك وضمان أن يتم التعامل مع معلوماتك الشخصية بطريقة آمنة
+                            ومسؤولة. توضح سياسة الخصوصية هذه كيفية جمع المعلومات التي تقدمها واستخدامها وحمايتها عند
+                            استخدام موقعنا.
+
+                        </p>
+                    </div>
+                    <div class=" ">
+
+                        <ol>
+                            <li class="my-4">
+                                <strong class="fs-3">المعلومات التي نجمعها
+                                </strong>
+                                <p>
+                                    :قد نجمع الأنواع التالية من المعلومات الشخصية
+
+                                <ul class="listStyles">
+                                    <li>- الاسم، عنوان البريد الإلكتروني، رقم الهاتف، وغيرها من تفاصيل الاتصال عند ملء
+                                        النماذج أو الاشتراك في نشرتنا الإخبارية.
+                                    </li>
+                                    <li>- المعلومات المتعلقة باستفساراتك لطلباتك، مثل تفضيلات المنتج أو الملاحظات.
+
+                                    </li>
+                                    <li>- الخاص بك بنوع المتصفح، وأوقات الوصول لأغراض تحسين الموقع أو بيانات تقنية مثل
+                                        عنوان IP.
+                                    </li>
+                                </ul>
+                                </p>
+                            </li>
+                            <li class="my-4">
+                                <strong class="fs-3">
+                                    كيف نستخدم معلوماتك
+                                </strong>
+                                <ul class="listStyles">
+                                    :نستخدم المعلومات الشخصية التي تقدمها في
+                                    <li>
+                                        - الرد على استفساراتك وتقديم دعم العملاء.
+
+                                    </li>
+                                    <li>
+                                        - معالجة وتنفيذ الطلبات أو الاشتراكات.
+
+                                    </li>
+                                    <li>
+                                        - تحسين موقعنا وتجربة المستخدم.
+
+                                    </li>
+                                    <li>
+                                        - إرسال رسائل بريد إلكتروني ترويجية أو تحديثات إذا كنت قد اشتركت في قائمة البريد
+                                        الخاصة بنا (يمكنك إلغاء الاشتراك في أي وقت).
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-4">
+                                <strong class="fs-3"> :أمان البيانات</strong>
+                                <p>
+                                    نتخذ تدابير فنية وتنظيمية مناسبة لضمان أمان معلوماتك الشخصية. يتم حماية بياناتك من
+                                    الوصول غير المصرح به أو التغيير أو الإفشاء أو التدمير
+                                </p>
+                            </li>
+                            <li class="my-4">
+                                <strong class="fs-3">
+                                    :مشاركة معلوماتك
+                                </strong>
+                                <p>
+                                    نحن لا نبيع أو نتاجر أو نُؤجر معلوماتك الشخصية لأطراف ثالثة، ومع ذلك، قد نشارك
+                                    معلوماتك مع مقدمي الخدمات الذين يساعدوننا في تشغيل موقعنا أو إجراء الأعمال، بشرط أن
+                                    يوافقوا على الحفاظ على سرية معلوماتك
+                                </p>
+                            </li>
+                            <li class="my-4">
+                                <strong class="fs-3">
+                                    حقوقك
+                                </strong>
+                                <ul class="listStyles">
+                                    :لديك الحق في
+                                    <li>
+                                        - الوصول إلى البيانات الشخصية التي نحتفظ بها عنك.
+
+                                    </li>
+                                    <li>
+                                        - طلب تصحيحات أو تحديثات لمعلوماتك.
+
+                                    </li>
+                                    <li>
+                                        - سحب الموافقة على الاتصالات التسويقية.
+                                    </li>
+                                    <li>
+                                        - طلب حذف معلوماتك الشخصية، مع مراعاة الالتزامات القانونية.
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-4">
+                                <strong class="fs-3"> :ملفات تعريف الارتباط </strong>
+                                <p>
+                                    يستخدم موقعنا ملفات تعريف الارتباط لتعزيز تجربة التصفح لديك. ملفات تعريف الارتباط هي
+                                    ملفات صغيرة تُخزن على جهازك
+                                    تساعدنا في تحليل حركة المرور على الموقع وتخصيص خدماتنا. يمكنك إدارة تفضيلات ملفات
+                                    تعريف الارتباط من خلال
+                                    إعدادات المتصفح الخاص بك.
+
+                                </p>
+                            </li>
+                            <li class="my-4">
+                                <strong class="fs-3">
+                                    :تعديلات في هذه السياسة
+
+                                </strong>
+                                <p>
+                                    تحتفظ العوافي بحق تحديث سياسة الخصوصية هذه حسب الحاجة. نشجعك على مراجعة هذه الصفحة
+                                    بشكل دوري للبقاء
+                                    على اطلاع بكيفية حماية معلوماتك.
+
+
+                                </p>
+                            </li>
+                            <li class="my-4">
+                                <strong class="fs-3">
+                                    :تواصل معنا
+                                </strong>
+                                <p>
+                                    إذا كان لديك أي أسئلة أو مخاوف بشأن سياسة الخصوصية هذه أو بياناتك الشخصية، يرجى
+                                    الاتصال بنا على
+
+                                </p>
+                                <ul class="listStyles inlineContent">
+                                    <li>
+                                        <p>info@Alawafy.com</p> <strong> :البريد الإلكتروني</strong>
+
+                                    </li>
+                                    <li><p>+213-557-666-888</p>
+                                        <strong> :الهاتف </strong>
+
+                                    </li>
+                                    <li>
+                                        <p>سيفيتف-الجزائر - ZEA 1 ere Tranche N°06 </p>
+                                        <strong> :العنوان </strong>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
                     <p>
-                        At Alawafy, we are committed to protecting your privacy and ensuring that your personal
-                        information
-                        is handled in a safe and responsible manner. This Privacy Policy outlines how we collect, use,
-                        and
-                        protect the information you provide when using our website
+                        من خلال استخدام موقعنا، فإنك توافق على شروط سياسة الخصوصية هذه.
+
                     </p>
                 </div>
-                <div class=" ">
-
-                    <ol>
-                        <li class="my-4">
-                            <strong class="fs-3"> Information We Collect</strong>
-                            <p>
-                                We may collect the following types of personal information:
-
-                            <ul class="listStyles">
-                                <li>Name, email address, phone number, and other contact details when you fill out forms
-                                    or
-                                    subscribe to our newsletter.</li>
-                                <li>Information related to your inquiries or orders, such as product preferences or
-                                    feedback.
-                                </li>
-                                <li>Technical data such as your IP address, browser type, and access times for website
-                                    optimization purposes.</li>
-                            </ul>
-                            </p>
-                        </li>
-                        <li class="my-4">
-                            <strong class="fs-3">
-                                How We Use Your Information:
-                            </strong>
-                            <ul class="listStyles">
-                                We use the personal information you provide to:
-                                <li>
-                                    Respond to your inquiries and provide customer support.
-                                </li>
-                                <li>
-                                    Process and fulfill orders or subscriptions.
-
-                                </li>
-                                <li>
-                                    Improve our website and user experience
-                                </li>
-                                <li>
-                                    Send promotional emails or updates if you’ve subscribed to our mailing list (you can
-                                    opt out
-                                    at any time).
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="my-4">
-                            <strong class="fs-3">Data Security:</strong>
-                            <p>
-                                We take appropriate technical and organizational measures to ensure the security of your
-                                personal
-                                information. Your data is protected against unauthorized access, alteration, disclosure,
-                                or destruction.
-                            </p>
-                        </li>
-                        <li class="my-4">
-                            <strong class="fs-3">
-                                Sharing Your Information:
-                            </strong>
-                            <p>
-                                We do not sell, trade, or rent your personal information to third parties. However, we
-                                may share your
-                                information with service providers who assist us in operating our website or conducting
-                                business,
-                                provided they agree to keep your information confidential
-                            </p>
-                        </li>
-                        <li class="my-4">
-                            <strong class="fs-3">
-                                Your Rights:
-                            </strong>
-                            <ul class="listStyles">
-                                You have the right to:
-                                <li>
-                                    Access the personal data we hold about you.
-                                </li>
-                                <li>
-                                    Request corrections or updates to your information.
-                                </li>
-                                <li>
-                                    Withdraw consent for marketing communications
-                                </li>
-                                <li>
-                                    Request the deletion of your personal information, subject to legal obligations
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="my-4">
-                            <strong class="fs-3">Cookies:</strong>
-                            <p>
-                                Our website uses cookies to enhance your browsing experience. Cookies are small files
-                                stored on
-                                your device that help us analyze website traffic and tailor our services. You can manage
-                                cookie
-                                preferences through your browser settings
-                            </p>
-                        </li>
-                        <li class="my-4">
-                            <strong class="fs-3">
-                                Changes to This Policy:
-                            </strong>
-                            <p>
-                                Alawafy reserves the right to update this Privacy Policy as needed. We encourage you to
-                                review this
-                                page periodically to stay informed about how we are protecting your information.
-
-                            </p>
-                        </li>
-                        <li class="my-4">
-                            <strong class="fs-3">
-                                Contact Us:
-                            </strong>
-                            If you have any questions or concerns about this Privacy Policy or your personal data,
-                            please contact
-                            us at:
-                            <ul class="listStyles inlineContent">
-                                <li> <strong>Email:</strong>
-                                    <p>info@Alawafy.com</p>
-                                </li>
-                                <li>
-                                    <strong>Phone:</strong>
-                                    <p>+213-557-666-888</p>
-                                </li>
-                                <li>
-                                    <strong>Address</strong>
-                                    <p>ZEA 1 ère Tranche N°06 -Sétif- Algeria</p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
-                </div>
-                <p>
-                    By using our website, you consent to the terms of this Privacy Policy.
-                </p>
-            </div>
 
             </div>
         </section>
