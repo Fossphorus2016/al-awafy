@@ -31,7 +31,7 @@
                     <h2 class="text-center"><span class="fs5">Back to school photo </span> <span
                             class="fs6">activation</span>
                     </h2>
-                    <p>An activation for the start of the school year (tasting + raffle) buy and
+                    <p class="text-center">An activation for the start of the school year (tasting + raffle) buy and
                         try to win tech vouchers</p>
 
                     <div class="galleryblock activitiesSlider">
@@ -68,7 +68,7 @@
                             class="fs6">
                             assistance</span>
                     </h2>
-                           <p>An activation on the occasion of Aid Al Adha (tasting + raffle) of sharpeners
+                           <p class="text-center">An activation on the occasion of Aid Al Adha (tasting + raffle) of sharpeners
                             hillsides
                             recharge cards and 9pcs hills as gifts</p>
 
@@ -145,7 +145,7 @@
                                 class="fs6">AL-jadid</span>
                         </h2>
 
-                        <p>Presence of the ALAWAFY brand at SOUK EL FELLAH Organized by the Souk el-Fellah institute
+                        <p class="text-center">Presence of the ALAWAFY brand at SOUK EL FELLAH Organized by the Souk el-Fellah institute
                             Al-Jadid, in coordination with the Office of Sports and Leisure Parks of Algiers
                             (Opla) and the Chamber of Crafts and Trades, this event aims to
                             to make known and promote the national artisanal product. It brings together around 60

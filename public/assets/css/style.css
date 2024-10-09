@@ -1101,8 +1101,9 @@ html {
     position: relative;
     padding-left: 30px;
 }
+
 .listStyles li:before {
-    content:"";
+    content: "";
     position: absolute;
     border-radius: 50%;
     background-color: var(--baseColor1);
@@ -1110,16 +1111,25 @@ html {
     height: 16px;
     width: 16px;
     top: 5px;
-  }
+}
 
-  ol li::marker {
+ol li::marker {
     font-size: 28px;
     font-weight: bold;
-  }
-  .arabicStyle.listStyles li:before {
+}
+
+.arabicStyle.listStyles li:before {
 
     left: 100%;
 
+}
+/* .arabicStyle.listStyle2 li:before {
+
+    left: 100%;
+
+} */
+.listStyle2{
+    direction: rtl;
 }
 
 .arabicStyle.listStyles li {

@@ -31,7 +31,7 @@
                     <h2 class="text-center"><span class="fs5">Activation photos </span> <span
                             class="fs6">rentrée</span>
                     </h2>
-                    <p>
+                    <p class="text-center">
                         Une activation a l’occasion de la rentrée scolaire (dégustation + tombola ) achetez et
                         tentez de gagner des bons d’achats techno
                     </p>
@@ -70,7 +70,7 @@
                             Adha</span>
                     </h2>
 
-                    <p>
+                    <p class="text-center">
                         Une activation a l’occasion de l’Aid Al Adha (dégustation + tombola ) des aiguises
                         coteaux
                         des cartes de recharges et des coteaux de 9pcs comme cadeaux
@@ -192,7 +192,7 @@
                     <h2 class="text-center"><span class="fs5">Souk el Fellah </span> <span
                             class="fs6">AL-jadid</span>
                     </h2>
-                    <p>Présence de la marque ALAWAFY au SOUK EL FELLAH Organisée par l’institut Souk el-Fellah
+                    <p class="text-center">Présence de la marque ALAWAFY au SOUK EL FELLAH Organisée par l’institut Souk el-Fellah
                         Al-Jadid, en coordination avec l’Office des parcs des sports et des loisirs d’Alger
                         (Opla) et la Chambre d’artisanat et des métiers, cette manifestation a pour objectif de
                         faire connaître et de promouvoir le produit artisanal national. Elle réunit environ 60
@@ -236,7 +236,7 @@
                     <h2 class="text-center"><span class="fs5">Concours réseaux sociaux </span> <span
                             class="fs6">special coupe d’Afrique</span>
                     </h2>
-                    <p>
+                    <p class="text-center">
                         A l’occasion de la coupe d’Afrique 2023 Alawafy a lancer un concours sur les réseaux
                         sociaux, des téléviseurs et des smart phones comme gains
                     </p>
