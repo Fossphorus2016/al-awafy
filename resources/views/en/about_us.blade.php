@@ -96,14 +96,14 @@
                                 </p>
                             </li>
                             <li>
-                                <strong>*Commitment to innovation:</strong>
+                                <strong>Commitment to innovation:</strong>
                                 <p>
                                     We continuously seek to improve our recipes and processes to stay
                                     at the forefront of the industry.
                                 </p>
                             </li>
                         </ul>
-                        <p>
+                        <p style="color: #50A702">
                             Join us in our mission to deliver the finest coated nuts and peanuts, and indulge in
                             ALAWAFY’s
                             superior quality and craftsmanship.
@@ -158,7 +158,7 @@
                                     </p>
                                 </li>
                             </ol>
-                            <p>
+                            <p style="color: #50A702">
                                 Together, let’s cultivate a passion for nature and healthy eating!
                             </p>
                         </div>
@@ -219,7 +219,7 @@
                                 </p>
                             </li>
                         </ol>
-                        <p class="w-100">
+                        <p class="w-100" style="color: #50A702">
                             Together, let's make each bite of our dried fruits a step towards a healthier and more
                             sustainable
                             future.</p>

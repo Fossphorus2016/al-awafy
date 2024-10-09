@@ -1139,9 +1139,7 @@ ol li::marker {
     padding-right: 30px;
 }
 
-.cf-turnstile iframe{
-    width: 100% !important;
-}
+
 
 @media (max-width: 1200px) {
     .aboutItem2 {
@@ -1278,4 +1276,21 @@ ol li::marker {
     .contactUsInner .card {
         margin: 3rem 1rem;
     }
+
+}
+@media (max-width: 400px) {
+    .captchaDiv {
+        position: relative;
+        height: 68px;
+    }
+    .cf-turnstile{
+        transform: scaleX(0.8);
+        width: 240px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    /* .captchaDiv iframe{
+        width: 100% !important;
+    } */
 }

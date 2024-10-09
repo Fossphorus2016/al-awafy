@@ -16,9 +16,10 @@
                     <div class="heroSlider">
 
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue chez Alawafy
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue à Alawafy
                                 </span>
-                                <span class="fs3">Le Cœur des Fruits Secs de Qualité </span>
+                                <br>
+                                <span class="fs3">L'excellence des fruits secs à votre portée </span>
                             </h1>
                             <p class="fs4">
                                 Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
@@ -29,9 +30,10 @@
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue chez Circo
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue à Crico
                                 </span>
-                                <span class="fs3">Le Cœur des Fruits Secs de Qualité </span>
+                                <br>
+                                <span class="fs3">L'explosion de saveurs dans chaque croquant </span>
                             </h1>
                             <p class="fs4">
                                 Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
@@ -43,9 +45,10 @@
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue chez Alyoum
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue à Alyoum
                                 </span>
-                                <span class="fs3">Le Cœur des Fruits Secs de Qualité </span>
+                                <br>
+                                <span class="fs3">L'excellence des fruits secs à votre portée </span>
                             </h1>
                             <p class="fs4">
                                 Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
@@ -68,10 +71,10 @@
                 <div class="row gy-4">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
-                            <h2><span class="fs5">A Propos </span> <span class="fs6">d’Alawafy</span> </h2>
+                            <h2 style="white-space: nowrap"><span class="fs5">A Propos </span> <span class="fs6">d’Alawafy</span> </h2>
                             <h3 class="fs13 mb-3">Des Moments de Plaisir en Famille avec ALAWAFY</h3>
                             <p>
-                                Avec notre marque de nuts ALAWAFY, chaque bouchée de nos fruits secs devient une
+                                Avec notre marque ALAWAFY, chaque bouchée de nos fruits secs devient une
                                 invitation à partager des moments de plaisir et de joie en famille. Nous croyons que la
                                 convivialité autour de la table est essentielle, et nos produits, soigneusement
                                 sélectionnés, sont parfaits pour accompagner vos rassemblements. Que ce soit pour un
@@ -80,7 +83,7 @@
                                 qualité et le goût authentique de nos noix et fruits secs !
                             </p>
 
-                            <a class="mainBtn1" href="about">Learn More</a>
+                            <a class="mainBtn1" href="about">En savoir plus</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center">
@@ -194,7 +197,7 @@
                                         alt="">
                                     <p>Des noix de qualité premium, soigneusement sélectionnées et grillées à la perfection. Des noix de
                                         cajou aux amandes, Alawafy propose une collation saine et délicieuse pour chaque occasion.</p>
-                                    <a href="brand-alawafy" class="mainBtn1">Voir les produits de la marque.</a
+                                    <a href="brand-alawafy" class="mainBtn1">Voir les produits.</a
                                         href="brand-alawafy">
                                 </div>
                             </div>
@@ -209,7 +212,7 @@
                                         src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
                                     <p>Un twist amusant sur les cacahuètes avec des saveurs audacieuses comme épicé, fromage et
                                         barbecue. Crico offre des snacks croquants et pleins de saveurs à un rapport qualité-prix imbattable.</p>
-                                    <a href="brand-crico" class="mainBtn1">Voir les produits de la marque.</a href="brand-alawafy">
+                                    <a href="brand-crico" class="mainBtn1">Voir les produits.</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -224,7 +227,7 @@
                                         src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
                                     <p>Dédiée au marché de gros, Alyoum propose des noix de haute qualité en vrac, garantissant fraîcheur
                                         et saveur pour les entreprises et les besoins à grande échelle.</p>
-                                    <a href="brand-alyoum" class="mainBtn1">Voir les produits de la marque.</a
+                                    <a href="brand-alyoum" class="mainBtn1">Voir les produits.</a
                                         href="brand-alawafy">
                                 </div>
                             </div>
@@ -311,13 +314,11 @@
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
-                    <h2 class="waterDropsBefore"> <span class="fs7"> Profitez des meilleures</span></h2>
-                    <h2 class=""> <span class="fs7"> noix</span> <span
+                    <h2 class="waterDropsBefore"> <span class="fs7"> Profitez des meilleures noix</span></h2>
+                    <h2 class=""> <span
                             class="fs8 waterDropsAfter ms-0">riches en saveurs et en nutriments</span> </h2>
-                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
-                            MORE</a>
-                        <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACT
-                            US</a>
+                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">En savoir plus</a>
+                        <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACTEZ NOUS</a>
                     </div>
                 </div>
             </div>

@@ -27,7 +27,7 @@
                                 <a class="nav-link fs14 underLineAffect" href="home" style="font-size:12px;">ACCUEIL</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs14 underLineAffect " href="about" style="font-size:12px;">A PROPOS DE NOUS
+                                <a class="nav-link fs14 underLineAffect " href="about" style="font-size:12px;">A PROPOS
                                 </a>
                             </li>
                             {{-- <li class="nav-item ">

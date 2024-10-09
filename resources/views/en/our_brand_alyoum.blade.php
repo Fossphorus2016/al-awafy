@@ -32,7 +32,7 @@
                         <div class="aboutInner paraFont text-center">
                             <h2><span class="fs5">Discover</span> <span class="fs6">Alyoum</span> </h2>
                             <p class="mb-5 w-100">
-                                Alyoum Describtion : offers the same high-quality nuts from our Alawafy brand in larger
+                                Offers the same high-quality nuts from our Alawafy brand in larger
                                 quantities.
                                 Perfect for businesses, restaurants, and large-scale needs, Alyoum provides a range of
                                 nuts in bulk

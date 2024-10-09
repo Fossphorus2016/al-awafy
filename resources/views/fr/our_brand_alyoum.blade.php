@@ -14,8 +14,8 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Our </span>
-                            <span class="fs3">Brands</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Nos  </span>
+                            <span class="fs3">Marques</span>
                         </h1>
 
                     </div>

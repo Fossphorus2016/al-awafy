@@ -1,4 +1,4 @@
-<div>
+<div class="captchaDiv d-flex justify-content-start">
     <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" id="cloud_flare_id_1"
         data-callback="javascriptCallback"></div>
     <div id="error_message" class="text-danger fw-bold"></div>

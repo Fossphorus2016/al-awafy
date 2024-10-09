@@ -30,12 +30,13 @@
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Circo </span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Crico </span>
+                                <br>
                                 <span class="fs3">The Heart of Premium Nuts</span>
                             </h1>
                             <p class="fs4">
                                 Whether you're seeking a healthy snack, a flavorful treat, or bulk options for your
-                                business, Circo
+                                business, Crico
 
                                 <br>
                                 has something for everyone.
@@ -44,6 +45,7 @@
                         </div>
                         <div class="heroInner">
                             <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Alyoum </span>
+                                <br>
                                 <span class="fs3">The Heart of Premium Nuts</span>
                             </h1>
                             <p class="fs4">

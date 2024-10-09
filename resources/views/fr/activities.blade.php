@@ -253,8 +253,9 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="text-center"><span class="fs5">PRESENTOIRS ET </span> <span
-                            class="fs6">MERCHANDISING</span>
+                    <h2 class="text-center"><span class="fs5">PRESENTOIRS ET MERCHANDISING </span>
+                         {{-- <span
+                            class="fs6"></span> --}}
                     </h2>
 
                     <div class="galleryblock activitiesSlider">

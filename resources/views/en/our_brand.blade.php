@@ -134,13 +134,13 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Nuts</span> </h2>
+                                <h2><span class="fs7">Alawafy</span> <span class="fs8">Walnuts</span> </h2>
                                 <p class="text-white">
-                                    <strong>Alawafy Nuts</strong> bring you the best of nature’s bounty, offering a
-                                    diverse selection of premium nuts.
-                                    Carefully sourced and roasted to perfection, these nuts provide a rich array of
+                                    <strong>Alawafy Walnuts</strong> bring you the best of nature’s bounty, offering a
+                                    diverse selection of premium Walnuts.
+                                    Carefully sourced and roasted to perfection, these Walnuts provide a rich array of
                                     flavors and textures.
-                                    Ideal for snacking or adding to your favorite recipes, Alawafy Nuts guarantee
+                                    Ideal for snacking or adding to your favorite recipes, Alawafy Walnuts guarantee
                                     quality and freshness in
                                     every bite.
                                 </p>

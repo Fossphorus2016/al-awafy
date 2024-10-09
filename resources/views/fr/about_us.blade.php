@@ -14,8 +14,8 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> About </span>
-                            <span class="fs3">Us</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> A PROPOS  </span>
+                            <span class="fs3">DE NOUS</span>
                         </h1>
 
                     </div>
@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
-                            <h2><span class="fs5">a propos </span> <span class="fs6">d’Alawafy</span> </h2>
+                            <h2 ><span class="fs5">a propos </span> <span class="fs6">d’Alawafy</span> </h2>
                             <p>
                                 Fondée en 2023, ALAWFY est une société algérienne à responsabilité limitée (SARL)
                                 spécialisée dans la production de dattes et de nuts une entreprise dynamique située à
@@ -99,7 +99,7 @@
                                 </p>
                             </li>
                         </ul>
-                        <p>
+                        <p style="color: #50A702">
                             Rejoignez-nous dans notre quête pour offrir le meilleur des noix et cacahuètes enrobées, et
                             laissez-vous séduire par la <strong>qualité supérieure</strong> et le
                             <strong>savoir-faire</strong> d'AL
@@ -160,7 +160,7 @@
                                     </p>
                                 </li>
                             </ol>
-                            <p>Ensemble, cultivons une passion pour la nature et une alimentation saine
+                            <p style="color: #50A702">Ensemble, cultivons une passion pour la nature et une alimentation saine
                                 !
                             </p>
                         </div>
@@ -227,7 +227,7 @@
                                 </p>
                             </li>
                         </ol>
-                        <p class="w-100">Ensemble, faisons de chaque bouchée de nos fruits secs une étape vers un avenir plus sain et
+                        <p class="w-100" style="color: #50A702">Ensemble, faisons de chaque bouchée de nos fruits secs une étape vers un avenir plus sain et
                             durable.</p>
                     </div>
 
