@@ -33,11 +33,9 @@
                     <div class="">
 
                         <p>
-                            Welcome to the Alawafy website. By accessing or using our site, you agree to comply with and
-                            be
-                            bound by the following terms and conditions. If you do not agree with any part of these
-                            terms, please
-                            do not use our website.
+                            مرحبا بكم في موقع العوافي من خلال الوصول إلى موقعنا أو استخدامه، فإنك توافق على الالتزام
+                            بالشروط والأحكام التالية. إذا كنت لا توافق على أي جزء من هذه الشروط ، يرجى عدم استخدام
+                            موقعنا
 
                         </p>
                     </div>
@@ -45,168 +43,125 @@
 
                         <ol>
                             <li class="my-4">
-                                <strong class="fs-3">Acceptance of Terms
+                                <strong class="fs-3">قبول الشروط
                                 </strong>
                                 <p>
-                                    By using our website, you confirm that you are at least 18 years old or are using
-                                    the site under the
-                                    supervision of a parent or guardian.
+                                    .من خلال استخدام موقعنا، تؤكد أنك تبلغ من العمر 18 عاما على الأقل أو أنك تستخدم
+                                    الموقع تحت إشراف والد أو وصي
 
                                 </p>
                             </li>
                             <li class="my-4">
                                 <strong class="fs-3">
-                                    Changes to Terms
+                                    تغييرات في الشروط
                                 </strong>
                                 <p>
-                                    Alawafy reserves the right to modify these terms and conditions at any time. Changes
-                                    will be effective
-                                    immediately upon posting on this site. Your continued use of the website after any
-                                    changes signifies
-                                    your acceptance of the new terms.
+                                    تحتفظ العوافي بحق تعديل هذه الشروط والأحكام في أي وقت. ستكون التغييرات فعالة فور
+                                    نشرها على هذا الموقع. يشير . استمرارك في استخدام الموقع بعد أي تغييرات إلى قبولك
+                                    للشروط الجديدة
                                 </p>
                             </li>
                             <li class="my-4">
-                                <strong class="fs-3">Use of the Website:</strong>
+                                <strong class="fs-3"> :استخدام الموقع </strong>
                                 <p>
-                                    You agree to use the website for lawful purposes only and in a manner that does not
-                                    infringe the
-                                    rights of, restrict, or inhibit anyone else's use of the site. Prohibited activities
-                                    include but are not
-                                    limited to:
 
+                                    :توافق على استخدام الموقع لأغراض قانونية فقط وبطريقة لا تنتهك حقوق أو تحد أو تمنع أي
+                                    شخص آخر من استخدام الموقع تشمل الأنشطة المحظورة، على سبيل المثال لا الحصر
                                 <ul class="listStyles">
-                                    <li>Harassment or causing distress to any person</li>
-                                    <li>Transmitting obscene or offensive content
+                                    <li>التحرش أو إحداث القلق لأي شخص </li>
+                                    <li> نقل محتوى فاحش أو مسيء
                                     </li>
-                                    <li>Disrupting the normal flow of dialogue or causing a disturbance</li>
+                                    <li>تعطيل سير الحوار العادي أو إحداث إزعاج </li>
                                 </ul>
                                 </p>
                             </li>
                             <li class="my-4">
                                 <strong class="fs-3">
-                                    Sharing Your Information:
+                                    :معلومات المنتج
                                 </strong>
                                 <p>
-                                    We do not sell, trade, or rent your personal information to third parties. However,
-                                    we
-                                    may share your
-                                    information with service providers who assist us in operating our website or
-                                    conducting
-                                    business,
-                                    provided they agree to keep your information confidential
+                                    نسعى جاهدين لتقديم أوصاف دقيقة للمنتجات وصور على موقعنا. ومع ذلك، فإننا لا نضمن أن
+                                    الأوصاف أو المحتوى الآخر دقيق أو كامل أو موثوق أو خالي من الأخطاء. إذا كان المنتج
+                                    المعروض من العوافى ليس كما هو موصوف ، فإن تعويضك الوحيد هو إعادته في حالة غير
+                                    مستخدمة
                                 </p>
                             </li>
                             <li class="my-4">
                                 <strong class="fs-3">
-                                    Product Information:
+                                    :التسعير والتواف
                                 </strong>
                                 <p>
-                                    We strive to provide accurate product descriptions and images on our website.
-                                    However, we do not
-                                    warrant that the descriptions or other content are accurate, complete, reliable, or
-                                    error-free. If a
-                                    product offered by Alawafy is not as described, your sole remedy is to return it in
-                                    unused condition.
+                                    جميع الأسعار قابلة للتغيير دون إشعار نحتفظ بالحق في تعديل أو إيقاف المنتجات في أي
+                                    وقت نحن غير مسؤولين تجاهك أو تجاه أي طرف ثالث عن أي تعديل أو تغيير في السعر أو تعليق
+                                    أو إيقاف الخدمة أو المنتجات
                                 </p>
                             </li>
                             <li class="my-4">
-                                <strong class="fs-3">Pricing and Availability:</strong>
+                                <strong class="fs-3"> :الطلبات والمدفوعات</strong>
                                 <p>
-                                    All prices are subject to change without notice. We reserve the right to modify or
-                                    discontinue
-                                    products at any time. We are not liable to you or any third party for any
-                                    modification, price change,
-                                    suspension, or discontinuation of the service or products.
+                                    عند تقديم طلب من خلال موقعنا توافق على تقديم معلومات دقيقة وحديثة وكاملة تتم معالجة
+                                    جميع المدفوعات بشكل آمن . من خلال تقديم طلبك توافق على دفع السعر المحدد وأي ضرائب
+                                    ورسوم شحن تنطبق
                                 </p>
                             </li>
                             <li class="my-4">
                                 <strong class="fs-3">
-                                    Orders and Payments
+                                    الإرجاع والاسترداد
                                 </strong>
                                 <p>
-                                    When you place an order through our website, you agree to provide accurate, current,
-                                    and complete
-                                    information. All payments are processed securely. By submitting your order, you
-                                    agree to pay the
-                                    stated price and any applicable taxes and shipping charges.
+                                    يرجى الرجوع إلى سياسة الإرجاع الخاصة بنا للحصول على معلومات حول الإرجاع والاسترداد
+                                    نحن نسعى لتقديم أفضل . المنتجات، وإذا لم تكن راضيًا، فسنعمل معك لحل أي مشاكل
 
                                 </p>
                             </li>
                             <li class="my-4">
                                 <strong class="fs-3">
-                                    Returns and Refunds
+                                    الملكية الفكرية
                                 </strong>
                                 <p>
-                                    Please refer to our Return Policy for information on returns and refunds. We aim to
-                                    provide the best
-                                    products, and if you are not satisfied, we will work with you to resolve any issues.
+                                    جميع المحتويات على هذا الموقع، بما في ذلك النصوص والرسومات والشعارات والصور هي ملكية
+                                    للعوافي ومحمية بموجب قوانين حقوق الطبع والنشر والملكية الفكرية. قد ينتهك الاستخدام
+                                    غير المصرح به لأي محتوى حقوق الطبع والنشر والعلامات
+                                    التجارية وغيرها من القوانين
                                 </p>
                             </li>
                             <li class="my-4">
                                 <strong class="fs-3">
-                                    Intellectual Property
+                                    تحديد المسؤولية
                                 </strong>
                                 <p>
-                                    All content on this website, including text, graphics, logos, and images, is the
-                                    property of Alawafy and
-                                    is protected by copyright and intellectual property laws. Unauthorized use of any
-                                    content may violate
-                                    copyright, trademark, and other laws.
+                                    لن تكون العوافي مسؤولة عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو تبعية أو عقابية تنشأ عن استخدامك للموقع أو أي . منتجات تم شراؤها من خلاله. التعويض الوحيد عن عدم الرضا عن الموقع أو أي منتجات هو التوقف عن استخدام الموقع
                                 </p>
                             </li>
                             <li class="my-4">
                                 <strong class="fs-3">
-                                    Limitation of Liability
+                                    القانون المنظم
                                 </strong>
                                 <p>
-                                    Alawafy shall not be liable for any direct, indirect, incidental, consequential, or
-                                    punitive damages
-                                    arising from your use of the website or any products purchased through it. Your sole
-                                    remedy for
-                                    dissatisfaction with the site or any products is to stop using the site.
+                                    تخضع هذه الشروط والأحكام للقوانين الجزائرية وتُفسر وفقًا لها. أي نزاعات تنشأ عن هذه الشروط ستُحل في محاكم الجزائر
 
                                 </p>
                             </li>
                             <li class="my-4">
                                 <strong class="fs-3">
-                                    Governing Law
+                                    تواصل معنا
 
                                 </strong>
                                 <p>
-                                    These terms and conditions shall be governed by and construed in accordance with the
-                                    laws of
-                                    Algeria. Any disputes arising from these terms shall be resolved in the courts of
-                                    Algeria.
+                                    إذا كان لديك أي أسئلة حول هذه الشروط والأحكام، يرجى الاتصال بنا على
                                 </p>
+                                <ul>
+                                    <li>البريد الإلكتروني</li>
+                                    <li> الهاتف  </li>
+                                    <li> العنوان   </li>
+                                </ul>
                             </li>
-                            <li class="my-4">
-                                <strong class="fs-3">
-                                    Contact Us
-                                </strong>
-                                <p>
-                                    If you have any questions about these Terms and Conditions, please contact us at:
-                                    <ul class="listStyles inlineContent">
-                                        <li> <strong>Email:</strong>
-                                            <p>info@Alawafy.com</p>
-                                        </li>
-                                        <li>
-                                            <strong>Phone:</strong>
-                                            <p>+213-557-666-888</p>
-                                        </li>
-                                        <li>
-                                            <strong>Address</strong>
-                                            <p>ZEA 1 ère Tranche N°06 -Sétif- Algeria</p>
-                                        </li>
-                                    </ul>
-                                </p>
-                            </li>
+
 
                         </ol>
                     </div>
                     <p>
-                        By using this site, you acknowledge that you have read, understood, and agree to be bound by these
-                        Terms and Conditions.
+                        من خلال استخدامك لهذا الموقع، فإنك تقر بأنك قرأت وفهمت وتوافق على الالتزام بهذه الشروط والأحكام
                     </p>
                 </div>
 
