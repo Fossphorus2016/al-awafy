@@ -14,8 +14,8 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Our </span>
-                            <span class="fs3">Activities</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Nos  </span>
+                            <span class="fs3">Activites</span>
                         </h1>
 
                     </div>
@@ -291,7 +291,7 @@
         </section>
 
 
-        <x-letsConnect />
+        <x-frenchletsConnect />
 
     </main>
 </x-frenchLayout>

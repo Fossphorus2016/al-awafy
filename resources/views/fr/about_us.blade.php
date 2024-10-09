@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
-                            <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
+                            <h2><span class="fs5">a propos </span> <span class="fs6">d’Alawafy</span> </h2>
                             <p>
                                 Fondée en 2023, ALAWFY est une société algérienne à responsabilité limitée (SARL)
                                 spécialisée dans la production de dattes et de nuts une entreprise dynamique située à
@@ -110,7 +110,8 @@
             </div>
         </section>
 
-        <x-ourValues class="secondValues" />
+        {{-- <x-ourValues class="secondValues" /> --}}
+        <x-frenchourValues class="secondValues" />
 
         <section class="ourVision">
             <div class="customContainer">
@@ -241,9 +242,9 @@
                 </div>
         </section>
 
-        <x-watchVideo />
+        <x-frenchwatchVideo />
 
-        <x-letsConnect />
+        <x-frenchletsConnect />
 
     </main>
 </x-frenchLayout>

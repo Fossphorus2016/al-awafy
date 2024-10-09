@@ -84,7 +84,7 @@
                                     essentiels.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -125,7 +125,7 @@
                                     pour divertir ou grignoter tranquillement en famille et entre amis.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -151,7 +151,7 @@
                                     Alawafy garantissent qualité et fraîcheur à chaque bouchée.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -192,7 +192,7 @@
                                     amateurs de noix.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -221,7 +221,7 @@
 
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -261,7 +261,7 @@
                                     créations culinaires pour un supplément de saveur et de nutrition.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -286,7 +286,7 @@
                                     offrent une option délicieuse et saine à tout moment de la journée.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -304,7 +304,7 @@
         </section>
 
 
-        <x-letsConnect />
+        <x-frenchletsConnect />
 
     </main>
 </x-frenchLayout>

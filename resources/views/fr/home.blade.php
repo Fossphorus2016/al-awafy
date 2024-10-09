@@ -68,7 +68,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
-                            <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
+                            <h2><span class="fs5">A Propos </span> <span class="fs6">d’Alawafy</span> </h2>
                             <h3 class="fs13 mb-3">Des Moments de Plaisir en Famille avec ALAWAFY</h3>
                             <p>
                                 Avec notre marque de nuts ALAWAFY, chaque bouchée de nos fruits secs devient une
@@ -132,13 +132,13 @@
                 </div>
             </div>
         </section> --}}
-        <x-ourValues />
+        <x-frenchourValues />
 
 
         <section class="ourBrands py-5">
             <div class="customContainer">
                 <div>
-                    <h2 class="text-center pb-4"><span class="fs5">Our</span> <span class="fs6">Brands</span>
+                    <h2 class="text-center pb-4"><span class="fs5">Nos </span> <span class="fs6">marques</span>
                     </h2>
 
                     {{-- <div class="row showRow1 gy-4">
@@ -194,7 +194,7 @@
                                         alt="">
                                     <p>Des noix de qualité premium, soigneusement sélectionnées et grillées à la perfection. Des noix de
                                         cajou aux amandes, Alawafy propose une collation saine et délicieuse pour chaque occasion.</p>
-                                    <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a
+                                    <a href="brand-alawafy" class="mainBtn1">Voir les produits de la marque.</a
                                         href="brand-alawafy">
                                 </div>
                             </div>
@@ -209,7 +209,7 @@
                                         src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
                                     <p>Un twist amusant sur les cacahuètes avec des saveurs audacieuses comme épicé, fromage et
                                         barbecue. Crico offre des snacks croquants et pleins de saveurs à un rapport qualité-prix imbattable.</p>
-                                    <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
+                                    <a href="brand-crico" class="mainBtn1">Voir les produits de la marque.</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -224,7 +224,7 @@
                                         src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
                                     <p>Dédiée au marché de gros, Alyoum propose des noix de haute qualité en vrac, garantissant fraîcheur
                                         et saveur pour les entreprises et les besoins à grande échelle.</p>
-                                    <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a
+                                    <a href="brand-alyoum" class="mainBtn1">Voir les produits de la marque.</a
                                         href="brand-alawafy">
                                 </div>
                             </div>
@@ -305,7 +305,7 @@
             </div>
         </section>
 
-        <x-watchVideo />
+        <x-frenchwatchVideo />
 
 
         <section class="tasteNuts curvedLayer">
@@ -325,7 +325,7 @@
 
         <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
             <div class="customContainer">
-                <h2 class="text-center pb-4"><span class="fs5">Our</span> <span class="fs6">Activities</span>
+                <h2 class="text-center pb-4"><span class="fs5">Nos </span> <span class="fs6">Activitès</span>
                 </h2>
                 <div class="activitieSlider">
                     <div class="col activityOuter">
@@ -511,12 +511,12 @@
                     </div> --}}
                 </div>
                 <div class="d-flex justify-content-center">
-                    <a class="mainBtn1" href="activities">View More</a>
+                    <a class="mainBtn1" href="activities">Voir plus</a>
                 </div>
             </div>
         </section>
 
-        <x-letsConnect />
+        <x-frenchletsConnect />
 
 
         <div class="customContainer">

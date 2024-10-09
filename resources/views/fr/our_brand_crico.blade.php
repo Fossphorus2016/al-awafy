@@ -82,7 +82,7 @@
                                     moment de grignotage.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -121,7 +121,7 @@
                                     fois.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -147,7 +147,7 @@
                                     déguster à la maison.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -187,7 +187,7 @@
                                     de la pizza.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -213,7 +213,7 @@
                                     expérience de grignotage vraiment agréable.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -250,7 +250,7 @@
                                     grignotage audacieuse et inoubliable, apportant de la profondeur à chaque bouchée.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -261,7 +261,7 @@
         </section>
 
 
-        <x-letsConnect />
+        <x-frenchletsConnect />
 
     </main>
 </x-frenchLayout>

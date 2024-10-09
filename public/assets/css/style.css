@@ -754,9 +754,11 @@ html {
 .advertisers-service-sec p {
     color: #575a7b;
     font-size: 15px;
+    max-height: 140px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     z-index: 3;
+    overflow-y: auto;
 }
 
 .advertisers-service-sec .icon-wrapper {

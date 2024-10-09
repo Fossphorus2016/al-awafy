@@ -78,7 +78,7 @@
                                     haut de gamme.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -119,7 +119,7 @@
                                     garantissent une constance et une fraîcheur à chaque commande.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -147,7 +147,7 @@
                                     en préservant le goût supérieur que vos clients attendent.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -189,7 +189,7 @@
                                     le summum du goût et de la commodité pour des besoins à grande échelle.
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -217,7 +217,7 @@
                                     entreprises qui apprécient la qualité et l'efficacité.
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
-                                    Contact us
+                                    Contactez nous
                                 </a>
 
                             </div>
@@ -236,7 +236,7 @@
         </section>
 
 
-        <x-letsConnect />
+        <x-frenchletsConnect />
 
     </main>
 </x-frenchLayout>
