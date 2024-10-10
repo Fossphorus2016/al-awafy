@@ -319,7 +319,7 @@
             <div class="customContainer">
                 <div class="tasteNutsInner">
                     <h2 class="waterDropsBefore"> <span class="fs7"> Enjoy the Finest Nuts,</span></h2>
-                    <h2 class=""> <span class="fs7">  Packed with Flavor </span> <span
+                    <h2 class=""> <span class="fs7">  Packed with  </span> <span
                             class="fs8 waterDropsAfter ms-0">Flavor and Nutrition</span> </h2>
                     <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
                             MORE</a>
