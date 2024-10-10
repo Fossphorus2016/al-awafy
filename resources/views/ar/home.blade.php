@@ -16,39 +16,44 @@
                     <div class="heroSlider">
 
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">مرحبا بكم ف العوافي
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مرحبا بكم في صفحة
+                                    العوافي
+
                                 </span>
-                                <span class="fs3"> قلب المكرسات الفاخرة</span>
+                                <span class="fs3"> قلب المكسرات الفاخرة
+                                </span>
                             </h1>
                             <p class="fs4">
-                                سواء كنتم تبحثون عن وجبة خفيفة صحيةأو طعام لذيذ ملء بالنكهاتأو خيارات بالجملة لعملكم فإن
-                                العوافي توفر شيئا
-                                <br>
-                                يناسب الجميع
+                                سسواء كنتم تبحثون عن وجبة خفيفة و صحية أو طعام لذيذ مليء بالنكهات أو خيارات بالجملة
+                                لعملكم فإن مكسرات العوافي يوفر شيئا يناسب الجميع
+
+
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">مرحبا بكم ف كريكو </span>
-                                <span class="fs3"> قلب المكرسات الفاخرة</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مرحبا بكم في صفحة كريكو
+
+                                </span>
+                                <span class="fs3"> قلب المكسرات الفاخرة</span>
                             </h1>
                             <p class="fs4">
-                                سواء كنتم تبحثون عن وجبة خفيفة صحيةأو طعام لذيذ ملء بالنكهاتأو خيارات بالجملة لعملكم فإن
-                                كريكو توفر شيئا
-                                <br>
-                                يناسب الجميع
+                                سواء كنتم تبحثون عن وجبة خفيفة و صحية أو طعام لذيذ مليء بالنكهات أو خيارات بالجملة
+                                لعملكم فإن كريكو يوفر شيئا يناسب الجميع
+
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}" alt="">
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">مرحبا بكم ف اليوم </span>
-                                <span class="fs3"> قلب المكرسات الفاخرة</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مرحبا بكم في صفحة اليوم
+
+                                </span>
+                                <span class="fs3"> قلب المكسرات الفاخرة </span>
                             </h1>
                             <p class="fs4">
-                                سواء كنتم تبحثون عن وجبة خفيفة صحيةأو طعام لذيذ ملء بالنكهاتأو خيارات بالجملة لعملكم فإن
-                                اليوم توفر شيئا
-                                <br>
-                                يناسب الجميع
+                                سواء كنتم تبحثون عن وجبة خفيفة و صحية أو طعام لذيذ مليء بالنكهات أو خيارات بالجملة
+                                لعملكم فإن مكسرات اليوم توفر شيئا يناسب الجميع
+
                             </p>
                             <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}" alt="">
                         </div>

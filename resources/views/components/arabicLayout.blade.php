@@ -24,7 +24,8 @@
 
                         <ul class="navbar-nav flexReverse ">
                             <li class="nav-item ">
-                                <a class="nav-link fs1 underLineAffect" href="home">بيت</a>
+                                <a class="nav-link fs1 underLineAffect" href="home">الصفحة الرئيسية
+                                </a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link fs1 underLineAffect " href="about">معلومات عنا</a>
