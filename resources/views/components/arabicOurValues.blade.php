@@ -13,7 +13,11 @@
                 <div class="col-lg-4 col-12">
                     <div class="singleValue">
                         <img src="{{ asset('assets/images/shape/roasted.png') }}" alt="">
-                        <p class="fs9">مشوي <br> تقليديا</p>
+                        <p class="fs9">محمّص
+
+                            <br>
+                            تقليديا
+                            </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12">

@@ -12,7 +12,7 @@
         <div class="customContainer">
 
             <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid flexReverse2" >
+                <div class="container-fluid flexReverse2">
                     <a class="navbar-brand" href="home"> <img class="headerLogo"
                             src="{{ asset('assets/images/logo/logo.png') }}" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,8 +50,9 @@
                             </li>
                             <li class="nav-item ">
                                 <div class="dropdown">
-                                    <button class="bg-transparent border-0 btn btn-secondary dropdown-toggle languageSwitcher" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button
+                                        class="bg-transparent border-0 btn btn-secondary dropdown-toggle languageSwitcher"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
                                             <path
@@ -79,7 +80,7 @@
         </div>
     </header>
 
-        {{ $slot }}
+    {{ $slot }}
 
 
     <footer class="text-center text-lg-start text-white footer">
@@ -94,8 +95,11 @@
                     <div class="col-lg-3 ">
                         <!-- Content -->
                         <img class="mb-4" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
-                        <p> لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
-                            بالفعل، وسأعرض لك التفاصيل</p>
+                        <p>
+                            تابعونا على وسائل التواصل الاجتماعي للحصول على آخر الأخبار والعروض الترويجية الخاصة واللحظات
+                            من وراء الكواليس. ابقوا على اتصال وانضموا إلى العائلة.
+
+                        </p>
                         <div class="heroSliderFooter justify-content-end">
                             <a class="icons fbLink" target="_blank" href="">
                                 <i class="fa-brands fa-facebook-f"></i> </a>
@@ -115,7 +119,8 @@
                             روابط سريعة
                         </h6>
                         <p class="mt-1">
-                            <a href="home" class="text-reset anchorHover">بيت</a>
+                            <a href="home" class="text-reset anchorHover">الصفحة الرئيسية
+                            </a>
                         </p>
                         <p class="mt-1">
                             <a href="about" class="text-reset anchorHover">معلومات عنا</a>
@@ -158,17 +163,16 @@
                         <h6 class="mt-5 text-uppercase fw-bold fs-4">
                             اشترك الآن
                         </h6>
-                        <p class="my-2">  لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
-                            <br>
-                            لكن لا بد أن أوضح
+                        <p class="my-2"> انضم إلى مجتمعنا واستمتع بالمكسرات والوجبات الخفيفة عالية الجودة التي يتم
+                            تسليمها مباشرة إلى الصندوق البريد الخاص بك!
                         </p>
-                        <form class="newsletter_form mt-4 flex-row-reverse" action="{{ route('news.letter.create') }}" method="POST"
-                            id="news_letter_form">
+                        <form class="newsletter_form mt-4 flex-row-reverse" action="{{ route('news.letter.create') }}"
+                            method="POST" id="news_letter_form">
                             @csrf
 
-                            <input type="email" class="rightPlaceholder" name="subscriber_mail" id="subscriber_mail"
-                                placeholder="عنوان البريد الإلكتروني" aria-label="Enter Your Email Address"
-                                aria-describedby="button-addon2">
+                            <input type="email" class="rightPlaceholder" name="subscriber_mail"
+                                id="subscriber_mail" placeholder="عنوان البريد الإلكتروني"
+                                aria-label="Enter Your Email Address" aria-describedby="button-addon2">
                             <button onclick="news_validate()" type="button" id="button-addon2"><i
                                     class="fa-solid fa-paper-plane"></i></button>
 
