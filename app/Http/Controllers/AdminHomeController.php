@@ -10,6 +10,7 @@ class AdminHomeController extends Controller
     public function admin_home()
     {
         $home_english = Home::where('language', 'english')->first();
+
         return view('admin.en.home_page', compact('home_english'));
     }
 

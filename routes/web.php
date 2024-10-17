@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminAboutController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminEnglishBrandController;
 use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Auth;
@@ -153,9 +154,12 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::post('admin/home-english/section-6', [AdminHomeController::class, 'admin_home_section_6'])->name('home.english.section.6');
 
-    Route::post('admin/home-english/section-6', [AdminHomeController::class, 'admin_home_section_6'])->name('home.english.section.6');
+    Route::post('admin/home-english/our-brand-1', [AdminHomeController::class, 'admin_home_our_brand_1'])->name('home.english.our.brand_1');
 
 
+    Route::get('admin/brand-alawafy-english', [AdminEnglishBrandController::class, 'admin_brand_alawafy_english'])->name('admin.brand.alawafy.english');
+    Route::get('admin/brand-alyoum-english', [AdminEnglishBrandController::class, 'admin_brand_alyoum_english'])->name('admin.brand.alyoum.english');
+    Route::get('admin/brand-crico-english', [AdminEnglishBrandController::class, 'admin_brand_crico_english'])->name('admin.brand.crico.english');
 
 
 
