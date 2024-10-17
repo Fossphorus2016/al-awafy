@@ -60,8 +60,8 @@
 
 
     /* M&P THEME COLOR */
-        --green-color:#00837E;
-        --dark-green-color:#00817C;
+        --green-color:#50A702;
+        --dark-green-color:#50A702;
         --black:#000;
         --white:#fff;
     /* M&P THEME COLOR */
@@ -49656,7 +49656,7 @@ body {
     display: flex;
     flex-direction: column;
     /* background-color: #0c223b; */
-    background-color: #0B3D89;
+    background-color: #085082;
     padding: 0;
 }
 .aside .aside-toolbar .aside-user {
@@ -50198,7 +50198,7 @@ body {
 }
 .aside-menu .menu .menu-item .menu-link.active {
     transition: color 0.2s ease, background-color 0.2s ease;
-    background-color: #D7A461;
+    background-color: #50A702;
     /* background-color: var(--white); */
     color: var(--green-color);
 }

@@ -6,7 +6,7 @@
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-header d-flex justify-content-center align-items-center">
-                        <img alt="Logo" src="{{ URL::asset('assets/logo/logo.png') }}" class="w-150px py-4 d-block mx-auto">
+                        <img alt="Logo" src="https://al-awafy.koreintl.com/assets/images/logo/logo.png" class="w-150px py-4 d-block mx-auto">
                         {{-- <h1 class=" display-6">Sign-In</h1> --}}
                     </div>
 

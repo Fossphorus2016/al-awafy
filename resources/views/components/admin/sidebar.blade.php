@@ -17,6 +17,16 @@
             <div class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary     menu-arrow-gray-500"
                 id="#kt_aside_menu" data-kt-menu="true">
 
+                <div class="menu-item">
+                    <a class="menu-link gap-3 {{ Route::is('home_page') ? 'active' : '' }}"
+                        href="{{ route('home_page') }}">
+                        <span class="menu-bullet">
+
+                            <i class="bi bi-house-door fs-3 text-white"></i>
+                        </span>
+                        <span class="menu-title text-white">Home</span>
+                    </a>
+                </div>
 
                 <div class="menu-item">
                     <a class="menu-link gap-3 {{ Route::is('contact') ? 'active' : '' }}"

@@ -3,7 +3,7 @@
     <div class="header-brand">
         <!--begin::Logo-->
         <a href="{{route('contact')}}">
-            <img alt="Logo" src="{{asset('assets/logo/logo.png')}}" class="w-100 h-50px">
+            <img alt="Logo" src="https://al-awafy.koreintl.com/assets/images/logo/logo.png" class="w-100 h-50px">
         </a>
 
         <style>
