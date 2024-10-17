@@ -141,7 +141,31 @@ Route::group(['middleware' => 'auth'], function () {
     // English Home Route
     Route::get('admin/home-english', [AdminHomeController::class, 'admin_home'])->name('admin.home.english');
 
+    Route::post('admin/home-english/meta/store', [AdminHomeController::class, 'english_meta_section'])->name('home.english.meta');
     Route::post('admin/home-english/banner-1', [AdminHomeController::class, 'admin_home_banner_1'])->name('home.english.banner.1');
+    Route::post('admin/home-english/banner-2', [AdminHomeController::class, 'admin_home_banner_2'])->name('home.english.banner.2');
+    Route::post('admin/home-english/banner-3', [AdminHomeController::class, 'admin_home_banner_3'])->name('home.english.banner.3');
+
+    // home about route
+    Route::post('admin/home-english/about', [AdminHomeController::class, 'admin_home_about'])->name('home.english.about');
+
+    Route::post('admin/home-english/our-value', [AdminHomeController::class, 'admin_home_our_value'])->name('home.english.our.value');
+
+    Route::post('admin/home-english/section-6', [AdminHomeController::class, 'admin_home_section_6'])->name('home.english.section.6');
+
+    Route::post('admin/home-english/section-6', [AdminHomeController::class, 'admin_home_section_6'])->name('home.english.section.6');
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
