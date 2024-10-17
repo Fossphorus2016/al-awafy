@@ -13,13 +13,18 @@
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="" class="mt-5 formValidation">
+                            <form action="{{ route('home.english.meta') }}" method="POST">
+                                @csrf
+
+                                <input type="hidden" name="language" value="english">
+
                                 <div class="row gy-4">
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Meta title</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="meta_title"
+                                                value="{{ $home_english->meta_title ?? '' }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -27,14 +32,16 @@
 
                                         <div>
                                             <label for="">Meta Description</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="meta_description"
+                                                value="{{ $home_english->meta_description ?? '' }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div>
                                             <label for="">Canonical</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="canonical"
+                                                value="{{ $home_english->canonical ?? '' }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -47,6 +54,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -74,63 +82,86 @@
 
                             <div class="bannerNavForm1">
 
-                                <form action="{{route('home.english.banner.1')}}" method="POST" class="mt-5 formValidation">
+                                <form action="{{ route('home.english.banner.1') }}" method="POST"
+                                    enctype="multipart/form-data" class="mt-5 formValidation">
                                     @csrf
                                     <div class="row gy-4">
                                         <div class="col-6">
-                                            <input type="hidden" name="language" value="english" id="">
+                                            <input type="hidden" name="language" value="english">
 
                                             <div>
-                                                <label for="">Heading 1</label>
-                                                <input type="text" class="form-control">
-                                                <p class="text-danger"></p>
+                                                <label for="banner_1_h1">Heading 1</label>
+                                                <input type="text" class="form-control" name="banner_1_h1"
+                                                    value="{{ old('banner_1_h1', $home_english->banner_1_h1 ?? '') }}">
+                                                @error('banner_1_h1')
+                                                    <p class="text-danger">{{ $message }}</p>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="col-6">
-
                                             <div>
-                                                <label for="">Heading 2</label>
-                                                <input type="text" class="form-control">
-                                                <p class="text-danger"></p>
+                                                <label for="banner_1_h2">Heading 2</label>
+                                                <input type="text" class="form-control" name="banner_1_h2"
+                                                    value="{{ old('banner_1_h2', $home_english->banner_1_h2 ?? '') }}">
+                                                @error('banner_1_h2')
+                                                    <p class="text-danger">{{ $message }}</p>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="col-12">
-
                                             <div>
-                                                <label for="">Paragraph</label>
-                                                <input type="text" class="form-control">
-                                                <p class="text-danger"></p>
+                                                <label for="banner_1_p">Paragraph</label>
+                                                <input type="text" class="form-control" name="banner_1_p"
+                                                    value="{{ old('banner_1_p', $home_english->banner_1_p ?? '') }}">
+                                                @error('banner_1_p')
+                                                    <p class="text-danger">{{ $message }}</p>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="col-12">
-
                                             <div>
-                                                <label for="">Banner Image</label>
-                                                <input type="file" class="form-control" id="bannerImageInput1">
-                                                <p class="text-danger"></p>
+                                                <label for="banner_1_image">Banner Image</label>
+                                                <input type="file" class="form-control" name="banner_1_image"
+                                                    id="bannerImageInput1">
+                                                @error('banner_1_image')
+                                                    <p class="text-danger">{{ $message }}</p>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="col-12">
-
-                                            <img src="" alt="Uploaded Image" id="uploadedImage1"
-                                                style="background-color:lightgrey; max-width: 950px; width: 100%; height:450px; object-fit:contain; display: none;">
-
+                                            @if ($home_english && $home_english->banner_1_image)
+                                                <img src="{{ asset('storage/' . $home_english->banner_1_image) }}"
+                                                    alt="Uploaded Image" id="uploadedImage1"
+                                                    style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedImage1"
+                                                    style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
+                                            @endif
                                         </div>
+
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
                                         </div>
                                     </div>
                                 </form>
+
                             </div>
+
                             <div class="bannerNavForm2" style="display: none">
 
-                                <form action="" class="mt-5 formValidation">
+                                <form action="{{ route('home.english.banner.2') }}" method="POST"
+                                    class="mt-5 formValidation" enctype="multipart/form-data">
+                                    @csrf
+                                    <input type="hidden" name="language" value="english">
+
                                     <div class="row gy-4">
                                         <div class="col-6">
 
                                             <div>
                                                 <label for="">Heading 1</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="banner_2_h1"
+                                                    value="{{ old('banner_2_h1', $home_english->banner_2_h1 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -138,7 +169,8 @@
 
                                             <div>
                                                 <label for="">Heading 2</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="banner_2_h2"
+                                                    value="{{ old('banner_2_h2', $home_english->banner_2_h2 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -146,7 +178,8 @@
 
                                             <div>
                                                 <label for="">Paragraph</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="banner_2_p"
+                                                    value="{{ old('banner_2_p', $home_english->banner_2_p ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -154,16 +187,24 @@
 
                                             <div>
                                                 <label for="">Banner Image</label>
-                                                <input type="file" class="form-control" id="bannerImageInput2">
-                                                <p class="text-danger"></p>
+                                                <input type="file" class="form-control" id="bannerImageInput2"
+                                                    name="banner_2_image">
+                                                <p class="text-danger">
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="col-12">
-
-                                            <img src="" alt="Uploaded Image" id="uploadedImage2"
-                                                style="background-color:lightgrey; max-width: 950px; width: 100%; height:450px; object-fit:contain; display: none;">
-
+                                            @if ($home_english && $home_english->banner_2_image)
+                                                <img src="{{ asset('storage/' . $home_english->banner_2_image) }}"
+                                                    alt="Uploaded Image" id="uploadedImage2"
+                                                    style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedImage2"
+                                                    style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
+                                            @endif
                                         </div>
+
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
                                         </div>
@@ -172,13 +213,18 @@
                             </div>
                             <div class="bannerNavForm3" style="display: none">
 
-                                <form action="" class="mt-5 formValidation">
+                                <form action="{{ route('home.english.banner.3') }}" method="POST"
+                                    class="mt-5 formValidation" enctype="multipart/form-data">
+                                    @csrf
+                                    <input type="hidden" name="language" value="english">
+
                                     <div class="row gy-4">
                                         <div class="col-6">
 
                                             <div>
                                                 <label for="">Heading 1</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="banner_3_h1"
+                                                    value="{{ old('banner_3_h1', $home_english->banner_3_h1 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -186,7 +232,8 @@
 
                                             <div>
                                                 <label for="">Heading 2</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="banner_3_h2"
+                                                    value="{{ old('banner_3_h2', $home_english->banner_3_h2 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -194,7 +241,8 @@
 
                                             <div>
                                                 <label for="">Paragraph</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="banner_3_p"
+                                                    value="{{ old('banner_3_p', $home_english->banner_3_p ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -202,16 +250,24 @@
 
                                             <div>
                                                 <label for="">Banner Image</label>
-                                                <input type="file" class="form-control" id="bannerImageInput3">
-                                                <p class="text-danger"></p>
+                                                <input type="file" class="form-control" id="bannerImageInput3"
+                                                    name="banner_3_image">
+                                                <p class="text-danger">
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="col-12">
-
-                                            <img src="" alt="Uploaded Image" id="uploadedImage3"
-                                                style="background-color:lightgrey; max-width: 950px; width: 100%; height:450px; object-fit:contain; display: none;">
-
+                                            @if ($home_english && $home_english->banner_3_image)
+                                                <img src="{{ asset('storage/' . $home_english->banner_3_image) }}"
+                                                    alt="Uploaded Image" id="uploadedImage3"
+                                                    style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedImage3"
+                                                    style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
+                                            @endif
                                         </div>
+
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
                                         </div>
@@ -222,6 +278,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -231,13 +288,17 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="" class="mt-5 formValidation">
+                            <form action="{{ route('home.english.about') }}" method="POST"
+                                class="mt-5 formValidation" enctype="multipart/form-data">
+                                @csrf
+                                <input type="hidden" name="language" value="english" id="">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Heading blue</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="about_section_h_blue"
+                                                value="{{ old('about_section_h_blue', $home_english->about_section_h_blue ?? '') }}">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -245,7 +306,8 @@
 
                                         <div>
                                             <label for="">Heading green</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="about_section_h_green"
+                                                value="{{ old('about_section_h_green', $home_english->about_section_h_green ?? '') }}">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -253,7 +315,8 @@
 
                                         <div>
                                             <label for="">Heading small</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="about_section_h_small"
+                                                value="{{ old('about_section_h_small', $home_english->about_section_h_small ?? '') }}">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -261,7 +324,7 @@
 
                                         <div>
                                             <label for="">About paragraph</label>
-                                            <textarea class="editor1 noVal"></textarea>
+                                            <textarea class="editor1 noVal" name="about_section_p">{{ old('about_section_p', $home_english->about_section_p ?? '') }}</textarea>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -269,15 +332,31 @@
 
                                         <div>
                                             <label for="">About Image</label>
-                                            <input type="file" class="form-control" id="aboutImageInput1">
+                                            <input type="file" class="form-control" name="about_section_image"
+                                                id="aboutImageInput1">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
+                                        @if ($home_english && $home_english->about_section_image)
+                                            <img src="{{ asset('storage/' . $home_english->about_section_image) }}"
+                                                alt="Uploaded Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @else
+                                            <img src="{{ asset('assets/images/download (4).png') }}"
+                                                alt="Default Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @endif
+                                    </div>
 
-                                        <img src="" alt="Uploaded Image" id="uploadedAboutImage1"
-                                            style="background-color:lightgrey; max-width: 460px; width: 100%; height:300px; object-fit:contain; display: none;">
+                                    <div class="col-12">
 
+                                        <div>
+                                            <label for="">About Url</label>
+                                            <input type="text" class="form-control" name="about_section_url"
+                                                value="{{ old('about_section_url', $home_english->about_section_url ?? '') }}">
+                                            <p class="text-danger"></p>
+                                        </div>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-primary">Save</button>
@@ -287,6 +366,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -296,13 +376,17 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="" class="mt-5 formValidation">
+                            <form action="{{ route('home.english.our.value') }}" method="POST"
+                                class="mt-5 formValidation" enctype="multipart/form-data">
+                                @csrf
+                                <input type="hidden" name="language" value="english" id="">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Value Title 1</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="our_value_1"
+                                                value="{{ old('our_value_1', $home_english->our_value_1 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -310,21 +394,29 @@
 
                                         <div>
                                             <label for="">Value</label>
-                                            <input type="file" class="form-control" id="valueImageInput1">
+                                            <input type="file" class="form-control" id="valueImageInput1"
+                                                name="our_value_1_image">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
+
                                     <div class="col-12">
-
-                                        <img src="" alt="Uploaded Image" id="uploadedValueImage1"
-                                            style="background-color:lightgrey; max-width: 180px; width: 100%; height:185px; object-fit:contain; display: none;">
-
+                                        @if ($home_english && $home_english->our_value_1_image)
+                                            <img src="{{ asset('storage/' . $home_english->our_value_1_image) }}"
+                                                alt="Uploaded Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @else
+                                            <img src="{{ asset('assets/images/download (4).png') }}"
+                                                alt="Default Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @endif
                                     </div>
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Value Title 2</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="our_value_2"
+                                                value="{{ old('our_value_2', $home_english->our_value_2 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -332,21 +424,28 @@
 
                                         <div>
                                             <label for="">Value</label>
-                                            <input type="file" class="form-control" id="valueImageInput2">
+                                            <input type="file" class="form-control" name="our_value_2_image"
+                                                id="valueImageInput2">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
-
-                                        <img src="" alt="Uploaded Image" id="uploadedValueImage2"
-                                            style="background-color:lightgrey;max-width: 180px; width: 100%; height:185px; object-fit:contain; display: none;">
-
+                                        @if ($home_english && $home_english->our_value_2_image)
+                                            <img src="{{ asset('storage/' . $home_english->our_value_2_image) }}"
+                                                alt="Uploaded Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @else
+                                            <img src="{{ asset('assets/images/download (4).png') }}"
+                                                alt="Default Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @endif
                                     </div>
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Value Title 3</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="our_value_3"
+                                                value="{{ old('our_value_3', $home_english->our_value_3 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -354,15 +453,21 @@
 
                                         <div>
                                             <label for="">Value</label>
-                                            <input type="file" class="form-control" id="valueImageInput3">
+                                            <input type="file" class="form-control" name="our_value_3_image"
+                                                id="valueImageInput3">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
-
-                                        <img src="" alt="Uploaded Image" id="uploadedValueImage3"
-                                            style="background-color:lightgrey; max-width: 180px; width: 100%; height:185px; object-fit:contain; display: none;">
-
+                                        @if ($home_english && $home_english->our_value_3_image)
+                                            <img src="{{ asset('storage/' . $home_english->our_value_3_image) }}"
+                                                alt="Uploaded Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @else
+                                            <img src="{{ asset('assets/images/download (4).png') }}"
+                                                alt="Default Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @endif
                                     </div>
 
 
@@ -376,6 +481,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -542,6 +648,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -551,13 +658,17 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="" class="mt-5 formValidation">
+                            <form action="{{ route('home.english.section.6') }}" method="POST"
+                                class="mt-5 formValidation">
+                                @csrf
+                                <input type="hidden" name="language" value="english" id="">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Heading 1</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="section_6_h1"
+                                                value="{{ old('section_6_h1', $home_english->section_6_h1 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -565,14 +676,32 @@
 
                                         <div>
                                             <label for="">Heading 2</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="section_6_h2"
+                                                value="{{ old('section_6_h2', $home_english->section_6_h2 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div>
                                             <label for="">Heading 3</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="section_6_h3"
+                                                value="{{ old('section_6_h3', $home_english->section_6_h3 ?? '') }}"></input>
+                                            <p class="text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <label for="">Url 1</label>
+                                            <input class="form-control" name="section_6_url_1"
+                                                value="{{ old('section_6_url_1', $home_english->section_6_url_1 ?? '') }}"></input>
+                                            <p class="text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <label for="">Url 2</label>
+                                            <input class="form-control" name="section_6_url_2"
+                                                value="{{ old('section_6_url_2', $home_english->section_6_url_2 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -762,61 +891,41 @@
                 event.preventDefault();
                 let isValid = true;
 
-                $(this)
-                    .find("input, select, textarea")
-                    .each(function() {
-                        let $inputField = $(this);
-                        let $parentDiv = $inputField.closest('div');
-                        let $errorMessage = $parentDiv.find('p');
-                        let labelText = $parentDiv.find('label').text();
+                // $(this)
+                //     .find("input")
+                //     .each(function() {
+                //         let $inputField = $(this);
+                //         let $parentDiv = $inputField.closest('div');
+                //         let $errorMessage = $parentDiv.find('p');
+                //         let labelText = $parentDiv.find('label').text();
 
-                        if ($inputField.hasClass("noVal")) {
-                            $inputField.removeClass("is-invalid");
-                            return;
-                        }
+                //         if ($inputField.hasClass("noVal")) {
+                //             $inputField.removeClass("is-invalid");
+                //             return;
+                //         }
 
-                        // Check for file input
-                        if ($inputField.is(":file")) {
-                            if (!this.files.length) {
-                                $inputField.addClass("is-invalid");
-                                $errorMessage.text(labelText + " is required").css('display', 'block');
-                                isValid = false;
-                            } else {
-                                $inputField.removeClass("is-invalid");
-                                $errorMessage.text('').css('display', 'none');
-                            }
-                            // Check for select input
-                        } else if ($inputField.is("select")) {
-                            if ($inputField.val().trim() === "") {
-                                $inputField.addClass("is-invalid");
-                                $errorMessage.text(labelText + " is required").css('display', 'block');
-                                isValid = false;
-                            } else {
-                                $inputField.removeClass("is-invalid");
-                                $errorMessage.text('').css('display', 'none');
-                            }
-                            // Check for checkboxes
-                        } else if ($inputField.is(":checkbox")) {
-                            if (!$inputField.is(":checked")) {
-                                $inputField.addClass("is-invalid");
-                                $errorMessage.text(labelText + " is required").css('display', 'block');
-                                isValid = false;
-                            } else {
-                                $inputField.removeClass("is-invalid");
-                                $errorMessage.text('').css('display', 'none');
-                            }
-                            // Check for other input fields
-                        } else {
-                            if ($inputField.val().trim() === "") {
-                                $inputField.addClass("is-invalid");
-                                $errorMessage.text(labelText + " is required").css('display', 'block');
-                                isValid = false;
-                            } else {
-                                $inputField.removeClass("is-invalid");
-                                $errorMessage.text('').css('display', 'none');
-                            }
-                        }
-                    });
+                //         // Check for file input
+                //         if ($inputField.is(":file")) {
+                //             if (!this.files.length) {
+                //                 $inputField.addClass("is-invalid");
+                //                 $errorMessage.text(labelText + " is required").css('display', 'block');
+                //                 isValid = false;
+                //             } else {
+                //                 $inputField.removeClass("is-invalid");
+                //                 $errorMessage.text('').css('display', 'none');
+                //             }
+                //             // Check for select input
+                //         } else {
+                //             if ($inputField.val().trim() === "") {
+                //                 $inputField.addClass("is-invalid");
+                //                 $errorMessage.text(labelText + " is required").css('display', 'block');
+                //                 isValid = false;
+                //             } else {
+                //                 $inputField.removeClass("is-invalid");
+                //                 $errorMessage.text('').css('display', 'none');
+                //             }
+                //         }
+                //     });
 
                 // If valid, submit the form
                 if (isValid) {
@@ -825,37 +934,16 @@
             });
 
             // If the user enters input, remove the is-invalid class
-            $(".formValidation")
-                .find("input, select, textarea, .emailVal")
-                .on("input change", function() {
-                    let $inputField = $(this);
 
-                    // Skip validation if the input has the "noVal" class
-                    if ($inputField.hasClass("noVal")) {
-                        return;
-                    }
-
-                    let $parentDiv = $inputField.closest('div');
-                    let $errorMessage = $parentDiv.find('p');
-
-                    // Remove is-invalid class and hide error message if input is valid
-                    if ($inputField.val().trim() !== "" || $inputField.is(":checkbox:checked")) {
-                        $inputField.removeClass("is-invalid");
-                        $errorMessage.text('').css('display', 'none');
-                    }
-                });
 
             // Phone validation to remove unnecessary characters
-            $(".formValidation .phoneVal").keydown(function(event) {
-                const keyPressed = event.key;
-                if (keyPressed === "+" || keyPressed === "-" || keyPressed === "e" || keyPressed === ".") {
-                    event.preventDefault();
-                }
-            });
+            // $(".formValidation .phoneVal").keydown(function(event) {
+            //     const keyPressed = event.key;
+            //     if (keyPressed === "+" || keyPressed === "-" || keyPressed === "e" || keyPressed === ".") {
+            //         event.preventDefault();
+            //     }
+            // });
         });
-
-
-
     </script>
 
 </x-admin.layouts>

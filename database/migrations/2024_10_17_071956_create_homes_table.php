@@ -13,55 +13,62 @@ return new class extends Migration
     {
         Schema::create('homes', function (Blueprint $table) {
             $table->id();
-            $table->string('language');
+            $table->string('language')->nullable();
+            $table->string('meta_title')->nullable();
+            $table->string('meta_description')->nullable();
+            $table->string('canonical')->nullable();
 
-            $table->
+            $table->string('banner_1_h1')->nullable();
+            $table->string('banner_1_h2')->nullable();
+            $table->longText('banner_1_p')->nullable();
+            $table->string('banner_1_image')->nullable();
+            $table->string('banner_2_h1')->nullable();
+            $table->string('banner_2_h2')->nullable();
+            $table->longText('banner_2_p')->nullable();
+            $table->string('banner_2_image')->nullable();
+            $table->string('banner_3_h1')->nullable();
+            $table->string('banner_3_h2')->nullable();
+            $table->longText('banner_3_p')->nullable();
+            $table->string('banner_3_image')->nullable();
 
-            $table->string('banner_1_h1');
-            $table->string('banner_1_h2');
-            $table->longText('banner_1_p');
-            $table->string('banner_1_image');
-            $table->string('banner_2_h1');
-            $table->string('banner_2_h2');
-            $table->longText('banner_2_p');
-            $table->string('banner_2_image');
-            $table->string('banner_3_h1');
-            $table->string('banner_3_h2');
-            $table->longText('banner_3_p');
-            $table->string('banner_3_image');
+            $table->string('facebook_url')->nullable();
+            $table->string('instagram_url')->nullable();
+            $table->string('whatsapp_url')->nullable();
 
-            $table->string('facebook_url');
-            $table->string('instagram_url');
-            $table->string('whatsapp_url');
+            $table->string('about_section_h_blue')->nullable();
+            $table->string('about_section_h_green')->nullable();
+            $table->string('about_section_h_small')->nullable();
+            $table->longText('about_section_p')->nullable();
+            $table->string('about_section_image')->nullable();
+            $table->string('about_section_url')->nullable();
 
-            $table->string('about_section_h_blue');
-            $table->string('about_section_h_green');
-            $table->string('about_section_h_small');
-            $table->longText('about_section_p');
-            $table->string('about_section_image');
-            $table->string('about_section_url');
+            $table->string('our_value_1')->nullable();
+            $table->string('our_value_1_image')->nullable();
 
-            $table->string('our_value_1');
-            $table->string('our_value_1_image');
+            $table->string('our_value_2')->nullable();
+            $table->string('our_value_2_image')->nullable();
 
-
-            $table->string('our_value_2');
-            $table->string('our_value_2_image');
-
-
-            $table->string('our_value_3');
-            $table->string('our_value_3_image');
-
-
-            $table->string('section_6_h1');
-            $table->string('section_6_h2');
-            $table->string('section_6_h3');
-            $table->string('section_6_url_1');
-            $table->string('section_6_url_2');
+            $table->string('our_value_3')->nullable();
+            $table->string('our_value_3_image')->nullable();
 
 
+            $table->string('our_brand_1')->nullable();
+            $table->string('our_brand_image_1')->nullable();
+            $table->string('our_brand_logo_1')->nullable();
+            $table->string('our_brand_2')->nullable();
+            $table->string('our_brand_image_2')->nullable();
+            $table->string('our_brand_logo_2')->nullable();
+            $table->string('our_brand_3')->nullable();
+            $table->string('our_brand_image_3')->nullable();
+            $table->string('our_brand_logo_3')->nullable();
 
-            $table->string('activity_url');
+            $table->string('section_6_h1')->nullable();
+            $table->string('section_6_h2')->nullable();
+            $table->string('section_6_h3')->nullable();
+            $table->string('section_6_url_1')->nullable();
+            $table->string('section_6_url_2')->nullable();
+
+            $table->string('activity_url')->nullable();
 
 
             $table->timestamps();
