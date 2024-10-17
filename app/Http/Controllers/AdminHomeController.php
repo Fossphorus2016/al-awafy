@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EnglishActivity;
 use App\Models\Home;
 use Illuminate\Http\Request;
 
@@ -11,7 +12,10 @@ class AdminHomeController extends Controller
     {
         $home_english = Home::where('language', 'english')->first();
 
-        return view('admin.en.home_page', compact('home_english'));
+        $english_activities = EnglishActivity::latest()->get();
+
+
+        return view('admin.en.home_page', compact('home_english','english_activities'));
     }
 
 
@@ -269,7 +273,7 @@ class AdminHomeController extends Controller
         }
 
         if ($home) {
-            // Update the fields with the new data if the record exists
+
             $home->update([
                 'our_value_1' => $request->input('our_value_1'),
                 'our_value_2' => $request->input('our_value_2'),
@@ -336,6 +340,134 @@ class AdminHomeController extends Controller
             ]);
 
             return back()->with('message', 'Meta data updated successfully.');
+        }
+    }
+
+    public function admin_home_our_brand_1(Request $request)
+    {
+        $request->validate([
+            'our_brand_1' => 'required',
+
+            // Add image validation rules if needed
+        ]);
+
+        // Find the first home record with the English language
+        $home = Home::where('language', 'english')->first();
+
+        // Initialize image variables
+        $our_brand_image_1 = null;
+        $our_brand_logo_1 = null;
+
+        if ($request->hasFile('our_brand_image_1')) {
+            $our_brand_image_1 = $request->file('our_brand_image_1')->store('home', 'public');
+        }
+
+        if ($request->hasFile('our_brand_logo_1')) {
+            $our_brand_logo_1 = $request->file('our_brand_logo_1')->store('home', 'public');
+        }
+
+
+        if ($home) {
+
+            $home->update([
+                'our_brand_1' => $request->input('our_brand_1'),
+                'our_brand_image_1' => $our_brand_image_1 ?? $home->our_brand_image_1,
+                'our_brand_logo_1' => $our_brand_logo_1 ?? $home->our_brand_logo_1,
+            ]);
+
+            return back()->with('message', 'Updated successfully.');
+        } else {
+            Home::create([
+                'language' => 'english',
+
+                'our_brand_1' => $request->input('our_brand_1'),
+
+                'our_brand_image_1' => $our_brand_image_1,
+                'our_brand_logo_1' => $our_brand_logo_1,
+
+            ]);
+
+            return back()->with('message', 'Created successfully.');
+        }
+    }
+
+    public function admin_home_our_brand_2(Request $request)
+    {
+        $request->validate([
+            'our_brand_2' => 'required',
+
+        ]);
+
+        $home = Home::where('language', 'english')->first();
+        // Initialize image variables
+        $our_brand_image_2 = null;
+        $our_brand_logo_2 = null;
+
+        if ($request->hasFile('our_brand_image_2')) {
+            $our_brand_image_2 = $request->file('our_brand_image_2')->store('home', 'public');
+        }
+
+        if ($request->hasFile('our_brand_logo_2')) {
+            $our_brand_logo_2 = $request->file('our_brand_logo_2')->store('home', 'public');
+        }
+
+
+        if ($home) {
+            $home->update([
+                'our_brand_2' => $request->input('our_brand_2'),
+                'our_brand_image_2' => $our_brand_image_2 ?? $home->our_brand_image_2,
+                'our_brand_logo_2' => $our_brand_logo_2 ?? $home->our_brand_logo_2,
+            ]);
+            return back()->with('message', 'Updated successfully.');
+        } else {
+            Home::create([
+                'language' => 'english',
+                'our_brand_2' => $request->input('our_brand_2'),
+                'our_brand_image_2' => $our_brand_image_2,
+                'our_brand_logo_2' => $our_brand_logo_2,
+            ]);
+
+            return back()->with('message', 'Created successfully.');
+        }
+    }
+
+    public function admin_home_our_brand_3(Request $request)
+    {
+        $request->validate([
+            'our_brand_3' => 'required',
+
+        ]);
+
+        $home = Home::where('language', 'english')->first();
+        // Initialize image variables
+        $our_brand_image_3 = null;
+        $our_brand_logo_3 = null;
+
+        if ($request->hasFile('our_brand_image_3')) {
+            $our_brand_image_3 = $request->file('our_brand_image_3')->store('home', 'public');
+        }
+
+        if ($request->hasFile('our_brand_logo_3')) {
+            $our_brand_logo_3 = $request->file('our_brand_logo_3')->store('home', 'public');
+        }
+
+
+        if ($home) {
+            $home->update([
+                'our_brand_3' => $request->input('our_brand_3'),
+                'our_brand_image_3' => $our_brand_image_3 ?? $home->our_brand_image_3,
+                'our_brand_logo_3' => $our_brand_logo_3 ?? $home->our_brand_logo_3,
+            ]);
+            return back()->with('message', 'Updated successfully.');
+        } else {
+            Home::create([
+                'language' => 'english',
+                'our_brand_3' => $request->input('our_brand_3'),
+                'our_brand_image_3' => $our_brand_image_3,
+                'our_brand_logo_3' => $our_brand_logo_3,
+            ]);
+
+            return back()->with('message', 'Created successfully.');
         }
     }
 }
