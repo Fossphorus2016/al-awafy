@@ -74,9 +74,11 @@
 
                             <div class="bannerNavForm1">
 
-                                <form action="" class="mt-5 formValidation">
+                                <form action="{{route('home.english.banner.1')}}" method="POST" class="mt-5 formValidation">
+                                    @csrf
                                     <div class="row gy-4">
                                         <div class="col-6">
+                                            <input type="hidden" name="language" value="english" id="">
 
                                             <div>
                                                 <label for="">Heading 1</label>

@@ -11,4 +11,11 @@ class AdminHomeController extends Controller
 
         return view('admin.en.home_page');
     }
+
+
+    public function admin_home_banner_1(){
+        
+    }
+
+
 }
