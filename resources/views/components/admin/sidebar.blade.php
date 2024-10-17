@@ -28,30 +28,58 @@
                     </a>
                 </div> --}}
 
-                <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span
-                        class="menu-link"><span class="menu-icon">  <i class="bi bi-house-door fs-3 text-white"></i><span
-                                    class="path1"></span><span class="path2"></span><span
-                                    class="path3"></span></i></span><span class="menu-title">Home</span><span
-                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><span class="menu-link"><span
+                            class="menu-icon"> <i class="bi bi-house-door fs-3 text-white"></i><span
+                                class="path1"></span><span class="path2"></span><span
+                                class="path3"></span></i></span><span class="menu-title">Home</span><span
+                            class="menu-arrow"></span></span>
                     <div class="menu-sub menu-sub-accordion" style="display: none; overflow: hidden;"
-                        kt-hidden-height="250"><!--begin:Menu item-->
-                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link {{ Route::is('admin.home.english') ? 'active' : '' }}"
-                            href="{{ route('admin.home.english') }}"><span class="menu-bullet"><span
+                        kt-hidden-height="250">
+                        <div class="menu-item"><a
+                                class="menu-link {{ Route::is('admin.home.english') ? 'active' : '' }}"
+                                href="{{ route('admin.home.english') }}"><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">English</span></a><!--end:Menu link--></div>
-                        <!--end:Menu item--><!--begin:Menu item-->
-                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
+                                    class="menu-title">English</span></a></div>
+
+                        <div class="menu-item"><a class="menu-link"
                                 href="/metronic8/demo1/pages/user-profile/projects.html"><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">Arabic</span></a><!--end:Menu link--></div>
-                        <!--end:Menu item--><!--begin:Menu item-->
-                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
+                                    class="menu-title">Arabic</span></a></div>
+
+                        <div class="menu-item"><a class="menu-link"
                                 href="/metronic8/demo1/pages/user-profile/campaigns.html"><span
                                     class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">French</span></a><!--end:Menu link--></div>
-                        <!--end:Menu item--><!--begin:Menu item-->
+                                    class="menu-title">French</span></a></div>
 
-                    </div><!--end:Menu sub-->
+
+                    </div>
+                </div>
+
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><span class="menu-link"><span
+                            class="menu-icon"> <i class="bi bi-house-door fs-3 text-white"></i><span
+                                class="path1"></span><span class="path2"></span><span
+                                class="path3"></span></i></span><span class="menu-title">About</span><span
+                            class="menu-arrow"></span></span>
+                    <div class="menu-sub menu-sub-accordion" style="display: none; overflow: hidden;"
+                        kt-hidden-height="250">
+                        <div class="menu-item"><a
+                                class="menu-link {{ Route::is('admin.about.english') ? 'active' : '' }}"
+                                href="{{ route('admin.about.english') }}"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">English</span></a></div>
+
+                        <div class="menu-item"><a class="menu-link"
+                                href="/metronic8/demo1/pages/user-profile/projects.html"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">Arabic</span></a></div>
+
+                        <div class="menu-item"><a class="menu-link"
+                                href="/metronic8/demo1/pages/user-profile/campaigns.html"><span
+                                    class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">French</span></a></div>
+
+
+                    </div>
                 </div>
 
                 <div class="menu-item">
@@ -77,7 +105,7 @@
 
 
             </div>
-            <!--end:Menu sub-->
+
         </div>
         <!--begin::Menu-->
         <!--end::Footer-->

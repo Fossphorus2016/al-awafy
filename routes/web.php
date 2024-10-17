@@ -141,5 +141,5 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-    Route::get('admin/about', [AdminAboutController::class, 'admin_about'])->name('admin.about.english');
+    Route::get('admin/about-english', [AdminAboutController::class, 'admin_about'])->name('admin.about.english');
 });
