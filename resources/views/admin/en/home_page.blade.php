@@ -6,12 +6,55 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                            Meta Section
+                        </button>
+                    </h2>
+                    <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <form action="" class="mt-5 formValidation">
+                                <div class="row gy-4">
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Meta title</label>
+                                            <input class="form-control"></input>
+                                            <p class="text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Meta Description</label>
+                                            <input class="form-control"></input>
+                                            <p class="text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <label for="">Canonical</label>
+                                            <input class="form-control"></input>
+                                            <p class="text-danger"></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             Banner Section
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
 
                             <ul class="nav nav-tabs">
