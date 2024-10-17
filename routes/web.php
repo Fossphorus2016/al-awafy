@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminAboutController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -134,10 +136,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin-news-letter', [AdminController::class, 'get_news_letter'])->name('news.letter');
     Route::delete('/admin/news-letter-delete/{id}', [AdminController::class, 'news_letter_delete'])->name('news.letter.delete');
 
-    Route::prefix('admin/en')->group(function () {
-        Route::get('/home', function () {
-            return view('admin.en.home_page');
-        })->name('home_page');
-    });
 
+    Route::get('admin/home-english', [AdminHomeController::class, 'admin_home'])->name('admin.home.english');
+
+
+
+    Route::get('admin/about', [AdminAboutController::class, 'admin_about'])->name('admin.about.english');
 });

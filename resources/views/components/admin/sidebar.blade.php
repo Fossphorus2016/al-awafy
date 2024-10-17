@@ -17,7 +17,7 @@
             <div class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary     menu-arrow-gray-500"
                 id="#kt_aside_menu" data-kt-menu="true">
 
-                <div class="menu-item">
+                {{-- <div class="menu-item">
                     <a class="menu-link gap-3 {{ Route::is('home_page') ? 'active' : '' }}"
                         href="{{ route('home_page') }}">
                         <span class="menu-bullet">
@@ -26,11 +26,36 @@
                         </span>
                         <span class="menu-title text-white">Home</span>
                     </a>
+                </div> --}}
+
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span
+                        class="menu-link"><span class="menu-icon">  <i class="bi bi-house-door fs-3 text-white"></i><span
+                                    class="path1"></span><span class="path2"></span><span
+                                    class="path3"></span></i></span><span class="menu-title">Home</span><span
+                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion" style="display: none; overflow: hidden;"
+                        kt-hidden-height="250"><!--begin:Menu item-->
+                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link {{ Route::is('admin.home.english') ? 'active' : '' }}"
+                            href="{{ route('admin.home.english') }}"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">English</span></a><!--end:Menu link--></div>
+                        <!--end:Menu item--><!--begin:Menu item-->
+                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
+                                href="/metronic8/demo1/pages/user-profile/projects.html"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">Arabic</span></a><!--end:Menu link--></div>
+                        <!--end:Menu item--><!--begin:Menu item-->
+                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
+                                href="/metronic8/demo1/pages/user-profile/campaigns.html"><span
+                                    class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">French</span></a><!--end:Menu link--></div>
+                        <!--end:Menu item--><!--begin:Menu item-->
+
+                    </div><!--end:Menu sub-->
                 </div>
 
                 <div class="menu-item">
-                    <a class="menu-link gap-3 {{ Route::is('contact') ? 'active' : '' }}"
-                        href="{{ route('contact') }}">
+                    <a class="menu-link gap-3 {{ Route::is('contact') ? 'active' : '' }}" href="{{ route('contact') }}">
                         <span class="menu-bullet">
                             <i class="bi bi-person-lines-fill fs-3 text-white"></i>
                         </span>
@@ -58,8 +83,8 @@
         <!--end::Footer-->
     </div>
 </div>
-    <script>
-        $(document).ready(function() {
-            // $('.menu-sub-accordion').hide()
-        })
-    </script>
+<script>
+    $(document).ready(function() {
+        // $('.menu-sub-accordion').hide()
+    })
+</script>
