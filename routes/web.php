@@ -137,7 +137,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/admin/news-letter-delete/{id}', [AdminController::class, 'news_letter_delete'])->name('news.letter.delete');
 
 
+
+    // English Home Route
     Route::get('admin/home-english', [AdminHomeController::class, 'admin_home'])->name('admin.home.english');
+
+    Route::post('admin/home-english/banner-1', [AdminHomeController::class, 'admin_home_banner_1'])->name('home.english.banner.1');
 
 
 
