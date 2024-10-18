@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminEnglishActivityController;
 use App\Http\Controllers\AdminEnglishBrandController;
 use App\Http\Controllers\AdminHomeController;
+use App\Http\Controllers\AdminHomeFrecnhController;
 use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -141,26 +142,28 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     // English Home Route
-    Route::get('admin/home-english', [AdminHomeController::class, 'admin_home'])->name('admin.home.english');
+    Route::get('admin/home-english', [AdminHomeController::class, 'admin_home_english'])->name('admin.home.english');
+    Route::get('admin/home-french', [AdminHomeController::class, 'admin_home_french'])->name('admin.home.french');
+    Route::get('admin/home-arabic', [AdminHomeController::class, 'admin_home_arabic'])->name('admin.home.arabic');
 
-    Route::post('admin/home-english/meta/store', [AdminHomeController::class, 'english_meta_section'])->name('home.english.meta');
-    Route::post('admin/home-english/banner-1', [AdminHomeController::class, 'admin_home_banner_1'])->name('home.english.banner.1');
-    Route::post('admin/home-english/banner-2', [AdminHomeController::class, 'admin_home_banner_2'])->name('home.english.banner.2');
-    Route::post('admin/home-english/banner-3', [AdminHomeController::class, 'admin_home_banner_3'])->name('home.english.banner.3');
+    Route::post('admin/meta/store', [AdminHomeController::class, 'meta_section'])->name('home.meta');
+    Route::post('admin/banner-1', [AdminHomeController::class, 'admin_banner_1'])->name('home.banner.1');
+    Route::post('admin/banner-2', [AdminHomeController::class, 'admin_banner_2'])->name('home.banner.2');
+    Route::post('admin/banner-3', [AdminHomeController::class, 'admin_banner_3'])->name('home.banner.3');
 
     // home about route
-    Route::post('admin/home-english/about', [AdminHomeController::class, 'admin_home_about'])->name('home.english.about');
+    Route::post('admin/about', [AdminHomeController::class, 'admin_about'])->name('home.about');
 
-    Route::post('admin/home-english/our-value', [AdminHomeController::class, 'admin_home_our_value'])->name('home.english.our.value');
+    Route::post('admin/our-value', [AdminHomeController::class, 'admin_our_value'])->name('home.our.value');
 
-    Route::post('admin/home-english/section-6', [AdminHomeController::class, 'admin_home_section_6'])->name('home.english.section.6');
+    Route::post('admin/section-6', [AdminHomeController::class, 'admin_section_6'])->name('home.section.6');
 
-    Route::post('admin/home-english/our-brand-1', [AdminHomeController::class, 'admin_home_our_brand_1'])->name('home.english.our.brand_1');
-    Route::post('admin/home-english/our-brand-2', [AdminHomeController::class, 'admin_home_our_brand_2'])->name('home.english.our.brand_2');
-    Route::post('admin/home-english/our-brand-3', [AdminHomeController::class, 'admin_home_our_brand_3'])->name('home.english.our.brand_3');
+    Route::post('admin/our-brand-1', [AdminHomeController::class, 'admin_our_brand_1'])->name('home.our.brand_1');
+    Route::post('admin/our-brand-2', [AdminHomeController::class, 'admin_our_brand_2'])->name('home.our.brand_2');
+    Route::post('admin/our-brand-3', [AdminHomeController::class, 'admin_our_brand_3'])->name('home.our.brand_3');
 
-    Route::post('/admin-home-english/english-activity/store', [AdminEnglishActivityController::class, 'eng_activity_store'])->name('eng.activity.store');
-    Route::put('/admin-home-english/english-activity/update', [AdminEnglishActivityController::class, 'eng_activity_update'])->name('eng.activity.update');
+    Route::post('/admin/english-activity/store', [AdminEnglishActivityController::class, 'eng_activity_store'])->name('eng.activity.store');
+    Route::put('/admin/english-activity/update', [AdminEnglishActivityController::class, 'eng_activity_update'])->name('eng.activity.update');
 
     Route::delete('/admin-home-page/section-2-modal/{id}/delete', [AdminEnglishActivityController::class, 'empty_Modal_delete'])->name('section2modal.delete');
 
@@ -172,23 +175,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-    Route::get('admin/home-french', [AdminHomeController::class, 'admin_home'])->name('admin.home.french');
 
-    Route::post('admin/home-french/meta/store', [AdminHomeController::class, 'french_meta_section'])->name('home.french.meta');
-    Route::post('admin/home-french/banner-1', [AdminHomeController::class, 'french_admin_home_banner_1'])->name('home.french.banner.1');
-    Route::post('admin/home-french/banner-2', [AdminHomeController::class, 'french_admin_home_banner_2'])->name('home.french.banner.2');
-    Route::post('admin/home-french/banner-3', [AdminHomeController::class, 'french_admin_home_banner_3'])->name('home.french.banner.3');
-
-    // home about route
-    Route::post('admin/home-french/about', [AdminHomeController::class, 'french_admin_home_about'])->name('home.french.about');
-
-    Route::post('admin/home-french/our-value', [AdminHomeController::class, 'french_admin_home_our_value'])->name('home.french.our.value');
-
-    Route::post('admin/home-french/section-6', [AdminHomeController::class, 'french_admin_home_section_6'])->name('home.french.section.6');
-
-    Route::post('admin/home-french/our-brand-1', [AdminHomeController::class, 'french_admin_home_our_brand_1'])->name('home.french.our.brand_1');
-    Route::post('admin/home-french/our-brand-2', [AdminHomeController::class, 'french_admin_home_our_brand_2'])->name('home.french.our.brand_2');
-    Route::post('admin/home-french/our-brand-3', [AdminHomeController::class, 'french_admin_home_our_brand_3'])->name('home.french.our.brand_3');
 
 
 

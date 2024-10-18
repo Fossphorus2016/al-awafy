@@ -16,7 +16,7 @@
                             <form action="{{ route('home.meta') }}" method="POST">
                                 @csrf
 
-                                <input type="hidden" name="language" value="french">
+                                <input type="hidden" name="language" value="arabic">
 
                                 <div class="row gy-4">
                                     <div class="col-6">
@@ -24,7 +24,7 @@
                                         <div>
                                             <label for="">Meta title</label>
                                             <input class="form-control" name="meta_title"
-                                                value="{{ $home_french->meta_title ?? '' }}"></input>
+                                                value="{{ $home_arabic->meta_title ?? '' }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -33,7 +33,7 @@
                                         <div>
                                             <label for="">Meta Description</label>
                                             <input class="form-control" name="meta_description"
-                                                value="{{ $home_french->meta_description ?? '' }}"></input>
+                                                value="{{ $home_arabic->meta_description ?? '' }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -41,7 +41,7 @@
                                         <div>
                                             <label for="">Canonical</label>
                                             <input class="form-control" name="canonical"
-                                                value="{{ $home_french->canonical ?? '' }}"></input>
+                                                value="{{ $home_arabic->canonical ?? '' }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -87,12 +87,12 @@
                                     @csrf
                                     <div class="row gy-4">
                                         <div class="col-6">
-                                            <input type="hidden" name="language" value="french">
+                                            <input type="hidden" name="language" value="arabic">
 
                                             <div>
                                                 <label for="banner_1_h1">Heading 1</label>
                                                 <input type="text" class="form-control" name="banner_1_h1"
-                                                    value="{{ old('banner_1_h1', $home_french->banner_1_h1 ?? '') }}">
+                                                    value="{{ old('banner_1_h1', $home_arabic->banner_1_h1 ?? '') }}">
                                                 @error('banner_1_h1')
                                                     <p class="text-danger">{{ $message }}</p>
                                                 @enderror
@@ -102,7 +102,7 @@
                                             <div>
                                                 <label for="banner_1_h2">Heading 2</label>
                                                 <input type="text" class="form-control" name="banner_1_h2"
-                                                    value="{{ old('banner_1_h2', $home_french->banner_1_h2 ?? '') }}">
+                                                    value="{{ old('banner_1_h2', $home_arabic->banner_1_h2 ?? '') }}">
                                                 @error('banner_1_h2')
                                                     <p class="text-danger">{{ $message }}</p>
                                                 @enderror
@@ -112,7 +112,7 @@
                                             <div>
                                                 <label for="banner_1_p">Paragraph</label>
                                                 <input type="text" class="form-control" name="banner_1_p"
-                                                    value="{{ old('banner_1_p', $home_french->banner_1_p ?? '') }}">
+                                                    value="{{ old('banner_1_p', $home_arabic->banner_1_p ?? '') }}">
                                                 @error('banner_1_p')
                                                     <p class="text-danger">{{ $message }}</p>
                                                 @enderror
@@ -122,20 +122,20 @@
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
                                                 <input type="file" class="form-control" name="banner_1_image"
-                                                    id="bannerImageInput1">
+                                                    id="imgS1">
                                                 @error('banner_1_image')
                                                     <p class="text-danger">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            @if ($home_french && $home_french->banner_1_image)
-                                                <img src="{{ asset('storage/' . $home_french->banner_1_image) }}"
-                                                    alt="Uploaded Image" id="uploadedImage1"
+                                            @if ($home_arabic && $home_arabic->banner_1_image)
+                                                <img src="{{ asset('storage/' . $home_arabic->banner_1_image) }}"
+                                                    alt="Uploaded Image" id="imgU1"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @else
                                                 <img src="{{ asset('assets/images/download (4).png') }}"
-                                                    alt="Default Image" id="uploadedImage1"
+                                                    alt="Default Image" id="imgU1"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @endif
                                         </div>
@@ -153,7 +153,7 @@
                                 <form action="{{ route('home.banner.2') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
-                                    <input type="hidden" name="language" value="french">
+                                    <input type="hidden" name="language" value="arabic">
 
                                     <div class="row gy-4">
                                         <div class="col-6">
@@ -161,7 +161,7 @@
                                             <div>
                                                 <label for="">Heading 1</label>
                                                 <input type="text" class="form-control" name="banner_2_h1"
-                                                    value="{{ old('banner_2_h1', $home_french->banner_2_h1 ?? '') }}">
+                                                    value="{{ old('banner_2_h1', $home_arabic->banner_2_h1 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -170,7 +170,7 @@
                                             <div>
                                                 <label for="">Heading 2</label>
                                                 <input type="text" class="form-control" name="banner_2_h2"
-                                                    value="{{ old('banner_2_h2', $home_french->banner_2_h2 ?? '') }}">
+                                                    value="{{ old('banner_2_h2', $home_arabic->banner_2_h2 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -179,7 +179,7 @@
                                             <div>
                                                 <label for="">Paragraph</label>
                                                 <input type="text" class="form-control" name="banner_2_p"
-                                                    value="{{ old('banner_2_p', $home_french->banner_2_p ?? '') }}">
+                                                    value="{{ old('banner_2_p', $home_arabic->banner_2_p ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -187,20 +187,20 @@
 
                                             <div>
                                                 <label for="">Banner Image</label>
-                                                <input type="file" class="form-control" id="bannerImageInput2"
+                                                <input type="file" class="form-control" id="imgS2"
                                                     name="banner_2_image">
                                                 <p class="text-danger">
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            @if ($home_french && $home_french->banner_2_image)
-                                                <img src="{{ asset('storage/' . $home_french->banner_2_image) }}"
-                                                    alt="Uploaded Image" id="uploadedImage2"
+                                            @if ($home_arabic && $home_arabic->banner_2_image)
+                                                <img src="{{ asset('storage/' . $home_arabic->banner_2_image) }}"
+                                                    alt="Uploaded Image" id="imgU2"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @else
                                                 <img src="{{ asset('assets/images/download (4).png') }}"
-                                                    alt="Default Image" id="uploadedImage2"
+                                                    alt="Default Image" id="imgU2"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @endif
                                         </div>
@@ -216,7 +216,7 @@
                                 <form action="{{ route('home.banner.3') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
-                                    <input type="hidden" name="language" value="french">
+                                    <input type="hidden" name="language" value="arabic">
 
                                     <div class="row gy-4">
                                         <div class="col-6">
@@ -224,7 +224,7 @@
                                             <div>
                                                 <label for="">Heading 1</label>
                                                 <input type="text" class="form-control" name="banner_3_h1"
-                                                    value="{{ old('banner_3_h1', $home_french->banner_3_h1 ?? '') }}">
+                                                    value="{{ old('banner_3_h1', $home_arabic->banner_3_h1 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -233,7 +233,7 @@
                                             <div>
                                                 <label for="">Heading 2</label>
                                                 <input type="text" class="form-control" name="banner_3_h2"
-                                                    value="{{ old('banner_3_h2', $home_french->banner_3_h2 ?? '') }}">
+                                                    value="{{ old('banner_3_h2', $home_arabic->banner_3_h2 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -242,7 +242,7 @@
                                             <div>
                                                 <label for="">Paragraph</label>
                                                 <input type="text" class="form-control" name="banner_3_p"
-                                                    value="{{ old('banner_3_p', $home_french->banner_3_p ?? '') }}">
+                                                    value="{{ old('banner_3_p', $home_arabic->banner_3_p ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -250,20 +250,20 @@
 
                                             <div>
                                                 <label for="">Banner Image</label>
-                                                <input type="file" class="form-control" id="bannerImageInput3"
+                                                <input type="file" class="form-control" id="imgS3"
                                                     name="banner_3_image">
                                                 <p class="text-danger">
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            @if ($home_french && $home_french->banner_3_image)
-                                                <img src="{{ asset('storage/' . $home_french->banner_3_image) }}"
-                                                    alt="Uploaded Image" id="uploadedImage3"
+                                            @if ($home_arabic && $home_arabic->banner_3_image)
+                                                <img src="{{ asset('storage/' . $home_arabic->banner_3_image) }}"
+                                                    alt="Uploaded Image" id="imgU3"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @else
                                                 <img src="{{ asset('assets/images/download (4).png') }}"
-                                                    alt="Default Image" id="uploadedImage3"
+                                                    alt="Default Image" id="imgU3"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @endif
                                         </div>
@@ -288,17 +288,17 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.about') }}" method="POST" class="mt-5 formValidation"
-                                enctype="multipart/form-data">
+                            <form action="{{ route('home.about') }}" method="POST"
+                                class="mt-5 formValidation" enctype="multipart/form-data">
                                 @csrf
-                                <input type="hidden" name="language" value="french" id="">
+                                <input type="hidden" name="language" value="arabic" id="">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Heading blue</label>
                                             <input type="text" class="form-control" name="about_section_h_blue"
-                                                value="{{ old('about_section_h_blue', $home_french->about_section_h_blue ?? '') }}">
+                                                value="{{ old('about_section_h_blue', $home_arabic->about_section_h_blue ?? '') }}">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -307,7 +307,7 @@
                                         <div>
                                             <label for="">Heading green</label>
                                             <input type="text" class="form-control" name="about_section_h_green"
-                                                value="{{ old('about_section_h_green', $home_french->about_section_h_green ?? '') }}">
+                                                value="{{ old('about_section_h_green', $home_arabic->about_section_h_green ?? '') }}">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -316,7 +316,7 @@
                                         <div>
                                             <label for="">Heading small</label>
                                             <input type="text" class="form-control" name="about_section_h_small"
-                                                value="{{ old('about_section_h_small', $home_french->about_section_h_small ?? '') }}">
+                                                value="{{ old('about_section_h_small', $home_arabic->about_section_h_small ?? '') }}">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -324,7 +324,7 @@
 
                                         <div>
                                             <label for="">About paragraph</label>
-                                            <textarea class="editor1 noVal" name="about_section_p">{{ old('about_section_p', $home_french->about_section_p ?? '') }}</textarea>
+                                            <textarea class="editor1 noVal" name="about_section_p">{{ old('about_section_p', $home_arabic->about_section_p ?? '') }}</textarea>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -338,8 +338,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        @if ($home_french && $home_french->about_section_image)
-                                            <img src="{{ asset('storage/' . $home_french->about_section_image) }}"
+                                        @if ($home_arabic && $home_arabic->about_section_image)
+                                            <img src="{{ asset('storage/' . $home_arabic->about_section_image) }}"
                                                 alt="Uploaded Image" id="uploadedAboutImage1"
                                                 style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                         @else
@@ -354,7 +354,7 @@
                                         <div>
                                             <label for="">About Url</label>
                                             <input type="text" class="form-control" name="about_section_url"
-                                                value="{{ old('about_section_url', $home_french->about_section_url ?? '') }}">
+                                                value="{{ old('about_section_url', $home_arabic->about_section_url ?? '') }}">
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -376,17 +376,17 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.our.value') }}" method="POST" class="mt-5 formValidation"
-                                enctype="multipart/form-data">
+                            <form action="{{ route('home.our.value') }}" method="POST"
+                                class="mt-5 formValidation" enctype="multipart/form-data">
                                 @csrf
-                                <input type="hidden" name="language" value="french" id="">
+                                <input type="hidden" name="language" value="arabic" id="">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Value Title 1</label>
                                             <input class="form-control" name="our_value_1"
-                                                value="{{ old('our_value_1', $home_french->our_value_1 ?? '') }}"></input>
+                                                value="{{ old('our_value_1', $home_arabic->our_value_1 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -401,8 +401,8 @@
                                     </div>
 
                                     <div class="col-12">
-                                        @if ($home_french && $home_french->our_value_1_image)
-                                            <img src="{{ asset('storage/' . $home_french->our_value_1_image) }}"
+                                        @if ($home_arabic && $home_arabic->our_value_1_image)
+                                            <img src="{{ asset('storage/' . $home_arabic->our_value_1_image) }}"
                                                 alt="Uploaded Image" id="uploadedAboutImage1"
                                                 style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                         @else
@@ -416,7 +416,7 @@
                                         <div>
                                             <label for="">Value Title 2</label>
                                             <input class="form-control" name="our_value_2"
-                                                value="{{ old('our_value_2', $home_french->our_value_2 ?? '') }}"></input>
+                                                value="{{ old('our_value_2', $home_arabic->our_value_2 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -430,8 +430,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        @if ($home_french && $home_french->our_value_2_image)
-                                            <img src="{{ asset('storage/' . $home_french->our_value_2_image) }}"
+                                        @if ($home_arabic && $home_arabic->our_value_2_image)
+                                            <img src="{{ asset('storage/' . $home_arabic->our_value_2_image) }}"
                                                 alt="Uploaded Image" id="uploadedAboutImage1"
                                                 style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                         @else
@@ -445,7 +445,7 @@
                                         <div>
                                             <label for="">Value Title 3</label>
                                             <input class="form-control" name="our_value_3"
-                                                value="{{ old('our_value_3', $home_french->our_value_3 ?? '') }}"></input>
+                                                value="{{ old('our_value_3', $home_arabic->our_value_3 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -459,8 +459,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        @if ($home_french && $home_french->our_value_3_image)
-                                            <img src="{{ asset('storage/' . $home_french->our_value_3_image) }}"
+                                        @if ($home_arabic && $home_arabic->our_value_3_image)
+                                            <img src="{{ asset('storage/' . $home_arabic->our_value_3_image) }}"
                                                 alt="Uploaded Image" id="uploadedAboutImage1"
                                                 style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                         @else
@@ -510,7 +510,7 @@
                                 <form action="{{ route('home.our.brand_1') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
-                                    <input type="hidden" name="language" value="french" id="">
+                                    <input type="hidden" name="language" value="arabic" id="">
                                     <div class="row gy-4">
 
                                         <div class="col-12">
@@ -518,7 +518,7 @@
                                             <div>
                                                 <label for="">Paragraph</label>
                                                 <input type="text" class="form-control" name="our_brand_1"
-                                                    value="{{ old('our_brand_1', $home_french->our_brand_1 ?? '') }}">
+                                                    value="{{ old('our_brand_1', $home_arabic->our_brand_1 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -532,8 +532,9 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            @if ($home_french && $home_french->our_brand_image_1)
-                                                <img src="{{ asset('storage/' . $home_french->our_brand_image_1) }}"
+
+                                            @if ($home_arabic && $home_arabic->our_brand_image_1)
+                                                <img src="{{ asset('storage/' . $home_arabic->our_brand_image_1) }}"
                                                     alt="Uploaded Image" id="uploadedAboutImage1"
                                                     style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                             @else
@@ -541,8 +542,6 @@
                                                     alt="Default Image" id="uploadedAboutImage1"
                                                     style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                             @endif
-
-
 
                                         </div>
                                         <div class="col-6">
@@ -556,16 +555,18 @@
                                         </div>
                                         <div class="col-6">
 
+                                            @if ($home_arabic && $home_arabic->our_brand_logo_1)
+                                            <img src="{{ asset('storage/' . $home_arabic->our_brand_logo_1) }}"
+                                                alt="Uploaded Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @else
+                                            <img src="{{ asset('assets/images/download (4).png') }}"
+                                                alt="Default Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @endif
 
-                                            @if ($home_french && $home_french->our_brand_logo_1)
-                                                <img src="{{ asset('storage/' . $home_french->our_brand_logo_1) }}"
-                                                    alt="Uploaded Image" id="uploadedAboutImage1"
-                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
-                                            @else
-                                                <img src="{{ asset('assets/images/download (4).png') }}"
-                                                    alt="Default Image" id="uploadedAboutImage1"
-                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
-                                            @endif
+
+
                                         </div>
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
@@ -579,7 +580,7 @@
                                 <form action="{{ route('home.our.brand_2') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
-                                    <input type="hidden" name="language" value="french" id="">
+                                    <input type="hidden" name="language" value="arabic" id="">
                                     <div class="row gy-4">
 
                                         <div class="col-12">
@@ -587,7 +588,7 @@
                                             <div>
                                                 <label for="">Paragraph</label>
                                                 <input type="text" class="form-control" name="our_brand_2"
-                                                    value="{{ old('our_brand_2', $home_french->our_brand_2 ?? '') }}">
+                                                    value="{{ old('our_brand_2', $home_arabic->our_brand_2 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -604,8 +605,8 @@
 
 
 
-                                            @if ($home_french && $home_french->our_brand_image_2)
-                                                <img src="{{ asset('storage/' . $home_french->our_brand_image_2) }}"
+                                            @if ($home_arabic && $home_arabic->our_brand_image_2)
+                                                <img src="{{ asset('storage/' . $home_arabic->our_brand_image_2) }}"
                                                     alt="Uploaded Image" id="uploadedAboutImage1"
                                                     style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                             @else
@@ -626,8 +627,8 @@
                                         <div class="col-6">
 
 
-                                            @if ($home_french && $home_french->our_brand_logo_2)
-                                                <img src="{{ asset('storage/' . $home_french->our_brand_logo_2) }}"
+                                            @if ($home_arabic && $home_arabic->our_brand_logo_2)
+                                                <img src="{{ asset('storage/' . $home_arabic->our_brand_logo_2) }}"
                                                     alt="Uploaded Image" id="uploadedAboutImage1"
                                                     style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                             @else
@@ -647,7 +648,7 @@
                                 <form action="{{ route('home.our.brand_3') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
-                                    <input type="hidden" name="language" value="french" id="">
+                                    <input type="hidden" name="language" value="arabic" id="">
                                     <form action="" class="mt-5 formValidation">
                                         <div class="row gy-4">
 
@@ -656,7 +657,7 @@
                                                 <div>
                                                     <label for="">Paragraph</label>
                                                     <input type="text" class="form-control" name="our_brand_3"
-                                                        value="{{ old('our_brand_3', $home_french->our_brand_3 ?? '') }}">
+                                                        value="{{ old('our_brand_3', $home_arabic->our_brand_3 ?? '') }}">
                                                     <p class="text-danger"></p>
                                                 </div>
                                             </div>
@@ -672,8 +673,8 @@
                                             <div class="col-6">
 
 
-                                                @if ($home_french && $home_french->our_brand_image_3)
-                                                    <img src="{{ asset('storage/' . $home_french->our_brand_image_3) }}"
+                                                @if ($home_arabic && $home_arabic->our_brand_image_3)
+                                                    <img src="{{ asset('storage/' . $home_arabic->our_brand_image_3) }}"
                                                         alt="Uploaded Image" id="uploadedAboutImage3"
                                                         style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                                 @else
@@ -694,8 +695,8 @@
                                             </div>
                                             <div class="col-6">
 
-                                                @if ($home_french && $home_french->our_brand_logo_3)
-                                                    <img src="{{ asset('storage/' . $home_french->our_brand_logo_3) }}"
+                                                @if ($home_arabic && $home_arabic->our_brand_logo_3)
+                                                    <img src="{{ asset('storage/' . $home_arabic->our_brand_logo_3) }}"
                                                         alt="Uploaded Image" id="uploadedAboutImage3"
                                                         style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
                                                 @else
@@ -725,16 +726,17 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.section.6') }}" method="POST" class="mt-5 formValidation">
+                            <form action="{{ route('home.section.6') }}" method="POST"
+                                class="mt-5 formValidation">
                                 @csrf
-                                <input type="hidden" name="language" value="french" id="">
+                                <input type="hidden" name="language" value="arabic" id="">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Heading 1</label>
                                             <input class="form-control" name="section_6_h1"
-                                                value="{{ old('section_6_h1', $home_french->section_6_h1 ?? '') }}"></input>
+                                                value="{{ old('section_6_h1', $home_arabic->section_6_h1 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -743,7 +745,7 @@
                                         <div>
                                             <label for="">Heading 2</label>
                                             <input class="form-control" name="section_6_h2"
-                                                value="{{ old('section_6_h2', $home_french->section_6_h2 ?? '') }}"></input>
+                                                value="{{ old('section_6_h2', $home_arabic->section_6_h2 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -751,7 +753,7 @@
                                         <div>
                                             <label for="">Heading 3</label>
                                             <input class="form-control" name="section_6_h3"
-                                                value="{{ old('section_6_h3', $home_french->section_6_h3 ?? '') }}"></input>
+                                                value="{{ old('section_6_h3', $home_arabic->section_6_h3 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -759,7 +761,7 @@
                                         <div>
                                             <label for="">Url 1</label>
                                             <input class="form-control" name="section_6_url_1"
-                                                value="{{ old('section_6_url_1', $home_french->section_6_url_1 ?? '') }}"></input>
+                                                value="{{ old('section_6_url_1', $home_arabic->section_6_url_1 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -767,7 +769,7 @@
                                         <div>
                                             <label for="">Url 2</label>
                                             <input class="form-control" name="section_6_url_2"
-                                                value="{{ old('section_6_url_2', $home_french->section_6_url_2 ?? '') }}"></input>
+                                                value="{{ old('section_6_url_2', $home_arabic->section_6_url_2 ?? '') }}"></input>
                                             <p class="text-danger"></p>
                                         </div>
                                     </div>
@@ -860,26 +862,26 @@
                                     </thead>
                                     <tbody>
 
-                                        @if (count($english_activities) > 0)
+                                        {{-- @if (count($arabic_activities) > 0)
 
-                                            @foreach ($english_activities as $english_activity)
+                                            @foreach ($arabic_activities as $arabic_activity)
                                                 <tr>
 
-                                                    <td id="activity_image_{{ $english_activity->id }}"><img
-                                                            src="{{ asset('storage/' . $english_activity->images) }}"width="50px"
+                                                    <td id="activity_image_{{ $arabic_activity->id }}"><img
+                                                            src="{{ asset('storage/' . $arabic_activity->images) }}"width="50px"
                                                             height="50px" alt=""></td>
 
-                                                    <td id="activity_heading_{{ $english_activity->id }}">
-                                                        {{ $english_activity->heading }}</td>
-                                                    <td id="activity_paragraph_{{ $english_activity->id }}">
-                                                        {{ $english_activity->paragraph }}</td>
+                                                    <td id="activity_heading_{{ $arabic_activity->id }}">
+                                                        {{ $arabic_activity->heading }}</td>
+                                                    <td id="activity_paragraph_{{ $arabic_activity->id }}">
+                                                        {{ $arabic_activity->paragraph }}</td>
                                                     <td>
                                                         <button type="button" class="btn btn-success btn-sm editbtn"
-                                                            onclick="load_section2_modal({{ $english_activity->id }})">
+                                                            onclick="load_section2_modal({{ $arabic_activity->id }})">
                                                             <i class="bi bi-pencil-square fs-4"></i>
                                                         </button>
                                                         <form
-                                                            action="{{ route('section2modal.delete', $english_activity->id) }}"
+                                                            action="{{ route('section2modal.delete', $arabic_activity->id) }}"
                                                             method="POST" class="d-inline">
                                                             @csrf
                                                             @method('DELETE')
@@ -901,14 +903,14 @@
                                                                     aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <form id="edit_activity{{ $english_activity->id }}"
-                                                                    action="{{ route('eng.activity.update', $english_activity->id) }}"
+                                                                <form id="edit_activity{{ $arabic_activity->id }}"
+                                                                    action="{{ route('eng.activity.update', $arabic_activity->id) }}"
                                                                     method="POST" enctype="multipart/form-data">
                                                                     @csrf
                                                                     @method('PUT')
 
-                                                                    <input type="hidden" name="english_activity"
-                                                                        id="english_activity">
+                                                                    <input type="hidden" name="arabic_activity"
+                                                                        id="arabic_activity">
 
                                                                     <div class="mb-3">
                                                                         <label class="form-label">Image (Upload new
@@ -952,7 +954,7 @@
                                                                 <button type="button" class="btn btn-secondary"
                                                                     data-bs-dismiss="modal">Close</button>
                                                                 <button type="button"
-                                                                    onclick="update_section2_({{ $english_activity->id }})"
+                                                                    onclick="update_section2_({{ $arabic_activity->id }})"
                                                                     class="btn btn-warning text-dark">Update</button>
                                                             </div>
                                                         </div>
@@ -963,7 +965,7 @@
                                             <tr>
                                                 <td colspan="5">No cards found.</td>
                                             </tr>
-                                        @endif
+                                        @endif --}}
 
 
                                     </tbody>
@@ -1024,20 +1026,20 @@
                 });
             }
 
-            handleImageChange('#bannerImageInput1', '#uploadedImage1');
-            handleImageChange('#bannerImageInput2', '#uploadedImage2');
-            handleImageChange('#bannerImageInput3', '#uploadedImage3');
-            handleImageChange('#aboutImageInput1', '#uploadedAboutImage1');
-            handleImageChange('#valueImageInput1', '#uploadedValueImage1');
-            handleImageChange('#valueImageInput2', '#uploadedValueImage2');
-            handleImageChange('#valueImageInput3', '#uploadedValueImage3');
-            handleImageChange('#brandImageInput1', '#uploadedBrandImage1');
-            handleImageChange('#brandImageInput2', '#uploadedBrandImage2');
-            handleImageChange('#brandImageInput3', '#uploadedBrandImage3');
-            handleImageChange('#brandLogoInput1', '#uploadedBrandLogo1');
-            handleImageChange('#brandLogoInput2', '#uploadedBrandLogo2');
-            handleImageChange('#brandLogoInput3', '#uploadedBrandLogo3');
-            handleImageChange('#activityImageInput1', '#uploadedActivityImage1');
+            handleImageChange('#imgS1', '#imgU1');
+            handleImageChange('#imgS2', '#imgU2');
+            handleImageChange('#imgS3', '#imgU3');
+            handleImageChange('#imgS4', '#imgU4');
+            handleImageChange('#imgS5', '#imgU5');
+            handleImageChange('#imgS6', '#imgU6');
+            handleImageChange('#imgS7', '#imgU7');
+            handleImageChange('#imgS8', '#imgU8');
+            handleImageChange('#imgS9', '#imgU9');
+            handleImageChange('#imgS10', '#imgU10');
+            handleImageChange('#imgS11', '#imgU11');
+            handleImageChange('#imgS12', '#imgU12');
+            handleImageChange('#imgS13', '#imgU13');
+            handleImageChange('#imgS14', '#imgU14');
 
 
             // $(".formValidation").submit(function(event) {

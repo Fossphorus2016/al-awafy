@@ -13,7 +13,7 @@
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.english.meta') }}" method="POST">
+                            <form action="{{ route('home.meta') }}" method="POST">
                                 @csrf
 
                                 <input type="hidden" name="language" value="english">
@@ -82,7 +82,7 @@
 
                             <div class="bannerNavForm1">
 
-                                <form action="{{ route('home.english.banner.1') }}" method="POST"
+                                <form action="{{ route('home.banner.1') }}" method="POST"
                                     enctype="multipart/form-data" class="mt-5 formValidation">
                                     @csrf
                                     <div class="row gy-4">
@@ -150,7 +150,7 @@
 
                             <div class="bannerNavForm2" style="display: none">
 
-                                <form action="{{ route('home.english.banner.2') }}" method="POST"
+                                <form action="{{ route('home.banner.2') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english">
@@ -213,7 +213,7 @@
                             </div>
                             <div class="bannerNavForm3" style="display: none">
 
-                                <form action="{{ route('home.english.banner.3') }}" method="POST"
+                                <form action="{{ route('home.banner.3') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english">
@@ -288,7 +288,7 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.english.about') }}" method="POST"
+                            <form action="{{ route('home.about') }}" method="POST"
                                 class="mt-5 formValidation" enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="language" value="english" id="">
@@ -376,7 +376,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.english.our.value') }}" method="POST"
+                            <form action="{{ route('home.our.value') }}" method="POST"
                                 class="mt-5 formValidation" enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="language" value="english" id="">
@@ -507,7 +507,7 @@
                             </ul>
 
                             <div class="bannerNavForm1">
-                                <form action="{{ route('home.english.our.brand_1') }}" method="POST"
+                                <form action="{{ route('home.our.brand_1') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english" id="">
@@ -577,7 +577,7 @@
 
                             <div class="bannerNavForm2" style="display: none">
 
-                                <form action="{{ route('home.english.our.brand_2') }}" method="POST"
+                                <form action="{{ route('home.our.brand_2') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english" id="">
@@ -645,7 +645,7 @@
                             </div>
 
                             <div class="bannerNavForm3" style="display: none">
-                                <form action="{{ route('home.english.our.brand_3') }}" method="POST"
+                                <form action="{{ route('home.our.brand_3') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english" id="">
@@ -726,7 +726,7 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.english.section.6') }}" method="POST"
+                            <form action="{{ route('home.section.6') }}" method="POST"
                                 class="mt-5 formValidation">
                                 @csrf
                                 <input type="hidden" name="language" value="english" id="">
