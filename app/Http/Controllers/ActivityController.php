@@ -25,15 +25,17 @@ class ActivityController extends Controller
             $main_image = $request->file('main_image')->store('uploads/images', 'public');
         }
 
-        $imageUrls = [];
+        $imageData = []; // Array to hold image data
 
-        // Handle additional images upload
+        // Check if there are files and store each image
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $path = $image->store('uploads/images', 'public');
-                $imageUrls[] = [
-                    'url' => asset('storage/' . $path),
-                    'name' => $image->getClientOriginalName(),
+                $path = $image->store('activities', 'public'); // Store each image
+
+                // Create an associative array with the URL and image name
+                $imageData[] = [
+                    'url' => asset('storage/' . $path), // Generate URL
+                    'name' => $image->getClientOriginalName(), // Get the original name of the image
                 ];
             }
         }
@@ -43,7 +45,7 @@ class ActivityController extends Controller
             'language' => $request->language,
             'heading' => $request->input('heading'),
             'paragraph' => $request->input('paragraph'),
-            'images' => json_encode($imageUrls),
+            'images' => json_encode($imageData),
             'main_image' => $main_image,
         ]);
 
@@ -87,15 +89,13 @@ class ActivityController extends Controller
 
         // Handle additional images upload if new ones are provided
         if ($request->hasFile('images')) {
-            $imageUrls = [];
             foreach ($request->file('images') as $image) {
-                $path = $image->store('uploads/images', 'public');
-                $imageUrls[] = [
+                $path = $image->store('activities', 'public');
+                $updatedImages[] = [
                     'url' => asset('storage/' . $path),
                     'name' => $image->getClientOriginalName(),
                 ];
             }
-            $activity->images = json_encode($imageUrls);
         }
 
         // Save the updated activity

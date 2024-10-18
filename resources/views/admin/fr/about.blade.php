@@ -50,7 +50,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero2" aria-expanded="false" aria-controls="collapseZero2">
-                            Banner Image
+                           Banner Section
                         </button>
                     </h2>
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -59,6 +59,22 @@
                                 <form action="" class="mt-5 formValidation2">
                                     <input type="hidden" name="language" value="french">
                                     <div class="row gy-4">
+                                        <div class="col-6">
+
+                                            <div class="editorOut12">
+                                                <label for="">Heading 1</label>
+                                                <input class="form-control"></input>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="class="editorOut13>
+                                                <label for="">Heading 2</label>
+                                                <input class="form-control"></input>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+                                        </div>
                                         <div class="col-6">
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
@@ -96,6 +112,22 @@
                                 <form action="" class="mt-5 formValidation2">
                                     <input type="hidden" name="language" value="french">
                                     <div class="row gy-4">
+                                        <div class="col-6">
+
+                                            <div class="editorOut10">
+                                                <label for="">Heading 1</label>
+                                                <input class="form-control"></input>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="editorOut11">
+                                                <label for="">Heading 2</label>
+                                                <input class="form-control"></input>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+                                        </div>
                                         <div class="col-12">
 
                                             <div class="editorOut1">
@@ -112,14 +144,21 @@
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
-                                        <div class="col-12">
 
-                                            <div class="editorOut3">
-                                                <label for="">Paragraph 3</label>
-                                                <textarea id="editor3" class="editor3 "></textarea>
-                                                <p class="errMsg text-danger"></p>
+                                        <div class="col-6">
+                                            <div>
+                                                <label for="">About Image</label>
+                                                <input type="file" class="form-control " name=""
+                                                    id="imgS11">
+
+                                                <p class="text-danger fileError"></p>
                                             </div>
                                         </div>
+                                        <div class="col-12">
+                                            <img src="" alt="" id="imgU11"
+                                                style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                        </div>
+
 
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
@@ -148,7 +187,7 @@
                                     <div class="row gy-4">
                                         <div class="col-12">
                                             <div class="editorOut4">
-                                                <label for="">Blue Heading</label>
+                                                <label for="">Heading 1</label>
                                                 <input type="text" class="form-control">
                                                 <p class="errMsg text-danger"></p>
                                             </div>
@@ -156,7 +195,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="editorOut5">
-                                                <label for="">Green Heading</label>
+                                                <label for="">Heading 2</label>
                                                 <input type="text" class="form-control">
                                                 <p class="errMsg text-danger"></p>
                                             </div>
@@ -171,6 +210,23 @@
 
                                         </div>
                                         <div class="col-12">
+                                            <div class="editorOut8">
+                                                <label for="">Heading 1</label>
+                                                <input type="text" class="form-control">
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="editorOut9">
+                                                <label for="">Heading 2</label>
+                                                <input type="text" class="form-control">
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12">
                                             <div class="editorOut7">
                                                 <label for="">Paragraph 1</label>
                                                 <textarea class="editor5"></textarea>
@@ -178,6 +234,21 @@
                                             </div>
 
                                         </div>
+
+                                        <div class="col-6">
+                                            <div>
+                                                <label for="">About Image</label>
+                                                <input type="file" class="form-control " name=""
+                                                    id="imgS12">
+
+                                                <p class="text-danger fileError"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <img src="" alt="" id="imgU12"
+                                                style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                        </div>
+
 
 
                                         <div class="col-12">
@@ -199,7 +270,7 @@
 
             const editor1 = new Jodit('.editor1');
             const editor2 = new Jodit('.editor2');
-            const editor3 = new Jodit('.editor3');
+            // const editor3 = new Jodit('.editor3');
             const editor4 = new Jodit('.editor4');
             const editor5 = new Jodit('.editor5');
 
@@ -254,11 +325,11 @@
                     console.log(editor2.value, 'ed2');
                 }
 
-                if (!editor3.value.trim() || editor3.value.trim() === '<p><br></p>') {
-                    $('.editorOut3 .errMsg').text('Paragraph 3 is required.');
-                    valid = false;
-                    console.log(editor3.value, 'ed3');
-                }
+                // if (!editor3.value.trim() || editor3.value.trim() === '<p><br></p>') {
+                //     $('.editorOut3 .errMsg').text('Paragraph 3 is required.');
+                //     valid = false;
+                //     console.log(editor3.value, 'ed3');
+                // }
 
                 // If all validations pass, submit the form
                 if (valid) {
@@ -287,6 +358,48 @@
                     valid = false
                 } else {
                     $(".editorOut5 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut8 input").val() == "") {
+                    $(".editorOut8 input").addClass("is-invalid");
+                    $(".editorOut8 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut8 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut9 input").val() == "") {
+                    $(".editorOut9 input").addClass("is-invalid");
+                    $(".editorOut9 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut9 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut10 input").val() == "") {
+                    $(".editorOut10 input").addClass("is-invalid");
+                    $(".editorOut10 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut10 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut11 input").val() == "") {
+                    $(".editorOut11 input").addClass("is-invalid");
+                    $(".editorOut11 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut11 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut12 input").val() == "") {
+                    $(".editorOut12 input").addClass("is-invalid");
+                    $(".editorOut12 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut12 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut13 input").val() == "") {
+                    $(".editorOut13 input").addClass("is-invalid");
+                    $(".editorOut13 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut13 input").removeClass("is-invalid");
                 }
 
                 if (!editor4.value.trim() || editor4.value.trim() === '<p><br></p>') {
@@ -321,6 +434,8 @@
             }
 
             handleImageChange('#bannerImageInput1', '#uploadedImage1');
+            handleImageChange('#imgS11', '#imgU11');
+            handleImageChange('#imgS12', '#imgU12');
 
 
         });

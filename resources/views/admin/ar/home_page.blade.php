@@ -288,8 +288,8 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.about') }}" method="POST"
-                                class="mt-5 formValidation" enctype="multipart/form-data">
+                            <form action="{{ route('home.about') }}" method="POST" class="mt-5 formValidation"
+                                enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="language" value="arabic" id="">
                                 <div class="row gy-4">
@@ -376,8 +376,8 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.our.value') }}" method="POST"
-                                class="mt-5 formValidation" enctype="multipart/form-data">
+                            <form action="{{ route('home.our.value') }}" method="POST" class="mt-5 formValidation"
+                                enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="language" value="arabic" id="">
                                 <div class="row gy-4">
@@ -556,14 +556,14 @@
                                         <div class="col-6">
 
                                             @if ($home_arabic && $home_arabic->our_brand_logo_1)
-                                            <img src="{{ asset('storage/' . $home_arabic->our_brand_logo_1) }}"
-                                                alt="Uploaded Image" id="uploadedAboutImage1"
-                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
-                                        @else
-                                            <img src="{{ asset('assets/images/download (4).png') }}"
-                                                alt="Default Image" id="uploadedAboutImage1"
-                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
-                                        @endif
+                                                <img src="{{ asset('storage/' . $home_arabic->our_brand_logo_1) }}"
+                                                    alt="Uploaded Image" id="uploadedAboutImage1"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedAboutImage1"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @endif
 
 
 
@@ -726,8 +726,7 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.section.6') }}" method="POST"
-                                class="mt-5 formValidation">
+                            <form action="{{ route('home.section.6') }}" method="POST" class="mt-5 formValidation">
                                 @csrf
                                 <input type="hidden" name="language" value="arabic" id="">
                                 <div class="row gy-4">
@@ -812,7 +811,7 @@
                                                 enctype="multipart/form-data" method="POST">
                                                 @csrf
                                                 <input type="hidden" name="language" value="arabic">
-                                                    id="">
+                                                id="">
                                                 <div class="row gy-4">
                                                     <div class="col-12">
                                                         <div>
@@ -871,21 +870,29 @@
                                             <th class="">ACTION</th>
                                         </tr>
                                     </thead>
+
                                     <tbody>
                                         @if (is_array($activities) || $activities instanceof Countable)
                                             @if (count($activities) > 0)
                                                 @foreach ($activities as $activity)
                                                     <tr>
                                                         <td id="activity_main_image_{{ $activity->id }}">
-                                                            <img src="{{ asset('storage/' . $activity->main_image) }}" width="50px" height="50px" alt="">
+                                                            <img src="{{ asset('storage/' . $activity->main_image) }}"
+                                                                width="50px" height="50px" alt="">
                                                         </td>
-                                                        <td id="activity_heading_{{ $activity->id }}">{{ $activity->heading }}</td>
-                                                        <td id="activity_paragraph_{{ $activity->id }}">{{ $activity->paragraph }}</td>
+                                                        <td id="activity_heading_{{ $activity->id }}">
+                                                            {{ $activity->heading }}</td>
+                                                        <td id="activity_paragraph_{{ $activity->id }}">
+                                                            {{ $activity->paragraph }}</td>
                                                         <td>
-                                                            <button type="button" class="btn btn-success btn-sm editbtn" onclick="load_section2_modal({{ $activity->id }})">
+                                                            <button type="button"
+                                                                class="btn btn-success btn-sm editbtn"
+                                                                onclick="load_section2_modal({{ $activity->id }})">
                                                                 <i class="bi bi-pencil-square fs-4"></i>
                                                             </button>
-                                                            <form action="{{ route('activity.delete', $activity->id) }}" method="POST" class="d-inline">
+                                                            <form
+                                                                action="{{ route('activity.delete', $activity->id) }}"
+                                                                method="POST" class="d-inline">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button type="submit" class="btn btn-danger btn-sm">
@@ -896,51 +903,106 @@
                                                     </tr>
 
                                                     <!-- Modal -->
-                                                    <div class="modal fade" id="empty_modal_edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade" id="empty_modal_edit" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-lg">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
-                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Update</h1>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    <h1 class="modal-title fs-5"
+                                                                        id="exampleModalLabel">Update</h1>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    <form id="edit_activity{{ $activity->id }}" action="{{ route('activity.update', $activity->id) }}" method="POST" enctype="multipart/form-data">
+                                                                    <form id="edit_activity{{ $activity->id }}"
+                                                                        action="{{ route('activity.update', $activity->id) }}"
+                                                                        method="POST" enctype="multipart/form-data">
                                                                         @csrf
                                                                         @method('PUT')
-                                                                        <input type="hidden" name="activity" id="activity">
-                                                                        <input type="hidden" name="language" id="language" value="arabic">
-                                                                        <input type="hidden" id="uploaded_images_{{ $activity->id }}" value='@json($activity->images)' />
+                                                                        <input type="hidden" name="activity"
+                                                                            id="activity">
+                                                                        <input type="hidden" name="language"
+                                                                            id="language" value="arabic">
 
                                                                         <div class="mb-3">
                                                                             <label class="form-label">Heading</label>
-                                                                            <input type="text" name="heading" id="update_heading" class="form-control">
+                                                                            <input type="text" name="heading"
+                                                                                id="update_heading"
+                                                                                class="form-control"
+                                                                                value="{{ $activity->heading }}">
                                                                         </div>
                                                                         <div class="mb-3">
                                                                             <label class="form-label">Paragraph</label>
-                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
+                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10">{{ $activity->paragraph }}</textarea>
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Main Image</label>
-                                                                            <input type="file" name="main_image" class="form-control" id="update_main_image">
+                                                                            <label class="form-label">Main
+                                                                                Image</label>
+                                                                            <input type="file" name="main_image"
+                                                                                class="form-control"
+                                                                                id="update_main_image">
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Current Main Image</label>
-                                                                            <img id="current_empty_image" src="" alt="Current Main Image" style="max-width: 100px; display: none;">
+                                                                            <label class="form-label">Current Main
+                                                                                Image</label>
+                                                                            <img id="current_empty_image"
+                                                                                src="{{ asset('storage/' . $activity->main_image) }}"
+                                                                                alt="Current Main Image"
+                                                                                style="max-width: 100px;">
                                                                         </div>
 
-                                                                        <div class="mb-3" id="uploaded_images_container">
-                                                                            <!-- Uploaded images will be displayed here -->
+                                                                        <!-- Display uploaded images -->
+                                                                        <div class="mb-3"
+                                                                            id="uploaded_images_container">
+                                                                            <label class="form-label">Uploaded
+                                                                                Images:</label>
+
+                                                                            @if ($activity->images)
+                                                                                @php
+                                                                                    $decodedImages = json_decode(
+                                                                                        $activity->images,
+                                                                                        true,
+                                                                                    ); // Decoding as associative array
+                                                                                @endphp
+                                                                                @if (is_array($decodedImages) && count($decodedImages) > 0)
+                                                                                    <label class="form-label">Existing
+                                                                                        Images:</label><br>
+                                                                                    @foreach ($decodedImages as $image)
+                                                                                        <div class="existing-image"
+                                                                                            style="position: relative; display: inline-block; margin-right: 10px;">
+                                                                                            <img src="{{ asset('storage/' . $image['url']) }}"
+                                                                                                width="100px"
+                                                                                                height="100px"
+                                                                                                class="rounded mx-2">
+                                                                                            <span class="remove-icon"
+                                                                                                onclick="removeImage(this)">×</span>
+                                                                                            <input type="hidden"
+                                                                                                name="existing_images[]"
+                                                                                                value="{{ $image['url'] }}">
+                                                                                        </div>
+                                                                                    @endforeach
+                                                                                @endif
+                                                                            @endif
+
                                                                         </div>
 
+
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Image (Upload new image to replace the old one)</label>
-                                                                            <input type="file" name="images[]" accept="image/*" id="update_images" class="form-control" multiple>
+                                                                            <label class="form-label">Image (Upload new
+                                                                                image to replace the old one)</label>
+                                                                            <input type="file" name="images[]"
+                                                                                accept="image/*" id="update_images"
+                                                                                class="form-control" multiple>
                                                                         </div>
                                                                     </form>
                                                                 </div>
                                                                 <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                    <button type="submit" form="edit_activity{{ $activity->id }}" class="btn btn-warning text-dark">Update</button>
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <button type="submit"
+                                                                        form="edit_activity{{ $activity->id }}"
+                                                                        class="btn btn-warning text-dark">Update</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -948,15 +1010,16 @@
                                                 @endforeach
                                             @else
                                                 <tr>
-                                                    <td colspan="4">No cards found.</td>
+                                                    <td colspan="4">No activities found.</td>
                                                 </tr>
                                             @endif
                                         @else
                                             <tr>
-                                                <td colspan="4">No cards found.</td>
+                                                <td colspan="4">No activities found.</td>
                                             </tr>
                                         @endif
                                     </tbody>
+
 
                                 </table>
                             </div>
