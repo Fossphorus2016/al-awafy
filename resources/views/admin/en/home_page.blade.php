@@ -122,7 +122,7 @@
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
                                                 <input type="file" class="form-control" name="banner_1_image"
-                                                    id="bannerImageInput1">
+                                                    id="imgS1">
                                                 @error('banner_1_image')
                                                     <p class="text-danger">{{ $message }}</p>
                                                 @enderror
@@ -131,11 +131,11 @@
                                         <div class="col-12">
                                             @if ($home_english && $home_english->banner_1_image)
                                                 <img src="{{ asset('storage/' . $home_english->banner_1_image) }}"
-                                                    alt="Uploaded Image" id="uploadedImage1"
+                                                    alt="Uploaded Image" id="imgU1"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @else
                                                 <img src="{{ asset('assets/images/download (4).png') }}"
-                                                    alt="Default Image" id="uploadedImage1"
+                                                    alt="Default Image" id="imgU1"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @endif
                                         </div>
@@ -187,7 +187,7 @@
 
                                             <div>
                                                 <label for="">Banner Image</label>
-                                                <input type="file" class="form-control" id="bannerImageInput2"
+                                                <input type="file" class="form-control" id="imgS2"
                                                     name="banner_2_image">
                                                 <p class="text-danger">
                                                 </p>
@@ -196,11 +196,11 @@
                                         <div class="col-12">
                                             @if ($home_english && $home_english->banner_2_image)
                                                 <img src="{{ asset('storage/' . $home_english->banner_2_image) }}"
-                                                    alt="Uploaded Image" id="uploadedImage2"
+                                                    alt="Uploaded Image" id="imgU2"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @else
                                                 <img src="{{ asset('assets/images/download (4).png') }}"
-                                                    alt="Default Image" id="uploadedImage2"
+                                                    alt="Default Image" id="imgU2"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @endif
                                         </div>
@@ -250,7 +250,7 @@
 
                                             <div>
                                                 <label for="">Banner Image</label>
-                                                <input type="file" class="form-control" id="bannerImageInput3"
+                                                <input type="file" class="form-control" id="imgS3"
                                                     name="banner_3_image">
                                                 <p class="text-danger">
                                                 </p>
@@ -259,11 +259,11 @@
                                         <div class="col-12">
                                             @if ($home_english && $home_english->banner_3_image)
                                                 <img src="{{ asset('storage/' . $home_english->banner_3_image) }}"
-                                                    alt="Uploaded Image" id="uploadedImage3"
+                                                    alt="Uploaded Image" id="imgU3"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @else
                                                 <img src="{{ asset('assets/images/download (4).png') }}"
-                                                    alt="Default Image" id="uploadedImage3"
+                                                    alt="Default Image" id="imgU3"
                                                     style="background-color:lightgrey; max-width: 950px; width: 100%; height: 450px; object-fit: contain;">
                                             @endif
                                         </div>
@@ -533,9 +533,15 @@
                                         </div>
                                         <div class="col-6">
 
-                                            <img src="{{ asset('storage/' . $home_english->our_brand_image_1) }}"
-                                                alt="Uploaded Image" id="uploadedBrandImage1"
-                                                style="background-color:lightgrey; max-width: 300px; width: 100%; height:190px; object-fit:contain;">
+                                            @if ($home_english && $home_english->our_brand_image_1)
+                                                <img src="{{ asset('storage/' . $home_english->our_brand_image_1) }}"
+                                                    alt="Uploaded Image" id="uploadedAboutImage1"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedAboutImage1"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @endif
 
                                         </div>
                                         <div class="col-6">
@@ -549,9 +555,17 @@
                                         </div>
                                         <div class="col-6">
 
+                                            @if ($home_english && $home_english->our_brand_logo_1)
                                             <img src="{{ asset('storage/' . $home_english->our_brand_logo_1) }}"
-                                                alt="Uploaded Image" id="uploadedBrandLogo1"
-                                                style="background-color:lightgrey; max-width: 160px; width: 100%; height:90px; object-fit:contain;">
+                                                alt="Uploaded Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @else
+                                            <img src="{{ asset('assets/images/download (4).png') }}"
+                                                alt="Default Image" id="uploadedAboutImage1"
+                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                        @endif
+
+
 
                                         </div>
                                         <div class="col-12">
@@ -877,32 +891,44 @@
                                                     </td>
                                                 </tr>
 
-                                                <div class="modal fade" id="empty_modal_edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="empty_modal_edit" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Update</h1>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                    Update</h1>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal"
+                                                                    aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <form id="edit_activity{{ $english_activity->id }}"
-                                                                      action="{{ route('eng.activity.update', $english_activity->id) }}"
-                                                                      method="POST" enctype="multipart/form-data">
+                                                                    action="{{ route('eng.activity.update', $english_activity->id) }}"
+                                                                    method="POST" enctype="multipart/form-data">
                                                                     @csrf
                                                                     @method('PUT')
 
-                                                                    <input type="hidden" name="english_activity" id="english_activity">
+                                                                    <input type="hidden" name="english_activity"
+                                                                        id="english_activity">
 
                                                                     <div class="mb-3">
-                                                                        <label class="form-label">Image (Upload new image to replace the old one)</label>
-                                                                        <input type="file" name="images[]" accept="image/*"
-                                                                               id="update_images" class="form-control" multiple>
-                                                                        <label for="" id="error_update_empty_modal_image" class="text-danger fw-bold"
-                                                                               style="display: none">Image is required</label>
+                                                                        <label class="form-label">Image (Upload new
+                                                                            image to replace the old one)</label>
+                                                                        <input type="file" name="images[]"
+                                                                            accept="image/*" id="update_images"
+                                                                            class="form-control" multiple>
+                                                                        <label for=""
+                                                                            id="error_update_empty_modal_image"
+                                                                            class="text-danger fw-bold"
+                                                                            style="display: none">Image is
+                                                                            required</label>
                                                                     </div>
 
                                                                     <div id="current_empty_image_wrapper">
-                                                                        <img id="current_empty_image" style="width: 100px; height: 100px;" class="rounded" />
+                                                                        <img id="current_empty_image"
+                                                                            style="width: 100px; height: 100px;"
+                                                                            class="rounded" />
                                                                     </div>
 
                                                                     <div id="new_image_previews" class="mb-3">
@@ -911,20 +937,29 @@
 
                                                                     <div class="mb-3">
                                                                         <label class="form-label">Heading</label>
-                                                                        <input type="text" name="empty_modal_heading" id="update_empty_modal_heading" class="form-control">
-                                                                        <label for="" id="error_update_empty_modal_heading" class="text-danger fw-bold" style="display: none">Heading is required</label>
+                                                                        <input type="text"
+                                                                            name="empty_modal_heading"
+                                                                            id="update_empty_modal_heading"
+                                                                            class="form-control">
+                                                                        <label for=""
+                                                                            id="error_update_empty_modal_heading"
+                                                                            class="text-danger fw-bold"
+                                                                            style="display: none">Heading is
+                                                                            required</label>
                                                                     </div>
 
                                                                 </form>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                <button type="button" onclick="update_section2_({{ $english_activity->id }})" class="btn btn-warning text-dark">Update</button>
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <button type="button"
+                                                                    onclick="update_section2_({{ $english_activity->id }})"
+                                                                    class="btn btn-warning text-dark">Update</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             @endforeach
                                         @else
                                             <tr>
@@ -991,20 +1026,20 @@
                 });
             }
 
-            handleImageChange('#bannerImageInput1', '#uploadedImage1');
-            handleImageChange('#bannerImageInput2', '#uploadedImage2');
-            handleImageChange('#bannerImageInput3', '#uploadedImage3');
-            handleImageChange('#aboutImageInput1', '#uploadedAboutImage1');
-            handleImageChange('#valueImageInput1', '#uploadedValueImage1');
-            handleImageChange('#valueImageInput2', '#uploadedValueImage2');
-            handleImageChange('#valueImageInput3', '#uploadedValueImage3');
-            handleImageChange('#brandImageInput1', '#uploadedBrandImage1');
-            handleImageChange('#brandImageInput2', '#uploadedBrandImage2');
-            handleImageChange('#brandImageInput3', '#uploadedBrandImage3');
-            handleImageChange('#brandLogoInput1', '#uploadedBrandLogo1');
-            handleImageChange('#brandLogoInput2', '#uploadedBrandLogo2');
-            handleImageChange('#brandLogoInput3', '#uploadedBrandLogo3');
-            handleImageChange('#activityImageInput1', '#uploadedActivityImage1');
+            handleImageChange('#imgS1', '#imgU1');
+            handleImageChange('#imgS2', '#imgU2');
+            handleImageChange('#imgS3', '#imgU3');
+            handleImageChange('#imgS4', '#imgU4');
+            handleImageChange('#imgS5', '#imgU5');
+            handleImageChange('#imgS6', '#imgU6');
+            handleImageChange('#imgS7', '#imgU7');
+            handleImageChange('#imgS8', '#imgU8');
+            handleImageChange('#imgS9', '#imgU9');
+            handleImageChange('#imgS10', '#imgU10');
+            handleImageChange('#imgS11', '#imgU11');
+            handleImageChange('#imgS12', '#imgU12');
+            handleImageChange('#imgS13', '#imgU13');
+            handleImageChange('#imgS14', '#imgU14');
 
 
             // $(".formValidation").submit(function(event) {

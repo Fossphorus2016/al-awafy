@@ -48,6 +48,40 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseZero2" aria-expanded="false" aria-controls="collapseZero2">
+                            Banner Image
+                        </button>
+                    </h2>
+                    <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div>
+                                <form action="" class="mt-5 formValidation2">
+                                    <div class="row gy-4">
+                                        <div class="col-6">
+                                            <div>
+                                                <label for="banner_1_image">Banner Image</label>
+                                                <input type="file" class="form-control " name="banner_1_image"
+                                                    id="bannerImageInput1">
+
+                                                <p class="text-danger fileError"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <img src="" alt="" id="uploadedImage1"
+                                                style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             About us section
                         </button>
@@ -267,6 +301,22 @@
                     this.submit();
                 }
             });
+
+            function handleImageChange(inputId, imageId) {
+                $(inputId).on('change', function(event) {
+                    var file = event.target.files[0];
+                    var image = $(imageId);
+
+                    if (file) {
+                        var imageUrl = URL.createObjectURL(file);
+                        image.attr('src', imageUrl).show();
+                    } else {
+                        image.hide();
+                    }
+                });
+            }
+
+            handleImageChange('#bannerImageInput1', '#uploadedImage1');
 
 
         });

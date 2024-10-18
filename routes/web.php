@@ -172,7 +172,23 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
+    Route::get('admin/home-french', [AdminHomeController::class, 'admin_home'])->name('admin.home.french');
 
+    Route::post('admin/home-french/meta/store', [AdminHomeController::class, 'french_meta_section'])->name('home.french.meta');
+    Route::post('admin/home-french/banner-1', [AdminHomeController::class, 'french_admin_home_banner_1'])->name('home.french.banner.1');
+    Route::post('admin/home-french/banner-2', [AdminHomeController::class, 'french_admin_home_banner_2'])->name('home.french.banner.2');
+    Route::post('admin/home-french/banner-3', [AdminHomeController::class, 'french_admin_home_banner_3'])->name('home.french.banner.3');
+
+    // home about route
+    Route::post('admin/home-french/about', [AdminHomeController::class, 'french_admin_home_about'])->name('home.french.about');
+
+    Route::post('admin/home-french/our-value', [AdminHomeController::class, 'french_admin_home_our_value'])->name('home.french.our.value');
+
+    Route::post('admin/home-french/section-6', [AdminHomeController::class, 'french_admin_home_section_6'])->name('home.french.section.6');
+
+    Route::post('admin/home-french/our-brand-1', [AdminHomeController::class, 'french_admin_home_our_brand_1'])->name('home.french.our.brand_1');
+    Route::post('admin/home-french/our-brand-2', [AdminHomeController::class, 'french_admin_home_our_brand_2'])->name('home.french.our.brand_2');
+    Route::post('admin/home-french/our-brand-3', [AdminHomeController::class, 'french_admin_home_our_brand_3'])->name('home.french.our.brand_3');
 
 
 
