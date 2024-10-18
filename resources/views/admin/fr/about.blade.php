@@ -12,7 +12,7 @@
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <form action="" class="mt-5 formValidation">
-                                <input type="hidden" name="language" value="english">
+                                <input type="hidden" name="language" value="french">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
@@ -57,7 +57,7 @@
                         <div class="accordion-body">
                             <div>
                                 <form action="" class="mt-5 formValidation2">
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="french">
                                     <div class="row gy-4">
                                         <div class="col-6">
                                             <div>
@@ -94,7 +94,7 @@
                             <div class="">
 
                                 <form action="" class="mt-5 formValidation2">
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="french">
                                     <div class="row gy-4">
                                         <div class="col-12">
 
@@ -144,7 +144,7 @@
                             <div class="">
 
                                 <form action="" class="mt-5 formValidation3">
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="french">
                                     <div class="row gy-4">
                                         <div class="col-12">
                                             <div class="editorOut4">
