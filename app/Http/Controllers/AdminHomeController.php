@@ -224,14 +224,16 @@ class AdminHomeController extends Controller
         Home::updateOrCreate(
             ['language' => $request->language],
             [
-                'about_section_h_blue' => $request->about_section_h_blue,
-                'about_section_h_green' => $request->about_section_h_green,
-                'about_section_h_small' => $request->about_section_h_small,
-                'about_section_p' => $request->about_section_p,
-                'about_section_url' => $request->about_section_url,
-                'about_section_image' => $about_section_image,
+                'section_6_h1' => $request->section_6_h1,
+                'section_6_h2' => $request->section_6_h2,
+                'section_6_h3' => $request->section_6_h3,
+                'section_6_url_1' => $request->section_6_url_1,
+                'section_6_url_2' => $request->section_6_url_2,
+
             ]
         );
+
+        return back()->with('message','Updated successfully');
     }
 
     public function admin_our_brand_1(Request $request)

@@ -112,8 +112,8 @@
                             <div class="menu-sub menu-sub-accordion menu-active-bg {{ Route::is('admin.brand.alawafy.*') ? 'show' : '' }}"
                                 kt-hidden-height="125">
                                 <div class="menu-item">
-                                    <a class="menu-link {{ Route::is('admin.brand.alawafy.english') ? 'active' : '' }}"
-                                        href="{{ route('admin.brand.alawafy.english') }}">
+                                    <a class="menu-link {{ Route::is('admin.brand.alawafy') ? 'active' : '' }}"
+                                        href="{{ route('admin.brand.alawafy') }}">
                                         <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
                                         <span class="menu-title">English</span>
                                     </a>
