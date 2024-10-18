@@ -11,11 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('english_activities', function (Blueprint $table) {
+        Schema::create('activities', function (Blueprint $table) {
             $table->id();
+            $table->string('language')->nullable(
+
+            );
             $table->string('heading');
             $table->string('paragraph');
-            $table->longtext('images');
+            $table->string('main_image');
+            $table->longText('images');
             $table->timestamps();
         });
     }
@@ -25,6 +29,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('english_activities');
+        Schema::dropIfExists('activities');
     }
 };
+

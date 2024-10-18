@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\AdminAboutController;
 use App\Http\Controllers\AdminBrandController;
 use App\Http\Controllers\AdminController;
@@ -163,10 +164,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/our-brand-2', [AdminHomeController::class, 'admin_our_brand_2'])->name('home.our.brand_2');
     Route::post('admin/our-brand-3', [AdminHomeController::class, 'admin_our_brand_3'])->name('home.our.brand_3');
 
-    Route::post('/admin/english-activity/store', [AdminEnglishActivityController::class, 'eng_activity_store'])->name('eng.activity.store');
-    Route::put('/admin/english-activity/update', [AdminEnglishActivityController::class, 'eng_activity_update'])->name('eng.activity.update');
+    Route::post('/admin/activity/store', [ActivityController::class, 'activity_store'])->name('activity.store');
+    Route::put('/admin/activity/update', [ActivityController::class, 'activity_update'])->name('activity.update');
 
-    Route::delete('/admin-home-page/section-2-modal/{id}/delete', [AdminEnglishActivityController::class, 'empty_Modal_delete'])->name('section2modal.delete');
+    Route::delete('/admin-home-page/section-2-modal/{id}/delete', [ActivityController::class, 'empty_Modal_delete'])->name('section2modal.delete');
 
     Route::get('admin/brand-alawafy', [AdminBrandController::class, 'admin_brand_alawafy'])->name('admin.brand.alawafy.english');
     Route::get('admin/brand-alyoum', [AdminBrandController::class, 'admin_brand_alyoum'])->name('admin.brand.alyoum.english');

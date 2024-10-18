@@ -782,6 +782,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -808,9 +809,10 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="{{ route('eng.activity.store') }}" class="mt-5"
+                                            <form action="{{ route('activity.store') }}" class="mt-5"
                                                 enctype="multipart/form-data" method="POST">
                                                 @csrf
+                                                <input type="hidden" name="language" value="english" id="">
                                                 <div class="row gy-4">
                                                     <div class="col-12">
                                                         <div>
@@ -823,6 +825,13 @@
                                                         <div>
                                                             <label for="">Paragraph</label>
                                                             <textarea class="form-control" name="paragraph" required></textarea>
+                                                            <p class="text-danger"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div>
+                                                            <label for="">Main Image</label>
+                                                           <input type="file" name="main_image" class="form-control" id="main_image">
                                                             <p class="text-danger"></p>
                                                         </div>
                                                     </div>
@@ -862,26 +871,26 @@
                                     </thead>
                                     <tbody>
 
-                                        @if (count($english_activities) > 0)
+                                        @if (count($activities) > 0)
 
-                                            @foreach ($english_activities as $english_activity)
+                                            @foreach ($activities as $activity)
                                                 <tr>
 
-                                                    <td id="activity_image_{{ $english_activity->id }}"><img
-                                                            src="{{ asset('storage/' . $english_activity->images) }}"width="50px"
+                                                    <td id="activity_main_image_{{ $activity->id }}"><img
+                                                            src="{{ asset('storage/' . $activity->main_image) }}"width="50px"
                                                             height="50px" alt=""></td>
 
-                                                    <td id="activity_heading_{{ $english_activity->id }}">
-                                                        {{ $english_activity->heading }}</td>
-                                                    <td id="activity_paragraph_{{ $english_activity->id }}">
-                                                        {{ $english_activity->paragraph }}</td>
+                                                    <td id="activity_heading_{{ $activity->id }}">
+                                                        {{ $activity->heading }}</td>
+                                                    <td id="activity_paragraph_{{ $activity->id }}">
+                                                        {{ $activity->paragraph }}</td>
                                                     <td>
                                                         <button type="button" class="btn btn-success btn-sm editbtn"
-                                                            onclick="load_section2_modal({{ $english_activity->id }})">
+                                                            onclick="load_section2_modal({{ $activity->id }})">
                                                             <i class="bi bi-pencil-square fs-4"></i>
                                                         </button>
                                                         <form
-                                                            action="{{ route('section2modal.delete', $english_activity->id) }}"
+                                                            action="{{ route('section2modal.delete', $activity->id) }}"
                                                             method="POST" class="d-inline">
                                                             @csrf
                                                             @method('DELETE')
@@ -903,14 +912,14 @@
                                                                     aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <form id="edit_activity{{ $english_activity->id }}"
-                                                                    action="{{ route('eng.activity.update', $english_activity->id) }}"
+                                                                <form id="edit_activity{{ $activity->id }}"
+                                                                    action="{{ route('activity.update', $activity->id) }}"
                                                                     method="POST" enctype="multipart/form-data">
                                                                     @csrf
                                                                     @method('PUT')
 
-                                                                    <input type="hidden" name="english_activity"
-                                                                        id="english_activity">
+                                                                    <input type="hidden" name="activity"
+                                                                        id="activity">
 
                                                                     <div class="mb-3">
                                                                         <label class="form-label">Image (Upload new
@@ -954,7 +963,7 @@
                                                                 <button type="button" class="btn btn-secondary"
                                                                     data-bs-dismiss="modal">Close</button>
                                                                 <button type="button"
-                                                                    onclick="update_section2_({{ $english_activity->id }})"
+                                                                    onclick="update_section2_({{ $activity->id }})"
                                                                     class="btn btn-warning text-dark">Update</button>
                                                             </div>
                                                         </div>

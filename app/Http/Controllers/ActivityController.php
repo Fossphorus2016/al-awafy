@@ -2,25 +2,34 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\EnglishActivity;
+use App\Models\Activity;
 use Illuminate\Http\Request;
 
-class AdminEnglishActivityController extends Controller
+class ActivityController extends Controller
 {
-    public function eng_activity_store(Request $request)
+    public function activity_store(Request $request)
     {
+        // Validate the incoming request data
         $request->validate([
             'heading' => 'required|string|max:255',
             'paragraph' => 'required|string',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Adjust mime types and size as needed
+            'main_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
+
+        $main_image = null;
+
+        // Handle the main image upload
+        if ($request->hasFile('main_image')) {
+            $main_image = $request->file('main_image')->store('uploads/images', 'public');
+        }
 
         $imageUrls = [];
 
-        // Handle image uploads
+        // Handle additional images upload
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $path = $image->store('uploads/images', 'public'); // Store in public storage
+                $path = $image->store('uploads/images', 'public');
                 $imageUrls[] = [
                     'url' => asset('storage/' . $path),
                     'name' => $image->getClientOriginalName(),
@@ -28,16 +37,24 @@ class AdminEnglishActivityController extends Controller
             }
         }
 
-        // Save the heading, paragraph, and images as JSON in the database
-        EnglishActivity::create([
+        // Create the activity record
+        Activity::create([
+            'language' => $request->language,
             'heading' => $request->input('heading'),
             'paragraph' => $request->input('paragraph'),
             'images' => json_encode($imageUrls),
+            'main_image' => $main_image,
         ]);
 
-
+        // Redirect back with success message
         return back()->with('back-success', 'Created successfully');
     }
+
+
+
+
+
+
 
 
     // public function empty_Modal_update(Request $request)

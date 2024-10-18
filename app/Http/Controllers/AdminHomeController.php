@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Activity;
 use App\Models\EnglishActivity;
 use App\Models\Home;
 use Illuminate\Http\Request;
@@ -12,17 +13,17 @@ class AdminHomeController extends Controller
     {
         $home_english = Home::where('language', 'english')->first();
 
-        $english_activities = EnglishActivity::latest()->get();
+        $activities =  Activity::latest()->get();
 
 
-        return view('admin.en.home_page', compact('home_english', 'english_activities'));
+        return view('admin.en.home_page', compact('home_english', 'activities'));
     }
 
     public function admin_home_french()
     {
         $home_french = Home::where('language', 'french')->first();
 
-        $english_activities = EnglishActivity::latest()->get();
+        $english_activities =  Activity::latest()->get();
 
 
         return view('admin.fr.home_page', compact('home_french', 'english_activities'));
@@ -32,7 +33,7 @@ class AdminHomeController extends Controller
     {
         $home_arabic = Home::where('language', 'arabic')->first();
 
-        $english_activities = EnglishActivity::latest()->get();
+        $english_activities =  Activity::latest()->get();
 
 
         return view('admin.ar.home_page', compact('home_arabic'));
@@ -375,7 +376,7 @@ class AdminHomeController extends Controller
     {
         $home_french = Home::where('language', 'french')->first();
 
-        $english_activities = EnglishActivity::latest()->get();
+        $english_activities =  Activity::latest()->get();
 
 
         return view('admin.fr.home_page', compact('home_french', 'english_activities'));
