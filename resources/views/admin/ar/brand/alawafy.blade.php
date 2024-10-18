@@ -12,7 +12,7 @@
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <form action="" class="mt-5 formValidation">
-                                <input type="hidden" name="language" value="english">
+                                <input type="hidden" name="language" value="arabic">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
@@ -57,7 +57,7 @@
                         <div class="accordion-body">
                             <div>
                                 <form action="" class="mt-5 formValidation2">
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="arabic">
                                     <div class="row gy-4">
                                         <div class="col-6">
                                             <div>
@@ -94,7 +94,7 @@
                             <div class="">
 
                                 <form action="" class="mt-5 formValidation">
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="arabic">
                                     <div class="row gy-4">
                                         <div class="col-6">
 
@@ -142,7 +142,7 @@
                         <div class="accordion-body">
                             <div>
                                 <form action="" class="mt-5 formValidation2">
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="arabic">
                                     <div class="row gy-4">
                                         <div class="col-6">
                                             <div>
@@ -193,7 +193,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <form action="" class="mt-5 formValidation4">
-                                                <input type="hidden" name="language" value="english">
+                                                <input type="hidden" name="language" value="arabic">
                                                 <div class="row gy-4">
                                                     <div class="col-12">
 
