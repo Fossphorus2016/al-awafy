@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Activity;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ActivityController extends Controller
 {
@@ -57,29 +58,43 @@ class ActivityController extends Controller
 
 
 
-    // public function empty_Modal_update(Request $request)
-    // {
+    public function activity_update(Request $request)
+    {
 
 
-    //     $empty = HomeEmptyCard::findOrFail($request->update_empty_id);
+        $empty = Activity::findOrFail($request->activity);
 
 
-    //     $empty->empty_modal_heading = $request->empty_modal_heading;
-    //     $empty->empty_modal_paragraph = $request->empty_modal_paragraph;
-    //     $empty->empty_modal_image_alt = $request->empty_modal_image_alt;
-
-    //     // Handle image upload
-    //     if ($request->hasFile('empty_modal_image')) {
-    //         $imagePath = $request->file('empty_modal_image')->store('home_page', 'public');
-    //         $empty->empty_modal_image = $imagePath;
-    //     }
+        $empty->heading = $request->heading;
+        $empty->paragraph = $request->paragraph;
 
 
-    //     $empty->save();
+        // Handle image upload
+        if ($request->hasFile('main_image')) {
+            $imagePath = $request->file('main_image')->store('activity', 'public');
+            $empty->main_image = $imagePath;
+        }
+
+        $imageUrls = [];
+
+        // Handle additional images upload
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $image) {
+                $path = $image->store('uploads/images', 'public');
+                $imageUrls[] = [
+                    'url' => asset('storage/' . $path),
+                    'name' => $image->getClientOriginalName(),
+                ];
+            }
+        }
+        $empty->save();
 
 
-    //     return redirect()->back()->with('back-success', 'Updated successfully.');
-    // }
+        return redirect()->back()->with('back-success', 'Updated successfully.');
+    }
+
+
+
 
 
     // public function empty_Modal_delete($id)

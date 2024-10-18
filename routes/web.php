@@ -165,7 +165,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/our-brand-3', [AdminHomeController::class, 'admin_our_brand_3'])->name('home.our.brand_3');
 
     Route::post('/admin/activity/store', [ActivityController::class, 'activity_store'])->name('activity.store');
-    Route::put('/admin/activity/update', [ActivityController::class, 'activity_update'])->name('activity.update');
+    Route::put('/admin/activity/{id}/update', [ActivityController::class, 'activity_update'])->name('activity.update');
 
     Route::delete('/admin-home-page/section-2-modal/{id}/delete', [ActivityController::class, 'empty_Modal_delete'])->name('section2modal.delete');
 
