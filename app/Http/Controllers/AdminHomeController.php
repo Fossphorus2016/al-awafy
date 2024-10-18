@@ -233,7 +233,7 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with('message','Updated successfully');
+        return back()->with('message', 'Updated successfully');
     }
 
     public function admin_our_brand_1(Request $request)
@@ -241,13 +241,10 @@ class AdminHomeController extends Controller
         $request->validate([
             'our_brand_1' => 'required',
 
-            // Add image validation rules if needed
+
         ]);
 
-        // Find the first home record with the English language
-        $home = Home::where('language', 'english')->first();
 
-        // Initialize image variables
         $our_brand_image_1 = null;
         $our_brand_logo_1 = null;
 
@@ -260,28 +257,17 @@ class AdminHomeController extends Controller
         }
 
 
-        if ($home) {
-
-            $home->update([
-                'our_brand_1' => $request->input('our_brand_1'),
-                'our_brand_image_1' => $our_brand_image_1 ?? $home->our_brand_image_1,
-                'our_brand_logo_1' => $our_brand_logo_1 ?? $home->our_brand_logo_1,
-            ]);
-
-            return back()->with('message', 'Updated successfully.');
-        } else {
-            Home::create([
-                'language' => 'english',
-
-                'our_brand_1' => $request->input('our_brand_1'),
+        Home::updateOrCreate(
+            ['language' => $request->language],
+            [
+                'our_brand_1' => $request->our_brand_1,
 
                 'our_brand_image_1' => $our_brand_image_1,
                 'our_brand_logo_1' => $our_brand_logo_1,
+            ]
+        );
 
-            ]);
-
-            return back()->with('message', 'Created successfully.');
-        }
+        return back()->with('message', 'created successfully');
     }
 
     public function admin_our_brand_2(Request $request)
@@ -289,10 +275,10 @@ class AdminHomeController extends Controller
         $request->validate([
             'our_brand_2' => 'required',
 
+
         ]);
 
-        $home = Home::where('language', 'english')->first();
-        // Initialize image variables
+
         $our_brand_image_2 = null;
         $our_brand_logo_2 = null;
 
@@ -305,23 +291,17 @@ class AdminHomeController extends Controller
         }
 
 
-        if ($home) {
-            $home->update([
-                'our_brand_2' => $request->input('our_brand_2'),
-                'our_brand_image_2' => $our_brand_image_2 ?? $home->our_brand_image_2,
-                'our_brand_logo_2' => $our_brand_logo_2 ?? $home->our_brand_logo_2,
-            ]);
-            return back()->with('message', 'Updated successfully.');
-        } else {
-            Home::create([
-                'language' => 'english',
-                'our_brand_2' => $request->input('our_brand_2'),
+        Home::updateOrCreate(
+            ['language' => $request->language],
+            [
+                'our_brand_2' => $request->our_brand_2,
+
                 'our_brand_image_2' => $our_brand_image_2,
                 'our_brand_logo_2' => $our_brand_logo_2,
-            ]);
+            ]
+        );
 
-            return back()->with('message', 'Created successfully.');
-        }
+        return back()->with('message', 'created successfully');
     }
 
     public function admin_our_brand_3(Request $request)
@@ -329,10 +309,10 @@ class AdminHomeController extends Controller
         $request->validate([
             'our_brand_3' => 'required',
 
+
         ]);
 
-        $home = Home::where('language', 'english')->first();
-        // Initialize image variables
+
         $our_brand_image_3 = null;
         $our_brand_logo_3 = null;
 
@@ -345,23 +325,17 @@ class AdminHomeController extends Controller
         }
 
 
-        if ($home) {
-            $home->update([
-                'our_brand_3' => $request->input('our_brand_3'),
-                'our_brand_image_3' => $our_brand_image_3 ?? $home->our_brand_image_3,
-                'our_brand_logo_3' => $our_brand_logo_3 ?? $home->our_brand_logo_3,
-            ]);
-            return back()->with('message', 'Updated successfully.');
-        } else {
-            Home::create([
-                'language' => 'english',
-                'our_brand_3' => $request->input('our_brand_3'),
+        Home::updateOrCreate(
+            ['language' => $request->language],
+            [
+                'our_brand_3' => $request->our_brand_3,
+
                 'our_brand_image_3' => $our_brand_image_3,
                 'our_brand_logo_3' => $our_brand_logo_3,
-            ]);
+            ]
+        );
 
-            return back()->with('message', 'Created successfully.');
-        }
+        return back()->with('message', 'created successfully');
     }
 
 
