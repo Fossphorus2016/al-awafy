@@ -859,129 +859,7 @@
                             </div>
 
 
-                            {{-- <div class="table-responsive">
 
-                                <table id="table2"
-                                    class="table table-row-bordered table-row-gray-600 table-striped table-hover table-responsive gy-5 rounded dataTable">
-                                    <thead>
-
-                                        <th class="">Heading</th>
-                                        <th class="">Paragraph</th>
-                                        <th class="">ACTION</th>
-
-                                    </thead>
-                                    <tbody>
-
-                                        @if (count($activities) > 0)
-
-                                            @foreach ($activities as $activity)
-                                                <tr>
-
-                                                    <td id="activity_main_image_{{ $activity->id }}"><img src="{{ asset('storage/' . $activity->main_image) }}"width="50px"  height="50px" alt=""></td>
-
-                                                    <td id="activity_heading_{{ $activity->id }}">  {{ $activity->heading }}</td>
-                                                    <td id="activity_paragraph_{{ $activity->id }}"> {{ $activity->paragraph }}</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-success btn-sm editbtn"
-                                                            onclick="load_section2_modal({{ $activity->id }})">
-                                                            <i class="bi bi-pencil-square fs-4"></i>
-                                                        </button>
-                                                        <form
-                                                            action="{{ route('section2modal.delete', $activity->id) }}"
-                                                            method="POST" class="d-inline">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" class="btn btn-danger btn-sm"><i
-                                                                    class="bi bi-trash fs-2"></i></button>
-                                                        </form>
-                                                    </td>
-                                                </tr>
-
-                                                <div class="modal fade" id="modal_edit" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                                                    Update</h1>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal"
-                                                                    aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <form id="edit_activity" action=""
-                                                                    method="POST" enctype="multipart/form-data">
-                                                                    @csrf
-                                                                    @method('PUT')
-
-                                                                    <input type="hidden" name="activity"
-                                                                        id="activity">
-                                                                    <input type="hidden" name="language"
-                                                                        value="english">
-
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Heading</label>
-                                                                        <input type="text" name="heading"
-                                                                            id="update_heading" class="form-control">
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Paragraph</label>
-                                                                        <textarea name="paragraph" id="update_paragraph" class="form-control" cols="1" rows="1"></textarea>
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Main Image</label>
-                                                                        <div id="main_image_preview" class="mb-2">
-                                                                            <img id="current_empty_image"
-                                                                                src=""
-                                                                                alt="Current Main Image"
-                                                                                style="max-width: 100px; display: none;">
-                                                                        </div>
-                                                                        <input type="file" name="main_image"
-                                                                            id="update_image" class="form-control"
-                                                                            accept="image/*"
-                                                                            onchange="previewImage(event, 'current_empty_image')">
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Previously Uploaded
-                                                                            Images</label>
-                                                                        <div id="uploaded_images_container"
-                                                                            class="mb-2"></div>
-                                                                        <!-- Container for previously uploaded images -->
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">New Images (Upload
-                                                                            new images to replace the old ones)</label>
-                                                                        <input type="file" name="images[]"
-                                                                            accept="image/*" id="update_images"
-                                                                            class="form-control" multiple
-                                                                            onchange="previewMultipleImages(event)">
-                                                                        <div id="new_images_preview" class="mt-2">
-                                                                        </div>
-                                                                        <!-- Container for new images previews -->
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button"
-                                                                            class="btn btn-secondary"
-                                                                            data-bs-dismiss="modal">Close</button>
-                                                                        <button type="submit"
-                                                                            class="btn btn-warning text-dark">Update</button>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            @endforeach
-                                        @else
-                                            <tr>
-                                                <td colspan="5">No cards found.</td>
-                                            </tr>
-                                        @endif
-
-
-                                    </tbody>
-                                </table>
-                            </div> --}}
                             <div class="table-responsive">
                                 <table id="table2"
                                     class="table table-row-bordered table-row-gray-600 table-striped table-hover table-responsive gy-5 rounded dataTable">
@@ -994,25 +872,20 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @if (is_array($activities) || $activities instanceof Countable)
                                         @if (count($activities) > 0)
                                             @foreach ($activities as $activity)
                                                 <tr>
                                                     <td id="activity_main_image_{{ $activity->id }}">
-                                                        <img src="{{ asset('storage/' . $activity->main_image) }}"
-                                                            width="50px" height="50px" alt="">
+                                                        <img src="{{ asset('storage/' . $activity->main_image) }}" width="50px" height="50px" alt="">
                                                     </td>
-                                                    <td id="activity_heading_{{ $activity->id }}">
-                                                        {{ $activity->heading }}</td>
-                                                    <td id="activity_paragraph_{{ $activity->id }}">
-                                                        {{ $activity->paragraph }}</td>
+                                                    <td id="activity_heading_{{ $activity->id }}">{{ $activity->heading }}</td>
+                                                    <td id="activity_paragraph_{{ $activity->id }}">{{ $activity->paragraph }}</td>
                                                     <td>
-                                                        <button type="button" class="btn btn-success btn-sm editbtn"
-                                                            onclick="load_section2_modal({{ $activity->id }})">
+                                                        <button type="button" class="btn btn-success btn-sm editbtn" onclick="load_section2_modal({{ $activity->id }})">
                                                             <i class="bi bi-pencil-square fs-4"></i>
                                                         </button>
-                                                        <form
-                                                            action="{{ route('section2modal.delete', $activity->id) }}"
-                                                            method="POST" class="d-inline">
+                                                        <form action="{{ route('activity.delete', $activity->id) }}" method="POST" class="d-inline">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button type="submit" class="btn btn-danger btn-sm">
@@ -1023,35 +896,24 @@
                                                 </tr>
 
                                                 <!-- Modal -->
-                                                <div class="modal fade" id="empty_modal_edit" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="empty_modal_edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                                                    Update</h1>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal"
-                                                                    aria-label="Close"></button>
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Update</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <form id="edit_activity{{ $activity->id }}"
-                                                                    action="{{ route('activity.update', $activity->id) }}"
-                                                                    method="POST" enctype="multipart/form-data">
+                                                                <form id="edit_activity{{ $activity->id }}" action="{{ route('activity.update', $activity->id) }}" method="POST" enctype="multipart/form-data">
                                                                     @csrf
                                                                     @method('PUT')
-                                                                    <input type="hidden" name="activity"
-                                                                        id="activity">
-                                                                    <input type="hidden" name="language"
-                                                                        id="language" value="english">
-                                                                    <input type="hidden"
-                                                                        id="uploaded_images_{{ $activity->id }}"
-                                                                        value='@json($activity->images)' />
+                                                                    <input type="hidden" name="activity" id="activity">
+                                                                    <input type="hidden" name="language" id="language" value="arabic">
+                                                                    <input type="hidden" id="uploaded_images_{{ $activity->id }}" value='@json($activity->images)' />
 
                                                                     <div class="mb-3">
                                                                         <label class="form-label">Heading</label>
-                                                                        <input type="text" name="heading"
-                                                                            id="update_heading" class="form-control">
+                                                                        <input type="text" name="heading" id="update_heading" class="form-control">
                                                                     </div>
                                                                     <div class="mb-3">
                                                                         <label class="form-label">Paragraph</label>
@@ -1059,36 +921,26 @@
                                                                     </div>
                                                                     <div class="mb-3">
                                                                         <label class="form-label">Main Image</label>
-                                                                         <input type="file" name="main_image" class="form-control" id="update_main_image">
+                                                                        <input type="file" name="main_image" class="form-control" id="update_main_image">
                                                                     </div>
                                                                     <div class="mb-3">
-                                                                        <label class="form-label">Main Image</label>
-                                                                        <img id="current_empty_image" src=""
-                                                                            alt="Current Main Image"
-                                                                            style="max-width: 100px; display: none;">
+                                                                        <label class="form-label">Current Main Image</label>
+                                                                        <img id="current_empty_image" src="" alt="Current Main Image" style="max-width: 100px; display: none;">
                                                                     </div>
 
-                                                                    <!-- Container for uploaded images -->
-                                                                    <div class="mb-3"
-                                                                        id="uploaded_images_container">
+                                                                    <div class="mb-3" id="uploaded_images_container">
                                                                         <!-- Uploaded images will be displayed here -->
                                                                     </div>
 
                                                                     <div class="mb-3">
-                                                                        <label class="form-label">Image (Upload new
-                                                                            image to replace the old one)</label>
-                                                                        <input type="file" name="images[]"
-                                                                            accept="image/*" id="update_images"
-                                                                            class="form-control" multiple>
+                                                                        <label class="form-label">Image (Upload new image to replace the old one)</label>
+                                                                        <input type="file" name="images[]" accept="image/*" id="update_images" class="form-control" multiple>
                                                                     </div>
                                                                 </form>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <button type="submit"
-                                                                    form="edit_activity{{ $activity->id }}"
-                                                                    class="btn btn-warning text-dark">Update</button>
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="submit" form="edit_activity{{ $activity->id }}" class="btn btn-warning text-dark">Update</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1099,6 +951,11 @@
                                                 <td colspan="4">No cards found.</td>
                                             </tr>
                                         @endif
+                                    @else
+                                        <tr>
+                                            <td colspan="4">No cards found.</td>
+                                        </tr>
+                                    @endif
                                     </tbody>
                                 </table>
                             </div>
@@ -1287,57 +1144,22 @@
         });
 
 
-        function load_section2_modal(id) {
-    // Set the form action URL for the specific activity
-    $("#edit_activity" + id).attr("action", `/activity/${id}`); // Ensure the correct route for updating
+        function load_section2_modal(activityId) {
+            // Get current values
+            const heading = document.getElementById(`activity_heading_${activityId}`).innerText;
+            const paragraph = document.getElementById(`activity_paragraph_${activityId}`).innerText;
+            const mainImage = document.getElementById(`activity_main_image_${activityId}`).getElementsByTagName('img')[0]
+                .src;
 
-    // Populate modal fields with existing values
-    $("#update_heading").val($("#activity_heading_" + id).text());
-    $("#update_paragraph").val($("#activity_paragraph_" + id).text());
+            // Populate modal fields
+            document.getElementById('update_heading').value = heading;
+            document.getElementById('update_paragraph').value = paragraph;
+            document.getElementById('current_empty_image').src = mainImage;
+            document.getElementById('current_empty_image').style.display = 'block';
 
-    // Set the image source for the current main image (if needed for preview)
-    var mainImageUrl = $("#activity_main_image_" + id).find('img').attr('src');
-    $("#current_empty_image").attr('src', mainImageUrl).show();
-
-    // Get the value of the hidden input for previously uploaded images
-    var uploadedImagesVal = $("#uploaded_images_" + id).val();
-
-    // Initialize uploadedImages as an empty array
-    var uploadedImages = [];
-
-    // Check if the value is not empty or undefined before parsing
-    if (uploadedImagesVal) {
-        try {
-            // Parse the JSON and ensure it's an array
-            uploadedImages = JSON.parse(uploadedImagesVal);
-
-            // If parsed result is not an array, reset it to an empty array
-            if (!Array.isArray(uploadedImages)) {
-                uploadedImages = [];
-            }
-        } catch (e) {
-            console.error("Error parsing JSON:", e);
-            // Handle parsing error if necessary
+            // Show the modal
+            $('#empty_modal_edit').modal('show');
         }
-    }
-
-    // Display previously uploaded images
-    var uploadedImagesContainer = $("#uploaded_images_container");
-    uploadedImagesContainer.empty(); // Clear previous images
-
-    // Loop through uploaded images and append them to the container
-    uploadedImages.forEach(function(image) {
-        // Ensure that image.url and image.name are valid
-        if (image && image.url && image.name) {
-            var imgElement = `<img src="${image.url}" alt="${image.name}" style="max-width: 100px; margin-right: 10px;">`;
-            uploadedImagesContainer.append(imgElement);
-        }
-    });
-
-    // Show the modal
-    $("#empty_modal_edit").modal("show");
-}
-
     </script>
 
 </x-admin.layouts>

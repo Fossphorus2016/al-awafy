@@ -167,7 +167,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/admin/activity/store', [ActivityController::class, 'activity_store'])->name('activity.store');
     Route::put('/admin/activity/{id}/update', [ActivityController::class, 'activity_update'])->name('activity.update');
 
-    Route::delete('/admin-home-page/section-2-modal/{id}/delete', [ActivityController::class, 'empty_Modal_delete'])->name('section2modal.delete');
+    Route::delete('/admin/activity/{id}/delete', [ActivityController::class, 'activity_delete'])->name('activity.delete');
 
     Route::get('admin/brand-alawafy', [AdminBrandController::class, 'admin_brand_alawafy'])->name('admin.brand.alawafy.english');
     Route::get('admin/brand-alyoum', [AdminBrandController::class, 'admin_brand_alyoum'])->name('admin.brand.alyoum.english');

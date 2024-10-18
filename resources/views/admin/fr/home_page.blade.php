@@ -806,9 +806,11 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="{{ route('eng.activity.store') }}" class="mt-5"
+                                            <form action="{{ route('activity.store') }}" class="mt-5"
                                                 enctype="multipart/form-data" method="POST">
                                                 @csrf
+                                                <input type="hidden" name="language" value="french">
+                                                    id="">
                                                 <div class="row gy-4">
                                                     <div class="col-12">
                                                         <div>
@@ -821,6 +823,14 @@
                                                         <div>
                                                             <label for="">Paragraph</label>
                                                             <textarea class="form-control" name="paragraph" required></textarea>
+                                                            <p class="text-danger"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div>
+                                                            <label for="">Main Image</label>
+                                                            <input type="file" name="main_image"
+                                                                class="form-control" id="main_image">
                                                             <p class="text-danger"></p>
                                                         </div>
                                                     </div>
@@ -847,128 +857,108 @@
                             </div>
 
 
-                            <div class="table-responsive">
 
+                            <div class="table-responsive">
                                 <table id="table2"
                                     class="table table-row-bordered table-row-gray-600 table-striped table-hover table-responsive gy-5 rounded dataTable">
                                     <thead>
-
-                                        <th class="">Heading</th>
-                                        <th class="">Paragraph</th>
-                                        <th class="">ACTION</th>
-
+                                        <tr>
+                                            <th class="">Main Image</th>
+                                            <th class="">Heading</th>
+                                            <th class="">Paragraph</th>
+                                            <th class="">ACTION</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
+                                        @if (is_array($activities) || $activities instanceof Countable)
+                                            @if (count($activities) > 0)
+                                                @foreach ($activities as $activity)
+                                                    <tr>
+                                                        <td id="activity_main_image_{{ $activity->id }}">
+                                                            <img src="{{ asset('storage/' . $activity->main_image) }}" width="50px" height="50px" alt="">
+                                                        </td>
+                                                        <td id="activity_heading_{{ $activity->id }}">{{ $activity->heading }}</td>
+                                                        <td id="activity_paragraph_{{ $activity->id }}">{{ $activity->paragraph }}</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-success btn-sm editbtn" onclick="load_section2_modal({{ $activity->id }})">
+                                                                <i class="bi bi-pencil-square fs-4"></i>
+                                                            </button>
+                                                            <form action="{{ route('activity.delete', $activity->id) }}" method="POST" class="d-inline">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <button type="submit" class="btn btn-danger btn-sm">
+                                                                    <i class="bi bi-trash fs-2"></i>
+                                                                </button>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
 
-                                        @if (count($english_activities) > 0)
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="empty_modal_edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Update</h1>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form id="edit_activity{{ $activity->id }}" action="{{ route('activity.update', $activity->id) }}" method="POST" enctype="multipart/form-data">
+                                                                        @csrf
+                                                                        @method('PUT')
+                                                                        <input type="hidden" name="activity" id="activity">
+                                                                        <input type="hidden" name="language" id="language" value="arabic">
+                                                                        <input type="hidden" id="uploaded_images_{{ $activity->id }}" value='@json($activity->images)' />
 
-                                            @foreach ($english_activities as $english_activity)
-                                                <tr>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Heading</label>
+                                                                            <input type="text" name="heading" id="update_heading" class="form-control">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Paragraph</label>
+                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Main Image</label>
+                                                                            <input type="file" name="main_image" class="form-control" id="update_main_image">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Current Main Image</label>
+                                                                            <img id="current_empty_image" src="" alt="Current Main Image" style="max-width: 100px; display: none;">
+                                                                        </div>
 
-                                                    <td id="activity_image_{{ $english_activity->id }}"><img
-                                                            src="{{ asset('storage/' . $english_activity->images) }}"width="50px"
-                                                            height="50px" alt=""></td>
+                                                                        <div class="mb-3" id="uploaded_images_container">
+                                                                            <!-- Uploaded images will be displayed here -->
+                                                                        </div>
 
-                                                    <td id="activity_heading_{{ $english_activity->id }}">
-                                                        {{ $english_activity->heading }}</td>
-                                                    <td id="activity_paragraph_{{ $english_activity->id }}">
-                                                        {{ $english_activity->paragraph }}</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-success btn-sm editbtn"
-                                                            onclick="load_section2_modal({{ $english_activity->id }})">
-                                                            <i class="bi bi-pencil-square fs-4"></i>
-                                                        </button>
-                                                        <form
-                                                            action="{{ route('section2modal.delete', $english_activity->id) }}"
-                                                            method="POST" class="d-inline">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" class="btn btn-danger btn-sm"><i
-                                                                    class="bi bi-trash fs-2"></i></button>
-                                                        </form>
-                                                    </td>
-                                                </tr>
-
-                                                <div class="modal fade" id="empty_modal_edit" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                                                    Update</h1>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal"
-                                                                    aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <form id="edit_activity{{ $english_activity->id }}"
-                                                                    action="{{ route('eng.activity.update', $english_activity->id) }}"
-                                                                    method="POST" enctype="multipart/form-data">
-                                                                    @csrf
-                                                                    @method('PUT')
-
-                                                                    <input type="hidden" name="english_activity"
-                                                                        id="english_activity">
-
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Image (Upload new
-                                                                            image to replace the old one)</label>
-                                                                        <input type="file" name="images[]"
-                                                                            accept="image/*" id="update_images"
-                                                                            class="form-control" multiple>
-                                                                        <label for=""
-                                                                            id="error_update_empty_modal_image"
-                                                                            class="text-danger fw-bold"
-                                                                            style="display: none">Image is
-                                                                            required</label>
-                                                                    </div>
-
-                                                                    <div id="current_empty_image_wrapper">
-                                                                        <img id="current_empty_image"
-                                                                            style="width: 100px; height: 100px;"
-                                                                            class="rounded" />
-                                                                    </div>
-
-                                                                    <div id="new_image_previews" class="mb-3">
-                                                                        <!-- New image previews will be displayed here -->
-                                                                    </div>
-
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Heading</label>
-                                                                        <input type="text"
-                                                                            name="empty_modal_heading"
-                                                                            id="update_empty_modal_heading"
-                                                                            class="form-control">
-                                                                        <label for=""
-                                                                            id="error_update_empty_modal_heading"
-                                                                            class="text-danger fw-bold"
-                                                                            style="display: none">Heading is
-                                                                            required</label>
-                                                                    </div>
-
-                                                                </form>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <button type="button"
-                                                                    onclick="update_section2_({{ $english_activity->id }})"
-                                                                    class="btn btn-warning text-dark">Update</button>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Image (Upload new image to replace the old one)</label>
+                                                                            <input type="file" name="images[]" accept="image/*" id="update_images" class="form-control" multiple>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="submit" form="edit_activity{{ $activity->id }}" class="btn btn-warning text-dark">Update</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            @endforeach
+                                                @endforeach
+                                            @else
+                                                <tr>
+                                                    <td colspan="4">No cards found.</td>
+                                                </tr>
+                                            @endif
                                         @else
                                             <tr>
-                                                <td colspan="5">No cards found.</td>
+                                                <td colspan="4">No cards found.</td>
                                             </tr>
                                         @endif
-
-
                                     </tbody>
+
                                 </table>
                             </div>
+
 
                         </div>
                     </div>
@@ -1153,17 +1143,21 @@
         });
 
 
-        function load_section2_modal(id) {
-            $("#update_empty_id").val(id);
-            $("#update_empty_modal_image_alt").val($("#empty_image_alt" + id).html());
-            $("#update_empty_modal_heading").val($("#empty_heading" + id).html());
-            $("#update_empty_modal_paragraph").val($("#empty_paragraph" + id).html());
+        function load_section2_modal(activityId) {
+            // Get current values
+            const heading = document.getElementById(`activity_heading_${activityId}`).innerText;
+            const paragraph = document.getElementById(`activity_paragraph_${activityId}`).innerText;
+            const mainImage = document.getElementById(`activity_main_image_${activityId}`).getElementsByTagName('img')[0]
+                .src;
 
-            // Set the image source
-            var imageUrl = $("#empty_image" + id).find('img').attr('src');
-            $("#current_empty_image").attr('src', imageUrl).show();
+            // Populate modal fields
+            document.getElementById('update_heading').value = heading;
+            document.getElementById('update_paragraph').value = paragraph;
+            document.getElementById('current_empty_image').src = mainImage;
+            document.getElementById('current_empty_image').style.display = 'block';
 
-            $("#edit_activity").modal("show");
+            // Show the modal
+            $('#empty_modal_edit').modal('show');
         }
     </script>
 
