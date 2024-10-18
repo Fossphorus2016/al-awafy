@@ -4,11 +4,8 @@ use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\AdminAboutController;
 use App\Http\Controllers\AdminBrandController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\AdminEnglishActivityController;
-use App\Http\Controllers\AdminEnglishBrandController;
 use App\Http\Controllers\AdminHomeController;
-use App\Http\Controllers\AdminHomeFrecnhController;
-use App\Http\Controllers\FormController;
+ use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -143,17 +140,19 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-    // English Home Route
+
     Route::get('admin/home-english', [AdminHomeController::class, 'admin_home_english'])->name('admin.home.english');
     Route::get('admin/home-french', [AdminHomeController::class, 'admin_home_french'])->name('admin.home.french');
     Route::get('admin/home-arabic', [AdminHomeController::class, 'admin_home_arabic'])->name('admin.home.arabic');
 
+
+    // Home page routes
     Route::post('admin/meta/store', [AdminHomeController::class, 'meta_section'])->name('home.meta');
     Route::post('admin/banner-1', [AdminHomeController::class, 'admin_banner_1'])->name('home.banner.1');
     Route::post('admin/banner-2', [AdminHomeController::class, 'admin_banner_2'])->name('home.banner.2');
     Route::post('admin/banner-3', [AdminHomeController::class, 'admin_banner_3'])->name('home.banner.3');
 
-    // home about route
+
     Route::post('admin/about', [AdminHomeController::class, 'admin_about'])->name('home.about');
 
     Route::post('admin/our-value', [AdminHomeController::class, 'admin_our_value'])->name('home.our.value');
@@ -184,6 +183,14 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
+    // About Page
+    Route::get('admin/about-english', [AdminAboutController::class, 'admin_about_english'])->name('admin.about.english');
+    Route::get('admin/about-french', [AdminAboutController::class, 'admin_about_french'])->name('admin.about.french');
+    Route::get('admin/about-arabic', [AdminAboutController::class, 'admin_about_arabic'])->name('admin.about.arabic');
 
-    Route::get('admin/about-english', [AdminAboutController::class, 'admin_about'])->name('admin.about.english');
+    Route::post('admin/about-meta/store', [AdminAboutController::class, 'about_meta_section'])->name('about.meta');
+    Route::post('admin/about-sec-1', [AdminAboutController::class, 'admin_section_1'])->name('about.section.1');
+    Route::post('admin/about-sec-2', [AdminAboutController::class, 'admin_section_2'])->name('about.section.2');
+    Route::post('admin/about-sec-3', [AdminAboutController::class, 'admin_section_3'])->name('about.section.3');
+
 });

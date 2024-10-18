@@ -68,13 +68,13 @@
                                         class="bullet bullet-dot"></span></span><span
                                     class="menu-title">English</span></a></div>
 
-                        <div class="menu-item"><a class="menu-link"
-                                href="/metronic8/demo1/pages/user-profile/projects.html"><span class="menu-bullet"><span
+                        <div class="menu-item {{ Route::is('admin.about.arabic') ? 'active' : '' }}"><a class="menu-link"
+                                href="{{route('admin.about.arabic')}} "><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span
                                     class="menu-title">Arabic</span></a></div>
 
-                        <div class="menu-item"><a class="menu-link"
-                                href="/metronic8/demo1/pages/user-profile/campaigns.html"><span
+                        <div class="menu-item {{ Route::is('admin.about.french') ? 'active' : '' }}"><a class="menu-link"
+                                href="{{route('admin.about.french')}}"><span
                                     class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
                                     class="menu-title">French</span></a></div>
 

@@ -2,6 +2,7 @@
     <div class="card">
         <div class="card-body">
             <div class="accordion" id="accordionExample">
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -11,14 +12,16 @@
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="" class="mt-5 formValidation">
+                            <form action="{{ route('about.meta') }}" method="POST" class="mt-5 formValidation">
+                                @csrf
                                 <input type="hidden" name="language" value="arabic">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
                                         <div>
                                             <label for="">Meta title</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="meta_title"
+                                                value="{{ old('meta_title', $about_arabic->meta_title ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -26,14 +29,16 @@
 
                                         <div>
                                             <label for="">Meta Description</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="meta_description"
+                                                value="{{ old('meta_description', $about_arabic->meta_description ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div>
                                             <label for="">Canonical</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="canonical"
+                                                value="{{ old('canonical', $about_arabic->canonical ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -46,24 +51,28 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero2" aria-expanded="false" aria-controls="collapseZero2">
-                           Banner Section
+                            Banner Section
                         </button>
                     </h2>
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div>
-                                <form action="" class="mt-5 formValidation2">
+                                <form action="{{ route('about.section.1') }}" method="POST"
+                                    class="mt-5 formValidation2" enctype="multipart/form-data">
+                                    @csrf
                                     <input type="hidden" name="language" value="arabic">
                                     <div class="row gy-4">
                                         <div class="col-6">
 
                                             <div class="editorOut12">
                                                 <label for="">Heading 1</label>
-                                                <input class="form-control"></input>
+                                                <input class="form-control" name="sec1_h1"
+                                                    value="{{ old('sec1_h1', $about_arabic->sec1_h1 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -71,22 +80,30 @@
 
                                             <div class="class="editorOut13>
                                                 <label for="">Heading 2</label>
-                                                <input class="form-control"></input>
+                                                <input class="form-control" name="sec1_h2"
+                                                    value="{{ old('sec1_h2', $about_arabic->sec1_h2 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
-                                                <input type="file" class="form-control " name="banner_1_image"
+                                                <input type="file" class="form-control " name="sec1_image"
                                                     id="bannerImageInput1">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
                                         </div>
+
                                         <div class="col-12">
-                                            <img src="" alt="" id="uploadedImage1"
-                                                style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                            @if ($about_arabic && $about_arabic->sec1_image)
+                                                <img src="{{ asset('storage/' . $about_arabic->sec1_image) }}"
+                                                    alt="" id="uploadedImage1"
+                                                    style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; ">
+                                            @else
+                                                upload an image
+                                            @endif
+
                                         </div>
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
@@ -97,6 +114,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -109,14 +127,17 @@
 
                             <div class="">
 
-                                <form action="" class="mt-5 formValidation2">
+                                <form action="{{ route('about.section.2') }}" method="POST"
+                                    class="mt-5 formValidation2" enctype="multipart/form-data">
+                                    @csrf
                                     <input type="hidden" name="language" value="arabic">
                                     <div class="row gy-4">
                                         <div class="col-6">
 
                                             <div class="editorOut10">
                                                 <label for="">Heading 1</label>
-                                                <input class="form-control"></input>
+                                                <input class="form-control" name="sec2_h1"
+                                                    value="{{ old('sec2_h1', $about_arabic->sec2_h1 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -124,7 +145,8 @@
 
                                             <div class="editorOut11">
                                                 <label for="">Heading 2</label>
-                                                <input class="form-control"></input>
+                                                <input class="form-control" name="sec2_h2"
+                                                    value="{{ old('sec2_h2', $about_arabic->sec2_h2 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -132,7 +154,7 @@
 
                                             <div class="editorOut1">
                                                 <label for="">Paragraph 1</label>
-                                                <textarea id="editor1" class="editor1"></textarea>
+                                                <textarea id="editor1" class="editor1" name="sec2_p1" value="">{{ old('sec2_p1', $about_arabic->sec2_p1 ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -140,7 +162,7 @@
 
                                             <div class="editorOut2">
                                                 <label for="">Paragraph 2</label>
-                                                <textarea id="editor2" class="editor2 "></textarea>
+                                                <textarea id="editor2" class="editor2 " name="sec2_p2" value="">{{ old('sec2_p2', $about_arabic->sec2_p2 ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -148,15 +170,21 @@
                                         <div class="col-6">
                                             <div>
                                                 <label for="">About Image</label>
-                                                <input type="file" class="form-control " name=""
+                                                <input type="file" class="form-control " name="sec2_image"
+                                                    id="sec2_image
                                                     id="imgS11">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <img src="" alt="" id="imgU11"
-                                                style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                            @if ($about_arabic && $about_arabic->sec2_image)
+                                                <img src="{{ asset('storage/' . $about_arabic->sec2_image) }}"
+                                                    alt="" id="imgU11"
+                                                    style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain;">
+                                            @else
+                                                upload an image
+                                            @endif
                                         </div>
 
 
@@ -170,6 +198,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -182,13 +211,16 @@
 
                             <div class="">
 
-                                <form action="" class="mt-5 formValidation3">
+                                <form action="{{ route('about.section.3') }}" method="POST"
+                                    class="mt-5 formValidation3" enctype="multipart/form-data">
+                                    @csrf
                                     <input type="hidden" name="language" value="arabic">
                                     <div class="row gy-4">
                                         <div class="col-12">
                                             <div class="editorOut4">
                                                 <label for="">Heading 1</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="sec3_h1"
+                                                    value="{{ old('sec3_h1', $about_arabic->sec3_h1 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
                                             </div>
 
@@ -196,7 +228,8 @@
                                         <div class="col-12">
                                             <div class="editorOut5">
                                                 <label for="">Heading 2</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="sec3_h2"
+                                                    value="{{ old('sec3_h2', $about_arabic->sec3_h2 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
                                             </div>
 
@@ -204,7 +237,7 @@
                                         <div class="col-12">
                                             <div class="editorOut6">
                                                 <label for="">Paragraph 1</label>
-                                                <textarea class="editor4"></textarea>
+                                                <textarea class="editor4" name="sec3_p1" value="">{{ old('sec3_p1', $about_arabic->sec3_p1 ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
 
@@ -212,7 +245,8 @@
                                         <div class="col-12">
                                             <div class="editorOut8">
                                                 <label for="">Heading 1</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="sec3_h3"
+                                                    value="{{ old('sec3_h3', $about_arabic->sec3_h3 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
                                             </div>
 
@@ -220,7 +254,8 @@
                                         <div class="col-12">
                                             <div class="editorOut9">
                                                 <label for="">Heading 2</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="sec3_h4"
+                                                    value="{{ old('sec3_h4', $about_arabic->sec3_h4 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
                                             </div>
 
@@ -229,7 +264,7 @@
                                         <div class="col-12">
                                             <div class="editorOut7">
                                                 <label for="">Paragraph 1</label>
-                                                <textarea class="editor5"></textarea>
+                                                <textarea class="editor5" name="sec3_p2" value="">{{ old('sec3_p2', $about_arabic->sec3_p2 ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
 
@@ -238,15 +273,19 @@
                                         <div class="col-6">
                                             <div>
                                                 <label for="">About Image</label>
-                                                <input type="file" class="form-control " name=""
+                                                <input type="file" class="form-control " name="sec3_image"
                                                     id="imgS12">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <img src="" alt="" id="imgU12"
-                                                style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                            @if ($about_arabic && $about_arabic->sec3_image)
+                                                <img src="{{asset('storage/'.$about_arabic->sec3_image)}}" alt="" id="imgU12"
+                                                    style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain;">
+                                            @else
+                                            upload an image
+                                            @endif
                                         </div>
 
 
