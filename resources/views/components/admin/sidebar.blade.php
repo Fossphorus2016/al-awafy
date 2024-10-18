@@ -41,14 +41,13 @@
                                         class="bullet bullet-dot"></span></span><span
                                     class="menu-title">English</span></a></div>
 
-                        <div class="menu-item"><a class="menu-link"
-                                href=""><span class="menu-bullet"><span
+                        <div class="menu-item"><a class="menu-link" href=""><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span
                                     class="menu-title">Arabic</span></a></div>
 
                         <div class="menu-item"><a class="menu-link {{ Route::is('admin.home.french') ? 'active' : '' }}"
-                                href="{{ route('admin.home.french') }}"><span
-                                    class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
+                                href="{{ route('admin.home.french') }}"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
                                     class="menu-title">French</span></a></div>
 
 
@@ -86,82 +85,70 @@
 
 
 
-                <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><span class="menu-link"><span
-                            class="menu-icon"><i class="ki-duotone ki-credit-cart fs-2"><span
-                                    class="path1"></span><span class="path2"></span></i></span><span
-                            class="menu-title">Brands</span><span class="menu-arrow"></span></span>
-                    <div class="menu-sub menu-sub-accordion" kt-hidden-height="84"
-                        style="display: none; overflow: hidden;">
-                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><span class="menu-link"><span
-                                    class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">Alawafy</span><span class="menu-arrow"></span></span>
-                            <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="125"
-                                style="display: none; overflow: hidden;">
-                                <div class="menu-item"><a class="menu-link {{ Route::is('admin.brand.alawafy.english') ? 'active' : '' }}"
-                                        href="{{ route('admin.brand.alawafy.english') }}"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">English</span></a></div>
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ Route::is('admin.brand.*') ? 'show' : '' }}">
+                    <span class="menu-link ">
+                        <span class="menu-icon"><i class="bi bi-cart3"></i><span class="path1"></span><span class="path2"></span></i></span>
+                        <span class="menu-title">Brands</span>
+                        <span class="menu-arrow"></span>
+                    </span>
 
-                                <div class="menu-item"><a class="menu-link"
-                                        href="/metronic8/demo1/apps/invoices/view/invoice-2.html"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">Arabic</span></a></div>
-
-                                <div class="menu-item"><a class="menu-link"
-                                        href="/metronic8/demo1/apps/invoices/view/invoice-3.html"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">French</span></a></div>
-
+                    <div class="menu-sub menu-sub-accordion {{ Route::is('admin.brand.*') ? 'show' : '' }}" kt-hidden-height="84" >
+                        <!-- Alawafy -->
+                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ Route::is('admin.brand.alawafy.*') ? 'active showing' : '' }}" >
+                            <span class="menu-link ">
+                                <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                <span class="menu-title">Alawafy</span>
+                                <span class="menu-arrow"></span>
+                            </span>
+                            <div class="menu-sub menu-sub-accordion menu-active-bg {{ Route::is('admin.brand.alawafy.*') ? 'show' : '' }}" kt-hidden-height="125">
+                                <div class="menu-item">
+                                    <a class="menu-link {{ Route::is('admin.brand.alawafy.english') ? 'active' : '' }}" href="{{ route('admin.brand.alawafy.english') }}">
+                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                        <span class="menu-title">English</span>
+                                    </a>
+                                </div>
+                                <!-- More language items... -->
                             </div>
                         </div>
-                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><span class="menu-link"><span
-                                    class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">Alyoum</span><span class="menu-arrow"></span></span>
-                            <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="125"
-                                style="display: none; overflow: hidden;">
-                                <div class="menu-item"><a class="menu-link"
-                                        href="/metronic8/demo1/apps/invoices/view/invoice-1.html"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">English</span></a></div>
 
-                                <div class="menu-item"><a class="menu-link"
-                                        href="/metronic8/demo1/apps/invoices/view/invoice-2.html"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">Arabic</span></a></div>
-
-                                <div class="menu-item"><a class="menu-link"
-                                        href="/metronic8/demo1/apps/invoices/view/invoice-3.html"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">French</span></a></div>
-
+                        <!-- Alyoum -->
+                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                            <span class="menu-link {{ Route::is('admin.brand.alyoum.*') ? 'active' : '' }}">
+                                <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                <span class="menu-title">Alyoum</span>
+                                <span class="menu-arrow"></span>
+                            </span>
+                            <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="125" style="display: none; overflow: hidden;">
+                                <div class="menu-item">
+                                    <a class="menu-link" href="/metronic8/demo1/apps/invoices/view/invoice-1.html">
+                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                        <span class="menu-title">English</span>
+                                    </a>
+                                </div>
+                                <!-- More language items... -->
                             </div>
                         </div>
-                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><span class="menu-link"><span
-                                    class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">Crico</span><span class="menu-arrow"></span></span>
-                            <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="125"
-                                style="display: none; overflow: hidden;">
-                                <div class="menu-item"><a class="menu-link"
-                                        href="/metronic8/demo1/apps/invoices/view/invoice-1.html"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">English</span></a></div>
 
-                                <div class="menu-item"><a class="menu-link"
-                                        href="/metronic8/demo1/apps/invoices/view/invoice-2.html"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">Arabic</span></a></div>
-
-                                <div class="menu-item"><a class="menu-link"
-                                        href="/metronic8/demo1/apps/invoices/view/invoice-3.html"><span
-                                            class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                            class="menu-title">French</span></a></div>
-
+                        <!-- Crico -->
+                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                            <span class="menu-link {{ Route::is('admin.brand.crico.*') ? 'active' : '' }}">
+                                <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                <span class="menu-title">Crico</span>
+                                <span class="menu-arrow"></span>
+                            </span>
+                            <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="125" style="display: none; overflow: hidden;">
+                                <div class="menu-item">
+                                    <a class="menu-link" href="/metronic8/demo1/apps/invoices/view/invoice-1.html">
+                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                        <span class="menu-title">English</span>
+                                    </a>
+                                </div>
+                                <!-- More language items... -->
                             </div>
                         </div>
 
                     </div>
                 </div>
-
 
 
 
