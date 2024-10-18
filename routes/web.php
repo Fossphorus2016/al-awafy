@@ -168,9 +168,9 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::delete('/admin-home-page/section-2-modal/{id}/delete', [AdminEnglishActivityController::class, 'empty_Modal_delete'])->name('section2modal.delete');
 
-    Route::get('admin/brand-alawafy', [AdminBrandController::class, 'admin_brand_alawafy'])->name('admin.brand.alawafy');
-    Route::get('admin/brand-alyoum', [AdminBrandController::class, 'admin_brand_alyoum'])->name('admin.brand.alyoum');
-    Route::get('admin/brand-crico', [AdminBrandController::class, 'admin_brand_crico'])->name('admin.brand.crico');
+    Route::get('admin/brand-alawafy', [AdminBrandController::class, 'admin_brand_alawafy'])->name('admin.brand.alawafy.english');
+    Route::get('admin/brand-alyoum', [AdminBrandController::class, 'admin_brand_alyoum'])->name('admin.brand.alyoum.english');
+    Route::get('admin/brand-crico', [AdminBrandController::class, 'admin_brand_crico'])->name('admin.brand.crico.english');
 
 
 

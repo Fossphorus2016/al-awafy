@@ -41,12 +41,8 @@
                                         class="bullet bullet-dot"></span></span><span
                                     class="menu-title">English</span></a></div>
 
-<<<<<<< Updated upstream
                         <div class="menu-item"><a
                                 class="menu-link  {{ Route::is('admin.home.arabic') ? 'active' : '' }}"
-=======
-                        <div class="menu-item"><a class="menu-link  {{ Route::is('admin.home.arabic') ? 'active' : '' }}"
->>>>>>> Stashed changes
                                 href="{{ route('admin.home.arabic') }}"><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span
                                     class="menu-title">Arabic</span></a></div>
@@ -112,8 +108,8 @@
                             <div class="menu-sub menu-sub-accordion menu-active-bg {{ Route::is('admin.brand.alawafy.*') ? 'show' : '' }}"
                                 kt-hidden-height="125">
                                 <div class="menu-item">
-                                    <a class="menu-link {{ Route::is('admin.brand.alawafy') ? 'active' : '' }}"
-                                        href="{{ route('admin.brand.alawafy') }}">
+                                    <a class="menu-link {{ Route::is('admin.brand.alawafy.english') ? 'active' : '' }}"
+                                        href="{{ route('admin.brand.alawafy.english') }}">
                                         <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
                                         <span class="menu-title">English</span>
                                     </a>
@@ -162,6 +158,7 @@
 
                     </div>
                 </div>
+
 
 
 
