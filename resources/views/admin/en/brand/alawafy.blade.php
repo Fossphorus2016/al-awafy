@@ -172,46 +172,396 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div>
-                                <form action="" class="mt-5 formValidation2">
-                                    <input type="hidden" name="language" value="english">
-                                    <div class="row gy-4">
-                                        <div class="col-6">
 
-                                            <div class="editorOut1">
-                                                <label for="">Heading 1</label>
-                                                <input class="form-control"></input>
-                                                <p class="errMsg text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
+                                <div class="accordion" id="accordionBrand">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse11" aria-expanded="true"
+                                                aria-controls="collapse11">
+                                                Item 1
+                                            </button>
+                                        </h2>
+                                        <div id="collapse11" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionBrand">
+                                            <div class="accordion-body">
+                                                <form action="" class="mt-5 formValidation2">
+                                                    <input type="hidden" name="language" value="english">
+                                                    <div class="row gy-4">
+                                                        <div class="col-6">
 
-                                            <div class="editorOut2">
-                                                <label for="">Heading 2</label>
-                                                <input class="form-control"></input>
-                                                <p class="errMsg text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
+                                                            <div class="editorOut1">
+                                                                <label for="">Heading 1</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
 
-                                            <div class="editorOut3">
-                                                <label for="">Paragraph</label>
-                                                <input class="form-control"></input>
-                                                <p class="errMsg text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
+                                                            <div class="editorOut2">
+                                                                <label for="">Heading 2</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
 
-                                            <div class="editorOut2">
-                                                <label for="">Url</label>
-                                                <input class="form-control"></input>
-                                                <p class="errMsg text-danger"></p>
+                                                            <div class="editorOut3">
+                                                                <label for="">Paragraph</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Url</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse12" aria-expanded="false"
+                                                aria-controls="collapse12">
+                                                item 2
+                                            </button>
+                                        </h2>
+                                        <div id="collapse12" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionBrand">
+                                            <div class="accordion-body">
+                                                <form action="" class="mt-5 formValidation2">
+                                                    <input type="hidden" name="language" value="english">
+                                                    <div class="row gy-4">
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut1">
+                                                                <label for="">Heading 1</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Heading 2</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <div class="editorOut3">
+                                                                <label for="">Paragraph</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Url</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse13" aria-expanded="false"
+                                                aria-controls="collapse13">
+                                                item 3
+                                            </button>
+                                        </h2>
+                                        <div id="collapse13" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionBrand">
+                                            <div class="accordion-body">
+                                                <form action="" class="mt-5 formValidation2">
+                                                    <input type="hidden" name="language" value="english">
+                                                    <div class="row gy-4">
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut1">
+                                                                <label for="">Heading 1</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Heading 2</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <div class="editorOut3">
+                                                                <label for="">Paragraph</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Url</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse14" aria-expanded="false"
+                                                aria-controls="collapse14">
+                                                item 4
+                                            </button>
+                                        </h2>
+                                        <div id="collapse14" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionBrand">
+                                            <div class="accordion-body">
+                                                <form action="" class="mt-5 formValidation2">
+                                                    <input type="hidden" name="language" value="english">
+                                                    <div class="row gy-4">
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut1">
+                                                                <label for="">Heading 1</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Heading 2</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <div class="editorOut3">
+                                                                <label for="">Paragraph</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Url</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse15" aria-expanded="false"
+                                                aria-controls="collapse15">
+                                                item 5
+                                            </button>
+                                        </h2>
+                                        <div id="collapse15" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionBrand">
+                                            <div class="accordion-body">
+                                                <form action="" class="mt-5 formValidation2">
+                                                    <input type="hidden" name="language" value="english">
+                                                    <div class="row gy-4">
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut1">
+                                                                <label for="">Heading 1</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Heading 2</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <div class="editorOut3">
+                                                                <label for="">Paragraph</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Url</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse16" aria-expanded="false"
+                                                aria-controls="collapse16">
+                                                item 6
+                                            </button>
+                                        </h2>
+                                        <div id="collapse16" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionBrand">
+                                            <div class="accordion-body">
+                                                <form action="" class="mt-5 formValidation2">
+                                                    <input type="hidden" name="language" value="english">
+                                                    <div class="row gy-4">
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut1">
+                                                                <label for="">Heading 1</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Heading 2</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <div class="editorOut3">
+                                                                <label for="">Paragraph</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Url</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse17" aria-expanded="false"
+                                                aria-controls="collapse17">
+                                                item 7
+                                            </button>
+                                        </h2>
+                                        <div id="collapse17" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionBrand">
+                                            <div class="accordion-body">
+                                                <form action="" class="mt-5 formValidation2">
+                                                    <input type="hidden" name="language" value="english">
+                                                    <div class="row gy-4">
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut1">
+                                                                <label for="">Heading 1</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Heading 2</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <div class="editorOut3">
+                                                                <label for="">Paragraph</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Url</label>
+                                                                <input class="form-control"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
