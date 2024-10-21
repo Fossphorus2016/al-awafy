@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\AlawafyController;
 use App\Http\Controllers\AlyoumController;
+use App\Http\Controllers\CircoController;
 use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -205,6 +206,19 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/alyoum-item-5/store', [AlyoumController::class, 'alyoum_item_5'])->name('alyoum.item.5');
     Route::post('admin/alyoum-item-6/store', [AlyoumController::class, 'alyoum_item_6'])->name('alyoum.item.6');
     Route::post('admin/alyoum-item-7/store', [AlyoumController::class, 'alyoum_item_7'])->name('alyoum.item.7');
+
+    // Crico Brand Routes
+    Route::post('admin/crico-meta/store', [CircoController::class, 'crico_meta_section'])->name('crico.meta');
+    Route::post('admin/crico-banner/store', [CircoController::class, 'crico_banner_section'])->name('crico.banner');
+    Route::post('admin/crico-section-2/store', [CircoController::class, 'crico_section2'])->name('crico.section.2');
+
+    Route::post('admin/crico-item-1/store', [CircoController::class, 'crico_item_1'])->name('crico.item.1');
+    Route::post('admin/crico-item-2/store', [CircoController::class, 'crico_item_2'])->name('crico.item.2');
+    Route::post('admin/crico-item-3/store', [CircoController::class, 'crico_item_3'])->name('crico.item.3');
+    Route::post('admin/crico-item-4/store', [CircoController::class, 'crico_item_4'])->name('crico.item.4');
+    Route::post('admin/crico-item-5/store', [CircoController::class, 'crico_item_5'])->name('crico.item.5');
+    Route::post('admin/crico-item-6/store', [CircoController::class, 'crico_item_6'])->name('crico.item.6');
+    Route::post('admin/crico-item-7/store', [CircoController::class, 'crico_item_7'])->name('crico.item.7');
 
 
 });

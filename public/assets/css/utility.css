@@ -265,6 +265,9 @@ input[type=number] {
     width: 90%;
     padding-bottom: 30px;
 }
+.brandInner.paraFont p {
+color: white;
+}
 
 .waterDropsBefore {
     position: relative;

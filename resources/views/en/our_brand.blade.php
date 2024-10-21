@@ -132,12 +132,12 @@
                 <div class="customContainer">
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
-                            <div class="col-lg-6 col-12 ">
+
                                 <div class="brandInner paraFont ">
                                     <h2><span class="fs7">{{ $alawafy->brand_3_h1 ?? '' }}</span> <span
                                             class="fs8">{{ $alawafy->brand_3_h2 ?? '' }}</span> </h2>
 
-                                    <p class="text-white" style="width: 489px">
+                                    <p class="text-white">
                                         {!! $alawafy->brand_3_p ?? '' !!}
                                     </p>
                                     <a href="{{ $alawafy->brand_3_url ?? '' }}" class="mainBtn1">
@@ -145,7 +145,7 @@
                                     </a>
 
                                 </div>
-                            </div>
+
                         </div>
                         <div class="col-lg-6 col-12">
 
