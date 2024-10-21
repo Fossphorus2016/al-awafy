@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminBrandController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\AlawafyController;
+use App\Http\Controllers\AlyoumController;
 use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -191,6 +192,19 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/alawafy-item-5/store', [AlawafyController::class, 'alawafy_item_5'])->name('alawafy.item.5');
     Route::post('admin/alawafy-item-6/store', [AlawafyController::class, 'alawafy_item_6'])->name('alawafy.item.6');
     Route::post('admin/alawafy-item-7/store', [AlawafyController::class, 'alawafy_item_7'])->name('alawafy.item.7');
+
+    // Alyoum Brand Routes
+    Route::post('admin/alyoum-meta/store', [AlyoumController::class, 'alyoum_meta_section'])->name('alyoum.meta');
+    Route::post('admin/alyoum-banner/store', [AlyoumController::class, 'alyoum_banner_section'])->name('alyoum.banner');
+    Route::post('admin/alyoum-section-2/store', [AlyoumController::class, 'alyoum_section2'])->name('alyoum.section.2');
+
+    Route::post('admin/alyoum-item-1/store', [AlyoumController::class, 'alyoum_item_1'])->name('alyoum.item.1');
+    Route::post('admin/alyoum-item-2/store', [AlyoumController::class, 'alyoum_item_2'])->name('alyoum.item.2');
+    Route::post('admin/alyoum-item-3/store', [AlyoumController::class, 'alyoum_item_3'])->name('alyoum.item.3');
+    Route::post('admin/alyoum-item-4/store', [AlyoumController::class, 'alyoum_item_4'])->name('alyoum.item.4');
+    Route::post('admin/alyoum-item-5/store', [AlyoumController::class, 'alyoum_item_5'])->name('alyoum.item.5');
+    Route::post('admin/alyoum-item-6/store', [AlyoumController::class, 'alyoum_item_6'])->name('alyoum.item.6');
+    Route::post('admin/alyoum-item-7/store', [AlyoumController::class, 'alyoum_item_7'])->name('alyoum.item.7');
 
 
 });

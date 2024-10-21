@@ -91,7 +91,7 @@
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
                                                 <input type="file" class="form-control " name="banner_image"
-                                                    id="bannerImageInput2">
+                                                    id="imgS51">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
@@ -99,8 +99,8 @@
                                         <div class="col-12">
                                             @if ($brand_alawafy && $brand_alawafy->banner_image)
                                                 <img src="{{ asset('storage/' . $brand_alawafy->banner_image) }}"
-                                                    alt="" id="uploadedImage2"
-                                                    style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                                    alt="" id="imgU51"
+                                                    style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; ">
                                             @else
                                             @endif
                                         </div>
@@ -153,7 +153,7 @@
 
                                             <div class="editorOut3">
                                                 <label for="">Paragraph</label>
-                                                <textarea name="section1_p" class="form-control" id="section1_p" cols="1" rows="1">{{ old('section1_p', $brand_alawafy->section1_p ?? '') }}</textarea>
+                                                <textarea name="section1_p" class="form-control" id="section1_p" cols="7" rows="8">{{ old('section1_p', $brand_alawafy->section1_p ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -161,15 +161,16 @@
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
                                                 <input type="file" class="form-control " name="section1_image"
-                                                    id="bannerImageInput1">
+                                                    id="section1_image">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             @if ($brand_alawafy && $brand_alawafy->section1_image)
-                                                <img src="{{asset('storage/'.$brand_alawafy->section1_image)}}" alt="" id="uploadedImage1"
-                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                                <img src="{{ asset('storage/' . $brand_alawafy->section1_image) }}"
+                                                    alt="" id="upload_section1_image"
+                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                             @endif
 
                                         </div>
@@ -207,7 +208,8 @@
                                         <div id="collapse11" class="accordion-collapse collapse show"
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
-                                                <form action="{{route('alawafy.item.1')}}" method="POST" enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                <form action="{{ route('alawafy.item.1') }}" method="POST"
+                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
@@ -215,7 +217,9 @@
 
                                                             <div class="editorOut1">
                                                                 <label for="">Heading 1</label>
-                                                                <input class="form-control" name="brand_1_h1" id="brand_1_h1" value="{{old('brand_1_h1',$brand_alawafy->brand_1_h1 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_1_h1"
+                                                                    id="brand_1_h1"
+                                                                    value="{{ old('brand_1_h1', $brand_alawafy->brand_1_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -223,7 +227,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Heading 2</label>
-                                                                <input class="form-control" name="brand_1_h2" id="brand_1_h2" value="{{old('brand_1_h2',$brand_alawafy->brand_1_h2 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_1_h2"
+                                                                    id="brand_1_h2"
+                                                                    value="{{ old('brand_1_h2', $brand_alawafy->brand_1_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -231,7 +237,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_1_p" class="form-control" id="brand_1_p" cols="1" rows="1">{{old('brand_1_p',$brand_alawafy->brand_1_p ?? '')}}</textarea>
+                                                                <textarea name="brand_1_p" class="form-control" id="brand_1_p" cols="7" rows="8">{{ old('brand_1_p', $brand_alawafy->brand_1_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -240,7 +246,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Url</label>
-                                                                <input class="form-control" name="brand_1_url" id="brand_1_url" value="{{old('brand_1_url',$brand_alawafy->brand_1_url ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_1_url"
+                                                                    id="brand_1_url"
+                                                                    value="{{ old('brand_1_url', $brand_alawafy->brand_1_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -248,15 +256,17 @@
                                                         <div class="col-6">
                                                             <div>
                                                                 <label for="banner_1_image">Banner Image</label>
-                                                                <input type="file" class="form-control " name="brand_1_image" >
+                                                                <input type="file" class="form-control "
+                                                                    name="brand_1_image" id="brand_1_image">
 
                                                                 <p class="text-danger fileError"></p>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             @if ($brand_alawafy && $brand_alawafy->brand_1_image)
-                                                                <img src="{{asset('storage/'.$brand_alawafy->brand_1_image)}}" alt=""
-                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                                                <img src="{{ asset('storage/' . $brand_alawafy->brand_1_image) }}"
+                                                                    id="upload_brand_1_image" alt=""
+                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
 
                                                         </div>
@@ -271,16 +281,17 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse12" aria-expanded="false"
-                                                aria-controls="collapse12">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse12"
+                                                aria-expanded="false" aria-controls="collapse12">
                                                 item 2
                                             </button>
                                         </h2>
                                         <div id="collapse12" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
-                                                <form action="{{route('alawafy.item.2')}}" method="POST" enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                <form action="{{ route('alawafy.item.2') }}" method="POST"
+                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
@@ -288,7 +299,9 @@
 
                                                             <div class="editorOut1">
                                                                 <label for="">Heading 1</label>
-                                                                <input class="form-control" name="brand_2_h1" id="brand_2_h1" value="{{old('brand_2_h1',$brand_alawafy->brand_2_h1 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_2_h1"
+                                                                    id="brand_2_h1"
+                                                                    value="{{ old('brand_2_h1', $brand_alawafy->brand_2_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -296,7 +309,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Heading 2</label>
-                                                                <input class="form-control" name="brand_2_h2" id="brand_2_h2" value="{{old('brand_2_h2',$brand_alawafy->brand_2_h2 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_2_h2"
+                                                                    id="brand_2_h2"
+                                                                    value="{{ old('brand_2_h2', $brand_alawafy->brand_2_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -304,7 +319,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_2_p" class="form-control" id="brand_2_p" cols="1" rows="1">{{old('brand_2_p',$brand_alawafy->brand_2_p ?? '')}}</textarea>
+                                                                <textarea name="brand_2_p" class="form-control" id="brand_2_p" cols="7" rows="8">{{ old('brand_2_p', $brand_alawafy->brand_2_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -313,7 +328,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Url</label>
-                                                                <input class="form-control" name="brand_2_url" id="brand_2_url" value="{{old('brand_2_url',$brand_alawafy->brand_2_url ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_2_url"
+                                                                    id="brand_2_url"
+                                                                    value="{{ old('brand_2_url', $brand_alawafy->brand_2_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -321,15 +338,17 @@
                                                         <div class="col-6">
                                                             <div>
                                                                 <label for="banner_1_image">Banner Image</label>
-                                                                <input type="file" class="form-control " name="brand_2_image" >
+                                                                <input type="file" class="form-control "
+                                                                    name="brand_2_image" id="brand_2_image">
 
                                                                 <p class="text-danger fileError"></p>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             @if ($brand_alawafy && $brand_alawafy->brand_2_image)
-                                                                <img src="{{asset('storage/'.$brand_alawafy->brand_2_image)}}" alt=""
-                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                                                <img src="{{ asset('storage/' . $brand_alawafy->brand_2_image) }}"
+                                                                    alt="" id="upload_brand_2_image"
+                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
 
                                                         </div>
@@ -344,16 +363,17 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse13" aria-expanded="false"
-                                                aria-controls="collapse13">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse13"
+                                                aria-expanded="false" aria-controls="collapse13">
                                                 item 3
                                             </button>
                                         </h2>
                                         <div id="collapse13" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
-                                                <form action="{{route('alawafy.item.3')}}" method="POST" enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                <form action="{{ route('alawafy.item.3') }}" method="POST"
+                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
@@ -361,7 +381,9 @@
 
                                                             <div class="editorOut1">
                                                                 <label for="">Heading 1</label>
-                                                                <input class="form-control" name="brand_3_h1" id="brand_3_h1" value="{{old('brand_3_h1',$brand_alawafy->brand_3_h1 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_3_h1"
+                                                                    id="brand_3_h1"
+                                                                    value="{{ old('brand_3_h1', $brand_alawafy->brand_3_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -369,7 +391,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Heading 2</label>
-                                                                <input class="form-control" name="brand_3_h2" id="brand_3_h2" value="{{old('brand_3_h2',$brand_alawafy->brand_3_h2 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_3_h2"
+                                                                    id="brand_3_h2"
+                                                                    value="{{ old('brand_3_h2', $brand_alawafy->brand_3_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -377,7 +401,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_3_p" class="form-control" id="brand_3_p" cols="1" rows="1">{{old('brand_3_p',$brand_alawafy->brand_3_p ?? '')}}</textarea>
+                                                                <textarea name="brand_3_p" class="form-control" id="brand_3_p" cols="7" rows="8">{{ old('brand_3_p', $brand_alawafy->brand_3_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -386,7 +410,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Url</label>
-                                                                <input class="form-control" name="brand_3_url" id="brand_3_url" value="{{old('brand_3_url',$brand_alawafy->brand_3_url ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_3_url"
+                                                                    id="brand_3_url"
+                                                                    value="{{ old('brand_3_url', $brand_alawafy->brand_3_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -394,15 +420,17 @@
                                                         <div class="col-6">
                                                             <div>
                                                                 <label for="banner_1_image">Banner Image</label>
-                                                                <input type="file" class="form-control " name="brand_3_image" >
+                                                                <input type="file" class="form-control "
+                                                                    name="brand_3_image" id="brand_3_image">
 
                                                                 <p class="text-danger fileError"></p>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             @if ($brand_alawafy && $brand_alawafy->brand_3_image)
-                                                                <img src="{{asset('storage/'.$brand_alawafy->brand_3_image)}}" alt=""
-                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                                                <img src="{{ asset('storage/' . $brand_alawafy->brand_3_image) }}"
+                                                                    alt="" id="upload_brand_3_image"
+                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
 
                                                         </div>
@@ -417,16 +445,17 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse14" aria-expanded="false"
-                                                aria-controls="collapse14">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse14"
+                                                aria-expanded="false" aria-controls="collapse14">
                                                 item 4
                                             </button>
                                         </h2>
                                         <div id="collapse14" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
-                                                <form action="{{route('alawafy.item.4')}}" method="POST" enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                <form action="{{ route('alawafy.item.4') }}" method="POST"
+                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
@@ -434,7 +463,9 @@
 
                                                             <div class="editorOut1">
                                                                 <label for="">Heading 1</label>
-                                                                <input class="form-control" name="brand_4_h1" id="brand_4_h1" value="{{old('brand_4_h1',$brand_alawafy->brand_4_h1 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_4_h1"
+                                                                    id="brand_4_h1"
+                                                                    value="{{ old('brand_4_h1', $brand_alawafy->brand_4_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -442,7 +473,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Heading 2</label>
-                                                                <input class="form-control" name="brand_4_h2" id="brand_4_h2" value="{{old('brand_4_h2',$brand_alawafy->brand_4_h2 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_4_h2"
+                                                                    id="brand_4_h2"
+                                                                    value="{{ old('brand_4_h2', $brand_alawafy->brand_4_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -450,7 +483,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_4_p" class="form-control" id="brand_4_p" cols="1" rows="1">{{old('brand_4_p',$brand_alawafy->brand_4_p ?? '')}}</textarea>
+                                                                <textarea name="brand_4_p" class="form-control" id="brand_4_p" cols="7" rows="8">{{ old('brand_4_p', $brand_alawafy->brand_4_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -459,7 +492,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Url</label>
-                                                                <input class="form-control" name="brand_4_url" id="brand_4_url" value="{{old('brand_4_url',$brand_alawafy->brand_4_url ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_4_url"
+                                                                    id="brand_4_url"
+                                                                    value="{{ old('brand_4_url', $brand_alawafy->brand_4_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -467,15 +502,17 @@
                                                         <div class="col-6">
                                                             <div>
                                                                 <label for="banner_1_image">Banner Image</label>
-                                                                <input type="file" class="form-control " name="brand_4_image" >
+                                                                <input type="file" class="form-control "
+                                                                    name="brand_4_image" id="brand_4_image">
 
                                                                 <p class="text-danger fileError"></p>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             @if ($brand_alawafy && $brand_alawafy->brand_4_image)
-                                                                <img src="{{asset('storage/'.$brand_alawafy->brand_4_image)}}" alt=""
-                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                                                <img src="{{ asset('storage/' . $brand_alawafy->brand_4_image) }}"
+                                                                    alt="" id="upload_brand_4_image"
+                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
 
                                                         </div>
@@ -490,16 +527,17 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse15" aria-expanded="false"
-                                                aria-controls="collapse15">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse15"
+                                                aria-expanded="false" aria-controls="collapse15">
                                                 item 5
                                             </button>
                                         </h2>
                                         <div id="collapse15" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
-                                                <form action="{{route('alawafy.item.5')}}" method="POST" enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                <form action="{{ route('alawafy.item.5') }}" method="POST"
+                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
@@ -507,7 +545,9 @@
 
                                                             <div class="editorOut1">
                                                                 <label for="">Heading 1</label>
-                                                                <input class="form-control" name="brand_5_h1" id="brand_5_h1" value="{{old('brand_5_h1',$brand_alawafy->brand_5_h1 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_5_h1"
+                                                                    id="brand_5_h1"
+                                                                    value="{{ old('brand_5_h1', $brand_alawafy->brand_5_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -515,7 +555,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Heading 2</label>
-                                                                <input class="form-control" name="brand_5_h2" id="brand_5_h2" value="{{old('brand_5_h2',$brand_alawafy->brand_5_h2 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_5_h2"
+                                                                    id="brand_5_h2"
+                                                                    value="{{ old('brand_5_h2', $brand_alawafy->brand_5_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -523,7 +565,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_5_p" class="form-control" id="brand_5_p" cols="1" rows="1">{{old('brand_5_p',$brand_alawafy->brand_5_p ?? '')}}</textarea>
+                                                                <textarea name="brand_5_p" class="form-control" id="brand_5_p" cols="7" rows="8">{{ old('brand_5_p', $brand_alawafy->brand_5_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -532,7 +574,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Url</label>
-                                                                <input class="form-control" name="brand_5_url" id="brand_5_url" value="{{old('brand_5_url',$brand_alawafy->brand_5_url ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_5_url"
+                                                                    id="brand_5_url"
+                                                                    value="{{ old('brand_5_url', $brand_alawafy->brand_5_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -540,15 +584,17 @@
                                                         <div class="col-6">
                                                             <div>
                                                                 <label for="banner_1_image">Banner Image</label>
-                                                                <input type="file" class="form-control " name="brand_5_image" >
+                                                                <input type="file" class="form-control "
+                                                                    name="brand_5_image" id="brand_5_image">
 
                                                                 <p class="text-danger fileError"></p>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             @if ($brand_alawafy && $brand_alawafy->brand_5_image)
-                                                                <img src="{{asset('storage/'.$brand_alawafy->brand_5_image)}}" alt=""
-                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                                                <img src="{{ asset('storage/' . $brand_alawafy->brand_5_image) }}"
+                                                                    alt="" id="upload_brand_5_image"
+                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
 
                                                         </div>
@@ -563,16 +609,17 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse16" aria-expanded="false"
-                                                aria-controls="collapse16">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse16"
+                                                aria-expanded="false" aria-controls="collapse16">
                                                 item 6
                                             </button>
                                         </h2>
                                         <div id="collapse16" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
-                                                <form action="{{route('alawafy.item.6')}}" method="POST" enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                <form action="{{ route('alawafy.item.6') }}" method="POST"
+                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
@@ -580,7 +627,9 @@
 
                                                             <div class="editorOut1">
                                                                 <label for="">Heading 1</label>
-                                                                <input class="form-control" name="brand_6_h1" id="brand_6_h1" value="{{old('brand_6_h1',$brand_alawafy->brand_6_h1 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_6_h1"
+                                                                    id="brand_6_h1"
+                                                                    value="{{ old('brand_6_h1', $brand_alawafy->brand_6_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -588,7 +637,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Heading 2</label>
-                                                                <input class="form-control" name="brand_6_h2" id="brand_6_h2" value="{{old('brand_6_h2',$brand_alawafy->brand_6_h2 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_6_h2"
+                                                                    id="brand_6_h2"
+                                                                    value="{{ old('brand_6_h2', $brand_alawafy->brand_6_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -596,7 +647,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_6_p" class="form-control" id="brand_6_p" cols="1" rows="1">{{old('brand_6_p',$brand_alawafy->brand_6_p ?? '')}}</textarea>
+                                                                <textarea name="brand_6_p" class="form-control" id="brand_6_p" cols="7" rows="8">{{ old('brand_6_p', $brand_alawafy->brand_6_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -605,7 +656,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Url</label>
-                                                                <input class="form-control" name="brand_6_url" id="brand_6_url" value="{{old('brand_6_url',$brand_alawafy->brand_6_url ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_6_url"
+                                                                    id="brand_6_url"
+                                                                    value="{{ old('brand_6_url', $brand_alawafy->brand_6_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -613,15 +666,17 @@
                                                         <div class="col-6">
                                                             <div>
                                                                 <label for="banner_1_image">Banner Image</label>
-                                                                <input type="file" class="form-control " name="brand_6_image" >
+                                                                <input type="file" class="form-control "
+                                                                    name="brand_6_image" id="brand_6_image">
 
                                                                 <p class="text-danger fileError"></p>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             @if ($brand_alawafy && $brand_alawafy->brand_6_image)
-                                                                <img src="{{asset('storage/'.$brand_alawafy->brand_6_image)}}" alt=""
-                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                                                <img src="{{ asset('storage/' . $brand_alawafy->brand_6_image) }}"
+                                                                    alt="" id="upload_brand_6_image"
+                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
 
                                                         </div>
@@ -636,16 +691,17 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse17" aria-expanded="false"
-                                                aria-controls="collapse17">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse17"
+                                                aria-expanded="false" aria-controls="collapse17">
                                                 item 7
                                             </button>
                                         </h2>
                                         <div id="collapse17" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
-                                                <form action="{{route('alawafy.item.7')}}" method="POST" enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                <form action="{{ route('alawafy.item.7') }}" method="POST"
+                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
@@ -653,7 +709,9 @@
 
                                                             <div class="editorOut1">
                                                                 <label for="">Heading 1</label>
-                                                                <input class="form-control" name="brand_7_h1" id="brand_7_h1" value="{{old('brand_7_h1',$brand_alawafy->brand_7_h1 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_7_h1"
+                                                                    id="brand_7_h1"
+                                                                    value="{{ old('brand_7_h1', $brand_alawafy->brand_7_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -661,7 +719,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Heading 2</label>
-                                                                <input class="form-control" name="brand_7_h2" id="brand_7_h2" value="{{old('brand_7_h2',$brand_alawafy->brand_7_h2 ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_7_h2"
+                                                                    id="brand_7_h2"
+                                                                    value="{{ old('brand_7_h2', $brand_alawafy->brand_7_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -669,7 +729,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_7_p" class="form-control" id="brand_7_p" cols="1" rows="1">{{old('brand_7_p',$brand_alawafy->brand_7_p ?? '')}}</textarea>
+                                                                <textarea name="brand_7_p" class="form-control" id="brand_7_p" cols="7" rows="8">{{ old('brand_7_p', $brand_alawafy->brand_7_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -678,7 +738,9 @@
 
                                                             <div class="editorOut2">
                                                                 <label for="">Url</label>
-                                                                <input class="form-control" name="brand_7_url" id="brand_7_url" value="{{old('brand_7_url',$brand_alawafy->brand_7_url ?? '')}}"></input>
+                                                                <input class="form-control" name="brand_7_url"
+                                                                    id="brand_7_url"
+                                                                    value="{{ old('brand_7_url', $brand_alawafy->brand_7_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -686,15 +748,17 @@
                                                         <div class="col-6">
                                                             <div>
                                                                 <label for="banner_1_image">Banner Image</label>
-                                                                <input type="file" class="form-control " name="brand_7_image" >
+                                                                <input type="file" class="form-control "
+                                                                    name="brand_7_image" id="brand_7_image">
 
                                                                 <p class="text-danger fileError"></p>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             @if ($brand_alawafy && $brand_alawafy->brand_7_image)
-                                                                <img src="{{asset('storage/'.$brand_alawafy->brand_7_image)}}" alt=""
-                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                                                <img src="{{ asset('storage/' . $brand_alawafy->brand_7_image) }}"
+                                                                    id="upload_brand_7_image" alt=""
+                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
 
                                                         </div>
@@ -727,97 +791,105 @@
         }
     </style>
 
-    {{-- <script>
+    <script>
         $(document).ready(function() {
+            const section1_p = Jodit.make('#section1_p');
+            const brand_1_p = Jodit.make('#brand_1_p');
+            const brand_2_p = Jodit.make('#brand_2_p');
+            const brand_3_p = Jodit.make('#brand_3_p');
+            const brand_4_p = Jodit.make('#brand_4_p');
+            const brand_5_p = Jodit.make('#brand_5_p');
+            const brand_6_p = Jodit.make('#brand_6_p');
+            const brand_7_p = Jodit.make('#brand_7_p');
 
 
-            $(".formValidation").submit(function(event) {
-                event.preventDefault();
-                let isValid = true;
+            // $(".formValidation").submit(function(event) {
+            //     event.preventDefault();
+            //     let isValid = true;
 
-                $(this)
-                    .find("input")
-                    .each(function() {
-                        let $inputField = $(this);
-                        let $parentDiv = $inputField.closest('div');
-                        let $errorMessage = $parentDiv.find('.errMsg');
-                        let labelText = $parentDiv.find('label').text();
+            //     $(this)
+            //         .find("input")
+            //         .each(function() {
+            //             let $inputField = $(this);
+            //             let $parentDiv = $inputField.closest('div');
+            //             let $errorMessage = $parentDiv.find('.errMsg');
+            //             let labelText = $parentDiv.find('label').text();
 
-                        if ($inputField.hasClass("noVal")) {
-                            $inputField.removeClass("is-invalid");
-                            return;
-                        }
-                        if ($inputField.val().trim() === "") {
-                            $inputField.addClass("is-invalid");
-                            $errorMessage.text(labelText + " is required").css('display', 'block');
-                            isValid = false;
-                        } else {
-                            $inputField.removeClass("is-invalid");
-                            $errorMessage.text('').css('display', 'none');
-                        }
+            //             if ($inputField.hasClass("noVal")) {
+            //                 $inputField.removeClass("is-invalid");
+            //                 return;
+            //             }
+            //             if ($inputField.val().trim() === "") {
+            //                 $inputField.addClass("is-invalid");
+            //                 $errorMessage.text(labelText + " is required").css('display', 'block');
+            //                 isValid = false;
+            //             } else {
+            //                 $inputField.removeClass("is-invalid");
+            //                 $errorMessage.text('').css('display', 'none');
+            //             }
 
-                    });
-                if (isValid) {
-                    this.submit();
-                }
-            });
-            $(".formValidation2").submit(function(event) {
-                event.preventDefault();
-                let isValid = true;
-                $(".fileError").text('');
-                const fileInput = $("#bannerImageInput1")[0];
-                if (!fileInput.files.length) {
-                    isValid = false;
-                    $(".fileError").text('Please upload a banner image.');
-                }
-                if (isValid) {
-                    this.submit();
-                }
-            });
-            $(".formValidation4").submit(function(event) {
-                event.preventDefault();
-                let isValid = true;
+            //         });
+            //     if (isValid) {
+            //         this.submit();
+            //     }
+            // });
+            // $(".formValidation2").submit(function(event) {
+            //     event.preventDefault();
+            //     let isValid = true;
+            //     $(".fileError").text('');
+            //     const fileInput = $("#bannerImageInput1")[0];
+            //     if (!fileInput.files.length) {
+            //         isValid = false;
+            //         $(".fileError").text('Please upload a banner image.');
+            //     }
+            //     if (isValid) {
+            //         this.submit();
+            //     }
+            // });
+            // $(".formValidation4").submit(function(event) {
+            //     event.preventDefault();
+            //     let isValid = true;
 
-                $(this)
-                    .find("input, textarea")
-                    .each(function() {
-                        let $inputField = $(this);
-                        let $parentDiv = $inputField.closest('div');
-                        let $errorMessage = $parentDiv.find('p');
-                        let labelText = $parentDiv.find('label').text();
+            //     $(this)
+            //         .find("input, textarea")
+            //         .each(function() {
+            //             let $inputField = $(this);
+            //             let $parentDiv = $inputField.closest('div');
+            //             let $errorMessage = $parentDiv.find('p');
+            //             let labelText = $parentDiv.find('label').text();
 
-                        if ($inputField.hasClass("noVal")) {
-                            $inputField.removeClass("is-invalid");
-                            return;
-                        }
+            //             if ($inputField.hasClass("noVal")) {
+            //                 $inputField.removeClass("is-invalid");
+            //                 return;
+            //             }
 
-                        // Check for file input
-                        if ($inputField.is(":file")) {
-                            if (!this.files.length) {
-                                $inputField.addClass("is-invalid");
-                                $errorMessage.text(labelText + " is required").css('display', 'block');
-                                isValid = false;
-                            } else {
-                                $inputField.removeClass("is-invalid");
-                                $errorMessage.text('').css('display', 'none');
-                            }
-                        } else {
-                            // Check for other input or textarea
-                            if ($inputField.val().trim() === "") {
-                                $inputField.addClass("is-invalid");
-                                $errorMessage.text(labelText + " is required").css('display', 'block');
-                                isValid = false;
-                            } else {
-                                $inputField.removeClass("is-invalid");
-                                $errorMessage.text('').css('display', 'none');
-                            }
-                        }
-                    });
+            //             // Check for file input
+            //             if ($inputField.is(":file")) {
+            //                 if (!this.files.length) {
+            //                     $inputField.addClass("is-invalid");
+            //                     $errorMessage.text(labelText + " is required").css('display', 'block');
+            //                     isValid = false;
+            //                 } else {
+            //                     $inputField.removeClass("is-invalid");
+            //                     $errorMessage.text('').css('display', 'none');
+            //                 }
+            //             } else {
+            //                 // Check for other input or textarea
+            //                 if ($inputField.val().trim() === "") {
+            //                     $inputField.addClass("is-invalid");
+            //                     $errorMessage.text(labelText + " is required").css('display', 'block');
+            //                     isValid = false;
+            //                 } else {
+            //                     $inputField.removeClass("is-invalid");
+            //                     $errorMessage.text('').css('display', 'none');
+            //                 }
+            //             }
+            //         });
 
-                if (isValid) {
-                    this.submit();
-                }
-            });
+            //     if (isValid) {
+            //         this.submit();
+            //     }
+            // });
 
             function handleImageChange(inputId, imageId) {
                 $(inputId).on('change', function(event) {
@@ -833,11 +905,19 @@
                 });
             }
 
-            handleImageChange('#bannerImageInput1', '#uploadedImage1');
+            handleImageChange('#imgS51', '#imgU51');
             handleImageChange('#bannerImageInput2', '#uploadedImage2');
             handleImageChange('#activityImageInput1', '#uploadedActivityImage1');
+            handleImageChange('#section1_image', '#upload_section1_image');
+            handleImageChange('#brand_1_image', '#upload_brand_1_image');
+            handleImageChange('#brand_2_image', '#upload_brand_2_image');
+            handleImageChange('#brand_3_image', '#upload_brand_3_image');
+            handleImageChange('#brand_4_image', '#upload_brand_4_image');
+            handleImageChange('#brand_5_image', '#upload_brand_5_image');
+            handleImageChange('#brand_6_image', '#upload_brand_6_image');
+            handleImageChange('#brand_7_image', '#upload_brand_7_image');
 
 
         });
-    </script> --}}
+    </script>
 </x-admin.layouts>

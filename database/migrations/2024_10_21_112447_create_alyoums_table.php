@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('alawafies', function (Blueprint $table) {
+        Schema::create('alyoums', function (Blueprint $table) {
             $table->id();
 
             $table->string('language')->nullable();
@@ -62,23 +62,7 @@ return new class extends Migration
             $table->longText('brand_5_p')->nullable();
             $table->string('brand_5_url')->nullable();
             $table->string('brand_5_image')->nullable();
-
-
-            $table->string('brand_6_h1')->nullable();
-            $table->string('brand_6_h2')->nullable();
-            $table->longText('brand_6_p')->nullable();
-            $table->string('brand_6_url')->nullable();
-            $table->string('brand_6_image')->nullable();
-
-
-            $table->string('brand_7_h1')->nullable();
-            $table->string('brand_7_h2')->nullable();
-            $table->longText('brand_7_p')->nullable();
-            $table->string('brand_7_url')->nullable();
-            $table->string('brand_7_image')->nullable();
-
-
-
+            
             $table->timestamps();
         });
     }
@@ -88,6 +72,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('alawafies');
+        Schema::dropIfExists('alyoums');
     }
 };
