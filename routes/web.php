@@ -5,7 +5,8 @@ use App\Http\Controllers\AdminAboutController;
 use App\Http\Controllers\AdminBrandController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminHomeController;
- use App\Http\Controllers\FormController;
+use App\Http\Controllers\AlawafyController;
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -147,38 +148,19 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     // Home page routes
-    Route::post('admin/meta/store', [AdminHomeController::class, 'meta_section'])->name('home.meta');
+    Route::post('admin/meta/store', [AdminHomeController::class, 'meta2'])->name('home.meta');
     Route::post('admin/banner-1', [AdminHomeController::class, 'admin_banner_1'])->name('home.banner.1');
     Route::post('admin/banner-2', [AdminHomeController::class, 'admin_banner_2'])->name('home.banner.2');
     Route::post('admin/banner-3', [AdminHomeController::class, 'admin_banner_3'])->name('home.banner.3');
-
-
     Route::post('admin/about', [AdminHomeController::class, 'admin_about'])->name('home.about');
-
     Route::post('admin/our-value', [AdminHomeController::class, 'admin_our_value'])->name('home.our.value');
-
     Route::post('admin/section-6', [AdminHomeController::class, 'admin_section_6'])->name('home.section.6');
-
     Route::post('admin/our-brand-1', [AdminHomeController::class, 'admin_our_brand_1'])->name('home.our.brand_1');
     Route::post('admin/our-brand-2', [AdminHomeController::class, 'admin_our_brand_2'])->name('home.our.brand_2');
     Route::post('admin/our-brand-3', [AdminHomeController::class, 'admin_our_brand_3'])->name('home.our.brand_3');
-
     Route::post('/admin/activity/store', [ActivityController::class, 'activity_store'])->name('activity.store');
     Route::put('/admin/activity/{id}/update', [ActivityController::class, 'activity_update'])->name('activity.update');
-
     Route::delete('/admin/activity/{id}/delete', [ActivityController::class, 'activity_delete'])->name('activity.delete');
-
-    Route::get('admin/brand-alawafy', [AdminBrandController::class, 'admin_brand_alawafy'])->name('admin.brand.alawafy.english');
-    Route::get('admin/brand-alyoum', [AdminBrandController::class, 'admin_brand_alyoum'])->name('admin.brand.alyoum.english');
-    Route::get('admin/brand-crico', [AdminBrandController::class, 'admin_brand_crico'])->name('admin.brand.crico.english');
-
-
-
-
-
-
-
-
 
 
 
@@ -187,10 +169,19 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/about-english', [AdminAboutController::class, 'admin_about_english'])->name('admin.about.english');
     Route::get('admin/about-french', [AdminAboutController::class, 'admin_about_french'])->name('admin.about.french');
     Route::get('admin/about-arabic', [AdminAboutController::class, 'admin_about_arabic'])->name('admin.about.arabic');
-
     Route::post('admin/about-meta/store', [AdminAboutController::class, 'about_meta_section'])->name('about.meta');
     Route::post('admin/about-sec-1', [AdminAboutController::class, 'admin_section_1'])->name('about.section.1');
     Route::post('admin/about-sec-2', [AdminAboutController::class, 'admin_section_2'])->name('about.section.2');
     Route::post('admin/about-sec-3', [AdminAboutController::class, 'admin_section_3'])->name('about.section.3');
+
+    // English Brand Routes
+    Route::get('admin/brand-alawafy', [AdminBrandController::class, 'admin_brand_alawafy'])->name('admin.brand.alawafy.english');
+    Route::get('admin/brand-alyoum', [AdminBrandController::class, 'admin_brand_alyoum'])->name('admin.brand.alyoum.english');
+    Route::get('admin/brand-crico', [AdminBrandController::class, 'admin_brand_crico'])->name('admin.brand.crico.english');
+
+    // Alawaf Brand Routes
+    Route::post('admin/alawafy-meta/store', [AlawafyController::class, 'alawafy_meta_section'])->name('alawafy.meta');
+    Route::post('admin/alawafy-banner/store', [AlawafyController::class, 'alawafy_banner_section'])->name('alawafy.banner');
+    Route::post('admin/alawafy-section-2/store', [AlawafyController::class, 'alawafy_section2'])->name('alawafy.section.2');
 
 });

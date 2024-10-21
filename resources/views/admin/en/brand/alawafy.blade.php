@@ -2,6 +2,7 @@
     <div class="card">
         <div class="card-body">
             <div class="accordion" id="accordionExample">
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -11,7 +12,7 @@
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="" class="mt-5 formValidation">
+                            <form action="{{ route('alawafy.meta') }}" method="POST" class="mt-5 formValidation">
                                 @csrf
                                 <input type="hidden" name="language" value="english">
                                 <div class="row gy-4">
@@ -19,7 +20,8 @@
 
                                         <div>
                                             <label for="">Meta title</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="meta_title" id="meta_title"
+                                                value="{{ old('meta_title', $brand_alawafy->meta_title ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -27,14 +29,16 @@
 
                                         <div>
                                             <label for="">Meta Description</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="meta_description" id="meta_description"
+                                                value="{{ old('meta_description', $brand_alawafy->meta_description ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div>
                                             <label for="">Canonical</label>
-                                            <input class="form-control"></input>
+                                            <input class="form-control" name="canonical" id="canonical"
+                                                value="{{ old('canonical', $brand_alawafy->canonical ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -47,6 +51,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -57,14 +62,17 @@
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div>
-                                <form action="" class="mt-5 formValidation2">
+                                <form action="{{ route('alawafy.banner') }}" method="POST"
+                                    enctype="multipart/form-data" class="mt-5 formValidation2">
+                                    @csrf
                                     <input type="hidden" name="language" value="english">
                                     <div class="row gy-4">
                                         <div class="col-6">
                                             <div>
                                                 <label for="banner_h1">Heading 1</label>
                                                 <input type="text" class="form-control " name="banner_h1"
-                                                    id="banner_h1">
+                                                    id="banner_h1" name="banner_h1" id="banner_h1"
+                                                    value="{{ old('banner_h1', $brand_alawafy->banner_h1 ?? '') }}">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
@@ -73,7 +81,8 @@
                                             <div>
                                                 <label for="banner_h2">Heading 2</label>
                                                 <input type="text" class="form-control " name="banner_h2"
-                                                    id="bannerImageInput2">
+                                                    id="bannerImageInput2"
+                                                    value="{{ old('banner_h2', $brand_alawafy->banner_h2 ?? '') }}">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
@@ -81,15 +90,19 @@
                                         <div class="col-6">
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
-                                                <input type="file" class="form-control " name="banner_1_image"
+                                                <input type="file" class="form-control " name="banner_image"
                                                     id="bannerImageInput2">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <img src="" alt="" id="uploadedImage2"
-                                                style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                            @if ($brand_alawafy && $brand_alawafy->banner_image)
+                                                <img src="{{ asset('storage/' . $brand_alawafy->banner_image) }}"
+                                                    alt="" id="uploadedImage2"
+                                                    style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; display: none;">
+                                            @else
+                                            @endif
                                         </div>
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
@@ -100,6 +113,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -112,22 +126,26 @@
 
                             <div class="">
 
-                                <form action="" class="mt-5 formValidation">
+                                <form action="{{ route('alawafy.section.2') }}" method="POST"
+                                    class="mt-5 formValidation" enctype="multipart/form-data">
+                                    @csrf
                                     <input type="hidden" name="language" value="english">
                                     <div class="row gy-4">
                                         <div class="col-6">
 
                                             <div class="editorOut1">
-                                                <label for="">Blue Heading</label>
-                                                <input class="form-control"></input>
+                                                <label for="section1_h1">Heading 1</label>
+                                                <input class="form-control" name="section1_h1" id="section1_h1"
+                                                    value="{{ old('section1_h1', $brand_alawafy->section1_h1 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
 
                                             <div class="editorOut2">
-                                                <label for="">Green Heading</label>
-                                                <input class="form-control"></input>
+                                                <label for=""> Heading 2</label>
+                                                <input class="form-control" name="section1_h2" id="section1_h2"
+                                                    value="{{ old('section1_h2', $brand_alawafy->section1_h2 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -135,22 +153,25 @@
 
                                             <div class="editorOut3">
                                                 <label for="">Paragraph</label>
-                                                <input class="form-control"></input>
+                                                <textarea name="section1_p" class="form-control" id="section1_p" cols="1" rows="1">{{ old('section1_p', $brand_alawafy->section1_p ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
-                                                <input type="file" class="form-control " name="banner_1_image"
+                                                <input type="file" class="form-control " name="section1_image"
                                                     id="bannerImageInput1">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <img src="" alt="" id="uploadedImage1"
-                                                style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                            @if ($brand_alawafy && $brand_alawafy->section1_image)
+                                                <img src="{{asset('storage/'.$brand_alawafy->section1_image)}}" alt="" id="uploadedImage1"
+                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain; display: none;">
+                                            @endif
+
                                         </div>
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
@@ -162,6 +183,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -579,7 +601,7 @@
         }
     </style>
 
-    <script>
+    {{-- <script>
         $(document).ready(function() {
 
 
@@ -691,5 +713,5 @@
 
 
         });
-    </script>
+    </script> --}}
 </x-admin.layouts>

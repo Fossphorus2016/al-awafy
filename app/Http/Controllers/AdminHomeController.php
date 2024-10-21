@@ -85,7 +85,7 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with(['message' => 'Banner updated successfully']);
+        return back()->with(['back-success' => 'Banner updated successfully']);
     }
 
 
@@ -112,7 +112,7 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with(['message' => 'Banner updated successfully']);
+        return back()->with(['back-success' => 'Banner updated successfully']);
     }
 
     public function admin_banner_3(Request $request)
@@ -139,7 +139,7 @@ class AdminHomeController extends Controller
         );
 
         // Optionally return a response or redirect
-        return back()->with(['message' => 'Banner updated successfully']);
+        return back()->with(['back-success' => 'Banner updated successfully']);
     }
 
 
@@ -175,7 +175,7 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with(['message' => 'Updated successfully']);
+        return back()->with(['back-success' => 'Updated successfully']);
     }
 
 
@@ -229,7 +229,7 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with(['message' => 'Updated successfully']);
+        return back()->with(['back-success' => 'Updated successfully']);
     }
 
     public function admin_section_6(Request $request)
@@ -254,7 +254,7 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with('message', 'Updated successfully');
+        return back()->with('back-success', 'Updated successfully');
     }
 
     public function admin_our_brand_1(Request $request)
@@ -289,7 +289,7 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with('message', 'created successfully');
+        return back()->with('back-success', 'created successfully');
     }
 
     public function admin_our_brand_2(Request $request)
@@ -325,7 +325,7 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with('message', 'created successfully');
+        return back()->with('back-success', 'created successfully');
     }
 
     public function admin_our_brand_3(Request $request)
@@ -361,6 +361,6 @@ class AdminHomeController extends Controller
             ]
         );
 
-        return back()->with('message', 'created successfully');
+        return back()->with('back-success', 'created successfully');
     }
 }

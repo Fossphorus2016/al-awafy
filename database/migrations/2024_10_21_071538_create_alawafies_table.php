@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('alawafies', function (Blueprint $table) {
             $table->id();
 
+            $table->string('language')->nullable();
+
             $table->string('meta_title')->nullable();
             $table->string('meta_description')->nullable();
-            $table->string('conanical')->nullable();
+            $table->string('canonical')->nullable();
 
             $table->string('banner_h1')->nullable();
             $table->string('banner_h2')->nullable();
