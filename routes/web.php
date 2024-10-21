@@ -177,9 +177,23 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/about-sec-3', [AdminAboutController::class, 'admin_section_3'])->name('about.section.3');
 
     // English Brand Routes
-    Route::get('admin/brand-alawafy', [AdminBrandController::class, 'admin_brand_alawafy'])->name('admin.brand.alawafy.english');
-    Route::get('admin/brand-alyoum', [AdminBrandController::class, 'admin_brand_alyoum'])->name('admin.brand.alyoum.english');
-    Route::get('admin/brand-crico', [AdminBrandController::class, 'admin_brand_crico'])->name('admin.brand.crico.english');
+    Route::get('admin/brand-alawafy-english', [AdminBrandController::class, 'admin_brand_alawafy'])->name('admin.brand.alawafy.english');
+    Route::get('admin/brand-alyoum-english', [AdminBrandController::class, 'admin_brand_alyoum'])->name('admin.brand.alyoum.english');
+    Route::get('admin/brand-crico-english', [AdminBrandController::class, 'admin_brand_crico'])->name('admin.brand.crico.english');
+
+    // French Brand Routes
+    Route::get('admin/brand-alawafy-french', [AdminBrandController::class, 'admin_brand_alawafy_french'])->name('admin.brand.alawafy.french');
+    Route::get('admin/brand-alyoum-french', [AdminBrandController::class, 'admin_brand_alyoum_french'])->name('admin.brand.alyoum.french');
+    Route::get('admin/brand-crico-french', [AdminBrandController::class, 'admin_brand_crico_french'])->name('admin.brand.crico.french');
+
+// Arabic Brand Routes
+Route::get('admin/brand-alawafy-arabic', [AdminBrandController::class, 'admin_brand_alawafy_arabic'])->name('admin.brand.alawafy.arabic');
+Route::get('admin/brand-alyoum-arabic', [AdminBrandController::class, 'admin_brand_alyoum_arabic'])->name('admin.brand.alyoum.arabic');
+Route::get('admin/brand-crico-arabic', [AdminBrandController::class, 'admin_brand_crico_arabic'])->name('admin.brand.crico.arabic');
+
+
+
+
 
     // Alawaf Brand Routes
     Route::post('admin/alawafy-meta/store', [AlawafyController::class, 'alawafy_meta_section'])->name('alawafy.meta');
@@ -217,7 +231,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/crico-item-4/store', [CircoController::class, 'crico_item_4'])->name('crico.item.4');
     Route::post('admin/crico-item-5/store', [CircoController::class, 'crico_item_5'])->name('crico.item.5');
     Route::post('admin/crico-item-6/store', [CircoController::class, 'crico_item_6'])->name('crico.item.6');
-     
+
 
 
 
