@@ -384,6 +384,24 @@
                                     <div class="col-6">
 
                                         <div>
+                                            <label for="">Value Heading 1</label>
+                                            <input class="form-control" name="our_value_h1"
+                                                value="{{ old('our_value_h1', $home_english->our_value_h1 ?? '') }}"></input>
+                                            <p class="text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Value Heading 2</label>
+                                            <input class="form-control" name="our_value_h2"
+                                                value="{{ old('our_value_h2', $home_english->our_value_h2 ?? '') }}"></input>
+                                            <p class="text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                        <div>
                                             <label for="">Value Title 1</label>
                                             <input class="form-control" name="our_value_1"
                                                 value="{{ old('our_value_1', $home_english->our_value_1 ?? '') }}"></input>

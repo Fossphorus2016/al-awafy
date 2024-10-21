@@ -1,3 +1,6 @@
+@php
+    $home_english = App\Models\Home::where('language', 'english')->first();
+@endphp
 <x-layout>
     <main>
         <section class="heroSection ">
@@ -16,46 +19,53 @@
                     <div class="heroSlider">
 
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Alawafy
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                    {{ $home_english->banner_1_h1 ?? '' }}
                                 </span> <br>
-                                <span class="fs3">The Heart of Premium Nuts</span>
+                                <span class="fs3">{{ $home_english->banner_1_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                Whether you're seeking a healthy snack, a flavorful treat, or bulk options for your
-                                business, Alawafy
-
-                                <br>
-                                has something for everyone.
+                                {{ $home_english->banner_1_p ?? '' }}
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
+                            @if ($home_english && $home_english->banner_1_image)
+                                <img class="w-100" src="{{ asset('storage/' . $home_english->banner_1_image) }}"
+                                    alt="">
+                            @endif
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Crico </span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                    {{ $home_english->banner_2_h1 ?? '' }} </span>
                                 <br>
-                                <span class="fs3">The Heart of Premium Nuts</span>
+                                <span class="fs3">{{ $home_english->banner_2_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                Whether you're seeking a healthy snack, a flavorful treat, or bulk options for your
-                                business, Crico
+                                {{ $home_english->banner_2_p ?? '' }}
 
-                                <br>
-                                has something for everyone.
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}" alt="">
+                            @if ($home_english && $home_english->banner_2_image)
+                                <img class="w-100" src="{{ asset('storage/' . $home_english->banner_2_image) }}"
+                                    alt="">
+                            @endif
+
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Welcome to Alyoum </span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                    {{ $home_english->banner_3_h1 ?? '' }}
+                                </span>
                                 <br>
-                                <span class="fs3">The Heart of Premium Nuts</span>
+                                <span class="fs3">{{ $home_english->banner_3_h1 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                Whether you're seeking a healthy snack, a flavorful treat, or bulk options for your
-                                business, Alyoum
 
-                                <br>
-                                has something for everyone.
+
+                                {{ $home_english->banner_3_p ?? '' }}
+
+
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}" alt="">
+                            @if ($home_english && $home_english->banner_3_image)
+                                <img class="w-100" src="{{ asset('storage/' . $home_english->banner_3_image) }}"
+                                    alt="">
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -69,29 +79,21 @@
                 <div class="row gy-4">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
-                            <h2><span class="fs5">About</span> <span class="fs6">Alawafy</span> </h2>
-                            <h3 class="fs13 mb-3">Family Moments of Joy with ALAWAFY</h3>
-                            <p>
-                                With our nuts brand ALAWAFY, every bite of our dried fruits becomes an invitation to
-                                share moments
-                                of joy and happiness with your family. We believe that togetherness around the table is
-                                essential, and
-                                our carefully selected products are perfect for your gatherings. Whether it's for an
-                                aperitif, a snack, or
-                                a relaxing moment, ALAWAFY brings a touch of sweetness and health, turning each moment
-                                into a
-                                memorable experience. Savor the authentic taste and quality of our nuts and dried fruits
-                                together!
+                            <h2><span class="fs5">{{ $home_english->about_section_h_blue ?? '' }}</span> <span
+                                    class="fs6">{{ $home_english->about_section_h_green ?? '' }}</span> </h2>
+                            <h3 class="fs13 mb-3">{{ $home_english->about_section_h_small ?? '' }}</h3>
+                            {!! $home_english->about_section_p ?? '' !!}
 
-                            </p>
-
-                            <a class="mainBtn1" href="about">Learn More</a>
+                            <a class="mainBtn1" href="{{ $home_english->about_section_url ?? '' }}">Learn More</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center">
                         <div class="aboutInnerImg">
-                            <img class="patternImg" class="w-100" src="{{ asset('assets/images/shape/pattern1.png') }}"
-                                alt="">
+                            @if ($home_english && $home_english->about_section_image)
+                                <img class="patternImg" class="w-100"
+                                    src="{{ asset('storage/' . $home_english->about_section_image) }}" alt="">
+                            @endif
+
                             {{-- <img class="abouteItem aboutItem1" class="w-100"
                                 src="{{ asset('assets/images/items/item1.png') }}" alt="">
                             <img class="abouteItem aboutItem2" class="w-100"
@@ -194,10 +196,12 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
+                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
+                                        alt="">
                                     <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
-                                    <p>Premium quality nuts, carefully selected and roasted to perfection. From cashews to almonds,
+                                    <p>Premium quality nuts, carefully selected and roasted to perfection. From cashews
+                                        to almonds,
                                         Alawafy offers a healthy and delicious snack for every occasion.</p>
                                     <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a
                                         href="brand-alawafy">
@@ -319,7 +323,7 @@
             <div class="customContainer">
                 <div class="tasteNutsInner">
                     <h2 class="waterDropsBefore"> <span class="fs7"> Enjoy the Finest Nuts,</span></h2>
-                    <h2 class=""> <span class="fs7">  Packed with  </span> <span
+                    <h2 class=""> <span class="fs7"> Packed with </span> <span
                             class="fs8 waterDropsAfter ms-0">Flavor and Nutrition</span> </h2>
                     <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
                             MORE</a>

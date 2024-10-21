@@ -12,6 +12,7 @@
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <form action="" class="mt-5 formValidation">
+                                @csrf
                                 <input type="hidden" name="language" value="english">
                                 <div class="row gy-4">
                                     <div class="col-6">
@@ -59,6 +60,24 @@
                                 <form action="" class="mt-5 formValidation2">
                                     <input type="hidden" name="language" value="english">
                                     <div class="row gy-4">
+                                        <div class="col-6">
+                                            <div>
+                                                <label for="banner_h1">Heading 1</label>
+                                                <input type="text" class="form-control " name="banner_h1"
+                                                    id="banner_h1">
+
+                                                <p class="text-danger fileError"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div>
+                                                <label for="banner_h2">Heading 2</label>
+                                                <input type="text" class="form-control " name="banner_h2"
+                                                    id="bannerImageInput2">
+
+                                                <p class="text-danger fileError"></p>
+                                            </div>
+                                        </div>
                                         <div class="col-6">
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>

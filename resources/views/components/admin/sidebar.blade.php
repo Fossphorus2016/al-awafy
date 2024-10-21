@@ -127,8 +127,8 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="125"
                                 style="display: none; overflow: hidden;">
-                                <div class="menu-item">
-                                    <a class="menu-link" href="/metronic8/demo1/apps/invoices/view/invoice-1.html">
+                                <div class="menu-item  {{ Route::is('admin.brand.alyoum.english') ? 'active' : '' }}">
+                                    <a class="menu-link" href="{{route('admin.brand.alyoum.english')}}">
                                         <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
                                         <span class="menu-title">English</span>
                                     </a>
@@ -146,8 +146,8 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="125"
                                 style="display: none; overflow: hidden;">
-                                <div class="menu-item">
-                                    <a class="menu-link" href="/metronic8/demo1/apps/invoices/view/invoice-1.html">
+                                <div class="menu-item {{ Route::is('admin.brand.crico.english') ? 'active' : '' }}">
+                                    <a class="menu-link" href="{{route('admin.brand.crico.english')}}">
                                         <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
                                         <span class="menu-title">English</span>
                                     </a>

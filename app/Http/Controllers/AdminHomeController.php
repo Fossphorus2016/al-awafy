@@ -176,6 +176,8 @@ class AdminHomeController extends Controller
     {
         // Validate the request inputs
         $request->validate([
+            'our_value_h1' => 'required',
+            'our_value_h2' => 'required',
             'our_value_1' => 'required',
             'our_value_2' => 'required',
             'our_value_3' => 'required',
@@ -204,6 +206,8 @@ class AdminHomeController extends Controller
             [
                 'our_value_1' => $request->our_value_1,
                 'our_value_2' => $request->our_value_2,
+                'our_value_h1' => $request->our_value_h1,
+                'our_value_h2' => $request->our_value_h2,
                 'our_value_3' => $request->our_value_3,
 
                 'our_value_1_image' => $our_value_1_image,

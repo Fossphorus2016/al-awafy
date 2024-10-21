@@ -1,12 +1,19 @@
+@php
+    $home_english = App\Models\Home::where('language', 'english')->first();
+@endphp
 <section {{ $attributes->merge(['class' => 'valueSection curvedLayer']) }}>
     <div class="customContainer">
         <div class="valueSectionInner">
 
-            <h2><span class="fs7">Our</span> <span class="fs8">Values</span> </h2>
+            <h2><span class="fs7">{{ $home_english->our_value_h1 ?? '' }}</span> <span
+                    class="fs8">{{ $home_english->our_value_h2 ?? '' }}</span> </h2>
             <div class="row gy-5">
                 <div class="col-lg-4 col-12">
                     <div class="singleValue">
-                        <img src="{{ asset('assets/images/shape/premiumQuality.png') }}" alt="">
+                        @if ($home_english && $home_english->our_value_1_image)
+                            <img src="{{ asset('storage/' . $home_english->our_value_1_image) }}" alt="">
+                        @endif
+
                         <p class="fs9">Premium <br> Quality</p>
                     </div>
                 </div>
