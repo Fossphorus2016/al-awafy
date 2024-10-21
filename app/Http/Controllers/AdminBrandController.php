@@ -32,7 +32,7 @@ class AdminBrandController extends Controller
 
     public function admin_brand_crico()
     {
-
-        return view('admin.en.brand.crico');
+        $brand_crico =Alyoum::where('language', 'english')->first();
+        return view('admin.en.brand.crico',compact('brand_crico'));
     }
 }

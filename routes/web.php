@@ -221,4 +221,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/crico-item-7/store', [CircoController::class, 'crico_item_7'])->name('crico.item.7');
 
 
+
+
+    // Activities Page Route
+    Route::get('admin/activities-english', function () {
+        return view('admin.en.activities');
+    });
 });
