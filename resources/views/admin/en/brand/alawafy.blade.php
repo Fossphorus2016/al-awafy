@@ -74,7 +74,7 @@
                                                     id="banner_h1" name="banner_h1" id="banner_h1"
                                                     value="{{ old('banner_h1', $brand_alawafy->banner_h1 ?? '') }}">
 
-                                                <p class="text-danger fileError"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -84,7 +84,7 @@
                                                     id="bannerImageInput2"
                                                     value="{{ old('banner_h2', $brand_alawafy->banner_h2 ?? '') }}">
 
-                                                <p class="text-danger fileError"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -93,7 +93,7 @@
                                                 <input type="file" class="form-control " name="banner_image"
                                                     id="imgS51">
 
-                                                <p class="text-danger fileError"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -925,10 +925,6 @@
                 }
             });
 
-            function validationItems(input, errMsg){
-
-            }
-
             $('.formValidation4').submit(function(event) {
                 event.preventDefault();
 
@@ -938,7 +934,7 @@
 
                 if ($(".editorOut930 input").val() == "") {
                     $(".editorOut930 input").addClass("is-invalid");
-                    $(".editorOut930 .errMsg").text('Content is required');
+                    $(".editorOut930 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut930 input").removeClass("is-invalid");
@@ -946,14 +942,14 @@
 
                 if ($(".editorOut94 input").val() == "") {
                     $(".editorOut94 input").addClass("is-invalid");
-                    $(".editorOut94 .errMsg").text('Content is required');
+                    $(".editorOut94 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut94 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut96 input").val() == "") {
                     $(".editorOut96 input").addClass("is-invalid");
-                    $(".editorOut96 .errMsg").text('Content is required');
+                    $(".editorOut96 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut96 input").removeClass("is-invalid");
@@ -977,7 +973,7 @@
 
                 if ($(".editorOut97 input").val() == "") {
                     $(".editorOut97 input").addClass("is-invalid");
-                    $(".editorOut97 .errMsg").text('Content is required');
+                    $(".editorOut97 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut97 input").removeClass("is-invalid");
@@ -985,14 +981,14 @@
 
                 if ($(".editorOut98 input").val() == "") {
                     $(".editorOut98 input").addClass("is-invalid");
-                    $(".editorOut98 .errMsg").text('Content is required');
+                    $(".editorOut98 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut98 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut11 input").val() == "") {
                     $(".editorOut11 input").addClass("is-invalid");
-                    $(".editorOut11 .errMsg").text('Content is required');
+                    $(".editorOut11 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut11 input").removeClass("is-invalid");
@@ -1016,7 +1012,7 @@
 
                 if ($(".editorOut12 input").val() == "") {
                     $(".editorOut12 input").addClass("is-invalid");
-                    $(".editorOut12 .errMsg").text('Content is required');
+                    $(".editorOut12 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut12 input").removeClass("is-invalid");
@@ -1024,14 +1020,14 @@
 
                 if ($(".editorOut13 input").val() == "") {
                     $(".editorOut13 input").addClass("is-invalid");
-                    $(".editorOut13 .errMsg").text('Content is required');
+                    $(".editorOut13 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut13 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut15 input").val() == "") {
                     $(".editorOut15 input").addClass("is-invalid");
-                    $(".editorOut15 .errMsg").text('Content is required');
+                    $(".editorOut15 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut15 input").removeClass("is-invalid");
@@ -1039,7 +1035,7 @@
                 console.log('worr')
 
                 if (!brand_3_p.value.trim() || brand_3_p.value.trim() === '<p><br></p>') {
-                console.log('workinggg')
+                    console.log('workinggg')
 
                     $('.editorOut14 .errMsg').text('Paragraph is required.');
                     valid = false;
@@ -1058,7 +1054,7 @@
 
                 if ($(".editorOut16 input").val() == "") {
                     $(".editorOut16 input").addClass("is-invalid");
-                    $(".editorOut16 .errMsg").text('Content is required');
+                    $(".editorOut16 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut16 input").removeClass("is-invalid");
@@ -1066,14 +1062,14 @@
 
                 if ($(".editorOut17 input").val() == "") {
                     $(".editorOut17 input").addClass("is-invalid");
-                    $(".editorOut17 .errMsg").text('Content is required');
+                    $(".editorOut17 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut17 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut19 input").val() == "") {
                     $(".editorOut19 input").addClass("is-invalid");
-                    $(".editorOut19 .errMsg").text('Content is required');
+                    $(".editorOut19 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut19 input").removeClass("is-invalid");
@@ -1100,7 +1096,7 @@
 
                 if ($(".editorOut20 input").val() == "") {
                     $(".editorOut20 input").addClass("is-invalid");
-                    $(".editorOut20 .errMsg").text('Content is required');
+                    $(".editorOut20 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut20 input").removeClass("is-invalid");
@@ -1108,14 +1104,14 @@
 
                 if ($(".editorOut21 input").val() == "") {
                     $(".editorOut21 input").addClass("is-invalid");
-                    $(".editorOut21 .errMsg").text('Content is required');
+                    $(".editorOut21 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut21 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut23 input").val() == "") {
                     $(".editorOut23 input").addClass("is-invalid");
-                    $(".editorOut23 .errMsg").text('Content is required');
+                    $(".editorOut23 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut23 input").removeClass("is-invalid");
@@ -1142,7 +1138,7 @@
 
                 if ($(".editorOut24 input").val() == "") {
                     $(".editorOut24 input").addClass("is-invalid");
-                    $(".editorOut24 .errMsg").text('Content is required');
+                    $(".editorOut24 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut24 input").removeClass("is-invalid");
@@ -1150,14 +1146,14 @@
 
                 if ($(".editorOut25 input").val() == "") {
                     $(".editorOut25 input").addClass("is-invalid");
-                    $(".editorOut25 .errMsg").text('Content is required');
+                    $(".editorOut25 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut25 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut27 input").val() == "") {
                     $(".editorOut27 input").addClass("is-invalid");
-                    $(".editorOut27 .errMsg").text('Content is required');
+                    $(".editorOut27 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut27 input").removeClass("is-invalid");
@@ -1184,7 +1180,7 @@
 
                 if ($(".editorOut28 input").val() == "") {
                     $(".editorOut28 input").addClass("is-invalid");
-                    $(".editorOut28 .errMsg").text('Content is required');
+                    $(".editorOut28 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut28 input").removeClass("is-invalid");
@@ -1192,14 +1188,14 @@
 
                 if ($(".editorOut29 input").val() == "") {
                     $(".editorOut29 input").addClass("is-invalid");
-                    $(".editorOut29 .errMsg").text('Content is required');
+                    $(".editorOut29 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut29 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut31 input").val() == "") {
                     $(".editorOut31 input").addClass("is-invalid");
-                    $(".editorOut31 .errMsg").text('Content is required');
+                    $(".editorOut31 .errMsg").text('Heading is required');
                     valid = false
                 } else {
                     $(".editorOut31 input").removeClass("is-invalid");

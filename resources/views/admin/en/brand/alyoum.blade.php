@@ -62,8 +62,8 @@
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div>
-                                <form action="{{ route('alyoum.banner') }}" method="POST"
-                                    enctype="multipart/form-data" class="mt-5 formValidation2">
+                                <form action="{{ route('alyoum.banner') }}" method="POST" enctype="multipart/form-data"
+                                    class="mt-5 formValidation">
                                     @csrf
                                     <input type="hidden" name="language" value="english">
                                     <div class="row gy-4">
@@ -74,7 +74,7 @@
                                                     id="banner_h1" name="banner_h1" id="banner_h1"
                                                     value="{{ old('banner_h1', $brand_alyoum->banner_h1 ?? '') }}">
 
-                                                <p class="text-danger fileError"></p>
+                                               <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -84,7 +84,7 @@
                                                     id="bannerImageInput2"
                                                     value="{{ old('banner_h2', $brand_alyoum->banner_h2 ?? '') }}">
 
-                                                <p class="text-danger fileError"></p>
+                                               <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -93,7 +93,7 @@
                                                 <input type="file" class="form-control " name="banner_image"
                                                     id="imgS51">
 
-                                                <p class="text-danger fileError"></p>
+                                               <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -127,13 +127,13 @@
                             <div class="">
 
                                 <form action="{{ route('alyoum.section.2') }}" method="POST"
-                                    class="mt-5 formValidation" enctype="multipart/form-data">
+                                    class="mt-5 formValidation3" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english">
                                     <div class="row gy-4">
                                         <div class="col-6">
 
-                                            <div class="editorOut1">
+                                            <div class="editorOut91">
                                                 <label for="section1_h1">Heading 1</label>
                                                 <input class="form-control" name="section1_h1" id="section1_h1"
                                                     value="{{ old('section1_h1', $brand_alyoum->section1_h1 ?? '') }}"></input>
@@ -142,7 +142,7 @@
                                         </div>
                                         <div class="col-6">
 
-                                            <div class="editorOut2">
+                                            <div class="editorOut92">
                                                 <label for=""> Heading 2</label>
                                                 <input class="form-control" name="section1_h2" id="section1_h2"
                                                     value="{{ old('section1_h2', $brand_alyoum->section1_h2 ?? '') }}"></input>
@@ -151,7 +151,7 @@
                                         </div>
                                         <div class="col-12">
 
-                                            <div class="editorOut3">
+                                            <div class="editorOut93">
                                                 <label for="">Paragraph</label>
                                                 <textarea name="section1_p" class="form-control" id="section1_p" cols="7" rows="8">{{ old('section1_p', $brand_alyoum->section1_p ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
@@ -209,13 +209,13 @@
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
                                                 <form action="{{ route('alyoum.item.1') }}" method="POST"
-                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                    enctype="multipart/form-data" class="mt-5 formValidation4">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
-                                                            <div class="editorOut1">
+                                                            <div class="editorOut930">
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_1_h1"
                                                                     id="brand_1_h1"
@@ -225,7 +225,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut94">
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_1_h2"
                                                                     id="brand_1_h2"
@@ -235,7 +235,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut3">
+                                                            <div class="editorOut95">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_1_p" class="form-control" id="brand_1_p" cols="7" rows="8">{{ old('brand_1_p', $brand_alyoum->brand_1_p ?? '') }}</textarea>
 
@@ -244,7 +244,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut96">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_1_url"
                                                                     id="brand_1_url"
@@ -291,13 +291,13 @@
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
                                                 <form action="{{ route('alyoum.item.2') }}" method="POST"
-                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                    enctype="multipart/form-data" class="mt-5 formValidation5">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
-                                                            <div class="editorOut1">
+                                                            <div class="editorOut97">
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_2_h1"
                                                                     id="brand_2_h1"
@@ -307,7 +307,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut98">
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_2_h2"
                                                                     id="brand_2_h2"
@@ -317,7 +317,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut3">
+                                                            <div class="editorOut11">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_2_p" class="form-control" id="brand_2_p" cols="7" rows="8">{{ old('brand_2_p', $brand_alyoum->brand_2_p ?? '') }}</textarea>
 
@@ -326,7 +326,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut99">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_2_url"
                                                                     id="brand_2_url"
@@ -373,13 +373,13 @@
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
                                                 <form action="{{ route('alyoum.item.3') }}" method="POST"
-                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                    enctype="multipart/form-data" class="mt-5 formValidation6">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
-                                                            <div class="editorOut1">
+                                                            <div class="editorOut12">
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_3_h1"
                                                                     id="brand_3_h1"
@@ -389,7 +389,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut13">
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_3_h2"
                                                                     id="brand_3_h2"
@@ -399,7 +399,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut3">
+                                                            <div class="editorOut15">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_3_p" class="form-control" id="brand_3_p" cols="7" rows="8">{{ old('brand_3_p', $brand_alyoum->brand_3_p ?? '') }}</textarea>
 
@@ -408,7 +408,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut14">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_3_url"
                                                                     id="brand_3_url"
@@ -455,13 +455,13 @@
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
                                                 <form action="{{ route('alyoum.item.4') }}" method="POST"
-                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                    enctype="multipart/form-data" class="mt-5 formValidation7">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
-                                                            <div class="editorOut1">
+                                                            <div class="editorOut16">
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_4_h1"
                                                                     id="brand_4_h1"
@@ -471,7 +471,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut17">
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_4_h2"
                                                                     id="brand_4_h2"
@@ -481,7 +481,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut3">
+                                                            <div class="editorOut19">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_4_p" class="form-control" id="brand_4_p" cols="7" rows="8">{{ old('brand_4_p', $brand_alyoum->brand_4_p ?? '') }}</textarea>
 
@@ -490,7 +490,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut18">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_4_url"
                                                                     id="brand_4_url"
@@ -537,13 +537,13 @@
                                             data-bs-parent="#accordionBrand">
                                             <div class="accordion-body">
                                                 <form action="{{ route('alyoum.item.5') }}" method="POST"
-                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                    enctype="multipart/form-data" class="mt-5 formValidation8">
                                                     @csrf
                                                     <input type="hidden" name="language" value="english">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
-                                                            <div class="editorOut1">
+                                                            <div class="editorOut20">
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_5_h1"
                                                                     id="brand_5_h1"
@@ -553,7 +553,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut21">
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_5_h2"
                                                                     id="brand_5_h2"
@@ -563,7 +563,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut3">
+                                                            <div class="editorOut23">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_5_p" class="form-control" id="brand_5_p" cols="7" rows="8">{{ old('brand_5_p', $brand_alyoum->brand_5_p ?? '') }}</textarea>
 
@@ -572,7 +572,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut2">
+                                                            <div class="editorOut22">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_5_url"
                                                                     id="brand_5_url"
@@ -638,94 +638,277 @@
             const brand_5_p = Jodit.make('#brand_5_p');
 
 
+            $(".formValidation").submit(function(event) {
+                event.preventDefault();
+                let isValid = true;
 
-            // $(".formValidation").submit(function(event) {
-            //     event.preventDefault();
-            //     let isValid = true;
+                $(this)
+                    .find("input")
+                    .each(function() {
+                        let $inputField = $(this);
+                        let $parentDiv = $inputField.closest('div');
+                        let $errorMessage = $parentDiv.find('.errMsg');
+                        let labelText = $parentDiv.find('label').text();
 
-            //     $(this)
-            //         .find("input")
-            //         .each(function() {
-            //             let $inputField = $(this);
-            //             let $parentDiv = $inputField.closest('div');
-            //             let $errorMessage = $parentDiv.find('.errMsg');
-            //             let labelText = $parentDiv.find('label').text();
+                        if ($inputField.hasClass("noVal")) {
+                            $inputField.removeClass("is-invalid");
+                            return;
+                        }
+                        if ($inputField.is(":text")) {
+                            if ($inputField.val().trim() === "") {
+                                $inputField.addClass("is-invalid");
+                                $errorMessage.text(labelText + " is required").css('display', 'block');
+                                isValid = false;
+                            } else {
+                                $inputField.removeClass("is-invalid");
+                                $errorMessage.text('').css('display', 'none');
+                            }
+                        }
 
-            //             if ($inputField.hasClass("noVal")) {
-            //                 $inputField.removeClass("is-invalid");
-            //                 return;
-            //             }
-            //             if ($inputField.val().trim() === "") {
-            //                 $inputField.addClass("is-invalid");
-            //                 $errorMessage.text(labelText + " is required").css('display', 'block');
-            //                 isValid = false;
-            //             } else {
-            //                 $inputField.removeClass("is-invalid");
-            //                 $errorMessage.text('').css('display', 'none');
-            //             }
+                    });
+                if (isValid) {
+                    this.submit();
+                }
+            });
 
-            //         });
-            //     if (isValid) {
-            //         this.submit();
-            //     }
-            // });
-            // $(".formValidation2").submit(function(event) {
-            //     event.preventDefault();
-            //     let isValid = true;
-            //     $(".fileError").text('');
-            //     const fileInput = $("#bannerImageInput1")[0];
-            //     if (!fileInput.files.length) {
-            //         isValid = false;
-            //         $(".fileError").text('Please upload a banner image.');
-            //     }
-            //     if (isValid) {
-            //         this.submit();
-            //     }
-            // });
-            // $(".formValidation4").submit(function(event) {
-            //     event.preventDefault();
-            //     let isValid = true;
+            $('.formValidation3').submit(function(event) {
+                event.preventDefault();
 
-            //     $(this)
-            //         .find("input, textarea")
-            //         .each(function() {
-            //             let $inputField = $(this);
-            //             let $parentDiv = $inputField.closest('div');
-            //             let $errorMessage = $parentDiv.find('p');
-            //             let labelText = $parentDiv.find('label').text();
+                let valid = true;
 
-            //             if ($inputField.hasClass("noVal")) {
-            //                 $inputField.removeClass("is-invalid");
-            //                 return;
-            //             }
+                $('.errMsg').text('');
 
-            //             // Check for file input
-            //             if ($inputField.is(":file")) {
-            //                 if (!this.files.length) {
-            //                     $inputField.addClass("is-invalid");
-            //                     $errorMessage.text(labelText + " is required").css('display', 'block');
-            //                     isValid = false;
-            //                 } else {
-            //                     $inputField.removeClass("is-invalid");
-            //                     $errorMessage.text('').css('display', 'none');
-            //                 }
-            //             } else {
-            //                 // Check for other input or textarea
-            //                 if ($inputField.val().trim() === "") {
-            //                     $inputField.addClass("is-invalid");
-            //                     $errorMessage.text(labelText + " is required").css('display', 'block');
-            //                     isValid = false;
-            //                 } else {
-            //                     $inputField.removeClass("is-invalid");
-            //                     $errorMessage.text('').css('display', 'none');
-            //                 }
-            //             }
-            //         });
+                if ($(".editorOut91 input").val() == "") {
+                    $(".editorOut91 input").addClass("is-invalid");
+                    $(".editorOut91 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut91 input").removeClass("is-invalid");
+                }
 
-            //     if (isValid) {
-            //         this.submit();
-            //     }
-            // });
+                if ($(".editorOut92 input").val() == "") {
+                    $(".editorOut92 input").addClass("is-invalid");
+                    $(".editorOut92 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut92 input").removeClass("is-invalid");
+                }
+
+                if (!section1_p.value.trim() || section1_p.value.trim() === '<p><br></p>') {
+                    $('.editorOut93 .errMsg').text('Paragraph 1 is required.');
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.submit();
+                }
+            });
+            $('.formValidation4').submit(function(event) {
+                event.preventDefault();
+
+                let valid = true;
+
+                $('.errMsg').text('');
+
+                if ($(".editorOut930 input").val() == "") {
+                    $(".editorOut930 input").addClass("is-invalid");
+                    $(".editorOut930 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut930 input").removeClass("is-invalid");
+                }
+
+                if ($(".editorOut94 input").val() == "") {
+                    $(".editorOut94 input").addClass("is-invalid");
+                    $(".editorOut94 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut94 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut96 input").val() == "") {
+                    $(".editorOut96 input").addClass("is-invalid");
+                    $(".editorOut96 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut96 input").removeClass("is-invalid");
+                }
+
+                if (!brand_1_p.value.trim() || brand_1_p.value.trim() === '<p><br></p>') {
+                    $('.editorOut95 .errMsg').text('Paragraph is required.');
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.submit();
+                }
+            });
+            $('.formValidation5').submit(function(event) {
+                event.preventDefault();
+
+                let valid = true;
+
+                $('.errMsg').text('');
+
+                if ($(".editorOut97 input").val() == "") {
+                    $(".editorOut97 input").addClass("is-invalid");
+                    $(".editorOut97 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut97 input").removeClass("is-invalid");
+                }
+
+                if ($(".editorOut98 input").val() == "") {
+                    $(".editorOut98 input").addClass("is-invalid");
+                    $(".editorOut98 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut98 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut11 input").val() == "") {
+                    $(".editorOut11 input").addClass("is-invalid");
+                    $(".editorOut11 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut11 input").removeClass("is-invalid");
+                }
+
+                if (!brand_2_p.value.trim() || brand_2_p.value.trim() === '<p><br></p>') {
+                    $('.editorOut99 .errMsg').text('Paragraph is required.');
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.submit();
+                }
+            });
+            $('.formValidation6').submit(function(event) {
+                event.preventDefault();
+
+                let valid = true;
+
+                $('.errMsg').text('');
+
+                if ($(".editorOut12 input").val() == "") {
+                    $(".editorOut12 input").addClass("is-invalid");
+                    $(".editorOut12 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut12 input").removeClass("is-invalid");
+                }
+
+                if ($(".editorOut13 input").val() == "") {
+                    $(".editorOut13 input").addClass("is-invalid");
+                    $(".editorOut13 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut13 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut15 input").val() == "") {
+                    $(".editorOut15 input").addClass("is-invalid");
+                    $(".editorOut15 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut15 input").removeClass("is-invalid");
+                }
+
+
+                if (!brand_3_p.value.trim() || brand_3_p.value.trim() === '<p><br></p>') {
+
+
+                    $('.editorOut14 .errMsg').text('Paragraph is required.');
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.submit();
+                }
+            });
+            $('.formValidation7').submit(function(event) {
+                event.preventDefault();
+
+                let valid = true;
+
+                $('.errMsg').text('');
+
+                if ($(".editorOut16 input").val() == "") {
+                    $(".editorOut16 input").addClass("is-invalid");
+                    $(".editorOut16 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut16 input").removeClass("is-invalid");
+                }
+
+                if ($(".editorOut17 input").val() == "") {
+                    $(".editorOut17 input").addClass("is-invalid");
+                    $(".editorOut17 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut17 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut19 input").val() == "") {
+                    $(".editorOut19 input").addClass("is-invalid");
+                    $(".editorOut19 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut19 input").removeClass("is-invalid");
+                }
+
+
+                if (!brand_4_p.value.trim() || brand_4_p.value.trim() === '<p><br></p>') {
+
+
+                    $('.editorOut18 .errMsg').text('Paragraph is required.');
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.submit();
+                }
+            });
+            $('.formValidation8').submit(function(event) {
+                event.preventDefault();
+
+                let valid = true;
+
+                $('.errMsg').text('');
+
+                if ($(".editorOut20 input").val() == "") {
+                    $(".editorOut20 input").addClass("is-invalid");
+                    $(".editorOut20 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut20 input").removeClass("is-invalid");
+                }
+
+                if ($(".editorOut21 input").val() == "") {
+                    $(".editorOut21 input").addClass("is-invalid");
+                    $(".editorOut21 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut21 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut23 input").val() == "") {
+                    $(".editorOut23 input").addClass("is-invalid");
+                    $(".editorOut23 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut23 input").removeClass("is-invalid");
+                }
+
+
+                if (!brand_5_p.value.trim() || brand_5_p.value.trim() === '<p><br></p>') {
+
+
+                    $('.editorOut22 .errMsg').text('Paragraph is required.');
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.submit();
+                }
+            });
+
+
 
             function handleImageChange(inputId, imageId) {
                 $(inputId).on('change', function(event) {
@@ -742,16 +925,14 @@
             }
 
             handleImageChange('#imgS51', '#imgU51');
+            handleImageChange('#imgS52', '#imgU52');
             handleImageChange('#bannerImageInput2', '#uploadedImage2');
             handleImageChange('#activityImageInput1', '#uploadedActivityImage1');
-            handleImageChange('#section1_image', '#upload_section1_image');
             handleImageChange('#brand_1_image', '#upload_brand_1_image');
             handleImageChange('#brand_2_image', '#upload_brand_2_image');
             handleImageChange('#brand_3_image', '#upload_brand_3_image');
             handleImageChange('#brand_4_image', '#upload_brand_4_image');
             handleImageChange('#brand_5_image', '#upload_brand_5_image');
-            handleImageChange('#brand_6_image', '#upload_brand_6_image');
-            handleImageChange('#brand_7_image', '#upload_brand_7_image');
 
 
         });
