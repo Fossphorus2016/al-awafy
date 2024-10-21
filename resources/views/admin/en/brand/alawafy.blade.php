@@ -51,7 +51,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero2" aria-expanded="false" aria-controls="collapseZero2">
-                            Banner Image
+                            Banner Section
                         </button>
                     </h2>
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -104,7 +104,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Brands
+                            Section 2
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -139,30 +139,6 @@
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
-
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Brand Image
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div>
-                                <form action="" class="mt-5 formValidation2">
-                                    <input type="hidden" name="language" value="english">
-                                    <div class="row gy-4">
                                         <div class="col-6">
                                             <div>
                                                 <label for="banner_1_image">Banner Image</label>
@@ -182,129 +158,65 @@
                                     </div>
                                 </form>
                             </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Our Activities
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Brands
                         </button>
                     </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <div class="d-flex justify-content-end">
+                            <div>
+                                <form action="" class="mt-5 formValidation2">
+                                    <input type="hidden" name="language" value="english">
+                                    <div class="row gy-4">
+                                        <div class="col-6">
 
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#addActivity">
-                                    Add Item
-                                </button>
-                            </div>
-                            <div class="modal fade" id="addActivity" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content ">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Item</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                            <div class="editorOut1">
+                                                <label for="">Heading 1</label>
+                                                <input class="form-control"></input>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            <form action="" class="mt-5 formValidation4">
-                                                <input type="hidden" name="language" value="english">
-                                                <div class="row gy-4">
-                                                    <div class="col-12">
+                                        <div class="col-6">
 
-                                                        <div class="editorOut21">
-                                                            <label for="">Heading 1</label>
-                                                            <input class="form-control"></input>
-                                                            <p class="text-danger"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
+                                            <div class="editorOut2">
+                                                <label for="">Heading 2</label>
+                                                <input class="form-control"></input>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
 
-                                                        <div class="editorOut22">
-                                                            <label for="">Heading 2</label>
-                                                            <input class="form-control"></input>
-                                                            <p class="text-danger"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
+                                            <div class="editorOut3">
+                                                <label for="">Paragraph</label>
+                                                <input class="form-control"></input>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
 
-                                                        <div class="editorOut23">
-                                                            <label for="">Paragraph</label>
-                                                            <textarea class="form-control" name="paragraph"></textarea>
-                                                            <p class="text-danger"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-
-                                                        <div>
-                                                            <label for="">Image</label>
-                                                            <input type="file" class="form-control"
-                                                                id="activityImageInput1">
-                                                            <p class="text-danger"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-
-                                                        <img src="" alt="Uploaded Image"
-                                                            id="uploadedActivityImage1"
-                                                            style="background-color:lightgrey; max-width: 350px; width: 100%; height:270px; object-fit:contain; display: none;">
-
-                                                    </div>
-
-
-                                                </div>
-                                                <div class="modal-footer">
-
-                                                    <button type="submit" class="btn btn-primary">Save</button>
-                                                </div>
-                                            </form>
+                                            <div class="editorOut2">
+                                                <label for="">Url</label>
+                                                <input class="form-control"></input>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Save</button>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
-
-                            <div class="table-responsive">
-
-                                <table class="table table-striped table-hover activityTable">
-                                    <thead>
-
-                                        <tr>
-                                            <th>ID</th>
-                                            <th class="text-nowrap">Heading 1</th>
-                                            <th class="text-nowrap">Heading 2</th>
-                                            <th>Paragraph</th>
-                                            <th>Image</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Alawafy</td>
-                                            <td>Pistachios</td>
-                                            <td>
-                                                Indulge in the premium taste of Alawafy Pistachios, sourced from the
-                                                finest orchards and carefully roasted to perfection. These pistachios
-                                                are packed with flavor, offering a delightful crunch in every bite.
-                                                Ideal for healthy snacking or as an addition to your favorite recipes,
-                                                Alawafy Pistachios deliver top-quality taste, rich in protein and
-                                                essential nutrients.
-                                            </td>
-                                            <td>
-                                                <img src="https://al-awafy.koreintl.com/assets/images/items/brandItem5.png"
-                                                    alt="">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>

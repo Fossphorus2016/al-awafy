@@ -61,7 +61,8 @@
                             <p class="fs4">
 
 
-                                {{ $home_english->banner_3_p ?? '' }}
+                                {{ $home_english->banner_3_p1 ?? '' }}
+                                {{ $home_english->banner_3_p2 ?? '' }}
 
 
                             </p>
