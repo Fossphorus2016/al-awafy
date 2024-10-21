@@ -184,4 +184,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/alawafy-banner/store', [AlawafyController::class, 'alawafy_banner_section'])->name('alawafy.banner');
     Route::post('admin/alawafy-section-2/store', [AlawafyController::class, 'alawafy_section2'])->name('alawafy.section.2');
 
+    Route::post('admin/alawafy-item-1/store', [AlawafyController::class, 'alawafy_item_1'])->name('alawafy.item.1');
+    Route::post('admin/alawafy-item-2/store', [AlawafyController::class, 'alawafy_item_2'])->name('alawafy.item.2');
+    Route::post('admin/alawafy-item-3/store', [AlawafyController::class, 'alawafy_item_3'])->name('alawafy.item.3');
+    Route::post('admin/alawafy-item-4/store', [AlawafyController::class, 'alawafy_item_4'])->name('alawafy.item.4');
+    Route::post('admin/alawafy-item-5/store', [AlawafyController::class, 'alawafy_item_5'])->name('alawafy.item.5');
+    Route::post('admin/alawafy-item-6/store', [AlawafyController::class, 'alawafy_item_6'])->name('alawafy.item.6');
+    Route::post('admin/alawafy-item-7/store', [AlawafyController::class, 'alawafy_item_7'])->name('alawafy.item.7');
+
+
 });
