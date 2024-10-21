@@ -925,8 +925,7 @@
                 }
             });
 
-
-            $('.formValidation4').submit(function(event) {
+            function validationItems(input, errMsg) {
                 event.preventDefault();
 
                 let valid = true;
@@ -964,6 +963,10 @@
                 if (valid) {
                     this.submit();
                 }
+            }
+
+            $('.formValidation4').submit(function(event) {
+                validationItems()
             });
 
 
