@@ -65,34 +65,37 @@ class AdminHomeController extends Controller
 
     public function admin_banner_1(Request $request)
     {
-        $banner_1_image = null;
+        $home = Home::where('language', $request->language)->first();
 
-        // Check if the request has a file and store it
+        // If a new image is uploaded, update the image, otherwise keep the existing one
+        $banner_1_image = $home ? $home->banner_1_image : null;
         if ($request->hasFile('banner_1_image')) {
             $banner_1_image = $request->file('banner_1_image')->store('banners', 'public');
         }
 
-
+        // Update or create the record
         Home::updateOrCreate(
             ['language' => $request->language],
             [
                 'banner_1_h1' => $request->banner_1_h1,
                 'banner_1_h2' => $request->banner_1_h2,
-                'banner_1_p' => $request->banner_1_p,
+                'banner_1_p1' => $request->banner_1_p1,
+                'banner_1_p2' => $request->banner_1_p2,
                 'banner_1_image' => $banner_1_image,
             ]
         );
 
-        // Optionally return a response or redirect
         return back()->with(['message' => 'Banner updated successfully']);
     }
 
 
+
     public function admin_banner_2(Request $request)
     {
-        $banner_2_image = null;
+        $home = Home::where('language', $request->language)->first();
 
         // Check if the request has a file and store it
+        $banner_2_image = $home ? $home->banner_2_image : null;
         if ($request->hasFile('banner_2_image')) {
             $banner_2_image = $request->file('banner_2_image')->store('banners', 'public');
         }
@@ -103,7 +106,8 @@ class AdminHomeController extends Controller
             [
                 'banner_2_h1' => $request->banner_2_h1,
                 'banner_2_h2' => $request->banner_2_h2,
-                'banner_2_p' => $request->banner_2_p,
+                'banner_2_p1' => $request->banner_2_p1,
+                'banner_2_p2' => $request->banner_2_p2,
                 'banner_2_image' => $banner_2_image,
             ]
         );
@@ -113,8 +117,10 @@ class AdminHomeController extends Controller
 
     public function admin_banner_3(Request $request)
     {
-        $banner_3_image = null;
+        $home = Home::where('language', $request->language)->first();
 
+        // Check if the request has a file and store it
+        $banner_3_image = $home ? $home->banner_3_image : null;
         // Check if the request has a file and store it
         if ($request->hasFile('banner_3_image')) {
             $banner_3_image = $request->file('banner_3_image')->store('banners', 'public');
@@ -126,7 +132,8 @@ class AdminHomeController extends Controller
             [
                 'banner_3_h1' => $request->banner_3_h1,
                 'banner_3_h2' => $request->banner_3_h2,
-                'banner_3_p' => $request->banner_3_p,
+                'banner_3_p1' => $request->banner_3_p1,
+                'banner_3_p2' => $request->banner_3_p2,
                 'banner_3_image' => $banner_3_image,
             ]
         );
@@ -140,19 +147,18 @@ class AdminHomeController extends Controller
 
     public function admin_about(Request $request)
     {
-
         $request->validate([
             'about_section_h_blue' => 'required',
             'about_section_h_green' => 'required',
             'about_section_h_small' => 'required',
             'about_section_p' => 'required',
             'about_section_url' => 'required',
-
         ]);
 
+        $home = Home::where('language', $request->language)->first();
 
-        $about_section_image = null;
-
+        // If a new image is uploaded, update the image, otherwise keep the existing one
+        $about_section_image = $home ? $home->about_section_image : null;
         if ($request->hasFile('about_section_image')) {
             $about_section_image = $request->file('about_section_image')->store('home', 'public');
         }
@@ -172,6 +178,7 @@ class AdminHomeController extends Controller
         return back()->with(['message' => 'Updated successfully']);
     }
 
+
     public function admin_our_value(Request $request)
     {
         // Validate the request inputs
@@ -183,10 +190,16 @@ class AdminHomeController extends Controller
             'our_value_3' => 'required',
 
         ]);
+        $home = Home::where('language', $request->language)->first();
 
-        $our_value_1_image = null;
-        $our_value_2_image = null;
-        $our_value_3_image = null;
+        // If a new image is uploaded, update the image, otherwise keep the existing one
+        $our_value_1_image = $home ? $home->our_value_1_image : null;
+        $our_value_2_image = $home ? $home->our_value_2_image : null;
+        $our_value_3_image = $home ? $home->our_value_3_image : null;
+
+
+
+
 
         // Handle the file uploads
         if ($request->hasFile('our_value_1_image')) {
@@ -252,9 +265,10 @@ class AdminHomeController extends Controller
 
         ]);
 
+        $home = Home::where('language', $request->language)->first();
 
-        $our_brand_image_1 = null;
-        $our_brand_logo_1 = null;
+        $our_brand_image_1 = $home ? $home->our_brand_image_1 : null;
+        $our_brand_logo_1 = $home ? $home->our_brand_logo_1 : null;
 
         if ($request->hasFile('our_brand_image_1')) {
             $our_brand_image_1 = $request->file('our_brand_image_1')->store('home', 'public');
@@ -286,9 +300,11 @@ class AdminHomeController extends Controller
 
         ]);
 
+        $home = Home::where('language', $request->language)->first();
 
-        $our_brand_image_2 = null;
-        $our_brand_logo_2 = null;
+        $our_brand_image_2 = $home ? $home->our_brand_image_2 : null;
+        $our_brand_logo_2 = $home ? $home->our_brand_logo_2 : null;
+
 
         if ($request->hasFile('our_brand_image_2')) {
             $our_brand_image_2 = $request->file('our_brand_image_2')->store('home', 'public');
@@ -321,8 +337,10 @@ class AdminHomeController extends Controller
         ]);
 
 
-        $our_brand_image_3 = null;
-        $our_brand_logo_3 = null;
+        $home = Home::where('language', $request->language)->first();
+
+        $our_brand_image_3 = $home ? $home->our_brand_image_3 : null;
+        $our_brand_logo_3 = $home ? $home->our_brand_logo_3 : null;
 
         if ($request->hasFile('our_brand_image_3')) {
             $our_brand_image_3 = $request->file('our_brand_image_3')->store('home', 'public');

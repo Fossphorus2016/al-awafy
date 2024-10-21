@@ -110,9 +110,19 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="banner_1_p">Paragraph</label>
-                                                <input type="text" class="form-control" name="banner_1_p"
-                                                    value="{{ old('banner_1_p', $home_english->banner_1_p ?? '') }}">
+                                                <label for="banner_1_p1">Paragraph 1</label>
+                                                <input type="text" class="form-control" name="banner_1_p1"
+                                                    value="{{ old('banner_1_p1', $home_english->banner_1_p1 ?? '') }}">
+                                                @error('banner_1_p')
+                                                    <p class="text-danger">{{ $message }}</p>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div>
+                                                <label for="banner_1_p2">Paragraph 2</label>
+                                                <input type="text" class="form-control" name="banner_1_p2"
+                                                    value="{{ old('banner_1_p2', $home_english->banner_1_p2 ?? '') }}">
                                                 @error('banner_1_p')
                                                     <p class="text-danger">{{ $message }}</p>
                                                 @enderror
@@ -177,9 +187,18 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Paragraph</label>
-                                                <input type="text" class="form-control" name="banner_2_p"
-                                                    value="{{ old('banner_2_p', $home_english->banner_2_p ?? '') }}">
+                                                <label for="">Paragraph 1</label>
+                                                <input type="text" class="form-control" name="banner_2_p1"
+                                                    value="{{ old('banner_2_p1', $home_english->banner_2_p1 ?? '') }}">
+                                                <p class="text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+
+                                            <div>
+                                                <label for="">Paragraph 2</label>
+                                                <input type="text" class="form-control" name="banner_2_p2"
+                                                    value="{{ old('banner_2_p2', $home_english->banner_2_p2 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>
@@ -240,9 +259,18 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Paragraph</label>
-                                                <input type="text" class="form-control" name="banner_3_p"
-                                                    value="{{ old('banner_3_p', $home_english->banner_3_p ?? '') }}">
+                                                <label for="">Paragraph 1</label>
+                                                <input type="text" class="form-control" name="banner_3_p1"
+                                                    value="{{ old('banner_3_p1', $home_english->banner_3_p1 ?? '') }}">
+                                                <p class="text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+
+                                            <div>
+                                                <label for="">Paragraph 2</label>
+                                                <input type="text" class="form-control" name="banner_3_p2"
+                                                    value="{{ old('banner_3_p2', $home_english->banner_3_p2 ?? '') }}">
                                                 <p class="text-danger"></p>
                                             </div>
                                         </div>

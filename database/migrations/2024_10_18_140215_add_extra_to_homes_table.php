@@ -18,13 +18,13 @@ return new class extends Migration
             $table->string('banner_1_p2')->nullable();
             $table->string('banner_2_p2')->nullable();
             $table->string('banner_3_p2')->nullable();
-            $table->string('our_value_h1');
-            $table->string('our_value_h2');
-            $table->string('our_brand_h1');
-            $table->string('our_brand_h2');
-            
-            $table->string('our_activity_h1');
-            $table->string('our_activity_h2');
+            $table->string('our_value_h1')->nullable();
+            $table->string('our_value_h2')->nullable();
+            $table->string('our_brand_h1')->nullable();
+            $table->string('our_brand_h2')->nullable();
+
+            $table->string('our_activity_h1')->nullable();
+            $table->string('our_activity_h2')->nullable();
         });
     }
 

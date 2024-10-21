@@ -25,7 +25,8 @@
                                 <span class="fs3">{{ $home_english->banner_1_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                {{ $home_english->banner_1_p ?? '' }}
+                                {{ $home_english->banner_1_p1 ?? '' }} <br>
+                                {{ $home_english->banner_1_p2 ?? '' }}
                             </p>
                             @if ($home_english && $home_english->banner_1_image)
                                 <img class="w-100" src="{{ asset('storage/' . $home_english->banner_1_image) }}"
@@ -39,7 +40,9 @@
                                 <span class="fs3">{{ $home_english->banner_2_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                {{ $home_english->banner_2_p ?? '' }}
+                                {{ $home_english->banner_2_p1 ?? '' }} <br>
+                                {{ $home_english->banner_2_p2 ?? '' }} <br>
+
 
                             </p>
                             @if ($home_english && $home_english->banner_2_image)
