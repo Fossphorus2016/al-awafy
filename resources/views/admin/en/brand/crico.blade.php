@@ -21,7 +21,7 @@
                                         <div>
                                             <label for="">Meta title</label>
                                             <input class="form-control" name="meta_title" id="meta_title"
-                                                value="{{ old('meta_title', $brand_alyoum->meta_title ?? '') }}"></input>
+                                                value="{{ old('meta_title', $brand_crico->meta_title ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -30,7 +30,7 @@
                                         <div>
                                             <label for="">Meta Description</label>
                                             <input class="form-control" name="meta_description" id="meta_description"
-                                                value="{{ old('meta_description', $brand_alyoum->meta_description ?? '') }}"></input>
+                                                value="{{ old('meta_description', $brand_crico->meta_description ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -38,7 +38,7 @@
                                         <div>
                                             <label for="">Canonical</label>
                                             <input class="form-control" name="canonical" id="canonical"
-                                                value="{{ old('canonical', $brand_alyoum->canonical ?? '') }}"></input>
+                                                value="{{ old('canonical', $brand_crico->canonical ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -72,7 +72,7 @@
                                                 <label for="banner_h1">Heading 1</label>
                                                 <input type="text" class="form-control " name="banner_h1"
                                                     id="banner_h1" name="banner_h1" id="banner_h1"
-                                                    value="{{ old('banner_h1', $brand_alyoum->banner_h1 ?? '') }}">
+                                                    value="{{ old('banner_h1', $brand_crico->banner_h1 ?? '') }}">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
@@ -82,7 +82,7 @@
                                                 <label for="banner_h2">Heading 2</label>
                                                 <input type="text" class="form-control " name="banner_h2"
                                                     id="bannerImageInput2"
-                                                    value="{{ old('banner_h2', $brand_alyoum->banner_h2 ?? '') }}">
+                                                    value="{{ old('banner_h2', $brand_crico->banner_h2 ?? '') }}">
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
@@ -97,8 +97,8 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            @if ($brand_alyoum && $brand_alyoum->banner_image)
-                                                <img src="{{ asset('storage/' . $brand_alyoum->banner_image) }}"
+                                            @if ($brand_crico && $brand_crico->banner_image)
+                                                <img src="{{ asset('storage/' . $brand_crico->banner_image) }}"
                                                     alt="" id="imgU51"
                                                     style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain; ">
                                             @else
@@ -136,7 +136,7 @@
                                             <div class="editorOut1">
                                                 <label for="section1_h1">Heading 1</label>
                                                 <input class="form-control" name="section1_h1" id="section1_h1"
-                                                    value="{{ old('section1_h1', $brand_alyoum->section1_h1 ?? '') }}"></input>
+                                                    value="{{ old('section1_h1', $brand_crico->section1_h1 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@
                                             <div class="editorOut2">
                                                 <label for=""> Heading 2</label>
                                                 <input class="form-control" name="section1_h2" id="section1_h2"
-                                                    value="{{ old('section1_h2', $brand_alyoum->section1_h2 ?? '') }}"></input>
+                                                    value="{{ old('section1_h2', $brand_crico->section1_h2 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -153,7 +153,7 @@
 
                                             <div class="editorOut3">
                                                 <label for="">Paragraph</label>
-                                                <textarea name="section1_p" class="form-control" id="section1_p" cols="7" rows="8">{{ old('section1_p', $brand_alyoum->section1_p ?? '') }}</textarea>
+                                                <textarea name="section1_p" class="form-control" id="section1_p" cols="7" rows="8">{{ old('section1_p', $brand_crico->section1_p ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
@@ -167,8 +167,8 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            @if ($brand_alyoum && $brand_alyoum->section1_image)
-                                                <img src="{{ asset('storage/' . $brand_alyoum->section1_image) }}"
+                                            @if ($brand_crico && $brand_crico->section1_image)
+                                                <img src="{{ asset('storage/' . $brand_crico->section1_image) }}"
                                                     alt="" id="upload_section1_image"
                                                     style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                             @endif
@@ -219,7 +219,7 @@
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_1_h1"
                                                                     id="brand_1_h1"
-                                                                    value="{{ old('brand_1_h1', $brand_alyoum->brand_1_h1 ?? '') }}"></input>
+                                                                    value="{{ old('brand_1_h1', $brand_crico->brand_1_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -229,7 +229,7 @@
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_1_h2"
                                                                     id="brand_1_h2"
-                                                                    value="{{ old('brand_1_h2', $brand_alyoum->brand_1_h2 ?? '') }}"></input>
+                                                                    value="{{ old('brand_1_h2', $brand_crico->brand_1_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -237,7 +237,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_1_p" class="form-control" id="brand_1_p" cols="7" rows="8">{{ old('brand_1_p', $brand_alyoum->brand_1_p ?? '') }}</textarea>
+                                                                <textarea name="brand_1_p" class="form-control" id="brand_1_p" cols="7" rows="8">{{ old('brand_1_p', $brand_crico->brand_1_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -248,7 +248,7 @@
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_1_url"
                                                                     id="brand_1_url"
-                                                                    value="{{ old('brand_1_url', $brand_alyoum->brand_1_url ?? '') }}"></input>
+                                                                    value="{{ old('brand_1_url', $brand_crico->brand_1_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -263,8 +263,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
-                                                            @if ($brand_alyoum && $brand_alyoum->brand_1_image)
-                                                                <img src="{{ asset('storage/' . $brand_alyoum->brand_1_image) }}"
+                                                            @if ($brand_crico && $brand_crico->brand_1_image)
+                                                                <img src="{{ asset('storage/' . $brand_crico->brand_1_image) }}"
                                                                     id="upload_brand_1_image" alt=""
                                                                     style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
@@ -301,7 +301,7 @@
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_2_h1"
                                                                     id="brand_2_h1"
-                                                                    value="{{ old('brand_2_h1', $brand_alyoum->brand_2_h1 ?? '') }}"></input>
+                                                                    value="{{ old('brand_2_h1', $brand_crico->brand_2_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -311,7 +311,7 @@
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_2_h2"
                                                                     id="brand_2_h2"
-                                                                    value="{{ old('brand_2_h2', $brand_alyoum->brand_2_h2 ?? '') }}"></input>
+                                                                    value="{{ old('brand_2_h2', $brand_crico->brand_2_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -319,7 +319,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_2_p" class="form-control" id="brand_2_p" cols="7" rows="8">{{ old('brand_2_p', $brand_alyoum->brand_2_p ?? '') }}</textarea>
+                                                                <textarea name="brand_2_p" class="form-control" id="brand_2_p" cols="7" rows="8">{{ old('brand_2_p', $brand_crico->brand_2_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -330,7 +330,7 @@
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_2_url"
                                                                     id="brand_2_url"
-                                                                    value="{{ old('brand_2_url', $brand_alyoum->brand_2_url ?? '') }}"></input>
+                                                                    value="{{ old('brand_2_url', $brand_crico->brand_2_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -345,8 +345,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
-                                                            @if ($brand_alyoum && $brand_alyoum->brand_2_image)
-                                                                <img src="{{ asset('storage/' . $brand_alyoum->brand_2_image) }}"
+                                                            @if ($brand_crico && $brand_crico->brand_2_image)
+                                                                <img src="{{ asset('storage/' . $brand_crico->brand_2_image) }}"
                                                                     alt="" id="upload_brand_2_image"
                                                                     style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
@@ -383,7 +383,7 @@
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_3_h1"
                                                                     id="brand_3_h1"
-                                                                    value="{{ old('brand_3_h1', $brand_alyoum->brand_3_h1 ?? '') }}"></input>
+                                                                    value="{{ old('brand_3_h1', $brand_crico->brand_3_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -393,7 +393,7 @@
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_3_h2"
                                                                     id="brand_3_h2"
-                                                                    value="{{ old('brand_3_h2', $brand_alyoum->brand_3_h2 ?? '') }}"></input>
+                                                                    value="{{ old('brand_3_h2', $brand_crico->brand_3_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -401,7 +401,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_3_p" class="form-control" id="brand_3_p" cols="7" rows="8">{{ old('brand_3_p', $brand_alyoum->brand_3_p ?? '') }}</textarea>
+                                                                <textarea name="brand_3_p" class="form-control" id="brand_3_p" cols="7" rows="8">{{ old('brand_3_p', $brand_crico->brand_3_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -412,7 +412,7 @@
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_3_url"
                                                                     id="brand_3_url"
-                                                                    value="{{ old('brand_3_url', $brand_alyoum->brand_3_url ?? '') }}"></input>
+                                                                    value="{{ old('brand_3_url', $brand_crico->brand_3_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -427,8 +427,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
-                                                            @if ($brand_alyoum && $brand_alyoum->brand_3_image)
-                                                                <img src="{{ asset('storage/' . $brand_alyoum->brand_3_image) }}"
+                                                            @if ($brand_crico && $brand_crico->brand_3_image)
+                                                                <img src="{{ asset('storage/' . $brand_crico->brand_3_image) }}"
                                                                     alt="" id="upload_brand_3_image"
                                                                     style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
@@ -465,7 +465,7 @@
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_4_h1"
                                                                     id="brand_4_h1"
-                                                                    value="{{ old('brand_4_h1', $brand_alyoum->brand_4_h1 ?? '') }}"></input>
+                                                                    value="{{ old('brand_4_h1', $brand_crico->brand_4_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -475,7 +475,7 @@
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_4_h2"
                                                                     id="brand_4_h2"
-                                                                    value="{{ old('brand_4_h2', $brand_alyoum->brand_4_h2 ?? '') }}"></input>
+                                                                    value="{{ old('brand_4_h2', $brand_crico->brand_4_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -483,7 +483,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_4_p" class="form-control" id="brand_4_p" cols="7" rows="8">{{ old('brand_4_p', $brand_alyoum->brand_4_p ?? '') }}</textarea>
+                                                                <textarea name="brand_4_p" class="form-control" id="brand_4_p" cols="7" rows="8">{{ old('brand_4_p', $brand_crico->brand_4_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -494,7 +494,7 @@
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_4_url"
                                                                     id="brand_4_url"
-                                                                    value="{{ old('brand_4_url', $brand_alyoum->brand_4_url ?? '') }}"></input>
+                                                                    value="{{ old('brand_4_url', $brand_crico->brand_4_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -509,8 +509,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
-                                                            @if ($brand_alyoum && $brand_alyoum->brand_4_image)
-                                                                <img src="{{ asset('storage/' . $brand_alyoum->brand_4_image) }}"
+                                                            @if ($brand_crico && $brand_crico->brand_4_image)
+                                                                <img src="{{ asset('storage/' . $brand_crico->brand_4_image) }}"
                                                                     alt="" id="upload_brand_4_image"
                                                                     style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
@@ -547,7 +547,7 @@
                                                                 <label for="">Heading 1</label>
                                                                 <input class="form-control" name="brand_5_h1"
                                                                     id="brand_5_h1"
-                                                                    value="{{ old('brand_5_h1', $brand_alyoum->brand_5_h1 ?? '') }}"></input>
+                                                                    value="{{ old('brand_5_h1', $brand_crico->brand_5_h1 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -557,7 +557,7 @@
                                                                 <label for="">Heading 2</label>
                                                                 <input class="form-control" name="brand_5_h2"
                                                                     id="brand_5_h2"
-                                                                    value="{{ old('brand_5_h2', $brand_alyoum->brand_5_h2 ?? '') }}"></input>
+                                                                    value="{{ old('brand_5_h2', $brand_crico->brand_5_h2 ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -565,7 +565,7 @@
 
                                                             <div class="editorOut3">
                                                                 <label for="">Paragraph</label>
-                                                                <textarea name="brand_5_p" class="form-control" id="brand_5_p" cols="7" rows="8">{{ old('brand_5_p', $brand_alyoum->brand_5_p ?? '') }}</textarea>
+                                                                <textarea name="brand_5_p" class="form-control" id="brand_5_p" cols="7" rows="8">{{ old('brand_5_p', $brand_crico->brand_5_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
@@ -576,7 +576,7 @@
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_5_url"
                                                                     id="brand_5_url"
-                                                                    value="{{ old('brand_5_url', $brand_alyoum->brand_5_url ?? '') }}"></input>
+                                                                    value="{{ old('brand_5_url', $brand_crico->brand_5_url ?? '') }}"></input>
                                                                 <p class="errMsg text-danger"></p>
                                                             </div>
                                                         </div>
@@ -591,8 +591,92 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
-                                                            @if ($brand_alyoum && $brand_alyoum->brand_5_image)
-                                                                <img src="{{ asset('storage/' . $brand_alyoum->brand_5_image) }}"
+                                                            @if ($brand_crico && $brand_crico->brand_5_image)
+                                                                <img src="{{ asset('storage/' . $brand_crico->brand_5_image) }}"
+                                                                    alt="" id="upload_brand_5_image"
+                                                                    style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
+                                                            @endif
+
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse16"
+                                                aria-expanded="false" aria-controls="collapse16">
+                                                item 6
+                                            </button>
+                                        </h2>
+                                        <div id="collapse16" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionBrand">
+                                            <div class="accordion-body">
+                                                <form action="{{ route('crico.item.6') }}" method="POST"
+                                                    enctype="multipart/form-data" class="mt-5 formValidation2">
+                                                    @csrf
+                                                    <input type="hidden" name="language" value="english">
+                                                    <div class="row gy-4">
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut1">
+                                                                <label for="">Heading 1</label>
+                                                                <input class="form-control" name="brand_6_h1"
+                                                                    id="brand_6_h1"
+                                                                    value="{{ old('brand_6_h1', $brand_crico->brand_6_h1 ?? '') }}"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Heading 2</label>
+                                                                <input class="form-control" name="brand_6_h2"
+                                                                    id="brand_6_h2"
+                                                                    value="{{ old('brand_6_h2', $brand_crico->brand_6_h2 ?? '') }}"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <div class="editorOut3">
+                                                                <label for="">Paragraph</label>
+                                                                <textarea name="brand_6_p" class="form-control" id="brand_6_p" cols="7" rows="8">{{ old('brand_6_p', $brand_crico->brand_6_p ?? '') }}</textarea>
+
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+
+                                                            <div class="editorOut2">
+                                                                <label for="">Url</label>
+                                                                <input class="form-control" name="brand_6_url"
+                                                                    id="brand_6_url"
+                                                                    value="{{ old('brand_6_url', $brand_crico->brand_6_url ?? '') }}"></input>
+                                                                <p class="errMsg text-danger"></p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6">
+                                                            <div>
+                                                                <label for="banner_1_image">Banner Image</label>
+                                                                <input type="file" class="form-control "
+                                                                    name="brand_6_image" id="brand_6_image">
+
+                                                                <p class="text-danger fileError"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            @if ($brand_crico && $brand_crico->brand_6_image)
+                                                                <img src="{{ asset('storage/' . $brand_crico->brand_6_image) }}"
                                                                     alt="" id="upload_brand_5_image"
                                                                     style="background-color:lightgrey; max-width: 1140px; width: 100%; height: 450px; object-fit: contain;">
                                                             @endif
@@ -636,6 +720,7 @@
             const brand_3_p = Jodit.make('#brand_3_p');
             const brand_4_p = Jodit.make('#brand_4_p');
             const brand_5_p = Jodit.make('#brand_5_p');
+            const brand_6_p = Jodit.make('#brand_6_p');
 
 
 

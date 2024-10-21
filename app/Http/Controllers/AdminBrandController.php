@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Alawafy;
 use App\Models\Alyoum;
+use App\Models\Crico;
 use Illuminate\Http\Request;
 
 class AdminBrandController extends Controller
@@ -32,7 +33,7 @@ class AdminBrandController extends Controller
 
     public function admin_brand_crico()
     {
-        $brand_crico =Alyoum::where('language', 'english')->first();
+        $brand_crico =Crico::where('language', 'english')->first();
         return view('admin.en.brand.crico',compact('brand_crico'));
     }
 }
