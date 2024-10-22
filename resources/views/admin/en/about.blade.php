@@ -166,6 +166,14 @@
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
+                                        <div class="col-12">
+
+                                            <div class="editorOut2">
+                                                <label for="">Paragraph 3</label>
+                                                <textarea id="editor3" class="editor3 " name="sec2_p3" value="">{{ old('sec2_p3', $about_english->sec2_p3 ?? '') }}</textarea>
+                                                <p class="errMsg text-danger"></p>
+                                            </div>
+                                        </div>
 
                                         <div class="col-6">
                                             <div>
@@ -309,7 +317,7 @@
 
             const editor1 = new Jodit('.editor1');
             const editor2 = new Jodit('.editor2');
-            // const editor3 = new Jodit('.editor3');
+            const editor3 = new Jodit('.editor3');
             const editor4 = new Jodit('.editor4');
             const editor5 = new Jodit('.editor5');
 

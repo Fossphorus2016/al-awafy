@@ -74,9 +74,9 @@ class AdminAboutController extends Controller
 
     public function admin_section_2(Request $request)
     {
-        $sec2_image = null;
+        $about = About::where('language', $request->language)->first();
 
-        // Check if the request has a file and store it
+        $sec2_image = $about ? $about->sec2_image : null;
         if ($request->hasFile('sec2_image')) {
             $sec2_image = $request->file('sec2_image')->store('about', 'public');
         }
@@ -89,6 +89,7 @@ class AdminAboutController extends Controller
                 'sec2_h2' => $request->sec2_h2,
                 'sec2_p1' => $request->sec2_p1,
                 'sec2_p2' => $request->sec2_p2,
+                'sec2_p3' => $request->sec2_p3,
 
                 'sec2_image' => $sec2_image,
             ]
@@ -100,9 +101,9 @@ class AdminAboutController extends Controller
 
     public function admin_section_3(Request $request)
     {
-        $sec3_image = null;
+        $about = About::where('language', $request->language)->first();
 
-        // Check if the request has a file and store it
+        $sec3_image = $about ? $about->sec3_image : null;
         if ($request->hasFile('sec3_image')) {
             $sec3_image = $request->file('sec3_image')->store('about', 'public');
         }
