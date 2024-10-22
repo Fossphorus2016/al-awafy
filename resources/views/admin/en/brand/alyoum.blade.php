@@ -317,7 +317,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut11">
+                                                            <div class="editorOut99">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_2_p" class="form-control" id="brand_2_p" cols="7" rows="8">{{ old('brand_2_p', $brand_alyoum->brand_2_p ?? '') }}</textarea>
 
@@ -326,7 +326,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut99">
+                                                            <div class="editorOut11">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_2_url"
                                                                     id="brand_2_url"
@@ -399,7 +399,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut15">
+                                                            <div class="editorOut14">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_3_p" class="form-control" id="brand_3_p" cols="7" rows="8">{{ old('brand_3_p', $brand_alyoum->brand_3_p ?? '') }}</textarea>
 
@@ -408,7 +408,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut14">
+                                                            <div class="editorOut15">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_3_url"
                                                                     id="brand_3_url"
@@ -481,7 +481,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut19">
+                                                            <div class="editorOut18">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_4_p" class="form-control" id="brand_4_p" cols="7" rows="8">{{ old('brand_4_p', $brand_alyoum->brand_4_p ?? '') }}</textarea>
 
@@ -490,7 +490,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut18">
+                                                            <div class="editorOut19">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_4_url"
                                                                     id="brand_4_url"
@@ -563,7 +563,7 @@
                                                         </div>
                                                         <div class="col-12">
 
-                                                            <div class="editorOut23">
+                                                            <div class="editorOut22">
                                                                 <label for="">Paragraph</label>
                                                                 <textarea name="brand_5_p" class="form-control" id="brand_5_p" cols="7" rows="8">{{ old('brand_5_p', $brand_alyoum->brand_5_p ?? '') }}</textarea>
 
@@ -572,7 +572,7 @@
                                                         </div>
                                                         <div class="col-6">
 
-                                                            <div class="editorOut22">
+                                                            <div class="editorOut23">
                                                                 <label for="">Url</label>
                                                                 <input class="form-control" name="brand_5_url"
                                                                     id="brand_5_url"
@@ -727,7 +727,7 @@
                 }
                 if ($(".editorOut96 input").val() == "") {
                     $(".editorOut96 input").addClass("is-invalid");
-                    $(".editorOut96 .errMsg").text('Heading is required');
+                    $(".editorOut96 .errMsg").text('Url is required');
                     valid = false
                 } else {
                     $(".editorOut96 input").removeClass("is-invalid");
@@ -766,7 +766,7 @@
                 }
                 if ($(".editorOut11 input").val() == "") {
                     $(".editorOut11 input").addClass("is-invalid");
-                    $(".editorOut11 .errMsg").text('Heading is required');
+                    $(".editorOut11 .errMsg").text('Url is required');
                     valid = false
                 } else {
                     $(".editorOut11 input").removeClass("is-invalid");
@@ -805,7 +805,7 @@
                 }
                 if ($(".editorOut15 input").val() == "") {
                     $(".editorOut15 input").addClass("is-invalid");
-                    $(".editorOut15 .errMsg").text('Heading is required');
+                    $(".editorOut15 .errMsg").text('Url is required');
                     valid = false
                 } else {
                     $(".editorOut15 input").removeClass("is-invalid");
@@ -847,7 +847,7 @@
                 }
                 if ($(".editorOut19 input").val() == "") {
                     $(".editorOut19 input").addClass("is-invalid");
-                    $(".editorOut19 .errMsg").text('Heading is required');
+                    $(".editorOut19 .errMsg").text('Url is required');
                     valid = false
                 } else {
                     $(".editorOut19 input").removeClass("is-invalid");
@@ -889,7 +889,7 @@
                 }
                 if ($(".editorOut23 input").val() == "") {
                     $(".editorOut23 input").addClass("is-invalid");
-                    $(".editorOut23 .errMsg").text('Heading is required');
+                    $(".editorOut23 .errMsg").text('Url is required');
                     valid = false
                 } else {
                     $(".editorOut23 input").removeClass("is-invalid");

@@ -13,7 +13,7 @@
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.meta') }}" method="POST">
+                            <form action="{{ route('home.meta') }}" method="POST" class="formValidation1">
                                 @csrf
 
                                 <input type="hidden" name="language" value="english">
@@ -25,7 +25,7 @@
                                             <label for="">Meta title</label>
                                             <input class="form-control" name="meta_title"
                                                 value="{{ $home_english->meta_title ?? '' }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -34,7 +34,7 @@
                                             <label for="">Meta Description</label>
                                             <input class="form-control" name="meta_description"
                                                 value="{{ $home_english->meta_description ?? '' }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -42,7 +42,7 @@
                                             <label for="">Canonical</label>
                                             <input class="form-control" name="canonical"
                                                 value="{{ $home_english->canonical ?? '' }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
 
@@ -83,7 +83,7 @@
                             <div class="bannerNavForm1">
 
                                 <form action="{{ route('home.banner.1') }}" method="POST" enctype="multipart/form-data"
-                                    class="mt-5 formValidation">
+                                    class="mt-5 formValidation1">
                                     @csrf
                                     <div class="row gy-4">
                                         <div class="col-6">
@@ -94,7 +94,7 @@
                                                 <input type="text" class="form-control" name="banner_1_h1"
                                                     value="{{ old('banner_1_h1', $home_english->banner_1_h1 ?? '') }}">
                                                 @error('banner_1_h1')
-                                                    <p class="text-danger">{{ $message }}</p>
+                                                    <p class="errMsg text-danger">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@
                                                 <input type="text" class="form-control" name="banner_1_h2"
                                                     value="{{ old('banner_1_h2', $home_english->banner_1_h2 ?? '') }}">
                                                 @error('banner_1_h2')
-                                                    <p class="text-danger">{{ $message }}</p>
+                                                    <p class="errMsg text-danger">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                         </div>
@@ -114,7 +114,7 @@
                                                 <input type="text" class="form-control" name="banner_1_p1"
                                                     value="{{ old('banner_1_p1', $home_english->banner_1_p1 ?? '') }}">
                                                 @error('banner_1_p')
-                                                    <p class="text-danger">{{ $message }}</p>
+                                                    <p class="errMsg text-danger">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                         </div>
@@ -124,7 +124,7 @@
                                                 <input type="text" class="form-control" name="banner_1_p2"
                                                     value="{{ old('banner_1_p2', $home_english->banner_1_p2 ?? '') }}">
                                                 @error('banner_1_p')
-                                                    <p class="text-danger">{{ $message }}</p>
+                                                    <p class="errMsg text-danger">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                         </div>
@@ -134,7 +134,7 @@
                                                 <input type="file" class="form-control" name="banner_1_image"
                                                     id="imgS1">
                                                 @error('banner_1_image')
-                                                    <p class="text-danger">{{ $message }}</p>
+                                                    <p class="errMsg text-danger">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                         </div>
@@ -161,7 +161,7 @@
                             <div class="bannerNavForm2" style="display: none">
 
                                 <form action="{{ route('home.banner.2') }}" method="POST"
-                                    class="mt-5 formValidation" enctype="multipart/form-data">
+                                    class="mt-5 formValidation1" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english">
 
@@ -172,7 +172,7 @@
                                                 <label for="">Heading 1</label>
                                                 <input type="text" class="form-control" name="banner_2_h1"
                                                     value="{{ old('banner_2_h1', $home_english->banner_2_h1 ?? '') }}">
-                                                <p class="text-danger"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -181,7 +181,7 @@
                                                 <label for="">Heading 2</label>
                                                 <input type="text" class="form-control" name="banner_2_h2"
                                                     value="{{ old('banner_2_h2', $home_english->banner_2_h2 ?? '') }}">
-                                                <p class="text-danger"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -190,7 +190,7 @@
                                                 <label for="">Paragraph 1</label>
                                                 <input type="text" class="form-control" name="banner_2_p1"
                                                     value="{{ old('banner_2_p1', $home_english->banner_2_p1 ?? '') }}">
-                                                <p class="text-danger"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -199,7 +199,7 @@
                                                 <label for="">Paragraph 2</label>
                                                 <input type="text" class="form-control" name="banner_2_p2"
                                                     value="{{ old('banner_2_p2', $home_english->banner_2_p2 ?? '') }}">
-                                                <p class="text-danger"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -208,7 +208,7 @@
                                                 <label for="">Banner Image</label>
                                                 <input type="file" class="form-control" id="imgS2"
                                                     name="banner_2_image">
-                                                <p class="text-danger">
+                                                <p class="errMsg text-danger">
                                                 </p>
                                             </div>
                                         </div>
@@ -233,7 +233,7 @@
                             <div class="bannerNavForm3" style="display: none">
 
                                 <form action="{{ route('home.banner.3') }}" method="POST"
-                                    class="mt-5 formValidation" enctype="multipart/form-data">
+                                    class="mt-5 formValidation1" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english">
 
@@ -244,7 +244,7 @@
                                                 <label for="">Heading 1</label>
                                                 <input type="text" class="form-control" name="banner_3_h1"
                                                     value="{{ old('banner_3_h1', $home_english->banner_3_h1 ?? '') }}">
-                                                <p class="text-danger"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -253,7 +253,7 @@
                                                 <label for="">Heading 2</label>
                                                 <input type="text" class="form-control" name="banner_3_h2"
                                                     value="{{ old('banner_3_h2', $home_english->banner_3_h2 ?? '') }}">
-                                                <p class="text-danger"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -262,7 +262,7 @@
                                                 <label for="">Paragraph 1</label>
                                                 <input type="text" class="form-control" name="banner_3_p1"
                                                     value="{{ old('banner_3_p1', $home_english->banner_3_p1 ?? '') }}">
-                                                <p class="text-danger"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -271,7 +271,7 @@
                                                 <label for="">Paragraph 2</label>
                                                 <input type="text" class="form-control" name="banner_3_p2"
                                                     value="{{ old('banner_3_p2', $home_english->banner_3_p2 ?? '') }}">
-                                                <p class="text-danger"></p>
+                                                <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -280,7 +280,7 @@
                                                 <label for="">Banner Image</label>
                                                 <input type="file" class="form-control" id="imgS3"
                                                     name="banner_3_image">
-                                                <p class="text-danger">
+                                                <p class="errMsg text-danger">
                                                 </p>
                                             </div>
                                         </div>
@@ -316,44 +316,44 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.about') }}" method="POST" class="mt-5 formValidation"
+                            <form action="{{ route('home.about') }}" method="POST" class="mt-5 formValidation2"
                                 enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="language" value="english" id="">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
-                                        <div>
+                                        <div class="editorOut1">
                                             <label for="">Heading blue</label>
                                             <input type="text" class="form-control" name="about_section_h_blue"
                                                 value="{{ old('about_section_h_blue', $home_english->about_section_h_blue ?? '') }}">
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
 
-                                        <div>
+                                        <div class="editorOut2">
                                             <label for="">Heading green</label>
                                             <input type="text" class="form-control" name="about_section_h_green"
                                                 value="{{ old('about_section_h_green', $home_english->about_section_h_green ?? '') }}">
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
 
-                                        <div>
+                                        <div class="editorOut3">
                                             <label for="">Heading small</label>
                                             <input type="text" class="form-control" name="about_section_h_small"
                                                 value="{{ old('about_section_h_small', $home_english->about_section_h_small ?? '') }}">
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
 
-                                        <div>
+                                        <div class="editorOut4">
                                             <label for="">About paragraph</label>
                                             <textarea class="editor1 noVal" name="about_section_p">{{ old('about_section_p', $home_english->about_section_p ?? '') }}</textarea>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -362,7 +362,7 @@
                                             <label for="">About Image</label>
                                             <input type="file" class="form-control" name="about_section_image"
                                                 id="aboutImageInput1">
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -404,7 +404,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.our.value') }}" method="POST" class="mt-5 formValidation"
+                            <form action="{{ route('home.our.value') }}" method="POST" class="mt-5 formValidation1"
                                 enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="language" value="english" id="">
@@ -415,7 +415,7 @@
                                             <label for="">Value Heading 1</label>
                                             <input class="form-control" name="our_value_h1"
                                                 value="{{ old('our_value_h1', $home_english->our_value_h1 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -424,7 +424,7 @@
                                             <label for="">Value Heading 2</label>
                                             <input class="form-control" name="our_value_h2"
                                                 value="{{ old('our_value_h2', $home_english->our_value_h2 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -433,7 +433,7 @@
                                             <label for="">Value Title 1</label>
                                             <input class="form-control" name="our_value_1"
                                                 value="{{ old('our_value_1', $home_english->our_value_1 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -442,7 +442,7 @@
                                             <label for="">Value</label>
                                             <input type="file" class="form-control" id="valueImageInput1"
                                                 name="our_value_1_image">
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
 
@@ -463,7 +463,7 @@
                                             <label for="">Value Title 2</label>
                                             <input class="form-control" name="our_value_2"
                                                 value="{{ old('our_value_2', $home_english->our_value_2 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -472,7 +472,7 @@
                                             <label for="">Value</label>
                                             <input type="file" class="form-control" name="our_value_2_image"
                                                 id="valueImageInput2">
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -492,7 +492,7 @@
                                             <label for="">Value Title 3</label>
                                             <input class="form-control" name="our_value_3"
                                                 value="{{ old('our_value_3', $home_english->our_value_3 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -501,7 +501,7 @@
                                             <label for="">Value</label>
                                             <input type="file" class="form-control" name="our_value_3_image"
                                                 id="valueImageInput3">
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -554,7 +554,7 @@
 
                             <div class="bannerNavForm1">
                                 <form action="{{ route('home.our.brand_1') }}" method="POST"
-                                    class="mt-5 formValidation" enctype="multipart/form-data">
+                                    class="mt-5 formValidation1" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english" id="">
                                     <div class="row gy-4">
@@ -624,7 +624,7 @@
                             <div class="bannerNavForm2" style="display: none">
 
                                 <form action="{{ route('home.our.brand_2') }}" method="POST"
-                                    class="mt-5 formValidation" enctype="multipart/form-data">
+                                    class="mt-5 formValidation1" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english" id="">
                                     <div class="row gy-4">
@@ -772,7 +772,7 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.section.6') }}" method="POST" class="mt-5 formValidation">
+                            <form action="{{ route('home.section.6') }}" method="POST" class="mt-5 formValidation1">
                                 @csrf
                                 <input type="hidden" name="language" value="english" id="">
                                 <div class="row gy-4">
@@ -782,7 +782,7 @@
                                             <label for="">Heading 1</label>
                                             <input class="form-control" name="section_6_h1"
                                                 value="{{ old('section_6_h1', $home_english->section_6_h1 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -791,7 +791,7 @@
                                             <label for="">Heading 2</label>
                                             <input class="form-control" name="section_6_h2"
                                                 value="{{ old('section_6_h2', $home_english->section_6_h2 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -799,7 +799,7 @@
                                             <label for="">Heading 3</label>
                                             <input class="form-control" name="section_6_h3"
                                                 value="{{ old('section_6_h3', $home_english->section_6_h3 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -807,7 +807,7 @@
                                             <label for="">Url 1</label>
                                             <input class="form-control" name="section_6_url_1"
                                                 value="{{ old('section_6_url_1', $home_english->section_6_url_1 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -815,7 +815,7 @@
                                             <label for="">Url 2</label>
                                             <input class="form-control" name="section_6_url_2"
                                                 value="{{ old('section_6_url_2', $home_english->section_6_url_2 ?? '') }}"></input>
-                                            <p class="text-danger"></p>
+                                            <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
 
@@ -847,14 +847,14 @@
                             <div class="modal fade" id="addActivity" tabindex="-1"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
-                                    <div class="modal-content formValidation">
+                                    <div class="modal-content ">
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5" id="exampleModalLabel">Add Activity</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="{{ route('activity.store') }}" class="mt-5"
+                                            <form action="{{ route('activity.store') }}" class="mt-5 formValidation1"
                                                 enctype="multipart/form-data" method="POST">
                                                 @csrf
                                                 <input type="hidden" name="language" value="english"
@@ -863,15 +863,15 @@
                                                     <div class="col-12">
                                                         <div>
                                                             <label for="">Heading</label>
-                                                            <input class="form-control" name="heading" required>
-                                                            <p class="text-danger"></p>
+                                                            <input class="form-control" name="heading" >
+                                                            <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
                                                         <div>
                                                             <label for="">Paragraph</label>
-                                                            <textarea class="form-control" name="paragraph" required></textarea>
-                                                            <p class="text-danger"></p>
+                                                            <input class="form-control"  name="paragraph" >
+                                                            <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
@@ -879,7 +879,7 @@
                                                             <label for="">Main Image</label>
                                                             <input type="file" name="main_image"
                                                                 class="form-control" id="main_image">
-                                                            <p class="text-danger"></p>
+                                                            <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
@@ -888,7 +888,7 @@
                                                             <input type="file" name="images[]"
                                                                 class="form-control" id="activityImageInput" multiple
                                                                 accept="image/*">
-                                                            <p class="text-danger"></p>
+                                                            <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
                                                     <div class="col-12" id="imagePreviews">
@@ -919,89 +919,122 @@
                                     </thead>
                                     <tbody>
                                         @if (is_array($activities) || $activities instanceof Countable)
-                                        @if (count($activities) > 0)
-                                            @foreach ($activities as $activity)
-                                                <tr>
-                                                    <td id="activity_main_image_{{ $activity->id }}">
-                                                        <img src="{{ asset('storage/' . $activity->main_image) }}" width="50px" height="50px" alt="">
-                                                    </td>
-                                                    <td id="activity_heading_{{ $activity->id }}">{{ $activity->heading }}</td>
-                                                    <td id="activity_paragraph_{{ $activity->id }}">{{ $activity->paragraph }}</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-success btn-sm editbtn" onclick="load_section2_modal({{ $activity->id }})">
-                                                            <i class="bi bi-pencil-square fs-4"></i>
-                                                        </button>
-                                                        <form action="{{ route('activity.delete', $activity->id) }}" method="POST" class="d-inline">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" class="btn btn-danger btn-sm">
-                                                                <i class="bi bi-trash fs-2"></i>
+                                            @if (count($activities) > 0)
+                                                @foreach ($activities as $activity)
+                                                    <tr>
+                                                        <td id="activity_main_image_{{ $activity->id }}">
+                                                            <img src="{{ asset('storage/' . $activity->main_image) }}"
+                                                                width="50px" height="50px" alt="">
+                                                        </td>
+                                                        <td id="activity_heading_{{ $activity->id }}">
+                                                            {{ $activity->heading }}</td>
+                                                        <td id="activity_paragraph_{{ $activity->id }}">
+                                                            {{ $activity->paragraph }}</td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-success btn-sm editbtn"
+                                                                onclick="load_section2_modal({{ $activity->id }})">
+                                                                <i class="bi bi-pencil-square fs-4"></i>
                                                             </button>
-                                                        </form>
-                                                    </td>
-                                                </tr>
+                                                            <form
+                                                                action="{{ route('activity.delete', $activity->id) }}"
+                                                                method="POST" class="d-inline">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <button type="submit" class="btn btn-danger btn-sm">
+                                                                    <i class="bi bi-trash fs-2"></i>
+                                                                </button>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
 
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="empty_modal_edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Update</h1>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <form id="edit_activity{{ $activity->id }}" action="{{ route('activity.update', $activity->id) }}" method="POST" enctype="multipart/form-data">
-                                                                    @csrf
-                                                                    @method('PUT')
-                                                                    <input type="hidden" name="activity" id="activity">
-                                                                    <input type="hidden" name="language" id="language" value="arabic">
-                                                                    <input type="hidden" id="uploaded_images_{{ $activity->id }}" value='@json($activity->images)' />
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="empty_modal_edit" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h1 class="modal-title fs-5"
+                                                                        id="exampleModalLabel">Update</h1>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form id="edit_activity{{ $activity->id }}"
+                                                                        action="{{ route('activity.update', $activity->id) }}"
+                                                                        method="POST" enctype="multipart/form-data">
+                                                                        @csrf
+                                                                        @method('PUT')
+                                                                        <input type="hidden" name="activity"
+                                                                            id="activity">
+                                                                        <input type="hidden" name="language"
+                                                                            id="language" value="arabic">
+                                                                        <input type="hidden"
+                                                                            id="uploaded_images_{{ $activity->id }}"
+                                                                            value='@json($activity->images)' />
 
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Heading</label>
-                                                                        <input type="text" name="heading" id="update_heading" class="form-control">
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Paragraph</label>
-                                                                        <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Main Image</label>
-                                                                        <input type="file" name="main_image" class="form-control" id="update_main_image">
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Current Main Image</label>
-                                                                        <img id="current_empty_image" src="" alt="Current Main Image" style="max-width: 100px; display: none;">
-                                                                    </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Heading</label>
+                                                                            <input type="text" name="heading"
+                                                                                id="update_heading"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Paragraph</label>
+                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Main
+                                                                                Image</label>
+                                                                            <input type="file" name="main_image"
+                                                                                class="form-control"
+                                                                                id="update_main_image">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Current Main
+                                                                                Image</label>
+                                                                            <img id="current_empty_image"
+                                                                                src=""
+                                                                                alt="Current Main Image"
+                                                                                style="max-width: 100px; display: none;">
+                                                                        </div>
 
-                                                                    <div class="mb-3" id="uploaded_images_container">
-                                                                        <!-- Uploaded images will be displayed here -->
-                                                                    </div>
+                                                                        <div class="mb-3"
+                                                                            id="uploaded_images_container">
+                                                                            <!-- Uploaded images will be displayed here -->
+                                                                        </div>
 
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Image (Upload new image to replace the old one)</label>
-                                                                        <input type="file" name="images[]" accept="image/*" id="update_images" class="form-control" multiple>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                <button type="submit" form="edit_activity{{ $activity->id }}" class="btn btn-warning text-dark">Update</button>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Image (Upload new
+                                                                                image to replace the old one)</label>
+                                                                            <input type="file" name="images[]"
+                                                                                accept="image/*" id="update_images"
+                                                                                class="form-control" multiple>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <button type="submit"
+                                                                        form="edit_activity{{ $activity->id }}"
+                                                                        class="btn btn-warning text-dark">Update</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            @endforeach
+                                                @endforeach
+                                            @else
+                                                <tr>
+                                                    <td colspan="4">No cards found.</td>
+                                                </tr>
+                                            @endif
                                         @else
                                             <tr>
                                                 <td colspan="4">No cards found.</td>
                                             </tr>
                                         @endif
-                                    @else
-                                        <tr>
-                                            <td colspan="4">No cards found.</td>
-                                        </tr>
-                                    @endif
                                     </tbody>
                                 </table>
                             </div>
@@ -1076,6 +1109,76 @@
             handleImageChange('#imgS13', '#imgU13');
             handleImageChange('#imgS14', '#imgU14');
 
+            $(".formValidation1").submit(function(event) {
+                event.preventDefault();
+                let isValid = true;
+
+                $(this)
+                    .find("input")
+                    .each(function() {
+                        let $inputField = $(this);
+                        let $parentDiv = $inputField.closest('div');
+                        let $errorMessage = $parentDiv.find('.errMsg');
+                        let labelText = $parentDiv.find('label').text();
+
+                        if ($inputField.hasClass("noVal")) {
+                            $inputField.removeClass("is-invalid");
+                            return;
+                        }
+                        if ($(this).is(":text")) {
+                            if ($inputField.val().trim() === "") {
+                                $inputField.addClass("is-invalid");
+                                $errorMessage.text(labelText + " is required").css('display', 'block');
+                                isValid = false;
+                            } else {
+                                $inputField.removeClass("is-invalid");
+                                $errorMessage.text('').css('display', 'none');
+                            }
+                        }
+                    });
+                if (isValid) {
+                    this.submit();
+                }
+            });
+            $('.formValidation2').submit(function(event) {
+                event.preventDefault();
+
+                let valid = true;
+
+                $('.errMsg').text('');
+
+                if ($(".editorOut1 input").val() == "") {
+                    $(".editorOut1 input").addClass("is-invalid");
+                    $(".editorOut1 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut1 input").removeClass("is-invalid");
+                }
+
+                if ($(".editorOut2 input").val() == "") {
+                    $(".editorOut2 input").addClass("is-invalid");
+                    $(".editorOut2 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut2 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut3 input").val() == "") {
+                    $(".editorOut3 input").addClass("is-invalid");
+                    $(".editorOut3 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut3 input").removeClass("is-invalid");
+                }
+
+                if (!editor.value.trim() || editor.value.trim() === '<p><br></p>') {
+                    $('.editorOut4 .errMsg').text('Paragraph is required.');
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.submit();
+                }
+            });
 
             // $(".formValidation").submit(function(event) {
             //     event.preventDefault();
@@ -1123,16 +1226,7 @@
             //     }
             // });
 
-            // If the user enters input, remove the is-invalid class
 
-
-            // Phone validation to remove unnecessary characters
-            // $(".formValidation .phoneVal").keydown(function(event) {
-            //     const keyPressed = event.key;
-            //     if (keyPressed === "+" || keyPressed === "-" || keyPressed === "e" || keyPressed === ".") {
-            //         event.preventDefault();
-            //     }
-            // });
         });
 
         document.getElementById('activityImageInput').addEventListener('change', function() {
