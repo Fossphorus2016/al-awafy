@@ -919,89 +919,122 @@
                                     </thead>
                                     <tbody>
                                         @if (is_array($activities) || $activities instanceof Countable)
-                                        @if (count($activities) > 0)
-                                            @foreach ($activities as $activity)
-                                                <tr>
-                                                    <td id="activity_main_image_{{ $activity->id }}">
-                                                        <img src="{{ asset('storage/' . $activity->main_image) }}" width="50px" height="50px" alt="">
-                                                    </td>
-                                                    <td id="activity_heading_{{ $activity->id }}">{{ $activity->heading }}</td>
-                                                    <td id="activity_paragraph_{{ $activity->id }}">{{ $activity->paragraph }}</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-success btn-sm editbtn" onclick="load_section2_modal({{ $activity->id }})">
-                                                            <i class="bi bi-pencil-square fs-4"></i>
-                                                        </button>
-                                                        <form action="{{ route('activity.delete', $activity->id) }}" method="POST" class="d-inline">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" class="btn btn-danger btn-sm">
-                                                                <i class="bi bi-trash fs-2"></i>
+                                            @if (count($activities) > 0)
+                                                @foreach ($activities as $activity)
+                                                    <tr>
+                                                        <td id="activity_main_image_{{ $activity->id }}">
+                                                            <img src="{{ asset('storage/' . $activity->main_image) }}"
+                                                                width="50px" height="50px" alt="">
+                                                        </td>
+                                                        <td id="activity_heading_{{ $activity->id }}">
+                                                            {{ $activity->heading }}</td>
+                                                        <td id="activity_paragraph_{{ $activity->id }}">
+                                                            {{ $activity->paragraph }}</td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-success btn-sm editbtn"
+                                                                onclick="load_section2_modal({{ $activity->id }})">
+                                                                <i class="bi bi-pencil-square fs-4"></i>
                                                             </button>
-                                                        </form>
-                                                    </td>
-                                                </tr>
+                                                            <form
+                                                                action="{{ route('activity.delete', $activity->id) }}"
+                                                                method="POST" class="d-inline">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <button type="submit" class="btn btn-danger btn-sm">
+                                                                    <i class="bi bi-trash fs-2"></i>
+                                                                </button>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
 
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="empty_modal_edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Update</h1>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <form id="edit_activity{{ $activity->id }}" action="{{ route('activity.update', $activity->id) }}" method="POST" enctype="multipart/form-data">
-                                                                    @csrf
-                                                                    @method('PUT')
-                                                                    <input type="hidden" name="activity" id="activity">
-                                                                    <input type="hidden" name="language" id="language" value="arabic">
-                                                                    <input type="hidden" id="uploaded_images_{{ $activity->id }}" value='@json($activity->images)' />
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="empty_modal_edit" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h1 class="modal-title fs-5"
+                                                                        id="exampleModalLabel">Update</h1>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form id="edit_activity{{ $activity->id }}"
+                                                                        action="{{ route('activity.update', $activity->id) }}"
+                                                                        method="POST" enctype="multipart/form-data">
+                                                                        @csrf
+                                                                        @method('PUT')
+                                                                        <input type="hidden" name="activity"
+                                                                            id="activity">
+                                                                        <input type="hidden" name="language"
+                                                                            id="language" value="arabic">
+                                                                        <input type="hidden"
+                                                                            id="uploaded_images_{{ $activity->id }}"
+                                                                            value='@json($activity->images)' />
 
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Heading</label>
-                                                                        <input type="text" name="heading" id="update_heading" class="form-control">
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Paragraph</label>
-                                                                        <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Main Image</label>
-                                                                        <input type="file" name="main_image" class="form-control" id="update_main_image">
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Current Main Image</label>
-                                                                        <img id="current_empty_image" src="" alt="Current Main Image" style="max-width: 100px; display: none;">
-                                                                    </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Heading</label>
+                                                                            <input type="text" name="heading"
+                                                                                id="update_heading"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Paragraph</label>
+                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Main
+                                                                                Image</label>
+                                                                            <input type="file" name="main_image"
+                                                                                class="form-control"
+                                                                                id="update_main_image">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Current Main
+                                                                                Image</label>
+                                                                            <img id="current_empty_image"
+                                                                                src=""
+                                                                                alt="Current Main Image"
+                                                                                style="max-width: 100px; display: none;">
+                                                                        </div>
 
-                                                                    <div class="mb-3" id="uploaded_images_container">
-                                                                        <!-- Uploaded images will be displayed here -->
-                                                                    </div>
+                                                                        <div class="mb-3"
+                                                                            id="uploaded_images_container">
+                                                                            <!-- Uploaded images will be displayed here -->
+                                                                        </div>
 
-                                                                    <div class="mb-3">
-                                                                        <label class="form-label">Image (Upload new image to replace the old one)</label>
-                                                                        <input type="file" name="images[]" accept="image/*" id="update_images" class="form-control" multiple>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                <button type="submit" form="edit_activity{{ $activity->id }}" class="btn btn-warning text-dark">Update</button>
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Image (Upload new
+                                                                                image to replace the old one)</label>
+                                                                            <input type="file" name="images[]"
+                                                                                accept="image/*" id="update_images"
+                                                                                class="form-control" multiple>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <button type="submit"
+                                                                        form="edit_activity{{ $activity->id }}"
+                                                                        class="btn btn-warning text-dark">Update</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            @endforeach
+                                                @endforeach
+                                            @else
+                                                <tr>
+                                                    <td colspan="4">No cards found.</td>
+                                                </tr>
+                                            @endif
                                         @else
                                             <tr>
                                                 <td colspan="4">No cards found.</td>
                                             </tr>
                                         @endif
-                                    @else
-                                        <tr>
-                                            <td colspan="4">No cards found.</td>
-                                        </tr>
-                                    @endif
                                     </tbody>
                                 </table>
                             </div>
@@ -1135,59 +1168,59 @@
             // });
         });
 
-        document.getElementById('activityImageInput').addEventListener('change', function() {
-            const fileList = this.files;
-            const previewContainer = document.getElementById('imagePreviews');
-            previewContainer.innerHTML = ''; // Clear previous previews
+        // document.getElementById('activityImageInput').addEventListener('change', function() {
+        //     const fileList = this.files;
+        //     const previewContainer = document.getElementById('imagePreviews');
+        //     previewContainer.innerHTML = ''; // Clear previous previews
 
-            for (let i = 0; i < fileList.length; i++) {
-                const file = fileList[i];
-                const reader = new FileReader();
+        //     for (let i = 0; i < fileList.length; i++) {
+        //         const file = fileList[i];
+        //         const reader = new FileReader();
 
-                reader.onload = function(e) {
-                    // Create a wrapper for the image and the remove button
-                    const imageWrapper = document.createElement('div');
-                    imageWrapper.classList.add('image-wrapper');
-                    imageWrapper.style.position = 'relative';
-                    imageWrapper.style.display = 'inline-block';
-                    imageWrapper.style.margin = '10px';
+        //         reader.onload = function(e) {
+        //             // Create a wrapper for the image and the remove button
+        //             const imageWrapper = document.createElement('div');
+        //             imageWrapper.classList.add('image-wrapper');
+        //             imageWrapper.style.position = 'relative';
+        //             imageWrapper.style.display = 'inline-block';
+        //             imageWrapper.style.margin = '10px';
 
-                    const img = document.createElement('img');
-                    img.src = e.target.result;
-                    img.alt = 'Uploaded Image';
-                    img.style = 'width: 250px; height: 300px; object-fit: contain;';
-                    imageWrapper.appendChild(img);
+        //             const img = document.createElement('img');
+        //             img.src = e.target.result;
+        //             img.alt = 'Uploaded Image';
+        //             img.style = 'width: 250px; height: 300px; object-fit: contain;';
+        //             imageWrapper.appendChild(img);
 
-                    // Create the remove button
-                    const removeButton = document.createElement('button');
-                    removeButton.innerText = 'Remove';
-                    removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
-                    removeButton.style.position = 'absolute';
-                    removeButton.style.top = '5px';
-                    removeButton.style.right = '5px';
+        //             // Create the remove button
+        //             const removeButton = document.createElement('button');
+        //             removeButton.innerText = 'Remove';
+        //             removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
+        //             removeButton.style.position = 'absolute';
+        //             removeButton.style.top = '5px';
+        //             removeButton.style.right = '5px';
 
-                    removeButton.onclick = function() {
-                        // Remove the image preview and file from the input
-                        imageWrapper.remove();
-                        const dataTransfer = new DataTransfer();
+        //             removeButton.onclick = function() {
+        //                 // Remove the image preview and file from the input
+        //                 imageWrapper.remove();
+        //                 const dataTransfer = new DataTransfer();
 
-                        // Create a new FileList without the removed image
-                        for (let j = 0; j < fileList.length; j++) {
-                            if (fileList[j] !== file) {
-                                dataTransfer.items.add(fileList[j]);
-                            }
-                        }
-                        // Update the file input
-                        document.getElementById('activityImageInput').files = dataTransfer.files;
-                    };
+        //                 // Create a new FileList without the removed image
+        //                 for (let j = 0; j < fileList.length; j++) {
+        //                     if (fileList[j] !== file) {
+        //                         dataTransfer.items.add(fileList[j]);
+        //                     }
+        //                 }
+        //                 // Update the file input
+        //                 document.getElementById('activityImageInput').files = dataTransfer.files;
+        //             };
 
-                    imageWrapper.appendChild(removeButton);
-                    previewContainer.appendChild(imageWrapper);
-                };
+        //             imageWrapper.appendChild(removeButton);
+        //             previewContainer.appendChild(imageWrapper);
+        //         };
 
-                reader.readAsDataURL(file);
-            }
-        });
+        //         reader.readAsDataURL(file);
+        //     }
+        // });
 
 
         function load_section2_modal(activityId) {
@@ -1206,6 +1239,8 @@
             // Show the modal
             $('#empty_modal_edit').modal('show');
         }
+
+
     </script>
 
 </x-admin.layouts>
