@@ -433,20 +433,20 @@
                     $(".editorOut9 input").removeClass("is-invalid");
                 }
 
-                if ($(".editorOut12 input").val() == "") {
-                    $(".editorOut12 input").addClass("is-invalid");
-                    $(".editorOut12 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut12 input").removeClass("is-invalid");
-                }
-                if ($(".editorOut13 input").val() == "") {
-                    $(".editorOut13 input").addClass("is-invalid");
-                    $(".editorOut13 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut13 input").removeClass("is-invalid");
-                }
+                // if ($(".editorOut12 input").val() == "") {
+                //     $(".editorOut12 input").addClass("is-invalid");
+                //     $(".editorOut12 .errMsg").text('Heading is required');
+                //     valid = false
+                // } else {
+                //     $(".editorOut12 input").removeClass("is-invalid");
+                // }
+                // if ($(".editorOut13 input").val() == "") {
+                //     $(".editorOut13 input").addClass("is-invalid");
+                //     $(".editorOut13 .errMsg").text('Heading is required');
+                //     valid = false
+                // } else {
+                //     $(".editorOut13 input").removeClass("is-invalid");
+                // }
 
                 if (!editor4.value.trim() || editor4.value.trim() === '<p><br></p>') {
                     $('.editorOut6 .errMsg').text('Paragraph 1 is required.');

@@ -4,7 +4,7 @@
 
 <x-layout>
     <main>
-        <section class="heroSection secondBanner aboutBanner">
+        <section class="heroSection secondBanner" style="background-image: url('{{ asset('storage/' .$about->sec1_image) }}')">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
@@ -100,7 +100,7 @@
                         @if ($about && $about->sec3_image)
                             <img class="img-fluid w-100"
                                 style="object-fit: contain; object-fit: contain; max-width: 600px !important;"
-                                src="{{ asset('storage/'.$about->sec3_image) }}" alt="">
+                                src="{{ asset('storage/' . $about->sec3_image) }}" alt="">
                         @else
                             <img class="img-fluid w-100"
                                 style="object-fit: contain; object-fit: contain; max-width: 600px !important;"
