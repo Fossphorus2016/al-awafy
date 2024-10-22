@@ -262,14 +262,7 @@ class AdminHomeController extends Controller
         $request->validate([
             'our_brand_h1' => 'required',
             'our_brand_h2' => 'required',
-
-
         ]);
-
-
-
-
-
 
         Home::updateOrCreate(
             ['language' => $request->language],
@@ -384,6 +377,26 @@ class AdminHomeController extends Controller
 
                 'our_brand_image_3' => $our_brand_image_3,
                 'our_brand_logo_3' => $our_brand_logo_3,
+            ]
+        );
+
+        return back()->with('back-success', 'created successfully');
+    }
+
+    public function admin_activity(Request $request)
+    {
+        $request->validate([
+            'our_activity_h1' => 'required',
+            'our_activity_h2' => 'required',
+        ]);
+
+        Home::updateOrCreate(
+            ['language' => $request->language],
+            [
+
+
+                'our_activity_h1' => $request->our_activity_h1,
+                'our_activity_h2' => $request->our_activity_h2,
             ]
         );
 

@@ -149,64 +149,35 @@
         <section class="ourBrands py-5">
             <div class="customContainer">
                 <div>
-                    <h2 class="text-center pb-4"><span class="fs5">Our</span> <span class="fs6">Brands</span>
+                    <h2 class="text-center pb-4"><span class="fs5">{{ $home_english->our_brand_h1 }}</span> <span
+                            class="fs6">{{ $home_english->our_brand_h2 }}</span>
                     </h2>
 
-                    {{-- <div class="row showRow1 gy-4">
-                        <div class="col-lg-4 brandCardOuter col-12">
 
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
-                                        alt="">
-                                    <img class="py-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
-                                    <a class="mainBtn1" href="brand-alawafy">VIEW BRAND PRODUCTS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem2.png') }}"
-                                        alt="">
-                                    <img class="py-3" src="{{ asset('assets/images/logo/logo2.png') }}"
-                                        alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
-                                    <a class="mainBtn1" href="brand-crico">VIEW BRAND PRODUCTS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem4.png') }}"
-                                        alt="">
-                                    <img style="width: 145px;object-fit: contain;" class="pb-2"
-                                        src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
-                                    <a class="mainBtn1" href="brand-alyoum">VIEW BRAND PRODUCTS</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
                     <div class="row showRow2 gy-4">
                         <div class="col-lg-4 brandCardOuter col-12">
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
-                                        alt="">
-                                    <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
-                                        alt="">
-                                    <p>Premium quality nuts, carefully selected and roasted to perfection. From cashews
-                                        to almonds,
-                                        Alawafy offers a healthy and delicious snack for every occasion.</p>
+                                    @if ($home_english && $home_english->our_brand_logo_1)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_english->our_brand_logo_1) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
+                                            alt="">
+                                    @endif
+
+
+                                    @if ($home_english && $home_english->our_brand_image_1)
+                                        <img class="pb-3 w-100"
+                                            src="{{ asset('storage/' . $home_english->our_brand_image_1) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
+                                            alt="">
+                                    @endif
+                                    <p>{{ $home_english->our_brand_1 }}</p>
                                     <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a
                                         href="brand-alawafy">
                                 </div>
@@ -216,13 +187,25 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo2.png') }}"
-                                        alt="">
-                                    <img class="pb-3 w-100" class="py-3"
-                                        src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
-                                    <p>A playful twist on peanuts with bold flavors like spicy, cheese, and barbecue.
-                                        Crico delivers crunchy, flavor-packed snacks at an unbeatable value.
-                                    </p>
+                                    @if ($home_english && $home_english->our_brand_logo_2)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_english->our_brand_logo_2) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
+                                            alt="">
+                                    @endif
+
+
+                                    @if ($home_english && $home_english->our_brand_image_2)
+                                        <img class="pb-3 w-100"
+                                            src="{{ asset('storage/' . $home_english->our_brand_image_2) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
+                                            alt="">
+                                    @endif
+                                    <p>{{ $home_english->our_brand_2 }}</p>
                                     <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
                                 </div>
                             </div>
@@ -231,14 +214,25 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4 pt-2">
-                                    <img style="width: 145px;object-fit: contain;" class="pb-2"
-                                        src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
+                                    @if ($home_english && $home_english->our_brand_logo_3)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_english->our_brand_logo_3) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
+                                            alt="">
+                                    @endif
 
-                                    <img class="pb-3 w-100" class="py-3"
-                                        src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
-                                    <p>Dedicated to the wholesale market, Alyoum offers high-quality nuts in bulk,
-                                        ensuring freshness and
-                                        taste for businesses and large-scale needs.</p>
+
+                                    @if ($home_english && $home_english->our_brand_image_3)
+                                        <img class="pb-3 w-100"
+                                            src="{{ asset('storage/' . $home_english->our_brand_image_3) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3 w-100"
+                                            src="{{ asset('assets/images/items/brandItem1.png') }}" alt="">
+                                    @endif
+                                    <p>{{ $home_english->our_brand_3 }}</p>
                                     <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a
                                         href="brand-alawafy">
                                 </div>
@@ -326,12 +320,12 @@
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
-                    <h2 class="waterDropsBefore"> <span class="fs7"> Enjoy the Finest Nuts,</span></h2>
-                    <h2 class=""> <span class="fs7"> Packed with </span> <span
-                            class="fs8 waterDropsAfter ms-0">Flavor and Nutrition</span> </h2>
-                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">LEARN
+                    <h2 class="waterDropsBefore"> <span class="fs7">{{$home_english->section_6_h1}}</span></h2>
+                    <h2 class=""> <span class="fs7"> {{$home_english->section_6_h2}} </span> <span
+                            class="fs8 waterDropsAfter ms-0">{{$home_english->section_6_h3}}</span> </h2>
+                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="{{$home_english->section_6_url_1}}">LEARN
                             MORE</a>
-                        <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACT
+                        <a class="mainBtn2 position-relative z-1 h-75" href="{{$home_english->section_6_url_2}}">CONTACT
                             US</a>
                     </div>
                 </div>
@@ -340,71 +334,31 @@
 
         <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
             <div class="customContainer">
-                <h2 class="text-center pb-4"><span class="fs5">Our</span> <span class="fs6">Activities</span>
+                <h2 class="text-center pb-4"><span class="fs5">{{$home_english->our_activity_h1}}</span> <span class="fs6">{{$home_english->our_activity_h2}}</span>
                 </h2>
                 <div class="activitieSlider">
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/school/school_img1.jpeg') }}" alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Activation for back to school</h3>
-                            <p>
-                                An activation for the start of the school year (tasting + raffle) buy and
-                                try to win tech vouchers
-                            </p>
-                        </div>
-                    </div>
+                    @php
+                        $activities = App\Models\Activity::all();
+                    @endphp
 
+                    @forelse ($activities as $activity)
                     <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/aid_azah/eid_img1.jpeg') }}" alt="">
+                        <img class="w-100 activityImg" src="{{ asset('storage/'.$activity->main_image) }}" alt="">
                         <div class="service-card">
                             <div class="icon-wrapper">
                                 <i class="fa-solid fa-arrows-down-to-people"></i>
                             </div>
-                            <h3>Al Adha activation assistance</h3>
+                            <h3>{{$activity->heading}}</h3>
                             <p>
-                                An activation on the occasion of Aid Al Adha (tasting + raffle) of sharpeners
-                                hillsides
-                                recharge cards and 9pcs hills as gifts
+                               {{ $activity->paragraph}}
                             </p>
                         </div>
                     </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/special_african_cup/img0.png') }}"
-                            alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Special African Cup social media competition</h3>
-                            <p>
-                                On the occasion of the 2023 African Cup, Alawafy launched a competition on the networks
-                                social networks, televisions and smart phones as gains
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/al_jadid/image22.jpg') }}" alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Souk el Fellah AL-jadid</h3>
-                            <p>Presence of the ALAWAFY brand at SOUK EL FELLAH Organized by the Souk el-Fellah institute
-                                Al-Jadid, in coordination with the Office of Sports and Leisure Parks of Algiers
-                                (Opla) and the Chamber of Crafts and Trades, this event aims to
-                                to make known and promote the national artisanal product. It brings together around 60
-                                Algerian and foreign companies representing Tunisia, Senegal, China,
-                                Türkiye and France came to exhibit their various products.
-                            </p>
-                        </div>
-                    </div>
+                    @empty
+
+                    @endforelse
+
+
                     {{-- <div class="col activityOuter">
                         <img class="w-100 activityImg"
                             src="{{ asset('assets/images/activities/remisDes/image38.jpg') }}" alt="">

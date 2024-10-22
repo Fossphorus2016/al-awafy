@@ -162,6 +162,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/our-brand-1', [AdminHomeController::class, 'admin_our_brand_1'])->name('home.our.brand_1');
     Route::post('admin/our-brand-2', [AdminHomeController::class, 'admin_our_brand_2'])->name('home.our.brand_2');
     Route::post('admin/our-brand-3', [AdminHomeController::class, 'admin_our_brand_3'])->name('home.our.brand_3');
+    Route::post('/admin/our-activity/store', [AdminHomeController::class, 'admin_activity'])->name('home_activity');
     Route::post('/admin/activity/store', [ActivityController::class, 'activity_store'])->name('activity.store');
     Route::put('/admin/activity/{id}/update', [ActivityController::class, 'activity_update'])->name('activity.update');
     Route::delete('/admin/activity/{id}/delete', [ActivityController::class, 'activity_delete'])->name('activity.delete');

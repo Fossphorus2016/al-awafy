@@ -869,6 +869,37 @@
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
+
+                            <form action="{{ route('home_activity') }}" method="POST" class="formValidation1 pb-5">
+                                @csrf
+                                <input type="hidden" name="language" value="english">
+
+                                <div class="row gy-4">
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Activity Heading 1</label>
+                                            <input class="form-control" name="our_activity_h1"
+                                                value="{{ $home_english->our_activity_h1 ?? '' }}"></input>
+                                            <p class="errMsg text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Activity Heading 2</label>
+                                            <input class="form-control" name="our_activity_h2"
+                                                value="{{ $home_english->our_activity_h2 ?? '' }}"></input>
+                                            <p class="errMsg text-danger"></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </form>
                             <div class="d-flex justify-content-end">
 
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
