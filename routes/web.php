@@ -158,6 +158,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/about', [AdminHomeController::class, 'admin_about'])->name('home.about');
     Route::post('admin/our-value', [AdminHomeController::class, 'admin_our_value'])->name('home.our.value');
     Route::post('admin/section-6', [AdminHomeController::class, 'admin_section_6'])->name('home.section.6');
+    Route::post('admin/our-brand', [AdminHomeController::class, 'admin_our_brand'])->name('home.our.brand');
     Route::post('admin/our-brand-1', [AdminHomeController::class, 'admin_our_brand_1'])->name('home.our.brand_1');
     Route::post('admin/our-brand-2', [AdminHomeController::class, 'admin_our_brand_2'])->name('home.our.brand_2');
     Route::post('admin/our-brand-3', [AdminHomeController::class, 'admin_our_brand_3'])->name('home.our.brand_3');

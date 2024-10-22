@@ -257,6 +257,32 @@ class AdminHomeController extends Controller
         return back()->with('back-success', 'Updated successfully');
     }
 
+    public function admin_our_brand(Request $request)
+    {
+        $request->validate([
+            'our_brand_h1' => 'required',
+            'our_brand_h2' => 'required',
+
+
+        ]);
+
+
+
+
+
+
+        Home::updateOrCreate(
+            ['language' => $request->language],
+            [
+
+
+                'our_brand_h1' => $request->our_brand_h1,
+                'our_brand_h2' => $request->our_brand_h2,
+            ]
+        );
+
+        return back()->with('back-success', 'created successfully');
+    }
     public function admin_our_brand_1(Request $request)
     {
         $request->validate([

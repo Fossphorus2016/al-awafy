@@ -537,6 +537,37 @@
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
+                            <form action="{{ route('home.our.brand') }}" method="POST" class="formValidation1 pb-5">
+                                @csrf
+
+                                <input type="hidden" name="language" value="english">
+
+                                <div class="row gy-4">
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Brand Heading 1</label>
+                                            <input class="form-control" name="our_brand_h1"
+                                                value="{{ $home_english->our_brand_h1 ?? '' }}"></input>
+                                            <p class="errMsg text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Brand Heading 2</label>
+                                            <input class="form-control" name="our_brand_h2"
+                                                value="{{ $home_english->our_brand_h2 ?? '' }}"></input>
+                                            <p class="errMsg text-danger"></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </form>
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
                                     <a class="nav-link active bannerNavTab1" aria-current="page" href="#">Brand
@@ -883,7 +914,7 @@
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
-                                                    
+
 
                                                 </div>
                                                 <div class="modal-footer">
