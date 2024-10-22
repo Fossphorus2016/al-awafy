@@ -537,7 +537,8 @@
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.our.brand') }}" method="POST" class="formValidation1 pb-5">
+                            <form action="{{ route('home.our.brand') }}" method="POST"
+                                class="formValidation1 pb-5">
                                 @csrf
 
                                 <input type="hidden" name="language" value="english">
@@ -726,68 +727,68 @@
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english" id="">
-                                    <form action="" class="mt-5 formValidation">
-                                        <div class="row gy-4">
 
-                                            <div class="col-12">
+                                    <div class="row gy-4">
 
-                                                <div>
-                                                    <label for="">Paragraph</label>
-                                                    <input type="text" class="form-control" name="our_brand_3"
-                                                        value="{{ old('our_brand_3', $home_english->our_brand_3 ?? '') }}">
-                                                    <p class="text-danger"></p>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
+                                        <div class="col-12">
 
-                                                <div>
-                                                    <label for="">Brand Image</label>
-                                                    <input type="file" class="form-control"
-                                                        name="our_brand_image_3" id="brandImageInput3">
-                                                    <p class="text-danger"></p>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-
-
-                                                @if ($home_english && $home_english->our_brand_image_3)
-                                                    <img src="{{ asset('storage/' . $home_english->our_brand_image_3) }}"
-                                                        alt="Uploaded Image" id="uploadedAboutImage3"
-                                                        style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
-                                                @else
-                                                    <img src="{{ asset('assets/images/download (4).png') }}"
-                                                        alt="Default Image" id="uploadedAboutImage3"
-                                                        style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
-                                                @endif
-
-                                            </div>
-                                            <div class="col-6">
-
-                                                <div>
-                                                    <label for="">Brand Logo</label>
-                                                    <input type="file" class="form-control"
-                                                        name="our_brand_logo_3" id="brandLogoInput3">
-                                                    <p class="text-danger"></p>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-
-                                                @if ($home_english && $home_english->our_brand_logo_3)
-                                                    <img src="{{ asset('storage/' . $home_english->our_brand_logo_3) }}"
-                                                        alt="Uploaded Image" id="uploadedAboutImage3"
-                                                        style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
-                                                @else
-                                                    <img src="{{ asset('assets/images/download (4).png') }}"
-                                                        alt="Default Image" id="uploadedAboutImage3"
-                                                        style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
-                                                @endif
-
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Save</button>
+                                            <div>
+                                                <label for="">Paragraph</label>
+                                                <input type="text" class="form-control" name="our_brand_3"
+                                                    value="{{ old('our_brand_3', $home_english->our_brand_3 ?? '') }}">
+                                                <p class="text-danger"></p>
                                             </div>
                                         </div>
-                                    </form>
+                                        <div class="col-6">
+
+                                            <div>
+                                                <label for="">Brand Image</label>
+                                                <input type="file" class="form-control" name="our_brand_image_3"
+                                                    id="brandImageInput3">
+                                                <p class="text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+
+                                            @if ($home_english && $home_english->our_brand_image_3)
+                                                <img src="{{ asset('storage/' . $home_english->our_brand_image_3) }}"
+                                                    alt="Uploaded Image" id="uploadedAboutImage3"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedAboutImage3"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @endif
+
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div>
+                                                <label for="">Brand Logo</label>
+                                                <input type="file" class="form-control" name="our_brand_logo_3"
+                                                    id="brandLogoInput3">
+                                                <p class="text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            @if ($home_english && $home_english->our_brand_logo_3)
+                                                <img src="{{ asset('storage/' . $home_english->our_brand_logo_3) }}"
+                                                    alt="Uploaded Image" id="uploadedAboutImage3"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedAboutImage3"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @endif
+
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
 
                         </div>
