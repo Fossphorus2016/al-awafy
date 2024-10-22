@@ -150,7 +150,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     // Home page routes
-    Route::post('admin/meta/store', [AdminHomeController::class, 'meta2'])->name('home.meta');
+    Route::post('admin/meta/store', [AdminHomeController::class, 'meta_section'])->name('home.meta');
     Route::post('admin/banner-1', [AdminHomeController::class, 'admin_banner_1'])->name('home.banner.1');
     Route::post('admin/banner-2', [AdminHomeController::class, 'admin_banner_2'])->name('home.banner.2');
     Route::post('admin/banner-3', [AdminHomeController::class, 'admin_banner_3'])->name('home.banner.3');

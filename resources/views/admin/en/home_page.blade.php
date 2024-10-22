@@ -969,7 +969,7 @@
                                                                         <input type="hidden" name="activity"
                                                                             id="activity">
                                                                         <input type="hidden" name="language"
-                                                                            id="language" value="arabic">
+                                                                            id="language" value="english">
                                                                         <input type="hidden"
                                                                             id="uploaded_images_{{ $activity->id }}"
                                                                             value='@json($activity->images)' />
@@ -1005,12 +1005,43 @@
                                                                             <!-- Uploaded images will be displayed here -->
                                                                         </div>
 
-                                                                        <div class="mb-3">
-                                                                            <label class="form-label">Image (Upload new
-                                                                                image to replace the old one)</label>
-                                                                            <input type="file" name="images[]"
-                                                                                accept="image/*" id="update_images"
-                                                                                class="form-control" multiple>
+                                                                        <div class="col-lg-6">
+                                                                            <div class="mb-3">
+                                                                                <label class="form-label">Images</label>
+                                                                                <input type="file" name="images[]" id="update_images" class="form-control"
+                                                                                    accept="image/*" multiple onchange="previewImages(event)">
+                                                                                <label for="" id="error_images" class="text-danger fw-bold"
+                                                                                    style="display: none">Images are required</label>
+                                                                            </div>
+
+                                                                            <div id="existing-images">
+                                                                                @if ($activity->images)
+                                                                                    @php
+                                                                                        $decodedImages = json_decode($activity->images);
+                                                                                    @endphp
+                                                                                    @if (is_array($decodedImages) && count($decodedImages) > 0)
+                                                                                        <label class="form-label">Existing Images:</label><br>
+                                                                                        @foreach ($decodedImages as $image)
+                                                                                            <div class="existing-image"
+                                                                                                style="position: relative; display: inline-block; margin-right: 10px;">
+                                                                                                <img src="{{ $image->url }}" width="100px"
+                                                                                                    height="100px" class="rounded mx-2">
+                                                                                                <span class="remove-icon"
+                                                                                                    onclick="removeImage(this)">×</span>
+                                                                                                <input type="hidden" name="existing_images[]"
+                                                                                                    value="{{ $image->url }}">
+                                                                                            </div>
+                                                                                        @endforeach
+                                                                                    @endif
+                                                                                @endif
+                                                                            </div>
+
+
+                                                                            <div id="image-previews" class="mb-3">
+                                                                                <label class="form-label">New Image Previews:</label>
+                                                                                <div id="output" style="display: flex; flex-wrap: wrap;"></div>
+                                                                            </div>
+
                                                                         </div>
                                                                     </form>
                                                                 </div>
@@ -1024,6 +1055,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- Modal for Editing (inside the foreach loop) -->
+
+
                                                 @endforeach
                                             @else
                                                 <tr>
@@ -1300,6 +1334,43 @@
             // Show the modal
             $('#empty_modal_edit').modal('show');
         }
+
+
+        function previewImages(event) {
+        const output = document.getElementById('output');
+        output.innerHTML = ''; // Clear previous previews
+
+        const files = event.target.files;
+        for (let i = 0; i < files.length; i++) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const imageContainer = document.createElement('div');
+                imageContainer.className = 'image-container'; // Add class for styling
+
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.width = 100;
+                img.height = 100;
+                img.className = 'rounded mx-2';
+
+                const removeIcon = document.createElement('span');
+                removeIcon.className = 'remove-icon'; // Class for styling the remove icon
+                removeIcon.innerHTML = '×';
+                removeIcon.onclick = function() {
+                    imageContainer.remove(); // Remove image container on click
+                };
+
+                imageContainer.appendChild(img);
+                imageContainer.appendChild(removeIcon);
+                output.appendChild(imageContainer);
+            };
+            reader.readAsDataURL(files[i]);
+        }
+    }
+
+    function removeImage(element) {
+        element.parentElement.remove(); // Remove existing image container
+    }
 
 
     </script>
