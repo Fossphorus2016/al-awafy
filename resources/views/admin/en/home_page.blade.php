@@ -772,7 +772,8 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <form action="{{ route('home.section.6') }}" method="POST" class="mt-5 formValidation1">
+                            <form action="{{ route('home.section.6') }}" method="POST"
+                                class="mt-5 formValidation1">
                                 @csrf
                                 <input type="hidden" name="language" value="english" id="">
                                 <div class="row gy-4">
@@ -863,14 +864,14 @@
                                                     <div class="col-12">
                                                         <div>
                                                             <label for="">Heading</label>
-                                                            <input class="form-control" name="heading" >
+                                                            <input class="form-control" name="heading">
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
                                                         <div>
                                                             <label for="">Paragraph</label>
-                                                            <input class="form-control"  name="paragraph" >
+                                                            <input class="form-control" name="paragraph">
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
@@ -887,7 +888,7 @@
                                                             <label for="">Images</label>
                                                             <input type="file" name="images[]"
                                                                 class="form-control" id="activityImageInput" multiple
-                                                                accept="image/*">
+                                                                accept="image/*" onchange="previewImages1(event)">
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
@@ -1007,28 +1008,44 @@
 
                                                                         <div class="col-lg-6">
                                                                             <div class="mb-3">
-                                                                                <label class="form-label">Images</label>
-                                                                                <input type="file" name="images[]" id="update_images" class="form-control"
-                                                                                    accept="image/*" multiple onchange="previewImages(event)">
-                                                                                <label for="" id="error_images" class="text-danger fw-bold"
-                                                                                    style="display: none">Images are required</label>
+                                                                                <label
+                                                                                    class="form-label">Images</label>
+                                                                                <input type="file" name="images[]"
+                                                                                    id="update_images"
+                                                                                    class="form-control"
+                                                                                    accept="image/*" multiple
+                                                                                    onchange="previewImages(event)">
+                                                                                <label for=""
+                                                                                    id="error_images"
+                                                                                    class="text-danger fw-bold"
+                                                                                    style="display: none">Images are
+                                                                                    required</label>
                                                                             </div>
 
+                                                                            <!-- Existing images -->
                                                                             <div id="existing-images">
                                                                                 @if ($activity->images)
                                                                                     @php
-                                                                                        $decodedImages = json_decode($activity->images);
+                                                                                        $decodedImages = json_decode(
+                                                                                            $activity->images,
+                                                                                        );
                                                                                     @endphp
                                                                                     @if (is_array($decodedImages) && count($decodedImages) > 0)
-                                                                                        <label class="form-label">Existing Images:</label><br>
+                                                                                        <label
+                                                                                            class="form-label">Existing
+                                                                                            Images:</label><br>
                                                                                         @foreach ($decodedImages as $image)
                                                                                             <div class="existing-image"
                                                                                                 style="position: relative; display: inline-block; margin-right: 10px;">
-                                                                                                <img src="{{ $image->url }}" width="100px"
-                                                                                                    height="100px" class="rounded mx-2">
-                                                                                                <span class="remove-icon"
+                                                                                                <img src="{{ $image->url }}"
+                                                                                                    width="100px"
+                                                                                                    height="100px"
+                                                                                                    class="rounded mx-2">
+                                                                                                <span
+                                                                                                    class="remove-icon"
                                                                                                     onclick="removeImage(this)">×</span>
-                                                                                                <input type="hidden" name="existing_images[]"
+                                                                                                <input type="hidden"
+                                                                                                    name="existing_images[]"
                                                                                                     value="{{ $image->url }}">
                                                                                             </div>
                                                                                         @endforeach
@@ -1036,12 +1053,14 @@
                                                                                 @endif
                                                                             </div>
 
-
+                                                                            <!-- New Image Previews -->
                                                                             <div id="image-previews" class="mb-3">
-                                                                                <label class="form-label">New Image Previews:</label>
-                                                                                <div id="output" style="display: flex; flex-wrap: wrap;"></div>
+                                                                                <label class="form-label">New Image
+                                                                                    Previews:</label>
+                                                                                <div id="output"
+                                                                                    style="display: flex; flex-wrap: wrap;">
+                                                                                </div>
                                                                             </div>
-
                                                                         </div>
                                                                     </form>
                                                                 </div>
@@ -1056,8 +1075,6 @@
                                                         </div>
                                                     </div>
                                                     <!-- Modal for Editing (inside the foreach loop) -->
-
-
                                                 @endforeach
                                             @else
                                                 <tr>
@@ -1337,42 +1354,109 @@
 
 
         function previewImages(event) {
-        const output = document.getElementById('output');
-        output.innerHTML = ''; // Clear previous previews
+            const output = document.getElementById('output');
+            output.innerHTML = ''; // Clear previous previews
 
-        const files = event.target.files;
-        for (let i = 0; i < files.length; i++) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const imageContainer = document.createElement('div');
-                imageContainer.className = 'image-container'; // Add class for styling
+            const files = event.target.files;
+            const fileArray = Array.from(files); // Convert to array for better manipulation
 
-                const img = document.createElement('img');
-                img.src = e.target.result;
-                img.width = 100;
-                img.height = 100;
-                img.className = 'rounded mx-2';
+            fileArray.forEach((file, index) => {
+                const reader = new FileReader();
 
-                const removeIcon = document.createElement('span');
-                removeIcon.className = 'remove-icon'; // Class for styling the remove icon
-                removeIcon.innerHTML = '×';
-                removeIcon.onclick = function() {
-                    imageContainer.remove(); // Remove image container on click
+                reader.onload = function(e) {
+                    const imageContainer = document.createElement('div');
+                    imageContainer.className = 'image-container'; // Add class for styling
+                    imageContainer.style.position = 'relative';
+                    imageContainer.style.display = 'inline-block';
+                    imageContainer.style.marginRight = '10px';
+
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.width = 100;
+                    img.height = 100;
+                    img.className = 'rounded mx-2';
+
+                    const removeIcon = document.createElement('span');
+                    removeIcon.className = 'remove-icon'; // Class for styling the remove icon
+                    removeIcon.innerHTML = '×';
+                    removeIcon.style.position = 'absolute';
+                    removeIcon.style.top = '5px';
+                    removeIcon.style.right = '10px';
+                    removeIcon.style.cursor = 'pointer';
+                    removeIcon.onclick = function() {
+                        imageContainer.remove(); // Remove image container on click
+                    };
+
+                    imageContainer.appendChild(img);
+                    imageContainer.appendChild(removeIcon);
+                    output.appendChild(imageContainer);
                 };
 
-                imageContainer.appendChild(img);
-                imageContainer.appendChild(removeIcon);
-                output.appendChild(imageContainer);
-            };
-            reader.readAsDataURL(files[i]);
+                reader.readAsDataURL(file);
+            });
         }
-    }
 
-    function removeImage(element) {
-        element.parentElement.remove(); // Remove existing image container
-    }
+        // Optional: Function to remove existing images (if needed)
+        function removeImage(element) {
+            element.parentElement.remove();
+        }
 
 
+
+        function previewImages1(event) {
+            const imagePreviews = document.getElementById('imagePreviews');
+            imagePreviews.innerHTML = ''; // Clear previous previews
+
+            const files = event.target.files;
+            const fileArray = Array.from(files); // Convert to array for easier manipulation
+
+            fileArray.forEach((file, index) => {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    // Create image preview container
+                    const imageContainer = document.createElement('div');
+                    imageContainer.className = 'image-container'; // Add a class for styling
+                    imageContainer.style.position = 'relative';
+                    imageContainer.style.display = 'inline-block';
+                    imageContainer.style.marginRight = '10px';
+
+                    // Create image element
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.width = 100;
+                    img.height = 100;
+                    img.className = 'rounded mx-2';
+
+                    // Create remove icon
+                    const removeIcon = document.createElement('span');
+                    removeIcon.className = 'remove-icon'; // Class for styling the remove icon
+                    removeIcon.innerHTML = '×';
+                    removeIcon.style.position = 'absolute';
+                    removeIcon.style.top = '5px';
+                    removeIcon.style.right = '10px';
+                    removeIcon.style.cursor = 'pointer';
+
+                    // Remove image on click
+                    removeIcon.onclick = function() {
+                        imageContainer.remove(); // Remove the image container
+                    };
+
+                    // Append image and remove icon to the container
+                    imageContainer.appendChild(img);
+                    imageContainer.appendChild(removeIcon);
+
+                    // Append the container to the image previews div
+                    imagePreviews.appendChild(imageContainer);
+                };
+
+                // Read the file and convert it to a data URL for preview
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // Event listener for the file input
+        document.getElementById('activityImageInput').addEventListener('change', previewImages);
     </script>
 
 </x-admin.layouts>
