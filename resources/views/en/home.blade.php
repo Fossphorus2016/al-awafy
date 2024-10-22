@@ -338,7 +338,7 @@
                 </h2>
                 <div class="activitieSlider">
                     @php
-                        $activities = App\Models\Activity::all();
+                        $activities = App\Models\Activity::where('language', 'english')->get();
                     @endphp
 
                     @forelse ($activities as $activity)

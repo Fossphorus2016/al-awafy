@@ -1,3 +1,5 @@
+
+
 <x-admin.layouts>
 
     <div class="card">
@@ -538,7 +540,8 @@
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
 
-                            <form action="{{ route('home.meta') }}" method="POST" class="formValidation1 pb-5">
+                            <form action="{{ route('home.our.brand') }}" method="POST"
+                                class="formValidation1 pb-5">
                                 @csrf
 
                                 <input type="hidden" name="language" value="french">
@@ -548,17 +551,17 @@
 
                                         <div>
                                             <label for="">Brand Heading 1</label>
-                                            <input class="form-control" name="meta_title"
-                                                value="{{ $home_french->meta_title ?? '' }}"></input>
+                                            <input class="form-control" name="our_brand_h1"
+                                                value="{{ $home_french->our_brand_h1 ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta Description</label>
-                                            <input class="form-control" name="meta_description"
-                                                value="{{ $home_french->meta_description ?? '' }}"></input>
+                                            <label for="">Brand Heading 2</label>
+                                            <input class="form-control" name="our_brand_h2"
+                                                value="{{ $home_french->our_brand_h2 ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -585,32 +588,66 @@
                             </ul>
 
                             <div class="bannerNavForm1">
-                                <form action="{{ route('home.our.brand') }}" method="POST" class="formValidation1 pb-5">
+                                <form action="{{ route('home.our.brand_1') }}" method="POST"
+                                    class="mt-5 formValidation1" enctype="multipart/form-data">
                                     @csrf
-
-                                    <input type="hidden" name="language" value="french">
-
+                                    <input type="hidden" name="language" value="french" id="">
                                     <div class="row gy-4">
-                                        <div class="col-6">
+
+                                        <div class="col-12">
 
                                             <div>
-                                                <label for="">Brand Heading 1</label>
-                                                <input class="form-control" name="our_brand_h1"
-                                                    value="{{ $home_english->our_brand_h1 ?? '' }}"></input>
-                                                <p class="errMsg text-danger"></p>
+                                                <label for="">Paragraph</label>
+                                                <input type="text" class="form-control" name="our_brand_1"
+                                                    value="{{ old('our_brand_1', $home_french->our_brand_1 ?? '') }}">
+                                                <p class="text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Heading 2</label>
-                                                <input class="form-control" name="our_brand_h2"
-                                                    value="{{ $home_english->our_brand_h2 ?? '' }}"></input>
-                                                <p class="errMsg text-danger"></p>
+                                                <label for="">Brand Image</label>
+                                                <input type="file" class="form-control" name="our_brand_image_1"
+                                                    id="brandImageInput1">
+                                                <p class="text-danger"></p>
                                             </div>
                                         </div>
+                                        <div class="col-6">
 
 
+
+                                            @if ($home_french && $home_french->our_brand_image_1)
+                                                <img src="{{ asset('storage/' . $home_french->our_brand_image_1) }}"
+                                                    alt="Uploaded Image" id="uploadedAboutImage1"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedAboutImage1"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @endif
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div>
+                                                <label for="">Brand Logo</label>
+                                                <input type="file" class="form-control" name="our_brand_logo_1"
+                                                    id="brandLogoInput1">
+                                                <p class="text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+
+                                            @if ($home_french && $home_french->our_brand_logo_1)
+                                                <img src="{{ asset('storage/' . $home_french->our_brand_logo_1) }}"
+                                                    alt="Uploaded Image" id="uploadedAboutImage1"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @else
+                                                <img src="{{ asset('assets/images/download (4).png') }}"
+                                                    alt="Default Image" id="uploadedAboutImage1"
+                                                    style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                            @endif
+                                        </div>
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Save</button>
                                         </div>
@@ -835,6 +872,37 @@
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
+
+                            <form action="{{ route('home_activity') }}" method="POST" class="formValidation1 pb-5">
+                                @csrf
+                                <input type="hidden" name="language" value="french">
+
+                                <div class="row gy-4">
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Activity Heading 1</label>
+                                            <input class="form-control" name="our_activity_h1"
+                                                value="{{ $home_french->our_activity_h1 ?? '' }}"></input>
+                                            <p class="errMsg text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                        <div>
+                                            <label for="">Activity Heading 2</label>
+                                            <input class="form-control" name="our_activity_h2"
+                                                value="{{ $home_french->our_activity_h2 ?? '' }}"></input>
+                                            <p class="errMsg text-danger"></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </form>
                             <div class="d-flex justify-content-end">
 
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"

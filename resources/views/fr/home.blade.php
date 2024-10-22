@@ -1,3 +1,7 @@
+@php
+    $french = App\Models\Home::where('language', 'french')->first();
+@endphp
+
 <x-frenchLayout>
     <main>
         <section class="heroSection ">
@@ -16,48 +20,68 @@
                     <div class="heroSlider">
 
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue à Alawafy
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span
+                                    class="fs2">{{ $french->banner_1_h1 ?? '' }}
                                 </span>
                                 <br>
-                                <span class="fs3">L'excellence des fruits secs à votre portée </span>
+                                <span class="fs3">{{ $french->banner_1_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
-                                gros pour
+                                {{ $french->banner_1_p1 ?? '' }}
                                 <br>
-                                votre entreprise, Alawafy a quelque chose pour chacun.
+                                {{ $french->banner_1_p2 ?? '' }}
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
+                            @if ($french && $french->banner_1_image)
+                                <img class="w-100" src="{{ asset('storage/' . $french->banner_1_image) }}"
+                                    alt="">
+                            @else
+                                <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}"
+                                    alt="">
+                            @endif
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue à Crico
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span
+                                    class="fs2">{{ $french->banner_2_h1 ?? '' }}
                                 </span>
                                 <br>
-                                <span class="fs3">L'explosion de saveurs dans chaque croquant </span>
+                                <span class="fs3">{{ $french->banner_2_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
-                                gros pour
-
+                                {{ $french->banner_2_p1 ?? '' }}
                                 <br>
-                                votre entreprise, Circo a quelque chose pour chacun.
+                                {{ $french->banner_2_p2 ?? '' }}
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}" alt="">
+
+
+
+                            @if ($french && $french->banner_2_image)
+                                <img class="w-100" src="{{ asset('storage/' . $french->banner_2_image) }}"
+                                    alt="">
+                            @else
+                                <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}"
+                                    alt="">
+                            @endif
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Bienvenue à Alyoum
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span
+                                    class="fs2">{{ $french->banner_3_h1 ?? '' }}
                                 </span>
                                 <br>
-                                <span class="fs3">L'excellence des fruits secs à votre portée </span>
+                                <span class="fs3">{{ $french->banner_3_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                Que vous cherchiez une collation saine, une gourmandise savoureuse ou des options en
-                                gros pour
-
+                                {{ $french->banner_3_p1 ?? '' }}
                                 <br>
-                                votre entreprise, Alyoum a quelque chose pour chacun.
+                                {{ $french->banner_3_p2 ?? '' }}
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}" alt="">
+
+                            @if ($french && $french->banner_3_image)
+                                <img class="w-100" src="{{ asset('storage/' . $french->banner_3_image) }}"
+                                    alt="">
+                            @else
+                                <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}"
+                                    alt="">
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -71,35 +95,25 @@
                 <div class="row gy-4">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont">
-                            <h2 style="white-space: nowrap"><span class="fs5">A Propos </span> <span class="fs6">d’Alawafy</span> </h2>
-                            <h3 class="fs13 mb-3">Des Moments de Plaisir en Famille avec ALAWAFY</h3>
-                            <p>
-                                Avec notre marque ALAWAFY, chaque bouchée de nos fruits secs devient une
-                                invitation à partager des moments de plaisir et de joie en famille. Nous croyons que la
-                                convivialité autour de la table est essentielle, et nos produits, soigneusement
-                                sélectionnés, sont parfaits pour accompagner vos rassemblements. Que ce soit pour un
-                                apéritif, un goûter ou un moment de détente, ALAWAFY apporte une touche de douceur et de
-                                santé, transformant chaque instant en un souvenir mémorable. Savourez ensemble la
-                                qualité et le goût authentique de nos noix et fruits secs !
-                            </p>
+                            <h2 style="white-space: nowrap"><span class="fs5">
+                                    {{ $french->about_section_h_blue ?? '' }} </span> <span
+                                    class="fs6">{{ $french->about_section_h_green ?? '' }}</span> </h2>
+                            <h3 class="fs13 mb-3">{{ $french->about_section_h_small ?? '' }}</h3>
+                            {!! $french->about_section_p ?? '' !!}
 
-                            <a class="mainBtn1" href="about">En savoir plus</a>
+                            <a class="mainBtn1" href="{{ $french->about_section_url }}">En savoir plus</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center">
                         <div class="aboutInnerImg">
-                            <img class="patternImg" class="w-100" src="{{ asset('assets/images/shape/pattern1.png') }}"
-                                alt="">
-                            {{-- <img class="abouteItem aboutItem1" class="w-100"
-                                src="{{ asset('assets/images/items/item1.png') }}" alt="">
-                            <img class="abouteItem aboutItem2" class="w-100"
-                                src="{{ asset('assets/images/items/item2.png') }}" alt="">
-                            <img class="abouteItem aboutItem3" class="w-100"
-                                src="{{ asset('assets/images/items/item3.png') }}" alt="">
-                            <img class="abouteItem aboutItem4" class="w-100"
-                                src="{{ asset('assets/images/items/item4.png') }}" alt="">
-                            <img class="nutsImg" class="w-100"
-                                src="{{ asset('assets/images/items/nuts.png') }}" alt=""> --}}
+                            @if ($french && $french->about_section_image)
+                                <img class="patternImg" class="w-100"
+                                    src="{{ asset('storage/' . $french->about_section_image) }}" alt="">
+                            @else
+                                <img class="patternImg" class="w-100"
+                                    src="{{ asset('assets/images/shape/pattern1.png') }}" alt="">
+                            @endif
+
                         </div>
                     </div>
                 </div>
@@ -141,7 +155,8 @@
         <section class="ourBrands py-5">
             <div class="customContainer">
                 <div>
-                    <h2 class="text-center pb-4"><span class="fs5">Nos </span> <span class="fs6">marques</span>
+                    <h2 class="text-center pb-4"><span class="fs5"> {{ $french->our_brand_h1 ?? '' }} </span> <span
+                            class="fs6">{{ $french->our_brand_h2 ?? '' }}</span>
                     </h2>
 
                     {{-- <div class="row showRow1 gy-4">
@@ -192,13 +207,22 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
-                                    <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
-                                        alt="">
-                                    <p>Des noix de qualité premium, soigneusement sélectionnées et grillées à la perfection. Des noix de
-                                        cajou aux amandes, Alawafy propose une collation saine et délicieuse pour chaque occasion.</p>
-                                    <a href="brand-alawafy" class="mainBtn1">Voir les produits.</a
-                                        href="brand-alawafy">
+                                    @if ($french && $french->our_brand_logo_1)
+                                        <img class="pb-3" src="{{ asset('storage/' . $french->our_brand_logo_1) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
+                                            alt="">
+                                    @endif
+                                    @if ($french && $french->our_brand_image_1)
+                                        <img class="pb-3 w-100"
+                                            src="{{ asset('storage/' . $french->our_brand_image_1) }}" alt="">
+                                    @else
+                                        <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
+                                            alt="">
+                                    @endif
+                                    <p> {{ $french->our_brand_1 ?? '' }}</p>
+                                    <a href="brand-alawafy" class="mainBtn1">Voir les produits.</a href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -206,13 +230,27 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo2.png') }}"
-                                        alt="">
-                                    <img class="pb-3 w-100" class="py-3"
-                                        src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
-                                    <p>Un twist amusant sur les cacahuètes avec des saveurs audacieuses comme épicé, fromage et
-                                        barbecue. Crico offre des snacks croquants et pleins de saveurs à un rapport qualité-prix imbattable.</p>
-                                    <a href="brand-crico" class="mainBtn1">Voir les produits.</a href="brand-alawafy">
+
+                                    @if ($french && $french->our_brand_logo_2)
+                                        <img class="pb-3" src="{{ asset('storage/' . $french->our_brand_logo_2) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3" src="{{ asset('assets/images/logo/logo2.png') }}"
+                                            alt="">
+                                    @endif
+                                    @if ($french && $french->our_brand_image_2)
+                                        <img class="pb-3 w-100"
+                                            src="{{ asset('storage/' . $french->our_brand_image_2) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3 w-100" class="py-3"
+                                            src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
+                                    @endif
+
+                                    <p> {{ $french->our_brand_2 ?? '' }}</p>
+
+                                    <a href="brand-crico" class="mainBtn1">Voir les produits.</a
+                                        href="brand-alawafy">
                                 </div>
                             </div>
                         </div>
@@ -220,13 +258,24 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4 pt-2">
-                                    <img style="width: 145px;object-fit: contain;" class="pb-2"
-                                        src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
 
-                                    <img class="pb-3 w-100" class="py-3"
-                                        src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
-                                    <p>Dédiée au marché de gros, Alyoum propose des noix de haute qualité en vrac, garantissant fraîcheur
-                                        et saveur pour les entreprises et les besoins à grande échelle.</p>
+                                    @if ($french && $french->our_brand_logo_3)
+                                        <img class="pb-3" src="{{ asset('storage/' . $french->our_brand_logo_3) }}"
+                                            alt="">
+                                    @else
+                                        <img style="width: 145px;object-fit: contain;" class="pb-2"
+                                            src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
+                                    @endif
+                                    @if ($french && $french->our_brand_image_3)
+                                        <img class="pb-3 w-100"
+                                            src="{{ asset('storage/' . $french->our_brand_image_3) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3 w-100" class="py-3"
+                                            src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
+                                    @endif
+
+                                    <p> {{ $french->our_brand_3 ?? '' }}</p>
                                     <a href="brand-alyoum" class="mainBtn1">Voir les produits.</a
                                         href="brand-alawafy">
                                 </div>
@@ -314,11 +363,14 @@
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
-                    <h2 class="waterDropsBefore"> <span class="fs7"> Profitez des meilleures noix</span></h2>
+                    <h2 class="waterDropsBefore"> <span class="fs7">{{ $french->section_6_h1 ?? '' }}</span></h2>
                     <h2 class=""> <span
-                            class="fs8 waterDropsAfter ms-0">riches en saveurs et en nutriments</span> </h2>
-                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">En savoir plus</a>
-                        <a class="mainBtn2 position-relative z-1 h-75" href="contact-us">CONTACTEZ NOUS</a>
+                            class="fs8 waterDropsAfter ms-0">{{ $french->section_6_h2 ?? '' }}</span> </h2>
+                    <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1"
+                            href="{{ $french->section_6_url_2 ?? '' }}">En savoir
+                            plus</a>
+                        <a class="mainBtn2 position-relative z-1 h-75"
+                            href="{{ $french->section_6_url_1 ?? '' }}">CONTACTEZ NOUS</a>
                     </div>
                 </div>
             </div>
@@ -326,190 +378,37 @@
 
         <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
             <div class="customContainer">
-                <h2 class="text-center pb-4"><span class="fs5">Nos </span> <span class="fs6">Activitès</span>
+                <h2 class="text-center pb-4"><span class="fs5">{{ $french->our_activity_h1 ?? '' }} </span> <span
+                        class="fs6">{{ $french->our_activity_h2 ?? '' }} </span>
                 </h2>
                 <div class="activitieSlider">
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/school/school_img1.jpeg') }}" alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Activation pour la rentrée</h3>
-                            <p>
-                                Une activation a l’occasion de la rentrée scolaire (dégustation + tombola ) achetez et
-                                tentez de gagner des bons d’achats techno
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/aid_azah/eid_img1.jpeg') }}" alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Aide à l'activation Al Adha</h3>
-                            <p>
-                                Une activation a l’occasion de l’Aid Al Adha (dégustation + tombola ) des aiguises
-                                coteaux
-                                des cartes de recharges et des coteaux de 9pcs comme cadeaux
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/special_african_cup/img0.png') }}"
-                            alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Concours réseaux sociaux special coupe d’Afrique</h3>
-                            <p>
-                                A l’occasion de la coupe d’Afrique 2023 Alawafy a lancer un concours sur les réseaux
-                                sociaux, des téléviseurs et des smart phones comme gains
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/al_jadid/image22.jpg') }}" alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Souk el Fellah AL-jadid</h3>
-                            <p>Présence de la marque ALAWAFY au SOUK EL FELLAH Organisée par l’institut Souk el-Fellah
-                                Al-Jadid, en coordination avec l’Office des parcs des sports et des loisirs d’Alger
-                                (Opla) et la Chambre d’artisanat et des métiers, cette manifestation a pour objectif de
-                                faire connaître et de promouvoir le produit artisanal national. Elle réunit environ 60
-                                entreprises algériennes et étrangères représentant la Tunisie, le Sénégal, la Chine, la
-                                Turquie et la France venus exposer leurs divers produits.
-                            </p>
-                        </div>
-                    </div>
+                    @php
 
-                    {{-- <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}" alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>d’exécution Center</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/loperationBts/img7.jpg') }}" alt="">
+                    @endphp
+                    @php
+                        $activities = App\Models\Activity::where('language', 'french')->get();
+                    @endphp
 
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
+                    @forelse ($activities as $activity)
+                        <div class="col activityOuter">
+                            <img class="w-100 activityImg" src="{{ asset('storage/' . $activity->main_image) }}"
+                                alt="">
+                            <div class="service-card">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-arrows-down-to-people"></i>
+                                </div>
+                                <h3>{{ $activity->heading }}</h3>
+                                <p>
+                                    {{ $activity->paragraph }}
+                                </p>
                             </div>
-                            <h3>de l’opération BTS</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
                         </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/excecutionQuest/image26.jpg') }}" alt="">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>d’exécution Quest</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col activityOuter">
-                        <img class="w-100 activityImg"
-                            src="{{ asset('assets/images/activities/remisDes/image38.jpg') }}" alt="">
+                    @empty
+                    @endforelse
 
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-arrows-down-to-people"></i>
-                            </div>
-                            <h3>Remise Des Cadeaux</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div> --}}
 
-                    {{-- <div class="col">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-chart-line"></i>
-                            </div>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-globe"></i>
-                            </div>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-money-check-dollar"></i>
-                            </div>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-regular fa-circle-check"></i>
-                            </div>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fa-solid fa-people-group"></i>
-                            </div>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quisquam consequatur necessitatibus eaque.
-                            </p>
-                        </div>
-                    </div> --}}
+
+                     
                 </div>
                 <div class="d-flex justify-content-center">
                     <a class="mainBtn1" href="activities">Voir plus</a>
