@@ -50574,3 +50574,26 @@ body {
     background-color: transparent;
     border: none;
 }
+
+
+.arabicPage .accordion-button{
+    direction: rtl;
+}
+
+.arabicPage .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+.arabicPage label{
+    text-align: right;
+    width: 100%;
+}
+.arabicPage input[type="text"]{
+    direction: rtl;
+}
+.arabicPage button{
+    float: right;
+}
+.arabicPage form .row{
+    direction: rtl
+}

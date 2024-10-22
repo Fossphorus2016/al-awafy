@@ -1,5 +1,5 @@
 <x-admin.layouts>
-    <div class="card">
+    <div class="card arabicPage">
         <div class="card-body">
             <div class="accordion" id="accordionExample">
 
@@ -710,12 +710,17 @@
 
     <script>
         $(document).ready(function() {
-            const section1_p = Jodit.make('#section1_p');
-            const brand_1_p = Jodit.make('#brand_1_p');
-            const brand_2_p = Jodit.make('#brand_2_p');
-            const brand_3_p = Jodit.make('#brand_3_p');
-            const brand_4_p = Jodit.make('#brand_4_p');
-            const brand_5_p = Jodit.make('#brand_5_p');
+
+            const joditConfig = {
+                direction: 'rtl',
+                placeholder: 'ابدأ بالكتابة هنا...'
+            }
+            const section1_p = Jodit.make('#section1_p' , joditConfig);
+            const brand_1_p = Jodit.make('#brand_1_p' , joditConfig);
+            const brand_2_p = Jodit.make('#brand_2_p' , joditConfig);
+            const brand_3_p = Jodit.make('#brand_3_p' , joditConfig);
+            const brand_4_p = Jodit.make('#brand_4_p' , joditConfig);
+            const brand_5_p = Jodit.make('#brand_5_p' , joditConfig);
 
 
             $(".formValidation").submit(function(event) {

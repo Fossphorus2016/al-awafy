@@ -1,5 +1,5 @@
 <x-admin.layouts>
-    <div class="card">
+    <div class="card arabicPage">
         <div class="card-body">
             <div class="accordion" id="accordionExample">
 
@@ -7,7 +7,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                            Meta Section
+                            قسم ميتا
                         </button>
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -19,7 +19,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta title</label>
+                                            <label for="">عنوان ميتا</label>
                                             <input class="form-control" name="meta_title"
                                                 value="{{ old('meta_title', $about_arabic->meta_title ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -28,7 +28,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta Description</label>
+                                            <label for="">وصف ميتا</label>
                                             <input class="form-control" name="meta_description"
                                                 value="{{ old('meta_description', $about_arabic->meta_description ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -36,7 +36,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div>
-                                            <label for="">Canonical</label>
+                                            <label for="">الكنسي</label>
                                             <input class="form-control" name="canonical"
                                                 value="{{ old('canonical', $about_arabic->canonical ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -44,7 +44,8 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -62,8 +63,8 @@
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div>
-                                <form action="{{ route('about.section.1') }}" method="POST"
-                                    class="mt-5 formValidation2" enctype="multipart/form-data">
+                                <form action="{{ route('about.section.1') }}" method="POST" class="mt-5 formValidation"
+                                    enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="arabic">
                                     <div class="row gy-4">
@@ -281,10 +282,11 @@
                                         </div>
                                         <div class="col-12">
                                             @if ($about_arabic && $about_arabic->sec3_image)
-                                                <img src="{{asset('storage/'.$about_arabic->sec3_image)}}" alt="" id="imgU12"
+                                                <img src="{{ asset('storage/' . $about_arabic->sec3_image) }}"
+                                                    alt="" id="imgU12"
                                                     style="background-color:lightgrey; max-width: 1600px; width: 100%; height: 460px; object-fit: contain;">
                                             @else
-                                            upload an image
+                                                upload an image
                                             @endif
                                         </div>
 
@@ -307,12 +309,16 @@
     <script>
         $(document).ready(function() {
 
-            const editor1 = new Jodit('.editor1');
-            const editor2 = new Jodit('.editor2');
-            // const editor3 = new Jodit('.editor3');
-            const editor4 = new Jodit('.editor4');
-            const editor5 = new Jodit('.editor5');
+            const joditConfig = {
+                direction: 'rtl',
+                placeholder: 'ابدأ بالكتابة هنا...'
+            }
 
+            const editor1 = new Jodit('.editor1', joditConfig);
+            const editor2 = new Jodit('.editor2', joditConfig);
+            // const editor3 = new Jodit('.editor3');
+            const editor4 = new Jodit('.editor4', joditConfig);
+            const editor5 = new Jodit('.editor5', joditConfig);
 
             $(".formValidation").submit(function(event) {
                 event.preventDefault();
@@ -330,13 +336,15 @@
                             $inputField.removeClass("is-invalid");
                             return;
                         }
-                        if ($inputField.val().trim() === "") {
-                            $inputField.addClass("is-invalid");
-                            $errorMessage.text(labelText + " is required").css('display', 'block');
-                            isValid = false;
-                        } else {
-                            $inputField.removeClass("is-invalid");
-                            $errorMessage.text('').css('display', 'none');
+                        if ($(this).is(":text")) {
+                            if ($inputField.val().trim() === "") {
+                                $inputField.addClass("is-invalid");
+                                $errorMessage.text(labelText + " is required").css('display', 'block');
+                                isValid = false;
+                            } else {
+                                $inputField.removeClass("is-invalid");
+                                $errorMessage.text('').css('display', 'none');
+                            }
                         }
 
                     });
@@ -351,6 +359,21 @@
                 let valid = true;
 
                 $('.errMsg').text('');
+
+                if ($(".editorOut10 input").val() == "") {
+                    $(".editorOut10 input").addClass("is-invalid");
+                    $(".editorOut10 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut10 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut11 input").val() == "") {
+                    $(".editorOut11 input").addClass("is-invalid");
+                    $(".editorOut11 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut11 input").removeClass("is-invalid");
+                }
 
                 if (!editor1.value.trim() || editor1.value.trim() === '<p><br></p>') {
                     $('.editorOut1 .errMsg').text('Paragraph 1 is required.');

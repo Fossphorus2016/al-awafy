@@ -63,7 +63,7 @@
                         <div class="accordion-body">
                             <div>
                                 <form action="{{ route('about.section.1') }}" method="POST"
-                                    class="mt-5 formValidation2" enctype="multipart/form-data">
+                                    class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="language" value="english">
                                     <div class="row gy-4">
@@ -330,13 +330,15 @@
                             $inputField.removeClass("is-invalid");
                             return;
                         }
-                        if ($inputField.val().trim() === "") {
-                            $inputField.addClass("is-invalid");
-                            $errorMessage.text(labelText + " is required").css('display', 'block');
-                            isValid = false;
-                        } else {
-                            $inputField.removeClass("is-invalid");
-                            $errorMessage.text('').css('display', 'none');
+                        if ($(this).is(":text")) {
+                            if ($inputField.val().trim() === "") {
+                                $inputField.addClass("is-invalid");
+                                $errorMessage.text(labelText + " is required").css('display', 'block');
+                                isValid = false;
+                            } else {
+                                $inputField.removeClass("is-invalid");
+                                $errorMessage.text('').css('display', 'none');
+                            }
                         }
 
                     });
@@ -351,6 +353,20 @@
                 let valid = true;
 
                 $('.errMsg').text('');
+                 if ($(".editorOut10 input").val() == "") {
+                    $(".editorOut10 input").addClass("is-invalid");
+                    $(".editorOut10 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut10 input").removeClass("is-invalid");
+                }
+                if ($(".editorOut11 input").val() == "") {
+                    $(".editorOut11 input").addClass("is-invalid");
+                    $(".editorOut11 .errMsg").text('Heading is required');
+                    valid = false
+                } else {
+                    $(".editorOut11 input").removeClass("is-invalid");
+                }
 
                 if (!editor1.value.trim() || editor1.value.trim() === '<p><br></p>') {
                     $('.editorOut1 .errMsg').text('Paragraph 1 is required.');
@@ -364,11 +380,7 @@
                     console.log(editor2.value, 'ed2');
                 }
 
-                // if (!editor3.value.trim() || editor3.value.trim() === '<p><br></p>') {
-                //     $('.editorOut3 .errMsg').text('Paragraph 3 is required.');
-                //     valid = false;
-                //     console.log(editor3.value, 'ed3');
-                // }
+
 
                 // If all validations pass, submit the form
                 if (valid) {
@@ -412,20 +424,7 @@
                 } else {
                     $(".editorOut9 input").removeClass("is-invalid");
                 }
-                if ($(".editorOut10 input").val() == "") {
-                    $(".editorOut10 input").addClass("is-invalid");
-                    $(".editorOut10 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut10 input").removeClass("is-invalid");
-                }
-                if ($(".editorOut11 input").val() == "") {
-                    $(".editorOut11 input").addClass("is-invalid");
-                    $(".editorOut11 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut11 input").removeClass("is-invalid");
-                }
+
                 if ($(".editorOut12 input").val() == "") {
                     $(".editorOut12 input").addClass("is-invalid");
                     $(".editorOut12 .errMsg").text('Heading is required');
