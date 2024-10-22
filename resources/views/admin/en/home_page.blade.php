@@ -888,13 +888,18 @@
                                                             <label for="">Images</label>
                                                             <input type="file" name="images[]"
                                                                 class="form-control" id="activityImageInput" multiple
+<<<<<<< Updated upstream
                                                                 accept="image/*" onchange="previewImages1(event)">
+=======
+                                                                accept="image/*" onchange="previewNewImages(event)">
+>>>>>>> Stashed changes
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
                                                     <div class="col-12" id="imagePreviews">
                                                         <!-- Image previews will be displayed here -->
                                                     </div>
+
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="submit" class="btn btn-primary">Save</button>
@@ -1007,6 +1012,7 @@
                                                                         </div>
 
                                                                         <div class="col-lg-6">
+<<<<<<< Updated upstream
                                                                             <div class="mb-3">
                                                                                 <label
                                                                                     class="form-label">Images</label>
@@ -1024,6 +1030,22 @@
 
                                                                             <!-- Existing images -->
                                                                             <div id="existing-images">
+=======
+                                                                            <div class="col-12">
+                                                                                <div>
+                                                                                    <label for="">Add New Images</label>
+                                                                                    <input type="file" name="images[]" class="form-control" id="newImageInput" multiple accept="image/*" onchange="previewImages(event)">
+                                                                                    <p class="errMsg text-danger"></p>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!-- New Image Preview Container -->
+                                                                            <div class="col-12" id="output">
+                                                                                <!-- Preview of new images will be shown here -->
+                                                                            </div>
+
+                                                                            {{-- <div id="existing-images">
+>>>>>>> Stashed changes
                                                                                 @if ($activity->images)
                                                                                     @php
                                                                                         $decodedImages = json_decode(
@@ -1060,6 +1082,28 @@
                                                                                 <div id="output"
                                                                                     style="display: flex; flex-wrap: wrap;">
                                                                                 </div>
+<<<<<<< Updated upstream
+=======
+                                                                            </div> --}}
+
+                                                                            <div class="mb-3" id="uploaded_images_container_{{ $activity->id }}">
+                                                                                <label class="form-label">Existing Images:</label>
+                                                                                <div id="existing-images-{{ $activity->id }}">
+                                                                                    <!-- Display existing images -->
+                                                                                    @if($activity->images)
+                                                                                        @php
+                                                                                            $decodedImages = json_decode($activity->images);
+                                                                                        @endphp
+                                                                                        @foreach($decodedImages as $image)
+                                                                                            <div style="display: inline-block; position: relative; margin-right: 10px;">
+                                                                                                <img src="{{ $image->url }}" alt="Image" width="100px" height="100px" class="rounded">
+                                                                                                <button type="button" class="btn btn-danger btn-sm" onclick="removeImage(this, '{{ $image->url }}')">Remove</button>
+                                                                                                <input type="hidden" name="existing_images[]" value="{{ $image->url }}">
+                                                                                            </div>
+                                                                                        @endforeach
+                                                                                    @endif
+                                                                                </div>
+>>>>>>> Stashed changes
                                                                             </div>
                                                                         </div>
                                                                     </form>
@@ -1352,7 +1396,11 @@
             $('#empty_modal_edit').modal('show');
         }
 
+        function previewNewImages(event) {
+            var imagePreviews = document.getElementById('imagePreviews');
+            imagePreviews.innerHTML = ""; // Clear any existing previews
 
+<<<<<<< Updated upstream
         function previewImages(event) {
             const output = document.getElementById('output');
             output.innerHTML = ''; // Clear previous previews
@@ -1457,6 +1505,63 @@
 
         // Event listener for the file input
         document.getElementById('activityImageInput').addEventListener('change', previewImages);
+=======
+            for (let i = 0; i < event.target.files.length; i++) {
+                let file = event.target.files[i];
+
+                if (file.type.startsWith('image/')) {
+                    let reader = new FileReader();
+                    reader.onload = function(e) {
+                        let imgElement = document.createElement('img');
+                        imgElement.src = e.target.result;
+                        imgElement.style.width = '100px';
+                        imgElement.style.height = '100px';
+                        imgElement.style.margin = '5px';
+                        imgElement.classList.add('rounded');
+                        imagePreviews.appendChild(imgElement);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            }
+        }
+
+
+        // function previewImages(event) {
+        //     const output = document.getElementById('output');
+        //     output.innerHTML = ''; // Clear previous previews
+
+        //     const files = event.target.files;
+        //     for (let i = 0; i < files.length; i++) {
+        //         const reader = new FileReader();
+        //         reader.onload = function(e) {
+        //             const imageContainer = document.createElement('div');
+        //             imageContainer.className = 'image-container'; // Add class for styling
+
+        //             const img = document.createElement('img');
+        //             img.src = e.target.result;
+        //             img.width = 100;
+        //             img.height = 100;
+        //             img.className = 'rounded mx-2';
+
+        //             const removeIcon = document.createElement('span');
+        //             removeIcon.className = 'remove-icon'; // Class for styling the remove icon
+        //             removeIcon.innerHTML = '×';
+        //             removeIcon.onclick = function() {
+        //                 imageContainer.remove(); // Remove image container on click
+        //             };
+
+        //             imageContainer.appendChild(img);
+        //             imageContainer.appendChild(removeIcon);
+        //             output.appendChild(imageContainer);
+        //         };
+        //         reader.readAsDataURL(files[i]);
+        //     }
+        // }
+
+        // function removeImage(element) {
+        //     element.parentElement.remove(); // Remove existing image container
+        // }
+>>>>>>> Stashed changes
     </script>
 
 </x-admin.layouts>
