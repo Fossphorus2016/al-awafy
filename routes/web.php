@@ -9,6 +9,7 @@ use App\Http\Controllers\AlawafyController;
 use App\Http\Controllers\AlyoumController;
 use App\Http\Controllers\CircoController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\OurActivityController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -171,6 +172,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/about-english', [AdminAboutController::class, 'admin_about_english'])->name('admin.about.english');
     Route::get('admin/about-french', [AdminAboutController::class, 'admin_about_french'])->name('admin.about.french');
     Route::get('admin/about-arabic', [AdminAboutController::class, 'admin_about_arabic'])->name('admin.about.arabic');
+
     Route::post('admin/about-meta/store', [AdminAboutController::class, 'about_meta_section'])->name('about.meta');
     Route::post('admin/about-sec-1', [AdminAboutController::class, 'admin_section_1'])->name('about.section.1');
     Route::post('admin/about-sec-2', [AdminAboutController::class, 'admin_section_2'])->name('about.section.2');
@@ -186,11 +188,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/brand-alyoum-french', [AdminBrandController::class, 'admin_brand_alyoum_french'])->name('admin.brand.alyoum.french');
     Route::get('admin/brand-crico-french', [AdminBrandController::class, 'admin_brand_crico_french'])->name('admin.brand.crico.french');
 
-// Arabic Brand Routes
-Route::get('admin/brand-alawafy-arabic', [AdminBrandController::class, 'admin_brand_alawafy_arabic'])->name('admin.brand.alawafy.arabic');
-Route::get('admin/brand-alyoum-arabic', [AdminBrandController::class, 'admin_brand_alyoum_arabic'])->name('admin.brand.alyoum.arabic');
-Route::get('admin/brand-crico-arabic', [AdminBrandController::class, 'admin_brand_crico_arabic'])->name('admin.brand.crico.arabic');
+    // Arabic Brand Routes
+    Route::get('admin/brand-alawafy-arabic', [AdminBrandController::class, 'admin_brand_alawafy_arabic'])->name('admin.brand.alawafy.arabic');
+    Route::get('admin/brand-alyoum-arabic', [AdminBrandController::class, 'admin_brand_alyoum_arabic'])->name('admin.brand.alyoum.arabic');
+    Route::get('admin/brand-crico-arabic', [AdminBrandController::class, 'admin_brand_crico_arabic'])->name('admin.brand.crico.arabic');
 
+    Route::get('admin/our-activity-english', [OurActivityController::class, 'admin_our_activity_english'])->name('admin.our.activity.english');
 
 
 
