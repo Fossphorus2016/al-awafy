@@ -1229,59 +1229,59 @@
 
         });
 
-        document.getElementById('activityImageInput').addEventListener('change', function() {
-            const fileList = this.files;
-            const previewContainer = document.getElementById('imagePreviews');
-            previewContainer.innerHTML = ''; // Clear previous previews
+        // document.getElementById('activityImageInput').addEventListener('change', function() {
+        //     const fileList = this.files;
+        //     const previewContainer = document.getElementById('imagePreviews');
+        //     previewContainer.innerHTML = ''; // Clear previous previews
 
-            for (let i = 0; i < fileList.length; i++) {
-                const file = fileList[i];
-                const reader = new FileReader();
+        //     for (let i = 0; i < fileList.length; i++) {
+        //         const file = fileList[i];
+        //         const reader = new FileReader();
 
-                reader.onload = function(e) {
-                    // Create a wrapper for the image and the remove button
-                    const imageWrapper = document.createElement('div');
-                    imageWrapper.classList.add('image-wrapper');
-                    imageWrapper.style.position = 'relative';
-                    imageWrapper.style.display = 'inline-block';
-                    imageWrapper.style.margin = '10px';
+        //         reader.onload = function(e) {
+        //             // Create a wrapper for the image and the remove button
+        //             const imageWrapper = document.createElement('div');
+        //             imageWrapper.classList.add('image-wrapper');
+        //             imageWrapper.style.position = 'relative';
+        //             imageWrapper.style.display = 'inline-block';
+        //             imageWrapper.style.margin = '10px';
 
-                    const img = document.createElement('img');
-                    img.src = e.target.result;
-                    img.alt = 'Uploaded Image';
-                    img.style = 'width: 250px; height: 300px; object-fit: contain;';
-                    imageWrapper.appendChild(img);
+        //             const img = document.createElement('img');
+        //             img.src = e.target.result;
+        //             img.alt = 'Uploaded Image';
+        //             img.style = 'width: 250px; height: 300px; object-fit: contain;';
+        //             imageWrapper.appendChild(img);
 
-                    // Create the remove button
-                    const removeButton = document.createElement('button');
-                    removeButton.innerText = 'Remove';
-                    removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
-                    removeButton.style.position = 'absolute';
-                    removeButton.style.top = '5px';
-                    removeButton.style.right = '5px';
+        //             // Create the remove button
+        //             const removeButton = document.createElement('button');
+        //             removeButton.innerText = 'Remove';
+        //             removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
+        //             removeButton.style.position = 'absolute';
+        //             removeButton.style.top = '5px';
+        //             removeButton.style.right = '5px';
 
-                    removeButton.onclick = function() {
-                        // Remove the image preview and file from the input
-                        imageWrapper.remove();
-                        const dataTransfer = new DataTransfer();
+        //             removeButton.onclick = function() {
+        //                 // Remove the image preview and file from the input
+        //                 imageWrapper.remove();
+        //                 const dataTransfer = new DataTransfer();
 
-                        // Create a new FileList without the removed image
-                        for (let j = 0; j < fileList.length; j++) {
-                            if (fileList[j] !== file) {
-                                dataTransfer.items.add(fileList[j]);
-                            }
-                        }
-                        // Update the file input
-                        document.getElementById('activityImageInput').files = dataTransfer.files;
-                    };
+        //                 // Create a new FileList without the removed image
+        //                 for (let j = 0; j < fileList.length; j++) {
+        //                     if (fileList[j] !== file) {
+        //                         dataTransfer.items.add(fileList[j]);
+        //                     }
+        //                 }
+        //                 // Update the file input
+        //                 document.getElementById('activityImageInput').files = dataTransfer.files;
+        //             };
 
-                    imageWrapper.appendChild(removeButton);
-                    previewContainer.appendChild(imageWrapper);
-                };
+        //             imageWrapper.appendChild(removeButton);
+        //             previewContainer.appendChild(imageWrapper);
+        //         };
 
-                reader.readAsDataURL(file);
-            }
-        });
+        //         reader.readAsDataURL(file);
+        //     }
+        // });
 
 
         function load_section2_modal(activityId) {
@@ -1300,6 +1300,8 @@
             // Show the modal
             $('#empty_modal_edit').modal('show');
         }
+
+
     </script>
 
 </x-admin.layouts>
