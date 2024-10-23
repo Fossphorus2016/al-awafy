@@ -17,7 +17,6 @@
                                 <input type="hidden" name="language" value="arabic">
                                 <div class="row gy-4">
                                     <div class="col-6">
-
                                         <div>
                                             <label for="">Meta title</label>
                                             <input class="form-control" name="meta_title" id="meta_title"

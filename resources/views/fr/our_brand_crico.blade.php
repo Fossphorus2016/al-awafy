@@ -1,3 +1,6 @@
+@php
+    $crico = App\Models\Crico::where('language', 'french')->first();
+@endphp
 <x-frenchLayout>
     <main>
         <section class="heroSection secondBanner brandBanner">
@@ -14,8 +17,9 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Nos  </span>
-                            <span class="fs3">Marques</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                {{ $crico->banner_h1 ?? '' }} </span>
+                            <span class="fs3">{{ $crico->banner_h2 ?? '' }}</span>
                         </h1>
 
                     </div>
@@ -30,21 +34,10 @@
                 <div class="row">
                     <div class=" col-12 d-flex align-item">
                         <div class="aboutInner paraFont text-center">
-                            <h2><span class="fs5">Découvrez</span> <span class="fs6">Crico</span> </h2>
+                            <h2><span class="fs5">{{ $crico->section1_h1 ?? '' }}</span> <span
+                                    class="fs6">{{ $crico->section1_h2 ?? '' }}</span> </h2>
                             <p class="mb-5 w-100">
-                                Crico propose une délicieuse gamme de cacahuètes enrobées aromatisées qui allient
-                                qualité et goût
-                                irrésistible. Chaque bouchée de Crico offre une expérience croquante avec des saveurs
-                                audacieuses.
-                                Que vous ayez envie de la chaleur du Spicy, du goût fumé du BBQ, de la saveur savoureuse
-                                de la
-                                Pizza, ou des saveurs classiques du Sel et du Fromage, que vous passiez une journée
-                                décontractée
-                                avec des amis ou que vous cherchiez une collation rapide à emporter, la variété de Crico
-                                satisfera vos
-                                envies tout en vous proposant un produit parfaitement équilibré en qualité et en prix à
-                                un tarif
-                                abordable. Grignotez intelligemment, grignotez avec saveur avec Crico !
+                                {!! $crico->section1_p ?? '' !!}
                             </p>
 
                         </div>
@@ -58,12 +51,16 @@
                     </div> --}}
                 </div>
                 <div class="aboutBanner2">
-                    <img class="w-100" src="{{ asset('assets/images/items/bannerItem5.png') }}" alt="">
+                    @if ($crico && $crico->section1_image)
+                        <img class="w-100" src="{{ asset('storage/' . $crico->section1_image) }}" alt="">
+                    @else
+                        <img class="w-100" src="{{ asset('assets/images/items/bannerItem5.png') }}" alt="">
+                    @endif
                 </div>
             </div>
         </section>
 
-        <section class="brandSection noNuts">
+        {{-- <section class="brandSection noNuts">
             <div class="brandOuter brandRed py-5">
 
                 <div class="customContainer">
@@ -177,14 +174,7 @@
                             <div class="brandInner paraFont ">
                                 <h2><span class="fs7">Crico</span> <span class="fs8">Pizza</span> </h2>
                                 <p class="text-white">
-                                    Goûtez aux saveurs de l'Italie ! Les cacahuètes enrobées <strong>Crico
-                                        Pizza</strong> offrent le goût
-                                    classique de la
-                                    pizza dans une bouchée croquante, avec des saveurs de tomate, d'herbes et de
-                                    fromage. Ces
-                                    cacahuètes sont une option unique et savoureuse qui transforme l'heure du goûter en
-                                    une mini fête
-                                    de la pizza.
+
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contactez nous
@@ -203,14 +193,7 @@
                             <div class="brandInner paraFont ">
                                 <h2><span class="fs7">Crico</span> <span class="fs8">Frommage</span> </h2>
                                 <p class="text-white">
-                                    Une délicieuse savoureuse pour les amateurs de fromage ! Les cacahuètes enrobées de
-                                    <strong>fromage
-                                        Crico</strong> allient le goût riche et crémeux du fromage à la croquant
-                                    satisfaisant de
-                                    cacahuètes de
-                                    première qualité. Cette saveur offre le parfait équilibre entre la gourmandise et le
-                                    croquant pour une
-                                    expérience de grignotage vraiment agréable.
+
                                 </p>
                                 <a href="contact-us" class="mainBtn1">
                                     Contactez nous
@@ -243,7 +226,8 @@
                             <div class="brandInner paraFont ">
                                 <h2><span class="fs7">Crico</span> <span class="fs8">Fumé</span> </h2>
                                 <p class="text-white">
-                                    Pour les amateurs de saveurs fumées, les cacahuètes enrobées de <strong>Fumé Crico</strong> sont la
+                                    Pour les amateurs de saveurs fumées, les cacahuètes enrobées de <strong>Fumé
+                                        Crico</strong> sont la
                                     friandise
                                     parfaite. Avec un goût riche et fumé qui persiste, ces cacahuètes offrent une
                                     expérience de
@@ -251,6 +235,209 @@
                                 </p>
                                 <a href="contact-us" class="mainBtn3">
                                     Contactez nous
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
+        <section class="brandSection noNuts">
+            <div class="brandOuter brandRed py-5">
+
+                <div class="customContainer">
+                    <div class="row ">
+                        <div class="col-lg-6 col-12 ">
+                            <div class="brandInner paraFont ">
+                                <h2><span class="fs7">{{ $crico->brand_1_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_1_h2 ?? '' }}</span> </h2>
+                                <p class="text-white">
+                                    {!! $crico->brand_1_p ?? '' !!}
+                                </p>
+                                <a href="{{ $crico->brand_1_url ?? '' }}" class="mainBtn1">
+                                    Contact us
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="brandInner brandInnerTwo">
+                                @if ($crico && $crico->brand_1_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_1_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem13.png') }}"
+                                        alt="">
+                                @endif
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brandOuter brandGreen py-5">
+
+                <div class="customContainer">
+                    <div class="row ">
+                        <div class="col-lg-6 col-12">
+                            <div class="brandInner brandInnerTwo">
+
+
+
+                                @if ($crico && $crico->brand_2_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_2_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem14.png') }}"
+                                        alt="">
+                                @endif
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-12 ">
+                            <div class="brandInner paraFont ">
+                                <h2><span class="fs7">{{ $crico->brand_2_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_2_h2 ?? '' }}</span> </h2>
+                                <p class="text-white">
+                                    {!! $crico->brand_2_p ?? '' !!}
+                                </p>
+                                <a href="{{ $crico->brand_2_url ?? '' }}" class="mainBtn1">
+                                    Contact us
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brandOuter brandBrown py-5">
+
+                <div class="customContainer">
+                    <div class="row ">
+                        <div class="col-lg-6 col-12 ">
+                            <div class="brandInner paraFont ">
+                                <h2><span class="fs7">{{ $crico->brand_3_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_3_h2 ?? '' }}</span> </h2>
+                                <p class="text-white">
+                                    {!! $crico->brand_3_p ?? '' !!}
+                                </p>
+                                <a href="{{ $crico->brand_3_url ?? '' }}" class="mainBtn1">
+                                    Contact us
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="brandInner brandInnerTwo">
+                                @if ($crico && $crico->brand_3_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_3_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem15.png') }}"
+                                        alt="">
+                                @endif
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brandOuter brandOrange py-5">
+
+                <div class="customContainer">
+                    <div class="row ">
+                        <div class="col-lg-6 col-12">
+                            <div class="brandInner brandInnerTwo">
+
+                                @if ($crico && $crico->brand_4_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_4_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem16.png') }}"
+                                        alt="">
+                                @endif
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-12 ">
+                            <div class="brandInner paraFont ">
+                                <h2><span class="fs7">{{ $crico->brand_4_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_4_h2 ?? '' }}</span> </h2>
+                                <p class="text-white">
+                                    {!! $crico->brand_4_p ?? '' !!}
+                                </p>
+                                <a href="{{ $crico->brand_4_url ?? '' }}" class="mainBtn1">
+                                    Contact us
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brandOuter brandGold py-5">
+
+                <div class="customContainer">
+                    <div class="row ">
+                        <div class="col-lg-6 col-12 ">
+                            <div class="brandInner paraFont ">
+                                <h2><span class="fs7">{{ $crico->brand_5_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_5_h2 ?? '' }}</span> </h2>
+                                <p class="text-white">
+                                    {!! $crico->brand_5_p ?? '' !!}
+                                </p>
+                                <a href="{{ $crico->brand_5_url ?? '' }}" class="mainBtn1">
+                                    Contact us
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="brandInner brandInnerTwo">
+
+
+                                @if ($crico && $crico->brand_5_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_5_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem17.png') }}"
+                                        alt="">
+                                @endif
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brandOuter brandPurple py-5">
+
+                <div class="customContainer">
+                    <div class="row ">
+                        <div class="col-lg-6 col-12">
+                            <div class="brandInner brandInnerTwo">
+
+
+                                @if ($crico && $crico->brand_6_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_6_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem23.png') }}"
+                                        alt="">
+                                @endif
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-12 ">
+                            <div class="brandInner paraFont ">
+                                <h2><span class="fs7">{{ $crico->brand_6_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_6_h2 ?? '' }}</span> </h2>
+                                <p class="text-white">
+                                    {!! $crico->brand_6_p ?? '' !!}
+                                </p>
+                                <a href="{{ $crico->brand_6_url ?? '' }}" class="mainBtn1">
+                                    Contact us
                                 </a>
 
                             </div>

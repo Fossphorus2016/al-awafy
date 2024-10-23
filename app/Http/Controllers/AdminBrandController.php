@@ -14,7 +14,7 @@ class AdminBrandController extends Controller
         $brand_alawafy = Alawafy::where('language', 'english')->first();
         return view('admin.en.brand.alawafy', compact('brand_alawafy'));
     }
-    
+
     public function admin_brand_alawafy_arabic()
     {
         $brand_alawafy = Alawafy::where('language', 'arabic')->first();
@@ -54,12 +54,12 @@ class AdminBrandController extends Controller
     public function admin_brand_crico_french()
     {
         $brand_crico = Crico::where('language', 'french')->first();
-        return view('admin.en.brand.crico', compact('brand_crico'));
+        return view('admin.fr.brand.crico', compact('brand_crico'));
     }
 
     public function admin_brand_crico_arabic()
     {
         $brand_crico = Crico::where('language', 'arabic')->first();
-        return view('admin.en.brand.crico', compact('brand_crico'));
+        return view('admin.ar.brand.crico', compact('brand_crico'));
     }
 }
