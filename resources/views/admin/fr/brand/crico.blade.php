@@ -718,316 +718,316 @@
             const brand_5_p = Jodit.make('#brand_5_p');
 
 
-            $(".formValidation").submit(function(event) {
-                event.preventDefault();
-                let isValid = true;
+            // $(".formValidation").submit(function(event) {
+            //     event.preventDefault();
+            //     let isValid = true;
 
-                $(this)
-                    .find("input")
-                    .each(function() {
-                        let $inputField = $(this);
-                        let $parentDiv = $inputField.closest('div');
-                        let $errorMessage = $parentDiv.find('.errMsg');
-                        let labelText = $parentDiv.find('label').text();
+            //     $(this)
+            //         .find("input")
+            //         .each(function() {
+            //             let $inputField = $(this);
+            //             let $parentDiv = $inputField.closest('div');
+            //             let $errorMessage = $parentDiv.find('.errMsg');
+            //             let labelText = $parentDiv.find('label').text();
 
-                        if ($inputField.hasClass("noVal")) {
-                            $inputField.removeClass("is-invalid");
-                            return;
-                        }
-                        if ($inputField.is(":text")) {
-                            if ($inputField.val().trim() === "") {
-                                $inputField.addClass("is-invalid");
-                                $errorMessage.text(labelText + " is required").css('display', 'block');
-                                isValid = false;
-                            } else {
-                                $inputField.removeClass("is-invalid");
-                                $errorMessage.text('').css('display', 'none');
-                            }
-                        }
+            //             if ($inputField.hasClass("noVal")) {
+            //                 $inputField.removeClass("is-invalid");
+            //                 return;
+            //             }
+            //             if ($inputField.is(":text")) {
+            //                 if ($inputField.val().trim() === "") {
+            //                     $inputField.addClass("is-invalid");
+            //                     $errorMessage.text(labelText + " is required").css('display', 'block');
+            //                     isValid = false;
+            //                 } else {
+            //                     $inputField.removeClass("is-invalid");
+            //                     $errorMessage.text('').css('display', 'none');
+            //                 }
+            //             }
 
-                    });
-                if (isValid) {
-                    this.submit();
-                }
-            });
-            $('.formValidation3').submit(function(event) {
-                event.preventDefault();
+            //         });
+            //     if (isValid) {
+            //         this.submit();
+            //     }
+            // });
+            // $('.formValidation3').submit(function(event) {
+            //     event.preventDefault();
 
-                let valid = true;
+            //     let valid = true;
 
-                $('.errMsg').text('');
+            //     $('.errMsg').text('');
 
-                if ($(".editorOut91 input").val() == "") {
-                    $(".editorOut91 input").addClass("is-invalid");
-                    $(".editorOut91 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut91 input").removeClass("is-invalid");
-                }
+            //     if ($(".editorOut91 input").val() == "") {
+            //         $(".editorOut91 input").addClass("is-invalid");
+            //         $(".editorOut91 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut91 input").removeClass("is-invalid");
+            //     }
 
-                if ($(".editorOut92 input").val() == "") {
-                    $(".editorOut92 input").addClass("is-invalid");
-                    $(".editorOut92 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut92 input").removeClass("is-invalid");
-                }
+            //     if ($(".editorOut92 input").val() == "") {
+            //         $(".editorOut92 input").addClass("is-invalid");
+            //         $(".editorOut92 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut92 input").removeClass("is-invalid");
+            //     }
 
-                if (!section1_p.value.trim() || section1_p.value.trim() === '<p><br></p>') {
-                    $('.editorOut93 .errMsg').text('Paragraph 1 is required.');
-                    valid = false;
-                }
+            //     if (!section1_p.value.trim() || section1_p.value.trim() === '<p><br></p>') {
+            //         $('.editorOut93 .errMsg').text('Paragraph 1 is required.');
+            //         valid = false;
+            //     }
 
-                if (valid) {
-                    this.submit();
-                }
-            });
-            $('.formValidation4').submit(function(event) {
-                event.preventDefault();
+            //     if (valid) {
+            //         this.submit();
+            //     }
+            // });
+            // $('.formValidation4').submit(function(event) {
+            //     event.preventDefault();
 
-                let valid = true;
+            //     let valid = true;
 
-                $('.errMsg').text('');
+            //     $('.errMsg').text('');
 
-                if ($(".editorOut930 input").val() == "") {
-                    $(".editorOut930 input").addClass("is-invalid");
-                    $(".editorOut930 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut930 input").removeClass("is-invalid");
-                }
+            //     if ($(".editorOut930 input").val() == "") {
+            //         $(".editorOut930 input").addClass("is-invalid");
+            //         $(".editorOut930 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut930 input").removeClass("is-invalid");
+            //     }
 
-                if ($(".editorOut94 input").val() == "") {
-                    $(".editorOut94 input").addClass("is-invalid");
-                    $(".editorOut94 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut94 input").removeClass("is-invalid");
-                }
-                if ($(".editorOut96 input").val() == "") {
-                    $(".editorOut96 input").addClass("is-invalid");
-                    $(".editorOut96 .errMsg").text('Url is required');
-                    valid = false
-                } else {
-                    $(".editorOut96 input").removeClass("is-invalid");
-                }
+            //     if ($(".editorOut94 input").val() == "") {
+            //         $(".editorOut94 input").addClass("is-invalid");
+            //         $(".editorOut94 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut94 input").removeClass("is-invalid");
+            //     }
+            //     if ($(".editorOut96 input").val() == "") {
+            //         $(".editorOut96 input").addClass("is-invalid");
+            //         $(".editorOut96 .errMsg").text('Url is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut96 input").removeClass("is-invalid");
+            //     }
 
-                if (!brand_1_p.value.trim() || brand_1_p.value.trim() === '<p><br></p>') {
-                    $('.editorOut95 .errMsg').text('Paragraph is required.');
-                    valid = false;
-                }
+            //     if (!brand_1_p.value.trim() || brand_1_p.value.trim() === '<p><br></p>') {
+            //         $('.editorOut95 .errMsg').text('Paragraph is required.');
+            //         valid = false;
+            //     }
 
-                if (valid) {
-                    this.submit();
-                }
-            });
-            $('.formValidation5').submit(function(event) {
-                event.preventDefault();
+            //     if (valid) {
+            //         this.submit();
+            //     }
+            // });
+            // $('.formValidation5').submit(function(event) {
+            //     event.preventDefault();
 
-                let valid = true;
+            //     let valid = true;
 
-                $('.errMsg').text('');
+            //     $('.errMsg').text('');
 
-                if ($(".editorOut97 input").val() == "") {
-                    $(".editorOut97 input").addClass("is-invalid");
-                    $(".editorOut97 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut97 input").removeClass("is-invalid");
-                }
+            //     if ($(".editorOut97 input").val() == "") {
+            //         $(".editorOut97 input").addClass("is-invalid");
+            //         $(".editorOut97 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut97 input").removeClass("is-invalid");
+            //     }
 
-                if ($(".editorOut98 input").val() == "") {
-                    $(".editorOut98 input").addClass("is-invalid");
-                    $(".editorOut98 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut98 input").removeClass("is-invalid");
-                }
-                if ($(".editorOut11 input").val() == "") {
-                    $(".editorOut11 input").addClass("is-invalid");
-                    $(".editorOut11 .errMsg").text('Url is required');
-                    valid = false
-                } else {
-                    $(".editorOut11 input").removeClass("is-invalid");
-                }
+            //     if ($(".editorOut98 input").val() == "") {
+            //         $(".editorOut98 input").addClass("is-invalid");
+            //         $(".editorOut98 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut98 input").removeClass("is-invalid");
+            //     }
+            //     if ($(".editorOut11 input").val() == "") {
+            //         $(".editorOut11 input").addClass("is-invalid");
+            //         $(".editorOut11 .errMsg").text('Url is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut11 input").removeClass("is-invalid");
+            //     }
 
-                if (!brand_2_p.value.trim() || brand_2_p.value.trim() === '<p><br></p>') {
-                    $('.editorOut99 .errMsg').text('Paragraph is required.');
-                    valid = false;
-                }
+            //     if (!brand_2_p.value.trim() || brand_2_p.value.trim() === '<p><br></p>') {
+            //         $('.editorOut99 .errMsg').text('Paragraph is required.');
+            //         valid = false;
+            //     }
 
-                if (valid) {
-                    this.submit();
-                }
-            });
-            $('.formValidation6').submit(function(event) {
-                event.preventDefault();
+            //     if (valid) {
+            //         this.submit();
+            //     }
+            // });
+            // $('.formValidation6').submit(function(event) {
+            //     event.preventDefault();
 
-                let valid = true;
+            //     let valid = true;
 
-                $('.errMsg').text('');
+            //     $('.errMsg').text('');
 
-                if ($(".editorOut12 input").val() == "") {
-                    $(".editorOut12 input").addClass("is-invalid");
-                    $(".editorOut12 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut12 input").removeClass("is-invalid");
-                }
+            //     if ($(".editorOut12 input").val() == "") {
+            //         $(".editorOut12 input").addClass("is-invalid");
+            //         $(".editorOut12 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut12 input").removeClass("is-invalid");
+            //     }
 
-                if ($(".editorOut13 input").val() == "") {
-                    $(".editorOut13 input").addClass("is-invalid");
-                    $(".editorOut13 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut13 input").removeClass("is-invalid");
-                }
-                if ($(".editorOut15 input").val() == "") {
-                    $(".editorOut15 input").addClass("is-invalid");
-                    $(".editorOut15 .errMsg").text('Url is required');
-                    valid = false
-                } else {
-                    $(".editorOut15 input").removeClass("is-invalid");
-                }
-
-
-                if (!brand_3_p.value.trim() || brand_3_p.value.trim() === '<p><br></p>') {
+            //     if ($(".editorOut13 input").val() == "") {
+            //         $(".editorOut13 input").addClass("is-invalid");
+            //         $(".editorOut13 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut13 input").removeClass("is-invalid");
+            //     }
+            //     if ($(".editorOut15 input").val() == "") {
+            //         $(".editorOut15 input").addClass("is-invalid");
+            //         $(".editorOut15 .errMsg").text('Url is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut15 input").removeClass("is-invalid");
+            //     }
 
 
-                    $('.editorOut14 .errMsg').text('Paragraph is required.');
-                    valid = false;
-                }
-
-                if (valid) {
-                    this.submit();
-                }
-            });
-            $('.formValidation7').submit(function(event) {
-                event.preventDefault();
-
-                let valid = true;
-
-                $('.errMsg').text('');
-
-                if ($(".editorOut16 input").val() == "") {
-                    $(".editorOut16 input").addClass("is-invalid");
-                    $(".editorOut16 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut16 input").removeClass("is-invalid");
-                }
-
-                if ($(".editorOut17 input").val() == "") {
-                    $(".editorOut17 input").addClass("is-invalid");
-                    $(".editorOut17 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut17 input").removeClass("is-invalid");
-                }
-                if ($(".editorOut19 input").val() == "") {
-                    $(".editorOut19 input").addClass("is-invalid");
-                    $(".editorOut19 .errMsg").text('Url is required');
-                    valid = false
-                } else {
-                    $(".editorOut19 input").removeClass("is-invalid");
-                }
+            //     if (!brand_3_p.value.trim() || brand_3_p.value.trim() === '<p><br></p>') {
 
 
-                if (!brand_4_p.value.trim() || brand_4_p.value.trim() === '<p><br></p>') {
+            //         $('.editorOut14 .errMsg').text('Paragraph is required.');
+            //         valid = false;
+            //     }
+
+            //     if (valid) {
+            //         this.submit();
+            //     }
+            // });
+            // $('.formValidation7').submit(function(event) {
+            //     event.preventDefault();
+
+            //     let valid = true;
+
+            //     $('.errMsg').text('');
+
+            //     if ($(".editorOut16 input").val() == "") {
+            //         $(".editorOut16 input").addClass("is-invalid");
+            //         $(".editorOut16 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut16 input").removeClass("is-invalid");
+            //     }
+
+            //     if ($(".editorOut17 input").val() == "") {
+            //         $(".editorOut17 input").addClass("is-invalid");
+            //         $(".editorOut17 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut17 input").removeClass("is-invalid");
+            //     }
+            //     if ($(".editorOut19 input").val() == "") {
+            //         $(".editorOut19 input").addClass("is-invalid");
+            //         $(".editorOut19 .errMsg").text('Url is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut19 input").removeClass("is-invalid");
+            //     }
 
 
-                    $('.editorOut18 .errMsg').text('Paragraph is required.');
-                    valid = false;
-                }
-
-                if (valid) {
-                    this.submit();
-                }
-            });
-            $('.formValidation8').submit(function(event) {
-                event.preventDefault();
-
-                let valid = true;
-
-                $('.errMsg').text('');
-
-                if ($(".editorOut20 input").val() == "") {
-                    $(".editorOut20 input").addClass("is-invalid");
-                    $(".editorOut20 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut20 input").removeClass("is-invalid");
-                }
-
-                if ($(".editorOut21 input").val() == "") {
-                    $(".editorOut21 input").addClass("is-invalid");
-                    $(".editorOut21 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut21 input").removeClass("is-invalid");
-                }
-                if ($(".editorOut23 input").val() == "") {
-                    $(".editorOut23 input").addClass("is-invalid");
-                    $(".editorOut23 .errMsg").text('Url is required');
-                    valid = false
-                } else {
-                    $(".editorOut23 input").removeClass("is-invalid");
-                }
+            //     if (!brand_4_p.value.trim() || brand_4_p.value.trim() === '<p><br></p>') {
 
 
-                if (!brand_5_p.value.trim() || brand_5_p.value.trim() === '<p><br></p>') {
+            //         $('.editorOut18 .errMsg').text('Paragraph is required.');
+            //         valid = false;
+            //     }
+
+            //     if (valid) {
+            //         this.submit();
+            //     }
+            // });
+            // $('.formValidation8').submit(function(event) {
+            //     event.preventDefault();
+
+            //     let valid = true;
+
+            //     $('.errMsg').text('');
+
+            //     if ($(".editorOut20 input").val() == "") {
+            //         $(".editorOut20 input").addClass("is-invalid");
+            //         $(".editorOut20 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut20 input").removeClass("is-invalid");
+            //     }
+
+            //     if ($(".editorOut21 input").val() == "") {
+            //         $(".editorOut21 input").addClass("is-invalid");
+            //         $(".editorOut21 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut21 input").removeClass("is-invalid");
+            //     }
+            //     if ($(".editorOut23 input").val() == "") {
+            //         $(".editorOut23 input").addClass("is-invalid");
+            //         $(".editorOut23 .errMsg").text('Url is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut23 input").removeClass("is-invalid");
+            //     }
 
 
-                    $('.editorOut22 .errMsg').text('Paragraph is required.');
-                    valid = false;
-                }
-
-                if (valid) {
-                    this.submit();
-                }
-            });
-            $('.formValidation9').submit(function(event) {
-                event.preventDefault();
-
-                let valid = true;
-
-                $('.errMsg').text('');
-
-                if ($(".editorOut24 input").val() == "") {
-                    $(".editorOut24 input").addClass("is-invalid");
-                    $(".editorOut24 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut24 input").removeClass("is-invalid");
-                }
-
-                if ($(".editorOut25 input").val() == "") {
-                    $(".editorOut25 input").addClass("is-invalid");
-                    $(".editorOut25 .errMsg").text('Heading is required');
-                    valid = false
-                } else {
-                    $(".editorOut25 input").removeClass("is-invalid");
-                }
-                if ($(".editorOut27 input").val() == "") {
-                    $(".editorOut27 input").addClass("is-invalid");
-                    $(".editorOut27 .errMsg").text('Url is required');
-                    valid = false
-                } else {
-                    $(".editorOut27 input").removeClass("is-invalid");
-                }
+            //     if (!brand_5_p.value.trim() || brand_5_p.value.trim() === '<p><br></p>') {
 
 
-                if (!brand_6_p.value.trim() || brand_6_p.value.trim() === '<p><br></p>') {
+            //         $('.editorOut22 .errMsg').text('Paragraph is required.');
+            //         valid = false;
+            //     }
+
+            //     if (valid) {
+            //         this.submit();
+            //     }
+            // });
+            // $('.formValidation9').submit(function(event) {
+            //     event.preventDefault();
+
+            //     let valid = true;
+
+            //     $('.errMsg').text('');
+
+            //     if ($(".editorOut24 input").val() == "") {
+            //         $(".editorOut24 input").addClass("is-invalid");
+            //         $(".editorOut24 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut24 input").removeClass("is-invalid");
+            //     }
+
+            //     if ($(".editorOut25 input").val() == "") {
+            //         $(".editorOut25 input").addClass("is-invalid");
+            //         $(".editorOut25 .errMsg").text('Heading is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut25 input").removeClass("is-invalid");
+            //     }
+            //     if ($(".editorOut27 input").val() == "") {
+            //         $(".editorOut27 input").addClass("is-invalid");
+            //         $(".editorOut27 .errMsg").text('Url is required');
+            //         valid = false
+            //     } else {
+            //         $(".editorOut27 input").removeClass("is-invalid");
+            //     }
 
 
-                    $('.editorOut26 .errMsg').text('Paragraph is required.');
-                    valid = false;
-                }
+            //     if (!brand_6_p.value.trim() || brand_6_p.value.trim() === '<p><br></p>') {
 
-                if (valid) {
-                    this.submit();
-                }
-            });
+
+            //         $('.editorOut26 .errMsg').text('Paragraph is required.');
+            //         valid = false;
+            //     }
+
+            //     if (valid) {
+            //         this.submit();
+            //     }
+            // });
 
 
 

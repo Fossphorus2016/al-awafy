@@ -9,6 +9,7 @@ class CircoController extends Controller
 {
     public function crico_meta_section(Request $request)
     {
+        dd($request->all());
         $data = $request->validate([
             'meta_title' => 'required',
             'meta_description' => 'required',
@@ -27,6 +28,7 @@ class CircoController extends Controller
 
     public function crico_banner_section(Request $request)
     {
+        dd($request->all());
         $crico = Crico::where('language', $request->language)->first();
 
         // If a new image is uploaded, update the image, otherwise keep the existing one

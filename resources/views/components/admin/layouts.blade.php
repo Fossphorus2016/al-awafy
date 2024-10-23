@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" data-bs-theme-mode="light">
-<!--begin::Head-->
-<x-notification.notifications />
+
 
 <head>
     <title>Admin | @yield('title')</title>
@@ -54,7 +53,8 @@
                     <div class="post d-flex flex-column-fluid" id="kt_post">
                         <!--begin::Container-->
                         <div id="kt_content_container-fluid" class="container-fluid">
-
+                            <!--begin::Head-->
+                            <x-notification.notifications />
                             {{ $slot }}
                         </div>
                     </div>
