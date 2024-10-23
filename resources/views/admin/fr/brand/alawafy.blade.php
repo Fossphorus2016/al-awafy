@@ -14,7 +14,7 @@
                         <div class="accordion-body">
                             <form action="{{ route('alawafy.meta') }}" method="POST" class="mt-5 formValidation">
                                 @csrf
-                                <input type="hidden" name="language" value="english">
+                                <input type="hidden" name="language" value="french">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
@@ -65,7 +65,7 @@
                                 <form action="{{ route('alawafy.banner') }}" method="POST"
                                     enctype="multipart/form-data" class="mt-5 formValidation2">
                                     @csrf
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="french">
                                     <div class="row gy-4">
                                         <div class="col-6">
                                             <div>
@@ -133,7 +133,7 @@
                                 <form action="{{ route('alawafy.section.2') }}" method="POST"
                                     class="mt-5 formValidation3" enctype="multipart/form-data">
                                     @csrf
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="french">
                                     <div class="row gy-4">
                                         <div class="col-6">
 
@@ -219,7 +219,7 @@
                                                 <form action="{{ route('alawafy.item.1') }}" method="POST"
                                                     enctype="multipart/form-data" class="mt-5 formValidation4">
                                                     @csrf
-                                                    <input type="hidden" name="language" value="english">
+                                                    <input type="hidden" name="language" value="french">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
@@ -305,7 +305,7 @@
                                                 <form action="{{ route('alawafy.item.2') }}" method="POST"
                                                     enctype="multipart/form-data" class="mt-5 formValidation5">
                                                     @csrf
-                                                    <input type="hidden" name="language" value="english">
+                                                    <input type="hidden" name="language" value="french">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
@@ -391,7 +391,7 @@
                                                 <form action="{{ route('alawafy.item.3') }}" method="POST"
                                                     enctype="multipart/form-data" class="mt-5 formValidation6">
                                                     @csrf
-                                                    <input type="hidden" name="language" value="english">
+                                                    <input type="hidden" name="language" value="french">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
@@ -477,7 +477,7 @@
                                                 <form action="{{ route('alawafy.item.4') }}" method="POST"
                                                     enctype="multipart/form-data" class="mt-5 formValidation7">
                                                     @csrf
-                                                    <input type="hidden" name="language" value="english">
+                                                    <input type="hidden" name="language" value="french">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
@@ -563,7 +563,7 @@
                                                 <form action="{{ route('alawafy.item.5') }}" method="POST"
                                                     enctype="multipart/form-data" class="mt-5 formValidation8">
                                                     @csrf
-                                                    <input type="hidden" name="language" value="english">
+                                                    <input type="hidden" name="language" value="french">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
@@ -649,7 +649,7 @@
                                                 <form action="{{ route('alawafy.item.6') }}" method="POST"
                                                     enctype="multipart/form-data" class="mt-5 formValidation9">
                                                     @csrf
-                                                    <input type="hidden" name="language" value="english">
+                                                    <input type="hidden" name="language" value="french">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 
@@ -735,7 +735,7 @@
                                                 <form action="{{ route('alawafy.item.7') }}" method="POST"
                                                     enctype="multipart/form-data" class="mt-5 formValidation10">
                                                     @csrf
-                                                    <input type="hidden" name="language" value="english">
+                                                    <input type="hidden" name="language" value="french">
                                                     <div class="row gy-4">
                                                         <div class="col-6">
 

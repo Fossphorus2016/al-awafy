@@ -9,6 +9,7 @@ class AlawafyController extends Controller
 {
     public function alawafy_meta_section(Request $request)
     {
+         
         $data = $request->validate([
             'meta_title' => 'required',
             'meta_description' => 'required',
