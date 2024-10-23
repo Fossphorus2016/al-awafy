@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\OurActivity;
 use App\Models\OurActivityPage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class OurActivityController extends Controller
 {
@@ -58,7 +59,7 @@ class OurActivityController extends Controller
 
 
 
-    public function admin_our_activity_english_store(Request $request)
+    public function admin_our_activity_store(Request $request)
     {
         $request->validate([
 
@@ -93,5 +94,47 @@ class OurActivityController extends Controller
         ]);
 
         return back()->with('back-success', 'Activity Added Successfully');
+    }
+
+    public function admin_our_activity_edit($id)
+    {
+        $activity = OurActivity::find($id);
+        return response()->json($activity);  // Send the activity data as JSON
+    }
+
+    public function admin_our_activity_update(Request $request)
+    {
+        // Validate the input
+        $request->validate([
+            'heading_1' => 'required',
+            'heading_2' => 'required',
+            'paragraph' => 'required',
+        ]);
+
+        // Use activity_id instead of update_activity
+        $activity = OurActivity::find($request->activity_id);
+
+        // Check if the activity exists
+        if (!$activity) {
+            return redirect()->back()->withErrors(['error' => 'Activity not found.']);
+        }
+
+        // Update text fields
+        $activity->heading_1 = $request->heading_1;
+        $activity->heading_2 = $request->heading_2;
+        $activity->paragraph = $request->paragraph;
+
+        // Handle existing images and new uploads as before...
+
+        // Save the activity
+        $activity->save();
+
+        return redirect()->back()->with('success', 'Activity updated successfully');
+    }
+
+    public function admin_our_activity_delete($id)
+    {
+        OurActivity::destroy($id);
+        return back()->with('back-success', 'Activity deleted successfully');
     }
 }
