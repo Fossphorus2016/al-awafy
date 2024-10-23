@@ -1,8 +1,13 @@
+@php
+    $home_arabic = App\Models\Home::where('language', 'arabic')->first();
+@endphp
+
 <section {{ $attributes->merge(['class' => 'valueSection curvedLayer']) }}>
     <div class="customContainer">
         <div class="valueSectionInner">
 
-            <h2><span class="fs7">قيمنا</span> <span class="fs8"></span> </h2>
+            <h2><span class="fs7">{{ $home_arabic->our_value_h1 ?? '' }}</span> <span
+                class="fs8"></span> </h2>
             <div class="row gy-5">
                 <div class="col-lg-4 col-12">
                     <div class="singleValue">

@@ -1,3 +1,7 @@
+@php
+    $home_arabic = App\Models\Home::where('language', 'arabic')->first();
+@endphp
+
 <x-arabicLayout>
     <main>
         <section class="heroSection ">
@@ -16,46 +20,57 @@
                     <div class="heroSlider">
 
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مرحبا بكم في صفحة
-                                    العوافي
-
-                                </span>
-                                <span class="fs3"> قلب المكسرات الفاخرة
-                                </span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                    {{ $home_arabic->banner_1_h1 ?? '' }}
+                                </span> <br>
+                                <span class="fs3">{{ $home_arabic->banner_1_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                سسواء كنتم تبحثون عن وجبة خفيفة و صحية أو طعام لذيذ مليء بالنكهات أو خيارات بالجملة
-                                لعملكم فإن مكسرات العوافي يوفر شيئا يناسب الجميع
-
-
+                                {{ $home_arabic->banner_1_p1 ?? '' }} <br>
+                                {{ $home_arabic->banner_1_p2 ?? '' }}
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem.png') }}" alt="">
+                            @if ($home_arabic && $home_arabic->banner_1_image)
+                                <img class="w-100" src="{{ asset('storage/' . $home_arabic->banner_1_image) }}"
+                                    alt="">
+                            @endif
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مرحبا بكم في صفحة كريكو
-
-                                </span>
-                                <span class="fs3"> قلب المكسرات الفاخرة</span>
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                    {{ $home_arabic->banner_2_h1 ?? '' }} </span>
+                                <br>
+                                <span class="fs3">{{ $home_arabic->banner_2_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                سواء كنتم تبحثون عن وجبة خفيفة و صحية أو طعام لذيذ مليء بالنكهات أو خيارات بالجملة
-                                لعملكم فإن كريكو يوفر شيئا يناسب الجميع
+                                {{ $home_arabic->banner_2_p1 ?? '' }} <br>
+                                {{ $home_arabic->banner_2_p2 ?? '' }} <br>
+
 
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem2.png') }}" alt="">
+                            @if ($home_arabic && $home_arabic->banner_2_image)
+                                <img class="w-100" src="{{ asset('storage/' . $home_arabic->banner_2_image) }}"
+                                    alt="">
+                            @endif
+
                         </div>
                         <div class="heroInner">
-                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> مرحبا بكم في صفحة اليوم
-
+                            <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                    {{ $home_arabic->banner_3_h1 ?? '' }}
                                 </span>
-                                <span class="fs3"> قلب المكسرات الفاخرة </span>
+                                <br>
+                                <span class="fs3">{{ $home_arabic->banner_3_h1 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
-                                سواء كنتم تبحثون عن وجبة خفيفة و صحية أو طعام لذيذ مليء بالنكهات أو خيارات بالجملة
-                                لعملكم فإن مكسرات اليوم توفر شيئا يناسب الجميع
+
+
+                                {{ $home_arabic->banner_3_p1 ?? '' }}
+                                {{ $home_arabic->banner_3_p2 ?? '' }}
+
 
                             </p>
-                            <img class="w-100" src="{{ asset('assets/images/items/bannerItem3.png') }}" alt="">
+                            @if ($home_arabic && $home_arabic->banner_3_image)
+                                <img class="w-100" src="{{ asset('storage/' . $home_arabic->banner_3_image) }}"
+                                    alt="">
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -69,33 +84,53 @@
                 <div class="row gy-4 flex-row-reverse">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont text-end" style="align-items: end;">
-                            <h2><span class="fs5">عن</span> <span class="fs6">العوافي</span> </h2>
-                            <h3 class="fs13 mb-3">ﻟﺣظﺎت ﻣن اﻟﻣﺗﻌﺔ اﻟﻌﺎﺋﻠﯾﺔ ﻣﻊ اﻟﻌواﻓﻲ
-                            </h3>
-                            <p>
+                            <h2><span class="fs5">{{ $home_arabic->about_section_h_blue ?? '' }}</span> <span
+                                    class="fs6">{{ $home_arabic->about_section_h_green ?? '' }}</span> </h2>
+                            <h3 class="fs13 mb-3">{{ $home_arabic->about_section_h_small ?? '' }}</h3>
+                            {!! $home_arabic->about_section_p ?? '' !!}
 
-
-                                ﻧﻘدم ﻟﻛم ﺗﺟرﺑﺔ ﻓرﯾدة ﺗﺟﻣﻊ ﺑﯾن اﻟطﻌم اﻟﻠذﯾذ واﻟﺻﺣﺔ ﻓﻲ ﻛل ﻗﺿﻣﺔ ﻣن ﻣﻛﺳراﺗﻧﺎ . ﻛل ﻣﻧﺗﺞ ﻣن
-                                اﻟﻌواﻓﻲ ﯾﻌد دﻋوة ﻟﻼﺳﺗﻣﺗﺎع ﺑﻠﺣظﺎت ﻣﻣﯾزة ﻣﻊ اﻟﻌﺎﺋﻠﺔ ﺧﻼل اﻟﺗﺟﻣﻌﺎت. اﺳﺗﻣﺗﻌوا باﻻﺳﺗراﺣﺎت
-                                اﻟﯾوﻣﯾﺔ. ﻣﻊ ﻣﺟﻣوﻋﺔ ﻣﺧﺗﺎرة ﺑﻌﻧﺎﯾﺔ ﻣن اﻟﻣﻛﺳرات اﻟﺻﺣﯾﺔ، ﺗﺻﺑﺢ ﻛل ﻟﺣظﺔ ﺣول اﻟﻣﺎﺋدة ذﻛرى ﻻ
-                                تنسى ﺑﺎﻟﺟودة اﻟﻌﺎﻟﯾﺔ واﻟطﻌم اﻷﺻﯾل ﻟﻣﻛﺳرات اﻟﻌواﻓﻲ، ﻟﺗﺣوﯾل ﻛل اﺟﺗﻣﺎع ﻋﺎﺋﻠﻲ إﻟﻰ ﺗﺟرﺑﺔ
-                                ﻓرﯾدة.
-
-                            </p>
-
-                            <a class="mainBtn1" href="about">يتعلم أكثر</a>
+                            <a class="mainBtn1" href="{{ $home_arabic->about_section_url ?? '' }}">Learn More</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center">
                         <div class="aboutInnerImg">
-                            <img class="patternImg" class="w-100" src="{{ asset('assets/images/shape/pattern1.png') }}"
-                                alt="">
+                            <@if ($home_arabic && $home_arabic->about_section_image)
+                                <img class="patternImg" class="w-100"
+                                    src="{{ asset('storage/' . $home_arabic->about_section_image) }}" alt="">
+                                @endif
 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        {{-- <section class="aboutSection py-5 mt-5">
+            <div class="customContainer">
+                <div class="row gy-4">
+                    <div class="col-lg-6 col-12 d-flex align-item">
+                        <div class="aboutInner paraFont">
+                            <h2><span class="fs5">{{ $home_arabic->about_section_h_blue ?? '' }}</span> <span
+                                    class="fs6">{{ $home_arabic->about_section_h_green ?? '' }}</span> </h2>
+                            <h3 class="fs13 mb-3">{{ $home_arabic->about_section_h_small ?? '' }}</h3>
+                            {!! $home_arabic->about_section_p ?? '' !!}
+
+                            <a class="mainBtn1" href="{{ $home_arabic->about_section_url ?? '' }}">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-center">
+                        <div class="aboutInnerImg">
+                            @if ($home_arabic && $home_arabic->about_section_image)
+                                <img class="patternImg" class="w-100"
+                                    src="{{ asset('storage/' . $home_arabic->about_section_image) }}" alt="">
+                            @endif
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
 
         <x-arabicOurValues />
 
@@ -113,7 +148,8 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
+                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
+                                        alt="">
                                     <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
                                         alt="">
                                     <p>
@@ -321,7 +357,8 @@
                             <h3>ﻣﺳﺎﺑﻘﺔ ﺧﺎﺻﺔ ﺑﻛﺄس إﻓرﯾﻘﯾﺎ 2023 ﻋﺑر وﺳﺎﺋل اﻟﺗواﺻل اﻻﺟﺗﻣﺎﻋﻲ </h3>
                             <p>
                                 بمناسبة كأس إفريقيا 2023، أطلقت العوافي مسابقة عبر وسائل التواصل الاجتماعي، حيث تم تقديم
-                                أجهزة تلفاز وهواتف ذكية كجوائز.</p>
+                                أجهزة تلفاز وهواتف ذكية كجوائز.
+                            </p>
                         </div>
                     </div>
                     <div class="col activityOuter">
@@ -336,7 +373,8 @@
                                 شاركت علامة العوافي في سوق الفلاح، الذي نظمه معهد سوق الفلاح الجديد بالتنسيق مع ديوان
                                 حدائق الرياضة والترفيه بالجزائر (أوبلا) وغرفة الحرف والصناعات. يهدف هذا الحدث إلى
                                 التعريف بالمنتجات الحرفية الوطنية وتعزيزها. شارك في هذا المعرض حوالي 60 شركة جزائرية
-                                وأجنبية من تونس، السنغال، الصين، تركيا، وفرنسا، حيث عرضت مختلف منتجاتها.</p>
+                                وأجنبية من تونس، السنغال، الصين، تركيا، وفرنسا، حيث عرضت مختلف منتجاتها.
+                            </p>
                         </div>
                     </div>
 

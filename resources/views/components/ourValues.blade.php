@@ -14,19 +14,19 @@
                             <img src="{{ asset('storage/' . $home_english->our_value_1_image) }}" alt="">
                         @endif
 
-                        <p class="fs9">Premium <br> Quality</p>
+                        <p class="fs9">{{$home_english->our_value_1 ?? ''}}</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12">
                     <div class="singleValue">
                         <img src="{{ asset('assets/images/shape/roasted.png') }}" alt="">
-                        <p class="fs9">Traditionally <br> Roasted</p>
+                        <p class="fs9">{{$home_english->our_value_2 ?? ''}}</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12">
                     <div class="singleValue">
                         <img src="{{ asset('assets/images/shape/natural.png') }}" alt="">
-                        <p class="fs9">All <br> Natural</p>
+                        <p class="fs9">{{$home_english->our_value_3 ?? ''}}</p>
                     </div>
                 </div>
             </div>

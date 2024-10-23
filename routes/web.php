@@ -197,6 +197,15 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('admin/our-activity-english', [OurActivityController::class, 'admin_our_activity_english'])->name('admin.our.activity.english');
 
+    // Activity routes
+    Route::post('admin/our-activity-/store', [OurActivityController::class, 'admin_our_activity_store'])->name('admin.our.activity.store');
+    Route::post('admin/our-activity-meta/store', [OurActivityController::class, 'admin_our_activity_meta'])->name('admin.our.activity.meta');
+    Route::post('admin/our-activity-banner/store', [OurActivityController::class, 'admin_our_activity_banner'])->name('admin.our.activity.banner');
+
+
+    // Route::get('admin/our-activity-english/update/{id}', [OurActivityController::class, 'admin_our_activity_english'])->name('admin.our.activity.english');
+    // Route::get('admin/our-activity-english/delete/{id}', [OurActivityController::class, 'admin_our_activity_english'])->name('admin.our.activity.english');
+
 
 
 
