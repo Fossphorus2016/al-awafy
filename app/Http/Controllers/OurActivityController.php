@@ -16,6 +16,20 @@ class OurActivityController extends Controller
         return view('admin.en.activities', compact('our_activities', 'activity_page'));
     }
 
+    public function admin_our_activity_arabic()
+    {
+        $our_activities = OurActivity::where('language', 'arabic')->get();
+        $activity_page = OurActivityPage::where('language', 'arabic')->first();
+        return view('admin.ar.activities', compact('our_activities', 'activity_page'));
+    }
+
+    public function admin_our_activity_french()
+    {
+        $our_activities = OurActivity::where('language', 'french')->get();
+        $activity_page = OurActivityPage::where('language', 'french')->first();
+        return view('admin.fr.activities', compact('our_activities', 'activity_page'));
+    }
+
 
     public function admin_our_activity_meta(Request $request)
     {

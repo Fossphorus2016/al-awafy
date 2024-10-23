@@ -15,7 +15,7 @@
                             <form action="{{ route('admin.our.activity.meta') }}" method="POST"
                                 class="mt-5 formValidation">
                                 @csrf
-                                <input type="hidden" name="language" value="english">
+                                <input type="hidden" name="language" value="french">
                                 <div class="row gy-4">
                                     <div class="col-6">
 
@@ -66,7 +66,7 @@
                                 <form action="{{ route('admin.our.activity.banner') }}" method="POST"
                                     class="mt-5 formValidation" enctype="multipart/form-data">
                                     @csrf
-                                    <input type="hidden" name="language" value="english">
+                                    <input type="hidden" name="language" value="french">
                                     <div class="row gy-4">
                                         <div class="col-6">
 
@@ -328,7 +328,7 @@
                     <form action="{{ route('admin.our.activity.store') }}" id="activity_form" method="POST"
                         enctype="multipart/form-data">
                         @csrf
-                        <input type="hidden" name="language" value="english">
+                        <input type="hidden" name="language" value="french">
 
                         <div class="row">
                             <div class="col-lg-12 mb-3">

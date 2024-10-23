@@ -1,3 +1,6 @@
+@php
+    $activity_page = App\Models\OurActivityPage::where('language', 'arabic')->first();
+@endphp
 <x-arabicLayout>
     <main>
         <section class="heroSection secondBanner activityBanner">
@@ -14,7 +17,8 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> أنشطتنا
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                {{ $activity_page->banner_h1 ?? '' }}
                             </span>
                             <span class="fs3"></span>
                         </h1>
@@ -224,37 +228,41 @@
             </div>
 
         </section> --}}
-
+        @php
+            $activities = App\Models\OurActivity::where('language', 'arabic')->get();
+        @endphp
         <section class="activitySection mt-5">
             <div class="customContainer">
-                <div>
+                 
 
-                    <h2 class="text-center"><span class="fs5"> ﻓﻌﺎﻟﯾﺔ اﻟﻌودة إﻟﻰ اﻟﻣدرﺳﺔ </span> <span
-                            class="fs6"> ﺳﺑﺗﻣﺑر -2023 </span>
-                    </h2>
-                    <p class="text-center">بمناسبة العودة إلى المدرسة لعام 2023، نظمت العوافي فعالية خاصة تضمنت تذوق المنتجات وسحب
-                        جوائز (تومبولا). أتيحت الفرصة للمشاركين للفوز بقسائم شراء لمنتجات تقنية.</p>
+                @forelse ($activities as $activity)
+                    <div>
+                        <h2 class="text-center">
+                            <span class="fs5">{{ $activity->heading_1 ?? '' }}</span>
+                            <span class="fs6">{{ $activity->heading_2 ?? '' }}</span>
+                        </h2>
+                        <p class="text-center">{{ $activity->paragraph ?? '' }}</p>
 
-                    <div class="galleryblock activitiesSlider">
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img1.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img2.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img3.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img4.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img5.jpeg') }}
-                                alt=""></div>
+                        <div class="galleryblock activitiesSlider">
+                            @if (isset($activity->images))
+                                @php
+                                    $images = json_decode($activity->images);
+                                @endphp
 
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img6.jpeg') }}
-                                alt=""></div>
-
-
+                                @foreach ($images as $image)
+                                    <div class="item">
+                                        <img src="{{ asset($image->url) }}" alt="{{ $image->name ?? 'Image' }}">
+                                    </div>
+                                @endforeach
+                            @else
+                                <p>No images available.</p>
+                            @endif
+                        </div>
                     </div>
-
-                </div>
-                <div>
+                @empty
+                    <p>No activities found.</p>
+                @endforelse
+                {{-- <div>
 
                     <h2 class="text-center"><span class="fs5">    ﻋﯾد اﻷﺿﺣﻰ   </span> <span class="fs6">
                         ﯾوﻧﯾو -2024    </span>
@@ -395,7 +403,7 @@
                         <div class="item"><img src={{ asset('assets/images/activities/merchandise/img13.jpeg') }}
                                 alt=""></div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
         </section>

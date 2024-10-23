@@ -196,6 +196,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/brand-crico-arabic', [AdminBrandController::class, 'admin_brand_crico_arabic'])->name('admin.brand.crico.arabic');
 
     Route::get('admin/our-activity-english', [OurActivityController::class, 'admin_our_activity_english'])->name('admin.our.activity.english');
+    Route::get('admin/our-activity-arabic', [OurActivityController::class, 'admin_our_activity_arabic'])->name('admin.our.activity.arabic');
+    Route::get('admin/our-activity-french', [OurActivityController::class, 'admin_our_activity_french'])->name('admin.our.activity.french');
 
     // Activity routes
     Route::post('admin/our-activity-/store', [OurActivityController::class, 'admin_our_activity_store'])->name('admin.our.activity.store');

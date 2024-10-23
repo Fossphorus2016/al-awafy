@@ -1,3 +1,7 @@
+@php
+    $activity_page = App\Models\OurActivityPage::where('language', 'english')->first();
+@endphp
+
 <x-frenchLayout>
     <main>
         <section class="heroSection secondBanner activityBanner">
@@ -14,8 +18,9 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Nos  </span>
-                            <span class="fs3">Activites</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                {{ $activity_page->banner_h1 ?? '' }} </span>
+                            <span class="fs3">{{ $activity_page->banner_h2 ?? '' }}</span>
                         </h1>
 
                     </div>
@@ -24,57 +29,52 @@
             </div>
         </section>
 
+
         <section class="activitySection mt-5">
             <div class="customContainer">
-                <div>
+                @php
+                    $activities = App\Models\OurActivity::where('language', 'french')->get();
+                @endphp
+                <section class="activitySection mt-5">
+                    <div class="customContainer">
+                        @forelse ($activities as $activity)
+                            <div>
+                                <h2 class="text-center">
+                                    <span class="fs5">{{ $activity->heading_1 ?? '' }}</span>
+                                    <span class="fs6">{{ $activity->heading_2 ?? '' }}</span>
+                                </h2>
+                                <p class="text-center">{{ $activity->paragraph ?? '' }}</p>
 
-                    <h2 class="text-center"><span class="fs5">Activation photos </span> <span
-                            class="fs6">rentrée</span>
+                                <div class="galleryblock activitiesSlider">
+                                    @if (isset($activity->images))
+                                        @php
+                                            $images = json_decode($activity->images);
+                                        @endphp
+
+                                        @foreach ($images as $image)
+                                            <div class="item">
+                                                <img src="{{ asset($image->url) }}" alt="{{ $image->name ?? 'Image' }}">
+                                            </div>
+                                        @endforeach
+                                    @else
+                                        <p>No images available.</p>
+                                    @endif
+                                </div>
+                            </div>
+                        @empty
+                            <p>No activities found.</p>
+                        @endforelse
+
+                        {{-- <div>
+
+                    <h2 class="text-center"><span class="fs5">Al Adha activation assistance </span> <span
+                            class="fs6">
+                            assistance</span>
                     </h2>
-                    <p class="text-center">
-                        Une activation a l’occasion de la rentrée scolaire (dégustation + tombola ) achetez et
-                        tentez de gagner des bons d’achats techno
-                    </p>
+                    <p class="text-center">An activation on the occasion of Aid Al Adha (tasting + raffle) of sharpeners
+                        hillsides
+                        recharge cards and 9pcs hills as gifts</p>
 
-                    <div class="galleryblock activitiesSlider">
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img1.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img2.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img3.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img4.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img5.jpeg') }}
-                                alt=""></div>
-
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img6.jpeg') }}
-                                alt=""></div>
-                        {{-- <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image20.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image21.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image22.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image23.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image24.jpg') }}
-                                alt=""></div> --}}
-
-                    </div>
-
-                </div>
-                <div>
-
-                    <h2 class="text-center"><span class="fs5">Aide à l'activation Al </span> <span class="fs6">
-                            Adha</span>
-                    </h2>
-
-                    <p class="text-center">
-                        Une activation a l’occasion de l’Aid Al Adha (dégustation + tombola ) des aiguises
-                        coteaux
-                        des cartes de recharges et des coteaux de 9pcs comme cadeaux
-                    </p>
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img0.jpeg') }}
                                 alt="">
@@ -95,198 +95,134 @@
 
                         <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img6.jpg') }}
                                 alt=""></div>
-                        {{-- <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img4.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img6.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img8.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img10.jpg') }}
-                                alt=""></div> --}}
-                    </div>
-
-
-                </div>
-                {{-- <div>
-
-                    <h2 class="text-center"><span class="fs5">d’exécution</span> <span class="fs6">Quest</span>
-                    </h2>
-
-
-                    <div class="galleryblock activitiesSlider">
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image26.jpg') }} alt="">
-                        </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image27.jpg') }} alt="">
-                        </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image28.jpg') }} alt="">
-                        </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image29.jpg') }} alt="">
-                        </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image30.jpg') }} alt="">
-                        </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image31.jpg') }} alt="">
-                        </div>
-
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image32.jpg') }} alt="">
-                        </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image33.jpg') }} alt="">
-                        </div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image34.jpg') }} alt="">
-                        </div>
-
-
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/excecutionQuest/image36.jpg') }}
-                                alt=""></div>
 
                     </div>
 
 
+                    <div>
+
+                        <h2 class="text-center"><span class="fs5">Presentation of </span> <span
+                                class="fs6">Gifts</span>
+                        </h2>
+
+
+                        <div class="galleryblock activitiesSlider">
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image37.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image38.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image39.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image40.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image41.jpg') }}
+                                    alt=""></div>
+
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image42.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image43.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image44.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image45.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/remisDes/image46.jpg') }}
+                                    alt=""></div>
+
+                        </div>
+
+
+                    </div>
+                    <div>
+
+                        <h2 class="text-center"><span class="fs5">Souk el Fellah </span> <span
+                                class="fs6">AL-jadid</span>
+                        </h2>
+
+                        <p class="text-center">Presence of the ALAWAFY brand at SOUK EL FELLAH Organized by the Souk
+                            el-Fellah institute
+                            Al-Jadid, in coordination with the Office of Sports and Leisure Parks of Algiers
+                            (Opla) and the Chamber of Crafts and Trades, this event aims to
+                            to make known and promote the national artisanal product. It brings together around 60
+                            Algerian and foreign companies representing Tunisia, Senegal, China,
+                            Türkiye and France came to exhibit their various products.
+                        </p>
+                        <div class="galleryblock activitiesSlider">
+                            <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image22.jpg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image20.png') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image21.png') }}
+                                    alt=""></div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div>
+                        <h2 class="text-center"><span class="fs5">
+                                Special African Cup </span> <span class="fs6">social media competition</span>
+                        </h2>
+                        <p>
+                            On the occasion of the 2023 African Cup, Alawafy launched a competition on the networks
+                            social networks, televisions and smart phones as gains
+                        </p>
+                        <div class="galleryblock activitiesSlider">
+                            <div class="item"><img
+                                    src={{ asset('assets/images/activities/special_african_cup/img1.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img
+                                    src={{ asset('assets/images/activities/special_african_cup/img2.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img
+                                    src={{ asset('assets/images/activities/special_african_cup/img3.jpeg') }}
+                                    alt=""></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-center"><span class="fs5">DISPLAYS AND
+                            </span> <span class="fs6">MERCHANDISING</span>
+                        </h2>
+
+                        <div class="galleryblock activitiesSlider">
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img1.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img2.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img3.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img4.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img5.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img6.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img7.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img8.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img src={{ asset('assets/images/activities/merchandise/img9.jpeg') }}
+                                    alt=""></div>
+                            <div class="item"><img
+                                    src={{ asset('assets/images/activities/merchandise/img10.jpeg') }} alt="">
+                            </div>
+                            <div class="item"><img
+                                    src={{ asset('assets/images/activities/merchandise/img11.jpeg') }} alt="">
+                            </div>
+                            <div class="item"><img
+                                    src={{ asset('assets/images/activities/merchandise/img12.jpeg') }} alt="">
+                            </div>
+                            <div class="item"><img
+                                    src={{ asset('assets/images/activities/merchandise/img13.jpeg') }} alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div> --}}
-                <div>
-
-                    <h2 class="text-center"><span class="fs5">Remise Des</span> <span class="fs6">Cadeaux</span>
-                    </h2>
-
-
-                    <div class="galleryblock activitiesSlider">
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image37.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image38.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image39.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image40.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image41.jpg') }}
-                                alt=""></div>
-
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image42.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image43.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image44.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image45.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/remisDes/image46.jpg') }}
-                                alt=""></div>
 
                     </div>
 
-
-                </div>
-                <div>
-
-                    <h2 class="text-center"><span class="fs5">Souk el Fellah </span> <span
-                            class="fs6">AL-jadid</span>
-                    </h2>
-                    <p class="text-center">Présence de la marque ALAWAFY au SOUK EL FELLAH Organisée par l’institut Souk el-Fellah
-                        Al-Jadid, en coordination avec l’Office des parcs des sports et des loisirs d’Alger
-                        (Opla) et la Chambre d’artisanat et des métiers, cette manifestation a pour objectif de
-                        faire connaître et de promouvoir le produit artisanal national. Elle réunit environ 60
-                        entreprises algériennes et étrangères représentant la Tunisie, le Sénégal, la Chine, la
-                        Turquie et la France venus exposer leurs divers produits.
-                    </p>
-
-                    <div class="galleryblock activitiesSlider">
-                        <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image22.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image20.png') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image21.png') }}
-                                alt=""></div>
-                        {{-- <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image10.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image17.jpg') }}
-                                alt=""></div>
-
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image25.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img1.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img3.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img5.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img7.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img9.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img11.jpeg') }}
-                                alt=""></div> --}}
-
-                    </div>
-
-
-                </div>
-
-                <div>
-                    <h2 class="text-center"><span class="fs5">Concours réseaux sociaux </span> <span
-                            class="fs6">special coupe d’Afrique</span>
-                    </h2>
-                    <p class="text-center">
-                        A l’occasion de la coupe d’Afrique 2023 Alawafy a lancer un concours sur les réseaux
-                        sociaux, des téléviseurs et des smart phones comme gains
-                    </p>
-                    <div class="galleryblock activitiesSlider">
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/special_african_cup/img1.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/special_african_cup/img2.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img
-                                src={{ asset('assets/images/activities/special_african_cup/img3.jpeg') }}
-                                alt=""></div>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="text-center"><span class="fs5">PRESENTOIRS ET MERCHANDISING </span>
-                         {{-- <span
-                            class="fs6"></span> --}}
-                    </h2>
-
-                    <div class="galleryblock activitiesSlider">
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img1.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img2.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img3.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img4.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img5.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img6.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img7.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img8.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img9.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img10.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img11.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img12.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/merchandise/img13.jpeg') }}
-                                alt=""></div>
-                    </div>
-                </div>
             </div>
 
         </section>

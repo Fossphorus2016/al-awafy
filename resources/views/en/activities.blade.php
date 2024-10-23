@@ -1,3 +1,7 @@
+@php
+    $activity_page = App\Models\OurActivityPage::where('language', 'english')->first();
+@endphp
+
 <x-layout>
     <main>
         <section class="heroSection secondBanner activityBanner">
@@ -14,8 +18,9 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> Our </span>
-                            <span class="fs3">Activities</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                {{ $activity_page->banner_h1 ?? '' }} </span>
+                            <span class="fs3">{{ $activity_page->banner_h2 ?? '' }}</span>
                         </h1>
 
                     </div>
@@ -24,53 +29,48 @@
             </div>
         </section>
 
+        @php
+            $activities = App\Models\OurActivity::where('language', 'english')->get();
+        @endphp
         <section class="activitySection mt-5">
             <div class="customContainer">
-                <div>
+                @forelse ($activities as $activity)
+                    <div>
+                        <h2 class="text-center">
+                            <span class="fs5">{{ $activity->heading_1 ?? '' }}</span>
+                            <span class="fs6">{{ $activity->heading_2 ?? '' }}</span>
+                        </h2>
+                        <p class="text-center">{{ $activity->paragraph ?? '' }}</p>
 
-                    <h2 class="text-center"><span class="fs5">Back to school photo </span> <span
-                            class="fs6">activation</span>
-                    </h2>
-                    <p class="text-center">An activation for the start of the school year (tasting + raffle) buy and
-                        try to win tech vouchers</p>
+                        <div class="galleryblock activitiesSlider">
+                            @if (isset($activity->images))
+                                @php
+                                    $images = json_decode($activity->images);
+                                @endphp
 
-                    <div class="galleryblock activitiesSlider">
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img1.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img2.jpeg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img3.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img4.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img5.jpeg') }}
-                                alt=""></div>
-
-                        <div class="item"><img src={{ asset('assets/images/activities/school/school_img6.jpeg') }}
-                                alt=""></div>
-                        {{-- <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image20.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image21.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image22.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image23.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionEst/image24.jpg') }}
-                                alt=""></div> --}}
-
+                                @foreach ($images as $image)
+                                    <div class="item">
+                                        <img src="{{ asset($image->url) }}" alt="{{ $image->name ?? 'Image' }}">
+                                    </div>
+                                @endforeach
+                            @else
+                                <p>No images available.</p>
+                            @endif
+                        </div>
                     </div>
+                @empty
+                    <p>No activities found.</p>
+                @endforelse
 
-                </div>
-                <div>
+                {{-- <div>
 
                     <h2 class="text-center"><span class="fs5">Al Adha activation assistance </span> <span
                             class="fs6">
                             assistance</span>
                     </h2>
-                           <p class="text-center">An activation on the occasion of Aid Al Adha (tasting + raffle) of sharpeners
-                            hillsides
-                            recharge cards and 9pcs hills as gifts</p>
+                    <p class="text-center">An activation on the occasion of Aid Al Adha (tasting + raffle) of sharpeners
+                        hillsides
+                        recharge cards and 9pcs hills as gifts</p>
 
                     <div class="galleryblock activitiesSlider">
                         <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img0.jpeg') }}
@@ -92,16 +92,7 @@
 
                         <div class="item"><img src={{ asset('assets/images/activities/aid_azah/eid_img6.jpg') }}
                                 alt=""></div>
-                        {{-- <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img2.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img4.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img6.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img8.jpg') }}
-                                alt=""></div>
-                        <div class="item"><img src={{ asset('assets/images/activities/excecutionCenter/img10.jpg') }}
-                                alt=""></div> --}}
+
                     </div>
 
 
@@ -145,7 +136,8 @@
                                 class="fs6">AL-jadid</span>
                         </h2>
 
-                        <p class="text-center">Presence of the ALAWAFY brand at SOUK EL FELLAH Organized by the Souk el-Fellah institute
+                        <p class="text-center">Presence of the ALAWAFY brand at SOUK EL FELLAH Organized by the Souk
+                            el-Fellah institute
                             Al-Jadid, in coordination with the Office of Sports and Leisure Parks of Algiers
                             (Opla) and the Chamber of Crafts and Trades, this event aims to
                             to make known and promote the national artisanal product. It brings together around 60
@@ -159,25 +151,7 @@
                                     alt=""></div>
                             <div class="item"><img src={{ asset('assets/images/activities/al_jadid/image21.png') }}
                                     alt=""></div>
-                            {{-- <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image10.jpeg') }}
-                                    alt=""></div>
-                            <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image17.jpg') }}
-                                    alt=""></div>
 
-                            <div class="item"><img src={{ asset('assets/images/activities/loperationBts/image25.jpg') }}
-                                    alt=""></div>
-                            <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img1.jpg') }}
-                                    alt=""></div>
-                            <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img3.jpg') }}
-                                    alt=""></div>
-                            <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img5.jpg') }}
-                                    alt=""></div>
-                            <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img7.jpg') }}
-                                    alt=""></div>
-                            <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img9.jpg') }}
-                                    alt=""></div>
-                            <div class="item"><img src={{ asset('assets/images/activities/loperationBts/img11.jpeg') }}
-                                    alt=""></div> --}}
 
                         </div>
 
@@ -242,7 +216,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+
+            </div>
 
         </section>
 
