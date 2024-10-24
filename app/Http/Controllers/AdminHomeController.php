@@ -267,8 +267,6 @@ class AdminHomeController extends Controller
         Home::updateOrCreate(
             ['language' => $request->language],
             [
-
-
                 'our_brand_h1' => $request->our_brand_h1,
                 'our_brand_h2' => $request->our_brand_h2,
             ]

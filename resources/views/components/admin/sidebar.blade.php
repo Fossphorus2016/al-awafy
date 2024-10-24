@@ -28,24 +28,26 @@
                     </a>
                 </div> --}}
 
-                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ Route::is('admin.home.*') ? 'show' : '' }}"><span class="menu-link"><span
-                            class="menu-icon"> <i class="bi bi-house-door fs-3 text-white"></i><span
+                <div data-kt-menu-trigger="click"
+                    class="menu-item menu-accordion {{ Route::is('admin.home.*') ? 'show' : '' }}"><span
+                        class="menu-link"><span class="menu-icon"> <i class="bi bi-house-door fs-3 text-white"></i><span
                                 class="path1"></span><span class="path2"></span><span
                                 class="path3"></span></i></span><span class="menu-title">Home</span><span
                             class="menu-arrow"></span></span>
-                    <div class="menu-sub menu-sub-accordion {{ Route::is('admin.home.*') ? 'show' : '' }}" style="overflow: hidden;"
-                        kt-hidden-height="250">
+                    <div class="menu-sub menu-sub-accordion {{ Route::is('admin.home.*') ? 'show' : '' }}"
+                        style="overflow: hidden;" kt-hidden-height="250">
+                        <div class="menu-item"><a
+                                class="menu-link  {{ Route::is('admin.home.arabic') ? 'active' : '' }}"
+                                href="{{ route('admin.home.arabic') }}"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">Arabic</span></a></div>
                         <div class="menu-item"><a
                                 class="menu-link {{ Route::is('admin.home.english') ? 'active' : '' }}"
                                 href="{{ route('admin.home.english') }}"><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span
                                     class="menu-title">English</span></a></div>
 
-                        <div class="menu-item"><a
-                                class="menu-link  {{ Route::is('admin.home.arabic') ? 'active' : '' }}"
-                                href="{{ route('admin.home.arabic') }}"><span class="menu-bullet"><span
-                                        class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">Arabic</span></a></div>
+
                         <div class="menu-item"><a class="menu-link {{ Route::is('admin.home.french') ? 'active' : '' }}"
                                 href="{{ route('admin.home.french') }}"><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span
@@ -55,13 +57,21 @@
                     </div>
                 </div>
 
-                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ Route::is('admin.about.*') ? 'show' : '' }}"><span class="menu-link"><span
-                            class="menu-icon"> <i class="bi bi-chat-square-heart fs-3 text-white"></i><span
-                                class="path1"></span><span class="path2"></span><span
-                                class="path3"></span></i></span><span class="menu-title">About</span><span
-                            class="menu-arrow"></span></span>
+                <div data-kt-menu-trigger="click"
+                    class="menu-item menu-accordion {{ Route::is('admin.about.*') ? 'show' : '' }}"><span
+                        class="menu-link"><span class="menu-icon"> <i
+                                class="bi bi-chat-square-heart fs-3 text-white"></i><span class="path1"></span><span
+                                class="path2"></span><span class="path3"></span></i></span><span
+                            class="menu-title">About</span><span class="menu-arrow"></span></span>
                     <div class="menu-sub menu-sub-accordion {{ Route::is('admin.about.*') ? 'show' : '' }}"
                         kt-hidden-height="250">
+
+
+                        <div class="menu-item "><a
+                                class="menu-link {{ Route::is('admin.about.arabic') ? 'active' : '' }}"
+                                href="{{ route('admin.about.arabic') }} "><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">Arabic</span></a></div>
                         <div class="menu-item"><a
                                 class="menu-link {{ Route::is('admin.about.english') ? 'active' : '' }}"
                                 href="{{ route('admin.about.english') }}"><span class="menu-bullet"><span
@@ -69,13 +79,9 @@
                                     class="menu-title">English</span></a></div>
 
                         <div class="menu-item "><a
-                                class="menu-link {{ Route::is('admin.about.arabic') ? 'active' : '' }}" href="{{ route('admin.about.arabic') }} "><span
-                                    class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">Arabic</span></a></div>
-
-                        <div class="menu-item "><a
-                                class="menu-link {{ Route::is('admin.about.french') ? 'active' : '' }}" href="{{ route('admin.about.french') }}"><span
-                                    class="menu-bullet"><span class="bullet bullet-dot"></span></span><span
+                                class="menu-link {{ Route::is('admin.about.french') ? 'active' : '' }}"
+                                href="{{ route('admin.about.french') }}"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
                                     class="menu-title">French</span></a></div>
 
 
@@ -108,19 +114,20 @@
                             <div class="menu-sub menu-sub-accordion menu-active-bg {{ Route::is('admin.brand.alawafy.*') ? 'show' : '' }}"
                                 kt-hidden-height="125">
                                 <div class="menu-item">
-                                    <a class="menu-link {{ Route::is('admin.brand.alawafy.english') ? 'active' : '' }}"
-                                        href="{{ route('admin.brand.alawafy.english') }}">
-                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
-                                        <span class="menu-title">English</span>
-                                    </a>
-                                </div>
-                                <div class="menu-item">
                                     <a class="menu-link {{ Route::is('admin.brand.alawafy.arabic') ? 'active' : '' }}"
                                         href="{{ route('admin.brand.alawafy.arabic') }}">
                                         <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
                                         <span class="menu-title">Arabic</span>
                                     </a>
                                 </div>
+                                <div class="menu-item">
+                                    <a class="menu-link {{ Route::is('admin.brand.alawafy.english') ? 'active' : '' }}"
+                                        href="{{ route('admin.brand.alawafy.english') }}">
+                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                        <span class="menu-title">English</span>
+                                    </a>
+                                </div>
+
                                 <div class="menu-item">
                                     <a class="menu-link {{ Route::is('admin.brand.alawafy.french') ? 'active' : '' }}"
                                         href="{{ route('admin.brand.alawafy.french') }}">
@@ -133,7 +140,7 @@
                         </div>
 
                         <!-- Alyoum -->
-                        <div data-kt-menu-trigger="click"
+                        {{-- <div data-kt-menu-trigger="click"
                             class="menu-item menu-accordion {{ Route::is('admin.brand.alyoum.*') ? 'active showing' : '' }}">
                             <span class="menu-link ">
                                 <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
@@ -142,18 +149,19 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg {{ Route::is('admin.brand.alyoum.*') ? 'show' : '' }}"
                                 kt-hidden-height="125">
-                                <div class="menu-item">
-                                    <a class="menu-link {{ Route::is('admin.brand.alyoum.english') ? 'active' : '' }}"
-                                        href="{{ route('admin.brand.alyoum.english') }}">
-                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
-                                        <span class="menu-title">English</span>
-                                    </a>
-                                </div>
+
                                 <div class="menu-item">
                                     <a class="menu-link {{ Route::is('admin.brand.alyoum.arabic') ? 'active' : '' }}"
                                         href="{{ route('admin.brand.alyoum.arabic') }}">
                                         <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
                                         <span class="menu-title">Arabic</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link {{ Route::is('admin.brand.alyoum.english') ? 'active' : '' }}"
+                                        href="{{ route('admin.brand.alyoum.english') }}">
+                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                        <span class="menu-title">English</span>
                                     </a>
                                 </div>
                                 <div class="menu-item">
@@ -165,7 +173,48 @@
                                 </div>
 
                             </div>
+                        </div> --}}
+
+
+                        <div data-kt-menu-trigger="click"
+                        class="menu-item menu-accordion {{ Route::is('admin.brand.alyoum.*') ? 'active showing' : '' }}">
+                        <span class="menu-link ">
+                            <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                            <span class="menu-title">Alyoum</span>
+                            <span class="menu-arrow"></span>
+                        </span>
+                        <div class="menu-sub menu-sub-accordion menu-active-bg {{ Route::is('admin.brand.alyoum.*') ? 'show' : '' }}"
+                            kt-hidden-height="125">
+
+                            <div class="menu-item">
+                                <a class="menu-link {{ Route::is('admin.brand.alyoum.arabic') ? 'active' : '' }}"
+                                    href="{{ route('admin.brand.alyoum.arabic') }}">
+                                    <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                    <span class="menu-title">Arabic</span>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a class="menu-link {{ Route::is('admin.brand.alyoum.english') ? 'active' : '' }}"
+                                    href="{{ route('admin.brand.alyoum.english') }}">
+                                    <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                    <span class="menu-title">English</span>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a class="menu-link {{ Route::is('admin.brand.alyoum.french') ? 'active' : '' }}"
+                                    href="{{ route('admin.brand.alyoum.french') }}">
+                                    <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                    <span class="menu-title">French</span>
+                                </a>
+                            </div>
+
                         </div>
+                    </div>
+
+
+
+
+
 
 
                         <!-- Crico -->
@@ -178,18 +227,19 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg {{ Route::is('admin.brand.crico.*') ? 'show' : '' }}"
                                 kt-hidden-height="125">
-                                <div class="menu-item">
-                                    <a class="menu-link {{ Route::is('admin.brand.crico.english') ? 'active' : '' }}"
-                                        href="{{ route('admin.brand.crico.english') }}">
-                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
-                                        <span class="menu-title">English</span>
-                                    </a>
-                                </div>
+
                                 <div class="menu-item">
                                     <a class="menu-link {{ Route::is('admin.brand.crico.arabic') ? 'active' : '' }}"
                                         href="{{ route('admin.brand.crico.arabic') }}">
                                         <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
                                         <span class="menu-title">Arabic</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link {{ Route::is('admin.brand.crico.english') ? 'active' : '' }}"
+                                        href="{{ route('admin.brand.crico.english') }}">
+                                        <span class="menu-bullet"><span class="bullet bullet-dot"></span></span>
+                                        <span class="menu-title">English</span>
                                     </a>
                                 </div>
                                 <div class="menu-item">
@@ -208,20 +258,36 @@
 
 
 
-                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ Route::is('admin.our.activity.*') ? 'show' : '' }}"><span class="menu-link"><span
-                    class="menu-icon"> <i class="bi bi-house-door fs-3 text-white"></i><span
-                        class="path1"></span><span class="path2"></span><span
-                        class="path3"></span></i></span><span class="menu-title">Activity</span><span
-                    class="menu-arrow"></span></span>
-            <div class="menu-sub menu-sub-accordion {{ Route::is('admin.our.activity.*') ? 'show' : '' }}" style="overflow: hidden;"
-                kt-hidden-height="250">
-                <div class="menu-item"><a
-                        class="menu-link {{ Route::is('admin.our.activity.english') ? 'active' : '' }}"
-                        href="{{ route('admin.our.activity.english') }}"><span class="menu-bullet"><span
-                                class="bullet bullet-dot"></span></span><span
-                            class="menu-title">English</span></a></div>
+                <div data-kt-menu-trigger="click"
+                    class="menu-item menu-accordion {{ Route::is('admin.our.activity.*') ? 'show' : '' }}"><span
+                        class="menu-link"><span class="menu-icon"> <i
+                                class="bi bi-house-door fs-3 text-white"></i><span class="path1"></span><span
+                                class="path2"></span><span class="path3"></span></i></span><span
+                            class="menu-title">Activity</span><span class="menu-arrow"></span></span>
+                    <div class="menu-sub menu-sub-accordion {{ Route::is('admin.our.activity.*') ? 'show' : '' }}"
+                        style="overflow: hidden;" kt-hidden-height="250">
 
-                {{-- <div class="menu-item"><a
+                        <div class="menu-item">
+                            <a class="menu-link {{ Route::is('admin.our.activity.Arabic') ? 'active' : '' }}"
+                                href="{{ route('admin.our.activity.english') }}"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span class="menu-title">Arabic</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link {{ Route::is('admin.our.activity.english') ? 'active' : '' }}"
+                                href="{{ route('admin.our.activity.english') }}"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span
+                                    class="menu-title">English</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link {{ Route::is('admin.our.activity.French') ? 'active' : '' }}"
+                                href="{{ route('admin.our.activity.english') }}"><span class="menu-bullet"><span
+                                        class="bullet bullet-dot"></span></span><span class="menu-title">French</span>
+                            </a>
+                        </div>
+
+                        {{-- <div class="menu-item"><a
                         class="menu-link  {{ Route::is('admin.our.activity.arabic') ? 'active' : '' }}"
                         href="{{ route('admin.our.activity.arabic') }}"><span class="menu-bullet"><span
                                 class="bullet bullet-dot"></span></span><span
@@ -232,8 +298,8 @@
                             class="menu-title">French</span></a></div> --}}
 
 
-            </div>
-        </div>
+                    </div>
+                </div>
 
 
 

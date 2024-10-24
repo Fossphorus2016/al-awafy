@@ -549,7 +549,7 @@
                                         <div>
                                             <label for="">Brand Heading 1</label>
                                             <input class="form-control" name="our_brand_h1"
-                                                value="{{ $home_english->our_brand_h1 ?? '' }}"></input>
+                                                value="{{ $home_arabic->our_brand_h1 ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
@@ -558,7 +558,7 @@
                                         <div>
                                             <label for="">Brand Heading 2</label>
                                             <input class="form-control" name="our_brand_h2"
-                                                value="{{ $home_english->our_brand_h2 ?? '' }}"></input>
+                                                value="{{ $home_arabic->our_brand_h2 ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
                                         </div>
                                     </div>
