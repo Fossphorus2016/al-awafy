@@ -116,35 +116,6 @@ class OurActivityController extends Controller
         return response()->json($activity);  // Send the activity data as JSON
     }
 
-    // public function admin_our_activity_update(Request $request)
-    // {
-    //     // Validate the input
-    //     $request->validate([
-    //         'heading_1' => 'required',
-    //         'heading_2' => 'required',
-    //         'paragraph' => 'required',
-    //     ]);
-
-    //     // Use activity_id instead of update_activity
-    //     $activity = OurActivity::find($request->activity_id);
-
-    //     // Check if the activity exists
-    //     if (!$activity) {
-    //         return redirect()->back()->withErrors(['error' => 'Activity not found.']);
-    //     }
-
-    //     // Update text fields
-    //     $activity->heading_1 = $request->heading_1;
-    //     $activity->heading_2 = $request->heading_2;
-    //     $activity->paragraph = $request->paragraph;
-
-    //     // Handle existing images and new uploads as before...
-
-    //     // Save the activity
-    //     $activity->save();
-
-    //     return redirect()->back()->with('success', 'Activity updated successfully');
-    // }
 
     public function admin_our_activity_update(Request $request)
     {
@@ -153,55 +124,48 @@ class OurActivityController extends Controller
             'heading_1' => 'required',
             'heading_2' => 'required',
             'paragraph' => 'required',
-            'images' => 'array',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-
         ]);
 
-        // Use activity_id instead of update_activity
+
         $activity = OurActivity::find($request->activity_id);
 
-        // Check if the activity exists
+
         if (!$activity) {
             return redirect()->back()->withErrors(['error' => 'Activity not found.']);
         }
 
-        // Get the existing images from the request
-        $existingImages = $request->input('existing_images', []);
-        $currentImages = json_decode($activity->images, true) ?? [];
 
-        // Determine which images were deleted by the user
-        $deletedImages = array_diff(array_column($currentImages, 'url'), $existingImages);
-
-        // Delete the removed images from storage
-        foreach ($deletedImages as $deletedImage) {
-            $imagePath = str_replace(asset('storage/'), '', $deletedImage);
-            Storage::disk('public')->delete($imagePath);
-        }
-
-        // Filter out the deleted images and keep only the existing ones
-        $updatedImages = array_filter($currentImages, function ($image) use ($existingImages) {
-            return in_array($image['url'], $existingImages);
-        });
-
-        // Handle new image uploads
-        if ($request->hasFile('images')) {
-            foreach ($request->file('images') as $image) {
-                $path = $image->store('our_activities', 'public');
-                $updatedImages[] = [
-                    'url' => asset('storage/' . $path),
-                    'name' => $image->getClientOriginalName(),
-                ];
-            }
-        }
-
-        // Update text fields
         $activity->heading_1 = $request->heading_1;
         $activity->heading_2 = $request->heading_2;
         $activity->paragraph = $request->paragraph;
 
-        // Update images and save the activity
-        $activity->images = json_encode($updatedImages);
+
+        $existingImages = json_decode($activity->images, true) ?? [];
+
+        if ($request->has('existing_images')) {
+
+            $removedImages = $request->existing_images;
+            $existingImages = array_filter($existingImages, function ($image) use ($removedImages) {
+                return !in_array($image['url'], $removedImages);
+            });
+        }
+
+
+        if ($request->hasFile('images')) {
+            $newImages = [];
+
+            foreach ($request->file('images') as $image) {
+                $path = $image->store('images', 'public');
+                $newImages[] = ['url' => '/storage/' . $path];
+            }
+
+
+            $existingImages = array_merge($existingImages, $newImages);
+        }
+
+
+        $activity->images = json_encode($existingImages);
+
 
         $activity->save();
 

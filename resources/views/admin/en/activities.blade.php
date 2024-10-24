@@ -188,7 +188,7 @@
                                                                         data-bs-dismiss="modal"
                                                                         aria-label="Close"></button>
                                                                 </div>
-                                                                {{-- <div class="modal-body">
+                                                                <div class="modal-body">
                                                                     <!-- Inside your modal for editing -->
                                                                     <form
                                                                         action="{{ route('admin.our.activity.update', $activity->id) }}"
@@ -252,26 +252,13 @@
                                                                                 </div>
 
                                                                                 <!-- Existing Images -->
-                                                                                <div id="existing-images">
-                                                                                    @if ($activity->images)
-                                                                                        @php
-                                                                                            $decodedImages = json_decode($activity->images);
-                                                                                        @endphp
-                                                                                        @if (is_array($decodedImages) && count($decodedImages) > 0)
-                                                                                            <label class="form-label">Existing Images:</label><br>
-                                                                                            @foreach ($decodedImages as $image)
-                                                                                                <div class="existing-image"
-                                                                                                    style="position: relative; display: inline-block; margin-right: 10px;">
-                                                                                                    <img src="{{ $image->url }}" width="100px"
-                                                                                                        height="100px" class="rounded mx-2">
-                                                                                                    <span class="remove-icon"
-                                                                                                        onclick="removeImage(this)">×</span>
-                                                                                                    <input type="hidden" name="existing_images[]"
-                                                                                                        value="{{ $image->url }}">
-                                                                                                </div>
-                                                                                            @endforeach
-                                                                                        @endif
-                                                                                    @endif
+                                                                                <div id="existing-images"
+                                                                                    class="mb-3">
+                                                                                    <label class="form-label">Existing
+                                                                                        Images:</label>
+                                                                                    <div id="existing-images-container"
+                                                                                        style="display: flex; flex-wrap: wrap;">
+                                                                                    </div>
                                                                                 </div>
 
                                                                                 <!-- New Image Previews -->
@@ -296,126 +283,7 @@
                                                                         </div>
                                                                     </form>
 
-                                                                </div> --}}
-                                                                <div class="modal-body">
-                                                                    <!-- Inside your modal for editing -->
-                                                                    <form
-                                                                        action="{{ route('admin.our.activity.update', $activity->id) }}"
-                                                                        method="POST" enctype="multipart/form-data">
-                                                                        @csrf
-                                                                        @method('PUT')
-                                                                        <!-- Make sure to use the correct method for updating -->
-                                                                        <input type="hidden" name="activity_id"
-                                                                            id="update_activity_id">
-
-                                                                        <div class="row">
-                                                                            <div class="col-lg-12 mb-3">
-                                                                                <label for="title"
-                                                                                    class="form-label">Heading
-                                                                                    1</label>
-                                                                                <input type="text" name="heading_1"
-                                                                                    id="update_heading_1"
-                                                                                    class="form-control" required>
-                                                                                <label id="error_heading_1"
-                                                                                    class="text-danger fw-bold"
-                                                                                    style="display: none">Heading 1 is
-                                                                                    required</label>
-                                                                            </div>
-
-                                                                            <div class="col-lg-12 mb-3">
-                                                                                <label for="title"
-                                                                                    class="form-label">Heading
-                                                                                    2</label>
-                                                                                <input type="text" name="heading_2"
-                                                                                    id="update_heading_2"
-                                                                                    class="form-control" required>
-                                                                                <label id="error_heading_2"
-                                                                                    class="text-danger fw-bold"
-                                                                                    style="display: none">Heading 2 is
-                                                                                    required</label>
-                                                                            </div>
-
-                                                                            <div class="col-lg-12 mb-3">
-                                                                                <label for="content"
-                                                                                    class="form-label">Paragraph</label>
-                                                                                <textarea name="paragraph" id="update_paragraph" class="form-control" cols="10" rows="4" required></textarea>
-                                                                                <label id="error_paragraph"
-                                                                                    class="text-danger fw-bold"
-                                                                                    style="display: none">Paragraph is
-                                                                                    required</label>
-                                                                            </div>
-
-                                                                            <div class="col-lg-6">
-                                                                                <div class="mb-3">
-                                                                                    <label
-                                                                                        class="form-label">Images</label>
-                                                                                    <input type="file"
-                                                                                        name="images[]"
-                                                                                        id="update_images"
-                                                                                        class="form-control"
-                                                                                        accept="image/*" multiple
-                                                                                        onchange="previeweditImages(event)">
-                                                                                    <label id="error_images"
-                                                                                        class="text-danger fw-bold"
-                                                                                        style="display: none">Images
-                                                                                        are required</label>
-                                                                                </div>
-
-                                                                                <!-- Existing Images -->
-                                                                                <div id="existing-images">
-                                                                                    @if ($activity->images)
-                                                                                        @php
-                                                                                            $decodedImages = json_decode(
-                                                                                                $activity->images,
-                                                                                            );
-                                                                                        @endphp
-                                                                                        @if (is_array($decodedImages) && count($decodedImages) > 0)
-                                                                                            <label
-                                                                                                class="form-label">Existing
-                                                                                                Images:</label><br>
-                                                                                            @foreach ($decodedImages as $image)
-                                                                                                <div class="existing-image"
-                                                                                                    style="position: relative; display: inline-block; margin-right: 10px;">
-                                                                                                    <img src="{{ $image->url }}"
-                                                                                                        width="100px"
-                                                                                                        height="100px"
-                                                                                                        class="rounded mx-2">
-                                                                                                    <span
-                                                                                                        class="remove-icon"
-                                                                                                        onclick="removeImage(this)">×</span>
-                                                                                                    <input
-                                                                                                        type="hidden"
-                                                                                                        name="existing_images[]"
-                                                                                                        value="{{ $image->url }}">
-                                                                                                </div>
-                                                                                            @endforeach
-                                                                                        @endif
-                                                                                    @endif
-                                                                                </div>
-
-                                                                                <!-- New Image Previews -->
-                                                                                <div id="image-previews"
-                                                                                    class="mb-3">
-                                                                                    <label class="form-label">New Image
-                                                                                        Previews:</label>
-                                                                                    <div id="output"
-                                                                                        style="display: flex; flex-wrap: wrap;">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="modal-footer">
-                                                                            <button type="button"
-                                                                                class="btn btn-secondary"
-                                                                                data-bs-dismiss="modal">Close</button>
-                                                                            <button type="submit"
-                                                                                class="btn btn-primary">Save
-                                                                                changes</button>
-                                                                        </div>
-                                                                    </form>
                                                                 </div>
-
 
                                                             </div>
                                                         </div>
@@ -670,41 +538,6 @@
     }
 
 
-    function previeweditImages(event) {
-        const output = document.getElementById('output');
-        output.innerHTML = ''; // Clear previous previews
-
-        const files = event.target.files;
-        for (let i = 0; i < files.length; i++) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const imageContainer = document.createElement('div');
-                imageContainer.className = 'image-container'; // Add class for styling
-
-                const img = document.createElement('img');
-                img.src = e.target.result;
-                img.width = 100;
-                img.height = 100;
-                img.className = 'rounded mx-2';
-
-                const removeIcon = document.createElement('span');
-                removeIcon.className = 'remove-icon'; // Class for styling the remove icon
-                removeIcon.innerHTML = '×';
-                removeIcon.onclick = function() {
-                    imageContainer.remove(); // Remove image container on click
-                };
-
-                imageContainer.appendChild(img);
-                imageContainer.appendChild(removeIcon);
-                output.appendChild(imageContainer);
-            };
-            reader.readAsDataURL(files[i]);
-        }
-    }
-
-    function removeImage(element) {
-        element.parentElement.remove(); // Remove existing image container
-    }
 
 
 

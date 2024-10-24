@@ -202,7 +202,7 @@ Route::group(['middleware' => 'auth'], function () {
     // Activity routes
     Route::post('admin/our-activity-/store', [OurActivityController::class, 'admin_our_activity_store'])->name('admin.our.activity.store');
     Route::get('/admin/our/activity/{id}', [OurActivityController::class, 'admin_our_activity_edit'])->name('admin.our.activity.edit');
-    Route::put('/admin/our/activity/update', [OurActivityController::class, 'admin_our_activity_update'])->name('admin.our.activity.update');
+    Route::put('/admin/our/activity/update/{id}', [OurActivityController::class, 'admin_our_activity_update'])->name('admin.our.activity.update');
     Route::post('admin/our-activity-meta/store', [OurActivityController::class, 'admin_our_activity_meta'])->name('admin.our.activity.meta');
     Route::post('admin/our-activity-banner/store', [OurActivityController::class, 'admin_our_activity_banner'])->name('admin.our.activity.banner');
 
