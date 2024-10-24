@@ -1,3 +1,7 @@
+@php
+    $about = App\Models\About::where('language', 'arabic')->first();
+@endphp
+
 <x-arabicLayout>
     <main>
         <section class="heroSection secondBanner aboutBanner">
@@ -14,8 +18,9 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> معلومات </span>
-                            <span class="fs3">عنا</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> {{ $about->sec1_h1 ?? '' }}
+                            </span>
+                            <span class="fs3">{{ $about->sec1_h2 ?? '' }}</span>
                         </h1>
 
                     </div>
@@ -29,20 +34,9 @@
                 <div class="row flex-row-reverse text-end">
                     <div class="col-lg-6 col-12 d-flex align-item">
                         <div class="aboutInner paraFont justify-content-start">
-                            <h2><span class="fs5">ﻣن ﻧﺣن</span> <span class="fs6"> </span> </h2>
-                            <p class="align-self-end">
-                                ﺗﺄﺳﺳت ﺷرﻛﺔ اﻟﻌواﻓﻲ ﻋﺎم 2023 ﻓﻲ ﺳطﯾف، اﻟﺟزاﺋر، وھﻲ ﺷرﻛﺔ ﻣﺗﺧﺻﺻﺔ ﻓﻲ إﻧﺗﺎج اﻟﺗﻣور واﻟﻣﻛﺳرات.
-                                ﺑﻔﺿل اﻟﺗزاﻣﻧﺎ ﺑﺎﻟﺟودة واﻻﺑﺗﻛﺎر، ﻧﻘدم ﻣﻧﺗﺟﺎت ﻋﺎﻟﯾﺔ اﻟﺟودة ﺗﺟﻣﻊ ﺑﯾن اﻟﻣذاق اﻟﻠذﯾذ واﻟﻔواﺋد
-                                اﻟﺻﺣﯾﺔ. ﻣﻊ اﻋﺗﻣﺎد أﺣدث اﻟﺗﻘﻧﯾﺎت واﺗﺑﺎع اﻟﻣﻌﺎﯾﯾر اﻟدوﻟﯾﺔ اﻟﺻﺎرﻣﺔ، ﻧﺿﻣن ﻟﻌﻣﻼﺋﻧﺎ اﻟﺣﺻول ﻋﻠﻰ
-                                ﻣﻧﺗﺟﺎت ﺗﻠﺑﻲ أﻋﻠﻰ ﻣﻌﺎﯾﯾر اﻟﺟودة.
-
-                            </p>
-                            <p class="align-self-end">
-                                ﻧﺣن ﻓﻲ اﻟﻌواﻓﻲ ﻧﺧﺗﺎر ﺑﻌﻧﺎﯾﺔ أﻓﺿل اﻟﻣﻛﺳرات واﻟﻔول اﻟﺳوداﻧﻲ ﻣن ﻣﺻﺎدر ﻣوﺛوﻗﺔ ﻟﻧﻘدم ﻟﻛم
-                                ﻣﻧﺗﺟﺎت ﻣﺛﺎﻟﯾﺔ ﻟﻼﺳﺗﻣﺗﺎع ﻓﻲ ﻛل ﻟﺣظﺔ.
-
-                            </p>
-
+                            <h2><span class="fs5">{{ $about->sec2_h1 ?? '' }} </span> <span
+                                    class="fs6">{{ $about->sec2_h2 ?? '' }} </span> </h2>
+                            {!! $about->sec2_p1 ?? '' !!}
 
                         </div>
                     </div>
@@ -71,31 +65,7 @@
                     </div> --}}
 
                     <div class="col-12  mt-4 paraFont inlineContent arabicStyle listStyles">
-                        <h2 class="fs12">:ﻣﻣﯾزاﺗﻧﺎ</h2>
-                        <ul class="my-4">
-                            <li>
-                                <p class="">
-                                    ﺟﻣﯾﻊ ﻣﻧﺗﺟﺎﺗﻧﺎ ﺗﺧﺿﻊ ﻷدق ﻣﻌﺎﯾﯾر اﻟﺟودة اﻟﻌﺎﻟﻣﯾﺔ.
-                                </p>
-                                <strong>:ﺟودة ﻻ ﺗﺿﺎھﻰ </strong>
-                            </li>
-                            <li>
-                                <p>
-                                    ﻣﻧﺷﺂت اﻹﻧﺗﺎج ﻟدﯾﻧﺎ ﺗﺿﻣن ﻛﻔﺎءة واﺳﺗﺟﺎﺑﺔ ﺳرﯾﻌﺔ ﻻﺣﺗﯾﺎﺟﺎت اﻟﺳوق
-                                </p>
-                                <strong>:ﺗﻘﻧﯾﺎت ﺣدﯾﺛﺔ  </strong>
-                            </li>
-                            <li>
-                                <p>
-                                    ﻧﺳﻌﻰ دائمًا ﻟﺗطوﯾر وﺻﻔﺎت ﺟدﯾدة وﺗﺣﺳﯾن ﻋﻣﻠﯾﺎت اﻹﻧﺗﺎج ﻟﻧظل روادًا ﻓﻲ ھذا اﻟﻣﺟﺎل.
-.
-                                </p>
-                                <strong>:اﻟﺗزام ﺑﺎﻻﺑﺗﻛﺎر  </strong>
-                            </li>
-                        </ul>
-                        <p>
-                            اﻧﺿم إﻟﯾﻧﺎ ﻓﻲ رﺣﻠﺗﻧﺎ ﻟﻼﺳﺗﻣﺗﺎع ﺑﻣﻛﺳرات وﻓواﻛﮫ ﻣﺟﻔﻔﺔ ﻓﺎﺧرة ﻣن اﻟﻌواﻓﻲ
-                        </p>
+                        {!! $about->sec2_p2 ?? '' !!}
                     </div>
                 </div>
             </div>
@@ -109,18 +79,12 @@
                     <div class="paraFont ">
 
                         <div class="missionBtn1 my-5">
-                            <h2><span class="fs7"> </span> <span class="fs8">ﻣﮭﻣﺗﻧﺎ</span> </h2>
+                            <h2><span class="fs7"> </span> <span class="fs8"> {{ $about->sec3_h1 ?? '' }}</span>
+                            </h2>
                         </div>
                         <div class="inlineContent ">
 
-                            <p>
-                                ﻓﻲ اﻟﻌواﻓﻲ، ﻧﻠﺗزم ﺑﺗﻘدﯾم ﻣﻧﺗﺟﺎت طﺑﯾﻌﯾﺔ وﺻﺣﯾﺔ ﺗﻌزز ﻧﻣط ﺣﯾﺎة ﻣﺗوازن. ﻣﻛﺳراﺗﻧﺎ وﻓواﻛﮭﻧﺎ
-                                اﻟﻣﺟﻔﻔﺔ ھﻲ ﻣﺻدر ﻏﻧﻲ
-                                ﺑﺎﻟﻌﻧﺎﺻر اﻟﻐذاﺋﯾﺔ، ﻧﻌﻣل ﺑﺎﺳﺗﻣرار ﻋﻠﻰ ﺗﺣﺳﯾن ﻣﻧﺗﺟﺎﺗﻧﺎ وﺗﻘدﯾم ﻧﻛﮭﺎت ﻣﺑﺗﻛرة وﻣﺛﯾرة، وﻧﮭدف
-                                إﻟﻰ ﻣﺷﺎرﻛﺔ ﺷﻐﻔﻧﺎ ﺑﺎﻟطﺑﯾﻌﺔ والأكل
-                                الصحي مع عملائنا
-
-                            </p>
+                            {!! $about->sec3_p1 ?? '' !!}
 
 
                         </div>
@@ -130,59 +94,25 @@
                     <div class="ourVisionCont paraFont">
 
                         <div class="missionBtn1 my-5" style="padding-right: 100px;">
-                            <h2><span class="fs7"> </span> <span class="fs8">رؤﯾﺗﻧﺎ</span> </h2>
+                            <h2><span class="fs7"> </span> <span class="fs8">{{ $about->sec3_h3 ?? '' }}</span>
+                            </h2>
                         </div>
 
-                        <p class="w-100 text-end">
-                            رؤﯾﺗﻧﺎ ھﻲ أن ﻧﻛون اﻟﻘﺎدة ﻓﻲ ﺗﻘدﯾم أﻓﺿل اﻟﻣﻛﺳرات واﻟﻔواﻛﮫ اﻟﻣﺟﻔﻔﺔ اﻟطﺑﯾﻌﯾﺔ. ﻧﺣن ﻧﺳﻌﻰ إﻟﻰ:
-
-                        </p>
-                        <ol class="inlineContent arabicStyle listStyles">
-                            <li style="
-                            text-align: end;
-                        ">
-                                <p>
-                                    ﺗﻘدﯾم ﻣﻧﺗﺟﺎت ﺟدﯾدة وﺻﺣﯾﺔ ﺗﺗﻣﺎﺷﻰ ﻣﻊ اﻻﺗﺟﺎھﺎت اﻟﻐذاﺋﯾﺔ اﻟﻌﺎﻟﻣﯾﺔ
-
-                                </p>
-                                <strong>اﻻﺑﺗﻛﺎر اﻟﻣﺳﺗﻣر</strong>
-                            </li>
-                            <li style="
-                            text-align: end;
-                        ">
-                                <p>
-                                    دﻋم اﻟﻣﻣﺎرﺳﺎت اﻟزراﻋﯾﺔ اﻟﺻدﯾﻘﺔ ﻟﻠﺑﯾﺋﺔ وﺗﺷﺟﯾﻊ اﺳﺗﮭﻼ ًﻛﺎ ﻣﺳؤو ًﻻ
-                                </p>
-                                <strong>ﺗﻌزﯾز اﻻﺳﺗداﻣﺔ</strong>
-                            </li>
-                            <li style="
-                            text-align: end;
-                        ">
-                                <p>
-                                    اﻟﻌﻣل ﻣﻊ اﻟﻣﻧﺗﺟﯾن اﻟﻣﺣﻠﯾﯾن ﻟﺿﻣﺎن أﻋﻠﻰ ﻣﺳﺗوﯾﺎت اﻟﺷﻔﺎﻓﯾﺔ واﻟﺟودة
-
-                                </p>
-                                <strong>ﺑﻧﺎء ﺷراﻛﺎت ﻗوﯾﺔ</strong>
-                            </li>
-                            <li style="
-                            text-align: end;
-                        ">
-                                <p>
-                                    ﺗﻌزﯾز اﻟوﻋﻲ ﺑﻔواﺋد اﻟﻣﻛﺳرات وﺗﻘدﯾم ﻧﺻﺎﺋﺢ ووﺻﻔﺎت ﻟﺗﺷﺟﯾﻊ اﻟﺧﯾﺎرات اﻟﻐذاﺋﯾﺔ اﻟﺻﺣﯾﺔ
-                                </p>
-                                <strong>اﻟﺗﺛﻘﯾف واﻹﻟﮭﺎم</strong>
-                            </li>
-
-                        </ol>
+                        {!! $about->sec3_p2 ?? '' !!}
 
                     </div>
 
                     <div class="d-flex justify-content-center ourVisionPeanuts">
 
-                        <img class="img-fluid w-100"
-                            style="object-fit: contain;     object-fit: contain;
-                        max-width: 600px !important;"
-                            src="{{ asset('assets/images/items/peanuts.png') }}" alt="">
+                        @if ($about && $about->sec3_image)
+                            <img class="img-fluid w-100"
+                                style="object-fit: contain; object-fit: contain; max-width: 600px !important;"
+                                src="{{ asset('storage/' . $about->sec3_image) }}" alt="">
+                        @else
+                            <img class="img-fluid w-100"
+                                style="object-fit: contain; object-fit: contain; max-width: 600px !important;"
+                                src="{{ asset('assets/images/items/peanuts.png') }}" alt="">
+                        @endif
                     </div>
 
                 </div>

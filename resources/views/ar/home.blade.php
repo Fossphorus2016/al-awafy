@@ -138,8 +138,8 @@
         <section class="ourBrands py-5">
             <div class="customContainer">
                 <div>
-                    <h2 class="text-center pb-4"><span class="fs5">علاماتنا</span> <span
-                            class="fs6">التجارية</span>
+                    <h2 class="text-center pb-4"><span class="fs5">{{ $home_arabic->our_brand_h1 ?? '' }}</span>
+                        <span class="fs6">{{ $home_arabic->our_brand_h2 ?? '' }}</span>
                     </h2>
 
 
@@ -148,13 +148,25 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
-                                        alt="">
-                                    <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
-                                        alt="">
+                                    @if ($home_arabic && $home_arabic->our_brand_logo_1)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_arabic->our_brand_logo_1) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
+                                            alt="">
+                                    @endif
+
+                                    @if ($home_arabic && $home_arabic->our_brand_image_1)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_arabic->our_brand_image_1) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3 w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
+                                            alt="">
+                                    @endif
                                     <p>
-                                        مكسرات عالية الجودة، مختارة بعناية ومحمصة بإتقان. من الكاجو إلى اللوز العوافي
-                                        تقدم وجبة خفيفة صحية ولذيذة لكل مناسبة
+                                        {{ $home_arabic->our_brand_1 ?? '' }}
                                     </p>
                                     <a href="brand-alawafy" class="mainBtn1">عرض منتجات العلامة التجارية</a
                                         href="brand-alawafy">
@@ -164,14 +176,28 @@
                         <div class="col-lg-4 brandCardOuter col-12">
 
                             <div class="brandCard card">
+
                                 <div class="card-body paraFont py-4">
-                                    <img class="pb-3" src="{{ asset('assets/images/logo/logo2.png') }}"
-                                        alt="">
-                                    <img class="pb-3 w-100" class="py-3"
-                                        src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
+
+                                    @if ($home_arabic && $home_arabic->our_brand_logo_2)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_arabic->our_brand_logo_2) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3" src="{{ asset('assets/images/logo/logo2.png') }}"
+                                            alt="">
+                                    @endif
+
+                                    @if ($home_arabic && $home_arabic->our_brand_image_2)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_arabic->our_brand_image_2) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3 w-100" class="py-3"
+                                            src="{{ asset('assets/images/items/brandItem2.png') }}" alt="">
+                                    @endif
                                     <p>
-                                        لمسة مرحة على الفول السوداني بنكهات جريئة مثل الحار، الجبن، والشواء. كريكو تقدم
-                                        وجبات خفيفة مقرمشة مليئة بالنكهات بقيمة لا مثيل لها
+                                        {{ $home_arabic->our_brand_2 ?? '' }}
                                     </p>
                                     <a href="brand-crico" class="mainBtn1">عرض منتجات العلامة التجارية</a
                                         href="brand-alawafy">
@@ -182,15 +208,26 @@
 
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4 pt-2">
-                                    <img style="width: 145px;object-fit: contain;" class="pb-2"
-                                        src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
 
-                                    <img class="pb-3 w-100" class="py-3"
-                                        src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
+                                    @if ($home_arabic && $home_arabic->our_brand_logo_3)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_arabic->our_brand_logo_3) }}"
+                                            alt="">
+                                    @else
+                                        <img style="width: 145px;object-fit: contain;" class="pb-2"
+                                            src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
+                                    @endif
+
+                                    @if ($home_arabic && $home_arabic->our_brand_image_3)
+                                        <img class="pb-3"
+                                            src="{{ asset('storage/' . $home_arabic->our_brand_image_3) }}"
+                                            alt="">
+                                    @else
+                                        <img class="pb-3 w-100" class="py-3"
+                                            src="{{ asset('assets/images/items/brandItem4.png') }}" alt="">
+                                    @endif
                                     <p>
-
-                                        توفر اليوم مكسرات عالية الجودة بكميات كبيرة، مما يضمن القرمشة و البنة لتبية
-                                        احتياجات الأسواق،الأفراح و حتى الشركات.
+                                        {{ $home_arabic->our_brand_3 ?? '' }}
                                     </p>
                                     <a href="brand-alyoum" class="mainBtn1">عرض منتجات العلامة التجارية</a
                                         href="brand-alawafy">
@@ -209,9 +246,10 @@
         <section class="tasteNuts curvedLayer">
             <div class="customContainer">
                 <div class="tasteNutsInner">
-                    <h2 class="waterDropsBefore"> <span class="fs7"> استمتع بأجود أنواع المكسرات </span></h2>
-                    <h2 class=""> <span class="fs7"> مليئة بالنكهة </span> <span
-                            class="fs8  waterDropsAfter2 ms-0">والقيمة الغذائية العالية </span> </h2>
+                    <h2 class="waterDropsBefore"> <span class="fs7"> {{ $home_arabic->section_6_h1 ?? '' }}
+                        </span></h2>
+                    <h2 class=""> <span class="fs7"> {{ $home_arabic->section_6_h2 ?? '' }} </span> <span
+                            class="fs8  waterDropsAfter2 ms-0"> {{ $home_arabic->section_6_h3 ?? '' }} </span> </h2>
                     <div class="pt-3 d-flex"><a class="mainBtn1 me-3 position-relative z-1" href="about">
                             لمعرفة المزيد
                         </a>
@@ -315,7 +353,27 @@
                 <h2 class="text-center pb-4"><span class="fs5">أنشطتنا</span> <span class="fs6"></span>
                 </h2>
                 <div class="activitieSlider">
-                    <div class="col activityOuter">
+                    @php
+                        $activities = App\Models\Activity::where('language', 'arabic')->get();
+                    @endphp
+
+                    @forelse ($activities as $activity)
+                        <div class="col activityOuter">
+                            <img class="w-100 activityImg" src="{{ asset('storage/' . $activity->main_image) }}"
+                                alt="">
+                            <div class="service-card">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-arrows-down-to-people"></i>
+                                </div>
+                                <h3>{{ $activity->heading }}</h3>
+                                <p>
+                                    {{ $activity->paragraph }}
+                                </p>
+                            </div>
+                        </div>
+                    @empty
+                    @endforelse
+                    {{-- <div class="col activityOuter">
                         <img class="w-100 activityImg"
                             src="{{ asset('assets/images/activities/school/school_img1.jpeg') }}" alt="">
                         <div class="service-card">
@@ -376,7 +434,7 @@
                                 وأجنبية من تونس، السنغال، الصين، تركيا، وفرنسا، حيث عرضت مختلف منتجاتها.
                             </p>
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
                 <div class="d-flex justify-content-center">

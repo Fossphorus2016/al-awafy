@@ -74,9 +74,7 @@ class AdminAboutController extends Controller
 
     public function admin_section_2(Request $request)
     {
-        $request->validate([
-            'sec2_image' =>'required|file|max:81200'
-        ]);
+        
         $about = About::where('language', $request->language)->first();
 
         $sec2_image = $about ? $about->sec2_image : null;
