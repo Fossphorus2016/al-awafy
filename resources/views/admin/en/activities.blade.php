@@ -119,7 +119,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero3" aria-expanded="false" aria-controls="collapseZero3">
-                            Banner Section
+                            Activity
                         </button>
                     </h2>
                     <div id="collapseZero3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">

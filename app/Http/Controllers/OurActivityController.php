@@ -71,8 +71,6 @@ class OurActivityController extends Controller
         return back()->with(['back-success' => 'Banner updated successfully']);
     }
 
-
-
     public function admin_our_activity_store(Request $request)
     {
         $request->validate([
