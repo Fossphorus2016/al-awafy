@@ -1,3 +1,6 @@
+@php
+    $crico = App\Models\Crico::where('language', 'arabic')->first();
+@endphp
 <x-arabicLayout>
     <main>
         <section class="heroSection secondBanner brandBanner">
@@ -14,8 +17,9 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> علاماتنا</span>
-                            <span class="fs3">التجارية</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                {{ $crico->banner_h1 ?? '' }}</span>
+                            <span class="fs3">{{ $crico->banner_h2 ?? '' }}</span>
                         </h1>
 
                     </div>
@@ -29,15 +33,12 @@
             <div class="customContainer">
                 <div class="row">
                     <div class=" col-12 d-flex align-item">
+
                         <div class="aboutInner paraFont text-center">
-                            <h2><span class="fs5">اكتشف </span> <span class="fs6">كريكو</span> </h2>
+                            <h2><span class="fs5">{{ $crico->section1_h1 ?? '' }}</span> <span
+                                    class="fs6">{{ $crico->section1_h2 ?? '' }}</span> </h2>
                             <p class="mb-5 w-100">
-                                كریكو یقدم مجموعة لذیذة من الفول السوداني المغلف بالنكھات التي تجمع بین الجودة والطعم
-                                الذي لا قاوم. ُ ی كل قضمة من كریكو توفر تجربة مقرمشة بنكھة قویة، سواء كنت تشتھي حرارة
-                                النكھة الحارة، أو الطعم المدخن للشواء، أو المذاق الشھي للبیتزا، أو النكھات الكلاسیكیة
-                                مثل الملح والجبن، أو كنت تستمتع بیوم ھادئ مع الأصدقاء أو تبحث عن وجبة خفیفة سریعة أثناء
-                                التنقل، ستلبي تشكیلة كریكو رغباتك مع موازنة مثالیة بین الجودة والسعر بمنتج بأسعار
-                                !معقولة. استمتع بالوجبات الخفیفة بذكاء وبطعم لذیذ مع كریكو
+                                {!! $crico->section1_p ?? '' !!}
                             </p>
 
                         </div>
@@ -63,13 +64,13 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8"> سبایسي</span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $crico->brand_1_h1 ?? '' }}</span> <span
+                                        class="fs8">
+                                        {{ $crico->brand_1_h2 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    استعد لنكھة جریئة! فول سوداني كریكو سبایسي المغلف یقدم نكھة قویة مع الكمیة المثالیة
-                                    من الحرارة. ھذه الفول السوداني المقرمشة مثالیة لمحبي الوجبات الخفیفة ذات النكھة
-                                    الحارة، وتضیف الإثارة إلى وقت تناول الوجبات الخفیفة.
+                                    {!! $crico->brand_1_p ?? '' !!}
                                 </p>
-                                <a href="" class="mainBtn1" style="align-self: end;">
+                                <a href="{{ $crico->brand_1_url ?? '' }}" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -77,8 +78,13 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem13.png') }}"
-                                    alt="">
+                                @if ($crico && $crico->brand_1_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_1_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem13.png') }}"
+                                        alt="">
+                                @endif
                             </div>
 
                         </div>
@@ -91,21 +97,25 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem14.png') }}"
-                                    alt="">
+                                @if ($crico && $crico->brand_2_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_2_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem14.png') }}"
+                                        alt="">
+                                @endif
                             </div>
 
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8"> بالملح</span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $crico->brand_2_h1 ?? '' }}</span> <span
+                                        class="fs8">
+                                        {{ $crico->brand_2_h2 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    ا ً أحیان تكون البساطة ھي الأفضل. فول سوداني كریكو بالملح یقدم الطعم الكلاسیكي للملح
-                                    مع الكمیة المثالیة من القرمشة. ھذه النكھة الخالدة مثالیة لمن یستمتعون بوجبة خفیفة
-                                    بسیطة ومرضیة كل مرة
-
+                                    {!! $crico->brand_2_p ?? '' !!}
                                 </p>
-                                <a href="" class="mainBtn3" style="align-self: end;">
+                                <a href="{{ $crico->brand_2_url ?? '' }}" class="mainBtn3" style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -120,18 +130,13 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2 style="text-align: end;"><span class="fs7">كریكو</span> <span
-                                        class="fs8">بنكھة الشواء
+                                <h2 style="text-align: end;"><span class="fs7">{{ $crico->brand_3_h1 ?? '' }}</span>
+                                    <span class="fs8">{{ $crico->brand_3_h2 ?? '' }}
                                     </span> </h2>
                                 <p class="text-white text-end" style="width:100%">
-                                    استمتع بالطعم الحلو والمنعش للشواء في شكل فول سوداني مقرمش. كريكو
-                                    مغطى بالباربيكيو
-                                    جلب الفول السوداني
-                                    النكهات المألوفة لصلصة الشواء المدخنة، مما يجعلها خيارًا رائعًا
-                                    النزهات والحفلات، أو فقط
-                                    الاستمتاع في المنزل.
+                                    {!! $crico->brand_3_p ?? '' !!}
                                 </p>
-                                <a href="" class="mainBtn1" style="align-self: end;">
+                                <a href="{{ $crico->brand_3_url ?? '' }}" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -139,8 +144,13 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem15.png') }}"
-                                    alt="">
+                                @if ($crico && $crico->brand_3_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_3_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem15.png') }}"
+                                        alt="">
+                                @endif
                             </div>
 
                         </div>
@@ -153,20 +163,25 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem16.png') }}"
-                                    alt="">
+                                @if ($crico && $crico->brand_4_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_4_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem16.png') }}"
+                                        alt="">
+                                @endif
+
                             </div>
 
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8">بیتزا</span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $crico->brand_4_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_4_h1 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    تذوق نكھات إیطالیا! فول سوداني كریكو المغلف بنكھة البیتزا یقدم الطعم الكلاسیكي
-                                    للبیتزا في قضمة مقرمشة، مع نكھات الطماطم والأعشاب والجبنة. ھذه الوجبة الخفیفة توفر ا
-                                    ً خیار ا ً لذیذ ا ً وفرید یحول وقت تناول الوجبات الخفیفة إلى حفلة بیتزا صغیرة.
+                                    {!! $crico->brand_4_p ?? '' !!}
                                 </p>
-                                <a href="" class="mainBtn3" style="align-self: end;">
+                                <a href="{{ $crico->brand_4_url ?? '' }}" class="mainBtn3" style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -181,13 +196,11 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8">بالجبنة</span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $crico->brand_5_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_5_h1 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    متعة لعشاق الجبنة! فول سوداني كریكو المغلف بالجبنة یجمع بین طعم الجبنة الغني
-                                    والكریمي مع قرمشة الفول السوداني الفاخر. ھذه النكھة توفر ا ً توازن ا ً مثالی بین
-                                    المتعة والقرمشة لتجربة تناول وجبة خفیفة ممتعة ا. ً حق
-                                </p>
-                                <a href="" class="mainBtn1" style="align-self: end;">
+                                     {!! $crico->brand_5_p ?? ''!!}     </p>
+                                <a href="{{$crico->brand_5_url ?? ''}}" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -195,8 +208,13 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem17.png') }}"
-                                    alt="">
+                                @if ($crico && $crico->brand_5_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_5_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem17.png') }}"
+                                        alt="">
+                                @endif
                             </div>
 
                         </div>
@@ -209,18 +227,23 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem23.png') }}"
-                                    alt="">
+                                @if ($crico && $crico->brand_6_image)
+                                    <img class="" src="{{ asset('storage/' . $crico->brand_6_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem23.png') }}"
+                                        alt="">
+                                @endif
                             </div>
 
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
-                                <h2 class="text-end"><span class="fs7">كريكو</span> <span class="fs8">مدخن</span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $crico->brand_6_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $crico->brand_6_h2 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    لمحبي النكھات المدخنة، فول سوداني كریكو المدخن ھو الخیار المثالي. بنكھة مدخنة غنیة
-                                    تدوم، یوفر ھذا الفول السوداني تجربة تناول لا نسى، ُ ت ویضیف ا ً عمق إلى كل قضمة.
-                                </p>
+                                    {!! $crico->brand_6_p ?? ''!!}
+                                        </p>
                                 <a href="" class="mainBtn3" style="align-self: end;">
                                     اتصل بنا
                                 </a>

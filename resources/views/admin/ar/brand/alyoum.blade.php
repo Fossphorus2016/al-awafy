@@ -768,18 +768,22 @@
                 } else {
                     $(".editorOut98 input").removeClass("is-invalid");
                 }
-                if ($(".editorOut11 input").val() == "") {
-                    $(".editorOut11 input").addClass("is-invalid");
-                    $(".editorOut11 .errMsg").text('Heading is required');
+                if ($(".editorOut99 input").val() == "") {
+                    $(".editorOut99 input").addClass("is-invalid");
+                    $(".editorOut99 .errMsg").text('Paragraph is required');
                     valid = false
                 } else {
-                    $(".editorOut11 input").removeClass("is-invalid");
+                    $(".editorOut99 input").removeClass("is-invalid");
                 }
-
                 if (!brand_2_p.value.trim() || brand_2_p.value.trim() === '<p><br></p>') {
-                    $('.editorOut99 .errMsg').text('Paragraph is required.');
+                    $('.editorOut11 .errMsg').text('Paragraph is required.');
                     valid = false;
                 }
+
+                // if (!brand_2_p.value.trim() || brand_2_p.value.trim() === '<p><br></p>') {
+                //     $('.editorOut99 .errMsg').text('Paragraph is required.');
+                //     valid = false;
+                // }
 
                 if (valid) {
                     this.submit();
@@ -807,19 +811,19 @@
                 } else {
                     $(".editorOut13 input").removeClass("is-invalid");
                 }
-                if ($(".editorOut15 input").val() == "") {
-                    $(".editorOut15 input").addClass("is-invalid");
-                    $(".editorOut15 .errMsg").text('Heading is required');
+                if ($(".editorOut14 input").val() == "") {
+                    $(".editorOut14 input").addClass("is-invalid");
+                    $(".editorOut14 .errMsg").text('Url is required');
                     valid = false
                 } else {
-                    $(".editorOut15 input").removeClass("is-invalid");
+                    $(".editorOut14 input").removeClass("is-invalid");
                 }
 
 
                 if (!brand_3_p.value.trim() || brand_3_p.value.trim() === '<p><br></p>') {
 
 
-                    $('.editorOut14 .errMsg').text('Paragraph is required.');
+                    $('.editorOut15 .errMsg').text('Paragraph is required.');
                     valid = false;
                 }
 
@@ -849,19 +853,19 @@
                 } else {
                     $(".editorOut17 input").removeClass("is-invalid");
                 }
-                if ($(".editorOut19 input").val() == "") {
-                    $(".editorOut19 input").addClass("is-invalid");
-                    $(".editorOut19 .errMsg").text('Heading is required');
+                if ($(".editorOut18 input").val() == "") {
+                    $(".editorOut18 input").addClass("is-invalid");
+                    $(".editorOut18 .errMsg").text('Heading is required');
                     valid = false
                 } else {
-                    $(".editorOut19 input").removeClass("is-invalid");
+                    $(".editorOut18 input").removeClass("is-invalid");
                 }
 
 
                 if (!brand_4_p.value.trim() || brand_4_p.value.trim() === '<p><br></p>') {
 
 
-                    $('.editorOut18 .errMsg').text('Paragraph is required.');
+                    $('.editorOut19 .errMsg').text('Paragraph is required.');
                     valid = false;
                 }
 
@@ -891,19 +895,19 @@
                 } else {
                     $(".editorOut21 input").removeClass("is-invalid");
                 }
-                if ($(".editorOut23 input").val() == "") {
-                    $(".editorOut23 input").addClass("is-invalid");
-                    $(".editorOut23 .errMsg").text('Heading is required');
+                if ($(".editorOut22 input").val() == "") {
+                    $(".editorOut22 input").addClass("is-invalid");
+                    $(".editorOut22 .errMsg").text('Heading is required');
                     valid = false
                 } else {
-                    $(".editorOut23 input").removeClass("is-invalid");
+                    $(".editorOut22 input").removeClass("is-invalid");
                 }
 
 
                 if (!brand_5_p.value.trim() || brand_5_p.value.trim() === '<p><br></p>') {
 
 
-                    $('.editorOut22 .errMsg').text('Paragraph is required.');
+                    $('.editorOut23 .errMsg').text('Paragraph is required.');
                     valid = false;
                 }
 

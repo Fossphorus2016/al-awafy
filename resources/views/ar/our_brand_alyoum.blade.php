@@ -1,3 +1,6 @@
+@php
+    $alyoum = App\Models\Alyoum::where('language', 'arabic')->first();
+@endphp
 <x-arabicLayout>
     <main>
         <section class="heroSection secondBanner brandBanner">
@@ -14,8 +17,9 @@
                     </div>
 
                     <div class="heroInner">
-                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2"> علاماتنا</span>
-                            <span class="fs3">التجارية</span>
+                        <h1 class="waterDropsBefore waterDropsAfter"> <span class="fs2">
+                                {{ $alyoum->banner_h1 ?? '' }}</span>
+                            <span class="fs3">{{ $alyoum->banner_h2 ?? '' }}</span>
                         </h1>
 
                     </div>
@@ -30,14 +34,9 @@
                 <div class="row">
                     <div class=" col-12 d-flex align-item">
                         <div class="aboutInner paraFont text-center">
-                            <h2><span class="fs5">يكتشف</span> <span class="fs6">اليوم </span> </h2>
-                            <p class="mb-5 w-100">
-
-
-                                تقدم اليوم نفس المكسرات عالية الجودة من علامة العوافي، ولكن بكميات أكبر. مثالية
-                                للاستخدام في الأعمال التجارية، المطاعم، والاحتياجات الكبيرة. تقدم اليوم مجموعة متنوعة من
-                                المكسرات في عبوات كبيرة (1 كجم وأكثر)، مما يضمن قيمة ممتازة دون التضحية بالجودة.
-                            </p>
+                            <h2><span class="fs5">{{ $alyoum->section1_h1 ?? '' }} </span> <span
+                                    class="fs6">{{ $alyoum->section1_h2 ?? '' }} </span> </h2>
+                            {!! $alyoum->section1_p ?? '' !!}
 
                         </div>
                     </div>
@@ -50,7 +49,11 @@
                     </div> --}}
                 </div>
                 <div class="aboutBanner2">
-                    <img src="{{ asset('assets/images/items/bannerItem6.png') }}" alt="">
+                    @if ($alyoum && $alyoum->section1_image)
+                        <img src="{{ asset('storage/' . $alyoum->section1_image) }}" alt="">
+                    @else
+                        <img src="{{ asset('assets/images/items/bannerItem6.png') }}" alt="">
+                    @endif
                 </div>
             </div>
         </section>
@@ -62,14 +65,12 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2 style="text-align: end;"><span class="fs7">اليوم</span> <span
-                                        class="fs8">فستق</span> </h2>
-                                <p class="text-white text-end" style="width:100%">
-                                    فستق الیوم یقدم لك فستقًا عالي الجودة متوفرًا بكمیات كبیرة. مثالي للمطاعم
-                                    والمقاھي أو أي عمل یحتاج إلى كمیات كبیرة، یوفر ھذا الفستق نكھة غنیة وأصلیة مع كل
-                                    قضمة. متوفر في عبوات تبدأ من 1 كجم فأكثر، فستق الیوم مثالي لتحضیر أطباق لا تُنسى
-                                    أو كوجبة خفیفة فاخرة
-                                </p>
+                                <h2 style="text-align: end;"><span class="fs7">{{ $alyoum->brand_1_h1 ?? '' }}</span>
+                                    <span class="fs8">{{ $alyoum->brand_1_h2 ?? '' }}</span>
+                                </h2>
+
+                                {!! $alyoum->brand_1_p ?? '' !!}
+
                                 <a href="" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
                                 </a>
@@ -79,8 +80,11 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem18.png') }}"
-                                    alt="">
+                                @if ($alyoum && $alyoum->brand_1_image)
+                                    <img src="{{ asset('storage/' . $alyoum->brand_1_image) }}" alt="">
+                                @else
+                                    <img src="{{ asset('assets/images/items/bannerItem6.png') }}" alt="">
+                                @endif
                             </div>
 
                         </div>
@@ -93,21 +97,24 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem24.png') }}"
-                                    alt="">
+                                < @if ($alyoum && $alyoum->brand_2_image)
+                                    <img class="" src="{{ asset('storage/' . $alyoum->brand_2_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem24.png') }}"
+                                        alt="">
+                                    @endif
                             </div>
 
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2 class="text-end"><span class="fs7">اليوم</span> <span class="fs8"> فول سوداني </span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $alyoum->brand_2_h1 ?? '' }}</span> <span class="fs8"> {{ $alyoum->brand_2_h2 ?? '' }}
+                                    </span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    لمن یبحثون عن فول سوداني فاخر بكمیات كبیرة، یقدم فول سوداني الیوم الحل المثالي. ھذا
-                                    الفول السوداني اللذیذ والمقرمش مثالي للمشترین بالجملة، المطاعم، ومزودي الطعام الذین
-                                    یرغبون في ضمان جودة عالیة في عروضھم دون التضحیة بالقیمة. متوفر في عبوات كبیرة، یضمن
-                                    فول سوداني الیوم الجودة والنضارة مع كل طلب.
+                                    {!! $alyoum->brand_2_p ?? '' !!}
                                 </p>
-                                <a href="" class="mainBtn3" style="align-self: end;">
+                                <a href="{{ $alyoum->brand_2_url ?? '' }}" class="mainBtn3" style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -123,14 +130,13 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2 class="text-end"><span class="fs7">اليوم</span> <span class="fs8">كاجو </span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $alyoum->brand_3_h1 ?? '' }}</span> <span
+                                        class="fs8">{{ $alyoum->brand_3_h2 ?? '' }} </span>
+                                </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    كاجو الیوم یقدم لك مكسرات الكاجو الفاخرة بكمیات كبیرة، مصممة للاستخدام الواسع دون
-                                    التضحیة بالجودة الممتازة. معروف بمذاقھ الزبدي وملمسھ الناعم، ھذا الكاجو مثالي
-                                    للأعمال التي تحتاج إلى مكونات عالیة الجودة بكمیات كبیرة. كاجو الیوم یقدم قیمة
-                                    استثنائیة مع الحفاظ على الطعم الفائق الذي یتوقعھ عملاؤك.
+                                    {!! $alyoum->brand_3_p ?? '' !!}
                                 </p>
-                                <a href="" class="mainBtn1" style="align-self: end;">
+                                <a href="{{ $alyoum->brand_3_url ?? '' }}" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -139,8 +145,13 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem20.png') }}"
-                                    alt="">
+                                @if ($alyoum && $alyoum->brand_3_image)
+                                    <img class="" src="{{ asset('storage/' . $alyoum->brand_3_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem20.png') }}"
+                                        alt="">
+                                @endif
                             </div>
 
                         </div>
@@ -153,23 +164,28 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" style=""
-                                    src="{{ asset('assets/images/items/brandItem21.png') }}" alt="">
+                                @if ($alyoum && $alyoum->brand_4_image)
+                                    <img class="" style=""
+                                        src="{{ asset('storage/' . $alyoum->brand_4_image) }}" alt="">
+                                @else
+                                    <img class="" style=""
+                                        src="{{ asset('assets/images/items/brandItem21.png') }}" alt="">
+                                @endif
                             </div>
 
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2 class="text-end"><span class="fs7">مزیج</span> <span class="fs8"> الیوم الممیز </span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $alyoum->brand_4_h1 ?? '' }}</span>
+                                    <span class="fs8">
+                                        {{ $alyoum->brand_4_h2 ?? '' }}
+                                    </span>
+                                </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    مزیج الیوم الممیز یجمع أفضل ما لدینا من المكسرات – الفستق، الجوز المقشر، اللوز، الفول السوداني،
-                                    والكاجو – في مزیج مثالي، متوفر بكمیات كبیرة. ھذا المزیج الفاخر مثالي للمطاعم،
-                                    الفنادق، والفعالیات التي تحتاج إلى وجبات خفیفة عالیة الجودة. مزیج الیوم الممیز یضمن
-                                    تنوعًا غذائيًا ونكھة لذیذة، مما یوفر الخیار الأمثل للطعم والراحة للاحتیاجات
-                                    واسعة النطاق
-
+                                    {!! $alyoum->brand_4_p ?? '' !!}
                                 </p>
-                                <a href="" class="mainBtn3" style="align-self: end;">
+                                <a href="{{ $alyoum->brand_4_url ?? '' }}" class="mainBtn3"
+                                    style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -185,14 +201,15 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2 class="text-end"><span class="fs7">اليوم</span> <span class="fs8">لوز </span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $alyoum->brand_5_h1 ?? '' }}</span>
+                                    <span class="fs8">{{ $alyoum->brand_5_h2 ?? '' }}
+                                    </span>
+                                </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    لوز الیوم یقدم أفضل أنواع اللوز المنتقاة بعنایة في عبوات كبیرة. ھذا اللوز عالي
-                                    الجودة مثالي للاستخدام التجاري، سواء في الخبز أو الطبخ أو تقدیمھ كوجبة خفیفة صحیة
-                                    بكمیات كبیرة. یتم اختیار لوز الیوم بعنایة للحفاظ على نضارتھ وطعمھ الاستثنائي، مثالي
-                                    للأعمال التي تقدر الجودة والكفاءة
+                                    {!! $alyoum->brand_5_p ?? '' !!}
                                 </p>
-                                <a href="" class="mainBtn1" style="align-self: end;">
+                                <a href="{{ $alyoum->brand_5_url ?? '' }}" class="mainBtn1"
+                                    style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -201,8 +218,13 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="brandInner brandInnerTwo">
-                                <img class="" src="{{ asset('assets/images/items/brandItem22.png') }}"
-                                    alt="">
+                                @if ($alyoum && $alyoum->brand_5_image)
+                                    <img class="" src="{{ asset('storage/' . $alyoum->brand_5_image) }}"
+                                        alt="">
+                                @else
+                                    <img class="" src="{{ asset('assets/images/items/brandItem22.png') }}"
+                                        alt="">
+                                @endif
                             </div>
 
                         </div>

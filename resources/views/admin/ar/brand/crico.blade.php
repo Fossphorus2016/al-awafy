@@ -720,6 +720,7 @@
             const brand_3_p = Jodit.make('#brand_3_p' , joditConfig);
             const brand_4_p = Jodit.make('#brand_4_p' , joditConfig);
             const brand_5_p = Jodit.make('#brand_5_p' , joditConfig);
+            const brand_6_p = Jodit.make('#brand_6_p' , joditConfig);
 
 
             $(".formValidation").submit(function(event) {
