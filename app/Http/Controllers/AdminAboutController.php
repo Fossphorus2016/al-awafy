@@ -42,7 +42,7 @@ class AdminAboutController extends Controller
             $data
         );
 
-        return back()->with('message', 'Meta section updated successfully!');
+        return back()->with('back-success', 'Meta section updated successfully!');
     }
 
 
@@ -68,13 +68,13 @@ class AdminAboutController extends Controller
         );
 
         // Redirect back with a success message
-        return back()->with('message', 'Section 1 updated successfully!');
+        return back()->with('back-success', 'Section 1 updated successfully!');
     }
 
 
     public function admin_section_2(Request $request)
     {
-        
+
         $about = About::where('language', $request->language)->first();
 
         $sec2_image = $about ? $about->sec2_image : null;
@@ -97,7 +97,7 @@ class AdminAboutController extends Controller
         );
 
         // Redirect back with a success message
-        return back()->with('message', 'Section 2 updated successfully!');
+        return back()->with('back-success', 'Section 2 updated successfully!');
     }
 
     public function admin_section_3(Request $request)
@@ -125,6 +125,6 @@ class AdminAboutController extends Controller
         );
 
         // Redirect back with a success message
-        return back()->with('message', 'Section 3 updated successfully!');
+        return back()->with('back-success', 'Section 3 updated successfully!');
     }
 }

@@ -169,7 +169,7 @@ class OurActivityController extends Controller
 
         $activity->save();
 
-        return redirect()->back()->with('success', 'Activity updated successfully');
+        return redirect()->back()->with('back-success', 'Activity updated successfully');
     }
 
 
