@@ -1,10 +1,10 @@
 @php
-    $activity_page = App\Models\OurActivityPage::where('language', 'english')->first();
+    $activity_page = App\Models\OurActivityPage::where('language', 'french')->first();
 @endphp
 
 <x-frenchLayout>
     <main>
-        <section class="heroSection secondBanner activityBanner">
+        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $activity_page->banner_image)}})">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

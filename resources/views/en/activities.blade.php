@@ -4,7 +4,7 @@
 
 <x-layout>
     <main>
-        <section class="heroSection secondBanner activityBanner">
+        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $activity_page->banner_image)}})">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

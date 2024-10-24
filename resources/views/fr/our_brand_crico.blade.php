@@ -3,7 +3,7 @@
 @endphp
 <x-frenchLayout>
     <main>
-        <section class="heroSection secondBanner brandBanner">
+        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $crico->banner_image)}})"+0258>
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

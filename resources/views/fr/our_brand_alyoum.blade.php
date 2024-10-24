@@ -4,7 +4,7 @@
 
 <x-frenchLayout>
     <main>
-        <section class="heroSection secondBanner brandBanner">
+        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $alyoum->banner_image)}})">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

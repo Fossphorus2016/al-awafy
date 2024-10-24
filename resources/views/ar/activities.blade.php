@@ -3,7 +3,7 @@
 @endphp
 <x-arabicLayout>
     <main>
-        <section class="heroSection secondBanner activityBanner">
+        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $activity_page->banner_image)}})">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
@@ -233,7 +233,7 @@
         @endphp
         <section class="activitySection mt-5">
             <div class="customContainer">
-                 
+
 
                 @forelse ($activities as $activity)
                     <div>
