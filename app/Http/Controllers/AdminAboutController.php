@@ -74,6 +74,7 @@ class AdminAboutController extends Controller
 
     public function admin_section_2(Request $request)
     {
+        // return phpinfo();
 
         $about = About::where('language', $request->language)->first();
 

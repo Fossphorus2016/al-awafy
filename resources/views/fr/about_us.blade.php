@@ -5,7 +5,8 @@
 
 <x-frenchLayout>
     <main>
-        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $about->sec1_image)}})">
+        <section class="heroSection secondBanner"
+            style="background-image:({{ URL::asset('storage/' . $about->sec1_image) }})">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
@@ -43,18 +44,24 @@
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center">
                         <div class="aboutInnerImg">
-                            <img class="patternImg" class="w-100"
-                                src="{{ asset('assets/images/shape/pattern12.png') }}" alt="">
-                            <img class="abouteItem aboutItem1" class="w-100"
-                                src="{{ asset('assets/images/items/item1.png') }}" alt="">
-                            <img class="abouteItem aboutItem2" class="w-100"
-                                src="{{ asset('assets/images/items/item2.png') }}" alt="">
-                            <img class="abouteItem aboutItem3" class="w-100"
-                                src="{{ asset('assets/images/items/item3.png') }}" alt="">
-                            <img class="abouteItem aboutItem4" class="w-100"
-                                src="{{ asset('assets/images/items/item4.png') }}" alt="">
-                            <img class="nutsImg" class="w-100" src="{{ asset('assets/images/items/nuts.png') }}"
-                                alt="">
+
+                            @if ($about && $about->sec2_image)
+                                <img src="{{ asset('storage/' . $about->sec2_image) }}" alt="" class="w-100">
+                            @else
+                                <img class="patternImg" class="w-100"
+                                    src="{{ asset('assets/images/shape/pattern12.png') }}" alt="">
+                                <img class="abouteItem aboutItem1" class="w-100"
+                                    src="{{ asset('assets/images/items/item1.png') }}" alt="">
+                                <img class="abouteItem aboutItem2" class="w-100"
+                                    src="{{ asset('assets/images/items/item2.png') }}" alt="">
+                                <img class="abouteItem aboutItem3" class="w-100"
+                                    src="{{ asset('assets/images/items/item3.png') }}" alt="">
+                                <img class="abouteItem aboutItem4" class="w-100"
+                                    src="{{ asset('assets/images/items/item4.png') }}" alt="">
+                                <img class="nutsImg" class="w-100" src="{{ asset('assets/images/items/nuts.png') }}"
+                                    alt="">
+                            @endif
+
                         </div>
                     </div>
                     <div class="col-12 paraFont mt-4 aboutThirdPara">

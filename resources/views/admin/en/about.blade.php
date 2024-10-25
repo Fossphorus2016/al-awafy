@@ -178,9 +178,7 @@
                                         <div class="col-6">
                                             <div>
                                                 <label for="">About Image</label>
-                                                <input type="file" class="form-control " name="sec2_image"
-                                                    id="sec2_image
-                                                    id="imgS11">
+                                                <input type="file" class="form-control " name="sec2_image" >
 
                                                 <p class="text-danger fileError"></p>
                                             </div>
