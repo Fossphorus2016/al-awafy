@@ -3,7 +3,9 @@
 @endphp
 <x-arabicLayout>
     <main>
-        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $activity_page->banner_image)}})">
+
+        <section class="heroSection secondBanner {{ $activity_page->banner_image ? '' : 'activityBanner' }}"
+            style="background-image: url('{{ $activity_page->banner_image ? URL::asset('storage/' . $activity_page->banner_image) : '' }}');">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

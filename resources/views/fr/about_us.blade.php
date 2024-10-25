@@ -5,8 +5,9 @@
 
 <x-frenchLayout>
     <main>
-        <section class="heroSection secondBanner"
-            style="background-image:({{ URL::asset('storage/' . $about->sec1_image) }})">
+        <section class="heroSection secondBanner {{ $about->sec1_image ? '' : 'aboutBanner' }}"
+            style="background-image: url('{{ $about->sec1_image ? URL::asset('storage/' . $about->sec1_image) : '' }}');">
+
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

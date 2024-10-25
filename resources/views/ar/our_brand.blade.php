@@ -3,7 +3,8 @@
 @endphp
 <x-arabicLayout>
     <main>
-        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'.  $alawafy->banner_image)}})">
+        <section class="heroSection secondBanner"
+            style="background-image:({{ URL::asset('storage/' . $alawafy->banner_image) }})">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
@@ -71,7 +72,8 @@
                                     </span>
                                 </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alawafy->brand_1_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $alawafy->brand_1_p ?? '') !!}
+
 
                                 </p>
                                 <a href="{{ $alawafy->brand_1_url ?? '' }}" class="mainBtn1" style="align-self: end;">
@@ -118,7 +120,8 @@
                                     </span>
                                 </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alawafy->brand_2_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $alawafy->brand_2_p ?? '') !!}
+
 
                                 </p>
                                 <a href="{{ $alawafy->brand_2_url ?? '' }}" class="mainBtn3" style="align-self: end;">
@@ -139,7 +142,9 @@
                                 <h2 class="text-end"><span class="fs7">{{ $alawafy->brand_3_h1 ?? '' }}</span> <span
                                         class="fs8">{{ $alawafy->brand_3_h2 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alawafy->brand_3_p ?? '' !!}</p>
+                                    {!! str_replace('&nbsp;', '', $alawafy->brand_3_p ?? '') !!}
+
+                                </p>
                                 <a href="{{ $alawafy->brand_3_url ?? '' }}" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
                                 </a>
@@ -181,9 +186,11 @@
                             <div class="brandInner paraFont " style="width:90%">
                                 <h2 class="text-end"><span class="fs7">{{ $alawafy->brand_4_h1 ?? '' }}</span>
                                     <span class="fs8">{{ $alawafy->brand_4_h2 ?? '' }}
-                                    </span> </h2>
+                                    </span>
+                                </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alawafy->brand_4_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $alawafy->brand_4_p ?? '') !!}
+
                                 </p>
                                 <a href="{{ $alawafy->brand_4_url ?? '' }}"class="mainBtn3" style="align-self: end;">
                                     اتصل بنا
@@ -201,9 +208,11 @@
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
                                 <h2 class="text-end"><span class="fs7">{{ $alawafy->brand_5_h1 ?? '' }}</span>
-                                    <span class="fs8">{{ $alawafy->brand_5_h2 ?? '' }}</span> </h2>
+                                    <span class="fs8">{{ $alawafy->brand_5_h2 ?? '' }}</span>
+                                </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alawafy->brand_5_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $alawafy->brand_5_p ?? '') !!}
+
                                 </p>
                                 <a href="{{ $alawafy->brand_5_url ?? '' }}" class="mainBtn1"
                                     style="align-self: end;">
@@ -245,12 +254,15 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
-                                <h2 class="text-end"><span class="fs7">{{$alawafy->brand_6_h1 ?? ''}}</span> <span class="fs8">{{$alawafy->brand_6_h2 ?? ''}}
+                                <h2 class="text-end"><span class="fs7">{{ $alawafy->brand_6_h1 ?? '' }}</span>
+                                    <span class="fs8">{{ $alawafy->brand_6_h2 ?? '' }}
                                     </span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                     {!!$alawafy->brand_6_p !!}
+                                    {!! str_replace('&nbsp;', '', $alawafy->brand_6_p ?? '') !!}
+
                                 </p>
-                                <a href="{{ $alawafy->brand_6_url ?? '' }}" class="mainBtn3" style="align-self: end;">
+                                <a href="{{ $alawafy->brand_6_url ?? '' }}" class="mainBtn3"
+                                    style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -265,12 +277,14 @@
                     <div class="row ">
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
-                                <h2 class="text-end"><span class="fs7">{{$alawafy->brand_7_h1 ?? ''}}</span> <span
-                                        class="fs8">{{$alawafy->brand_7_h2 ?? ''}}</span> </h2>
+                                <h2 class="text-end"><span class="fs7">{{ $alawafy->brand_7_h1 ?? '' }}</span>
+                                    <span class="fs8">{{ $alawafy->brand_7_h2 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!!$alawafy->brand_7_p !!}
+                                    {!! str_replace('&nbsp;', '', $alawafy->brand_7_p ?? '') !!}
+
                                 </p>
-                                <a href="{{ $alawafy->brand_7_url ?? '' }}" class="mainBtn1" style="align-self: end;">
+                                <a href="{{ $alawafy->brand_7_url ?? '' }}" class="mainBtn1"
+                                    style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
