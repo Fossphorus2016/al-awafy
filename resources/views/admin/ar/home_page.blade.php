@@ -903,7 +903,8 @@
                                                     <div class="col-12">
                                                         <div>
                                                             <label for="">Paragraph</label>
-                                                            <input class="form-control" name="paragraph">
+                                                            <textarea name="paragraph"   class="form-control" cols="30" rows="10"></textarea>
+
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
