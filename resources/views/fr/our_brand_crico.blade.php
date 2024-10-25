@@ -4,8 +4,8 @@
 <x-frenchLayout>
     <main>
 
-        <section class="heroSection secondBanner {{ $crico->banner_image ? '' : 'brandBanner' }}"
-            @if ($crico->banner_image) style="background-image: url('{{ URL::asset('storage/' . $crico->banner_image) }}')" @endif>
+        <section class="heroSection secondBanner {{ isset($crico->banner_image) ? '' : 'brandBanner' }}"
+            @if (isset($crico->banner_image)) style="background-image: url('{{ URL::asset('storage/' . $crico->banner_image) }}')" @endif>
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

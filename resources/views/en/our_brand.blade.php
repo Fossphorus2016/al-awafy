@@ -3,8 +3,8 @@
 @endphp
 <x-layout>
     <main>
-        <section class="heroSection secondBanner {{ $alawafy->banner_image ? '' : 'brandBanner' }}"
-            @if ($alawafy->banner_image) style="background-image: url('{{ URL::asset('storage/' . $alawafy->banner_image) }}')" @endif>
+        <section class="heroSection secondBanner {{ isset($alawafy->banner_image) ? '' : 'brandBanner' }}"
+            @if (isset($alawafy->banner_image)) style="background-image: url('{{ URL::asset('storage/' . $alawafy->banner_image) }}')" @endif>
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

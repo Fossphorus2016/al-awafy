@@ -4,8 +4,8 @@
 <x-arabicLayout>
     <main>
 
-        <section class="heroSection secondBanner {{ $alyoum->banner_image ? '' : 'brandBanner' }}"
-            @if ($alyoum->banner_image) style="background-image: url('{{ URL::asset('storage/' . $alyoum->banner_image) }}')" @endif>
+        <section class="heroSection secondBanner {{ isset($alyoum->banner_image) ? '' : 'brandBanner' }}"
+            @if (isset($alyoum->banner_image)) style="background-image: url('{{ URL::asset('storage/' . $alyoum->banner_image) }}')" @endif>
 
 
             <div class="customContainer">
