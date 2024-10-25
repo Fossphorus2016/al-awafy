@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alawafy</title>
+    <title>{{ $pageTitle }}</title>
 
 
     <meta name="twitter:card" content="summary_large_image">
@@ -13,16 +13,16 @@
 
 
     {{-- meta description  --}}
-    <meta name="description" content="">
+    <meta name="description" content="{{ $metaDescription }}">
     <meta name="keywords" content="food peanuts almonds crico alyoum alawafy">
     <meta name="base-url" content="https://al-awafy.koreintl.com">
     <meta property="og:title" content="Al-Awafy" />
     <meta property="og:image" content="https://al-awafy.koreintl.com/assets/images/logo/logo.png" />
     <meta name="robots" content="follow, index" />
-    <link rel="canonical" href="https://al-awafy.koreintl.com" />
+    <link rel="canonical" href="{{$canonical}}" />
     <meta property="og:locale" content="en_UK" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://al-awafy.koreintl.com" />
+    <meta property="og:url" content="{{$canonical}}" />
     <meta property="og:site_name" content="Al-Awafy" />
     <meta name="author" content="">
     <meta name="description" property="og:description" content="">

@@ -239,77 +239,7 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="row showRow3 gy-4">
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem1.png') }}"
-                                        alt="">
-                                    <label class="fs10 py-2">Alawafy</label>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
-                                    <a href="brand-alawafy" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem2.png') }}"
-                                        alt="">
-                                    <label class="fs10 py-2">Crico</label>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
-                                    <a href="brand-crico" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 brandCardOuter col-12">
-
-                            <div class="brandCard card">
-                                <div class="card-body paraFont py-4">
-                                    <img class="w-100" src="{{ asset('assets/images/items/brandItem4.png') }}"
-                                        alt="">
-                                    <label class="fs10 py-2">Alyoum</label>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis facilis
-                                        magnam, quae odio consequatur Natus sunt.</p>
-                                    <a href="brand-alyoum" class="mainBtn1">VIEW BRAND PRODUCTS</a href="brand-alawafy">
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-                    {{-- <div class="d-flex justify-content-center pt-4" style="gap: 10px">
-
-                        <button
-                            style="  height: 25px;
-                            width: 25px;
-                            background-color: #50A702;
-                            border:none;
-                            color:white;
-                            border-radius: 50%;
-                            display: inline-block;"
-                            class="showBtn1"> 1</button>
-                        <button
-                            style="  height: 25px;
-                            width: 25px;
-                            color:white;
-                            border:none;
-                            background-color: #50A702;
-                            border-radius: 50%;
-                            display: inline-block;"
-                            class="showBtn2"> 2</button>
-                        <button
-                            style="  height: 25px;
-                            width: 25px;
-                            border:none;
-                            color:white;
-                            background-color: #50A702;
-                            border-radius: 50%;
-                            display: inline-block;"
-                            class="showBtn3"> 3</button>
-                    </div> --}}
+                    
                 </div>
             </div>
         </section>

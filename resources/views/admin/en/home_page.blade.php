@@ -1067,7 +1067,7 @@
                                                                         data-bs-dismiss="modal">Close</button>
                                                                     <button type="submit"
                                                                         form="edit_activity{{ $activity->id }}"
-                                                                        class="btn btn-btn-success">Update</button>
+                                                                        class="btn btn-primary">Update</button>
                                                                 </div>
                                                             </div>
                                                         </div>
