@@ -1,7 +1,8 @@
 @php
     $home_english = App\Models\Home::where('language', 'english')->first();
 @endphp
-<x-layout :pageTitle="$home_english->meta_title" :metaDescription="$home_english->meta_description" :canonical="$home_english->canonical">
+<x-layout pageTitle="{{ isset($home_english->meta_title) ?? '' }}" :metaDescription="{{ isset($home_english->meta_description) ?? '' }}" :canonical="{{ isset($home_english->canonical) ?? '' }}">
+
 
     <main>
         <section class="heroSection ">

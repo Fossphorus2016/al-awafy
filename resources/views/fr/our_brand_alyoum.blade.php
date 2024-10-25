@@ -2,7 +2,8 @@
     $alyoum = App\Models\Alyoum::where('language', 'french')->first();
 @endphp
 
-<x-frenchLayout :pageTitle="$alyoum->meta_title" :metaDescription="$alyoum->meta_description" :canonical="$alyoum->canonical">
+<x-frenchLayout pageTitle="{{ isset($alyoum->meta_title) ?? '' }}" :metaDescription="{{ isset($alyoum->meta_description) ?? '' }}" :canonical="{{ isset($alyoum->canonical) ?? '' }}">
+
 
     <main>
         <section class="heroSection secondBanner {{ isset($alyoum->banner_image) ? '' : 'brandBanner' }}"

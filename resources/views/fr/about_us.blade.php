@@ -3,7 +3,9 @@
 
 @endphp
 
-<x-frenchLayout :pageTitle="$about->meta_title" :metaDescription="$about->meta_description" :canonical="$about->canonical">
+
+<x-frenchLayout pageTitle="{{ isset($about->meta_title) ?? '' }}" :metaDescription="{{ isset($about->meta_description) ?? '' }}" :canonical="{{ isset($about->canonical) ?? '' }}">
+
 
     <main>
         <section class="heroSection secondBanner {{ isset($about->sec1_image) ? '' : 'aboutBanner' }}"

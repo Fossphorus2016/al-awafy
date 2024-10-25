@@ -1,7 +1,8 @@
 @php
     $alawafy = App\Models\Alawafy::where('language', 'english')->first();
 @endphp
-<x-layout :pageTitle="$alawafy->meta_title" :metaDescription="$alawafy->meta_description" :canonical="$alawafy->canonical">
+<x-layout pageTitle="{{ isset($alawafy->meta_title) ?? '' }}" :metaDescription="{{ isset($alawafy->meta_description) ?? '' }}" :canonical="{{ isset($alawafy->canonical) ?? '' }}">
+
 
     <main>
         <section class="heroSection secondBanner {{ isset($alawafy->banner_image) ? '' : 'brandBanner' }}"

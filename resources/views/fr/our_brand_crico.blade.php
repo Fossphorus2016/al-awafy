@@ -1,7 +1,8 @@
 @php
     $crico = App\Models\Crico::where('language', 'french')->first();
 @endphp
-<x-frenchLayout :pageTitle="$crico->meta_title" :metaDescription="$crico->meta_description" :canonical="$crico->canonical">
+<x-frenchLayout pageTitle="{{ isset($crico->meta_title) ?? '' }}" :metaDescription="{{ isset($crico->meta_description) ?? '' }}" :canonical="{{ isset($crico->canonical) ?? '' }}">
+
 
     <main>
 

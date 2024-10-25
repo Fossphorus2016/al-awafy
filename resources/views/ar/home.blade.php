@@ -2,7 +2,8 @@
     $home_arabic = App\Models\Home::where('language', 'arabic')->first();
 @endphp
 
-<x-arabicLayout :pageTitle="$home_arabic->meta_title" :metaDescription="$home_arabic->meta_description" :canonical="$home_arabic->canonical">
+<x-arabicLayout pageTitle="{{ isset($home_arabic->meta_title) ?? '' }}" :metaDescription="{{ isset($home_arabic->meta_description) ?? '' }}" :canonical="{{ isset($home_arabic->canonical) ?? '' }}">
+
 
     <main>
         <section class="heroSection ">

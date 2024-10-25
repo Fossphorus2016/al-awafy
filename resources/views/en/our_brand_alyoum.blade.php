@@ -1,7 +1,9 @@
 @php
     $alyoum = App\Models\Alyoum::where('language', 'english')->first();
 @endphp
-<x-layout :pageTitle="$alyoum->meta_title" :metaDescription="$alyoum->meta_description" :canonical="$alyoum->canonical">
+
+<x-layout pageTitle="{{ isset($alyoum->meta_title) ?? '' }}" :metaDescription="{{ isset($alyoum->meta_description) ?? '' }}" :canonical="{{ isset($alyoum->canonical) ?? '' }}">
+
 
     <main>
         <section class="heroSection secondBanner {{ isset($alyoum->banner_image) ? '' : 'brandBanner' }}"

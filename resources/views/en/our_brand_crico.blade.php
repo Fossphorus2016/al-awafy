@@ -1,8 +1,8 @@
 @php
     $crico = App\Models\Crico::where('language', 'english')->first();
 @endphp
+<x-layout pageTitle="{{ isset($crico->meta_title) ?? '' }}" :metaDescription="{{ isset($crico->meta_description) ?? '' }}" :canonical="{{ isset($crico->canonical) ?? '' }}">
 
-<x-layout :pageTitle="$crico->meta_title" :metaDescription="$crico->meta_description" :canonical="$crico->canonical">
 
     <main>
         <section class="heroSection secondBanner {{ isset($crico->banner_image) ? '' : 'brandBanner' }}"

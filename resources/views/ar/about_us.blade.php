@@ -3,7 +3,9 @@
 @endphp
 
 
-<x-arabicLayout :pageTitle="$about->meta_title" :metaDescription="$about->meta_description" :canonical="$about->canonical">
+
+<x-arabicLayout pageTitle="{{ isset($about->meta_title) ?? '' }}" :metaDescription="{{ isset($about->meta_description) ?? '' }}" :canonical="{{ isset($about->canonical) ?? '' }}">
+
 
     <main>
         <section class="heroSection secondBanner {{ isset($about->sec1_image) ? '' : 'aboutBanner' }}"

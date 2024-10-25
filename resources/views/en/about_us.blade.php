@@ -2,7 +2,9 @@
     $about = App\Models\About::where('language', 'english')->first();
 @endphp
 
-<x-layout :pageTitle="$about->meta_title" :metaDescription="$about->meta_description" :canonical="$about->canonical">
+
+<x-layout pageTitle="{{ isset($about->meta_title) ?? '' }}" :metaDescription="{{ isset($about->meta_description) ?? '' }}" :canonical="{{ isset($about->canonical) ?? '' }}">
+
 
 
     <main>
