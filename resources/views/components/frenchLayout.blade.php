@@ -1,7 +1,15 @@
+@props([
+    'pageTitle' => 'Al Aawafy',
+    'metaDescription' => '',
+    'metaKeywords' => '',
+    'metaImage' => '',
+    'canonical' => '',
+])
+
 <!DOCTYPE html>
 <html lang="en">
+<x-head :$pageTitle :$metaDescription :$canonical />
 
-<x-head />
 
 <body style="    overflow-x: hidden;">
 
@@ -24,49 +32,60 @@
 
                         <ul class="navbar-nav justify-content-end ">
                             <li class="nav-item ">
-                                <a class="nav-link fs14 underLineAffect" href="home" style="font-size:12px;">ACCUEIL</a>
+                                <a class="nav-link fs14 underLineAffect" href="home"
+                                    style="font-size:12px;">ACCUEIL</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs14 underLineAffect " href="about" style="font-size:12px;">A PROPOS
+                                <a class="nav-link fs14 underLineAffect " href="about" style="font-size:12px;">A
+                                    PROPOS
                                 </a>
                             </li>
                             {{-- <li class="nav-item ">
                                 <a class="nav-link fs14 underLineAffect" href="brands">Brands</a>
                             </li> --}}
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle fs14 hoverText" href="#"  role="button"
+                                <a class="nav-link dropdown-toggle fs14 hoverText" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
                                     NOS MARQUES
                                 </a>
                                 <ul class="dropdown-menu" style="font-size:12px;">
-                                    <li><a class="dropdown-item" href="brand-alawafy" >Alawafy</a></li>
+                                    <li><a class="dropdown-item" href="brand-alawafy">Alawafy</a></li>
                                     <li><a class="dropdown-item" href="brand-crico">Crico</a></li>
                                     <li><a class="dropdown-item" href="brand-alyoum">Alyoum</a></li>
 
                                 </ul>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fs14 underLineAffect" href="activities" style="font-size:12px;">NOS ACTIVITÉS</a>
+                                <a class="nav-link fs14 underLineAffect" href="activities" style="font-size:12px;">NOS
+                                    ACTIVITÉS</a>
                             </li>
                             <li class="nav-item ">
                                 <div class="dropdown">
-                                    <button class="bg-transparent border-0 btn btn-secondary dropdown-toggle languageSwitcher" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button
+                                        class="bg-transparent border-0 btn btn-secondary dropdown-toggle languageSwitcher"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
                                             <path
                                                 d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
                                         </svg>
                                     </button>
-                                    <ul class="dropdown-menu" style="font-size:12px;" >
-                                        <li><div class="dropdown-item languages"  href="#">Anglaise</div></li>
-                                        <li><div class="dropdown-item languages"  href="#">Français</div></li>
-                                        <li><div class="dropdown-item languages"  href="#">arabe</div></li>
+                                    <ul class="dropdown-menu" style="font-size:12px;">
+                                        <li>
+                                            <div class="dropdown-item languages" href="#">Anglaise</div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-item languages" href="#">Français</div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-item languages" href="#">arabe</div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item ">
-                                <a class="mainBtn1" href="contact-us" style="display: block; font-size:12px;">CONTACTEZ NOUS</a>
+                                <a class="mainBtn1" href="contact-us" style="display: block; font-size:12px;">CONTACTEZ
+                                    NOUS</a>
                             </li>
                         </ul>
 
@@ -95,7 +114,8 @@
                         <!-- Content -->
                         <img class="mb-4" src="{{ asset('assets/images/logo/logo.png') }}" alt="">
                         <p>Suivez-nous sur les réseaux sociaux pour découvrir
-                            nos dernières actualités, promotions spéciales et moments en coulisses. Restez connecté et rejoignez
+                            nos dernières actualités, promotions spéciales et moments en coulisses. Restez connecté et
+                            rejoignez
                             la famille. </p>
                         <div class="heroSliderFooter">
                             <a class="icons fbLink" target="_blank" href="">
@@ -160,7 +180,8 @@
                         <h6 class="mt-5 text-uppercase fw-bold fs-4">
                             ABONNEZ VOUS MAINTENANT
                         </h6>
-                        <p class="my-2">Rejoignez notre communauté et profitez de noix et de collations de qualité premium livrées
+                        <p class="my-2">Rejoignez notre communauté et profitez de noix et de collations de qualité
+                            premium livrées
                             directement dans votre boîte mail !
                         </p>
                         <form class="newsletter_form mt-4" action="{{ route('news.letter.create') }}" method="POST"
@@ -196,7 +217,8 @@
                     </div>
                     <div class="col-lg-6 col-12 privacyPages">
                         <a href="privacy_policy" class="text-white anchorHover">Politique de Confidentialité</a> | <a
-                            class="text-white anchorHover" href="terms_condition"> Conditions Générales d'Utilisation</a>
+                            class="text-white anchorHover" href="terms_condition"> Conditions Générales
+                            d'Utilisation</a>
                     </div>
 
                 </div>

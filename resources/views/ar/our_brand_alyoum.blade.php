@@ -1,7 +1,8 @@
 @php
     $alyoum = App\Models\Alyoum::where('language', 'arabic')->first();
 @endphp
-<x-arabicLayout>
+<x-arabicLayout :pageTitle="$alyoum->meta_title" :metaDescription="$alyoum->meta_description" :canonical="$alyoum->canonical">
+
     <main>
 
         <section class="heroSection secondBanner {{ isset($alyoum->banner_image) ? '' : 'brandBanner' }}"

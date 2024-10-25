@@ -1,7 +1,8 @@
 @php
     $activity_page = App\Models\OurActivityPage::where('language', 'arabic')->first();
 @endphp
-<x-arabicLayout>
+<x-arabicLayout :pageTitle="$activity_page->meta_title" :metaDescription="$activity_page->meta_description" :canonical="$activity_page->canonical">
+
     <main>
 
         <section class="heroSection secondBanner {{ isset($activity_page->banner_image) ? '' : 'activityBanner' }}"

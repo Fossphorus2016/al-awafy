@@ -2,7 +2,8 @@
     $alyoum = App\Models\Alyoum::where('language', 'french')->first();
 @endphp
 
-<x-frenchLayout>
+<x-frenchLayout :pageTitle="$alyoum->meta_title" :metaDescription="$alyoum->meta_description" :canonical="$alyoum->canonical">
+
     <main>
         <section class="heroSection secondBanner {{ isset($alyoum->banner_image) ? '' : 'brandBanner' }}"
             @if (isset($alyoum->banner_image)) style="background-image: url('{{ URL::asset('storage/' . $alyoum->banner_image) }}')" @endif>

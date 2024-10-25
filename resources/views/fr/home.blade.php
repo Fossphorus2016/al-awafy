@@ -2,7 +2,8 @@
     $french = App\Models\Home::where('language', 'french')->first();
 @endphp
 
-<x-frenchLayout>
+<x-frenchLayout :pageTitle="$french->meta_title" :metaDescription="$french->meta_description" :canonical="$french->canonical">
+
     <main>
         <section class="heroSection ">
             <div class="customContainer">

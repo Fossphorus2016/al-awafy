@@ -2,7 +2,9 @@
     $about = App\Models\About::where('language', 'arabic')->first();
 @endphp
 
-<x-arabicLayout>
+
+<x-arabicLayout :pageTitle="$about->meta_title" :metaDescription="$about->meta_description" :canonical="$about->canonical">
+
     <main>
         <section class="heroSection secondBanner {{ isset($about->sec1_image) ? '' : 'aboutBanner' }}"
             @if (isset($about->sec1_image)) style="background-image: url('{{ URL::asset('storage/' . $about->sec1_image) }}')" @endif>
