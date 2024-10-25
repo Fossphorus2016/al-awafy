@@ -1,9 +1,9 @@
 @props([
     'pageTitle' => 'Al Aawafy',
-    'metaDescription' => '',
+    'metaDescription' => 'Al Aawafy',
     'metaKeywords' => '',
     'metaImage' => '',
-    'canonical' => '',
+    'canonical' => 'Al Aawafy',
 ])
 
 <!DOCTYPE html>

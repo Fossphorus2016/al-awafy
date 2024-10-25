@@ -1,4 +1,4 @@
-@props(['pageTitle'=> 'Al Aawafy', 'metaDescription'=> '', 'metaKeywords'=>'', 'metaImage'=>'' , 'canonical'=>''])
+@props(['pageTitle'=> 'Al Aawafy', 'metaDescription'=> 'Al Aawafy', 'metaKeywords'=>'', 'metaImage'=>'' , 'canonical'=>'Al Aawafy'])
 
 <!DOCTYPE html>
 <html lang="en">
