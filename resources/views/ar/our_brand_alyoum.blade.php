@@ -3,7 +3,9 @@
 @endphp
 <x-arabicLayout>
     <main>
-        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $alyoum->banner_image)}})">
+        <section class="heroSection secondBanner {{ $alyoum->banner_image ? '' : 'brandBanner' }}"
+            style="background-image: url('{{ $alyoum->banner_image ? URL::asset('storage/' . $alyoum->banner_image) : '' }}');">
+
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
@@ -110,7 +112,8 @@
                         </div>
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont ">
-                                <h2 class="text-end"><span class="fs7">{{ $alyoum->brand_2_h1 ?? '' }}</span> <span class="fs8"> {{ $alyoum->brand_2_h2 ?? '' }}
+                                <h2 class="text-end"><span class="fs7">{{ $alyoum->brand_2_h1 ?? '' }}</span> <span
+                                        class="fs8"> {{ $alyoum->brand_2_h2 ?? '' }}
                                     </span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
                                     {!! str_replace('&nbsp;', '', $alyoum->brand_2_p ?? '') !!}

@@ -3,7 +3,8 @@
 @endphp
 <x-arabicLayout>
     <main>
-        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $crico->banner_image)}})">
+        <section class="heroSection secondBanner {{ $crico->banner_image ? '' : 'brandBanner' }}"
+            style="background-image: url('{{ $crico->banner_image ? URL::asset('storage/' . $crico->banner_image) : '' }}');">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
@@ -134,7 +135,8 @@
                             <div class="brandInner paraFont" style="width:90%">
                                 <h2 style="text-align: end;"><span class="fs7">{{ $crico->brand_3_h1 ?? '' }}</span>
                                     <span class="fs8">{{ $crico->brand_3_h2 ?? '' }}
-                                    </span> </h2>
+                                    </span>
+                                </h2>
                                 <p class="text-white text-end" style="width:100%">
                                     {!! str_replace('&nbsp;', '', $crico->brand_3_p ?? '') !!}
 
@@ -205,7 +207,7 @@
                                 <p class="text-white text-end" style="width: 100%">
                                     {!! str_replace('&nbsp;', '', $crico->brand_5_p ?? '') !!}
                                 </p>
-                                <a href="{{$crico->brand_5_url ?? ''}}" class="mainBtn1" style="align-self: end;">
+                                <a href="{{ $crico->brand_5_url ?? '' }}" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
                                 </a>
 
@@ -249,7 +251,7 @@
                                 <p class="text-white text-end" style="width: 100%">
                                     {!! str_replace('&nbsp;', '', $crico->brand_6_p ?? '') !!}
 
-                                        </p>
+                                </p>
                                 <a href="" class="mainBtn3" style="align-self: end;">
                                     اتصل بنا
                                 </a>

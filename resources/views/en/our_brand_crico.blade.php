@@ -4,7 +4,8 @@
 
 <x-layout>
     <main>
-        <section class="heroSection secondBanner" style="background-image:({{URL::asset('storage/'. $crico->banner_image)}})">
+        <section class="heroSection secondBanner {{ $crico->banner_image ? '' : 'brandBanner' }}"
+            style="background-image: url('{{ $crico->banner_image ? URL::asset('storage/' . $crico->banner_image) : '' }}');">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

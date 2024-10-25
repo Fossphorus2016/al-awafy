@@ -3,8 +3,9 @@
 @endphp
 <x-arabicLayout>
     <main>
-        <section class="heroSection secondBanner"
-            style="background-image:({{ URL::asset('storage/' . $alawafy->banner_image) }})">
+
+        <section class="heroSection secondBanner {{ $alawafy->banner_image ? '' : 'brandBanner' }}"
+            style="background-image: url('{{ $alawafy->banner_image ? URL::asset('storage/' . $alawafy->banner_image) : '' }}');">
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
@@ -256,7 +257,8 @@
                             <div class="brandInner paraFont " style="width:90%">
                                 <h2 class="text-end"><span class="fs7">{{ $alawafy->brand_6_h1 ?? '' }}</span>
                                     <span class="fs8">{{ $alawafy->brand_6_h2 ?? '' }}
-                                    </span> </h2>
+                                    </span>
+                                </h2>
                                 <p class="text-white text-end" style="width: 100%">
                                     {!! str_replace('&nbsp;', '', $alawafy->brand_6_p ?? '') !!}
 
@@ -278,7 +280,8 @@
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont " style="width:90%">
                                 <h2 class="text-end"><span class="fs7">{{ $alawafy->brand_7_h1 ?? '' }}</span>
-                                    <span class="fs8">{{ $alawafy->brand_7_h2 ?? '' }}</span> </h2>
+                                    <span class="fs8">{{ $alawafy->brand_7_h2 ?? '' }}</span>
+                                </h2>
                                 <p class="text-white text-end" style="width: 100%">
                                     {!! str_replace('&nbsp;', '', $alawafy->brand_7_p ?? '') !!}
 
