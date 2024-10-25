@@ -268,8 +268,8 @@
                         style="overflow: hidden;" kt-hidden-height="250">
 
                         <div class="menu-item">
-                            <a class="menu-link {{ Route::is('admin.our.activity.Arabic') ? 'active' : '' }}"
-                                href="{{ route('admin.our.activity.english') }}"><span class="menu-bullet"><span
+                            <a class="menu-link {{ Route::is('admin.our.activity.arabic') ? 'active' : '' }}"
+                                href="{{ route('admin.our.activity.arabic') }}"><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span class="menu-title">Arabic</span>
                             </a>
                         </div>
@@ -281,8 +281,8 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link {{ Route::is('admin.our.activity.French') ? 'active' : '' }}"
-                                href="{{ route('admin.our.activity.english') }}"><span class="menu-bullet"><span
+                            <a class="menu-link {{ Route::is('admin.our.activity.french') ? 'active' : '' }}"
+                                href="{{ route('admin.our.activity.french') }}"><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span class="menu-title">French</span>
                             </a>
                         </div>

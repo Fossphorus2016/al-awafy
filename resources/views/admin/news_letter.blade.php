@@ -1,6 +1,6 @@
-<x-admin.layouts>
+<x-admin.layouts title="News Letter">
 
-    @section('title', 'News Letter')
+
 
     <div class="container  p-5">
         <h2 class="pb-5">News Letter</h2>

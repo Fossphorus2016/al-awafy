@@ -71,9 +71,17 @@ class OurActivityController extends Controller
         return back()->with(['back-success' => 'Banner updated successfully']);
     }
 
-    public function admin_our_activity_create()
+    public function admin_our_activity_create_en()
     {
         return view('admin.en.activities_create');
+    }
+    public function admin_our_activity_create_ar()
+    {
+        return view('admin.ar.activities_create');
+    }
+    public function admin_our_activity_create_fr()
+    {
+        return view('admin.fr.activities_create');
     }
 
     public function admin_our_activity_store(Request $request)
@@ -119,10 +127,22 @@ class OurActivityController extends Controller
         return redirect()->route($route)->with('back-success', 'Activity Added Successfully');
     }
 
-    public function admin_our_activity_edit($id)
+    public function admin_our_activity_edit_english($id)
     {
         $activity = OurActivity::find($id);
         return view('admin.en.activities_edit', compact('activity'));
+    }
+
+    public function admin_our_activity_edit_arabic($id)
+    {
+        $activity = OurActivity::find($id);
+        return view('admin.ar.activities_edit', compact('activity'));
+    }
+
+    public function admin_our_activity_edit_french($id)
+    {
+        $activity = OurActivity::find($id);
+        return view('admin.fr.activities_edit', compact('activity'));
     }
 
 
@@ -167,6 +187,7 @@ class OurActivityController extends Controller
         $activity->update([
 
             'images' => json_encode($updatedImages),
+            'language' => $request->language,
             'heading_1' => $request->heading_1,
             'heading_2' => $request->heading_2,
             'paragraph' => $request->paragraph,

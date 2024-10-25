@@ -10,6 +10,7 @@ use App\Http\Controllers\AlyoumController;
 use App\Http\Controllers\CircoController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\OurActivityController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -132,6 +133,27 @@ Route::prefix('Fr')->group(function () {
 Route::post('/contact/create', [FormController::class, 'contact_create'])->name('contact.create');
 Route::post('/news-letter/create', [FormController::class, 'news_letter_create'])->name('news.letter.create');
 
+
+
+
+
+
+Route::get('/clear-cache', function () {
+    Artisan::call('route:clear');
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('view:clear');
+    Artisan::call('config:cache');
+
+    // Check if storage link exists before linking
+    $storageLink = public_path('storage');
+    if (!is_link($storageLink)) {
+        Artisan::call('storage:link');
+    }
+
+    return response()->json(['status' => 'success', 'message' => 'All caches cleared successfully']);
+});
+
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
@@ -202,10 +224,15 @@ Route::group(['middleware' => 'auth'], function () {
     // Activity routes
     Route::post('admin/our-activity-meta/store', [OurActivityController::class, 'admin_our_activity_meta'])->name('admin.our.activity.meta');
     Route::post('admin/our-activity-banner/store', [OurActivityController::class, 'admin_our_activity_banner'])->name('admin.our.activity.banner');
-    
-    Route::get('admin/our-activity-create',[OurActivityController::class, 'admin_our_activity_create'])->name('admin.our.activity.create');
+
+    Route::get('admin/our-activity-create-english', [OurActivityController::class, 'admin_our_activity_create_en'])->name('admin.our.activity.create.english');
+    Route::get('admin/our-activity-create-arabic', [OurActivityController::class, 'admin_our_activity_create_ar'])->name('admin.our.activity.create.arabic');
+    Route::get('admin/our-activity-create-french', [OurActivityController::class, 'admin_our_activity_create_fr'])->name('admin.our.activity.create.french');
+
     Route::post('admin/our-activity-/store', [OurActivityController::class, 'admin_our_activity_store'])->name('admin.our.activity.store');
-    Route::get('/admin/our/activity/edit/{id}', [OurActivityController::class, 'admin_our_activity_edit'])->name('admin.our.activity.edit');
+    Route::get('/admin/our/activity/edit-english/{id}', [OurActivityController::class, 'admin_our_activity_edit_english'])->name('admin.our.activity.edit.english');
+    Route::get('/admin/our/activity/edit-arabic/{id}', [OurActivityController::class, 'admin_our_activity_edit_arabic'])->name('admin.our.activity.edit.arabic');
+    Route::get('/admin/our/activity/edit-french/{id}', [OurActivityController::class, 'admin_our_activity_edit_french'])->name('admin.our.activity.edit.french');
     Route::put('/admin/our/activity/update/{id}', [OurActivityController::class, 'admin_our_activity_update'])->name('admin.our.activity.update');
 
 

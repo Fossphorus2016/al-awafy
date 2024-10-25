@@ -6,7 +6,7 @@
             <div class="card-header px-0 align-content-center mb-5">
                 <h2 class="fs-1 card-title primaryClr fw-bolder">Edit Activity</h2>
 
-                <a href="{{ route('admin.our.activity.english') }}" class="btn btn-primary">Back</a>
+                <a href="{{ route('admin.our.activity.arabic') }}" class="btn btn-primary">Back</a>
             </div>
             <div class="col-md-12">
                 <div class="card-body">
@@ -15,7 +15,7 @@
                         @csrf
                         @method('PUT')
 
-                        <input type="hidden" name="language" value="english" id="">
+                        <input type="hidden" name="language" value="arabic" id="">
                         <div class="card rounded-2 shadow mb-4">
                             <div class="card-header bg-light py-3 text-center">
                                 <h5 class="mb-0">Activity Content</h5>

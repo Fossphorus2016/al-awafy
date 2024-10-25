@@ -1,6 +1,6 @@
-<x-admin.layouts>
+<x-admin.layouts title="Contact Form">
 
-    @section('title', 'Contact Form')
+
 
 
     <div class="container p-5">
