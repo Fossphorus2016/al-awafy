@@ -240,7 +240,7 @@
         </section>
 
 
-        <x-alyoumletsConnect />
+        <x-letsConnect />
 
     </main>
 </x-alyoumLayout>
