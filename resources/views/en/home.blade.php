@@ -56,7 +56,7 @@
                                     {{ $home_english->banner_3_h1 ?? '' }}
                                 </span>
                                 <br>
-                                <span class="fs3">{{ $home_english->banner_3_h1 ?? '' }}</span>
+                                <span class="fs3">{{ $home_english->banner_3_h2 ?? '' }}</span>
                             </h1>
                             <p class="fs4">
 
