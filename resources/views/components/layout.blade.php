@@ -1,7 +1,10 @@
+@props(['pageTitle'=> 'Al Aawafy', 'metaDescription'=> '', 'metaKeywords'=>'', 'metaImage'=>'' , 'canonical'=>''])
+
+
 <!DOCTYPE html>
 <html lang="en">
 
-<x-head />
+<x-head :$pageTitle  :$metaDescription  :$canonical  />
 
 <body style="overflow-x: hidden;">
 

@@ -1,7 +1,8 @@
 @php
     $alawafy = App\Models\Alawafy::where('language', 'english')->first();
 @endphp
-<x-layout>
+<x-layout :pageTitle="$alawafy->meta_title" :metaDescription="$alawafy->meta_description" :canonical="$alawafy->canonical">
+
     <main>
         <section class="heroSection secondBanner {{ isset($alawafy->banner_image) ? '' : 'brandBanner' }}"
             @if (isset($alawafy->banner_image)) style="background-image: url('{{ URL::asset('storage/' . $alawafy->banner_image) }}')" @endif>

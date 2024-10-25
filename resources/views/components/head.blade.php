@@ -1,3 +1,4 @@
+@props(['pageTitle'=> 'Al Aawafy', 'metaDescription'=> '', 'metaKeywords'=>'', 'metaImage'=>'' , 'canonical'=>''])
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

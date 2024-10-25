@@ -2,7 +2,8 @@
     $crico = App\Models\Crico::where('language', 'english')->first();
 @endphp
 
-<x-layout>
+<x-layout :pageTitle="$crico->meta_title" :metaDescription="$crico->meta_description" :canonical="$crico->canonical">
+
     <main>
         <section class="heroSection secondBanner {{ isset($crico->banner_image) ? '' : 'brandBanner' }}"
             @if (isset($crico->banner_image)) style="background-image: url('{{ URL::asset('storage/' . $crico->banner_image) }}')" @endif>

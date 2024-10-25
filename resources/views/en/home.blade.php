@@ -1,7 +1,8 @@
 @php
     $home_english = App\Models\Home::where('language', 'english')->first();
 @endphp
-<x-layout>
+<x-layout :pageTitle="$home_english->meta_title" :metaDescription="$home_english->meta_description" :canonical="$home_english->canonical">
+
     <main>
         <section class="heroSection ">
             <div class="customContainer">
@@ -239,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>

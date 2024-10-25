@@ -2,7 +2,8 @@
     $activity_page = App\Models\OurActivityPage::where('language', 'english')->first();
 @endphp
 
-<x-layout>
+<x-layout :pageTitle="$activity_page->meta_title" :metaDescription="$activity_page->meta_description" :canonical="$activity_page->canonical">
+
     <main>
         <section class="heroSection secondBanner {{ isset($activity_page->banner_image) ? '' : 'activityBanner' }}"
             @if (isset($activity_page->banner_image)) style="background-image: url('{{ URL::asset('storage/' . $activity_page->banner_image) }}')" @endif>
