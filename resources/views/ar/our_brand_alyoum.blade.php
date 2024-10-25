@@ -3,8 +3,10 @@
 @endphp
 <x-arabicLayout>
     <main>
+
         <section class="heroSection secondBanner {{ $alyoum->banner_image ? '' : 'brandBanner' }}"
-            style="background-image: url('{{ $alyoum->banner_image ? URL::asset('storage/' . $alyoum->banner_image) : '' }}');">
+            @if ($alyoum->banner_image) style="background-image: url('{{ URL::asset('storage/' . $alyoum->banner_image) }}')" @endif>
+
 
             <div class="customContainer">
                 <div class="heroSliderOuter">

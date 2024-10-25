@@ -5,7 +5,7 @@
 <x-arabicLayout>
     <main>
         <section class="heroSection secondBanner {{ $about->sec1_image ? '' : 'aboutBanner' }}"
-            style="background-image: url('{{ $about->sec1_image ? URL::asset('storage/' . $about->sec1_image) : '' }}');">
+            @if ($about->sec1_image) style="background-image: url('{{ URL::asset('storage/' . $about->sec1_image) }}')" @endif>
 
             <div class="customContainer">
                 <div class="heroSliderOuter">

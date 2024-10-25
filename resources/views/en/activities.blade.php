@@ -5,7 +5,7 @@
 <x-layout>
     <main>
         <section class="heroSection secondBanner {{ $activity_page->banner_image ? '' : 'activityBanner' }}"
-            style="background-image: url('{{ $activity_page->banner_image ? URL::asset('storage/' . $activity_page->banner_image) : '' }}');">
+            @if ($activity_page->banner_image) style="background-image: url('{{ URL::asset('storage/' . $activity_page->banner_image) }}')" @endif>
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

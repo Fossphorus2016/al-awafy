@@ -4,7 +4,7 @@
 <x-frenchLayout>
     <main>
         <section class="heroSection secondBanner {{ $alawafy->banner_image ? '' : 'brandBanner' }}"
-            style="background-image: url('{{ $alawafy->banner_image ? URL::asset('storage/' . $alawafy->banner_image) : '' }}');">
+            @if ($alawafy->banner_image) style="background-image: url('{{ URL::asset('storage/' . $alawafy->banner_image) }}')" @endif>
             <div class="customContainer">
                 <div class="heroSliderOuter">
 

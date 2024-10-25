@@ -5,7 +5,7 @@
     <main>
 
         <section class="heroSection secondBanner {{ $crico->banner_image ? '' : 'brandBanner' }}"
-            style="background-image: url('{{ $crico->banner_image ? URL::asset('storage/' . $crico->banner_image) : '' }}');">
+            @if ($crico->banner_image) style="background-image: url('{{ URL::asset('storage/' . $crico->banner_image) }}')" @endif>
             <div class="customContainer">
                 <div class="heroSliderOuter">
 
