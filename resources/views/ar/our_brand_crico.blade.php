@@ -1,7 +1,8 @@
 @php
     $crico = App\Models\Crico::where('language', 'arabic')->first();
 @endphp
-<x-arabicLayout pageTitle="{{ isset($crico->meta_title) ?? '' }}" :metaDescription="{{ isset($crico->meta_description) ?? '' }}" :canonical="{{ isset($crico->canonical) ?? '' }}">
+<x-arabicLayout pageTitle="{{ isset($crico->meta_title) ? $crico->meta_title : '' }}" metaDescription="{{ isset($crico->meta_description) ? $crico->meta_description : '' }}" canonical="{{ isset($crico->canonical) ? $crico->canonical : '' }}">
+
 
 
     <main>

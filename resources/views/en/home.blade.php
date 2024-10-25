@@ -1,7 +1,7 @@
 @php
     $home_english = App\Models\Home::where('language', 'english')->first();
 @endphp
-<x-layout pageTitle="{{ isset($home_english->meta_title) ?? '' }}" :metaDescription="{{ isset($home_english->meta_description) ?? '' }}" :canonical="{{ isset($home_english->canonical) ?? '' }}">
+<x-layout pageTitle="{{ isset($home_english->meta_title) ? $home_english->meta_title : '' }}" metaDescription="{{ isset($home_english->meta_description) ? $home_english->meta_description : '' }}" canonical="{{ isset($home_english->canonical) ? $home_english->canonical : '' }}">
 
 
     <main>

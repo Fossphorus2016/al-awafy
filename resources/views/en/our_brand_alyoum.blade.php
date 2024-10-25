@@ -2,7 +2,8 @@
     $alyoum = App\Models\Alyoum::where('language', 'english')->first();
 @endphp
 
-<x-layout pageTitle="{{ isset($alyoum->meta_title) ?? '' }}" :metaDescription="{{ isset($alyoum->meta_description) ?? '' }}" :canonical="{{ isset($alyoum->canonical) ?? '' }}">
+<x-layout pageTitle="{{ isset($alyoum->meta_title) ? $alyoum->meta_title : '' }}" metaDescription="{{ isset($alyoum->meta_description) ? $alyoum->meta_description : '' }}" canonical="{{ isset($alyoum->canonical) ? $alyoum->canonical : '' }}">
+
 
 
     <main>

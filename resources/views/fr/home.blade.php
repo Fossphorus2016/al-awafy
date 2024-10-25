@@ -2,7 +2,8 @@
     $french = App\Models\Home::where('language', 'french')->first();
 @endphp
 
-<x-frenchLayout pageTitle="{{ isset($french->meta_title) ?? '' }}" :metaDescription="{{ isset($french->meta_description) ?? '' }}" :canonical="{{ isset($french->canonical) ?? '' }}">
+<x-frenchLayout pageTitle="{{ isset($french->meta_title) ? $french->meta_title : '' }}" metaDescription="{{ isset($french->meta_description) ? $french->meta_description : '' }}" canonical="{{ isset($french->canonical) ? $french->canonical : '' }}">
+
 
 
     <main>

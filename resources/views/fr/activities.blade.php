@@ -2,7 +2,9 @@
     $activity_page = App\Models\OurActivityPage::where('language', 'french')->first();
 @endphp
 
-<x-frenchLayout pageTitle="{{ isset($activity_page->meta_title) ?? '' }}" :metaDescription="{{ isset($activity_page->meta_description) ?? '' }}" :canonical="{{ isset($activity_page->canonical) ?? '' }}">
+
+<x-frenchLayout pageTitle="{{ isset($activity_page->meta_title) ? $activity_page->meta_title : '' }}" metaDescription="{{ isset($activity_page->meta_description) ? $activity_page->meta_description : '' }}" canonical="{{ isset($activity_page->canonical) ? $activity_page->canonical : '' }}">
+
 
     <main>
         <section class="heroSection secondBanner {{ isset($activity_page->banner_image) ? '' : 'activityBanner' }}"

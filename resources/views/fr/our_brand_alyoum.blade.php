@@ -1,8 +1,9 @@
 @php
-    $alyoum = App\Models\Alyoum::where('language', 'french')->first();
+    $alyoum = App\Models\Alyoum::where('language', 'alyoum')->first();
 @endphp
 
-<x-frenchLayout pageTitle="{{ isset($alyoum->meta_title) ?? '' }}" :metaDescription="{{ isset($alyoum->meta_description) ?? '' }}" :canonical="{{ isset($alyoum->canonical) ?? '' }}">
+<x-frenchLayout pageTitle="{{ isset($alyoum->meta_title) ? $alyoum->meta_title : '' }}" metaDescription="{{ isset($alyoum->meta_description) ? $alyoum->meta_description : '' }}" canonical="{{ isset($alyoum->canonical) ? $alyoum->canonical : '' }}">
+
 
 
     <main>
@@ -239,7 +240,7 @@
         </section>
 
 
-        <x-frenchletsConnect />
+        <x-alyoumletsConnect />
 
     </main>
-</x-frenchLayout>
+</x-alyoumLayout>

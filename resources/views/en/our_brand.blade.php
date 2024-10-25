@@ -1,7 +1,8 @@
 @php
     $alawafy = App\Models\Alawafy::where('language', 'english')->first();
 @endphp
-<x-layout pageTitle="{{ isset($alawafy->meta_title) ?? '' }}" :metaDescription="{{ isset($alawafy->meta_description) ?? '' }}" :canonical="{{ isset($alawafy->canonical) ?? '' }}">
+<x-layout pageTitle="{{ isset($alawafy->meta_title) ? $alawafy->meta_title : '' }}" metaDescription="{{ isset($alawafy->meta_description) ? $alawafy->meta_description : '' }}" canonical="{{ isset($alawafy->canonical) ? $alawafy->canonical : '' }}">
+
 
 
     <main>

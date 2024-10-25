@@ -4,7 +4,9 @@
 @endphp
 
 
-<x-frenchLayout pageTitle="{{ isset($about->meta_title) ?? '' }}" :metaDescription="{{ isset($about->meta_description) ?? '' }}" :canonical="{{ isset($about->canonical) ?? '' }}">
+
+<x-frenchLayout pageTitle="{{ isset($about->meta_title) ? $about->meta_title : '' }}" metaDescription="{{ isset($about->meta_description) ? $about->meta_description : '' }}" canonical="{{ isset($about->canonical) ? $about->canonical : '' }}">
+
 
 
     <main>
