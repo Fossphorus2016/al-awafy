@@ -88,7 +88,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>
+                                                <label for="banner_1_image">Banner Image</label> <span class="text-danger"> * Dimensions: 1140 x 450</span>
                                                 <input type="file" class="form-control " name="banner_image"
                                                     id="bannerImageInput1">
 

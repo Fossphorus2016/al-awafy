@@ -130,7 +130,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>
+                                                <label for="banner_1_image">Banner Image</label><span class="text-danger"> * Dimensions: 950 x 450</span>
                                                 <input type="file" class="form-control" name="banner_1_image"
                                                     id="imgS1">
                                                 @error('banner_1_image')
@@ -205,7 +205,7 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Banner Image</label>
+                                                <label for="">Banner Image</label> <span class="text-danger"> * Dimensions: 950 x 450</span>
                                                 <input type="file" class="form-control" id="imgS2"
                                                     name="banner_2_image">
                                                 <p class="errMsg text-danger">
@@ -277,7 +277,7 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Banner Image</label>
+                                                <label for="">Banner Image</label> <span class="text-danger"> * Dimensions: 950 x 450</span>
                                                 <input type="file" class="form-control" id="imgS3"
                                                     name="banner_3_image">
                                                 <p class="errMsg text-danger">
@@ -359,7 +359,7 @@
                                     <div class="col-12">
 
                                         <div>
-                                            <label for="">About Image</label>
+                                            <label for="">About Image</label> <span class="text-danger"> * Dimensions: 460 x 300</span>
                                             <input type="file" class="form-control" name="about_section_image"
                                                 id="aboutImageInput1">
                                             <p class="errMsg text-danger"></p>
@@ -439,7 +439,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label>
+                                            <label for="">Value</label> <span class="text-danger"> * Dimensions: 180 x 185</span>
                                             <input type="file" class="form-control" id="valueImageInput1"
                                                 name="our_value_1_image">
                                             <p class="errMsg text-danger"></p>
@@ -450,11 +450,11 @@
                                         @if ($home_english && $home_english->our_value_1_image)
                                             <img src="{{ asset('storage/' . $home_english->our_value_1_image) }}"
                                                 alt="Uploaded Image" id="uploadedAboutImage1"
-                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                                style="background-color:lightgrey; max-width: 180px; width: 100%; height: 185px; object-fit: contain;">
                                         @else
                                             <img src="{{ asset('assets/images/download (4).png') }}"
                                                 alt="Default Image" id="uploadedAboutImage1"
-                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                                style="background-color:lightgrey; max-width: 180px; width: 100%; height: 185px; object-fit: contain;">
                                         @endif
                                     </div>
                                     <div class="col-6">
@@ -469,7 +469,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label>
+                                            <label for="">Value</label> <span class="text-danger"> * Dimensions: 180 x 185</span>
                                             <input type="file" class="form-control" name="our_value_2_image"
                                                 id="valueImageInput2">
                                             <p class="errMsg text-danger"></p>
@@ -479,17 +479,17 @@
                                         @if ($home_english && $home_english->our_value_2_image)
                                             <img src="{{ asset('storage/' . $home_english->our_value_2_image) }}"
                                                 alt="Uploaded Image" id="uploadedAboutImage1"
-                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                                style="background-color:lightgrey; max-width: 180px; width: 100%; height: 185px; object-fit: contain;">
                                         @else
                                             <img src="{{ asset('assets/images/download (4).png') }}"
                                                 alt="Default Image" id="uploadedAboutImage1"
-                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                                style="background-color:lightgrey; max-width: 180px; width: 100%; height: 185px; object-fit: contain;">
                                         @endif
                                     </div>
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value Title 3</label>
+                                            <label for="">Value Title 3</label> <span class="text-danger"> * Dimensions: 180 x 185</span>
                                             <input class="form-control" name="our_value_3"
                                                 value="{{ old('our_value_3', $home_english->our_value_3 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -508,11 +508,11 @@
                                         @if ($home_english && $home_english->our_value_3_image)
                                             <img src="{{ asset('storage/' . $home_english->our_value_3_image) }}"
                                                 alt="Uploaded Image" id="uploadedAboutImage1"
-                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                                style="background-color:lightgrey; max-width: 180px; width: 100%; height: 185px; object-fit: contain;">
                                         @else
                                             <img src="{{ asset('assets/images/download (4).png') }}"
                                                 alt="Default Image" id="uploadedAboutImage1"
-                                                style="background-color:lightgrey; max-width: 460px; width: 100%; height: 300px; object-fit: contain;">
+                                                style="background-color:lightgrey; max-width: 180px; width: 100%; height: 185px; object-fit: contain;">
                                         @endif
                                     </div>
 
@@ -603,7 +603,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Image</label>
+                                                <label for="">Brand Image</label> <span class="text-danger"> * Dimensions: 300 x 195</span>
                                                 <input type="file" class="form-control" name="our_brand_image_1"
                                                     id="brandImageInput1">
                                                 <p class="text-danger"></p>
@@ -673,7 +673,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Image</label>
+                                                <label for="">Brand Image</label> <span class="text-danger"> * Dimensions: 300 x 195</span>
                                                 <input type="file" class="form-control" name="our_brand_image_2"
                                                     id="brandImageInput1">
                                                 <p class="text-danger"></p>
@@ -742,7 +742,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Image</label>
+                                                <label for="">Brand Image</label> <span class="text-danger"> * Dimensions: 300 x 195</span>
                                                 <input type="file" class="form-control" name="our_brand_image_3"
                                                     id="brandImageInput3">
                                                 <p class="text-danger"></p>
@@ -1067,7 +1067,7 @@
                                                                         data-bs-dismiss="modal">Close</button>
                                                                     <button type="submit"
                                                                         form="edit_activity{{ $activity->id }}"
-                                                                        class="btn btn-warning text-dark">Update</button>
+                                                                        class="btn btn-btn-success">Update</button>
                                                                 </div>
                                                             </div>
                                                         </div>

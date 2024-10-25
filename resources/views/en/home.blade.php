@@ -215,11 +215,11 @@
                             <div class="brandCard card">
                                 <div class="card-body paraFont py-4 pt-2">
                                     @if ($home_english && $home_english->our_brand_logo_3)
-                                        <img class="pb-3"
+                                        <img class="pb-3" style=" width: 128px;"
                                             src="{{ asset('storage/' . $home_english->our_brand_logo_3) }}"
                                             alt="">
                                     @else
-                                        <img class="pb-3" src="{{ asset('assets/images/logo/logo.png') }}"
+                                        <img class="pb-3" style=" width: 128px;" src="{{ asset('assets/images/logo/logo.png') }}"
                                             alt="">
                                     @endif
 
@@ -436,7 +436,7 @@
                         </div>
                     </div> --}}
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mt-4">
                     <a class="mainBtn1" href="activities">View More</a>
                 </div>
             </div>

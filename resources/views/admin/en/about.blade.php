@@ -87,7 +87,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>
+                                                <label for="banner_1_image">Banner Image</label><span class="text-danger"> * Dimensions: 1600 x 460</span>
                                                 <input type="file" class="form-control " name="sec1_image"
                                                     id="bannerImageInput1">
 
@@ -177,7 +177,7 @@
 
                                         <div class="col-6">
                                             <div>
-                                                <label for="">About Image</label>
+                                                <label for="">About Image</label> <span class="text-danger"> * Dimensions: 460 x 460</span>
                                                 <input type="file" class="form-control " name="sec2_image" >
 
                                                 <p class="text-danger fileError"></p>
