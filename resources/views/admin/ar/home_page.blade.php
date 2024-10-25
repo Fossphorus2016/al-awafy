@@ -538,7 +538,8 @@
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
 
-                            <form action="{{ route('home.our.brand') }}" method="POST" class="formValidation1 pb-5">
+                            <form action="{{ route('home.our.brand') }}" method="POST"
+                                class="formValidation1 pb-5">
                                 @csrf
 
                                 <input type="hidden" name="language" value="arabic">
@@ -951,7 +952,8 @@
                                                         <td id="activity_heading_{{ $activity->id }}">
                                                             {{ $activity->heading }}</td>
                                                         <td id="activity_paragraph_{{ $activity->id }}">
-                                                            {{ $activity->paragraph }}</td>
+                                                            {{ Str::words($activity->paragraph, 20) }}
+                                                        </td>
                                                         <td>
                                                             <button type="button"
                                                                 class="btn btn-success btn-sm editbtn"

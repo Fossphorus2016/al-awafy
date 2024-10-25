@@ -1,5 +1,3 @@
-
-
 <x-admin.layouts title="Home | French">
 
     <div class="card">
@@ -984,7 +982,8 @@
                                                         <td id="activity_heading_{{ $activity->id }}">
                                                             {{ $activity->heading }}</td>
                                                         <td id="activity_paragraph_{{ $activity->id }}">
-                                                            {{ $activity->paragraph }}</td>
+                                                            {{ Str::words($activity->paragraph, 20) }}
+                                                        </td>
                                                         <td>
                                                             <button type="button"
                                                                 class="btn btn-success btn-sm editbtn"
