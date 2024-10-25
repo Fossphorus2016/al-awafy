@@ -1,11 +1,8 @@
 @php
-    $alyoum = App\Models\Alyoum::where('language', 'alyoum')->first();
+    $alyoum = App\Models\Alyoum::where('language', 'french')->first();
 @endphp
 
 <x-frenchLayout pageTitle="{{ isset($alyoum->meta_title) ? $alyoum->meta_title : '' }}" metaDescription="{{ isset($alyoum->meta_description) ? $alyoum->meta_description : '' }}" canonical="{{ isset($alyoum->canonical) ? $alyoum->canonical : '' }}">
-
-
-
     <main>
         <section class="heroSection secondBanner {{ isset($alyoum->banner_image) ? '' : 'brandBanner' }}"
             @if (isset($alyoum->banner_image)) style="background-image: url('{{ URL::asset('storage/' . $alyoum->banner_image) }}')" @endif>
