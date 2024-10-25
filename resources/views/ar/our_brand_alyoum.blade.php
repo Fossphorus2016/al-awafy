@@ -69,7 +69,8 @@
                                     <span class="fs8">{{ $alyoum->brand_1_h2 ?? '' }}</span>
                                 </h2>
 
-                                {!! $alyoum->brand_1_p ?? '' !!}
+                                {!! str_replace('&nbsp;', '', $alyoum->brand_1_p ?? '') !!}
+
 
                                 <a href="" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
@@ -112,7 +113,8 @@
                                 <h2 class="text-end"><span class="fs7">{{ $alyoum->brand_2_h1 ?? '' }}</span> <span class="fs8"> {{ $alyoum->brand_2_h2 ?? '' }}
                                     </span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alyoum->brand_2_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $alyoum->brand_2_p ?? '') !!}
+
                                 </p>
                                 <a href="{{ $alyoum->brand_2_url ?? '' }}" class="mainBtn3" style="align-self: end;">
                                     اتصل بنا
@@ -134,7 +136,8 @@
                                         class="fs8">{{ $alyoum->brand_3_h2 ?? '' }} </span>
                                 </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alyoum->brand_3_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $alyoum->brand_3_p ?? '') !!}
+
                                 </p>
                                 <a href="{{ $alyoum->brand_3_url ?? '' }}" class="mainBtn1" style="align-self: end;">
                                     اتصل بنا
@@ -182,7 +185,8 @@
                                     </span>
                                 </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alyoum->brand_4_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $alyoum->brand_4_p ?? '') !!}
+
                                 </p>
                                 <a href="{{ $alyoum->brand_4_url ?? '' }}" class="mainBtn3"
                                     style="align-self: end;">
@@ -206,7 +210,8 @@
                                     </span>
                                 </h2>
                                 <p class="text-white text-end" style="width: 100%">
-                                    {!! $alyoum->brand_5_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $alyoum->brand_5_p ?? '') !!}
+
                                 </p>
                                 <a href="{{ $alyoum->brand_5_url ?? '' }}" class="mainBtn1"
                                     style="align-self: end;">

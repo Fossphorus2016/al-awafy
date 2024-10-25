@@ -253,7 +253,9 @@
                                 <h2><span class="fs7">{{ $crico->brand_1_h1 ?? '' }}</span> <span
                                         class="fs8">{{ $crico->brand_1_h2 ?? '' }}</span> </h2>
                                 <p class="text-white">
-                                    {!! $crico->brand_1_p ?? '' !!}
+
+                                    {!! str_replace('&nbsp;', '', $crico->brand_1_p ?? '') !!}
+
                                 </p>
                                 <a href="{{ $crico->brand_1_url ?? '' }}" class="mainBtn1">
                                     Contact us
@@ -300,7 +302,7 @@
                                 <h2><span class="fs7">{{ $crico->brand_2_h1 ?? '' }}</span> <span
                                         class="fs8">{{ $crico->brand_2_h2 ?? '' }}</span> </h2>
                                 <p class="text-white">
-                                    {!! $crico->brand_2_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $crico->brand_2_p ?? '') !!}
                                 </p>
                                 <a href="{{ $crico->brand_2_url ?? '' }}" class="mainBtn1">
                                     Contact us
@@ -320,7 +322,7 @@
                                 <h2><span class="fs7">{{ $crico->brand_3_h1 ?? '' }}</span> <span
                                         class="fs8">{{ $crico->brand_3_h2 ?? '' }}</span> </h2>
                                 <p class="text-white">
-                                    {!! $crico->brand_3_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $crico->brand_3_p ?? '') !!}
                                 </p>
                                 <a href="{{ $crico->brand_3_url ?? '' }}" class="mainBtn1">
                                     Contact us
@@ -366,7 +368,7 @@
                                 <h2><span class="fs7">{{ $crico->brand_4_h1 ?? '' }}</span> <span
                                         class="fs8">{{ $crico->brand_4_h2 ?? '' }}</span> </h2>
                                 <p class="text-white">
-                                    {!! $crico->brand_4_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $crico->brand_4_p ?? '') !!}
                                 </p>
                                 <a href="{{ $crico->brand_4_url ?? '' }}" class="mainBtn1">
                                     Contact us
@@ -386,7 +388,7 @@
                                 <h2><span class="fs7">{{ $crico->brand_5_h1 ?? '' }}</span> <span
                                         class="fs8">{{ $crico->brand_5_h2 ?? '' }}</span> </h2>
                                 <p class="text-white">
-                                    {!! $crico->brand_5_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $crico->brand_5_p ?? '') !!}
                                 </p>
                                 <a href="{{ $crico->brand_5_url ?? '' }}" class="mainBtn1">
                                     Contact us
@@ -434,7 +436,7 @@
                                 <h2><span class="fs7">{{ $crico->brand_6_h1 ?? '' }}</span> <span
                                         class="fs8">{{ $crico->brand_6_h2 ?? '' }}</span> </h2>
                                 <p class="text-white">
-                                    {!! $crico->brand_6_p ?? '' !!}
+                                    {!! str_replace('&nbsp;', '', $crico->brand_5_p ?? '') !!}
                                 </p>
                                 <a href="{{ $crico->brand_6_url ?? '' }}" class="mainBtn1">
                                     Contact us
