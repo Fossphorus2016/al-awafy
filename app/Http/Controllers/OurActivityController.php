@@ -71,10 +71,14 @@ class OurActivityController extends Controller
         return back()->with(['back-success' => 'Banner updated successfully']);
     }
 
+    public function admin_our_activity_create()
+    {
+        return view('admin.en.activities_create');
+    }
+
     public function admin_our_activity_store(Request $request)
     {
         $request->validate([
-
             'images' => 'required|array', // Ensure it's an array
             'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Validate each image
 
@@ -84,9 +88,9 @@ class OurActivityController extends Controller
         // Check if there are files and store each image
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $path = $image->store('event_news_page', 'public'); // Store each image
+                $path = $image->store('activity', 'public'); // Store each image
 
-
+                // Create an associative array with the URL and image name
                 $imageData[] = [
                     'url' => asset('storage/' . $path), // Generate URL
                     'name' => $image->getClientOriginalName(), // Get the original name of the image
@@ -105,17 +109,24 @@ class OurActivityController extends Controller
 
         ]);
 
-        return back()->with('back-success', 'Activity Added Successfully');
+        $route = match ($request->language) {
+            'french' => 'admin.our.activity.french',
+            'arabic' => 'admin.our.activity.arabic',
+            'english' => 'admin.our.activity.english',
+            default => 'admin.our.activity.english',
+        };
+
+        return redirect()->route($route)->with('back-success', 'Activity Added Successfully');
     }
 
     public function admin_our_activity_edit($id)
     {
         $activity = OurActivity::find($id);
-        return response()->json($activity);  // Send the activity data as JSON
+        return view('admin.en.activities_edit', compact('activity'));
     }
 
 
-    public function admin_our_activity_update(Request $request)
+    public function admin_our_activity_update(Request $request, $id)
     {
         // Validate the input
         $request->validate([
@@ -125,49 +136,50 @@ class OurActivityController extends Controller
         ]);
 
 
-        $activity = OurActivity::find($request->activity_id);
+        $activity = OurActivity::findOrFail($id);
+        $existingImages = $request->input('existing_images', []);
+        $currentImages = json_decode($activity->images, true) ?? [];
+        $deletedImages = array_diff(array_column($currentImages, 'url'), $existingImages);
 
 
-        if (!$activity) {
-            return redirect()->back()->withErrors(['error' => 'Activity not found.']);
+        foreach ($deletedImages as $deletedImage) {
+            $imagePath = str_replace(asset('storage/'), '', $deletedImage);
+            Storage::disk('public')->delete($imagePath);
         }
 
 
-        $activity->heading_1 = $request->heading_1;
-        $activity->heading_2 = $request->heading_2;
-        $activity->paragraph = $request->paragraph;
-
-
-        $existingImages = json_decode($activity->images, true) ?? [];
-
-        if ($request->has('existing_images')) {
-
-            $removedImages = $request->existing_images;
-            $existingImages = array_filter($existingImages, function ($image) use ($removedImages) {
-                return !in_array($image['url'], $removedImages);
-            });
-        }
+        $updatedImages = array_filter($currentImages, function ($image) use ($existingImages) {
+            return in_array($image['url'], $existingImages);
+        });
 
 
         if ($request->hasFile('images')) {
-            $newImages = [];
-
             foreach ($request->file('images') as $image) {
-                $path = $image->store('images', 'public');
-                $newImages[] = ['url' => '/storage/' . $path];
+                $path = $image->store('event_news_page', 'public');
+                $updatedImages[] = [
+                    'url' => asset('storage/' . $path),
+                    'name' => $image->getClientOriginalName(),
+                ];
             }
-
-
-            $existingImages = array_merge($existingImages, $newImages);
         }
 
 
-        $activity->images = json_encode($existingImages);
+        $activity->update([
 
+            'images' => json_encode($updatedImages),
+            'heading_1' => $request->heading_1,
+            'heading_2' => $request->heading_2,
+            'paragraph' => $request->paragraph,
+        ]);
 
-        $activity->save();
+        $route = match ($request->language) {
+            'french' => 'admin.our.activity.french',
+            'arabic' => 'admin.our.activity.arabic',
+            'english' => 'admin.our.activity.english',
+            default => 'admin.our.activity.english',
+        };
 
-        return redirect()->back()->with('back-success', 'Activity updated successfully');
+        return redirect()->route($route)->with('back-success', 'Activity Edited Successfully');
     }
 
 

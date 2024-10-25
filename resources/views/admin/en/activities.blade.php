@@ -128,10 +128,11 @@
                                 <div class="col-md-12">
                                     <div class="card shadow p-5 m-5 ">
                                         <div class="">
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#activity_modal">
+                                            <a href="{{ route('admin.our.activity.create') }}"
+                                                class="btn btn-outline-danger  p-2 float-end">
+
                                                 Add Activity
-                                            </button>
+                                            </a>
 
                                         </div>
 
@@ -156,11 +157,11 @@
                                                                 {{ $activity->heading_1 }} {{ $activity->heading_2 }}
                                                             </td>
                                                             <td>
-                                                                <button type="button"
-                                                                    class="btn btn-success btn-sm editbtn"
-                                                                    onclick="load_section1_modal({{ $activity->id }})">Edit
+                                                                <a href="{{ route('admin.our.activity.edit', $activity->id) }}"
+                                                                    class="btn btn-outline-danger p-2">
 
-                                                                </button>
+                                                                    Edit
+                                                                </a>
                                                                 <form
                                                                     action="{{ route('admin.our.activity.delete', $activity->id) }}"
                                                                     method="POST" class="d-inline"
@@ -177,7 +178,7 @@
                                                         </tr>
                                                     @endforeach
 
-                                                    <div class="modal fade" id="activity_edit_modal" tabindex="-1"
+                                                    {{-- <div class="modal fade" id="activity_edit_modal" tabindex="-1"
                                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-lg">
                                                             <div class="modal-content">
@@ -287,7 +288,7 @@
 
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                 @else
                                                 @endif
 
@@ -316,61 +317,7 @@
     </div>
 
 
-    <div class="modal fade" id="activity_modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create Activity</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="{{ route('admin.our.activity.store') }}" id="activity_form" method="POST"
-                        enctype="multipart/form-data">
-                        @csrf
-                        <input type="hidden" name="language" value="english">
 
-                        <div class="row">
-                            <div class="col-lg-12 mb-3">
-                                <label for="title" class="form-label">Heading 1</label>
-                                <input type="text" name="heading_1" id="heading_1" class="form-control">
-                                <label for="error_heading_1" id="error_heading_1" class="text-danger fw-bold"
-                                    style="display: none">Heading is required</label>
-                            </div>
-
-                            <div class="col-lg-12 mb-3">
-                                <label for="title" class="form-label">Heading 2</label>
-                                <input type="text" name="heading_2" id="heading_2" class="form-control">
-                                <label for="error_heading_2" id="error_heading_2" class="text-danger fw-bold"
-                                    style="display: none">Heading is required</label>
-                            </div>
-
-                            <div class="col-lg-12 mb-3">
-                                <label for="content" class="form-label">Paragraph</label>
-                                <textarea name="paragraph" id="paragraph" class="form-control" cols="10" rows="4"></textarea>
-                                <label for="error_paragraph" id="error_paragraph" class="text-danger fw-bold"
-                                    style="display: none">Paragraph is required</label>
-                            </div>
-
-                            <div class="col-lg-6 mb-3">
-                                <label for="images" class="form-label">Images</label>
-                                <input type="file" name="images[]" id="images" class="form-control"
-                                    accept="image/*" multiple onchange="previewImages(event)">
-                                <label for="error_images" id="error_images" class="text-danger fw-bold"
-                                    style="display: none">At least one image is required</label>
-                            </div>
-
-                            <div id="imagePreview" class="d-flex flex-wrap"></div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" onclick="blog_validate()" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </x-admin.layouts>
 

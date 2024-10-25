@@ -200,11 +200,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/our-activity-french', [OurActivityController::class, 'admin_our_activity_french'])->name('admin.our.activity.french');
 
     // Activity routes
-    Route::post('admin/our-activity-/store', [OurActivityController::class, 'admin_our_activity_store'])->name('admin.our.activity.store');
-    Route::get('/admin/our/activity/{id}', [OurActivityController::class, 'admin_our_activity_edit'])->name('admin.our.activity.edit');
-    Route::put('/admin/our/activity/update/{id}', [OurActivityController::class, 'admin_our_activity_update'])->name('admin.our.activity.update');
     Route::post('admin/our-activity-meta/store', [OurActivityController::class, 'admin_our_activity_meta'])->name('admin.our.activity.meta');
     Route::post('admin/our-activity-banner/store', [OurActivityController::class, 'admin_our_activity_banner'])->name('admin.our.activity.banner');
+    
+    Route::get('admin/our-activity-create',[OurActivityController::class, 'admin_our_activity_create'])->name('admin.our.activity.create');
+    Route::post('admin/our-activity-/store', [OurActivityController::class, 'admin_our_activity_store'])->name('admin.our.activity.store');
+    Route::get('/admin/our/activity/edit/{id}', [OurActivityController::class, 'admin_our_activity_edit'])->name('admin.our.activity.edit');
+    Route::put('/admin/our/activity/update/{id}', [OurActivityController::class, 'admin_our_activity_update'])->name('admin.our.activity.update');
+
 
 
     // Route::get('admin/our-activity-english/update/{id}', [OurActivityController::class, 'admin_our_activity_english'])->name('admin.our.activity.english');
