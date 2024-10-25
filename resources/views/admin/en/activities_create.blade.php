@@ -1,4 +1,4 @@
-<x-admin.layouts title=" Create Event News">
+<x-admin.layouts title=" Create Activity | English">
 
 
 
@@ -198,7 +198,7 @@
             $("#error_heading_2").hide();
         }
 
-         
+
 
 
         if ($("#images").val() == "") {

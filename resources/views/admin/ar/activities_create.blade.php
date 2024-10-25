@@ -1,4 +1,4 @@
-<x-admin.layouts title=" Create Activity">
+<x-admin.layouts title=" Create Activity | Arabic">
 
 
 

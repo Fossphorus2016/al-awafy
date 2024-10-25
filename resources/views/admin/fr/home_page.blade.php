@@ -1,6 +1,6 @@
 
 
-<x-admin.layouts>
+<x-admin.layouts title="Home | French">
 
     <div class="card">
         <div class="card-body">

@@ -1,4 +1,4 @@
-<x-admin.layouts>
+<x-admin.layouts title="Home | English">
 
     <div class="card">
         <div class="card-body">

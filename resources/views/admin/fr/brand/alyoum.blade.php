@@ -1,4 +1,4 @@
-<x-admin.layouts>
+<x-admin.layouts title="Alyoum | French">
     <div class="card">
         <div class="card-body">
             <div class="accordion" id="accordionExample">

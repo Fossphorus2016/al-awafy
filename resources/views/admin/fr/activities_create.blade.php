@@ -1,4 +1,4 @@
-<x-admin.layouts title=" Create Event News">
+<x-admin.layouts title=" Create Activity | French">
 
 
 

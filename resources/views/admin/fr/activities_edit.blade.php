@@ -1,4 +1,4 @@
-<x-admin.layouts title=" Edit Event News">
+<x-admin.layouts title=" Edit Activity | French">
 
 
     <div class="container">

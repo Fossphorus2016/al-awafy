@@ -1,4 +1,4 @@
-<x-admin.layouts>
+<x-admin.layouts title="About | Arabic">
     <div class="card arabicPage">
         <div class="card-body">
             <div class="accordion" id="accordionExample">
