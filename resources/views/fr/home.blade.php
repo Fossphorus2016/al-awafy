@@ -261,10 +261,10 @@
 
                                     @if ($french && $french->our_brand_logo_3)
                                         <img class="pb-3" src="{{ asset('storage/' . $french->our_brand_logo_3) }}"
-                                            alt="">
+                                        style=" width: 128px;"   alt="">
                                     @else
                                         <img style="width: 145px;object-fit: contain;" class="pb-2"
-                                            src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
+                                        style=" width: 128px;"  src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
                                     @endif
                                     @if ($french && $french->our_brand_image_3)
                                         <img class="pb-3 w-100"
@@ -408,7 +408,7 @@
 
 
 
-                     
+
                 </div>
                 <div class="d-flex justify-content-center">
                     <a class="mainBtn1" href="activities">Voir plus</a>

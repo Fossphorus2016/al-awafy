@@ -212,10 +212,10 @@
                                     @if ($home_arabic && $home_arabic->our_brand_logo_3)
                                         <img class="pb-3"
                                             src="{{ asset('storage/' . $home_arabic->our_brand_logo_3) }}"
-                                            alt="">
+                                            style=" width: 128px;" alt="">
                                     @else
                                         <img style="width: 145px;object-fit: contain;" class="pb-2"
-                                            src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
+                                        style=" width: 128px;"    src="{{ asset('assets/images/logo/alyoum.png') }}" alt="">
                                     @endif
 
                                     @if ($home_arabic && $home_arabic->our_brand_image_3)
