@@ -7,7 +7,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                            Meta Section
+                            عنوان ميتا
                         </button>
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -19,7 +19,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta title</label>
+                                            <label for="">عنوان ميتا</label>
                                             <input class="form-control" name="meta_title" id="meta_title"
                                                 value="{{ old('meta_title', $brand_alyoum->meta_title ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -28,7 +28,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta Description</label>
+                                            <label for="">وصف ميتا</label>
                                             <input class="form-control" name="meta_description" id="meta_description"
                                                 value="{{ old('meta_description', $brand_alyoum->meta_description ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -36,7 +36,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div>
-                                            <label for="">Canonical</label>
+                                            <label for="">الكنسي</label>
                                             <input class="form-control" name="canonical" id="canonical"
                                                 value="{{ old('canonical', $brand_alyoum->canonical ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -44,7 +44,7 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -56,7 +56,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero2" aria-expanded="false" aria-controls="collapseZero2">
-                            Banner Section
+                            قسم البانر
                         </button>
                     </h2>
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -69,7 +69,7 @@
                                     <div class="row gy-4">
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_h1">Heading 1</label>
+                                                <label for="banner_h1">عنوان 1</label>
                                                 <input type="text" class="form-control " name="banner_h1"
                                                     id="banner_h1" name="banner_h1" id="banner_h1"
                                                     value="{{ old('banner_h1', $brand_alyoum->banner_h1 ?? '') }}">
@@ -79,7 +79,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_h2">Heading 2</label>
+                                                <label for="banner_h2">عنوان 2</label>
                                                 <input type="text" class="form-control " name="banner_h2"
                                                     id="bannerImageInput2"
                                                     value="{{ old('banner_h2', $brand_alyoum->banner_h2 ?? '') }}">
@@ -89,7 +89,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 1140 x 450</span>
+                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> ** الأبعاد : 1140 × 450</span>
 
                                                 <input type="file" class="form-control " name="banner_image"
                                                     id="imgS51">
@@ -106,7 +106,7 @@
                                             @endif
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -119,7 +119,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Section 2
+                            القسم 2
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -135,7 +135,7 @@
                                         <div class="col-6">
 
                                             <div class="editorOut91">
-                                                <label for="section1_h1">Heading 1</label>
+                                                <label for="section1_h1">عنوان 1</label>
                                                 <input class="form-control" name="section1_h1" id="section1_h1"
                                                     value="{{ old('section1_h1', $brand_alyoum->section1_h1 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
@@ -144,7 +144,7 @@
                                         <div class="col-6">
 
                                             <div class="editorOut92">
-                                                <label for=""> Heading 2</label>
+                                                <label for=""> عنوان 2</label>
                                                 <input class="form-control" name="section1_h2" id="section1_h2"
                                                     value="{{ old('section1_h2', $brand_alyoum->section1_h2 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
@@ -153,14 +153,14 @@
                                         <div class="col-12">
 
                                             <div class="editorOut93">
-                                                <label for="">Paragraph</label>
+                                                <label for="">فقرة</label>
                                                 <textarea name="section1_p" class="form-control" id="section1_p" cols="7" rows="8">{{ old('section1_p', $brand_alyoum->section1_p ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label> <span class="text-danger"> * Dimensions: 1140 x 450</span>
+                                                <label for="banner_1_image">صورة البانر</label> <span class="text-danger"> ** الأبعاد : 1140 × 450</span>
 
                                                 <input type="file" class="form-control " name="section1_image"
                                                     id="section1_image">
@@ -177,7 +177,7 @@
 
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -191,7 +191,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Brands
+                            العلامات التجارية
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -204,7 +204,7 @@
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#collapse11" aria-expanded="true"
                                                 aria-controls="collapse11">
-                                                Item 1
+                                                البند 1
                                             </button>
                                         </h2>
                                         <div id="collapse11" class="accordion-collapse collapse show"
@@ -218,7 +218,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut930">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_1_h1"
                                                                     id="brand_1_h1"
                                                                     value="{{ old('brand_1_h1', $brand_alyoum->brand_1_h1 ?? '') }}"></input>
@@ -228,7 +228,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut94">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_1_h2"
                                                                     id="brand_1_h2"
                                                                     value="{{ old('brand_1_h2', $brand_alyoum->brand_1_h2 ?? '') }}"></input>
@@ -238,7 +238,7 @@
                                                         <div class="col-12">
 
                                                             <div class="editorOut95">
-                                                                <label for="">Paragraph</label>
+                                                                <label for="">فقرة</label>
                                                                 <textarea name="brand_1_p" class="form-control" id="brand_1_p" cols="7" rows="8">{{ old('brand_1_p', $brand_alyoum->brand_1_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
@@ -257,7 +257,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * الأبعاد : 435 × 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_1_image" id="brand_1_image">
@@ -275,7 +275,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -287,7 +287,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse12"
                                                 aria-expanded="false" aria-controls="collapse12">
-                                                item 2
+                                                البند 2
                                             </button>
                                         </h2>
                                         <div id="collapse12" class="accordion-collapse collapse"
@@ -301,7 +301,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut97">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_2_h1"
                                                                     id="brand_2_h1"
                                                                     value="{{ old('brand_2_h1', $brand_alyoum->brand_2_h1 ?? '') }}"></input>
@@ -311,7 +311,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut98">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_2_h2"
                                                                     id="brand_2_h2"
                                                                     value="{{ old('brand_2_h2', $brand_alyoum->brand_2_h2 ?? '') }}"></input>
@@ -321,7 +321,7 @@
                                                         <div class="col-12">
 
                                                             <div class="editorOut11">
-                                                                <label for="">Paragraph</label>
+                                                                <label for="">فقرة</label>
                                                                 <textarea name="brand_2_p" class="form-control" id="brand_2_p" cols="7" rows="8">{{ old('brand_2_p', $brand_alyoum->brand_2_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
@@ -340,7 +340,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * الأبعاد : 435 × 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_2_image" id="brand_2_image">
@@ -358,7 +358,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -370,7 +370,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse13"
                                                 aria-expanded="false" aria-controls="collapse13">
-                                                item 3
+                                                البند 3
                                             </button>
                                         </h2>
                                         <div id="collapse13" class="accordion-collapse collapse"
@@ -384,7 +384,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut12">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_3_h1"
                                                                     id="brand_3_h1"
                                                                     value="{{ old('brand_3_h1', $brand_alyoum->brand_3_h1 ?? '') }}"></input>
@@ -394,7 +394,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut13">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_3_h2"
                                                                     id="brand_3_h2"
                                                                     value="{{ old('brand_3_h2', $brand_alyoum->brand_3_h2 ?? '') }}"></input>
@@ -404,7 +404,7 @@
                                                         <div class="col-12">
 
                                                             <div class="editorOut15">
-                                                                <label for="">Paragraph</label>
+                                                                <label for="">فقرة</label>
                                                                 <textarea name="brand_3_p" class="form-control" id="brand_3_p" cols="7" rows="8">{{ old('brand_3_p', $brand_alyoum->brand_3_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
@@ -423,7 +423,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * الأبعاد : 435 × 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_3_image" id="brand_3_image">
@@ -441,7 +441,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -453,7 +453,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse14"
                                                 aria-expanded="false" aria-controls="collapse14">
-                                                item 4
+                                                البند 4
                                             </button>
                                         </h2>
                                         <div id="collapse14" class="accordion-collapse collapse"
@@ -467,7 +467,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut16">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_4_h1"
                                                                     id="brand_4_h1"
                                                                     value="{{ old('brand_4_h1', $brand_alyoum->brand_4_h1 ?? '') }}"></input>
@@ -477,7 +477,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut17">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_4_h2"
                                                                     id="brand_4_h2"
                                                                     value="{{ old('brand_4_h2', $brand_alyoum->brand_4_h2 ?? '') }}"></input>
@@ -487,7 +487,7 @@
                                                         <div class="col-12">
 
                                                             <div class="editorOut19">
-                                                                <label for="">Paragraph</label>
+                                                                <label for="">فقرة</label>
                                                                 <textarea name="brand_4_p" class="form-control" id="brand_4_p" cols="7" rows="8">{{ old('brand_4_p', $brand_alyoum->brand_4_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
@@ -506,7 +506,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * الأبعاد : 435 × 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_4_image" id="brand_4_image">
@@ -524,7 +524,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -536,7 +536,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse15"
                                                 aria-expanded="false" aria-controls="collapse15">
-                                                item 5
+                                                البند 5
                                             </button>
                                         </h2>
                                         <div id="collapse15" class="accordion-collapse collapse"
@@ -550,7 +550,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut20">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_5_h1"
                                                                     id="brand_5_h1"
                                                                     value="{{ old('brand_5_h1', $brand_alyoum->brand_5_h1 ?? '') }}"></input>
@@ -560,7 +560,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut21">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_5_h2"
                                                                     id="brand_5_h2"
                                                                     value="{{ old('brand_5_h2', $brand_alyoum->brand_5_h2 ?? '') }}"></input>
@@ -570,7 +570,7 @@
                                                         <div class="col-12">
 
                                                             <div class="editorOut23">
-                                                                <label for="">Paragraph</label>
+                                                                <label for="">فقرة</label>
                                                                 <textarea name="brand_5_p" class="form-control" id="brand_5_p" cols="7" rows="8">{{ old('brand_5_p', $brand_alyoum->brand_5_p ?? '') }}</textarea>
 
                                                                 <p class="errMsg text-danger"></p>
@@ -589,7 +589,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * الأبعاد : 435 × 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_5_image" id="brand_5_image">
@@ -607,7 +607,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -691,7 +691,7 @@
 
                 if ($(".editorOut91 input").val() == "") {
                     $(".editorOut91 input").addClass("is-invalid");
-                    $(".editorOut91 .errMsg").text('Heading is required');
+                    $(".editorOut91 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut91 input").removeClass("is-invalid");
@@ -699,14 +699,14 @@
 
                 if ($(".editorOut92 input").val() == "") {
                     $(".editorOut92 input").addClass("is-invalid");
-                    $(".editorOut92 .errMsg").text('Heading is required');
+                    $(".editorOut92 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut92 input").removeClass("is-invalid");
                 }
 
                 if (!section1_p.value.trim() || section1_p.value.trim() === '<p><br></p>') {
-                    $('.editorOut93 .errMsg').text('Paragraph 1 is required.');
+                    $('.editorOut93 .errMsg').text('فقرة 1 is required.');
                     valid = false;
                 }
 
@@ -723,7 +723,7 @@
 
                 if ($(".editorOut930 input").val() == "") {
                     $(".editorOut930 input").addClass("is-invalid");
-                    $(".editorOut930 .errMsg").text('Heading is required');
+                    $(".editorOut930 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut930 input").removeClass("is-invalid");
@@ -731,21 +731,21 @@
 
                 if ($(".editorOut94 input").val() == "") {
                     $(".editorOut94 input").addClass("is-invalid");
-                    $(".editorOut94 .errMsg").text('Heading is required');
+                    $(".editorOut94 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut94 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut96 input").val() == "") {
                     $(".editorOut96 input").addClass("is-invalid");
-                    $(".editorOut96 .errMsg").text('Heading is required');
+                    $(".editorOut96 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut96 input").removeClass("is-invalid");
                 }
 
                 if (!brand_1_p.value.trim() || brand_1_p.value.trim() === '<p><br></p>') {
-                    $('.editorOut95 .errMsg').text('Paragraph is required.');
+                    $('.editorOut95 .errMsg').text('فقرة is required.');
                     valid = false;
                 }
 
@@ -762,7 +762,7 @@
 
                 if ($(".editorOut97 input").val() == "") {
                     $(".editorOut97 input").addClass("is-invalid");
-                    $(".editorOut97 .errMsg").text('Heading is required');
+                    $(".editorOut97 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut97 input").removeClass("is-invalid");
@@ -770,25 +770,25 @@
 
                 if ($(".editorOut98 input").val() == "") {
                     $(".editorOut98 input").addClass("is-invalid");
-                    $(".editorOut98 .errMsg").text('Heading is required');
+                    $(".editorOut98 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut98 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut99 input").val() == "") {
                     $(".editorOut99 input").addClass("is-invalid");
-                    $(".editorOut99 .errMsg").text('Paragraph is required');
+                    $(".editorOut99 .errMsg").text('فقرة is required');
                     valid = false
                 } else {
                     $(".editorOut99 input").removeClass("is-invalid");
                 }
                 if (!brand_2_p.value.trim() || brand_2_p.value.trim() === '<p><br></p>') {
-                    $('.editorOut11 .errMsg').text('Paragraph is required.');
+                    $('.editorOut11 .errMsg').text('فقرة is required.');
                     valid = false;
                 }
 
                 // if (!brand_2_p.value.trim() || brand_2_p.value.trim() === '<p><br></p>') {
-                //     $('.editorOut99 .errMsg').text('Paragraph is required.');
+                //     $('.editorOut99 .errMsg').text('فقرة is required.');
                 //     valid = false;
                 // }
 
@@ -805,7 +805,7 @@
 
                 if ($(".editorOut12 input").val() == "") {
                     $(".editorOut12 input").addClass("is-invalid");
-                    $(".editorOut12 .errMsg").text('Heading is required');
+                    $(".editorOut12 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut12 input").removeClass("is-invalid");
@@ -813,7 +813,7 @@
 
                 if ($(".editorOut13 input").val() == "") {
                     $(".editorOut13 input").addClass("is-invalid");
-                    $(".editorOut13 .errMsg").text('Heading is required');
+                    $(".editorOut13 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut13 input").removeClass("is-invalid");
@@ -830,7 +830,7 @@
                 if (!brand_3_p.value.trim() || brand_3_p.value.trim() === '<p><br></p>') {
 
 
-                    $('.editorOut15 .errMsg').text('Paragraph is required.');
+                    $('.editorOut15 .errMsg').text('فقرة is required.');
                     valid = false;
                 }
 
@@ -847,7 +847,7 @@
 
                 if ($(".editorOut16 input").val() == "") {
                     $(".editorOut16 input").addClass("is-invalid");
-                    $(".editorOut16 .errMsg").text('Heading is required');
+                    $(".editorOut16 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut16 input").removeClass("is-invalid");
@@ -855,14 +855,14 @@
 
                 if ($(".editorOut17 input").val() == "") {
                     $(".editorOut17 input").addClass("is-invalid");
-                    $(".editorOut17 .errMsg").text('Heading is required');
+                    $(".editorOut17 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut17 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut18 input").val() == "") {
                     $(".editorOut18 input").addClass("is-invalid");
-                    $(".editorOut18 .errMsg").text('Heading is required');
+                    $(".editorOut18 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut18 input").removeClass("is-invalid");
@@ -872,7 +872,7 @@
                 if (!brand_4_p.value.trim() || brand_4_p.value.trim() === '<p><br></p>') {
 
 
-                    $('.editorOut19 .errMsg').text('Paragraph is required.');
+                    $('.editorOut19 .errMsg').text('فقرة is required.');
                     valid = false;
                 }
 
@@ -889,7 +889,7 @@
 
                 if ($(".editorOut20 input").val() == "") {
                     $(".editorOut20 input").addClass("is-invalid");
-                    $(".editorOut20 .errMsg").text('Heading is required');
+                    $(".editorOut20 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut20 input").removeClass("is-invalid");
@@ -897,14 +897,14 @@
 
                 if ($(".editorOut21 input").val() == "") {
                     $(".editorOut21 input").addClass("is-invalid");
-                    $(".editorOut21 .errMsg").text('Heading is required');
+                    $(".editorOut21 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut21 input").removeClass("is-invalid");
                 }
                 if ($(".editorOut22 input").val() == "") {
                     $(".editorOut22 input").addClass("is-invalid");
-                    $(".editorOut22 .errMsg").text('Heading is required');
+                    $(".editorOut22 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut22 input").removeClass("is-invalid");
@@ -914,7 +914,7 @@
                 if (!brand_5_p.value.trim() || brand_5_p.value.trim() === '<p><br></p>') {
 
 
-                    $('.editorOut23 .errMsg').text('Paragraph is required.');
+                    $('.editorOut23 .errMsg').text('فقرة is required.');
                     valid = false;
                 }
 

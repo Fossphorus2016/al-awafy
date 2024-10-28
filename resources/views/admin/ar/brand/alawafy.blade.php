@@ -7,7 +7,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                            Meta Section
+                            قسم ميتا
                         </button>
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -19,7 +19,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta title</label>
+                                            <label for="">عنوان ميتا</label>
                                             <input class="form-control" name="meta_title" id="meta_title"
                                                 value="{{ old('meta_title', $brand_alawafy->meta_title ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -36,7 +36,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div>
-                                            <label for="">Canonical</label>
+                                            <label for="">الكنسي</label>
                                             <input class="form-control" name="canonical" id="canonical"
                                                 value="{{ old('canonical', $brand_alawafy->canonical ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -44,7 +44,7 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -56,7 +56,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero2" aria-expanded="false" aria-controls="collapseZero2">
-                            Banner Section
+                            قسم البانر
                         </button>
                     </h2>
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -69,7 +69,7 @@
                                     <div class="row gy-4">
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_h1">Heading 1</label>
+                                                <label for="banner_h1">عنوان 1</label>
                                                 <input type="text" class="form-control " name="banner_h1"
                                                     id="banner_h1" name="banner_h1" id="banner_h1"
                                                     value="{{ old('banner_h1', $brand_alawafy->banner_h1 ?? '') }}">
@@ -79,7 +79,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_h2">Heading 2</label>
+                                                <label for="banner_h2">عنوان 2</label>
                                                 <input type="text" class="form-control " name="banner_h2"
                                                     id="bannerImageInput2"
                                                     value="{{ old('banner_h2', $brand_alawafy->banner_h2 ?? '') }}">
@@ -89,7 +89,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label> <span class="text-danger"> * Dimensions: 1010 x 450</span>
+                                                <label for="banner_1_image">صورة البانر</label> <span class="text-danger"> * Dimensions: 1010 x 450</span>
 
                                                 <input type="file" class="form-control " name="banner_image"
                                                     id="imgS51">
@@ -110,7 +110,7 @@
                                             @endif
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -123,7 +123,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Section 2
+                            القسم 2
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -139,7 +139,7 @@
                                         <div class="col-6">
 
                                             <div class="editorOut91">
-                                                <label for="section1_h1">Heading 1</label>
+                                                <label for="section1_h1">عنوان 1</label>
                                                 <input class="form-control" name="section1_h1" id="section1_h1"
                                                     value="{{ old('section1_h1', $brand_alawafy->section1_h1 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
@@ -148,7 +148,7 @@
                                         <div class="col-6">
 
                                             <div class="editorOut92">
-                                                <label for=""> Heading 2</label>
+                                                <label for=""> عنوان 2</label>
                                                 <input class="form-control" name="section1_h2" id="section1_h2"
                                                     value="{{ old('section1_h2', $brand_alawafy->section1_h2 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
@@ -164,7 +164,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 1140 x 450</span>
+                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * Dimensions: 1140 x 450</span>
 
                                                 <input type="file" class="form-control " name="section1_image"
                                                     id="imgS52">
@@ -185,7 +185,7 @@
 
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -199,7 +199,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Brands
+                            العلامات التجارية
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -226,7 +226,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut930">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_1_h1"
                                                                     id="brand_1_h1"
                                                                     value="{{ old('brand_1_h1', $brand_alawafy->brand_1_h1 ?? '') }}"></input>
@@ -236,7 +236,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut94">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_1_h2"
                                                                     id="brand_1_h2"
                                                                     value="{{ old('brand_1_h2', $brand_alawafy->brand_1_h2 ?? '') }}"></input>
@@ -265,7 +265,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_1_image" id="brand_1_image">
@@ -287,7 +287,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -313,7 +313,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut97">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_2_h1"
                                                                     id="brand_2_h1"
                                                                     value="{{ old('brand_2_h1', $brand_alawafy->brand_2_h1 ?? '') }}"></input>
@@ -323,7 +323,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut98">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_2_h2"
                                                                     id="brand_2_h2"
                                                                     value="{{ old('brand_2_h2', $brand_alawafy->brand_2_h2 ?? '') }}"></input>
@@ -352,7 +352,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_2_image" id="brand_2_image">
@@ -374,7 +374,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -400,7 +400,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut12">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_3_h1"
                                                                     id="brand_3_h1"
                                                                     value="{{ old('brand_3_h1', $brand_alawafy->brand_3_h1 ?? '') }}"></input>
@@ -410,7 +410,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut13">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_3_h2"
                                                                     id="brand_3_h2"
                                                                     value="{{ old('brand_3_h2', $brand_alawafy->brand_3_h2 ?? '') }}"></input>
@@ -439,7 +439,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_3_image" id="brand_3_image">
@@ -461,7 +461,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -487,7 +487,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut16">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_4_h1"
                                                                     id="brand_4_h1"
                                                                     value="{{ old('brand_4_h1', $brand_alawafy->brand_4_h1 ?? '') }}"></input>
@@ -497,7 +497,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut17">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_4_h2"
                                                                     id="brand_4_h2"
                                                                     value="{{ old('brand_4_h2', $brand_alawafy->brand_4_h2 ?? '') }}"></input>
@@ -526,7 +526,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_4_image" id="brand_4_image">
@@ -548,7 +548,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -574,7 +574,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut20">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_5_h1"
                                                                     id="brand_5_h1"
                                                                     value="{{ old('brand_5_h1', $brand_alawafy->brand_5_h1 ?? '') }}"></input>
@@ -584,7 +584,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut21">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_5_h2"
                                                                     id="brand_5_h2"
                                                                     value="{{ old('brand_5_h2', $brand_alawafy->brand_5_h2 ?? '') }}"></input>
@@ -613,7 +613,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_5_image" id="brand_5_image">
@@ -635,7 +635,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -661,7 +661,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut24">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_6_h1"
                                                                     id="brand_6_h1"
                                                                     value="{{ old('brand_6_h1', $brand_alawafy->brand_6_h1 ?? '') }}"></input>
@@ -671,7 +671,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut25">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_6_h2"
                                                                     id="brand_6_h2"
                                                                     value="{{ old('brand_6_h2', $brand_alawafy->brand_6_h2 ?? '') }}"></input>
@@ -700,7 +700,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_6_image" id="brand_6_image">
@@ -722,7 +722,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -748,7 +748,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut28">
-                                                                <label for="">Heading 1</label>
+                                                                <label for="">عنوان 1</label>
                                                                 <input class="form-control" name="brand_7_h1"
                                                                     id="brand_7_h1"
                                                                     value="{{ old('brand_7_h1', $brand_alawafy->brand_7_h1 ?? '') }}"></input>
@@ -758,7 +758,7 @@
                                                         <div class="col-6">
 
                                                             <div class="editorOut29">
-                                                                <label for="">Heading 2</label>
+                                                                <label for="">عنوان 2</label>
                                                                 <input class="form-control" name="brand_7_h2"
                                                                     id="brand_7_h2"
                                                                     value="{{ old('brand_7_h2', $brand_alawafy->brand_7_h2 ?? '') }}"></input>
@@ -787,7 +787,7 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+                                                                <label for="banner_1_image">صورة البانر</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
 
                                                                 <input type="file" class="form-control "
                                                                     name="brand_7_image" id="brand_7_image">
@@ -809,7 +809,7 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">يحفظ</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -914,7 +914,7 @@
 
                 if ($(".editorOut91 input").val() == "") {
                     $(".editorOut91 input").addClass("is-invalid");
-                    $(".editorOut91 .errMsg").text('Heading is required');
+                    $(".editorOut91 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut91 input").removeClass("is-invalid");
@@ -922,7 +922,7 @@
 
                 if ($(".editorOut92 input").val() == "") {
                     $(".editorOut92 input").addClass("is-invalid");
-                    $(".editorOut92 .errMsg").text('Heading is required');
+                    $(".editorOut92 .errMsg").text('عنوان is required');
                     valid = false
                 } else {
                     $(".editorOut92 input").removeClass("is-invalid");
