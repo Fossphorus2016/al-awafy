@@ -89,7 +89,8 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>
+                                                <label for="banner_1_image">Banner Image</label> <span class="text-danger"> * Dimensions: 1010 x 450</span>
+
                                                 <input type="file" class="form-control " name="banner_image"
                                                     id="imgS51">
 
@@ -163,7 +164,8 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>
+                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 1140 x 450</span>
+
                                                 <input type="file" class="form-control " name="section1_image"
                                                     id="imgS52">
 
@@ -263,7 +265,8 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>
+                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+
                                                                 <input type="file" class="form-control "
                                                                     name="brand_1_image" id="brand_1_image">
 
@@ -349,7 +352,8 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>
+                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+
                                                                 <input type="file" class="form-control "
                                                                     name="brand_2_image" id="brand_2_image">
 
@@ -435,7 +439,8 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>
+                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+
                                                                 <input type="file" class="form-control "
                                                                     name="brand_3_image" id="brand_3_image">
 
@@ -521,7 +526,8 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>
+                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+
                                                                 <input type="file" class="form-control "
                                                                     name="brand_4_image" id="brand_4_image">
 
@@ -607,7 +613,8 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>
+                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+
                                                                 <input type="file" class="form-control "
                                                                     name="brand_5_image" id="brand_5_image">
 
@@ -693,7 +700,8 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>
+                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+
                                                                 <input type="file" class="form-control "
                                                                     name="brand_6_image" id="brand_6_image">
 
@@ -779,7 +787,8 @@
 
                                                         <div class="col-6">
                                                             <div>
-                                                                <label for="banner_1_image">Banner Image</label>
+                                                                <label for="banner_1_image">Banner Image</label>  <span class="text-danger"> * Dimensions: 435 x 280</span>
+
                                                                 <input type="file" class="form-control "
                                                                     name="brand_7_image" id="brand_7_image">
 
