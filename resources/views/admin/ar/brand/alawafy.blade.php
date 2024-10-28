@@ -212,7 +212,7 @@
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#collapse11" aria-expanded="true"
                                                 aria-controls="collapse11">
-                                                Item 1
+                                                البند 1
                                             </button>
                                         </h2>
                                         <div id="collapse11" class="accordion-collapse collapse show"
@@ -299,7 +299,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse12"
                                                 aria-expanded="false" aria-controls="collapse12">
-                                                item 2
+                                                البند 2
                                             </button>
                                         </h2>
                                         <div id="collapse12" class="accordion-collapse collapse"
@@ -386,7 +386,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse13"
                                                 aria-expanded="false" aria-controls="collapse13">
-                                                item 3
+                                                البند 3
                                             </button>
                                         </h2>
                                         <div id="collapse13" class="accordion-collapse collapse"
@@ -473,7 +473,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse14"
                                                 aria-expanded="false" aria-controls="collapse14">
-                                                item 4
+                                                البند 4
                                             </button>
                                         </h2>
                                         <div id="collapse14" class="accordion-collapse collapse"
@@ -560,7 +560,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse15"
                                                 aria-expanded="false" aria-controls="collapse15">
-                                                item 5
+                                                البند 5
                                             </button>
                                         </h2>
                                         <div id="collapse15" class="accordion-collapse collapse"
@@ -647,7 +647,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse16"
                                                 aria-expanded="false" aria-controls="collapse16">
-                                                item 6
+                                                البند 6
                                             </button>
                                         </h2>
                                         <div id="collapse16" class="accordion-collapse collapse"
@@ -734,7 +734,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse17"
                                                 aria-expanded="false" aria-controls="collapse17">
-                                                item 7
+                                                البند 7
                                             </button>
                                         </h2>
                                         <div id="collapse17" class="accordion-collapse collapse"
