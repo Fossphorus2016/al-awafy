@@ -57,7 +57,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero2" aria-expanded="false" aria-controls="collapseZero2">
-                            Banner Section
+                            قسم البانر
                         </button>
                     </h2>
                     <div id="collapseZero2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -71,7 +71,7 @@
                                         <div class="col-6">
 
                                             <div class="editorOut12">
-                                                <label for="">Heading 1</label>
+                                                <label for="">العنوان 1</label>
                                                 <input class="form-control" name="sec1_h1"
                                                     value="{{ old('sec1_h1', $about_arabic->sec1_h1 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
@@ -80,7 +80,7 @@
                                         <div class="col-6">
 
                                             <div class="class="editorOut13>
-                                                <label for="">Heading 2</label>
+                                                <label for="">العنوان 2</label>
                                                 <input class="form-control" name="sec1_h2"
                                                     value="{{ old('sec1_h2', $about_arabic->sec1_h2 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
@@ -88,7 +88,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label><span class="text-danger"> * Dimensions: 1600 x 460</span>
+                                                <label for="banner_1_image">صورة البانر</label><span class="text-danger"> الأبعاد  : 1600 × 460</span>
 
                                                 <input type="file" class="form-control " name="sec1_image"
                                                     id="bannerImageInput1">
@@ -108,7 +108,7 @@
 
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -121,7 +121,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            About us section
+                            قسم عنا
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -137,7 +137,7 @@
                                         <div class="col-6">
 
                                             <div class="editorOut10">
-                                                <label for="">Heading 1</label>
+                                                <label for="">العنوان 1</label>
                                                 <input class="form-control" name="sec2_h1"
                                                     value="{{ old('sec2_h1', $about_arabic->sec2_h1 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
@@ -146,7 +146,7 @@
                                         <div class="col-6">
 
                                             <div class="editorOut11">
-                                                <label for="">Heading 2</label>
+                                                <label for="">العنوان 2</label>
                                                 <input class="form-control" name="sec2_h2"
                                                     value="{{ old('sec2_h2', $about_arabic->sec2_h2 ?? '') }}"></input>
                                                 <p class="errMsg text-danger"></p>
@@ -155,7 +155,7 @@
                                         <div class="col-12">
 
                                             <div class="editorOut1">
-                                                <label for="">Paragraph 1</label>
+                                                <label for="">الفقرة 1</label>
                                                 <textarea id="editor1" class="editor1" name="sec2_p1" value="">{{ old('sec2_p1', $about_arabic->sec2_p1 ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
@@ -163,7 +163,7 @@
                                         <div class="col-12">
 
                                             <div class="editorOut2">
-                                                <label for="">Paragraph 2</label>
+                                                <label for="">الفقرة 2</label>
                                                 <textarea id="editor2" class="editor2 " name="sec2_p2" value="">{{ old('sec2_p2', $about_arabic->sec2_p2 ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
@@ -171,7 +171,7 @@
 
                                         <div class="col-6">
                                             <div>
-                                                <label for="">About Image</label> <span class="text-danger"> * Dimensions: 460 x 460</span>
+                                                <label for="">حول الصورة</label> <span class="text-danger">  الأبعاد: 460×460</span>
 
                                                 <input type="file" class="form-control " name="sec2_image"
                                                     id="sec2_image
@@ -192,7 +192,7 @@
 
 
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -206,7 +206,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Our mission and Our vision
+                            مهمتنا ورؤيتنا
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -221,7 +221,7 @@
                                     <div class="row gy-4">
                                         <div class="col-12">
                                             <div class="editorOut4">
-                                                <label for="">Heading 1</label>
+                                                <label for="">العنوان 1</label>
                                                 <input type="text" class="form-control" name="sec3_h1"
                                                     value="{{ old('sec3_h1', $about_arabic->sec3_h1 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -230,7 +230,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="editorOut5">
-                                                <label for="">Heading 2</label>
+                                                <label for="">العنوان 2</label>
                                                 <input type="text" class="form-control" name="sec3_h2"
                                                     value="{{ old('sec3_h2', $about_arabic->sec3_h2 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -239,7 +239,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="editorOut6">
-                                                <label for="">Paragraph 1</label>
+                                                <label for="">الفقرة 1</label>
                                                 <textarea class="editor4" name="sec3_p1" value="">{{ old('sec3_p1', $about_arabic->sec3_p1 ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
@@ -247,7 +247,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="editorOut8">
-                                                <label for="">Heading 1</label>
+                                                <label for="">العنوان 1</label>
                                                 <input type="text" class="form-control" name="sec3_h3"
                                                     value="{{ old('sec3_h3', $about_arabic->sec3_h3 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -256,7 +256,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="editorOut9">
-                                                <label for="">Heading 2</label>
+                                                <label for="">العنوان 2</label>
                                                 <input type="text" class="form-control" name="sec3_h4"
                                                     value="{{ old('sec3_h4', $about_arabic->sec3_h4 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -266,7 +266,7 @@
 
                                         <div class="col-12">
                                             <div class="editorOut7">
-                                                <label for="">Paragraph 1</label>
+                                                <label for="">الفقرة 1</label>
                                                 <textarea class="editor5" name="sec3_p2" value="">{{ old('sec3_p2', $about_arabic->sec3_p2 ?? '') }}</textarea>
                                                 <p class="errMsg text-danger"></p>
                                             </div>
@@ -275,7 +275,7 @@
 
                                         <div class="col-6">
                                             <div>
-                                                <label for="">About Image</label>
+                                                <label for="">حول الصورة</label>
                                                 <input type="file" class="form-control " name="sec3_image"
                                                     id="imgS12">
 
@@ -295,7 +295,7 @@
 
 
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>

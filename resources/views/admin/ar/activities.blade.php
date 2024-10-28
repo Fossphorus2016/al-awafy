@@ -1,5 +1,5 @@
 <x-admin.layouts title="Activity | Arabic">
-    <div class="card">
+    <div class="card arabicPage">
         <div class="card-body">
             <div class="accordion" id="accordionExample">
 
@@ -7,7 +7,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                            Meta Section
+                            قسم ميتا
                         </button>
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -20,7 +20,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta title</label>
+                                            <label for="">عنوان ميتا</label>
                                             <input class="form-control" name="meta_title"
                                                 value="{{ old('meta_title', $activity_page->meta_title ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -29,7 +29,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta Description</label>
+                                            <label for="">وصف ميتا</label>
                                             <input class="form-control" name="meta_description"
                                                 value="{{ old('meta_description', $activity_page->meta_description ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div>
-                                            <label for="">Canonical</label>
+                                            <label for="">الكنسي</label>
                                             <input class="form-control" name="canonical"
                                                 value="{{ old('canonical', $activity_page->canonical ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -45,7 +45,7 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -119,7 +119,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero3" aria-expanded="false" aria-controls="collapseZero3">
-                            Activity
+                            نشاط
                         </button>
                     </h2>
                     <div id="collapseZero3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -131,7 +131,7 @@
                                             <a href="{{ route('admin.our.activity.create.arabic') }}"
                                                 class="btn btn-outline-danger  p-2 float-end">
 
-                                                Add Activity
+                                                أضف نشاط
                                             </a>
 
                                         </div>
@@ -144,8 +144,8 @@
                                             class="table table-row-bordered table-row-gray-600 table-striped table-hover table-responsive gy-5 rounded dataTable">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">Heading</th>
-                                                    <th scope="col">ACTIONS</th>
+                                                    <th scope="col">عنوان</th>
+                                                    <th scope="col">الإجراءات</th>
                                                 </tr>
                                             </thead>
 
@@ -160,7 +160,7 @@
                                                                 <a href="{{ route('admin.our.activity.edit.arabic', $activity->id) }}"
                                                                     class="btn btn-outline-danger p-2">
 
-                                                                    Edit
+                                                                    يحرر
                                                                 </a>
                                                                 <form
                                                                     action="{{ route('admin.our.activity.delete', $activity->id) }}"

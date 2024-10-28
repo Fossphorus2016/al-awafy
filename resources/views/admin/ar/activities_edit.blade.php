@@ -1,12 +1,12 @@
 <x-admin.layouts title=" Edit Activity | Arabic">
 
 
-    <div class="container">
+    <div class="container arabicPage">
         <div class="row justify-content-center my-5 card shadow px-10 py-5">
             <div class="card-header px-0 align-content-center mb-5">
-                <h2 class="fs-1 card-title primaryClr fw-bolder">Edit Activity</h2>
+                <h2 class="fs-1 card-title primaryClr fw-bolder">تحرير النشاط</h2>
 
-                <a href="{{ route('admin.our.activity.arabic') }}" class="btn btn-primary">Back</a>
+                <a href="{{ route('admin.our.activity.arabic') }}" class="btn btn-primary">خلف</a>
             </div>
             <div class="col-md-12">
                 <div class="card-body">
@@ -18,42 +18,39 @@
                         <input type="hidden" name="language" value="arabic" id="">
                         <div class="card rounded-2 shadow mb-4">
                             <div class="card-header bg-light py-3 text-center">
-                                <h5 class="mb-0">Activity Content</h5>
+                                <h5 class="mb-0">محتوى النشاط</h5>
                             </div>
                             <div class="card-body py-15">
                                 <div class="row">
                                     <div class="col-lg-12 mb-3">
-                                        <label for="title" class="form-label">Heading 1</label>
+                                        <label for="title" class="form-label">العنوان 1</label>
                                         <input type="text" name="heading_1" id="heading_1"
                                             value="{{ $activity->heading_1 }}" class="form-control">
                                         <label for="error_heading_1" id="error_heading_1" class="text-danger fw-bold"
-                                            style="display: none">Heading is
-                                            required</label>
+                                            style="display: none">العنوان مطلوب</label>
                                     </div>
 
                                     <div class="col-lg-12 mb-3">
-                                        <label for="title" class="form-label">Heading 2</label>
+                                        <label for="title" class="form-label">العنوان 2</label>
                                         <input type="text" name="heading_2" id="heading_2"
                                             value="{{ $activity->heading_2 }}" class="form-control">
                                         <label for="error_heading_2" id="error_heading_2" class="text-danger fw-bold"
-                                            style="display: none">Heading is
-                                            required</label>
+                                            style="display: none">العنوان مطلوب</label>
                                     </div>
 
                                     <div class="col-lg-12 mb-3">
                                         <label for="content" class="form-label">Paragraph</label>
                                         <textarea name="paragraph" id="paragraph" class="form-control" cols="10" rows="4">{{ $activity->paragraph }}</textarea>
                                         <label for="error_paragraph" id="error_paragraph" class="text-danger fw-bold"
-                                            style="display: none">Paragraph is
-                                            required</label>
+                                            style="display: none">الفقرة مطلوبة</label>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="mb-3">
-                                            <label class="form-label">Images</label>
+                                            <label class="form-label">الصور</label>
                                             <input type="file" name="images[]" id="images" class="form-control"
                                                 accept="image/*" multiple onchange="previewImages(event)">
                                             <label for="" id="error_images" class="text-danger fw-bold"
-                                                style="display: none">Images are required</label>
+                                                style="display: none">الصور مطلوبة</label>
                                         </div>
 
                                         <div id="existing-images">
@@ -62,7 +59,7 @@
                                                     $decodedImages = json_decode($activity->images);
                                                 @endphp
                                                 @if (is_array($decodedImages) && count($decodedImages) > 0)
-                                                    <label class="form-label">Existing Images:</label><br>
+                                                    <label class="form-label">:الصور الموجودة </label><br>
                                                     @foreach ($decodedImages as $image)
                                                         <div class="existing-image"
                                                             style="position: relative; display: inline-block; margin-right: 10px;">
@@ -80,7 +77,7 @@
 
 
                                         <div id="image-previews" class="mb-3">
-                                            <label class="form-label">New Image Previews:</label>
+                                            <label class="form-label">:معاينات الصور الجديدة</label>
                                             <div id="output" style="display: flex; flex-wrap: wrap;"></div>
                                         </div>
 
@@ -92,8 +89,7 @@
                         </div>
 
                         <div class="text-center">
-                            <button type="button" onclick="event_news_validate()"
-                                class="btn btn-primary">Edit</button>
+                            <button type="button" onclick="event_news_validate()" class="btn btn-primary">يحرر</button>
                         </div>
                     </form>
                 </div>

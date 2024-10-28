@@ -1,6 +1,6 @@
 <x-admin.layouts title="Home | Arabic">
 
-    <div class="card">
+    <div class="card arabicPage">
         <div class="card-body">
 
             <div class="accordion" id="accordionExample">
@@ -8,7 +8,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button " type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                            Meta Section
+                            قسم ميتا
                         </button>
                     </h2>
                     <div id="collapseZero" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -22,7 +22,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta title</label>
+                                            <label for="">عنوان ميتا</label>
                                             <input class="form-control" name="meta_title"
                                                 value="{{ $home_arabic->meta_title ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -31,7 +31,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Meta Description</label>
+                                            <label for="">وصف ميتا</label>
                                             <input class="form-control" name="meta_description"
                                                 value="{{ $home_arabic->meta_description ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div>
-                                            <label for="">Canonical</label>
+                                            <label for="">الكنسي</label>
                                             <input class="form-control" name="canonical"
                                                 value="{{ $home_arabic->canonical ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -47,7 +47,7 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -59,7 +59,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Banner Section
+                            قسم البانر
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -67,14 +67,13 @@
 
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                    <a class="nav-link active bannerNavTab1" aria-current="page" href="#">Banner
-                                        1</a>
+                                    <a class="nav-link active bannerNavTab1" aria-current="page" href="#">راية 1</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link bannerNavTab2" aria-current="page" href="#">Banner 2</a>
+                                    <a class="nav-link bannerNavTab2" aria-current="page" href="#">راية 2</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link bannerNavTab3" aria-current="page" href="#">Banner 3</a>
+                                    <a class="nav-link bannerNavTab3" aria-current="page" href="#">راية 3</a>
                                 </li>
 
 
@@ -90,7 +89,7 @@
                                             <input type="hidden" name="language" value="arabic">
 
                                             <div>
-                                                <label for="banner_1_h1">Heading 1</label>
+                                                <label for="banner_1_h1">العنوان 1</label>
                                                 <input type="text" class="form-control" name="banner_1_h1"
                                                     value="{{ old('banner_1_h1', $home_arabic->banner_1_h1 ?? '') }}">
                                                 @error('banner_1_h1')
@@ -100,7 +99,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div>
-                                                <label for="banner_1_h2">Heading 2</label>
+                                                <label for="banner_1_h2">العنوان 2</label>
                                                 <input type="text" class="form-control" name="banner_1_h2"
                                                     value="{{ old('banner_1_h2', $home_arabic->banner_1_h2 ?? '') }}">
                                                 @error('banner_1_h2')
@@ -110,7 +109,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="banner_1_p1">Paragraph 1</label>
+                                                <label for="banner_1_p1">الفقرة 1</label>
                                                 <input type="text" class="form-control" name="banner_1_p1"
                                                     value="{{ old('banner_1_p1', $home_arabic->banner_1_p1 ?? '') }}">
                                                 @error('banner_1_p')
@@ -120,7 +119,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="banner_1_p2">Paragraph 2</label>
+                                                <label for="banner_1_p2">الفقرة 2</label>
                                                 <input type="text" class="form-control" name="banner_1_p2"
                                                     value="{{ old('banner_1_p2', $home_arabic->banner_1_p2 ?? '') }}">
                                                 @error('banner_1_p')
@@ -130,8 +129,8 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label><span
-                                                    class="text-danger"> * Dimensions: 950 x 450</span>
+                                                <label for="banner_1_image">صورة البانر</label><span
+                                                    class="text-danger">الأبعاد* : 950 × 450</span>
                                                 <input type="file" class="form-control" name="banner_1_image"
                                                     id="imgS1">
                                                 @error('banner_1_image')
@@ -152,7 +151,7 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -170,7 +169,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Heading 1</label>
+                                                <label for="">العنوان 1</label>
                                                 <input type="text" class="form-control" name="banner_2_h1"
                                                     value="{{ old('banner_2_h1', $home_arabic->banner_2_h1 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -179,7 +178,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Heading 2</label>
+                                                <label for="">>العنوان 2</label>
                                                 <input type="text" class="form-control" name="banner_2_h2"
                                                     value="{{ old('banner_2_h2', $home_arabic->banner_2_h2 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -188,7 +187,7 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Paragraph 1</label>
+                                                <label for="">الفقرة 1</label>
                                                 <input type="text" class="form-control" name="banner_2_p1"
                                                     value="{{ old('banner_2_p1', $home_arabic->banner_2_p1 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -197,7 +196,7 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Paragraph 2</label>
+                                                <label for="">الفقرة 2</label>
                                                 <input type="text" class="form-control" name="banner_2_p2"
                                                     value="{{ old('banner_2_p2', $home_arabic->banner_2_p2 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -206,8 +205,8 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label><span
-                                                    class="text-danger"> * Dimensions: 950 x 450</span>
+                                                <label for="banner_1_image">صورة البانر</label><span
+                                                    class="text-danger">    الأبعاد*: 950 × 450</span>
                                                 <input type="file" class="form-control" id="imgS2"
                                                     name="banner_2_image">
                                                 <p class="errMsg text-danger">
@@ -227,7 +226,7 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -243,7 +242,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Heading 1</label>
+                                                <label for="">العنوان 1</label>
                                                 <input type="text" class="form-control" name="banner_3_h1"
                                                     value="{{ old('banner_3_h1', $home_arabic->banner_3_h1 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -252,7 +251,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Heading 2</label>
+                                                <label for="">العنوان 2</label>
                                                 <input type="text" class="form-control" name="banner_3_h2"
                                                     value="{{ old('banner_3_h2', $home_arabic->banner_3_h2 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -261,7 +260,7 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Paragraph 1</label>
+                                                <label for="">الفقرة 1</label>
                                                 <input type="text" class="form-control" name="banner_3_p1"
                                                     value="{{ old('banner_3_p1', $home_arabic->banner_3_p1 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -270,7 +269,7 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Paragraph 2</label>
+                                                <label for="">الفقرة 2</label>
                                                 <input type="text" class="form-control" name="banner_3_p2"
                                                     value="{{ old('banner_3_p2', $home_arabic->banner_3_p2 ?? '') }}">
                                                 <p class="errMsg text-danger"></p>
@@ -279,8 +278,8 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label><span
-                                                    class="text-danger"> * Dimensions: 950 x 450</span>
+                                                <label for="banner_1_image">صورة البانر</label><span
+                                                    class="text-danger">    الأبعاد*: 950 × 450</span>
                                                 <input type="file" class="form-control" id="imgS3"
                                                     name="banner_3_image">
                                                 <p class="errMsg text-danger">
@@ -300,7 +299,7 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">يحفظ</button>
                                         </div>
                                     </div>
                                 </form>
@@ -314,7 +313,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            About Section
+                            حول القسم
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -327,7 +326,7 @@
                                     <div class="col-6">
 
                                         <div class="editorOut1">
-                                            <label for="">Heading blue</label>
+                                            <label for="">العنوان 1</label>
                                             <input type="text" class="form-control" name="about_section_h_blue"
                                                 value="{{ old('about_section_h_blue', $home_arabic->about_section_h_blue ?? '') }}">
                                             <p class="errMsg text-danger"></p>
@@ -336,7 +335,7 @@
                                     <div class="col-6">
 
                                         <div class="editorOut2">
-                                            <label for="">Heading green</label>
+                                            <label for="">العنوان 2</label>
                                             <input type="text" class="form-control" name="about_section_h_green"
                                                 value="{{ old('about_section_h_green', $home_arabic->about_section_h_green ?? '') }}">
                                             <p class="errMsg text-danger"></p>
@@ -345,7 +344,7 @@
                                     <div class="col-12">
 
                                         <div class="editorOut3">
-                                            <label for="">Heading small</label>
+                                            <label for="">العنوان صغير</label>
                                             <input type="text" class="form-control" name="about_section_h_small"
                                                 value="{{ old('about_section_h_small', $home_arabic->about_section_h_small ?? '') }}">
                                             <p class="errMsg text-danger"></p>
@@ -354,7 +353,7 @@
                                     <div class="col-12">
 
                                         <div class="editorOut4">
-                                            <label for="">About paragraph</label>
+                                            <label for="">حول الفقرة</label>
                                             <textarea class="editor1 noVal" name="about_section_p">{{ old('about_section_p', $home_arabic->about_section_p ?? '') }}</textarea>
                                             <p class="errMsg text-danger"></p>
                                         </div>
@@ -362,8 +361,7 @@
                                     <div class="col-12">
 
                                         <div>
-                                            <label for="">About Image</label> <span class="text-danger"> *
-                                                Dimensions: 460 x 300</span>
+                                            <label for="">حول الصورة</label> <span class="text-danger">   الأبعاد* : 460 × 300</span>
                                             <input type="file" class="form-control" name="about_section_image"
                                                 id="aboutImageInput1">
                                             <p class="errMsg text-danger"></p>
@@ -391,7 +389,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -403,7 +401,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Our Values
+                            قيمنا
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -416,7 +414,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value Heading 1</label>
+                                            <label for="">عنوان القيمة 1</label>
                                             <input class="form-control" name="our_value_h1"
                                                 value="{{ old('our_value_h1', $home_arabic->our_value_h1 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -425,7 +423,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value Heading 2</label>
+                                            <label for="">عنوان القيمة 2</label>
                                             <input class="form-control" name="our_value_h2"
                                                 value="{{ old('our_value_h2', $home_arabic->our_value_h2 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -434,7 +432,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value Title 1</label>
+                                            <label for="">عنوان القيمة 1</label>
                                             <input class="form-control" name="our_value_1"
                                                 value="{{ old('our_value_1', $home_arabic->our_value_1 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -443,8 +441,8 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label> <span class="text-danger"> *
-                                                Dimensions: 180 x 185</span>
+                                            <label for="">القيمة</label> <span class="text-danger">  الأبعاد : 180 × 185*
+                                            </span>
                                             <input type="file" class="form-control" id="valueImageInput1"
                                                 name="our_value_1_image">
                                             <p class="errMsg text-danger"></p>
@@ -465,7 +463,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value Title 2</label>
+                                            <label for="">عنوان القيمة 2</label>
                                             <input class="form-control" name="our_value_2"
                                                 value="{{ old('our_value_2', $home_arabic->our_value_2 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -474,8 +472,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label> <span class="text-danger"> *
-                                                Dimensions: 180 x 185</span>
+                                            <label for="">القيمة</label> <span class="text-danger">   الأبعاد : 180 × 185*</span>
                                             <input type="file" class="form-control" name="our_value_2_image"
                                                 id="valueImageInput2">
                                             <p class="errMsg text-danger"></p>
@@ -495,7 +492,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value Title 3</label>
+                                            <label for="">عنوان القيمة 3</label>
                                             <input class="form-control" name="our_value_3"
                                                 value="{{ old('our_value_3', $home_arabic->our_value_3 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -504,8 +501,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label> <span class="text-danger"> *
-                                                Dimensions: 180 x 185</span>
+                                            <label for="">قيمة</label> <span class="text-danger">  الأبعاد : 180 × 185</span>
                                             <input type="file" class="form-control" name="our_value_3_image"
                                                 id="valueImageInput3">
                                             <p class="errMsg text-danger"></p>
@@ -527,7 +523,7 @@
 
 
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -539,7 +535,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Our Brands
+                            علاماتنا التجارية
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -555,7 +551,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Brand Heading 1</label>
+                                            <label for="">عنوان العلامة التجارية 1</label>
                                             <input class="form-control" name="our_brand_h1"
                                                 value="{{ $home_arabic->our_brand_h1 ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -564,7 +560,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Brand Heading 2</label>
+                                            <label for="">عنوان العلامة التجارية 2</label>
                                             <input class="form-control" name="our_brand_h2"
                                                 value="{{ $home_arabic->our_brand_h2 ?? '' }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -573,20 +569,19 @@
 
 
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ</button>
                                     </div>
                                 </div>
                             </form>
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                    <a class="nav-link active bannerNavTab1" aria-current="page" href="#">Brand
-                                        1</a>
+                                    <a class="nav-link active bannerNavTab1" aria-current="page" href="#">العلامة التجارية 1</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link bannerNavTab2" aria-current="page" href="#">Brand 2</a>
+                                    <a class="nav-link bannerNavTab2" aria-current="page" href="#">العلامة التجارية 2</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link bannerNavTab3" aria-current="page" href="#">Brand 3</a>
+                                    <a class="nav-link bannerNavTab3" aria-current="page" href="#">العلامة التجارية 3</a>
                                 </li>
 
 
@@ -602,7 +597,7 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Paragraph</label>
+                                                <label for="">فقرة</label>
                                                 <input type="text" class="form-control" name="our_brand_1"
                                                     value="{{ old('our_brand_1', $home_arabic->our_brand_1 ?? '') }}">
                                                 <p class="text-danger"></p>
@@ -611,8 +606,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Image</label> <span class="text-danger"> *
-                                                    Dimensions: 300 x 195</span>
+                                                <label for="">صورة العلامة التجارية</label> <span class="text-danger"> الأبعاد : 300 × 195 *</span>
                                                 <input type="file" class="form-control" name="our_brand_image_1"
                                                     id="brandImageInput1">
                                                 <p class="text-danger"></p>
@@ -634,7 +628,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Logo</label>
+                                                <label for="">شعار العلامة التجارية</label>
                                                 <input type="file" class="form-control" name="our_brand_logo_1"
                                                     id="brandLogoInput1">
                                                 <p class="text-danger"></p>
@@ -673,7 +667,7 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Paragraph</label>
+                                                <label for="">فقرة</label>
                                                 <input type="text" class="form-control" name="our_brand_2"
                                                     value="{{ old('our_brand_2', $home_arabic->our_brand_2 ?? '') }}">
                                                 <p class="text-danger"></p>
@@ -682,8 +676,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Image</label> <span class="text-danger"> *
-                                                    Dimensions: 300 x 195</span>
+                                                <label for="">صورة العلامة التجارية</label> <span class="text-danger"> الأبعاد : 300 × 195 *</span>
                                                 <input type="file" class="form-control" name="our_brand_image_2"
                                                     id="brandImageInput1">
                                                 <p class="text-danger"></p>
@@ -706,7 +699,7 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Logo</label>
+                                                <label for="">شعار العلامة التجارية</label>
                                                 <input type="file" class="form-control" name="our_brand_logo_2"
                                                     id="brandLogoInput1">
                                                 <p class="text-danger"></p>
@@ -743,7 +736,7 @@
                                             <div class="col-12">
 
                                                 <div>
-                                                    <label for="">Paragraph</label>
+                                                    <label for="">فقرة</label>
                                                     <input type="text" class="form-control" name="our_brand_3"
                                                         value="{{ old('our_brand_3', $home_arabic->our_brand_3 ?? '') }}">
                                                     <p class="text-danger"></p>
@@ -752,8 +745,7 @@
                                             <div class="col-6">
 
                                                 <div>
-                                                    <label for="">Brand Image</label> <span class="text-danger"> *
-                                                        Dimensions: 300 x 195</span>
+                                                    <label for="">صورة العلامة التجارية</label> <span class="text-danger"> الأبعاد : 300 × 195 *</span>
                                                     <input type="file" class="form-control"
                                                         name="our_brand_image_3" id="brandImageInput3">
                                                     <p class="text-danger"></p>
@@ -776,7 +768,7 @@
                                             <div class="col-6">
 
                                                 <div>
-                                                    <label for="">Brand Logo</label>
+                                                    <label for="">شعار العلامة التجارية</label>
                                                     <input type="file" class="form-control"
                                                         name="our_brand_logo_3" id="brandLogoInput3">
                                                     <p class="text-danger"></p>
@@ -796,7 +788,7 @@
 
                                             </div>
                                             <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Save</button>
+                                                <button type="submit" class="btn btn-primary">يحفظ</button>
                                             </div>
                                         </div>
                                     </form>
@@ -810,7 +802,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Section 6
+                            القسم 6
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -823,7 +815,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Heading 1</label>
+                                            <label for="">العنوان 1</label>
                                             <input class="form-control" name="section_6_h1"
                                                 value="{{ old('section_6_h1', $home_arabic->section_6_h1 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -832,7 +824,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Heading 2</label>
+                                            <label for="">العنوان 2</label>
                                             <input class="form-control" name="section_6_h2"
                                                 value="{{ old('section_6_h2', $home_arabic->section_6_h2 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -848,7 +840,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div>
-                                            <label for="">Url 1</label>
+                                            <label for="">عنوان URL 1</label>
                                             <input class="form-control" name="section_6_url_1"
                                                 value="{{ old('section_6_url_1', $home_arabic->section_6_url_1 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -856,7 +848,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div>
-                                            <label for="">Url 2</label>
+                                            <label for=""> عنوان URL 2</label>
                                             <input class="form-control" name="section_6_url_2"
                                                 value="{{ old('section_6_url_2', $home_arabic->section_6_url_2 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -864,7 +856,7 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">يحفظ</button>
                                     </div>
                                 </div>
                             </form>
@@ -876,7 +868,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Our Activities
+                            أنشطتنا
                         </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -885,7 +877,7 @@
 
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                     data-bs-target="#addActivity">
-                                    Add Activity
+                                    أضف نشاط
                                 </button>
                             </div>
                             <div class="modal fade" id="addActivity" tabindex="-1"
@@ -893,7 +885,7 @@
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content ">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Activity</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">أضف نشاط</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -905,14 +897,14 @@
                                                 <div class="row gy-4">
                                                     <div class="col-12">
                                                         <div>
-                                                            <label for="">Heading</label>
+                                                            <label for="">عنوان</label>
                                                             <input class="form-control" name="heading">
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
                                                         <div>
-                                                            <label for="">Paragraph</label>
+                                                            <label for="">فقرة</label>
                                                             <textarea name="paragraph" class="form-control" cols="30" rows="10"></textarea>
 
                                                             <p class="errMsg text-danger"></p>
@@ -920,7 +912,7 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <div>
-                                                            <label for="">Main Image</label>
+                                                            <label for="">صورة البطاقة</label>
                                                             <input type="file" name="main_image"
                                                                 class="form-control" id="main_image">
                                                             <p class="errMsg text-danger"></p>
@@ -930,7 +922,7 @@
 
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                    <button type="submit" class="btn btn-primary">يحفظ</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -945,10 +937,10 @@
                                     class="table table-row-bordered table-row-gray-600 table-striped table-hover table-responsive gy-5 rounded dataTable">
                                     <thead>
                                         <tr>
-                                            <th class="">Main Image</th>
-                                            <th class="">Heading</th>
-                                            <th class="">Paragraph</th>
-                                            <th class="">ACTION</th>
+                                            <th class="">صورة البطاقة</th>
+                                            <th class="">عنوان</th>
+                                            <th class="">فقرة</th>
+                                            <th class="">فعل</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -990,7 +982,7 @@
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
                                                                     <h1 class="modal-title fs-5"
-                                                                        id="exampleModalLabel">Update</h1>
+                                                                        id="exampleModalLabel">تحديث النشاط</h1>
                                                                     <button type="button" class="btn-close"
                                                                         data-bs-dismiss="modal"
                                                                         aria-label="Close"></button>
@@ -1010,25 +1002,24 @@
                                                                             value='@json($activity->images)' />
 
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Heading</label>
+                                                                            <label class="form-label">عنوان</label>
                                                                             <input type="text" name="heading"
                                                                                 id="update_heading"
                                                                                 class="form-control">
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Paragraph</label>
+                                                                            <label class="form-label">فقرة</label>
                                                                             <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Main
-                                                                                Image</label>
+                                                                            <label class="form-label">صورة البطاقة</label>
                                                                             <input type="file" name="main_image"
                                                                                 class="form-control"
                                                                                 id="update_main_image">
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Current Main
-                                                                                Image</label>
+                                                                            <label class="form-label">الرئيسي الحالي
+                                                                                صورة</label>
                                                                             <img id="current_empty_image"
                                                                                 src=""
                                                                                 alt="Current Main Image"
@@ -1045,10 +1036,10 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary"
-                                                                        data-bs-dismiss="modal">Close</button>
+                                                                        data-bs-dismiss="modal">يغلق</button>
                                                                     <button type="submit"
                                                                         form="edit_activity{{ $activity->id }}"
-                                                                        class="btn btn-primary">Update</button>
+                                                                        class="btn btn-primary">تحديث</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1057,12 +1048,12 @@
                                                 @endforeach
                                             @else
                                                 <tr>
-                                                    <td colspan="4">No cards found.</td>
+                                                    <td colspan="4">لم يتم العثور على بطاقات.</td>
                                                 </tr>
                                             @endif
                                         @else
                                             <tr>
-                                                <td colspan="4">No cards found.</td>
+                                                <td colspan="4">لم يتم العثور على بطاقات</td>
                                             </tr>
                                         @endif
                                     </tbody>
