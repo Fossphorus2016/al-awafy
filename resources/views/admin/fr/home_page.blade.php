@@ -233,6 +233,7 @@
                                     </div>
                                 </form>
                             </div>
+
                             <div class="bannerNavForm3" style="display: none">
 
                                 <form action="{{ route('home.banner.3') }}" method="POST"
@@ -280,10 +281,10 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Banner Image</label> <span class="text-danger">
-                                                    * Dimensions: 950 x 450</span>
-                                                type="file" class="form-control" id="imgS3"
-                                                name="banner_3_image">
+                                                <label for="banner_1_image">Banner Image</label><span
+                                                    class="text-danger"> * Dimensions: 950 x 450</span>
+                                                <input type="file" class="form-control" id="imgS3"
+                                                    name="banner_3_image">
                                                 <p class="errMsg text-danger">
                                                 </p>
                                             </div>
@@ -752,8 +753,8 @@
                                             <div class="col-6">
 
                                                 <div>
-                                                    <label for="">Brand Image</label> <span class="text-danger"> *
-                                                        Dimensions: 300 x 195</span>
+                                                   <label for="">Brand Image</label> <span class="text-danger"> *
+                                                    Dimensions: 300 x 195</span>
                                                     <input type="file" class="form-control"
                                                         name="our_brand_image_3" id="brandImageInput3">
                                                     <p class="text-danger"></p>
