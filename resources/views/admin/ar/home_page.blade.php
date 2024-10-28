@@ -130,7 +130,8 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>
+                                                <label for="banner_1_image">Banner Image</label><span
+                                                    class="text-danger"> * Dimensions: 950 x 450</span>
                                                 <input type="file" class="form-control" name="banner_1_image"
                                                     id="imgS1">
                                                 @error('banner_1_image')
@@ -903,7 +904,7 @@
                                                     <div class="col-12">
                                                         <div>
                                                             <label for="">Paragraph</label>
-                                                            <textarea name="paragraph"   class="form-control" cols="30" rows="10"></textarea>
+                                                            <textarea name="paragraph" class="form-control" cols="30" rows="10"></textarea>
 
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
