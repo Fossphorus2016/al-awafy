@@ -130,7 +130,9 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <label for="banner_1_image">Banner Image</label>
+                                                <label for="banner_1_image">Banner Image</label><span
+                                                    class="text-danger"> * Dimensions: 950 x 450</span>
+
                                                 <input type="file" class="form-control" name="banner_1_image"
                                                     id="imgS1">
                                                 @error('banner_1_image')
@@ -205,7 +207,8 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Banner Image</label>
+                                                <label for="">Banner Image</label> <span class="text-danger">
+                                                    * Dimensions: 950 x 450</span>
                                                 <input type="file" class="form-control" id="imgS2"
                                                     name="banner_2_image">
                                                 <p class="errMsg text-danger">
@@ -277,9 +280,10 @@
                                         <div class="col-12">
 
                                             <div>
-                                                <label for="">Banner Image</label>
-                                                <input type="file" class="form-control" id="imgS3"
-                                                    name="banner_3_image">
+                                                <label for="">Banner Image</label> <span class="text-danger">
+                                                    * Dimensions: 950 x 450</span>
+                                                type="file" class="form-control" id="imgS3"
+                                                name="banner_3_image">
                                                 <p class="errMsg text-danger">
                                                 </p>
                                             </div>
@@ -359,7 +363,8 @@
                                     <div class="col-12">
 
                                         <div>
-                                            <label for="">About Image</label>
+                                            <label for="">About Image</label> <span class="text-danger"> *
+                                                Dimensions: 460 x 300</span>
                                             <input type="file" class="form-control" name="about_section_image"
                                                 id="aboutImageInput1">
                                             <p class="errMsg text-danger"></p>
@@ -439,7 +444,8 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label>
+                                            <label for="">Value</label> <span class="text-danger"> *
+                                                Dimensions: 180 x 185</span>
                                             <input type="file" class="form-control" id="valueImageInput1"
                                                 name="our_value_1_image">
                                             <p class="errMsg text-danger"></p>
@@ -469,7 +475,8 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label>
+                                            <label for="">Value</label> <span class="text-danger"> *
+                                                Dimensions: 180 x 185</span>
                                             <input type="file" class="form-control" name="our_value_2_image"
                                                 id="valueImageInput2">
                                             <p class="errMsg text-danger"></p>
@@ -498,7 +505,8 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label>
+                                            <label for="">Value</label> <span class="text-danger"> *
+                                                Dimensions: 180 x 185</span>
                                             <input type="file" class="form-control" name="our_value_3_image"
                                                 id="valueImageInput3">
                                             <p class="errMsg text-danger"></p>
@@ -604,7 +612,8 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Image</label>
+                                                <label for="">Brand Image</label> <span class="text-danger"> *
+                                                    Dimensions: 300 x 195</span>
                                                 <input type="file" class="form-control" name="our_brand_image_1"
                                                     id="brandImageInput1">
                                                 <p class="text-danger"></p>
@@ -673,7 +682,8 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">Brand Image</label>
+                                                <label for="">Brand Image</label> <span class="text-danger"> *
+                                                    Dimensions: 300 x 195</span>
                                                 <input type="file" class="form-control" name="our_brand_image_2"
                                                     id="brandImageInput1">
                                                 <p class="text-danger"></p>
@@ -742,7 +752,8 @@
                                             <div class="col-6">
 
                                                 <div>
-                                                    <label for="">Brand Image</label>
+                                                    <label for="">Brand Image</label> <span class="text-danger"> *
+                                                        Dimensions: 300 x 195</span>
                                                     <input type="file" class="form-control"
                                                         name="our_brand_image_3" id="brandImageInput3">
                                                     <p class="text-danger"></p>
@@ -933,7 +944,7 @@
                                                     <div class="col-12">
                                                         <div>
                                                             <label for="">Paragraph</label>
-                                                            <textarea name="paragraph"   class="form-control" cols="30" rows="10"></textarea>
+                                                            <textarea name="paragraph" class="form-control" cols="30" rows="10"></textarea>
 
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
