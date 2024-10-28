@@ -495,8 +495,7 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value Title 3</label> <span class="text-danger"> *
-                                                Dimensions: 180 x 185</span>
+                                            <label for="">Value Title 3</label>
                                             <input class="form-control" name="our_value_3"
                                                 value="{{ old('our_value_3', $home_english->our_value_3 ?? '') }}"></input>
                                             <p class="errMsg text-danger"></p>
@@ -505,7 +504,8 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">Value</label>
+                                            <label for="">Value</label> <span class="text-danger"> *
+                                                Dimensions: 180 x 185</span>
                                             <input type="file" class="form-control" name="our_value_3_image"
                                                 id="valueImageInput3">
                                             <p class="errMsg text-danger"></p>
