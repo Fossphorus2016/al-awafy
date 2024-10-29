@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendMail;
 use App\Models\Contact;
 use App\Models\NewsLetter;
 use Illuminate\Http\Request;
@@ -30,7 +31,7 @@ class FormController extends Controller
             return redirect()->back()->with('back-success', 'Contact form submitted');
         }
 
-        $request->validate([
+        $data =    $request->validate([
             'name' => 'required',
             'email' => 'required',
             'phone' => 'required',
@@ -44,6 +45,7 @@ class FormController extends Controller
             'phone' => $request->phone,
             'message' => $request->message,
         ]);
+        SendMail::dispatchAfterResponse($data, 'contact');
 
         return back()->with('back-success', 'Contact form submitted');
     }
@@ -51,7 +53,7 @@ class FormController extends Controller
 
     public function news_letter_create(Request $request)
     {
-        $request->validate([
+        $data =   $request->validate([
             'subscriber_mail' => 'required|email',
         ]);
 
@@ -64,7 +66,7 @@ class FormController extends Controller
         NewsLetter::create([
             'subscriber_mail' => $request->subscriber_mail,
         ]);
-
+        SendMail::dispatchAfterResponse($data, 'newsletter');
         return back()->with('back-success', 'News Letter submitted');
     }
 
