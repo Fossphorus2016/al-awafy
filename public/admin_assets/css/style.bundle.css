@@ -50579,6 +50579,12 @@ body {
 .arabicPage .accordion-button{
     direction: rtl;
 }
+.arabicPage .accordion-body .nav {
+
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+
+}
 
 .arabicPage .accordion-button::after {
     margin-right: auto;
@@ -50591,9 +50597,10 @@ body {
 .arabicPage input[type="text"]{
     direction: rtl;
 }
-.arabicPage button{
+/* .arabicPage button{
     float: right;
-}
+} */
 .arabicPage form .row{
     direction: rtl
 }
+
