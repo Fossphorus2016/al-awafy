@@ -81,7 +81,7 @@
 
 <body>
     <div class="container" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
-        {{-- <img src="https://riz-technology.koreintl.com/assets/images/logo/footerLogo.png" alt=""> --}}
+        <img class="mb-4" src="https://al-awafy.koreintl.com/assets/images/logo/logo.png" alt="">
         <h2>New Contact Request from {{ $data['name'] }}</h2>
         <hr size="10" color="#fff">
         <p><strong>Email : </strong> {{ $data['email'] }}</p>
