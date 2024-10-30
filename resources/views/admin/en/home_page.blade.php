@@ -945,7 +945,7 @@
                                                         <div>
                                                             <label for="">Paragraph</label>
 
-                                                            <textarea name="paragraph"   class="form-control" cols="30" rows="10"></textarea>
+                                                            <textarea name="paragraph" class="form-control" cols="30" rows="10"></textarea>
                                                             <p class="errMsg text-danger"></p>
                                                         </div>
                                                     </div>
@@ -992,14 +992,15 @@
                                                                 width="50px" height="50px" alt="">
                                                         </td>
                                                         <td id="activity_heading_{{ $activity->id }}">
-                                                            {{ $activity->heading }}</td>
+                                                            {{ Str::words($activity->heading, 3) }}</td>
                                                         <td id="activity_paragraph_{{ $activity->id }}">
-                                                            {{ Str::words($activity->paragraph, 20) }}
+                                                            {{ Str::words($activity->paragraph, 5) }}
                                                         </td>
                                                         <td>
                                                             <button type="button"
                                                                 class="btn btn-success btn-sm editbtn"
-                                                                onclick="load_section2_modal({{ $activity->id }})">
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#empty_modal_edit_{{ $activity->id }}">
                                                                 <i class="bi bi-pencil-square fs-4"></i>
                                                             </button>
                                                             <form
@@ -1014,9 +1015,10 @@
                                                         </td>
                                                     </tr>
 
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="empty_modal_edit" tabindex="-1"
-                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <!-- Edit Modal -->
+                                                    <div class="modal fade" id="empty_modal_edit_{{ $activity->id }}"
+                                                        tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                        aria-hidden="true">
                                                         <div class="modal-dialog modal-lg">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
@@ -1044,11 +1046,12 @@
                                                                             <label class="form-label">Heading</label>
                                                                             <input type="text" name="heading"
                                                                                 id="update_heading"
-                                                                                class="form-control">
+                                                                                class="form-control"
+                                                                                value="{{ $activity->heading ?? '' }}">
                                                                         </div>
                                                                         <div class="mb-3">
                                                                             <label class="form-label">Paragraph</label>
-                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
+                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10">{{ $activity->paragraph ?? '' }}</textarea>
                                                                         </div>
                                                                         <div class="mb-3">
                                                                             <label class="form-label">Main
@@ -1058,13 +1061,18 @@
                                                                                 id="update_main_image">
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Current Main
-                                                                                Image</label>
-                                                                            <img id="current_empty_image"
-                                                                                src=""
-                                                                                alt="Current Main Image"
-                                                                                style="max-width: 100px; display: none;">
+                                                                            @if ($activity && $activity->main_image)
+                                                                                <img id="main_image"
+                                                                                    src="{{ asset('storage/' . $activity->main_image) }}"
+                                                                                    width="300px" height="250px"
+                                                                                    alt="" class="rounded">
+                                                                            @endif
                                                                         </div>
+
+                                                                        <img id="output1" style="display: none"
+                                                                            width="300px" height="250px"
+                                                                            class="rounded my-8" />
+                                                                        <br />
 
                                                                         <div class="mb-3"
                                                                             id="uploaded_images_container">
@@ -1116,6 +1124,23 @@
     </style>
 
     <script>
+        $("#update_main_image").on("change", function(event) {
+            // Display the preview area and hide the existing main image
+            $('#output1').show();
+            $('#main_image').hide();
+
+            // Get the selected file and create a FileReader to read it
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    // Set the preview image's src to the loaded file data
+                    $('#output1').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(file); // Read the file
+            }
+        });
+
         $(document).ready(function() {
 
             const editor = Jodit.make('.editor1');
@@ -1290,77 +1315,7 @@
 
         });
 
-        // document.getElementById('activityImageInput').addEventListener('change', function() {
-        //     const fileList = this.files;
-        //     const previewContainer = document.getElementById('imagePreviews');
-        //     previewContainer.innerHTML = ''; // Clear previous previews
-
-        //     for (let i = 0; i < fileList.length; i++) {
-        //         const file = fileList[i];
-        //         const reader = new FileReader();
-
-        //         reader.onload = function(e) {
-        //             // Create a wrapper for the image and the remove button
-        //             const imageWrapper = document.createElement('div');
-        //             imageWrapper.classList.add('image-wrapper');
-        //             imageWrapper.style.position = 'relative';
-        //             imageWrapper.style.display = 'inline-block';
-        //             imageWrapper.style.margin = '10px';
-
-        //             const img = document.createElement('img');
-        //             img.src = e.target.result;
-        //             img.alt = 'Uploaded Image';
-        //             img.style = 'width: 250px; height: 300px; object-fit: contain;';
-        //             imageWrapper.appendChild(img);
-
-        //             // Create the remove button
-        //             const removeButton = document.createElement('button');
-        //             removeButton.innerText = 'Remove';
-        //             removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
-        //             removeButton.style.position = 'absolute';
-        //             removeButton.style.top = '5px';
-        //             removeButton.style.right = '5px';
-
-        //             removeButton.onclick = function() {
-        //                 // Remove the image preview and file from the input
-        //                 imageWrapper.remove();
-        //                 const dataTransfer = new DataTransfer();
-
-        //                 // Create a new FileList without the removed image
-        //                 for (let j = 0; j < fileList.length; j++) {
-        //                     if (fileList[j] !== file) {
-        //                         dataTransfer.items.add(fileList[j]);
-        //                     }
-        //                 }
-        //                 // Update the file input
-        //                 document.getElementById('activityImageInput').files = dataTransfer.files;
-        //             };
-
-        //             imageWrapper.appendChild(removeButton);
-        //             previewContainer.appendChild(imageWrapper);
-        //         };
-
-        //         reader.readAsDataURL(file);
-        //     }
-        // });
-
-
-        function load_section2_modal(activityId) {
-            // Get current values
-            const heading = document.getElementById(`activity_heading_${activityId}`).innerText;
-            const paragraph = document.getElementById(`activity_paragraph_${activityId}`).innerText;
-            const mainImage = document.getElementById(`activity_main_image_${activityId}`).getElementsByTagName('img')[0]
-                .src;
-
-            // Populate modal fields
-            document.getElementById('update_heading').value = heading;
-            document.getElementById('update_paragraph').value = paragraph;
-            document.getElementById('current_empty_image').src = mainImage;
-            document.getElementById('current_empty_image').style.display = 'block';
-
-            // Show the modal
-            $('#empty_modal_edit').modal('show');
-        }
+        
     </script>
 
 </x-admin.layouts>

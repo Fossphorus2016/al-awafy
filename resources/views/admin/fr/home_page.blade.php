@@ -753,8 +753,9 @@
                                             <div class="col-6">
 
                                                 <div>
-                                                   <label for="">Brand Image</label> <span class="text-danger"> *
-                                                    Dimensions: 300 x 195</span>
+                                                    <label for="">Brand Image</label> <span
+                                                        class="text-danger"> *
+                                                        Dimensions: 300 x 195</span>
                                                     <input type="file" class="form-control"
                                                         name="our_brand_image_3" id="brandImageInput3">
                                                     <p class="text-danger"></p>
@@ -993,14 +994,15 @@
                                                                 width="50px" height="50px" alt="">
                                                         </td>
                                                         <td id="activity_heading_{{ $activity->id }}">
-                                                            {{ $activity->heading }}</td>
+                                                            {{ Str::words($activity->heading, 3) }}</td>
                                                         <td id="activity_paragraph_{{ $activity->id }}">
-                                                            {{ Str::words($activity->paragraph, 20) }}
+                                                            {{ Str::words($activity->paragraph, 5) }}
                                                         </td>
                                                         <td>
                                                             <button type="button"
                                                                 class="btn btn-success btn-sm editbtn"
-                                                                onclick="load_section2_modal({{ $activity->id }})">
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#empty_modal_edit_{{ $activity->id }}">
                                                                 <i class="bi bi-pencil-square fs-4"></i>
                                                             </button>
                                                             <form
@@ -1015,9 +1017,10 @@
                                                         </td>
                                                     </tr>
 
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="empty_modal_edit" tabindex="-1"
-                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <!-- Edit Modal -->
+                                                    <div class="modal fade" id="empty_modal_edit_{{ $activity->id }}"
+                                                        tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                        aria-hidden="true">
                                                         <div class="modal-dialog modal-lg">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
@@ -1045,11 +1048,12 @@
                                                                             <label class="form-label">Heading</label>
                                                                             <input type="text" name="heading"
                                                                                 id="update_heading"
-                                                                                class="form-control">
+                                                                                class="form-control"
+                                                                                value="{{ $activity->heading ?? '' }}">
                                                                         </div>
                                                                         <div class="mb-3">
                                                                             <label class="form-label">Paragraph</label>
-                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
+                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10">{{ $activity->paragraph ?? '' }}</textarea>
                                                                         </div>
                                                                         <div class="mb-3">
                                                                             <label class="form-label">Main
@@ -1059,13 +1063,18 @@
                                                                                 id="update_main_image">
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">Current Main
-                                                                                Image</label>
-                                                                            <img id="current_empty_image"
-                                                                                src=""
-                                                                                alt="Current Main Image"
-                                                                                style="max-width: 100px; display: none;">
+                                                                            @if ($activity && $activity->main_image)
+                                                                                <img id="main_image"
+                                                                                    src="{{ asset('storage/' . $activity->main_image) }}"
+                                                                                    width="300px" height="250px"
+                                                                                    alt="" class="rounded">
+                                                                            @endif
                                                                         </div>
+
+                                                                        <img id="output1" style="display: none"
+                                                                            width="300px" height="250px"
+                                                                            class="rounded my-8" />
+                                                                        <br />
 
                                                                         <div class="mb-3"
                                                                             id="uploaded_images_container">

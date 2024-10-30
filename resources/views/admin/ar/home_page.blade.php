@@ -67,7 +67,8 @@
 
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                    <a class="nav-link active bannerNavTab1" aria-current="page" href="#">راية 1</a>
+                                    <a class="nav-link active bannerNavTab1" aria-current="page" href="#">راية
+                                        1</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link bannerNavTab2" aria-current="page" href="#">راية 2</a>
@@ -206,7 +207,7 @@
 
                                             <div>
                                                 <label for="banner_1_image">صورة البانر</label><span
-                                                    class="text-danger">    الأبعاد*: 950 × 450</span>
+                                                    class="text-danger"> الأبعاد*: 950 × 450</span>
                                                 <input type="file" class="form-control" id="imgS2"
                                                     name="banner_2_image">
                                                 <p class="errMsg text-danger">
@@ -279,7 +280,7 @@
 
                                             <div>
                                                 <label for="banner_1_image">صورة البانر</label><span
-                                                    class="text-danger">    الأبعاد*: 950 × 450</span>
+                                                    class="text-danger"> الأبعاد*: 950 × 450</span>
                                                 <input type="file" class="form-control" id="imgS3"
                                                     name="banner_3_image">
                                                 <p class="errMsg text-danger">
@@ -361,7 +362,8 @@
                                     <div class="col-12">
 
                                         <div>
-                                            <label for="">حول الصورة</label> <span class="text-danger">   الأبعاد* : 460 × 300</span>
+                                            <label for="">حول الصورة</label> <span class="text-danger">
+                                                الأبعاد* : 460 × 300</span>
                                             <input type="file" class="form-control" name="about_section_image"
                                                 id="aboutImageInput1">
                                             <p class="errMsg text-danger"></p>
@@ -441,7 +443,8 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">القيمة</label> <span class="text-danger">  الأبعاد : 180 × 185*
+                                            <label for="">القيمة</label> <span class="text-danger"> الأبعاد :
+                                                180 × 185*
                                             </span>
                                             <input type="file" class="form-control" id="valueImageInput1"
                                                 name="our_value_1_image">
@@ -472,7 +475,8 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">القيمة</label> <span class="text-danger">   الأبعاد : 180 × 185*</span>
+                                            <label for="">القيمة</label> <span class="text-danger"> الأبعاد :
+                                                180 × 185*</span>
                                             <input type="file" class="form-control" name="our_value_2_image"
                                                 id="valueImageInput2">
                                             <p class="errMsg text-danger"></p>
@@ -501,7 +505,8 @@
                                     <div class="col-6">
 
                                         <div>
-                                            <label for="">قيمة</label> <span class="text-danger">  الأبعاد : 180 × 185</span>
+                                            <label for="">قيمة</label> <span class="text-danger"> الأبعاد :
+                                                180 × 185</span>
                                             <input type="file" class="form-control" name="our_value_3_image"
                                                 id="valueImageInput3">
                                             <p class="errMsg text-danger"></p>
@@ -575,13 +580,16 @@
                             </form>
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                    <a class="nav-link active bannerNavTab1" aria-current="page" href="#">العلامة التجارية 1</a>
+                                    <a class="nav-link active bannerNavTab1" aria-current="page"
+                                        href="#">العلامة التجارية 1</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link bannerNavTab2" aria-current="page" href="#">العلامة التجارية 2</a>
+                                    <a class="nav-link bannerNavTab2" aria-current="page" href="#">العلامة
+                                        التجارية 2</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link bannerNavTab3" aria-current="page" href="#">العلامة التجارية 3</a>
+                                    <a class="nav-link bannerNavTab3" aria-current="page" href="#">العلامة
+                                        التجارية 3</a>
                                 </li>
 
 
@@ -606,7 +614,8 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">صورة العلامة التجارية</label> <span class="text-danger"> الأبعاد : 300 × 195 *</span>
+                                                <label for="">صورة العلامة التجارية</label> <span
+                                                    class="text-danger"> الأبعاد : 300 × 195 *</span>
                                                 <input type="file" class="form-control" name="our_brand_image_1"
                                                     id="brandImageInput1">
                                                 <p class="text-danger"></p>
@@ -676,7 +685,8 @@
                                         <div class="col-6">
 
                                             <div>
-                                                <label for="">صورة العلامة التجارية</label> <span class="text-danger"> الأبعاد : 300 × 195 *</span>
+                                                <label for="">صورة العلامة التجارية</label> <span
+                                                    class="text-danger"> الأبعاد : 300 × 195 *</span>
                                                 <input type="file" class="form-control" name="our_brand_image_2"
                                                     id="brandImageInput1">
                                                 <p class="text-danger"></p>
@@ -745,7 +755,8 @@
                                             <div class="col-6">
 
                                                 <div>
-                                                    <label for="">صورة العلامة التجارية</label> <span class="text-danger"> الأبعاد : 300 × 195 *</span>
+                                                    <label for="">صورة العلامة التجارية</label> <span
+                                                        class="text-danger"> الأبعاد : 300 × 195 *</span>
                                                     <input type="file" class="form-control"
                                                         name="our_brand_image_3" id="brandImageInput3">
                                                     <p class="text-danger"></p>
@@ -932,15 +943,16 @@
 
 
 
+
                             <div class="table-responsive">
                                 <table id="table2"
                                     class="table table-row-bordered table-row-gray-600 table-striped table-hover table-responsive gy-5 rounded dataTable">
                                     <thead>
                                         <tr>
-                                            <th class="">صورة البطاقة</th>
-                                            <th class="">عنوان</th>
-                                            <th class="">فقرة</th>
-                                            <th class="">فعل</th>
+                                            <th class="">Main Image</th>
+                                            <th class="">Heading</th>
+                                            <th class="">Paragraph</th>
+                                            <th class="">ACTION</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -953,14 +965,15 @@
                                                                 width="50px" height="50px" alt="">
                                                         </td>
                                                         <td id="activity_heading_{{ $activity->id }}">
-                                                            {{ $activity->heading }}</td>
+                                                            {{ Str::words($activity->heading, 3) }}</td>
                                                         <td id="activity_paragraph_{{ $activity->id }}">
-                                                            {{ Str::words($activity->paragraph, 20) }}
+                                                            {{ Str::words($activity->paragraph, 5) }}
                                                         </td>
                                                         <td>
                                                             <button type="button"
                                                                 class="btn btn-success btn-sm editbtn"
-                                                                onclick="load_section2_modal({{ $activity->id }})">
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#empty_modal_edit_{{ $activity->id }}">
                                                                 <i class="bi bi-pencil-square fs-4"></i>
                                                             </button>
                                                             <form
@@ -975,14 +988,15 @@
                                                         </td>
                                                     </tr>
 
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="empty_modal_edit" tabindex="-1"
-                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <!-- Edit Modal -->
+                                                    <div class="modal fade" id="empty_modal_edit_{{ $activity->id }}"
+                                                        tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                        aria-hidden="true">
                                                         <div class="modal-dialog modal-lg">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
                                                                     <h1 class="modal-title fs-5"
-                                                                        id="exampleModalLabel">تحديث النشاط</h1>
+                                                                        id="exampleModalLabel">Update</h1>
                                                                     <button type="button" class="btn-close"
                                                                         data-bs-dismiss="modal"
                                                                         aria-label="Close"></button>
@@ -1002,29 +1016,36 @@
                                                                             value='@json($activity->images)' />
 
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">عنوان</label>
+                                                                            <label class="form-label">Heading</label>
                                                                             <input type="text" name="heading"
                                                                                 id="update_heading"
-                                                                                class="form-control">
+                                                                                class="form-control"
+                                                                                value="{{ $activity->heading ?? '' }}">
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">فقرة</label>
-                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10"></textarea>
+                                                                            <label class="form-label">Paragraph</label>
+                                                                            <textarea name="paragraph" id="update_paragraph" class="form-control" cols="30" rows="10">{{ $activity->paragraph ?? '' }}</textarea>
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">صورة البطاقة</label>
+                                                                            <label class="form-label">Main
+                                                                                Image</label>
                                                                             <input type="file" name="main_image"
                                                                                 class="form-control"
                                                                                 id="update_main_image">
                                                                         </div>
                                                                         <div class="mb-3">
-                                                                            <label class="form-label">الرئيسي الحالي
-                                                                                صورة</label>
-                                                                            <img id="current_empty_image"
-                                                                                src=""
-                                                                                alt="Current Main Image"
-                                                                                style="max-width: 100px; display: none;">
+                                                                            @if ($activity && $activity->main_image)
+                                                                                <img id="main_image"
+                                                                                    src="{{ asset('storage/' . $activity->main_image) }}"
+                                                                                    width="300px" height="250px"
+                                                                                    alt="" class="rounded">
+                                                                            @endif
                                                                         </div>
+
+                                                                        <img id="output1" style="display: none"
+                                                                            width="300px" height="250px"
+                                                                            class="rounded my-8" />
+                                                                        <br />
 
                                                                         <div class="mb-3"
                                                                             id="uploaded_images_container">
@@ -1036,10 +1057,10 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary"
-                                                                        data-bs-dismiss="modal">يغلق</button>
+                                                                        data-bs-dismiss="modal">Close</button>
                                                                     <button type="submit"
                                                                         form="edit_activity{{ $activity->id }}"
-                                                                        class="btn btn-primary">تحديث</button>
+                                                                        class="btn btn-primary">Update</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1048,18 +1069,17 @@
                                                 @endforeach
                                             @else
                                                 <tr>
-                                                    <td colspan="4">لم يتم العثور على بطاقات.</td>
+                                                    <td colspan="4">No cards found.</td>
                                                 </tr>
                                             @endif
                                         @else
                                             <tr>
-                                                <td colspan="4">لم يتم العثور على بطاقات</td>
+                                                <td colspan="4">No cards found.</td>
                                             </tr>
                                         @endif
                                     </tbody>
                                 </table>
                             </div>
-
 
                         </div>
                     </div>
@@ -1076,6 +1096,22 @@
     </style>
 
     <script>
+        $("#update_main_image").on("change", function(event) {
+            // Display the preview area and hide the existing main image
+            $('#output1').show();
+            $('#main_image').hide();
+
+            // Get the selected file and create a FileReader to read it
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    // Set the preview image's src to the loaded file data
+                    $('#output1').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(file); // Read the file
+            }
+        });
         $(document).ready(function() {
 
             const editor = Jodit.make('.editor1');
