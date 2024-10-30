@@ -44,7 +44,8 @@
                                     <span class="fs6">formulaire</span>
                                 </h2>
                                 <p class="text-center w-100">Que vous ayez une question, un retour
-                                    d'expérience ou besoin de plus d'informations sur nos produits, nous sommes là pour vous aider !
+                                    d'expérience ou besoin de plus d'informations sur nos produits, nous sommes là pour
+                                    vous aider !
                                     notre équipe vous répondra dans les plus brefs délais.
                                 </p>
                             </div>
@@ -54,8 +55,8 @@
                                 @csrf
                                 <div class="row gy-4">
                                     <div class="col-lg-6 col-12 position-relative">
-                                        <input type="text" class="form-control inputCustom"
-                                            placeholder="Nom Complet" name="name" id="name">
+                                        <input type="text" class="form-control inputCustom" placeholder="Nom Complet"
+                                            name="name" id="name">
                                         <small id="error_name" class="text-danger text-small position-absolute"
                                             style="display: none; bottom: -20px;">
                                             Name is required
@@ -79,9 +80,7 @@
                                     </div>
                                     <div class="col-12 position-relative">
                                         <textarea name="message" id="message" rows="4" style="height: 100px" class="form-control inputCustom"
-                                            placeholder="Décrivez votre demande, nous vous répondrons
-                                            rapidement.
-                                            "></textarea>
+                                            placeholder="Décrivez votre demande, nous vous répondrons rapidement."></textarea>
                                         <small id="error_message" class="text-danger position-absolute"
                                             style="display: none; bottom: -20px;">Message is required</small>
                                     </div>
