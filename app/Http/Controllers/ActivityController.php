@@ -66,7 +66,7 @@ class ActivityController extends Controller
         $request->validate([
             'heading' => 'required|string|max:255',
             'paragraph' => 'required|string',
-            'main_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'main_image' => 'required',
             'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
