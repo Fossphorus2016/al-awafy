@@ -185,7 +185,7 @@
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
                                 <h2 class="text-end"><span class="fs7">{{ $crico->brand_4_h1 ?? '' }}</span> <span
-                                        class="fs8">{{ $crico->brand_4_h1 ?? '' }}</span> </h2>
+                                        class="fs8">{{ $crico->brand_4_h2 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
                                     {!! str_replace('&nbsp;', '', $crico->brand_4_p ?? '') !!}
 
@@ -206,7 +206,7 @@
                         <div class="col-lg-6 col-12 ">
                             <div class="brandInner paraFont" style="width:90%">
                                 <h2 class="text-end"><span class="fs7">{{ $crico->brand_5_h1 ?? '' }}</span> <span
-                                        class="fs8">{{ $crico->brand_5_h1 ?? '' }}</span> </h2>
+                                        class="fs8">{{ $crico->brand_5_h2 ?? '' }}</span> </h2>
                                 <p class="text-white text-end" style="width: 100%">
                                     {!! str_replace('&nbsp;', '', $crico->brand_5_p ?? '') !!}
                                 </p>
