@@ -81,7 +81,8 @@
 
 <body>
     <div class="container" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
-        <img class="mb-4" src="https://al-awafy.koreintl.com/assets/images/logo/logo.png" alt="">
+        <img alt="Logo" src="{{asset('assets/images/logo/logo.png')}}" class="w-150px py-4 d-block mx-auto">
+
         <h2>New Contact Request from {{ $data['name'] }}</h2>
         <hr size="10" color="#fff">
         <p><strong>Email : </strong> {{ $data['email'] }}</p>
