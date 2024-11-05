@@ -82,7 +82,8 @@
 <body>
     <div class="container"
         style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; padding: 20px; font-family: Arial, sans-serif;">
-        <img class="mb-4" src="https://al-awafy.koreintl.com/assets/images/logo/logo.png" alt="">
+        <img alt="Logo" src="{{asset('assets/images/logo/logo.png')}}" class="w-100 h-50px">
+
 
         <h2>New Subscription</h2>
         <hr size="2" color="#fff" style="margin: 20px 0;">
