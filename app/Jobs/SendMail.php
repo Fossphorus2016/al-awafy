@@ -35,17 +35,14 @@ class SendMail implements ShouldQueue
     {
         switch ($this->form_type) {
             case 'contact':
-                // Send email to admin (info@riztechnology.com) with contact form data
-                Mail::to('intern.9@fossphorus.com')->send(new ContactMail($this->data));
-                Mail::to('mazmeer@fossphorus.com')->send(new ContactMail($this->data));
+
+                Mail::to('info@alawafy.com')->send(new ContactMail($this->data));
                 Mail::to($this->data['email'])->send(new UserConfirmationContactMail($this->data));
                 break;
 
             case 'newsletter':
-                // Send email to admin (info@riztechnology.com) with contact form data
-                Mail::to('intern.9@fossphorus.com')->send(new NewsletterMail($this->data));
-                
 
+                Mail::to('info@alawafy.com')->send(new NewsletterMail($this->data));
                 Mail::to($this->data['subscriber_mail'])->send(new UserconfirmationNewsletterMail($this->data));
 
                 break;
